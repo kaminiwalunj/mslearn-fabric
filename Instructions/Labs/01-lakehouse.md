@@ -194,18 +194,20 @@ The tables in your lakehouse are automatically added to a default dataset that d
 
     A table visualization is added to the report:
 
-    ![Screenshot of a report containing a table.](./Images/table-visualization.png)
+    ![Screenshot of a report containing a table.](./Images/table-visualization-u.png)
 
-5. Hide the **Data** and **Filters** panes to create more space. Then ensure the table visualization is selected and in the **Visualizations** pane, change the visualization to a **Clustered bar chart** and resize it as shown here.
+4. Hide the **Data** and **Filters** panes to create more space. Then ensure the table visualization is selected and in the **Visualizations** pane, change the visualization to a **Clustered bar chart** and resize it as shown here.
 
-    ![Screenshot of a report containing a clustered bar chart.](./Images/clustered-bar-chart.png)
+    ![Screenshot of a report containing a clustered bar chart.](./Images/clustered-bar-chart-u.png)
 
-6. On the **File** menu, select **Save**. Then save the report as **Item Sales Report** in the workspace you created previously.
-7. Close the browser tab containing the report to return to the SQL endpoint for your lakehouse. Then, in the hub menu bar on the left, select your workspace to verify that it contains the following items:
+5. On the **File** menu, select **Save**. Then save the report as **Item Sales Report** in the workspace you created previously.
+6. Close the browser tab containing the report to return to the SQL endpoint for your lakehouse. Then, in the hub menu bar on the left, select your workspace to verify that it contains the following items:
     - Your lakehouse.
     - The SQL endpoint for your lakehouse.
     - A default dataset for the tables in your lakehouse.
     - The **Item Sales Report** report.
+
+  ![Screenshot of a workspace view.](./Images/workspace-view.png)
 
 ## Clean up resources
 
