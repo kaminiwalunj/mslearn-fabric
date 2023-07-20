@@ -105,16 +105,22 @@ In many scenarios, the data you need to work with in your lakehouse may be store
 The sales data you uploaded is in a file, which data analysts and engineers can work with directly by using Apache Spark code. However, in many scenarios you may want to load the data from the file into a table so that you can query it using SQL.
 
 1. On the **Home** page, select the **Files/Data** folder so you can see the **sales.csv** file it contains.
+
 2. In the **...** menu for the **sales.csv** file, select **Load to Tables**.
-3. In **Load to table** dialog box, set the table name to **sales** and confirm the load operation. Then wait for the table to be created and loaded.
+
+    ![](./Images/load-totables.png)
+   
+3. In the **Load to table** dialog box, set the table name to **sales** and confirm the load operation by selecting **Load**. Then wait for the table to be created and loaded.
 
     > **Tip**: If the **sales** table does not automatically appear, in the **...** menu for the **Tables** folder, select **Refresh**.
 
-3. In the **Lakehouse explorer** pane, select the **sales** table that has been created to view the data.
+   ![](./Images/load.png)
+   
+4. In the **Lakehouse explorer** pane, select the **sales** table that has been created to view the data.
 
     ![Screenshot of a table preview.](./Images/table-preview.png)
 
-4. In the **...** menu for the **sales** table, select **View files** to see the underlying files for this table
+5. In the **...** menu for the **sales** table, select **View files** to see the underlying files for this table
 
     ![Screenshot of a table preview.](./Images/delta-table-files.png)
 
