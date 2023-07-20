@@ -1,16 +1,10 @@
----
-lab:
-    title: 'Train a classification model to predict customer churn'
-    module: 'Get started with data science in Microsoft Fabric'
----
-
-# Use notebooks to train a model in Microsoft Fabric
+# Lab : Get started with data science in Microsoft Fabric
 
 In this lab, we will use Microsoft Fabric to create a notebook and train a machine learning model to predict customer churn. We will use Scikit-Learn to train the model and MLflow to track its performance. Customer churn is a critical business problem that many companies face, and predicting which customers are likely to churn can help companies retain their customers and increase revenue. By completing this lab, you will gain hands-on experience in machine learning and model tracking, and learn how to use Microsoft Fabric to create a notebook for your projects.
 
 This lab will take approximately **45** minutes to complete.
 
-> **Note**: You'll need a Microsoft Fabric license to complete this exercise. See [Getting started with Fabric](https://learn.microsoft.com/fabric/get-started/fabric-trial) for details of how to enable a free Fabric trial license. You will need a Microsoft *school* or *work* account to do this. If you don't have one, you can [sign up for a trial of Microsoft Office 365 E3 or higher](https://www.microsoft.com/microsoft-365/business/compare-more-office-365-for-business-plans).
+> **Note**: You'll need a Microsoft Fabric license to complete this exercise. Complete the previous task to proceed further.
 
 ## Create a workspace
 
@@ -36,7 +30,7 @@ Now that you have a workspace, it's time to switch to the *Data science* experie
 
 
 1. Return to the web browser tab containing your lakehouse, and in the **...** menu for the **Files** node in the **Lake view** pane, select **Upload** and **Upload files**, and then upload the **churn.csv** file from your local computer (or lab VM if applicable) to the lakehouse.
-6. After the files have been uploaded, expand **Files** and verify that the CSV file have been uploaded.
+1. After the files have been uploaded, expand **Files** and verify that the CSV file have been uploaded.
 
 ## Create a notebook
 
