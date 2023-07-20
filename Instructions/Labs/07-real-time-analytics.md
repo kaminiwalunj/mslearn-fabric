@@ -4,7 +4,7 @@ Microsoft Fabric provides a runtime that you can use to store and query data by 
 
 This lab takes approximately **30** minutes to complete.
 
-Note: You'll need a Microsoft Fabric license to complete this exercise. Complete the previous task to proceed further.
+> **Note**: You'll need a Microsoft Fabric license to complete this exercise. Complete the previous task to proceed further.
 
 ## Create a workspace
 
