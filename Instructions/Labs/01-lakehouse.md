@@ -20,15 +20,23 @@ Before working with data in Fabric, create a workspace with the Fabric trial ena
 
    * **Username/Email**:  <inject key="AzureAdUserEmail"></inject>
 
-2. From the Microsoft Fabric home page, select **PowerBI** 
+   ![](./Images/fabric-submit.png)
+
+2. From the Microsoft Fabric home page, select **PowerBI**
+
+   ![](./Images/fabric-pbi.png)
        
 3. In the menu bar on the left, select **Workspaces** (the icon looks similar to &#128455;). Select **+New Workspace**
 
-4. Create a new workspace with a name of your choice, select a licensing mode that includes Fabric capacity (*Trial*, *Premium*, or *Fabric*) and click on **Apply**
+   ![](./Images/fabric-ws.png)
+
+4. Create a new workspace with a name of your choice, select a licensing mode that includes Fabric capacity (*Trial*, *Premium*, or *Fabric*), and click on **Apply**
+
+   ![](./Images/new-ws.png)
 
 5. When your new workspace opens, it should be empty.
 
-    ![Screenshot of an empty workspace in Power BI.](./Images/new-workspace.png)
+   ![Screenshot of an empty workspace in Power BI.](./Images/new-workspace-u.png)
 
 ## Create a lakehouse
 
@@ -36,34 +44,51 @@ Now that you have a workspace, it's time to switch to the *Data engineering* exp
 
 1. At the bottom left of the Power BI portal, switch to the **Data Engineering** experience.
 
-    The data engineering home page includes tiles to create commonly used data engineering assets.
+   The data engineering home page includes tiles to create commonly used data engineering assets.
 
-2. In the **Data engineering** home page, create a new **Lakehouse** with a name of your choice.
+   ![](./Images/data-engineering.png)
 
-    After a minute or so, a new lakehouse will be created:
+2. In the **Data engineering** home page, Select **Lakehouse(Preview)**
 
-    ![Screenshot of a new lakehouse.](./Images/new-lakehouse.png)
+   ![](./Images/lakehouse-preview.png)
 
-3. View the new lakehouse, and note that the **Lakehouse explorer** pane on the left enables you to browse tables and files in the lakehouse:
+3. Create a new **Lakehouse** with a name of your choice. 
+
+   ![](./Images/new-lakehouse.png)
+
+4. After a minute or so, a new lakehouse will be created:
+
+   ![Screenshot of a new lakehouse.](./Images/new-lakehouse.png)
+
+5. View the new lakehouse, and note that the **Lakehouse explorer** pane on the left enables you to browse tables and files in the lakehouse:
     - The **Tables** folder contains tables that you can query using SQL semantics. Tables in a Microsoft Fabric lakehouse are based on the open source *Delta Lake* file format, commonly used in Apache Spark.
     - The **Files** folder contains data files in the OneLake storage for the lakehouse that aren't associated with managed delta tables. You can also create *shortcuts* in this folder to reference data that is stored externally.
 
     Currently, there are no tables or files in the lakehouse.
 
+   ![](./Images/lakehouse-explorer.png)
+   
 ## Upload a file
 
 Fabric provides multiple ways to load data into the lakehouse, including built-in support for pipelines that copy data external sources and data flows (Gen 2) that you can define using visual tools based on Power Query. However one of the simplest ways to ingest small amounts of data is to upload files or folders from your local computer (or lab VM if applicable).
 
 1. Download the **sales.csv** file from [https://raw.githubusercontent.com/MicrosoftLearning/dp-data/main/sales.csv](https://raw.githubusercontent.com/MicrosoftLearning/dp-data/main/sales.csv), saving it as **sales.csv** on your local computer (or lab VM if applicable).
-   > **Note**: To download the file, open a new tab in the browser and paste in the URL.
-   > Right click anywhere on the page containing the data and select **Save as** to save the page as a CSV file.
+   > **Note**: To download the file, open a new tab in the browser and paste into the URL.
+   > Right-click anywhere on the page containing the data and select **Save as** to save the page as a CSV file.
+
 2. Return to the web browser tab containing your lakehouse, and in the **...** menu for the **Files** folder in the **Lakehouse explorer** pane, select **New subfolder**, and create a subfolder named **data**.
-3. In the **...** menu for the new **data** folder, select **Upload** and **Upload file**, and then upload the **sales.csv** file from your local computer (or lab VM if applicable).
-4. After the file has been uploaded, select the **Files/data** folder and verify that the **sales.csv** file has been uploaded, as shown here:
+
+   ![](./Images/subfolder.png)
+
+4. In the **...** menu for the new **data** folder, select **Upload** and **Upload files**, and then upload the **sales.csv** file from your local computer (or lab VM if applicable).
+
+   ![](./Images/lab1-uploadfiles.png)
+   
+5. After the file has been uploaded, select the **Files/data** folder and verify that the **sales.csv** file has been uploaded, as shown here:
 
     ![Screenshot of uploaded sales.csv file in a lakehouse.](./Images/uploaded-sales-file.png)
 
-5. Select the **sales.csv** file to see a preview of its contents.
+6. Select the **sales.csv** file to see a preview of its contents.
 
 ## Explore shortcuts
 
