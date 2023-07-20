@@ -1,8 +1,4 @@
----
-lab:
-    title: 'Use delta tables in Apache Spark'
-    module: 'Work with Delta Lake tables in Microsoft Fabric'
----
+# Lab : Work with Delta Lake tables in Microsoft Fabric
 
 # Use delta tables in Apache Spark
 
@@ -10,7 +6,7 @@ Tables in a Microsoft Fabric lakehouse are based on the open source *Delta Lake*
 
 This exercise should take approximately **40** minutes to complete
 
-> **Note**: You'll need a Microsoft Fabric license to complete this exercise. See [Getting started with Fabric](https://learn.microsoft.com/fabric/get-started/fabric-trial) for details of how to enable a free Fabric trial license. You will need a Microsoft *school* or *work* account to do this. If you don't have one, you can [sign up for a trial of Microsoft Office 365 E3 or higher](https://www.microsoft.com/microsoft-365/business/compare-more-office-365-for-business-plans).
+> **Note**: You'll need a Microsoft Fabric license to complete this exercise. Complete the previous task to proceed further.
 
 ## Create a workspace
 
