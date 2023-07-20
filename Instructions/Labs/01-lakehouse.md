@@ -23,7 +23,9 @@ Before working with data in Fabric, create a workspace with the Fabric trial ena
 2. From the Microsoft Fabric home page, select **PowerBI** 
        
 3. In the menu bar on the left, select **Workspaces** (the icon looks similar to &#128455;). Select **+New Workspace**
-4. Create a new workspace with a name of your choice, selecting a licensing mode that includes Fabric capacity (*Trial*, *Premium*, or *Fabric*).
+
+4. Create a new workspace with a name of your choice, select a licensing mode that includes Fabric capacity (*Trial*, *Premium*, or *Fabric*) and click on **Apply**
+
 5. When your new workspace opens, it should be empty.
 
     ![Screenshot of an empty workspace in Power BI.](./Images/new-workspace.png)
