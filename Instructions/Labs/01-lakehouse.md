@@ -57,9 +57,7 @@ Now that you have a workspace, it's time to switch to the *Data engineering* exp
 
    ![](./Images/new-lakehouse.png)
 
-4. After a minute or so, a new lakehouse will be created:
-
-   ![Screenshot of a new lakehouse.](./Images/new-lakehouse.png)
+4. After a minute or so, a new lakehouse will be created
 
 5. View the new lakehouse, and note that the **Lakehouse explorer** pane on the left enables you to browse tables and files in the lakehouse:
     - The **Tables** folder contains tables that you can query using SQL semantics. Tables in a Microsoft Fabric lakehouse are based on the open source *Delta Lake* file format, commonly used in Apache Spark.
