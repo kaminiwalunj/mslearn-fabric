@@ -1,8 +1,6 @@
----
-lab:
-    title: 'Create a Microsoft Fabric Lakehouse'
-    module: 'Get started with lakehouses in Microsoft Fabric'
----
+# Lab: Create a Microsoft Fabric Lakehouse
+
+## Module: Get started with lakehouses in Microsoft Fabric
 
 # Create a Lakehouse
 
@@ -12,16 +10,21 @@ In Microsoft Fabric, a lakehouse provides highly scalable file storage in a *One
 
 This lab takes approximately **30** minutes to complete.
 
-> **Note**: You'll need a Microsoft Fabric license to complete this exercise. See [Getting started with Fabric](https://learn.microsoft.com/fabric/get-started/fabric-trial) for details of how to enable a free Fabric trial license. You will need a Microsoft *school* or *work* account to do this. If you don't have one, you can [sign up for a trial of Microsoft Office 365 E3 or higher](https://www.microsoft.com/microsoft-365/business/compare-more-office-365-for-business-plans).
+> **Note**: You'll need a Microsoft Fabric license to complete this exercise. Complete the previous task to proceed further.
 
 ## Create a workspace
 
 Before working with data in Fabric, create a workspace with the Fabric trial enabled.
 
-1. Sign into [Microsoft Fabric](https://app.fabric.microsoft.com) at `https://app.fabric.microsoft.com` and select **Power BI**.
-2. In the menu bar on the left, select **Workspaces** (the icon looks similar to &#128455;).
-3. Create a new workspace with a name of your choice, selecting a licensing mode that includes Fabric capacity (*Trial*, *Premium*, or *Fabric*).
-4. When your new workspace opens, it should be empty.
+1. Sign in to [Microsoft Fabric](https://app.fabric.microsoft.com) at `https://app.fabric.microsoft.com`, enter the following email/username, and then click on **Submit**.  
+
+   * **Username/Email**:  <inject key="AzureAdUserEmail"></inject>
+
+2. From the Microsoft Fabric home page, select **PowerBI** 
+       
+3. In the menu bar on the left, select **Workspaces** (the icon looks similar to &#128455;).
+4. Create a new workspace with a name of your choice, selecting a licensing mode that includes Fabric capacity (*Trial*, *Premium*, or *Fabric*).
+5. When your new workspace opens, it should be empty.
 
     ![Screenshot of an empty workspace in Power BI.](./Images/new-workspace.png)
 
