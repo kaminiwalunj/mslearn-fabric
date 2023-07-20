@@ -1,8 +1,4 @@
----
-lab:
-    title: 'Create and use Dataflows (Gen2) in Microsoft Fabric'
-    module: 'Ingest Data with Dataflows Gen2 in Microsoft Fabric'
----
+# Lab : Ingest Data with Dataflows Gen2 in Microsoft Fabric
 
 # Create a Dataflow (Gen2) in Microsoft Fabric
 
@@ -10,7 +6,7 @@ In Microsoft Fabric, Dataflows (Gen2) connect to various data sources and perfor
 
 This lab is designed to introduce the different elements of Dataflows (Gen2), and not create a complex solution that may exist in an enterprise. This lab takes **approximately 30 minutes** to complete.
 
-> **Note**: You'll need a Microsoft Fabric license to complete this exercise. See [Getting started with Fabric](https://learn.microsoft.com/fabric/get-started/fabric-trial) for details of how to enable a free Fabric trial license. You will need a Microsoft *school* or *work* account to do this. If you don't have one, you can [sign up for a trial of Microsoft Office 365 E3 or higher](https://www.microsoft.com/microsoft-365/business/compare-more-office-365-for-business-plans).
+> **Note**: You'll need a Microsoft Fabric license to complete this exercise. Complete the previous task to proceed further.
 
 ## Create a workspace
 
