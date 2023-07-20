@@ -1,4 +1,4 @@
-# Lab : Use Data Factory pipelines in Microsoft Fabric
+# Lab: Use Data Factory pipelines in Microsoft Fabric
 
 # Ingest data with a pipeline in Microsoft Fabric
 
@@ -8,6 +8,7 @@ Fabric also supports Apache Spark, enabling you to write and run code to process
 
 This lab will take approximately **60** minutes to complete.
 
+> **Note**: You'll need a Microsoft Fabric license to complete this exercise. Complete the previous task to proceed further.
 
 ## Create a workspace
 
