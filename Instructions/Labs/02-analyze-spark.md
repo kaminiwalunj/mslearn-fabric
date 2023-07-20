@@ -156,10 +156,10 @@ Now you're ready to run code that loads the data into a *dataframe*. Dataframes 
 
 10. The dataframe includes only the data from the **2019.csv** file. Modify the code so that the file path uses a \* wildcard to read the sales order data from all of the files in the **orders** folder:
 
-    ```python
-   from pyspark.sql.types import *
-
-   orderSchema = StructType([
+    ```
+    python
+    from pyspark.sql.types import *
+    orderSchema = StructType([
        StructField("SalesOrderNumber", StringType()),
        StructField("SalesOrderLineNumber", IntegerType()),
        StructField("OrderDate", DateType()),
@@ -170,9 +170,8 @@ Now you're ready to run code that loads the data into a *dataframe*. Dataframes 
        StructField("UnitPrice", FloatType()),
        StructField("Tax", FloatType())
        ])
-
-   df = spark.read.format("csv").schema(orderSchema).load("Files/orders/*.csv")
-   display(df)
+    df = spark.read.format("csv").schema(orderSchema).load("Files/orders/*.csv")
+    display(df)
     ```
 
 11. Run the modified code cell and review the output, which should now include sales for 2019, 2020, and 2021.
