@@ -1,8 +1,4 @@
----
-lab:
-    title: 'Analyze data with Apache Spark'
-    module: 'Use Apache Spark to work with files in a lakehouse'
----
+# Lab : Use Apache Spark in Microsoft Fabric
 
 # Analyze data with Apache Spark
 
