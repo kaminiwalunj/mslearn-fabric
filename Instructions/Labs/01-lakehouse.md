@@ -118,11 +118,11 @@ The sales data you uploaded is in a file, which data analysts and engineers can 
    
 4. In the **Lakehouse explorer** pane, select the **sales** table that has been created to view the data.
 
-    ![Screenshot of a table preview.](./Images/table-preview.png)
+    ![Screenshot of a table preview.](./Images/table-preview-u.png)
 
 5. In the **...** menu for the **sales** table, select **View files** to see the underlying files for this table
 
-    ![Screenshot of a table preview.](./Images/delta-table-files.png)
+    ![Screenshot of a table preview.](./Images/delta-table-files-u.png)
 
     Files for a delta table are stored in *Parquet* format, and include a subfolder named **_delta_log** in which details of transactions applied to the table are logged.
 
