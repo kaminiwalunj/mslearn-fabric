@@ -178,13 +178,15 @@ The tables in your lakehouse are automatically added to a default dataset that d
 
 1. At the bottom of the SQL Endpoint page, select the **Model** tab. The data model schema for the dataset is shown.
 
-    ![Screenshot of a data model.](./Images/data-model.png)
+    ![Screenshot of a data model.](./Images/data-model-u.png)
 
     > **Note**: In this exercise, the data model consists of a single table. In a real-world scenario, you would likely create multiple tables in your lakehouse, each of which would be included in the model. You could then define relationships between these tables in the model.
 
 2. In the menu ribbon, select the **Reporting** tab. Then select **New report**. A new browser tab opens in which you can design your report.
 
-    ![Screenshot of the report designer.](./Images/report-designer.png)
+   ![Screenshot of the new report .](./Images/new-report.png)
+
+   ![Screenshot of the report designer.](./Images/report-designer.png)
 
 3. In the **Data** pane on the right, expand the **sales** table. Then select the following fields:
     - **Item**
@@ -194,12 +196,12 @@ The tables in your lakehouse are automatically added to a default dataset that d
 
     ![Screenshot of a report containing a table.](./Images/table-visualization.png)
 
-4. Hide the **Data** and **Filters** panes to create more space. Then ensure the table visualization is selected and in the **Visualizations** pane, change the visualization to a **Clustered bar chart** and resize it as shown here.
+5. Hide the **Data** and **Filters** panes to create more space. Then ensure the table visualization is selected and in the **Visualizations** pane, change the visualization to a **Clustered bar chart** and resize it as shown here.
 
     ![Screenshot of a report containing a clustered bar chart.](./Images/clustered-bar-chart.png)
 
-5. On the **File** menu, select **Save**. Then save the report as **Item Sales Report** in the workspace you created previously.
-6. Close the browser tab containing the report to return to the SQL endpoint for your lakehouse. Then, in the hub menu bar on the left, select your workspace to verify that it contains the following items:
+6. On the **File** menu, select **Save**. Then save the report as **Item Sales Report** in the workspace you created previously.
+7. Close the browser tab containing the report to return to the SQL endpoint for your lakehouse. Then, in the hub menu bar on the left, select your workspace to verify that it contains the following items:
     - Your lakehouse.
     - The SQL endpoint for your lakehouse.
     - A default dataset for the tables in your lakehouse.
