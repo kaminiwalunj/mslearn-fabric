@@ -1,8 +1,4 @@
----
-lab:
-    title: 'Analyze data in a data warehouse'
-    module: 'Get started with data warehouses in Microsoft Fabric'
----
+# Lab :Get started with data warehouses in Microsoft Fabric
 
 # Analyze data in a data warehouse
 
@@ -10,7 +6,7 @@ In Microsoft Fabric, a data warehouse provides a relational database for large-s
 
 This lab will take approximately **30** minutes to complete.
 
-> **Note**: You'll need a Microsoft Fabric license to complete this exercise. See [Getting started with Fabric](https://learn.microsoft.com/fabric/get-started/fabric-trial) for details of how to enable a free Fabric trial license. You will need a Microsoft *school* or *work* account to do this. If you don't have one, you can [sign up for a trial of Microsoft Office 365 E3 or higher](https://www.microsoft.com/microsoft-365/business/compare-more-office-365-for-business-plans).
+> **Note**: You'll need a Microsoft Fabric license to complete this exercise. Complete the previous task to proceed further.
 
 ## Create a workspace
 
