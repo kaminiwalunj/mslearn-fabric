@@ -86,7 +86,7 @@ Fabric provides multiple ways to load data into the lakehouse, including built-i
    
 5. After the file has been uploaded, select the **Files/data** folder and verify that the **sales.csv** file has been uploaded, as shown here:
 
-    ![Screenshot of uploaded sales.csv file in a lakehouse.](./Images/uploaded-sales-file.png)
+    ![Screenshot of uploaded sales.csv file in a lakehouse.](./Images/sales-file.png)
 
 6. Select the **sales.csv** file to see a preview of its contents.
 
