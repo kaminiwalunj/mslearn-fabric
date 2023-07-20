@@ -1,16 +1,10 @@
----
-lab:
-    title: 'Get started with Real-Time Analytics in Microsoft Fabric'
-    module: 'Get started with real-time analytics in Microsoft Fabric'
----
-
-# Get started with Real-Time Analytics in Microsoft Fabric
+# Lab: Get started with Real-Time Analytics in Microsoft Fabric
 
 Microsoft Fabric provides a runtime that you can use to store and query data by using Kusto Query Language (KQL). Kusto is optimized for data that includes a time series component, such as real-time data from log files or IoT devices.
 
 This lab takes approximately **30** minutes to complete.
 
-> **Note**: You'll need a Microsoft Fabric license to complete this exercise. See [Getting started with Fabric](https://learn.microsoft.com/fabric/get-started/fabric-trial) for details of how to enable a free Fabric trial license. You will need a Microsoft *school* or *work* account to do this. If you don't have one, you can [sign up for a trial of Microsoft Office 365 E3 or higher](https://www.microsoft.com/microsoft-365/business/compare-more-office-365-for-business-plans).
+Note: You'll need a Microsoft Fabric license to complete this exercise. Complete the previous task to proceed further.
 
 ## Create a workspace
 
