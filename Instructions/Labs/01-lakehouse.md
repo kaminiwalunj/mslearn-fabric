@@ -94,9 +94,11 @@ Fabric provides multiple ways to load data into the lakehouse, including built-i
 In many scenarios, the data you need to work with in your lakehouse may be stored in some other location. While there are many ways to ingest data into the OneLake storage for your lakehouse, another option is to instead create a *shortcut*. Shortcuts enable you to include externally sourced data in your analytics solution without the overhead and risk of data inconsistency associated with copying it.
 
 1. In the **...** menu for the **Files** folder, select **New shortcut**.
+
    ![](./Images/new-shortcut.png)
 
 2. View the available data source types for shortcuts. Then close the **New shortcut** dialog box without creating a shortcut.
+
    ![](./Images/shortcuts.png)
 
 ## Load file data into a table
@@ -206,7 +208,7 @@ The tables in your lakehouse are automatically added to a default dataset that d
     - A default dataset for the tables in your lakehouse.
     - The **Item Sales Report** report.
 
-  ![Screenshot of a workspace view.](./Images/workspace-view.png)
+   ![Screenshot of a workspace view.](./Images/workspace-view.png)
 
 ## Clean up resources
 
