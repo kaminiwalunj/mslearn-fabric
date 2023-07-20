@@ -186,7 +186,7 @@ The tables in your lakehouse are automatically added to a default dataset that d
 
    ![Screenshot of the new report .](./Images/new-report.png)
 
-   ![Screenshot of the report designer.](./Images/report-designer.png)
+   ![Screenshot of the report designer.](./Images/report-designer-u.png)
 
 3. In the **Data** pane on the right, expand the **sales** table. Then select the following fields:
     - **Item**
