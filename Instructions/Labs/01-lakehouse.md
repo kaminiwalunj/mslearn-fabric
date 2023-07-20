@@ -155,13 +155,13 @@ While many data professionals are familiar with SQL, data analysts with Power BI
 1. On the toolbar, select **New visual query**.
 2. Drag the **sales** table to the new visual query editor pane that opens to create a Power Query as shown here: 
 
-    ![Screenshot of a Visual query.](./Images/visual-query.png)
+    ![Screenshot of a Visual query.](./Images/visual-query-u.png)
 
-3. In the **Manage columns** menu, select **Choose columns**. Then select only the **SalesOrderNumber** and **SalesOrderLineNumber** columns.
+3. In the **Manage columns** menu, select **Choose columns**. Then select only the **SalesOrderNumber** and **SalesOrderLineNumber** columns and click **OK**.
 
-    ![Screenshot of a Choose columns dialog box.](./Images/choose-columns.png)
+    ![Screenshot of a Choose columns dialog box.](./Images/choose-columns-u.png)
 
-4. in the **Transform** menu, select **Group by**. Then group the data by using the following **Basic** settings:
+4. In the **Transform** menu, select **Group by**. Then group the data by using the following **Basic** settings:
 
     - **Group by**: SalesOrderNumber
     - **New column name**: LineItems
@@ -170,7 +170,7 @@ While many data professionals are familiar with SQL, data analysts with Power BI
 
     When you're done, the results pane under the visual query shows the number of line items for each sales order.
 
-    ![Screenshot of a Visual query with results.](./Images/visual-query-results.png)
+    ![Screenshot of a Visual query with results.](./Images/visual-query-results-u.png)
 
 ## Create a report
 
