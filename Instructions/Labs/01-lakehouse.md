@@ -72,7 +72,7 @@ Fabric provides multiple ways to load data into the lakehouse, including built-i
    > **Note**: To download the file, open a new tab in the browser and paste it into the URL.
    > Right-click anywhere on the page containing the data and select **Save as** to save the page as a CSV file.
 
-  OR If you are using the lab virtual machine (lab VM) provided to you, you can get the file from the **C:\LabFiles** directory.
+   OR If you are using the lab virtual machine (lab VM) provided to you, you can get the file from the **C:\LabFiles** directory.
 
 2. Return to the web browser tab containing your lakehouse, and in the **...** menu for the **Files** folder in the **Lakehouse explorer** pane, select **New subfolder**, and create a subfolder named **data**.
 
