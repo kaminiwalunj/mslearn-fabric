@@ -31,7 +31,7 @@ Now that you have a workspace, it's time to switch to the *Data engineering* exp
 
 3. Download and extract the data files for this exercise from [https://github.com/MicrosoftLearning/dp-data/raw/main/orders.zip](https://github.com/MicrosoftLearning/dp-data/raw/main/orders.zip).
 
-  OR If you are using the lab virtual machine (lab VM) provided to you, you can get the files from the **C:\LabFiles** directory.
+   OR If you are using the lab virtual machine (lab VM) provided to you, you can get the files from the **C:\LabFiles** directory.
 
 4. After extracting the zipped archive, verify that you have a folder named **orders** that contains CSV files named **2019.csv**, **2020.csv**, and **2021.csv**.
 5. Return to the web browser tab containing your lakehouse, and in the **...** menu for the **Files** folder in the **Explorer** pane, select **Upload** and **Upload folder**, and then upload the **orders** folder from your local computer (or lab VM if applicable) to the lakehouse.
