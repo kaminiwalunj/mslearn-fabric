@@ -69,8 +69,10 @@ Now that you have a workspace, it's time to switch to the *Data engineering* exp
 Fabric provides multiple ways to load data into the lakehouse, including built-in support for pipelines that copy data external sources and data flows (Gen 2) that you can define using visual tools based on Power Query. However one of the simplest ways to ingest small amounts of data is to upload files or folders from your local computer (or lab VM if applicable).
 
 1. Download the **sales.csv** file from [https://raw.githubusercontent.com/MicrosoftLearning/dp-data/main/sales.csv](https://raw.githubusercontent.com/MicrosoftLearning/dp-data/main/sales.csv), saving it as **sales.csv** on your local computer (or lab VM if applicable).
-   > **Note**: To download the file, open a new tab in the browser and paste into the URL.
+   > **Note**: To download the file, open a new tab in the browser and paste it into the URL.
    > Right-click anywhere on the page containing the data and select **Save as** to save the page as a CSV file.
+
+  OR If you are using the lab virtual machine (lab VM) provided to you, you can get the file from the **C:\LabFiles** directory.
 
 2. Return to the web browser tab containing your lakehouse, and in the **...** menu for the **Files** folder in the **Lakehouse explorer** pane, select **New subfolder**, and create a subfolder named **data**.
 
