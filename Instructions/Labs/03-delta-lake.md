@@ -31,10 +31,12 @@ Now that you have a workspace, it's time to switch to the *Data engineering* exp
 
 3. Download the data file for this exercise from [https://github.com/MicrosoftLearning/dp-data/raw/main/products.csv](https://github.com/MicrosoftLearning/dp-data/raw/main/products.csv), saving it as **products.csv** on your local computer (or lab VM if applicable).
 
+   OR If you are using the lab virtual machine (lab VM) provided to you, you can get the file from the **C:\LabFiles** directory.
+
 4. Return to the web browser tab containing your lakehouse, and in the **...** menu for the **Files** folder in the **Explorer** pane, select **New subfolder** and create a folder named **products**.
 
 5. In the **...** menu for the **products** folder, select **Upload** and **Upload files**, and then upload the **products.csv** file from your local computer (or lab VM if applicable) to the lakehouse.
-6. After the file has been uploaded, select the **products** folder; and verify that the **products.csv** file has been uploaded, as shown here:
+7. After the file has been uploaded, select the **products** folder; and verify that the **products.csv** file has been uploaded, as shown here:
 
     ![Screenshot of uploaded products.csv file in a lakehouse.](./Images/products-file.png)
 
