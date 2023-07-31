@@ -11,8 +11,11 @@ This lab takes approximately **30** minutes to complete.
 Before working with data in Fabric, create a workspace with the Fabric trial enabled.
 
 1. Sign into [Microsoft Fabric](https://app.fabric.microsoft.com) at `https://app.fabric.microsoft.com` and select **Power BI**.
+
 2. In the menu bar on the left, select **Workspaces** (the icon looks similar to &#128455;).
-3. Create a new workspace with a name of your choice, selecting a licensing mode that includes Fabric capacity (*Trial*, *Premium*, or *Fabric*).
+
+3. Create a new workspace with a name as **dp_fabric-<inject key="Deployment ID" enableCopy="false"/>**, selecting a licensing mode that includes Fabric capacity (*Trial*, *Premium*, or *Fabric*).
+
 4. When your new workspace opens, it should be empty, as shown here:
 
     ![Screenshot of an empty workspace in Power BI.](./Images/new-workspace.png)
@@ -37,8 +40,14 @@ Kusto query language (KQL) is used to query static or streaming data in a table 
 
     ![Screenshot of selected Fabric Experience home with RTA selected](./Images/fabric-experience-home.png)
 
-2. On the **Home** page for the **Real-Time Analytics** experience, select **KQL database** and create a new database with a name of your choice.
-3. When the new database has been created, select the option to get data from **Local File**. Then use the wizard to import the data into a new table by selecting the following options:
+2. On the **Home** page for the **Real-Time Analytics** experience, select **KQL database** and create a new database with a name as **kql-database**.
+
+    ![Screenshot of selected Fabric Experience home with RTA selected](./Images/KQL-database.png)
+
+3. When the new database has been created, select the option to Get Data from **Local File**. Then use the wizard to import the data into a new table by selecting the following options:
+
+    ![Screenshot of selected Fabric Experience home with RTA selected](./Images/select-data.png)
+    
     - **Destination**:
         - **Database**: *The database you created is already selected*
         - **Table**: *Create a new table named* **sales**.
@@ -92,6 +101,7 @@ Now that you have a table of data in your database, you can use KQL code to quer
     ```
 
 8. Run the query and review the results, which should contain the total net revenue for each product between January 1st and December 31st 2020 in ascending order of product name.
+
 9. Select **Save as KQL queryset** and save the query as **Revenue by Product**.
 
 ## Create a Power BI report from a KQL Queryset
@@ -99,11 +109,14 @@ Now that you have a table of data in your database, you can use KQL code to quer
 You can use your KQL Queryset as the basis for a Power BI report.
 
 1. In the query workbench editor for your query set, run the query and wait for the results.
+
 2. Select **Build Power BI report** and wait for the report editor to open.
+
 3. In the report editor, in the **Data** pane, expand **Kusto Query Result** and select the **Item** and **TotalRevenue** fields.
+
 4. On the report design canvas, select the table visualization that has been added and then in the **Visualizations** pane, select **Clustered bar chart**.
 
-    ![Screenshot of a report from a KQL query.](./Images/kql-report.png)
+    ![Screenshot of a report from a KQL query.](./Images/powerbireport.png)
 
 5. In the **Power BI** window, in the **File** menu, select **Save**. Then save the report as **Revenue by Item.pbix** in the workspace where your lakehouse and KQL database are defined using a **Non-Business** sensitivity label.
 6. Close the **Power BI** window, and in the bar on the left, select the icon for your workspace.
