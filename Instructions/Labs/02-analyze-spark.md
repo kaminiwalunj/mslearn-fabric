@@ -20,7 +20,7 @@ Before working with data in Fabric, create a workspace with the Fabric trial ena
 
    ![](./Images/workspace-1.png)
 
-3. Create a new workspace with a name dp_fabric-<inject key="Deployment ID" enableCopy="false"/>, selecting a licensing mode that includes Fabric capacity (*Trial*, *Premium*, or *Fabric*).
+3. Create a new workspace with a name **dp_fabric-<inject key="Deployment ID" enableCopy="false"/>**, selecting a licensing mode that includes Fabric capacity (*Trial*, *Premium*, or *Fabric*).
 4. When your new workspace opens, it should be empty, as shown here:
 
     ![Screenshot of an empty workspace in Power BI.](./Images/new-workspace-2.png)
