@@ -13,19 +13,28 @@ This exercise should take approximately **40** minutes to complete
 Before working with data in Fabric, create a workspace with the Fabric trial enabled.
 
 1. Sign into [Microsoft Fabric](https://app.fabric.microsoft.com) at `https://app.fabric.microsoft.com` and select **Power BI**.
+
+   ![](./Images/power-bi.png)
+
 2. In the menu bar on the left, select **Workspaces** (the icon looks similar to &#128455;).
-3. Create a new workspace with a name of your choice, selecting a licensing mode that includes Fabric capacity (*Trial*, *Premium*, or *Fabric*).
+
+   ![](./Images/workspace-1.png)
+
+3. Create a new workspace with a name **dp_fabric-<inject key="Deployment ID" enableCopy="false"/>**, selecting a licensing mode that includes Fabric capacity (*Trial*, *Premium*, or *Fabric*).
+
 4. When your new workspace opens, it should be empty, as shown here:
 
-    ![Screenshot of an empty workspace in Power BI.](./Images/new-workspace.png)
+    ![Screenshot of an empty workspace in Power BI.](./Images/new-workspace-2.png)
 
 ## Create a lakehouse and upload data
 
 Now that you have a workspace, it's time to switch to the *Data engineering* experience in the portal and create a data lakehouse for the data you're going to analyze.
 
-1. At the bottom left of the Power BI portal, select the **Power BI** icon and switch to the **Data Engineering** experience.
+1. At the bottom left of the Power BI portal, select the **Power BI (1)** icon and switch to the **Data Engineering (2)** experience.
 
-2. In the **Synapse Data Engineering** home page, create a new **Lakehouse** with a name of your choice.
+   ![](./Images/data-engineer.png)
+
+2. In the **Synapse Data Engineering** home page, create a new **Lakehouse** with a name **fabric_lakehouse**.
 
     After a minute or so, a new empty lakehouse. You need to ingest some data into the data lakehouse for analysis. There are multiple ways to do this, but in this exercise you'll simply download a text file to your local computer (or lab VM if applicable) and then upload it to your lakehouse.
 
@@ -36,9 +45,10 @@ Now that you have a workspace, it's time to switch to the *Data engineering* exp
 4. Return to the web browser tab containing your lakehouse, and in the **...** menu for the **Files** folder in the **Explorer** pane, select **New subfolder** and create a folder named **products**.
 
 5. In the **...** menu for the **products** folder, select **Upload** and **Upload files**, and then upload the **products.csv** file from your local computer (or lab VM if applicable) to the lakehouse.
-7. After the file has been uploaded, select the **products** folder; and verify that the **products.csv** file has been uploaded, as shown here:
 
-    ![Screenshot of uploaded products.csv file in a lakehouse.](./Images/products-file.png)
+6. After the file has been uploaded, select the **products** folder; and verify that the **products.csv** file has been uploaded, as shown here:
+
+    ![Screenshot of uploaded products.csv file in a lakehouse.](./Images/products-file-1.png)
 
 ## Explore data in a dataframe
 
@@ -47,9 +57,10 @@ Now that you have a workspace, it's time to switch to the *Data engineering* exp
     After a few seconds, a new notebook containing a single *cell* will open. Notebooks are made up of one or more cells that can contain *code* or *markdown* (formatted text).
 
 2. Select the existing cell in the notebook, which contains some simple code, and then use its **&#128465;** (*Delete*) icon at its top-right to remove it - you will not need this code.
+
 3. In the **Lakehouse explorer** pane on the left, expand **Files** and select **products** to reveal a new pane showing the **products.csv** file you uploaded previously:
 
-    ![Screenshot of a notebook with a Files pane.](./Images/notebook-products.png)
+    ![Screenshot of a notebook with a Files pane.](./Images/notebook-products-1.png)
 
 4. In the **...** menu for **products.csv**, select **Load data** > **Spark**. A new code cell containing the following code should be added to the notebook:
 
