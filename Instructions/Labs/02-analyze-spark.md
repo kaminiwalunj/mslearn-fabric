@@ -20,10 +20,10 @@ Before working with data in Fabric, create a workspace with the Fabric trial ena
 
    ![](./Images/workspace-1.png)
 
-3. Create a new workspace with a name of your choice, selecting a licensing mode that includes Fabric capacity (*Trial*, *Premium*, or *Fabric*).
+3. Create a new workspace with a name dp_fabric-<inject key="Deployment ID" enableCopy="false"/>, selecting a licensing mode that includes Fabric capacity (*Trial*, *Premium*, or *Fabric*).
 4. When your new workspace opens, it should be empty, as shown here:
 
-    ![Screenshot of an empty workspace in Power BI.](./Images/new-workspace-1.png)
+    ![Screenshot of an empty workspace in Power BI.](./Images/new-workspace-2.png)
 
 ## Create a lakehouse and upload files
 
@@ -33,7 +33,7 @@ Now that you have a workspace, it's time to switch to the *Data engineering* exp
 
    ![](./Images/data-engineer.png)
 
-2. In the **Synapse Data Engineering** home page, create a new **Lakehouse** with a name of your choice.
+2. In the **Synapse Data Engineering** home page, create a new **Lakehouse** with a name **fabric_lakehouse**.
 
     After a minute or so, a new empty lakehouse will be created. You need to ingest some data into the data lakehouse for analysis. There are multiple ways to do this, but in this exercise you'll simply download and extract a folder of text files your local computer (or lab VM if applicable) and then upload them to your lakehouse.
 
