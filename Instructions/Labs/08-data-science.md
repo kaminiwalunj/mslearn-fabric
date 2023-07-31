@@ -30,8 +30,8 @@ Now that you have a workspace, it's time to switch to the *Data science* experie
 
    OR If you are using the lab virtual machine (lab VM) provided to you, you can get the file from the **C:\LabFiles** directory.
 
-
 1. Return to the web browser tab containing your lakehouse, and in the **...** menu for the **Files** node in the **Lake view** pane, select **Upload** and **Upload files**, and then upload the **churn.csv** file from your local computer (or lab VM if applicable) to the lakehouse.
+
 1. After the files have been uploaded, expand **Files** and verify that the CSV file have been uploaded.
 
 ## Create a notebook
