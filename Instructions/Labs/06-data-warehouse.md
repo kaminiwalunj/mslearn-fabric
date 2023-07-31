@@ -16,7 +16,7 @@ Before working with data in Fabric, create a workspace with the Fabric trial ena
 
 2. In the menu bar on the left, select **Workspaces** (the icon looks similar to &#128455;).
 
-3. Create a new workspace with a name of your choice, selecting a licensing mode that includes Fabric capacity (*Trial*, *Premium*, or *Fabric*).
+3. Create a new workspace with a name as **dp_fabric-<inject key="Deployment ID" enableCopy="false"/>**, selecting a licensing mode that includes Fabric capacity (*Trial*, *Premium*, or *Fabric*).
 
 4. When your new workspace opens, it should be empty, as shown here:
 
@@ -30,9 +30,9 @@ Now that you have a workspace, it's time to switch to the *Data Warehouse* exper
 
     The Data Warehouse home page includes a shortcut to create a new warehouse:
 
-    > **Note**: If you don't see the an icon in the bottom left corner, Fabric isn't enabled for your tenant. Fabric is enabled in the admin portal for tenants that have a Power BI Premium subscription.
+    > **Note**: If you don't see the icon in the bottom left corner, Fabric isn't enabled for your tenant. Fabric is enabled in the admin portal for tenants that have a Power BI Premium subscription.
 
-2. In the **Data Warehouse** home page, create a new **Warehouse** with a name of your choice.
+2. In the **Data Warehouse** home page, create a new **Warehouse** with a name it as **myDataWarehouse** and click on **Create**.
 
     After a minute or so, a new warehouse will be created:
 
