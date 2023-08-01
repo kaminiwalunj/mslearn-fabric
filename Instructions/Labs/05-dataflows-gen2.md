@@ -29,7 +29,7 @@ Now that you have a workspace, it's time to switch to the **Data Engineering** e
 
     After a minute or so, a new empty lakehouse will be created.
 
- ![New lakehouse.](./Images/new-lakehouse.png)
+   ![New lakehouse.](./Images/new-lakehouse.png)
 
 ## Create a Dataflow (Gen2) to ingest data
 
