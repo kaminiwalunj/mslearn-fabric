@@ -37,7 +37,7 @@ Now that you have a lakehouse, you need to ingest some data into it. One way to 
 
 1. In the home page for your workspace, select **New Dataflow Gen2**. After a few seconds, the Power Query editor for your new dataflow opens as shown here.
 
- ![New dataflow.](./Images/new-dataflow.png)
+   ![New dataflow.](./Images/m6-fabric-2.png)
 
 2. Select **Import from a Text/CSV file**, and create a new data source with the following settings:
  - **Link to file**: *Selected*
@@ -48,15 +48,15 @@ Now that you have a lakehouse, you need to ingest some data into it. One way to 
 
 3. Select **Next** to preview the file data, and then **Create** the data source. The Power Query editor shows the data source and an initial set of query steps to format the data, as shown here:
 
- ![Query in the Power Query editor.](./Images/power-query.png)
+   ![Query in the Power Query editor.](./Images/m6-fabric-3.png)
 
 4. On the toolbar ribbon, select the **Add column** tab. Then select **Custom column** and create a new column named **MonthNo** that contains a number based on the formula `Date.Month([OrderDate])` - as shown here:
 
- ![Custom column in Power Query editor.](./Images/custom-column.png)
+   ![Custom column in Power Query editor.](./Images/custom-column1.png)
 
  Click on **OK**. The step to add the custom column is added to the query and the resulting column is displayed in the data pane:
 
- ![Query with a custom column step.](./Images/custom-column-added.png)
+   ![Query with a custom column step.](./Images/custom-column-added1.png)
 
 > **Tip:** In the Query Settings pane on the right side, notice the **Applied Steps** include each transformation step. At the bottom, you can also toggle the **Diagram flow** button to turn on the Visual Diagram of the steps.
 >
@@ -70,30 +70,30 @@ Now that you have a lakehouse, you need to ingest some data into it. One way to 
 
 2. In the **Connect to data destination** dialog box, edit the connection and sign in using your Power BI organizational account to set the identity that the dataflow uses to access the lakehouse.
 
- ![Data destination configuration page.](./Images/dataflow-connection.png)
+   ![Data destination configuration page.](./Images/dataflow-connection1.png)
 
 3. Select **Next** and in the list of available workspaces, find your workspace and select the lakehouse you created in it at the start of this exercise. Then specify a new table named **orders**:
 
-   ![Data destination configuration page.](./Images/data-destination-target.png)
+   ![Data destination configuration page.](./Images/data-destination-target1.png)
 
    > **Note:** On the **Destination settings** page, notice how OrderDate and MonthNo are not selected in the Column mapping and there is an informational message: *Change to date/time*.
 
-   ![Data destination settings page.](./Images/destination-settings.png)
+    ![Data destination settings page.](./Images/destination-settings1.png)
 
-1. Cancel this action, then go back to OrderDate and MonthNo columns in Power Query online. Right-click on the column header and **Change Type**.
+4. Cancel this action, then go back to OrderDate and MonthNo columns in Power Query online. Right-click on the column header and **Change Type**.
 
     - OrderDate = Date/Time
     - MonthNo = Whole number
 
-1. Now repeat the process outlined earlier to add a lakehouse destination.
+5. Now repeat the process outlined earlier to add a lakehouse destination.
 
-8. On the **Destination settings** page, select **Append**, and then save the settings.  The **Lakehouse** destination is indicated as an icon in the query in the Power Query editor.
+6. On the **Destination settings** page, select **Append**, and then save the settings.  The **Lakehouse** destination is indicated as an icon in the query in the Power Query editor.
 
-   ![Query with a lakehouse destination.](./Images/lakehouse-destination.png)
+   ![Query with a lakehouse destination.](./Images/lakehouse-destination1.png)
 
-9. Select **Publish** to publish the dataflow. Then wait for the **Dataflow 1** dataflow to be created in your workspace.
+7. Select **Publish** to publish the dataflow. Then wait for the **Dataflow 1** dataflow to be created in your workspace.
 
-1. Once published, you can right-click on the dataflow in your workspace, select **Properties**, and rename your dataflow.
+8. Once published, you can right-click on the dataflow in your workspace, select **Properties**, and rename your dataflow.
 
 ## Add a dataflow to a pipeline
 
@@ -103,7 +103,7 @@ You can include a dataflow as an activity in a pipeline. Pipelines are used to o
 
    The pipeline editor opens.
 
-   ![Empty data pipeline.](./Images/new-pipeline.png)
+   ![Empty data pipeline.](./Images/new-pipeline1.png)
 
    > **Tip**: If the Copy Data wizard opens automatically, close it!
 
@@ -111,23 +111,23 @@ You can include a dataflow as an activity in a pipeline. Pipelines are used to o
 
 3. With the new **Dataflow1** activity selected, on the **Settings** tab, in the **Dataflow** drop-down list, select **Dataflow 1** (the data flow you created previously)
 
-   ![Pipeline with a dataflow activity.](./Images/dataflow-activity.png)
+   ![Pipeline with a dataflow activity.](./Images/dataflow-activity1.png)
 
 4. On the **Home** tab, save the pipeline using the **&#128427;** (*Save*) icon.
 5. Use the **&#9655; Run** button to run the pipeline, and wait for it to complete. It may take a few minutes.
 
-   ![Pipeline with a dataflow that has completed successfully.](./Images/dataflow-pipeline-succeeded.png)
+   ![Pipeline with a dataflow that has completed successfully.](./Images/dataflow-pipeline-succeeded1.png)
 
 6. In the menu bar on the left edge, select your lakehouse.
 7. In the **...** menu for **Tables**, select **refresh**. Then expand **Tables** and select the **orders** table, which has been created by your dataflow.
 
-   ![Table loaded by a dataflow.](./Images/loaded-table.png)
+   ![Table loaded by a dataflow.](./Images/loaded-table1.png)
 
 > **Tip**: Use the Power BI Desktop *Dataflows connector* to connect directly to the data transformations done with your dataflow.
 >
 > You can also make additional transformations, publish as a new dataset, and distribute with intended audience for specialized datasets.
 >
->![Power BI data source connectors](Images/pbid-dataflow-connectors.png)
+>![Power BI data source connectors](Images/pbid-dataflow-connectors1.png)
 
 ## Clean up resources
 
