@@ -25,11 +25,11 @@ Now that you have a workspace, it's time to switch to the **Data Engineering** e
 
 1. At the bottom left of the Power BI portal, select the **Power BI** icon and switch to the **Data Engineering** experience.
 
-2. In the **Data engineering** home page, create a new **Lakehouse** with a name of your choice.
+2. In the **Data engineering** home page, create a new **Lakehouse** with a name of **dp_lakehouse**.
 
     After a minute or so, a new empty lakehouse will be created.
 
-   ![New lakehouse.](./Images/new-lakehouse.png)
+   ![New lakehouse.](./Images/m6-fabric-1.png)
 
 ## Create a Dataflow (Gen2) to ingest data
 
