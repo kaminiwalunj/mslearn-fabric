@@ -54,7 +54,7 @@ Now that you have a lakehouse, you need to ingest some data into it. One way to 
 
  ![Custom column in Power Query editor.](./Images/custom-column.png)
 
- The step to add the custom column is added to the query and the resulting column is displayed in the data pane:
+ Click on **OK**. The step to add the custom column is added to the query and the resulting column is displayed in the data pane:
 
  ![Query with a custom column step.](./Images/custom-column-added.png)
 
