@@ -1,6 +1,14 @@
 # Lab: Get started with Real-Time Analytics in Microsoft Fabric
 
-Microsoft Fabric provides a runtime that you can use to store and query data by using Kusto Query Language (KQL). Kusto is optimized for data that includes a time series component, such as real-time data from log files or IoT devices.
+## Overview
+
+Microsoft Fabric provides a runtime that you can use to store and query data by using Kusto Query Language (KQL). Kusto is optimized for data that includes a time series component, such 
+as real-time data from log files or IoT devices.
+
+In Fabric, you only need a source and a Kusto database to start streaming data in and out of Fabric and writing your queries using KQL. Microsoft Fabric also provides KQL Querysets that 
+can be shared within the tenant and Power BI using what's known as quick create.
+
+   ![](./Images/realtime-analtyics1.png)
 
 This lab takes approximately **30** minutes to complete.
 

@@ -1,5 +1,15 @@
 # Lab : Work with Delta Lake tables in Microsoft Fabric
 
+## Overview
+
+Tables in a Microsoft Fabric lakehouse are based on the Delta Lake storage format commonly used in Apache Spark. By using the enhanced capabilities of delta tables, you can create 
+advanced analytics solutions.
+
+Delta Lake is an open-source storage layer that adds relational database semantics to Spark-based data lake processing. Tables in Microsoft Fabric lakehouses are Delta tables, which is 
+signified by the triangular Delta (▴) icon on tables in the lakehouse user interface.
+
+   ![](./Images/delta-lake.png)
+
 # Use delta tables in Apache Spark
 
 Tables in a Microsoft Fabric lakehouse are based on the open source *Delta Lake* format for Apache Spark. Delta Lake adds support for relational semantics for both batch and streaming data operations, and enables the creation of a Lakehouse architecture in which Apache Spark can be used to process and query data in tables that are based on underlying files in a data lake.
