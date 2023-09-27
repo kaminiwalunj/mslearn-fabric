@@ -1,4 +1,4 @@
-# Lab : Work with Delta Lake tables in Microsoft Fabric
+# Lab : Use delta tables in Apache Spark
 
 ## Overview
 
@@ -8,7 +8,7 @@ advanced analytics solutions.
 Delta Lake is an open-source storage layer that adds relational database semantics to Spark-based data lake processing. Tables in Microsoft Fabric lakehouses are Delta tables, which is 
 signified by the triangular Delta (▴) icon on tables in the lakehouse user interface.
 
-   ![](./Images/delta-lake.png)
+   ![](./Images/Use-delta-tables-in-Apache-Spark.png)
 
 # Use delta tables in Apache Spark
 
@@ -18,7 +18,7 @@ This exercise should take approximately **40** minutes to complete
 
 > **Note**: You'll need a Microsoft Fabric license to complete this exercise. Complete the previous task to proceed further.
 
-## Create a workspace
+## Task 1 : Create a workspace
 
 Before working with data in Fabric, create a workspace with the Fabric trial enabled.
 
@@ -26,17 +26,38 @@ Before working with data in Fabric, create a workspace with the Fabric trial ena
 
    ![](./Images/power-bi.png)
 
-2. In the menu bar on the left, select **Workspaces** (the icon looks similar to &#128455;).
+2. From the PowerBI home page, select **Account Manager** from the top-right corner to start the free **Microsoft Fabric trial**.
+    
+    ![](./Images/PwrBI_1.png)
+  
+3. In the Account Manager, select **Start Trial**.
+
+   ![](./Images/PwrBI_2.png)
+   
+4. If prompted, agree to the terms and then select **Start trial**. 
+
+   ![](./Images/PwrBI_3.png)
+   
+5. Once your trial capacity is ready, you receive a confirmation message. Select **Got it** to begin working in Fabric.
+    ![](./Images/PwrBI_4.png)
+   
+6. Open your **Account manager** again. Notice that you now have a heading for **Trial status**. Your Account manager keeps track of the number of days remaining in your trial.
+
+    ![](./Images/PwrBI_5.png)
+
+   You now have a **Fabric (Preview) trial** that includes a **Power BI trial** and a **Fabric (Preview) trial capacity**.
+
+7. In the menu bar on the left, select **Workspaces** (the icon looks similar to &#128455;).
 
    ![](./Images/workspace-1.png)
 
-3. Create a new workspace with a name **dp_fabric-<inject key="Deployment ID" enableCopy="false"/>**, selecting a licensing mode that includes Fabric capacity (*Trial*, *Premium*, or *Fabric*).
+8. Create a new workspace with a name **dp_fabric-<inject key="DeploymentID" enableCopy="false" />**, selecting a licensing mode that includes Fabric capacity (*Trial*, *Premium*, or *Fabric*).
 
-4. When your new workspace opens, it should be empty, as shown here:
+9. When your new workspace opens, it should be empty, as shown here:
 
     ![Screenshot of an empty workspace in Power BI.](./Images/new-workspace-2.png)
 
-## Create a lakehouse and upload data
+## Task 2 : Create a lakehouse and upload data
 
 Now that you have a workspace, it's time to switch to the *Data engineering* experience in the portal and create a data lakehouse for the data you're going to analyze.
 
@@ -60,7 +81,7 @@ Now that you have a workspace, it's time to switch to the *Data engineering* exp
 
     ![Screenshot of uploaded products.csv file in a lakehouse.](./Images/products-file-1.png)
 
-## Explore data in a dataframe
+## Task 3 : Explore data in a dataframe
 
 1. On the **Home** page while viewing the contents of the **products** folder in your datalake, in the **Open notebook** menu, select **New notebook**.
 
@@ -95,7 +116,7 @@ Now that you have a workspace, it's time to switch to the *Data engineering* exp
     | 3 | 773 | Mountain-100 Silver, 44 | Mountain Bikes | 3399.9900 |
     | ... | ... | ... | ... | ... |
 
-## Create delta tables
+## Task 4 : Create delta tables
 
 You can save the dataframe as a delta table by using the `saveAsTable` method. Delta Lake supports the creation of both *managed* and *external* tables.
 
@@ -196,7 +217,7 @@ Let's explore the differences between managed and external tables.
    SELECT * FROM products;
    ```
 
-## Explore table versioning
+## Task 5 : Explore table versioning
 
 Transaction history for delta tables is stored in JSON files in the **delta_log** folder. You can use this transaction log to manage data versioning.
 
@@ -238,7 +259,7 @@ Transaction history for delta tables is stored in JSON files in the **delta_log*
 
     The results show two dataframes - one containing the data after the price reduction, and the other showing the original version of the data.
 
-## Use delta tables for streaming data
+## Task 6 : Use delta tables for streaming data
 
 Delta lake supports streaming data. Delta tables can be a *sink* or a *source* for data streams created using the Spark Structured Streaming API. In this example, you'll use a delta table as a sink for some streaming data in a simulated internet of things (IoT) scenario.
 
