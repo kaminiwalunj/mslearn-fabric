@@ -1,6 +1,15 @@
-# Lab : Use Apache Spark in Microsoft Fabric
+# Lab : Analyze data with Apache Spark
 
-# Analyze data with Apache Spark
+## Overview
+Apache Spark is an open source parallel processing framework for large-scale data processing and analytics. Spark has become popular in "big data" processing scenarios, and is available in multiple platform implementations; including Azure HDInsight, Azure Databricks, Azure Synapse Analytics, and Microsoft Fabric.
+
+This module explores how you can use Spark in Microsoft Fabric to ingest, process, and analyze data in a lakehouse. While the core techniques and code described in this module are common to all Spark implementations, the integrated tools and ability to work with Spark in the same environment as other data services in Microsoft Fabric makes it easier to incorporate Spark-based data processing into your overall data analytics solution.
+
+## _Architecture Diagram_
+
+![Architecture Diagram](./Images/Analyze-data-with-Apache-Spark.png)
+
+# Use Apache Spark in Microsoft Fabric
 
 Apache Spark is an open source engine for distributed data processing, and is widely used to explore, process, and analyze huge volumes of data in data lake storage. Spark is available as a processing option in many data platform products, including Azure HDInsight, Azure Databricks, Azure Synapse Analytics, and Microsoft Fabric. One of the benefits of Spark is support for a wide range of programming languages, including Java, Scala, Python, and SQL; making Spark a very flexible solution for data processing workloads including data cleansing and manipulation, statistical analysis and machine learning, and data analytics and visualization.
 
@@ -8,7 +17,7 @@ This lab will take approximately **45** minutes to complete.
 
 > **Note**: You'll need a Microsoft Fabric license to complete this exercise. Complete the previous task to proceed further.
 
-## Create a workspace
+## Task 1 : Create a workspace
 
 Before working with data in Fabric, create a workspace with the Fabric trial enabled.
 
@@ -16,16 +25,38 @@ Before working with data in Fabric, create a workspace with the Fabric trial ena
 
    ![](./Images/power-bi.png)
 
-2. In the menu bar on the left, select **Workspaces** (the icon looks similar to &#128455;).
+2. From the PowerBI home page, select **Account Manager** from the top-right corner to start the free **Microsoft Fabric trial**.
+    
+    ![](./Images/PwrBI_1.png)
+  
+3. In the Account Manager, select **Start Trial**.
+
+   ![](./Images/PwrBI_2.png)
+   
+4. If prompted, agree to the terms and then select **Start trial**. 
+
+   ![](./Images/PwrBI_3.png)
+   
+5. Once your trial capacity is ready, you receive a confirmation message. Select **Got it** to begin working in Fabric.
+
+    ![](./Images/PwrBI_4.png)
+   
+6. Open your **Account manager** again. Notice that you now have a heading for **Trial status**. Your Account manager keeps track of the number of days remaining in your trial.
+
+    ![](./Images/PwrBI_5.png)
+
+   You now have a **Fabric (Preview) trial** that includes a **Power BI trial** and a **Fabric (Preview) trial capacity**.
+
+7. In the menu bar on the left, select **Workspaces** (the icon looks similar to &#128455;).
 
    ![](./Images/workspace-1.png)
 
-3. Create a new workspace with a name **dp_fabric-<inject key="Deployment ID" enableCopy="false"/>**, selecting a licensing mode that includes Fabric capacity (*Trial*, *Premium*, or *Fabric*).
-4. When your new workspace opens, it should be empty, as shown here:
+8. Create a new workspace with a name **dp_fabric-<inject key="Deployment ID" enableCopy="false"/>**, selecting a licensing mode that includes Fabric capacity (*Trial*, *Premium*, or *Fabric*).
+9. When your new workspace opens, it should be empty, as shown here:
 
     ![Screenshot of an empty workspace in Power BI.](./Images/new-workspace-2.png)
 
-## Create a lakehouse and upload files
+## Task 2 : Create a Lakehouse and upload files
 
 Now that you have a workspace, it's time to switch to the *Data engineering* experience in the portal and create a data lakehouse for the data files you're going to analyze.
 
@@ -51,7 +82,7 @@ Now that you have a workspace, it's time to switch to the *Data engineering* exp
 
     ![Screenshot of uploaded files in a lakehouse.](./Images/uploaded-files-1.png)
 
-## Create a notebook
+## Task 3 : Create a notebook
 
 To work with data in Apache Spark, you can create a *notebook*. Notebooks provide an interactive environment in which you can write and run code (in multiple languages), and add notes to document it.
 
@@ -77,7 +108,7 @@ To work with data in Apache Spark, you can create a *notebook*. Notebooks provid
 
 4. Click anywhere in the notebook outside of the cell to stop editing it and see the rendered markdown.
 
-## Load data into a dataframe
+## Task 4 :  Load data into a dataframe
 
 Now you're ready to run code that loads the data into a *dataframe*. Dataframes in Spark are similar to Pandas dataframes in Python, and provide a common structure for working with data in rows and columns.
 
@@ -195,7 +226,7 @@ Now you're ready to run code that loads the data into a *dataframe*. Dataframes 
 
     **Note**: Only a subset of the rows is displayed, so you may not be able to see examples from all years.
 
-## Explore data in a dataframe
+## Task 5 : Explore data in a dataframe
 
 The dataframe object includes a wide range of functions that you can use to filter, group, and otherwise manipulate the data it contains.
 
@@ -248,7 +279,7 @@ The dataframe object includes a wide range of functions that you can use to filt
 
 4. Run the code cell you added, and note that the results show the number of sales orders per year. Note that the **select** method includes a SQL **year** function to extract the year component of the *OrderDate* field (which is why the code includes an **import** statement to import functions from the Spark SQL library). It then uses an **alias** method is used to assign a column name to the extracted year value. The data is then grouped by the derived *Year* column and the count of rows in each group is calculated before finally the **orderBy** method is used to sort the resulting dataframe.
 
-## Use Spark to transform data files
+## Task 6 : Use Spark to transform data files
 
 A common task for data engineers is to ingest data in a particular format or structure, and transform it for further downstream processing or analysis.
 
@@ -331,7 +362,7 @@ A common task for data engineers is to ingest data in a particular format or str
 
 4. Run the cell and verify that the results show the order data for sales in 2021. Note that the partitioning columns specified in the path (**Year** and **Month**) are not included in the dataframe.
 
-## Work with tables and SQL
+## Task 7 : Work with tables and SQL
 
 As you've seen, the native methods of the dataframe object enable you to query and analyze data from a file quite effectively. However, many data analysts are more comfortable working with tables that they can query using SQL syntax. Spark provides a *metastore* in which you can define relational tables. The Spark SQL library that provides the dataframe object also supports the use of SQL statements to query tables in the metastore. By using these capabilities of Spark, you can combine the flexibility of a data lake with the structured data schema and SQL-based queries of a relational data warehouse - hence the term "data lakehouse".
 
@@ -390,7 +421,7 @@ While it's useful to be able to embed SQL statements into a cell containing PySp
 
 > **Note**: For more information about Spark SQL and dataframes, see the [Spark SQL documentation](https://spark.apache.org/docs/2.2.0/sql-programming-guide.html).
 
-## Visualize data with Spark
+## Task 8 : Visualize data with Spark
 
 A picture is proverbially worth a thousand words, and a chart is often better than a thousand rows of data. While notebooks in Fabric include a built in chart view for data that is displayed from a dataframe or Spark SQL query, it is not designed for comprehensive charting. However, you can use Python graphics libraries like **matplotlib** and **seaborn** to create charts from data in dataframes.
 
@@ -595,7 +626,7 @@ While **matplotlib** enables you to create complex charts of multiple types, it 
 
 > **Note**: To learn more about plotting with seaborn, see the [seaborn documentation](https://seaborn.pydata.org/index.html).
 
-## Save the notebook and end the Spark session
+## Task 9 : Save the notebook and end the Spark session
 
 Now that you've finished working with the data, you can save the notebook with a meaningful name and end the Spark session.
 

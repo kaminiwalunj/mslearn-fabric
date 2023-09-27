@@ -1,6 +1,13 @@
-# Lab: Use Data Factory pipelines in Microsoft Fabric
+# Lab: Ingest data with a pipeline
 
-# Ingest data with a pipeline in Microsoft Fabric
+## Overview
+Data pipelines define a sequence of activities that orchestrate an overall process, usually by extracting data from one or more sources and loading it into a destination; often transforming it along the way. Pipelines are commonly used to automate extract, transform, and load (ETL) processes that ingest transactional data from operational data stores into an analytical data store, such as a lakehouse or data warehouse. The graphical pipeline canvas in the Fabric user interface enables you to build complex pipelines with minimal or no coding required.
+
+## _Architecture Diagram_
+
+![Architecture Diagram](./Images/Ingest-Data-with-a-pipeline.png)
+
+## Use Data Factory pipelines in Microsoft Fabric
 
 A data lakehouse is a common analytical data store for cloud-scale analytics solutions. One of the core tasks of a data engineer is to implement and manage the ingestion of data from multiple operational data sources into the lakehouse. In Microsoft Fabric, you can implement *extract, transform, and load* (ETL) or *extract, load, and transform* (ELT) solutions for data ingestion through the creation of *pipelines*.
 
@@ -10,21 +17,43 @@ This lab will take approximately **60** minutes to complete.
 
 > **Note**: You'll need a Microsoft Fabric license to complete this exercise. Complete the previous task to proceed further.
 
-## Create a workspace
+## Task 1 : Create a workspace
 
 Before working with data in Fabric, create a workspace with the Fabric trial enabled.
 
 1. Sign into [Microsoft Fabric](https://app.fabric.microsoft.com) at `https://app.fabric.microsoft.com` and select **Power BI**.
 
-2. In the menu bar on the left, select **Workspaces** (the icon looks similar to &#128455;).
+2. From the PowerBI home page, select **Account Manager** from the top-right corner to start the free **Microsoft Fabric trial**.
+    
+    ![](./Images/PwrBI_1.png)
+  
+3. In the Account Manager, select **Start Trial**.
 
-3. Create a new workspace with a name of **dp_fabric**, selecting a licensing mode that includes Fabric capacity (*Trial*, *Premium*, or *Fabric*).
+   ![](./Images/PwrBI_2.png)
+   
+4. If prompted, agree to the terms and then select **Start trial**. 
 
-4. When your new workspace opens, it should be empty, as shown here:
+   ![](./Images/PwrBI_3.png)
+   
+5. Once your trial capacity is ready, you receive a confirmation message. Select **Got it** to begin working in Fabric.
+
+    ![](./Images/PwrBI_4.png)
+   
+6. Open your **Account manager** again. Notice that you now have a heading for **Trial status**. Your Account manager keeps track of the number of days remaining in your trial.
+
+    ![](./Images/PwrBI_5.png)
+
+   You now have a **Fabric (Preview) trial** that includes a **Power BI trial** and a **Fabric (Preview) trial capacity**.
+
+7. In the menu bar on the left, select **Workspaces** (the icon looks similar to &#128455;).
+
+8. Create a new workspace with a name of **dp_fabric**, selecting a licensing mode that includes Fabric capacity (*Trial*, *Premium*, or *Fabric*).
+
+9. When your new workspace opens, it should be empty, as shown here:
 
     ![Screenshot of an empty workspace in Power BI.](./Images/new-workspace1.png)
 
-## Create a lakehouse
+## Task 2 : Create a lakehouse
 
 Now that you have a workspace, it's time to switch to the *Data engineering* experience in the portal and create a data lakehouse into which you will ingest data.
 
@@ -36,7 +65,7 @@ Now that you have a workspace, it's time to switch to the *Data engineering* exp
 
 3. On the **Lake view** tab in the pane on the left, in the **...** menu for the **Files** node, select **New subfolder** and create a subfolder named **new_data**.
 
-## Create a pipeline
+## Task 3 : Create a pipeline
 
 A simple way to ingest data is to use a **Copy Data** activity in a pipeline to extract the data from a source and copy it to a file in the lakehouse.
 
@@ -98,7 +127,7 @@ A simple way to ingest data is to use a **Copy Data** activity in a pipeline to 
 
 14. On the **Home** page, in the **Lakehouse explorer** pane, expand **Files** and select the **new_data** folder to verify that the **sales.csv** file has been copied.
 
-## Create a notebook
+## Task 4 : Create a notebook
 
 1. On the **Home** page for your lakehouse, in the **Open notebook** menu, select **New notebook**.
 
@@ -149,7 +178,7 @@ A simple way to ingest data is to use a **Copy Data** activity in a pipeline to 
 
 9. In the **Explorer** pane, refresh the view. Then expand **Tables**, and select the **sales** table to see a preview of the data it contains.
 
-## Modify the pipeline
+## Task 5 : Modify the pipeline
 
 Now that you've implemented a notebook to transform data and load it into a table, you can incorporate the notebook into a pipeline to create a reusable ETL process.
 

@@ -1,4 +1,4 @@
-# Lab :Get started with data warehouses in Microsoft Fabric
+# Lab : Analyze data in a Data Warehouse
 
 ## Overview
 
@@ -12,9 +12,11 @@ just data engineers.
 
 Here, you'll learn about data warehouses in Fabric, create a data warehouse, load, query, and visualize data, and describe datasets.
 
-   ![](./Images/data-warehouse.png)
+## _Architecture Diagram_
 
-# Analyze data in a data warehouse
+   ![New lakehouse.](./Images/Analyze-data-in-data-warehouse.png)
+
+## Get started with data warehouses in Microsoft Fabric
 
 In Microsoft Fabric, a data warehouse provides a relational database for large-scale analytics. Unlike the default read-only SQL endpoint for tables defined in a lakehouse, a data warehouse provides full SQL semantics; including the ability to insert, update, and delete data in the tables.
 
@@ -22,21 +24,47 @@ This lab will take approximately **30** minutes to complete.
 
 > **Note**: You'll need a Microsoft Fabric license to complete this exercise. Complete the previous task to proceed further.
 
-## Create a workspace
+## Task 1 : Create a workspace
 
 Before working with data in Fabric, create a workspace with the Fabric trial enabled.
 
 1. Sign into [Microsoft Fabric](https://app.fabric.microsoft.com) at `https://app.fabric.microsoft.com` and select **Power BI**.
 
-2. In the menu bar on the left, select **Workspaces** (the icon looks similar to &#128455;).
+   ![](./Images/power-bi.png)
 
-3. Create a new workspace with a name as **dp_fabric-<inject key="Deployment ID" enableCopy="false"/>**, selecting a licensing mode that includes Fabric capacity (*Trial*, *Premium*, or *Fabric*).
+2. From the PowerBI home page, select **Account Manager** from the top-right corner to start the free **Microsoft Fabric trial**.
+    
+    ![](./Images/PwrBI_1.png)
+  
+3. In the Account Manager, select **Start Trial**.
 
-4. When your new workspace opens, it should be empty, as shown here:
+   ![](./Images/PwrBI_2.png)
+   
+4. If prompted, agree to the terms and then select **Start trial**. 
+
+   ![](./Images/PwrBI_3.png)
+   
+5. Once your trial capacity is ready, you receive a confirmation message. Select **Got it** to begin working in Fabric.
+
+    ![](./Images/PwrBI_4.png)
+   
+6. Open your **Account manager** again. Notice that you now have a heading for **Trial status**. Your Account manager keeps track of the number of days remaining in your trial.
+
+    ![](./Images/PwrBI_5.png)
+
+   You now have a **Fabric (Preview) trial** that includes a **Power BI trial** and a **Fabric (Preview) trial capacity**.
+
+7. In the menu bar on the left, select **Workspaces** (the icon looks similar to &#128455;).
+
+   ![](./Images/workspace-1.png)
+
+8. Create a new workspace with a name **dp_fabric-<inject key="Deployment ID" enableCopy="false"/>**, selecting a licensing mode that includes Fabric capacity (*Trial*, *Premium*, or *Fabric*).
+
+9. When your new workspace opens, it should be empty, as shown here:
 
     ![Screenshot of an empty workspace in Power BI.](./Images/new-workspace.png)
 
-## Create a data warehouse
+## Task 2 : Create a Data Warehouse
 
 Now that you have a workspace, it's time to switch to the *Data Warehouse* experience in the portal and create a data warehouse.
 
@@ -52,7 +80,7 @@ Now that you have a workspace, it's time to switch to the *Data Warehouse* exper
 
     ![Screenshot of a new warehouse.](./Images/new-data-warehouse1.png)
 
-## Create tables and insert data
+## Task 3 : Create tables and insert data
 
 A warehouse is a relational database in which you can define tables and other objects.
 
@@ -103,7 +131,7 @@ A warehouse is a relational database in which you can define tables and other ob
 
     > **Tip**: If the schema takes a while to load, just refresh the browser page.
 
-## Define a data model
+## Task 4 : Define a Data Model
 
 A relational data warehouse typically consists of *fact* and *dimension* tables. The fact tables contain numeric measures you can aggregate to analyze business performance (for example, sales revenue), and the dimension tables contain attributes of the entities by which you can aggregate the data (for example, product, customer, or time). In a Microsoft Fabric data warehouse, you can use these keys to define a data model that encapsulates the relationships between the tables.
 
@@ -131,7 +159,7 @@ A relational data warehouse typically consists of *fact* and *dimension* tables.
 
     ![Screenshot of the model with relationships.](./Images/dw-relationships1.png)
 
-## Query data warehouse tables
+## Task 5 : Query data Warehouse tables
 
 Since the data warehouse is a relational database, you can use SQL to query its tables.
 
@@ -171,7 +199,7 @@ Most queries in a relational data warehouse involve aggregating and grouping dat
 
 3. Run the modified query and review the results, which now include sales revenue aggregated by year, month, and sales region.
 
-## Create a view
+## Task 6 : Create a View
 
 A data warehouse in Microsoft Fabric has many of the same capabilities you may be used to in relational databases. For example, you can create database objects like *views* and *stored procedures* to encapsulate SQL logic.
 

@@ -1,6 +1,15 @@
-# Lab : Ingest Data with Dataflows Gen2 in Microsoft Fabric
+# Lab : Create and use a Dataflow (Gen2) in Microsoft Fabric 
 
-# Create a Dataflow (Gen2) in Microsoft Fabric
+## Overview 
+Microsoft Fabric offers a unified solution for data engineering, integration, and analytics. A crucial step in end-to-end analytics is data ingestion. Dataflows (Gen2) are used to ingest and transform data from multiple sources, and then land the cleansed data to another destination. They can be incorporated into data pipelines for additional data movement, and used as a data source in Power BI.
+
+In our scenario, you need to develop a data model that can standardize the data and provide access to the business. By using Dataflows (Gen2), you can connect to the various data sources, and then prep and transform the data. To allow access, you can land the data directly into your Lakehouse or use a data pipeline for other destinations.
+
+## _Architecture Diagram_
+
+![Architecture Diagram](./Images/Create-and-use-a-Dataflow(Gen2).png)
+
+## Ingest Data with Dataflows Gen2 in Microsoft Fabric
 
 In Microsoft Fabric, Dataflows (Gen2) connect to various data sources and perform transformations in Power Query Online. They can then be used in Data Pipelines to ingest data into a lakehouse or other analytical store, or to define a dataset for a Power BI report.
 
@@ -8,18 +17,46 @@ This lab is designed to introduce the different elements of Dataflows (Gen2), an
 
 > **Note**: You'll need a Microsoft Fabric license to complete this exercise. Complete the previous task to proceed further.
 
-## Create a workspace
+## Task 1 : Create a workspace
 
 Before working with data in Fabric, create a workspace with the Fabric trial enabled.
 
 1. Sign into [Microsoft Fabric](https://app.fabric.microsoft.com) at `https://app.fabric.microsoft.com` and select **Power BI**.
-2. In the menu bar on the left, select **Workspaces** (the icon looks similar to &#128455;).
-3. Create a new workspace with a name of your choice, selecting a licensing mode that includes Fabric capacity (*Trial*, *Premium*, or *Fabric*).
-4. When your new workspace opens, it should be empty, as shown here:
 
-    ![Screenshot of an empty workspace in Power BI.](./Images/new-workspace.png)
+   ![](./Images/power-bi.png)
 
-## Create a lakehouse
+2. From the PowerBI home page, select **Account Manager** from the top-right corner to start the free **Microsoft Fabric trial**.
+    
+    ![](./Images/PwrBI_1.png)
+  
+3. In the Account Manager, select **Start Trial**.
+
+   ![](./Images/PwrBI_2.png)
+   
+4. If prompted, agree to the terms and then select **Start trial**. 
+
+   ![](./Images/PwrBI_3.png)
+   
+5. Once your trial capacity is ready, you receive a confirmation message. Select **Got it** to begin working in Fabric.
+
+    ![](./Images/PwrBI_4.png)
+   
+6. Open your **Account manager** again. Notice that you now have a heading for **Trial status**. Your Account manager keeps track of the number of days remaining in your trial.
+
+    ![](./Images/PwrBI_5.png)
+
+   You now have a **Fabric (Preview) trial** that includes a **Power BI trial** and a **Fabric (Preview) trial capacity**.
+
+7. In the menu bar on the left, select **Workspaces** (the icon looks similar to &#128455;).
+
+   ![](./Images/workspace-1.png)
+
+8. Create a new workspace with a name **dp_fabric-<inject key="Deployment ID" enableCopy="false"/>**, selecting a licensing mode that includes Fabric capacity (*Trial*, *Premium*, or *Fabric*).
+9. When your new workspace opens, it should be empty, as shown here:
+
+    ![Screenshot of an empty workspace in Power BI.](./Images/new-workspace-2.png)
+
+## Task 2 : Create a lakehouse
 
 Now that you have a workspace, it's time to switch to the **Data Engineering** experience in the portal and create a data lakehouse into which you'll ingest data.
 
@@ -31,7 +68,7 @@ Now that you have a workspace, it's time to switch to the **Data Engineering** e
 
    ![New lakehouse.](./Images/m6-fabric-1.png)
 
-## Create a Dataflow (Gen2) to ingest data
+## Task 3 : Create a Dataflow (Gen2) to ingest data
 
 Now that you have a lakehouse, you need to ingest some data into it. One way to do this is to define a dataflow that encapsulates an *extract, transform, and load* (ETL) process.
 
@@ -62,7 +99,7 @@ Now that you have a lakehouse, you need to ingest some data into it. One way to 
 >
 > Steps can be moved up or down, edited by selecting the gear icon, and you can select each step to see the transformations apply in the preview pane.
 
-## Add data destination for Dataflow
+## Task 4 : Add data destination for Dataflow
 
 1. On the toolbar ribbon, select the **Home** tab. Then in the **Add data destination** drop-down menu, select **Lakehouse**.
 
@@ -95,7 +132,7 @@ Now that you have a lakehouse, you need to ingest some data into it. One way to 
 
 8. Once published, you can right-click on the dataflow in your workspace, select **Properties**, and rename your dataflow.
 
-## Add a dataflow to a pipeline
+## Task 5 : Add a dataflow to a pipeline
 
 You can include a dataflow as an activity in a pipeline. Pipelines are used to orchestrate data ingestion and processing activities, enabling you to combine dataflows with other kinds of operation in a single, scheduled process. Pipelines can be created in a few different experiences, including Data Factory experience.
 

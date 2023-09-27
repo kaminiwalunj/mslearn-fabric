@@ -1,4 +1,13 @@
-# Lab : Get started with data science in Microsoft Fabric
+# Lab : Explore Data Science in Microsoft Fabric
+
+## Overview
+Data science is a combination of mathematics, statistics, and computer engineering. When you perform data science, you can analyze your data and identify complicated patterns that can provide you with meaningful insights for your organization. You can use data science to create artificial intelligence (AI) models that encompass the complicated patterns you find in your data. A common approach is to use data science to train machine learning models using libraries like scikit-learn in Python to achieve AI. 
+
+### _Architecture Diagram_
+
+![Architecture Diagram](./Images/Data-science-in-Microsoft-Fabric.png)
+
+## Get started with data science in Microsoft Fabric
 
 In this lab, we will use Microsoft Fabric to create a notebook and train a machine learning model to predict customer churn. We will use Scikit-Learn to train the model and MLflow to track its performance. Customer churn is a critical business problem that many companies face, and predicting which customers are likely to churn can help companies retain their customers and increase revenue. By completing this lab, you will gain hands-on experience in machine learning and model tracking, and learn how to use Microsoft Fabric to create a notebook for your projects.
 
@@ -6,18 +15,47 @@ This lab will take approximately **45** minutes to complete.
 
 > **Note**: You'll need a Microsoft Fabric license to complete this exercise. Complete the previous task to proceed further.
 
-## Create a workspace
+## Task 1 : Create a workspace
 
 Before working with data in Fabric, create a workspace with the Fabric trial enabled.
 
 1. Sign into [Microsoft Fabric](https://app.fabric.microsoft.com) at `https://app.fabric.microsoft.com` and select **Power BI**.
-2. In the menu bar on the left, select **Workspaces** (the icon looks similar to &#128455;).
-3. Create a new workspace with a name of your choice, selecting a licensing mode that includes Fabric capacity (*Trial*, *Premium*, or *Fabric*).
-4. When your new workspace opens, it should be empty, as shown here:
 
-    ![Screenshot of an empty workspace in Power BI.](./Images/new-workspace.png)
+   ![](./Images/power-bi.png)
 
-## Create a lakehouse and upload files
+2. From the PowerBI home page, select **Account Manager** from the top-right corner to start the free **Microsoft Fabric trial**.
+    
+    ![](./Images/PwrBI_1.png)
+  
+3. In the Account Manager, select **Start Trial**.
+
+   ![](./Images/PwrBI_2.png)
+   
+4. If prompted, agree to the terms and then select **Start trial**. 
+
+   ![](./Images/PwrBI_3.png)
+   
+5. Once your trial capacity is ready, you receive a confirmation message. Select **Got it** to begin working in Fabric.
+
+    ![](./Images/PwrBI_4.png)
+   
+6. Open your **Account manager** again. Notice that you now have a heading for **Trial status**. Your Account manager keeps track of the number of days remaining in your trial.
+
+    ![](./Images/PwrBI_5.png)
+
+   You now have a **Fabric (Preview) trial** that includes a **Power BI trial** and a **Fabric (Preview) trial capacity**.
+
+7. In the menu bar on the left, select **Workspaces** (the icon looks similar to &#128455;).
+
+   ![](./Images/workspace-1.png)
+
+8. Create a new workspace with a name **dp_fabric-<inject key="Deployment ID" enableCopy="false"/>**, selecting a licensing mode that includes Fabric capacity (*Trial*, *Premium*, or *Fabric*).
+   
+9. When your new workspace opens, it should be empty, as shown here:
+
+    ![Screenshot of an empty workspace in Power BI.](./Images/new-workspace-2.png)
+
+## Task 2 : Create a Lakehouse and upload files
 
 Now that you have a workspace, it's time to switch to the *Data science* experience in the portal and create a data lakehouse for the data files you're going to analyze.
 
@@ -34,7 +72,7 @@ Now that you have a workspace, it's time to switch to the *Data science* experie
 
 1. After the files have been uploaded, expand **Files** and verify that the CSV file have been uploaded.
 
-## Create a notebook
+## Task 3 : Create a Notebook
 
 To train a model, you can create a *notebook*. Notebooks provide an interactive environment in which you can write and run code (in multiple languages) as *experiments*.
 
@@ -56,7 +94,7 @@ To train a model, you can create a *notebook*. Notebooks provide an interactive 
    Use the code in this notebook to train and track models.
     ``` 
 
-## Load data into a dataframe
+## Task 4 : Load data into a dataframe
 
 Now you're ready to run code to prepare data and train a model. To work with data, you'll use *dataframes*. Dataframes in Spark are similar to Pandas dataframes in Python, and provide a common structure for working with data in rows and columns.
 
@@ -91,7 +129,7 @@ Now you're ready to run code to prepare data and train a model. To work with dat
 
     The output shows the rows and columns of customer data from the churn.csv file.
 
-## Train a machine learning model
+## Task 5 : Train a Machine Learning model
 
 Now that you've loaded the data, you can use it to train a machine learning model and predict customer churn. You'll train a model using the Scikit-Learn library and track the model with MLflow. 
 
@@ -147,7 +185,7 @@ Now that you've loaded the data, you can use it to train a machine learning mode
 
     The code trains a classification model using Decision Tree Classifier. Parameters, metrics, and artifacts, are automatically logged with MLflow. Additionally, you're logging a parameter called `estimator`, with the value `DecisionTreeClassifier`.
 
-## Use MLflow to search and view your experiments
+## Task 6 : Use MLflow to search and view your experiments
 
 When you've trained and tracked models with MLflow, you can use the MLflow library to retrieve your experiments and its details.
 
@@ -201,7 +239,7 @@ When you've trained and tracked models with MLflow, you can use the MLflow libra
 
     ![Screenshot of the plotted evaluation metrics.](./Images/plotted-metrics.png)
 
-## Explore your experiments
+## Task 7 : Explore your experiments
 
 Microsoft Fabric will keep track of all your experiments and allows you to visually explore them.
 
@@ -222,7 +260,7 @@ Microsoft Fabric will keep track of all your experiments and allows you to visua
 
 By plotting the accuracy per logged estimator, you can review which algorithm resulted in a better model.
 
-## Save the model
+## Task 8 : Save the model
 
 After comparing machine learning models that you've trained across experiment runs, you can choose the best performing model. To use the best performing model, save the model and use it to generate predictions.
 
@@ -236,7 +274,7 @@ After comparing machine learning models that you've trained across experiment ru
 
 Note that the model, the experiment, and the experiment run are linked, allowing you to review how the model is trained. 
 
-## Save the notebook and end the Spark session
+## Task 9 : Save the Notebook and end the Spark session
 
 Now that you've finished training and evaluating the models, you can save the notebook with a meaningful name and end the Spark session.
 
