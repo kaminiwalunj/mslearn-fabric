@@ -1,6 +1,14 @@
-# Lab: Get started with Real-Time Analytics in Microsoft Fabric
+# Lab: Synapse Real-Time Analytics in Fabric 
 
 ## Overview
+
+Microsoft Fabric provides an end-to-end platform for data solutions, including real-time data analytics. Synapse Real-Time Analytics in Fabric uses a KQL Database to provide table storage and Kusto Query Language (KQL) which is a powerful tool for analyzing data. This structure provides an efficient way to find insights and patterns from textual or structured data. Moreover, KQL is optimized for data that includes a time series component, such as real-time data from log files or streaming services. With Real-Time Analytics, you can focus and scale up your analytics solution while democratizing data for the needs for your entire data organization.
+
+### _Architecture Diagram_
+
+![Architecture Diagram](./Images/Synapse-Real-Time-Analytics-in-Fabric.png)
+
+## Get started with Real-Time Analytics in Microsoft Fabric
 
 Microsoft Fabric provides a runtime that you can use to store and query data by using Kusto Query Language (KQL). Kusto is optimized for data that includes a time series component, such 
 as real-time data from log files or IoT devices.
@@ -14,23 +22,50 @@ This lab takes approximately **30** minutes to complete.
 
 > **Note**: You'll need a Microsoft Fabric license to complete this exercise. Complete the previous task to proceed further.
 
-## Create a workspace
+## Task 1 : Create a workspace
 
 Before working with data in Fabric, create a workspace with the Fabric trial enabled.
 
 1. Sign into [Microsoft Fabric](https://app.fabric.microsoft.com) at `https://app.fabric.microsoft.com` and select **Power BI**.
 
-2. In the menu bar on the left, select **Workspaces** (the icon looks similar to &#128455;).
+   ![](./Images/power-bi.png)
 
-3. Create a new workspace with a name as **dp_fabric-<inject key="Deployment ID" enableCopy="false"/>**, selecting a licensing mode that includes Fabric capacity (*Trial*, *Premium*, or *Fabric*).
+2. From the PowerBI home page, select **Account Manager** from the top-right corner to start the free **Microsoft Fabric trial**.
+    
+    ![](./Images/PwrBI_1.png)
+  
+3. In the Account Manager, select **Start Trial**.
 
-4. When your new workspace opens, it should be empty, as shown here:
+   ![](./Images/PwrBI_2.png)
+   
+4. If prompted, agree to the terms and then select **Start trial**. 
 
-    ![Screenshot of an empty workspace in Power BI.](./Images/new-workspace.png)
+   ![](./Images/PwrBI_3.png)
+   
+5. Once your trial capacity is ready, you receive a confirmation message. Select **Got it** to begin working in Fabric.
 
-5. At the bottom left of the Power BI portal, select the **Power BI** icon and switch to the **Microsoft Fabric** experience.
+    ![](./Images/PwrBI_4.png)
+   
+6. Open your **Account manager** again. Notice that you now have a heading for **Trial status**. Your Account manager keeps track of the number of days remaining in your trial.
 
-## Download file for KQL database
+    ![](./Images/PwrBI_5.png)
+
+   You now have a **Fabric (Preview) trial** that includes a **Power BI trial** and a **Fabric (Preview) trial capacity**.
+
+7. In the menu bar on the left, select **Workspaces** (the icon looks similar to &#128455;).
+
+   ![](./Images/workspace-1.png)
+
+8. Create a new workspace with a name **dp_fabric-<inject key="Deployment ID" enableCopy="false"/>**, selecting a licensing mode that includes Fabric capacity (*Trial*, *Premium*, or *Fabric*).
+   
+9. When your new workspace opens, it should be empty, as shown here:
+
+    ![Screenshot of an empty workspace in Power BI.](./Images/new-workspace-2.png)
+
+  
+10. At the bottom left of the Power BI portal, select the **Power BI** icon and switch to the **Microsoft Fabric** experience.
+
+## Task 2 : Download file for KQL database
 
 Now that you have a workspace, it's time to switch to the *Synapse Real-Time Analytics* experience in the portal and download the data file you're going to analyze.
 
@@ -40,7 +75,7 @@ Now that you have a workspace, it's time to switch to the *Synapse Real-Time Ana
 
 2. Return to browser window with **Microsoft Fabric** Experience.
 
-## Create a KQL database
+## Task 3 : Create a KQL database
 
 Kusto query language (KQL) is used to query static or streaming data in a table that is defined in a KQL database. To analyze the sales data, you must create a table in a KQL database and ingest the data from the file.
 
@@ -72,7 +107,7 @@ Kusto query language (KQL) is used to query static or streaming data in a table 
 
 > **Note**: In this example, you imported a very small amount of static data from a file, which is fine for the purposes of this exercise. In reality, you can use Kusto to analyze much larger volumes of data; including real-time data from a streaming source such as Azure Event Hubs.
 
-## Use KQL to query the sales table
+## Task 4 : Use KQL to query the sales table
 
 Now that you have a table of data in your database, you can use KQL code to query it.
 
@@ -112,7 +147,7 @@ Now that you have a table of data in your database, you can use KQL code to quer
 
 9. Select **Save as KQL queryset** and save the query as **Revenue by Product**.
 
-## Create a Power BI report from a KQL Queryset
+## Task 5 : Create a Power BI report from a KQL Query set
 
 You can use your KQL Queryset as the basis for a Power BI report.
 
