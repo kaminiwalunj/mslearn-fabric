@@ -12,7 +12,7 @@ just data engineers.
 
 Here, you'll learn about data warehouses in Fabric, create a data warehouse, load, query, and visualize data, and describe datasets.
 
-   ![](./Images/Create-and-use-a-Dataflow(Gen2).png.png)
+   ![](./Images/.png)
 
 # Analyze data in a data warehouse
 
