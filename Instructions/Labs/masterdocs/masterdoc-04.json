@@ -1,6 +1,6 @@
 [
   {
-    "Name": "Hands-on Lab : Use Data Factory pipelines in Microsoft Fabric",
+    "Name": "Hands-on Lab : Ingest data with a pipeline",
     "Language": "English",
     "BaseURL": "https://github.com/CloudLabs-MOC/mslearn-fabric",
     "Files": [
