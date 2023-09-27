@@ -1,6 +1,6 @@
 [
   {
-    "Name": "Hands-on Lab : Work with Delta Lake tables in Microsoft Fabric",
+    "Name": "Hands-on Lab : Use Delta tables in Apache Spark",
     "Language": "English",
     "BaseURL": "https://github.com/CloudLabs-MOC/mslearn-fabric",
     "Files": [
