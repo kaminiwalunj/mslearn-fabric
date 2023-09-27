@@ -1,4 +1,4 @@
-# Lab : Analyze data in a data warehouse
+# Lab : Analyze data in a Data Warehouse
 
 ## Overview
 
