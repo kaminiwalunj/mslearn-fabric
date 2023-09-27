@@ -5,7 +5,7 @@ Apache Spark is an open source parallel processing framework for large-scale dat
 
 This module explores how you can use Spark in Microsoft Fabric to ingest, process, and analyze data in a lakehouse. While the core techniques and code described in this module are common to all Spark implementations, the integrated tools and ability to work with Spark in the same environment as other data services in Microsoft Fabric makes it easier to incorporate Spark-based data processing into your overall data analytics solution.
 
-## Architecture Diagram
+## _Architecture Diagram_
 
 ![Architecture Diagram](./Images/Analyze-data-with-Apache-Spark.png)
 
