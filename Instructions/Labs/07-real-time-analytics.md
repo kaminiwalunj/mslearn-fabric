@@ -1,4 +1,4 @@
-# Lab: Synapse Real-Time Analytics in Fabric 
+# Lab: Explore Synapse Real-Time Analytics in Fabric 
 
 ## Overview
 
