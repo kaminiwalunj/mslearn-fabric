@@ -1,11 +1,11 @@
 [
   {
-    "Name": "Hands-on Lab: Introduction to end-to-end analytics using Microsoft Fabric",
+    "Name": "Hands-on Lab: Enable and use Microsoft Fabric",
     "Language": "English",
     "BaseURL": "https://github.com/CloudLabs-Samples/EduLabs/tree/main/Demo/fabric",
     "Files": [
       {
-        "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-Samples/EduLabs/main/Demo/fabric/pre-requisites.md",
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-Samples/EduLabs/main/Demo/fabric/pre-requisite1.md",
         "Order": 1
       }
     ]
