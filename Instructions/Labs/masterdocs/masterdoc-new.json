@@ -5,12 +5,16 @@
     "BaseURL": "https://github.com/CloudLabs-MOC/mslearn-fabric",
     "Files": [
       {
-        "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/mslearn-fabric/main/Instructions/Labs/Get-started-with-Real-Time-Analytics-in-Microsoft-Fabric.md",
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/mslearn-fabric/main/Instructions/Labs/Gettingstarted.md",
         "Order": 1
       },
       {
-        "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/mslearn-fabric/main/Instructions/Labs/Get-started-with-data-science-in-Microsoft-Fabric.md",
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/mslearn-fabric/main/Instructions/Labs/Get-started-with-Real-Time-Analytics-in-Microsoft-Fabric.md",
         "Order": 2
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/mslearn-fabric/main/Instructions/Labs/Get-started-with-data-science-in-Microsoft-Fabric.md",
+        "Order": 3
       }
     ]
   }
