@@ -16,7 +16,7 @@ Your virtual machine is your workhorse throughout the workshop. The lab guide is
  
 To get a better understanding of your lab resources and credentials, navigate to the **Environment Details** tab.
  
-![Explore Lab Resources](./Image/env.png)
+![Explore Lab Resources](./Images/env.png)
  
 ## Utilizing the Split Window Feature
  
@@ -33,6 +33,6 @@ Feel free to start, stop, or restart your virtual machine as needed from the **R
  
  Click "Next" from the bottom right corner to embark on your Lab journey!
  
-  ![Start Your Azure Journey](../Media/next.png)
+  ![Start Your Azure Journey](./Images/next.png)
  
 Now you're all set to explore the powerful world of technology. Feel free to reach out if you have any questions along the way. Enjoy your workshop!
