@@ -13,7 +13,7 @@ In this lab, we will use Microsoft Fabric to create a notebook and train a machi
 
 This lab will take approximately **45** minutes to complete.
 
-> **Note**: You'll need a Microsoft Fabric license to complete this exercise. Complete the previous task to proceed further.
+> **Note**: You'll need a Microsoft Fabric license to complete this exercise.
 
 ## Task 1 : Create a workspace
 
