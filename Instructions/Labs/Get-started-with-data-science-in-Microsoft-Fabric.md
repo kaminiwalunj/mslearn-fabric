@@ -19,39 +19,15 @@ This lab will take approximately **45** minutes to complete.
 
 Before working with data in Fabric, create a workspace with the Fabric trial enabled.
 
-1. Sign into [Microsoft Fabric](https://app.fabric.microsoft.com) at `https://app.fabric.microsoft.com` and select **Power BI**.
-
-   ![](./Images/power-bi.png)
-
-2. From the PowerBI home page, select **Account Manager** from the top-right corner to start the free **Microsoft Fabric trial**.
-    
-    ![](./Images/PwrBI_1.png)
-  
-3. In the Account Manager, select **Start Trial**.
-
-   ![](./Images/PwrBI_2.png)
-   
-4. If prompted, agree to the terms and then select **Start trial**. 
-
-   ![](./Images/PwrBI_3.png)
-   
-5. Once your trial capacity is ready, you receive a confirmation message. Select **Got it** to begin working in Fabric.
-
-    ![](./Images/PwrBI_4.png)
-   
-6. Open your **Account manager** again. Notice that you now have a heading for **Trial status**. Your Account manager keeps track of the number of days remaining in your trial.
-
-    ![](./Images/PwrBI_5.png)
-
-   You now have a **Fabric (Preview) trial** that includes a **Power BI trial** and a **Fabric (Preview) trial capacity**.
-
-7. In the menu bar on the left, select **Workspaces** (the icon looks similar to &#128455;).
+1. In the menu bar on the left, select **Workspaces** (the icon looks similar to &#128455;).
 
    ![](./Images/workspace-1.png)
 
-8. Create a new workspace with a name **dp_fabric-<inject key="Deployment ID" enableCopy="false"/>**, selecting a licensing mode that includes Fabric capacity (*Trial*, *Premium*, or *Fabric*).
+1. Create a new workspace with a name **dp_fabric-<inject key="Deployment ID" enableCopy="false"/>**, expand  **Advanced:** and Under **License mode**, select **Trial capacity (1)** and click on **Apply (2)** to create and open the workspace.
+
+   ![](./Images/fabric(2).png)
    
-9. When your new workspace opens, it should be empty, as shown here:
+1. When your new workspace opens, it should be empty, as shown here:
 
     ![Screenshot of an empty workspace in Power BI.](./Images/new-workspace-2.png)
 
