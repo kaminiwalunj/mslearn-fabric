@@ -20,62 +20,94 @@ can be shared within the tenant and Power BI using what's known as quick create.
 
 This lab takes approximately **30** minutes to complete.
 
-> **Note**: You'll need a Microsoft Fabric license to complete this exercise. Complete the previous task to proceed further.
+> **Note**: You'll need a Microsoft Fabric license to complete this exercise.
 
-## Task 1 : Create a workspace
+## Task 1: Assign Fabric Administrator Role
+
+1. In the Azure portal, type **Microsoft Entra ID (1)** in the search box and select **Microsoft Entra ID (2)** from the results.
+
+   ![Navigate-To-AAD](./Images/entra01.png)
+
+2. Navigate to **Roles and administrators (1)**.
+
+   ![Roles-and-Administrator](./Images/entraa02.png)
+
+3. In the **Roles and administrators** page, type **Fabric Administrator (1)** in the search box and select **Fabric Administrator (2)** from the results.
+
+   ![search-fabric-admin](./Images/entra02.png)
+
+4. This will take you to the **Fabric Administrator | Assignments** page where you will have to assign yourself the **Fabric Administrator role**. Now, click on **+ Add assignments (1)**.
+
+   ![click-add-assignments](./Images/04.png)
+
+5. Make sure to **check the box (1)** next to your username, confirm if it is **Selected (2)** and click on **Add (3)**.
+
+   ![check-and-add-role](./Images/05.png)
+
+6. You can confirm the **Fabric Administrator** role has been added successfully by **Refresh (1)** Fabric Administrators | Assignments page. After **confirming (2)** it has been added successfully, navigate back to **Home (3)**.
+
+   ![check-and-navigate-back-to-home](./Images/06.png)
+
+## Task 2 : Create a workspace
 
 Before working with data in Fabric, create a workspace with the Fabric trial enabled.
 
-1. Sign into [Microsoft Fabric](https://app.fabric.microsoft.com) at `https://app.fabric.microsoft.com` and select **Power BI**.
+1. Sign into [Microsoft Fabric](https://app.fabric.microsoft.com) at `https://app.fabric.microsoft.com`.
 
    ![](./Images/power-bi.png)
 
-2. From the PowerBI home page, select **Account Manager** from the top-right corner to start the free **Microsoft Fabric trial**.
-    
-    ![](./Images/PwrBI_1.png)
-  
-3. In the Account Manager, select **Start Trial**.
+1. In the Power BI tab, provide the **Email/Username:** <inject key="AzureAdUserEmail"></inject> and select **Submit**.
 
-   ![](./Images/PwrBI_2.png)
+   ![](./Images/lab1-7.png)
+
+1. Complete the sign in process by clicking on **Continue**
+
+   ![](./Images/lab1-8.png)
    
-4. If prompted, agree to the terms and then select **Start trial**. 
-
-   ![](./Images/PwrBI_3.png)
+1. Enter a 10 digit phone number and select **Get started**. Select **Get started** once more. You will be redirected to Power BI. If prompted provide the **Password:** <inject key="AzureAdUserPassword"></inject>
    
-5. Once your trial capacity is ready, you receive a confirmation message. Select **Got it** to begin working in Fabric.
-
-    ![](./Images/PwrBI_4.png)
+   ![](./Images/lab1-9.png)
    
-6. Open your **Account manager** again. Notice that you now have a heading for **Trial status**. Your Account manager keeps track of the number of days remaining in your trial.
+1. Leave the Microsoft Edge browser window open.
 
-    ![](./Images/PwrBI_5.png)
+1. Select **Account manager (1)**, and click on **Start trial (2)**.
 
-   You now have a **Fabric (Preview) trial** that includes a **Power BI trial** and a **Fabric (Preview) trial capacity**.
+   ![Account-manager-start](./Images/07.png)
+
+1. A new prompt will appear asking you to **Upgrade to a free Microsoft Fabric trial**, click on **Start trial (1)**.
+
+   ![Start-trial](./Images/lab1-11.png)
+
+   >**Note:** On the **Successfully upgraded to Microsoft Fabric** pop-up, select **Stay on current page**.
+
+1. Now, open **Account manager (1)** again, and verify **Trial Status (2)**.
+
 
 7. In the menu bar on the left, select **Workspaces** (the icon looks similar to &#128455;).
 
    ![](./Images/workspace-1.png)
 
-8. Create a new workspace with a name **dp_fabric-<inject key="Deployment ID" enableCopy="false"/>**, selecting a licensing mode that includes Fabric capacity (*Trial*, *Premium*, or *Fabric*).
+8. Create a new workspace with a name **dp_fabric-<inject key="Deployment ID" enableCopy="false"/>**, expand  **Advanced:** and Under **License mode**, select **Trial capacity (1)** and click on **Apply (2)** to create and open the workspace.
+
+   ![](./Images/fabric(2).png)
    
 9. When your new workspace opens, it should be empty, as shown here:
 
     ![Screenshot of an empty workspace in Power BI.](./Images/new-workspace-2.png)
-
-  
+ 
 10. At the bottom left of the Power BI portal, select the **Power BI** icon and switch to the **Microsoft Fabric** experience.
 
-## Task 2 : Download file for KQL database
+## Task 3 : Download file for KQL database
 
 Now that you have a workspace, it's time to switch to the *Synapse Real-Time Analytics* experience in the portal and download the data file you're going to analyze.
 
 1. Download the data file for this exercise from [https://raw.githubusercontent.com/MicrosoftLearning/dp-data/main/sales.csv](https://raw.githubusercontent.com/MicrosoftLearning/dp-data/main/sales.csv), saving it as **sales.csv** on your local computer (or lab VM if applicable)
 
-   OR If you are using the lab virtual machine (lab VM) provided to you, you can get the file from the **C:\LabFiles** directory.
+   OR If you are using the lab virtual machine (lab VM) provided to you, you can get the file from the **C:\LabFiles\dp-data-main** directory.
 
 2. Return to browser window with **Microsoft Fabric** Experience.
 
-## Task 3 : Create a KQL database
+## Task 4 : Create a KQL database
 
 Kusto query language (KQL) is used to query static or streaming data in a table that is defined in a KQL database. To analyze the sales data, you must create a table in a KQL database and ingest the data from the file.
 
@@ -93,21 +125,38 @@ Kusto query language (KQL) is used to query static or streaming data in a table 
     
     - **Destination**:
         - **Database**: *The database you created is already selected*
-        - **Table**: *Create a new table named* **sales**.
-    - **Source**:
-        - **Source type**: File
-        - **Upload files**: *Drag or Browse for the file you downloaded earlier*
-    - **Schema**:
-        - **Compression type**: Uncompressed
-        - **Data format**: CSV
-        - **Ignore the first record**: *Selected*
-        - **Mapping name**: sales_mapping
-    - **Summary**:
-        - *Review the preview of the table and close the wizard.*
+        - **Table**: *Create a new table named* **sales** by clicking on the + sign to the left of ***New table***
+
+        ![New table wizard step one](./Images/import-wizard-local-file-1.png?raw=true)
+
+        - You will now see the **Drag files here or a Browse for files** hyperlink appear in the same window.
+
+        ![New table wizard step two](./Images/import-wizard-local-file-2.png?raw=true)
+
+        - Browse or drag your **sales.csv** onto the screen and wait for the Status box to change to a green check box and then select **Next**
+
+        ![New table wizard step three](./Images/import-wizard-local-file-3.png?raw=true)
+
+        - In this screen you'll see that your column headings are in teh first row although the system detected them, we still need to move the slider above these lines **First row is column header** in order to get keep from getting any errors.
+        
+        ![New table wizard step four](./Images/import-wizard-local-file-4.png?raw=true)
+
+        - Once you select this slider you will see everything looks good to go, select the **Finish** button on the bottom right of the panel.
+
+        ![New table wizard step five](./Images/import-wizard-local-file-5.png?raw=true)
+
+        - Wait for the steps in the summary screen to complete which include:
+            - Create table (sales)
+            - create mapping (sales_mapping)
+            - Data queuing
+            - Ingestion
+        - Select the **Close** button
+
+        ![New table wizard step six](./Images/import-wizard-local-file-6.png?raw=true)
 
 > **Note**: In this example, you imported a very small amount of static data from a file, which is fine for the purposes of this exercise. In reality, you can use Kusto to analyze much larger volumes of data; including real-time data from a streaming source such as Azure Event Hubs.
 
-## Task 4 : Use KQL to query the sales table
+## Task 5 : Use KQL to query the sales table
 
 Now that you have a table of data in your database, you can use KQL code to query it.
 
@@ -147,7 +196,7 @@ Now that you have a table of data in your database, you can use KQL code to quer
 
 9. Select **Save as KQL queryset** and save the query as **Revenue by Product**.
 
-## Task 5 : Create a Power BI report from a KQL Query set
+## Task 6 : Create a Power BI report from a KQL Query set
 
 You can use your KQL Queryset as the basis for a Power BI report.
 
