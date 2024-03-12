@@ -88,8 +88,6 @@ Before working with data in Fabric, create a workspace with the Fabric trial ena
    ![](./Images/workspace-1.png)
 
 8. Create a new workspace with a name **dp_fabric-<inject key="Deployment ID" enableCopy="false"/>**, expand  **Advanced:** and Under **License mode**, select **Trial capacity (1)** and click on **Apply (2)** to create and open the workspace.
-
-   ![](./Images/fabric(2).png)
    
 9. When your new workspace opens, it should be empty, as shown here:
 
