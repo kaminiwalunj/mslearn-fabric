@@ -115,7 +115,7 @@ Kusto query language (KQL) is used to query static or streaming data in a table 
 
 2. On the **Home** page for the **Real-Time Analytics** experience, select **KQL database** and create a new database with a name as **kql-database**.
 
-    ![Screenshot of selected Fabric Experience home with RTA selected](./Images/KQL-database.png)
+    ![Screenshot of selected Fabric Experience home with RTA selected](./Images/lab1-15.png)
 
 3. When the new database has been created, select the option to Get Data from **Local File**. Then use the wizard to import the data into a new table by selecting the following options:
 
