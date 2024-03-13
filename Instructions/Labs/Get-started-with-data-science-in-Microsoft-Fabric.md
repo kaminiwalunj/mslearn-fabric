@@ -73,8 +73,16 @@ To train a model, you can create a *notebook*. Notebooks provide an interactive 
 Now you're ready to run code to prepare data and train a model. To work with data, you'll use *dataframes*. Dataframes in Spark are similar to Pandas dataframes in Python, and provide a common structure for working with data in rows and columns.
 
 1. Select **Lakehouses** from the explorer. In the **Add lakehouse** pane, select **Add** to add a lakehouse.
-1. Select **Existing lakehouse** and select **Add**.
+
+   ![](./Images/lab2-6.png)
+
+   ![](./Images/lab2-7.png)
+
+1. Select **Existing lakehouse** in Add Lakehouse pane and select **Add**.
 1. Select the lakehouse you created in a previous section and select **Add**
+
+   ![](./Images/lab2-9.png)
+
 1. Select the **Files** folder so that the CSV file is listed next to the notebook editor.
 1. In the **...** menu for **churn.csv**, select **Load data** > **Pandas**. A new code cell containing the following code should be added to the notebook:
 
