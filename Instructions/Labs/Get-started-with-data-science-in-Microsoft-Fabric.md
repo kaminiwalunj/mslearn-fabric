@@ -13,45 +13,19 @@ In this lab, we will use Microsoft Fabric to create a notebook and train a machi
 
 This lab will take approximately **45** minutes to complete.
 
-> **Note**: You'll need a Microsoft Fabric license to complete this exercise. Complete the previous task to proceed further.
+> **Note**: You'll need a Microsoft Fabric license to complete this exercise.
 
 ## Task 1 : Create a workspace
 
 Before working with data in Fabric, create a workspace with the Fabric trial enabled.
 
-1. Sign into [Microsoft Fabric](https://app.fabric.microsoft.com) at `https://app.fabric.microsoft.com` and select **Power BI**.
-
-   ![](./Images/power-bi.png)
-
-2. From the PowerBI home page, select **Account Manager** from the top-right corner to start the free **Microsoft Fabric trial**.
-    
-    ![](./Images/PwrBI_1.png)
-  
-3. In the Account Manager, select **Start Trial**.
-
-   ![](./Images/PwrBI_2.png)
-   
-4. If prompted, agree to the terms and then select **Start trial**. 
-
-   ![](./Images/PwrBI_3.png)
-   
-5. Once your trial capacity is ready, you receive a confirmation message. Select **Got it** to begin working in Fabric.
-
-    ![](./Images/PwrBI_4.png)
-   
-6. Open your **Account manager** again. Notice that you now have a heading for **Trial status**. Your Account manager keeps track of the number of days remaining in your trial.
-
-    ![](./Images/PwrBI_5.png)
-
-   You now have a **Fabric (Preview) trial** that includes a **Power BI trial** and a **Fabric (Preview) trial capacity**.
-
-7. In the menu bar on the left, select **Workspaces** (the icon looks similar to &#128455;).
+1. In the menu bar on the left, select **Workspaces** (the icon looks similar to &#128455;).
 
    ![](./Images/workspace-1.png)
 
-8. Create a new workspace with a name **dp_fabric-<inject key="Deployment ID" enableCopy="false"/>**, selecting a licensing mode that includes Fabric capacity (*Trial*, *Premium*, or *Fabric*).
+1. Create a new workspace with a name **dp_fabric-<inject key="Deployment ID" enableCopy="false"/>**, expand  **Advanced:** and Under **License mode**, select **Trial capacity (1)** and click on **Apply (2)** to create and open the workspace.
    
-9. When your new workspace opens, it should be empty, as shown here:
+1. When your new workspace opens, it should be empty, as shown here:
 
     ![Screenshot of an empty workspace in Power BI.](./Images/new-workspace-2.png)
 
@@ -60,17 +34,17 @@ Before working with data in Fabric, create a workspace with the Fabric trial ena
 Now that you have a workspace, it's time to switch to the *Data science* experience in the portal and create a data lakehouse for the data files you're going to analyze.
 
 1. At the bottom left of the Power BI portal, select the **Power BI** icon and switch to the **Data Engineering** experience.
-1. In the **Data engineering** home page, create a new **Lakehouse** with a name of your choice.
+1. In the **Data engineering** home page, select **Lakehouse** and provide name of your choice and select **Create**.
 
     After a minute or so, a new lakehouse with no **Tables** or **Files** will be created. You need to ingest some data into the data lakehouse for analysis. There are multiple ways to do this, but in this exercise you'll simply download and extract a folder of text files your local computer (or lab VM if applicable) and then upload them to your lakehouse.
 
 1. Download and save the `churn.csv` CSV file for this exercise from [https://raw.githubusercontent.com/MicrosoftLearning/dp-data/main/churn.csv](https://raw.githubusercontent.com/MicrosoftLearning/dp-data/main/churn.csv).
 
-   OR If you are using the lab virtual machine (lab VM) provided to you, you can get the file from the **C:\LabFiles** directory.
+   OR If you are using the lab virtual machine (lab VM) provided to you, you can get the file from the **C:\LabFiles\dp-data-main** directory.
 
 1. Return to the web browser tab containing your lakehouse, and in the **...** menu for the **Files** node in the **Lake view** pane, select **Upload** and **Upload files**, and then upload the **churn.csv** file from your local computer (or lab VM if applicable) to the lakehouse.
 
-1. After the files have been uploaded, expand **Files** and verify that the CSV file have been uploaded.
+1. After the files have been uploaded, select **Files** and verify that the CSV file have been uploaded.
 
 ## Task 3 : Create a Notebook
 
@@ -78,7 +52,7 @@ To train a model, you can create a *notebook*. Notebooks provide an interactive 
 
 1. At the bottom left of the Power BI portal, select the **Data engineering** icon and switch to the **Data science** experience.
 
-1. In the **Data science** home page, create a new **Notebook**.
+1. In the **Data science** home page, create a new **Notebook** by selecting **Notebook** tab.
 
     After a few seconds, a new notebook containing a single *cell* will open. Notebooks are made up of one or more cells that can contain *code* or *markdown* (formatted text).
 
@@ -98,10 +72,18 @@ To train a model, you can create a *notebook*. Notebooks provide an interactive 
 
 Now you're ready to run code to prepare data and train a model. To work with data, you'll use *dataframes*. Dataframes in Spark are similar to Pandas dataframes in Python, and provide a common structure for working with data in rows and columns.
 
-1. In the **Add lakehouse** pane, select **Add** to add a lakehouse.
-1. Select **Existing lakehouse** and select **Add**.
-1. Select the lakehouse you created in a previous section.
-1. Expand the **Files** folder so that the CSV file is listed next to the notebook editor.
+1. Select **Lakehouses** from the explorer. In the **Add lakehouse** pane, select **Add** to add a lakehouse.
+
+   ![](./Images/lab2-6.png)
+
+   ![](./Images/lab2-7.png)
+
+1. Select **Existing lakehouse** in Add Lakehouse pane and select **Add**.
+1. Select the lakehouse you created in a previous section and select **Add**
+
+   ![](./Images/lab2-9.png)
+
+1. Select the **Files** folder so that the CSV file is listed next to the notebook editor.
 1. In the **...** menu for **churn.csv**, select **Load data** > **Pandas**. A new code cell containing the following code should be added to the notebook:
 
     ```python
@@ -133,7 +115,7 @@ Now you're ready to run code to prepare data and train a model. To work with dat
 
 Now that you've loaded the data, you can use it to train a machine learning model and predict customer churn. You'll train a model using the Scikit-Learn library and track the model with MLflow. 
 
-1. Use the **+ Code** icon below the cell output to add a new code cell to the notebook, and enter the following code in it:
+1. Use the **+ Code** icon below the cell output to add a new code cell to the notebook, and enter the following code in it. If the **+ Code** icon isn't visible, hover below the cell to make it appear.:
 
     ```python
    from sklearn.model_selection import train_test_split
@@ -243,36 +225,27 @@ When you've trained and tracked models with MLflow, you can use the MLflow libra
 
 Microsoft Fabric will keep track of all your experiments and allows you to visually explore them.
 
-1. Navigate to the **Data Science** home page.
+1. Navigate to your workspace from the hub menu bar on the left.
 1. Select the `experiment-churn` experiment to open it.
 
     > **Tip:**
     > If you don't see any logged experiment runs, refresh the page.
 
-1. Select the **View** tab.
-1. Select **Run list**. 
-1. Select the two latest runs by checking each box.
-    As a result, your two last runs will be compared to each other in the **Metric comparison** pane. By default, the metrics are plotted by run name. 
-1. Select the **&#128393;** (Edit) button of the graph visualizing the accuracy for each run. 
-1. Change the **visualization type** to `bar`. 
-1. Change the **X-axis** to `estimator`. 
-1. Select **Replace** and explore the new graph.
-
-By plotting the accuracy per logged estimator, you can review which algorithm resulted in a better model.
+1. Review the **Run metrics** to explore accurate your regression model is.
+1. Navigate back to the home page and select the `experiment-churn` experiment to open it.
+1. Review the **Run metrics** to explore the accuracy of the classification model. Note that the type of metrics are different as you trained a different type of model.
 
 ## Task 8 : Save the model
 
-After comparing machine learning models that you've trained across experiment runs, you can choose the best performing model. To use the best performing model, save the model and use it to generate predictions.
+After comparing machine learning models that you've trained across experiments, you can choose the best performing model. To use the best performing model, save the model and use it to generate predictions.
 
-1. In the experiment overview, ensure the **View** tab is selected.
-1. Select **Run details**.
-1. Select the run with the highest accuracy. 
-1. Select **Save** in the **Save as model** box.
-1. Select **Create a new model** in the newly opened pop-up window.
-1. Name the model `model-churn`, and select **Create**. 
-1. Select **View model** in the notification that appears at the top right of your screen when the model is created. You can also refresh the window. The saved model is linked under **Registered version**. 
+1. Select **Save as ML model** in the experiment ribbon.
+1. Select **Create a new ML model** in the newly opened pop-up window.
+1. Select the `model` folder.
+1. Name the ML model name as `model-churn`, and select **Save**.
+1. Select **View ML model** in the notification that appears at the top right of your screen when the model is created. You can also refresh the window. The saved model is linked under **ML model versions**.
 
-Note that the model, the experiment, and the experiment run are linked, allowing you to review how the model is trained. 
+Note that the model, the experiment, and the experiment run are linked, allowing you to review how the model is trained.
 
 ## Task 9 : Save the Notebook and end the Spark session
 
@@ -290,4 +263,4 @@ If you've finished exploring your model and experiments, you can delete the work
 
 1. In the bar on the left, select the icon for your workspace to view all of the items it contains.
 2. In the **...** menu on the toolbar, select **Workspace settings**.
-3. In the **Other** section, select **Remove this workspace** .
+3. In the **Other** section, select **Remove this workspace** and select **Delete** .
