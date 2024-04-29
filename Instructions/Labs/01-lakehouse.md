@@ -234,7 +234,7 @@ The tables in your lakehouse are automatically added to a default dataset that d
 
     > **Note**: In this exercise, the data model consists of a single table. In a real-world scenario, you would likely create multiple tables in your lakehouse, each of which would be included in the model. You could then define relationships between these tables in the model.
 
-2. In the menu ribbon, select the **Reporting** tab. Then select **New report**. A new browser tab opens in which you can design your report.
+2. In the menu ribbon, select the **Reporting** tab. Then select **New report**. Click on **Continue**.
 
    ![Screenshot of the new report .](./Images/new-report.png)
 
