@@ -98,7 +98,7 @@ Now that you have a workspace, it's time to switch to the *Data engineering* exp
 
    ![](./Images/data-engineering.png)
 
-2. In the **Data engineering** home page, Select **Lakehouse(Preview)**
+2. In the **Data engineering** home page, Select **Lakehouse**
 
    ![](./Images/lakehouse-preview.png)
 
@@ -158,7 +158,7 @@ The sales data you uploaded is in a file, which data analysts and engineers can 
 
 1. On the **Home** page, select the **Files/Data** folder so you can see the **sales.csv** file it contains.
 
-2. In the **...** menu for the **sales.csv** file, select **Load to Tables**.
+2. In the **...** menu for the **sales.csv** file, select **Load to Tables** and click on **New Tables**.
 
     ![](./Images/load-totables.png)
    
