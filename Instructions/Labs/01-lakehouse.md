@@ -78,6 +78,16 @@ Before working with data in Fabric, create a workspace with the Fabric trial ena
 
    ![Screenshot of an empty workspace in Power BI.](./Images/new-workspace-u.png)
 
+
+   <validation step="f77f6f86-fc3c-4fca-a8d2-234693b73ba8" />
+
+    > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+    > - Click the Lab Validation tab located at the upper right corner of the lab guide section and navigate to the Lab Validation tab.
+    > - Hit the Validate button for the corresponding task.
+    > - If you receive a success message, you can proceed to the next task. If not, carefully read the error message and retry the step, following the instructions in the lab guide.
+    > - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
+
+
 ## Task 2 : Create a Lakehouse
 
 Now that you have a workspace, it's time to switch to the *Data engineering* experience in the portal and create a data lakehouse for your data files.
@@ -250,6 +260,19 @@ The tables in your lakehouse are automatically added to a default dataset that d
     - The **Item Sales Report** report.
 
    ![Screenshot of a workspace view.](./Images/workspace-view.png)
+
+   <validation step="8be3d605-b09f-4738-b1e5-c83a1e304b80" />
+
+
+   <validation step="d75ef970-6298-404c-aeeb-8dafe17b3ac2" />
+   
+
+    > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+    > - Click the Lab Validation tab located at the upper right corner of the lab guide section and navigate to the Lab Validation tab.
+    > - Hit the Validate button for the corresponding task.
+    > - If you receive a success message, you can proceed to the next task. If not, carefully read the error message and retry the step, following the instructions in the lab guide.
+    > - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
+
 
 ## Clean up resources
 
