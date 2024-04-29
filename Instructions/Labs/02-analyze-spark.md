@@ -200,7 +200,7 @@ Now you're ready to run code that loads the data into a *dataframe*. Dataframes 
 11. Confirm that your changes have been applied to the data by viewing the dataframe. Run the following cell:
 
     ```python
-   display(df)
+    display(df)
     ```
 
 11. The dataframe includes only the data from the **2019.csv** file. Modify the code so that the file path uses a \* wildcard to read the sales order data from all of the files in the **orders** folder:
