@@ -1,0 +1,18 @@
+[
+  {
+    "Name": "Get Started with Fabric with Its Lakehouses",
+    "Language": "English",
+    "BaseURL": "https://github.com/CloudLabs-MOC/mslearn-fabric",
+    "Files": [
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/mslearn-fabric/main/Instructions/Labs/01-lakehouse.md",
+        "Order": 1
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/mslearn-fabric/main/Instructions/Labs/get-started-with-lakehouse-lab2.md",
+        "Order": 2
+      }
+    ]
+  }
+]
+
