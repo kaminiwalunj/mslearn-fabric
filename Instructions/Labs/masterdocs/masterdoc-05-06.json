@@ -1,1 +1,12 @@
+[
+  {
+    "Name": "Hands-on Lab : Create and use a Dataflow (Gen2) in Microsoft Fabric",
+    "Language": "English",
+    "BaseURL": "https://github.com/CloudLabs-MOC/mslearn-fabric",
+    "Files": [
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/mslearn-fabric/main/Instructions/Labs/05-dataflows-gen2.md",
+        "Order": 1
+      },
+  
 
