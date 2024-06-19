@@ -1,0 +1,20 @@
+[
+  {
+    "Name": "Hands-on Lab : Get Started with Data warehouses and ingesting data with dataflows Gen2 with Microsoft Fabric",
+    "Language": "English",
+    "BaseURL": "https://github.com/CloudLabs-MOC/mslearn-fabric",
+    "Files": [
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/mslearn-fabric/main/Instructions/Labs/05-dataflows-gen2.md",
+        "Order": 1
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/mslearn-fabric/main/Instructions/Labs/06-data-warehouse.md",
+        "Order": 2
+      }
+    ]
+  }
+]
+
+  
+
