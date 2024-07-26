@@ -63,3 +63,7 @@ Microsoft Fabric Lakehouse is a unified data platform that integrates the flexib
 - **Power BI** is a business analytics tool integrated with Microsoft Fabric, used for data visualization and reporting.
 
 - **Power Query** is a data connection technology that enables users to discover, connect, and manipulate data across various sources.
+
+
+## Architecture diagram
+
