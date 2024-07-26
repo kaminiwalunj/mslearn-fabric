@@ -69,8 +69,6 @@ Microsoft Fabric Lakehouse is a unified data platform that integrates the flexib
 
 ![](./Images/Create-and-ingest-data-with-MS-fabric-lakehouse.png)
 
-
-
 ## Explanation of Components
 
 - **Microsoft Fabric Workspace:** A centralized environment within Microsoft Fabric where users can manage their data projects. This workspace provides access to various tools and services needed to create and analyze data in a unified platform.
@@ -90,3 +88,41 @@ Microsoft Fabric Lakehouse is a unified data platform that integrates the flexib
 - **Data Transformation:** The process of converting raw data into a structured format that can be used for analysis. This includes operations such as grouping, filtering, and summarizing data to prepare it for querying and reporting.
 
 - **Report Building:** The creation of interactive reports using Power BI, based on the data stored in the Lakehouse. This involves designing report layouts, selecting visualizations, and configuring report elements to effectively display data insights.
+
+## Getting Started with the lab
+
+## Accessing Your Lab Environment
+
+Once you're ready to dive in, your virtual machine and lab guide will be right at your fingertips within your web browser.
+ 
+![](./Images/labguide.png)
+
+### Virtual Machine & Lab Guide
+ 
+Your virtual machine is your workhorse throughout the workshop. The lab guide is your roadmap to success.
+ 
+## Exploring Your Lab Resources
+ 
+To get a better understanding of your lab resources and credentials, navigate to the **Environment Details** tab.
+ 
+![Explore Lab Resources](./Images/env.png)
+ 
+## Utilizing the Split Window Feature
+ 
+For convenience, you can open the lab guide in a separate window by selecting the **Split Window** button from the top right corner.
+ 
+![Use the Split Window Feature](./Images/spl.png)
+ 
+## Managing Your Virtual Machine
+ 
+Feel free to start, stop, or restart your virtual machine as needed from the **Resources** tab. Your experience is in your hands!
+ 
+![Manage Your Virtual Machine](./Images/res.png)
+ 
+ 
+ Click "Next" from the bottom right corner to embark on your Lab journey!
+ 
+  ![Start Your Azure Journey](./Images/next.png)
+ 
+Now you're all set to explore the powerful world of technology. Feel free to reach out if you have any questions along the way. Enjoy your workshop!
+
