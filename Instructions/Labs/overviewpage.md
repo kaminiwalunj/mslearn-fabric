@@ -1,4 +1,4 @@
-# Create and ingest data with a Microsoft Fabric Lakehouse
+# Get started with Lakehouse in Microsoft Fabric
 
 ## Overview 
 The purpose of this lab is to provide hands-on experience in creating and managing a scalable and flexible data store using Microsoft Fabric's Lakehouse. Participants will learn to integrate the capabilities of both data lakes and data warehouses for efficient big data processing and analysis.
@@ -16,7 +16,6 @@ The utilized technical specifications are as follows:
 ## Objective
 
 By the end of this lab, you will enhance your data management and analysis skills by leveraging Microsoft Fabric's. You will:
-
 
 **Create a Microsoft Fabric Workspace:** etup: Learn how to initiate a new workspace within Microsoft Fabric. This involves signing into the Fabric platform, navigating to the workspace creation interface, and configuring it with the appropriate Fabric capacity. Activate a Fabric trial to access all necessary features and tools required for the lab exercises. This includes enabling any additional capacity or features provided during the trial period.
 
