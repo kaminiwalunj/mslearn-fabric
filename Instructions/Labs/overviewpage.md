@@ -27,17 +27,14 @@ Configuration: Configure the Lakehouse to leverage the benefits of both data lak
 
 **Convert Files to Tables**: Transformation: Convert the uploaded data files into structured tables within the Lakehouse. This process involves defining table schemas and loading data from files into these tables to make it queryable. Management: Manage and refresh the newly created tables to ensure they reflect the latest data and are properly structured for querying.
 
-Run SQL Queries : Query Execution  Utilize the SQL endpoint provided by Microsoft Fabric to write and execute SQL queries against the Lakehouse tables. This allows you to perform complex data analysis and retrieve insights from the stored data.
-Results Analysis: Review the results of your SQL queries to interpret data and generate meaningful insights. This includes analyzing query outputs and understanding the data trends.
+**Run SQL Queries** : Query Execution  Utilize the SQL endpoint provided by Microsoft Fabric to write and execute SQL queries against the Lakehouse tables. This allows you to perform complex data analysis and retrieve insights from the stored data. Results Analysis helps to review the results of your SQL queries to interpret data and generate meaningful insights. This includes analyzing query outputs and understanding the data trends.
 Create Visual Queries:
 
 **Power Query**: Use Power Query to visually create and transform data queries. This involves applying various transformations to prepare data for analysis.
 Visualization: Develop visual queries to represent data in an easily understandable format, facilitating better data interpretation and decision-making.
 Build Reports:
 
-Report Creation: Develop interactive reports using Power BI based on the data in the Lakehouse. This includes designing report layouts, selecting appropriate visualizations, and configuring report elements to display data effectively.
-Saving and Sharing: Save your completed reports within the Fabric workspace and share them with stakeholders. This step includes ensuring that reports are accessible and properly formatted for collaborative analysis and decision-making.
-
+**Report Creation**: Develop interactive reports using Power BI based on the data in the Lakehouse. This includes designing report layouts, selecting appropriate visualizations, and configuring report elements to display data effectively. Saving and Sharing save your completed reports within the Fabric workspace and share them with stakeholders. This step includes ensuring that reports are accessible and properly formatted for collaborative analysis and decision-making.
 
 ## Prerequisites 
 
