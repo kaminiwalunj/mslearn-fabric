@@ -1,1 +1,14 @@
+[
+  {
+    "Name": "Hands-on Lab : Create and ingest data with a Microsoft Fabric Lakehouse",
+    "Language": "English",
+    "BaseURL": "https://github.com/CloudLabs-MOC/mslearn-fabric",
+    "Files": [
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/mslearn-fabric/main/Instructions/Labs/01-lakehouse.md",
+        "Order": 1
+      }
+    ]
+  }
+]
 
