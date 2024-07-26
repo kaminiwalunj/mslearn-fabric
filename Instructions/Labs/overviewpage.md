@@ -67,3 +67,4 @@ Microsoft Fabric Lakehouse is a unified data platform that integrates the flexib
 
 ## Architecture diagram
 
+![](./Images/Create-and-ingest-data-with-MS-fabric-lakehouse.png)
