@@ -96,26 +96,26 @@ Now that you have a workspace, it's time to switch to the *Data engineering* exp
 
     - The data engineering home page includes tiles to create commonly used data engineering assets.
 
-       ![](./Images/data-engineering.png)
+      ![](./Images/data-engineering.png)
  
 2. In the **Data engineering** home page, Select **Lakehouse**
 
-      ![](./Images/lakehouse-preview.png)
+   ![](./Images/lakehouse-preview.png)
 
 3. Create a new **Lakehouse** with a name of your choice. 
 
-      ![](./Images/new-lakehouse.png)
+   ![](./Images/new-lakehouse.png)
 
 4. After a minute or so, a new lakehouse will be created
 
 5. View the new lakehouse, and note that the **Lakehouse explorer** pane on the left enables you to browse tables and files in the lakehouse:
     
-    - The **Tables** folder contains tables that you can query using SQL semantics. Tables in a Microsoft Fabric lakehouse are based on the open source *Delta Lake* file format, commonly used in Apache Spark.
-    - The **Files** folder contains data files in the OneLake storage for the lakehouse that aren't associated with managed delta tables. You can also create *shortcuts* in this folder to reference data that is 
+     - The **Tables** folder contains tables that you can query using SQL semantics. Tables in a Microsoft Fabric lakehouse are based on the open source *Delta Lake* file format, commonly used in Apache Spark.
+     - The **Files** folder contains data files in the OneLake storage for the lakehouse that aren't associated with managed delta tables. You can also create *shortcuts* in this folder to reference data that is 
        stored externally.
-    - Currently, there are no tables or files in the lakehouse.
+     - Currently, there are no tables or files in the lakehouse.
 
-        ![](./Images/lakehouse-explorer.png)
+       ![](./Images/lakehouse-explorer.png)
    
 ## Task 3 : Upload a file
 
@@ -132,15 +132,15 @@ Fabric provides multiple ways to load data into the lakehouse, including built-i
 
 3. Return to the web browser tab containing your lakehouse, and in the **...** menu for the **Files** folder in the **Lakehouse explorer** pane, select **New subfolder**, and create a subfolder named **data**.
 
-      ![](./Images/subfolder.png)
+   ![](./Images/subfolder.png)
 
 4. In the **...** menu for the new **data** folder, select **Upload** and **Upload files**, and then upload the **sales.csv** file from your local computer (or lab VM if applicable).
 
-      ![](./Images/lab1-uploadfiles.png)
+   ![](./Images/lab1-uploadfiles.png)
    
 5. After the file has been uploaded, select the **Files/data** folder and verify that the **sales.csv** file has been uploaded, as shown here:
 
-      ![Screenshot of uploaded sales.csv file in a lakehouse.](./Images/sales-file.png)
+   ![Screenshot of uploaded sales.csv file in a lakehouse.](./Images/sales-file.png)
 
 6. Select the **sales.csv** file to see a preview of its contents.
 
@@ -150,11 +150,11 @@ In many scenarios, the data you need to work with in your lakehouse may be store
 
 1. In the **...** menu for the **Files** folder, select **New shortcut**.
 
-     ![](./Images/new-shortcut.png)
+   ![](./Images/new-shortcut.png)
 
 2. View the available data source types for shortcuts. Then close the **New shortcut** dialog box without creating a shortcut.
 
-     ![](./Images/shortcuts.png)
+   ![](./Images/shortcuts.png)
 
 ## Task 5 : Load file data into a table
 
@@ -164,23 +164,23 @@ The sales data you uploaded is in a file, which data analysts and engineers can 
 
 2. In the **...** menu for the **sales.csv** file, select **Load to Tables** and click on **New Tables**.
 
-     ![](./Images/load-totables.png)
+   ![](./Images/load-totables.png)
    
 3. In the **Load to table** dialog box, set the table name to **sales** and confirm the load operation by selecting **Load**. Then wait for the table to be created and loaded.
 
-   > **Tip**: If the **sales** table does not automatically appear, in the **...** menu for the **Tables** folder, select **Refresh**.
+    > **Tip**: If the **sales** table does not automatically appear, in the **...** menu for the **Tables** folder, select **Refresh**.
 
-     ![](./Images/load.png)
+   ![](./Images/load.png)
    
 4. In the **Lakehouse explorer** pane, select the **sales** table that has been created to view the data.
 
-     ![Screenshot of a table preview.](./Images/table-preview-u.png)
+   ![Screenshot of a table preview.](./Images/table-preview-u.png)
 
 5. In the **...** menu for the **sales** table, select **View files** to see the underlying files for this table
 
-     ![Screenshot of a table preview.](./Images/delta-table-files-u.png)
+   ![Screenshot of a table preview.](./Images/delta-table-files-u.png)
 
-    Files for a delta table are stored in *Parquet* format, and include a subfolder named **_delta_log** in which details of transactions applied to the table are logged.
+   Files for a delta table are stored in *Parquet* format, and include a subfolder named **_delta_log** in which details of transactions applied to the table are logged.
 
 ## Task 6 : Use SQL to query tables
 
@@ -189,11 +189,11 @@ When you create a lakehouse and define tables in it, a SQL endpoint is automatic
 1. At the top-right of the Lakehouse page, switch from **Lakehouse** to **SQL endpoint**. Then wait a short time until the SQL query endpoint for your lakehouse opens in a visual interface from which you can query 
    its tables, as shown here:
 
-    ![Screenshot of the SQL endpoint page.](./Images/lakehouse-sql-endpoint-u.png)
+   ![Screenshot of the SQL endpoint page.](./Images/lakehouse-sql-endpoint-u.png)
 
 2. Use the **New SQL query** button to open a new query editor, and enter the following SQL query:
 
-      ```sql
+     ```sql
      SELECT Item, SUM(Quantity * UnitPrice) AS Revenue
      FROM sales
      GROUP BY Item
@@ -203,7 +203,7 @@ When you create a lakehouse and define tables in it, a SQL endpoint is automatic
 
 3. Use the **&#9655; Run** button to run the query and view the results, which should show the total revenue for each product.
 
-     ![Screenshot of a SQL query with results.](./Images/sql-query-u.png)
+   ![Screenshot of a SQL query with results.](./Images/sql-query-u.png)
 
 ## Task 7 : Create a visual query
 
@@ -213,11 +213,11 @@ While many data professionals are familiar with SQL, data analysts with Power BI
 
 2. Drag the **sales** table to the new visual query editor pane that opens to create a Power Query as shown here: 
 
-     ![Screenshot of a Visual query.](./Images/visual-query-u.png)
+   ![Screenshot of a Visual query.](./Images/visual-query-u.png)
 
 3. In the **Manage columns** menu, select **Choose columns**. Then select only the **SalesOrderNumber** and **SalesOrderLineNumber** columns and click **OK**.
 
-     ![Screenshot of a Choose columns dialog box.](./Images/choose-columns-u.png)
+   ![Screenshot of a Choose columns dialog box.](./Images/choose-columns-u.png)
 
 4. In the **Transform** menu, select **Group by**. Then group the data by using the following **Basic** settings:
 
@@ -238,14 +238,14 @@ The tables in your lakehouse are automatically added to a default dataset that d
 
      ![Screenshot of a data model.](./Images/data-model-u.png)
 
-     > **Note**: In this exercise, the data model consists of a single table. In a real-world scenario, you would likely create multiple tables in your lakehouse, each of which would be included in the model. You 
+     >**Note**: In this exercise, the data model consists of a single table. In a real-world scenario, you would likely create multiple tables in your lakehouse, each of which would be included in the model. You 
         could then define relationships between these tables in the model.
 
 2. In the menu ribbon, select the **Reporting** tab. Then select **New report**. Click on **Continue**.
 
-     ![Screenshot of the new report .](./Images/new-report.png)
+   ![Screenshot of the new report .](./Images/new-report.png)
 
-     ![Screenshot of the report designer.](./Images/report-designer-u.png)
+   ![Screenshot of the report designer.](./Images/report-designer-u.png)
 
 3. In the **Data** pane on the right, expand the **sales** table. Then select the following fields:
     
@@ -258,7 +258,7 @@ The tables in your lakehouse are automatically added to a default dataset that d
 4. Hide the **Data** and **Filters** panes to create more space. Then ensure the table visualization is selected and in the **Visualizations** pane, change the visualization to a **Clustered bar chart** and resize it 
    as shown here.
 
-     ![Screenshot of a report containing a clustered bar chart.](./Images/clustered-bar-chart-u.png)
+   ![Screenshot of a report containing a clustered bar chart.](./Images/clustered-bar-chart-u.png)
 
 5. On the **File** menu, select **Save**. Then save the report as **Item Sales Report** in the workspace you created previously.
 
@@ -269,7 +269,7 @@ The tables in your lakehouse are automatically added to a default dataset that d
     - A default dataset for the tables in your lakehouse.
     - The **Item Sales Report** report.
 
-       ![Screenshot of a workspace view.](./Images/workspace-view.png)
+      ![Screenshot of a workspace view.](./Images/workspace-view.png)
 
    <validation step="8be3d605-b09f-4738-b1e5-c83a1e304b80" />
 
@@ -277,7 +277,7 @@ The tables in your lakehouse are automatically added to a default dataset that d
    <validation step="d75ef970-6298-404c-aeeb-8dafe17b3ac2" />
    
 
-    > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+    >**Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
     > - Click the Lab Validation tab located at the upper right corner of the lab guide section and navigate to the Lab Validation tab.
     > - Hit the Validate button for the corresponding task.
     > - If you receive a success message, you can proceed to the next task. If not, carefully read the error message and retry the step, following the instructions in the lab guide.
