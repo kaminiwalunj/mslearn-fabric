@@ -76,7 +76,7 @@ Before working with data in Fabric, create a workspace with the Fabric trial ena
 
 10. When your new workspace opens, it should be empty.
 
-   ![Screenshot of an empty workspace in Power BI.](./Images/new-workspace-u.png)
+    ![Screenshot of an empty workspace in Power BI.](./Images/new-workspace-u.png)
 
 
    <validation step="f77f6f86-fc3c-4fca-a8d2-234693b73ba8" />
@@ -114,7 +114,7 @@ Now that you have a workspace, it's time to switch to the *Data engineering* exp
 
     Currently, there are no tables or files in the lakehouse.
 
-   ![](./Images/lakehouse-explorer.png)
+    ![](./Images/lakehouse-explorer.png)
    
 ## Task 3 : Upload a file
 
@@ -259,7 +259,7 @@ The tables in your lakehouse are automatically added to a default dataset that d
     - A default dataset for the tables in your lakehouse.
     - The **Item Sales Report** report.
 
-   ![Screenshot of a workspace view.](./Images/workspace-view.png)
+    ![Screenshot of a workspace view.](./Images/workspace-view.png)
 
    <validation step="8be3d605-b09f-4738-b1e5-c83a1e304b80" />
 
