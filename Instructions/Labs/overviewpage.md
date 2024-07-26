@@ -5,13 +5,12 @@ The purpose of this lab is to provide hands-on experience in creating and managi
 
 The utilized technical specifications are as follows:
 
-  1. **Power BI**: For data visualization and reporting.
-  2. **Power Query**: For creating visual data transformation queries.
-  3. **OneLake**: Scalable storage layer based on Azure Data Lake Store Gen2.
-  4. **Apache Spark**: Compute engine for big data processing.
-  5. **SQL**: Query engine for relational data analysis.
-  6. **Delta Lake**: Open source storage layer that brings ACID transactions to Apache Spark and big data workloads.
-
+  - **Power BI**: For data visualization and reporting.
+  - **Power Query**: For creating visual data transformation queries.
+  - **OneLake**: Scalable storage layer based on Azure Data Lake Store Gen2.
+  - **Apache Spark**: Compute engine for big data processing.
+  - **SQL**: Query engine for relational data analysis.
+  - **Delta Lake**: Open source storage layer that brings ACID transactions to Apache Spark and big data workloads.
 
 ## Objective
 
