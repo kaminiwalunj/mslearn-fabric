@@ -79,8 +79,8 @@ Before working with data in Fabric, create a workspace with the Fabric trial ena
     ![Screenshot of an empty workspace in Power BI.](./Images/new-workspace-u.png)
 
 
-   <validation step="f77f6f86-fc3c-4fca-a8d2-234693b73ba8" />
-
+    <validation step="f77f6f86-fc3c-4fca-a8d2-234693b73ba8" />
+    
     > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
     > - Click the Lab Validation tab located at the upper right corner of the lab guide section and navigate to the Lab Validation tab.
     > - Hit the Validate button for the corresponding task.
