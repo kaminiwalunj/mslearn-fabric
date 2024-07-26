@@ -37,3 +37,6 @@ Build Reports:
 
 Report Creation: Develop interactive reports using Power BI based on the data in the Lakehouse. This includes designing report layouts, selecting appropriate visualizations, and configuring report elements to display data effectively.
 Saving and Sharing: Save your completed reports within the Fabric workspace and share them with stakeholders. This step includes ensuring that reports are accessible and properly formatted for collaborative analysis and decision-making.
+
+
+## Prerequisites 
