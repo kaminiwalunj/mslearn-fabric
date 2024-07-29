@@ -1,4 +1,4 @@
-# Lab : Create and Ingest Data with a Microsoft Fabric Lakehouse
+# Lab-01 : Create and Ingest Data with a Microsoft Fabric Lakehouse
 
 ## Overview
 
