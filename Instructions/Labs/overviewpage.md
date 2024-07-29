@@ -1,22 +1,25 @@
 # Get started with Lakehouse in Microsoft Fabric
 
-## Overview 
-This hands-on lab experience in creating and managing a scalable, flexible data store using Microsoft Fabric's Lakehouse. Participants will learn to integrate data lake and data warehouse capabilities for efficient big data processing and analysis. The technical specifications include Power BI for data visualization, Power Query for creating visual data transformation queries, and OneLake for scalable storage based on Azure Data Lake Store Gen2. Additionally, Apache Spark will be used as the compute engine for big data processing, SQL for relational data analysis, and Delta Lake for bringing transactions to Apache Spark and big data workloads.
+## Overall Estimated Duration: 4 Hours
+
+## Overview
+This hands-on lab experience involves building and administering a scalable, flexible data storage with Microsoft Fabric's Lakehouse. Participants will learn how to combine data lake and data warehouse capabilities to optimize big data processing and analysis. The technical specs include Power BI for data visualization, Power Query for visual data transformation queries, and OneLake for scalable storage using Azure Data Lake Store Gen2. Furthermore, Apache Spark will serve as the compute engine for big data processing, SQL for relational data analysis, and Delta Lake for integrating transactions into Apache Spark and big data workloads.
 
 ## Objective
 
-This lab is aimed to give learners hands-on experience in data management and analysis using Microsoft Fabric. learners will enhance their skills in data integration, transformation, storage, and analysis by leveraging Microsoft Fabric's powerful tools and features.
+This lab is designed to give learners hands-on experience with data management and analysis using Microsoft Fabric. Learners will enhance their proficiency in data integration, transformation, storage, and analysis by utilizing the advanced tools and features offered by Microsoft Fabric.
 
 Participants will learn:
 
-1. **Create and Ingest Data with a Microsoft Fabric Lakehouse**:This hands-on exercise aims to set up a Microsoft Fabric workspace, start by creating a new workspace and setting up a Lakehouse for scalable storage. Ingest data into the Lakehouse from various sources, then convert the data files into tables for structured analysis. Use SQL queries to manipulate and analyze the data, and leverage Power Query for advanced data transformation. Finally, create insightful reports using Power BI to visualize and share your findings. Participants will have set up a Microsoft Fabric workspace, ingested and transformed data into structured tables, and used SQL queries and Power Query to analyze and visualize the data.
+Participants will learn:
 
-2. **Analyze data with Apache Spark**: This hands-on exercise aims to Begin by creating a Lakehouse and uploading your data files. Next, create a notebook and load the data into a Spark DataFrame for exploration and analysis. Use Spark to transform the data, performing tasks such as filtering, aggregations, and joins. Work with tables using SQL queries to organize and analyze the data further. Finally, visualize the data directly within Spark to gain insights and facilitate decision-making. Participants will successfully set up a Lakehouse, upload and load data into Spark DataFrames, and explore and transform the data using Spark. 
+1. **Creating and Ingesting Data with a Microsoft Fabric Lakehouse**: This exercise will guide participants through setting up a Microsoft Fabric workspace and configuring a Lakehouse for scalable storage. They will ingest data from various sources, convert files into structured tables, and apply SQL queries for data manipulation and analysis. Participants will also use Power Query for advanced data transformations and create insightful reports with Power BI to effectively visualize and share their findings.
 
+2. **Analyzing Data with Apache Spark**: This exercise involves setting up a Lakehouse, uploading data files, and loading data into a Spark DataFrame for exploration. Participants will transform the data using Spark, including filtering, aggregations, and joins, and utilize SQL queries to organize and analyze the data further. The session will culminate in visualizing data directly within Spark to derive insights and support decision-making.
 
 ## Prerequisites 
 
-**Necessary Skills and Knowledge:**
+Participants should have:
 
 - Basic Understanding of Data Warehousing and Data Lakes: Familiarity with the concepts of structured and unstructured data storage.
 - SQL Knowledge: Ability to write and understand basic SQL queries.
