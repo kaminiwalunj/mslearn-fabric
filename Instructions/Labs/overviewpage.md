@@ -1,16 +1,7 @@
 # Get started with Lakehouse in Microsoft Fabric
 
 ## Overview 
-The purpose of this lab is to provide hands-on experience in creating and managing a scalable and flexible data store using Microsoft Fabric's Lakehouse. Participants will learn to integrate the capabilities of both data lakes and data warehouses for efficient big data processing and analysis.
-
-The utilized technical specifications are as follows:
-
-  - **Power BI**: For data visualization and reporting.
-  - **Power Query**: For creating visual data transformation queries.
-  - **OneLake**: Scalable storage layer based on Azure Data Lake Store Gen2.
-  - **Apache Spark**: Compute engine for big data processing.
-  - **SQL**: Query engine for relational data analysis.
-  - **Delta Lake**: Open source storage layer that brings ACID transactions to Apache Spark and big data workloads.
+This hands-on lab experience in creating and managing a scalable, flexible data store using Microsoft Fabric's Lakehouse. Participants will learn to integrate data lake and data warehouse capabilities for efficient big data processing and analysis. The technical specifications include Power BI for data visualization, Power Query for creating visual data transformation queries, and OneLake for scalable storage based on Azure Data Lake Store Gen2. Additionally, Apache Spark will be used as the compute engine for big data processing, SQL for relational data analysis, and Delta Lake for bringing ACID transactions to Apache Spark and big data workloads.
 
 ## Objective
 
