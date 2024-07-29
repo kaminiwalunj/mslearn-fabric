@@ -14,9 +14,11 @@ The utilized technical specifications are as follows:
 
 ## Objective
 
-By the end of this lab, you will enhance your data management and analysis skills by leveraging Microsoft Fabric's. You will:
+This lab is aimed to give learners hands-on experience in data management and analysis using Microsoft Fabric. learners will enhance their skills in data integration, transformation, storage, and analysis by leveraging Microsoft Fabric's powerful tools and features.
 
-- **Create a Microsoft Fabric Workspace:** etup: Learn how to initiate a new workspace within Microsoft Fabric. This involves signing into the Fabric platform, navigating to the workspace creation interface, and configuring it with the appropriate Fabric capacity. Activate a Fabric trial to access all necessary features and tools required for the lab exercises. This includes enabling any additional capacity or features provided during the trial period.
+Participants will learn:
+
+- **Create a Microsoft Fabric Workspace Setup**: Learn how to initiate a new workspace within Microsoft Fabric. This involves signing into the Fabric platform, navigating to the workspace creation interface, and configuring it with the appropriate Fabric capacity. Activate a Fabric trial to access all necessary features and tools required for the lab exercises. This includes enabling any additional capacity or features provided during the trial period.
 
 - **Set Up a Lakehouse:** Creation: Create a new Lakehouse within the Fabric workspace. This involves defining its name, setting up its configuration, and integrating it with the OneLake scalable storage layer.
 Configure the Lakehouse to leverage the benefits of both data lakes and data warehouses. This setup allows you to manage and query data efficiently using the unified platform.
