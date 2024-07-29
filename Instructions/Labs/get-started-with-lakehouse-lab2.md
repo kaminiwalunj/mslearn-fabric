@@ -1,4 +1,4 @@
-# Lab : Analyze data with Apache Spark
+# Lab-02 : Analyze data with Apache Spark
 
 ## Overview
 Apache Spark is an open source parallel processing framework for large-scale data processing and analytics. Spark has become popular in "big data" processing scenarios, and is available in multiple platform implementations; including Azure HDInsight, Azure Databricks, Azure Synapse Analytics, and Microsoft Fabric.
