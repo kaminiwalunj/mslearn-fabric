@@ -9,21 +9,10 @@ This lab is aimed to give learners hands-on experience in data management and an
 
 Participants will learn:
 
-- **Create a Microsoft Fabric Workspace Setup**: Learn how to initiate a new workspace within Microsoft Fabric. This involves signing into the Fabric platform, navigating to the workspace creation interface, and configuring it with the appropriate Fabric capacity. Activate a Fabric trial to access all necessary features and tools required for the lab exercises. This includes enabling any additional capacity or features provided during the trial period.
+1. **Create and Ingest Data with a Microsoft Fabric Lakehouse**:This hands-on exercise aims to set up a Microsoft Fabric workspace, start by creating a new workspace and setting up a Lakehouse for scalable storage. Ingest data into the Lakehouse from various sources, then convert the data files into tables for structured analysis. Use SQL queries to manipulate and analyze the data, and leverage Power Query for advanced data transformation. Finally, create insightful reports using Power BI to visualize and share your findings.Participants will have set up a Microsoft Fabric workspace, ingested and transformed data into structured tables, and used SQL queries and Power Query to analyze and visualize the data. They will gain practical experience in creating comprehensive reports to communicate insights effectively.
 
-- **Set Up a Lakehouse:** Creation: Create a new Lakehouse within the Fabric workspace. This involves defining its name, setting up its configuration, and integrating it with the OneLake scalable storage layer.
-Configure the Lakehouse to leverage the benefits of both data lakes and data warehouses. This setup allows you to manage and query data efficiently using the unified platform.
+2. **Analyze data with Apache Spark**: This hands-on exercise aims to Begin by creating a Lakehouse and uploading your data files. Next, create a notebook and load the data into a Spark DataFrame for exploration and analysis. Use Spark to transform the data, performing tasks such as filtering, aggregations, and joins. Work with tables using SQL queries to organize and analyze the data further. Finally, visualize the data directly within Spark to gain insights and facilitate decision-making.Participants will successfully set up a Lakehouse, upload and load data into Spark DataFrames, and explore and transform the data using Spark. They will also gain experience in working with tables, running SQL queries, and visualizing data to extract valuable insights.
 
-- **Ingest Data**: Import data files into the Lakehouse. This includes uploading files from your local computer or a virtual machine to the Lakehouse’s storage. Data Management Organize the uploaded data within the Lakehouse. This may involve creating subfolders for better data organization and verifying that files are correctly uploaded and accessible.
-
-- **Convert Files to Tables**: Transformation convert the uploaded data files into structured tables within the Lakehouse. This process involves defining table schemas and loading data from files into these tables to make it queryable. Management manage and refresh the newly created tables to ensure they reflect the latest data and are properly structured for querying.
-
-- **Run SQL Queries** : Query Execution utilize the SQL endpoint provided by Microsoft Fabric to write and execute SQL queries against the Lakehouse tables. This allows you to perform complex data analysis and retrieve insights from the stored data. Results Analysis helps to review the results of your SQL queries to interpret data and generate meaningful insights. This includes analyzing query outputs and understanding the data trends.
-
-- **Power Query**: Use Power Query to visually create and transform data queries. This involves applying various transformations to prepare data for analysis.
-Visualization: Develop visual queries to represent data in an easily understandable format, facilitating better data interpretation and decision-making.
-
-- **Report Creation**: Develop interactive reports using Power BI based on the data in the Lakehouse. This includes designing report layouts, selecting appropriate visualizations, and configuring report elements to display data effectively. Saving and Sharing save your completed reports within the Fabric workspace and share them with stakeholders. This step includes ensuring that reports are accessible and properly formatted for collaborative analysis and decision-making.
 
 ## Prerequisites 
 
