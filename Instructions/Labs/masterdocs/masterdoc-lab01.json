@@ -11,6 +11,10 @@
       {
         "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/mslearn-fabric/main/Instructions/Labs/01-lakehouse.md",
         "Order": 2
+      },
+      {
+        "RawFilePath": " https://raw.githubusercontent.com/CloudLabs-MOC/mslearn-fabric/main/Instructions/Labs/get-started-with-lakehouse-lab2.md",
+        "Order": 2
       }
     ]
   }
