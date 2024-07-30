@@ -3,7 +3,7 @@
 ## Overall Estimated Duration: 4 Hours
 
 ## Overview
-This hands-on lab experience involves building and administering a scalable, flexible data storage with Microsoft Fabric's Lakehouse. Participants will learn how to combine data lake and data warehouse capabilities to optimize big data processing and analysis. The technical specs include Power BI for data visualization, Power Query for visual data transformation queries, and OneLake for scalable storage using Azure Data Lake Store Gen2. Furthermore, Apache Spark will serve as the compute engine for big data processing, SQL for relational data analysis, and Delta Lake for integrating transactions into Apache Spark and big data workloads.
+This lab provides hands-on exercises in using Microsoft Fabric Lakehouse and Data Warehouse. Participants will set up a Microsoft Fabric workspace, configure a Lakehouse, ingest data, convert files into tables, and perform data analysis using SQL queries and Power Query. You will also create a Data Warehouse, define a data model, query tables, and create views. These exercises will enhance your skills in data management, analysis, and reporting using Power BI for visualization.
 
 ## Objective
 
@@ -11,9 +11,9 @@ This lab is designed to give learners hands-on experience with data management a
 
 Participants will learn:
 
-1. **Creating and Ingesting Data with a Microsoft Fabric Lakehouse**: This hands-on exercise guides through setting up a Microsoft Fabric workspace and configuring a Lakehouse for scalable storage. you will ingest data from various sources, convert files into structured tables, and apply SQL queries for data manipulation and analysis. Participants will also use Power Query for advanced data transformations and create insightful reports with Power BI to effectively visualize and share their findings.
+1. **Creating and Ingesting Data with a Microsoft Fabric Lakehouse**: This hands-on exercise guides through setting up a Microsoft Fabric workspace and configuring a Lakehouse for scalable storage. You will ingest data from various sources, convert files into structured tables, and apply SQL queries for data manipulation and analysis. Participants will also use Power Query for advanced data transformations and create insightful reports with Power BI to effectively visualize and share their findings.
 
-2. **Analyze data in a Data Warehouse**: This hands-on exercise involves creating a workspace and setting up a Data Warehouse. You will create tables and insert data, then define a data model for structured analysis. you will learn to query the Data Warehouse tables and create views for efficient data retrieval and reporting. Participants will enhance their skills in managing and analyzing data within a Data Warehouse environment.
+2. **Analyze data in a Data Warehouse**: This hands-on exercise involves creating a workspace and setting up a Data Warehouse. You will create tables and insert data, then define a data model for structured analysis. You will learn to query the Data Warehouse tables and create views for efficient data retrieval and reporting. Participants will enhance their skills in managing and analyzing data within a Data Warehouse environment.
 
 ## Prerequisites 
 
