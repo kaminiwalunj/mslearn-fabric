@@ -26,20 +26,7 @@ Participants should have:
 
 ## Architecture
 
-Microsoft Fabric Lakehouse is a unified data platform that integrates the flexibility and scalability of a data lake with the structured querying capabilities of a data warehouse. Here is a detailed explanation of the key components involved:
-
-- **OneLake Storage Layer** OneLake is the foundation of Microsoft Fabric's Lakehouse, providing a scalable and flexible storage solution built on Azure Data Lake Store Gen2. It supports storing vast amounts of structured and unstructured data efficiently.
-
-- **Apache Spark** is the compute engine used in Microsoft Fabric for big data processing. It provides high-performance in-memory computation capabilities.
-
-- **SQL compute engines** in Microsoft Fabric allow for querying and managing data using SQL semantics. This enables users to run complex queries on large datasets stored in the Lakehouse.
-
-- **Delta Lake** is an open-source storage layer that provides ACID (Atomicity, Consistency, Isolation, Durability) transactions and scalable metadata handling.
-
-- **Power BI** is a business analytics tool integrated with Microsoft Fabric, used for data visualization and reporting.
-
-- **Power Query** is a data connection technology that enables users to discover, connect, and manipulate data across various sources.
-
+This lab introduces the Microsoft Fabric Lakehouse, a unified data platform that combines the flexibility and scalability of a data lake with the structured querying capabilities of a data warehouse. Key components include OneLake, a scalable storage layer built on Azure Data Lake Store Gen2, and Apache Spark, which provides high-performance in-memory computation for big data processing. SQL compute engines enable complex queries on large datasets, while Delta Lake ensures ACID transactions and efficient metadata handling. Additionally, Power BI and Power Query are integrated for advanced data visualization, reporting, and manipulation.
 
 ## Architecture diagram
 
