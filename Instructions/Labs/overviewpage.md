@@ -13,7 +13,7 @@ Participants will learn:
 
 1. **Creating and Ingesting Data with a Microsoft Fabric Lakehouse**: This exercise will guide participants through setting up a Microsoft Fabric workspace and configuring a Lakehouse for scalable storage. They will ingest data from various sources, convert files into structured tables, and apply SQL queries for data manipulation and analysis. Participants will also use Power Query for advanced data transformations and create insightful reports with Power BI to effectively visualize and share their findings.
 
-2. **Analyze data in a Data Warehouse**: This exercise involves setting up a Lakehouse, uploading data files, and loading data into a Spark DataFrame for exploration. Participants will transform the data using Spark, including filtering, aggregations, and joins, and utilize SQL queries to organize and analyze the data further. The session will culminate in visualizing data directly within Spark to derive insights and support decision-making.
+2. **Analyze data in a Data Warehouse**: This lab involves creating a workspace and setting up a Data Warehouse. You will create tables and insert data, then define a data model for structured analysis. They will learn to query the Data Warehouse tables and create views for efficient data retrieval and reporting. Participants will enhance their skills in managing and analyzing data within a Data Warehouse environment.
 
 ## Prerequisites 
 
