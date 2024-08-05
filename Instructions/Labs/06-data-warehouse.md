@@ -32,25 +32,21 @@ Before working with data in Fabric, create a workspace with the Fabric trial ena
 
    ![](./Images/power-bi.png)
 
-2. From the PowerBI home page, select **Account Manager** from the top-right corner to start the free **Microsoft Fabric trial**.
+2. From the PowerBI home page, select **Account Manager** from the top-right corner to start the free **Microsoft Fabric trial**. and click on **Free trial**.
     
-    ![](./Images/PwrBI_1.png)
-  
-3. In the Account Manager, select **Start Trial**.
-
-   ![](./Images/PwrBI_2.png)
-   
+    ![](./Images/updated1new.png)
+     
 4. If prompted, agree to the terms and then select **Start trial**. 
 
-   ![](./Images/PwrBI_3.png)
+   ![](./Images/updated2.png)
    
-5. Once your trial capacity is ready, you receive a confirmation message. Select **Got it** to begin working in Fabric.
+5. Once your trial capacity is ready, you receive a confirmation message. Select **Stay on current page** to begin working in Fabric.
 
-    ![](./Images/PwrBI_4.png)
+    ![](./Images/updated3.png)
    
-6. Open your **Account manager** again. Notice that you now have a heading for **Trial status**. Your Account manager keeps track of the number of days remaining in your trial.
+6. On the dashboard, on the top menu you can see **Trial Status 59 days left**.
 
-    ![](./Images/PwrBI_5.png)
+    ![](./Images/updated4.png)
 
    You now have a **Fabric (Preview) trial** that includes a **Power BI trial** and a **Fabric (Preview) trial capacity**.
 
