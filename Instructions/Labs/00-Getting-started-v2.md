@@ -38,7 +38,7 @@ This lab begins with setting up a workspace and a Lakehouse in the Data Engineer
 
 Once you're ready to dive in, your virtual machine and lab guide will be right at your fingertips within your web browser.
  
-![](./Images/labguide.png)
+![](./Images/updatedimg1.png)
 
 ### Virtual Machine & Lab Guide
  
@@ -48,19 +48,19 @@ Your virtual machine is your workhorse throughout the workshop. The lab guide is
  
 To get a better understanding of your lab resources and credentials, navigate to the **Environment Details** tab.
  
-![Explore Lab Resources](./Images/env.png)
+![Explore Lab Resources](./Images/updatedimg2.png)
  
 ## Utilizing the Split Window Feature
  
 For convenience, you can open the lab guide in a separate window by selecting the **Split Window** button from the top right corner.
  
-![Use the Split Window Feature](./Images/spl.png)
+![Use the Split Window Feature](./Images/updatedimg3.png)
  
 ## Managing Your Virtual Machine
  
 Feel free to start, stop, or restart your virtual machine as needed from the **Resources** tab. Your experience is in your hands!
  
-![Manage Your Virtual Machine](./Images/res.png)
+![Manage Your Virtual Machine](./Images/updatedimg4.png)
  
  
  Click "Next" from the bottom right corner to embark on your Lab journey!
