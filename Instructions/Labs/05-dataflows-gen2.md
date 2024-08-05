@@ -27,7 +27,7 @@ Before working with data in Fabric, create a workspace with the Fabric trial ena
 
 2. From the PowerBI home page, select **Account Manager** from the top-right corner to start the free **Microsoft Fabric trial**. and click on **Free trial**.
     
-    ![](./Images/updated1.png)
+    ![](./Images/updated1new.png)
      
 4. If prompted, agree to the terms and then select **Start trial**. 
 
