@@ -4,13 +4,13 @@
 
 ## Overview
 
-In these labs, you'll explore key components of Microsoft Fabric's data solution. First, you'll learn to create and use Dataflows (Gen2) to ingest, transform, and standardize data from various sources, preparing it for analysis and landing it in a Lakehouse or other destinations. Next, you'll analyze the processed data within a relational data warehouse in Microsoft Fabric, leveraging its SQL capabilities for querying and visualization. Together, these labs demonstrate how to integrate dataflows and data warehouses to build a comprehensive, end-to-end analytics solution using Microsoft Fabric.
+In this lab, you'll explore key components of Microsoft Fabric's data solution. First, you'll learn to create and use Dataflows (Gen2) to ingest, transform, and standardize data from various sources, preparing it for analysis and landing it in a Lakehouse or other destinations. Next, you'll analyze the processed data within a relational data warehouse in Microsoft Fabric, leveraging its SQL capabilities for querying and visualization. Together, these labs demonstrate how to integrate dataflows and data warehouses to build a comprehensive, end-to-end analytics solution using Microsoft Fabric.
 
 ## Objective
 
 In this lab, You will master dataflows, data warehousing, and reporting in Microsoft Fabric :
 
-- **Create and use a Dataflow (Gen2) and Analyze the data in Microsoft Fabric** : Learn to create and use Dataflows (Gen2) in Microsoft Fabric for data ingestion, transformation, and standardization from various sources. Then, master the process of building and querying a relational data warehouse, enhancing its data model, and using the default dataset as a source for generating detailed reports.
+- **Create and use a Dataflow (Gen2) and Analyze the data in Microsoft Fabric** : Learn to create and use Dataflows (Gen2) in Microsoft Fabric for efficient data ingestion, transformation, and standardization from various sources. Then, master building and querying a relational data warehouse, enhancing its data model, and leveraging the default dataset to generate detailed reports. This lab covers connecting to multiple data sources, cleansing data, optimizing the warehouse, and creating comprehensive analytics reports.
 
 ## Pre-requisites
 
@@ -23,7 +23,7 @@ This lab begins with setting up a workspace and a Lakehouse in the Data Engineer
 
 ## Architecture Diagram
 
-![](./Images/updated-arch.png)
+![](./Images/updated-arch-new.png)
 
 ## Explanation of Components
 
@@ -38,7 +38,7 @@ This lab begins with setting up a workspace and a Lakehouse in the Data Engineer
 
 Once you're ready to dive in, your virtual machine and lab guide will be right at your fingertips within your web browser.
  
-![](./Images/labguide.png)
+![](./Images/updatedimg1.png)
 
 ### Virtual Machine & Lab Guide
  
@@ -48,19 +48,19 @@ Your virtual machine is your workhorse throughout the workshop. The lab guide is
  
 To get a better understanding of your lab resources and credentials, navigate to the **Environment Details** tab.
  
-![Explore Lab Resources](./Images/env.png)
+![Explore Lab Resources](./Images/updatedimg2.png)
  
 ## Utilizing the Split Window Feature
  
 For convenience, you can open the lab guide in a separate window by selecting the **Split Window** button from the top right corner.
  
-![Use the Split Window Feature](./Images/spl.png)
+![Use the Split Window Feature](./Images/updatedimg3.png)
  
 ## Managing Your Virtual Machine
  
 Feel free to start, stop, or restart your virtual machine as needed from the **Resources** tab. Your experience is in your hands!
  
-![Manage Your Virtual Machine](./Images/res.png)
+![Manage Your Virtual Machine](./Images/updatedimg4.png)
  
  
  Click "Next" from the bottom right corner to embark on your Lab journey!
