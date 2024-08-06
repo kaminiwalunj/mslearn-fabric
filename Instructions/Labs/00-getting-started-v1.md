@@ -23,7 +23,7 @@ This lab begins with setting up a workspace and a Lakehouse in the Data Engineer
 
 ## Architecture Diagram
 
-![](./Images/updated-arch-v2.png)
+![](./Images/updated-architecture-v2.png)
 
 ## Explanation of Components
 
