@@ -9,6 +9,7 @@ In this lab, you'll explore key components of Microsoft Fabric's data solution. 
 ## Objective
 
 Explore dataflows, data warehousing, and reporting in Microsoft Fabric. By the end of this lab, You will gain insights on :
+
 - **Create and use a Dataflow (Gen2) in Microsoft Fabric** : Learn to effectively ingest and transform data using Dataflows (Gen2) in Microsoft Fabric. Connect data sources, standardize the data, and efficiently load it to Lakehouse.
 - **Analyze data in a Data Warehouse** : Learn to create and manage a relational data warehouse in Microsoft Fabric. Utilize SQL to perform queries and visualizations.
 
