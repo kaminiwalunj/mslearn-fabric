@@ -1,5 +1,22 @@
 # Lab : Create and use a Dataflow (Gen2) in Microsoft Fabric 
 
+## Overview 
+Microsoft Fabric offers a unified solution for data engineering, integration, and analytics. A crucial step in end-to-end analytics is data ingestion. Dataflows (Gen2) are used to ingest and transform data from multiple sources, and then land the cleansed data to another destination. They can be incorporated into data pipelines for additional data movement, and used as a data source in Power BI.
+
+In our scenario, you need to develop a data model that can standardize the data and provide access to the business. By using Dataflows (Gen2), you can connect to the various data sources, and then prep and transform the data. To allow access, you can land the data directly into your Lakehouse or use a data pipeline for other destinations.
+
+## _Architecture Diagram_
+
+![Architecture Diagram](./Images/Create-and-use-a-Dataflow(Gen2).png)
+
+## Ingest Data with Dataflows Gen2 in Microsoft Fabric
+
+In Microsoft Fabric, Dataflows (Gen2) connect to various data sources and perform transformations in Power Query Online. They can then be used in Data Pipelines to ingest data into a lakehouse or other analytical store, or to define a dataset for a Power BI report.
+
+This lab is designed to introduce the different elements of Dataflows (Gen2), and not create a complex solution that may exist in an enterprise. This lab takes **approximately 30 minutes** to complete.
+
+> **Note**: You'll need a Microsoft Fabric license to complete this exercise. Complete the previous task to proceed further.
+> 
 ## Task 1 : Create a workspace
 
 Before working with data in Fabric, create a workspace with the Fabric trial enabled.
