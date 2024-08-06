@@ -4,13 +4,17 @@
 
 ## Overview
 
-In this lab, you'll explore key components of Microsoft Fabric's data solution. First, you'll learn to create and use Dataflows (Gen2) to ingest, transform, and standardize data from various sources, preparing it for analysis and landing it in a Lakehouse or other destinations. Next, you'll analyze the processed data within a relational data warehouse in Microsoft Fabric, leveraging its SQL capabilities for querying and visualization. Together, these labs demonstrate how to integrate dataflows and data warehouses to build a comprehensive, end-to-end analytics solution using Microsoft Fabric.
+In this lab, you'll use Dataflows (Gen2) in Microsoft Fabric to ingest, transform, and standardize data, and  analyzing the data in a relational data warehouse using SQL for querying and visualization.The lab will include the following exercises: 
+- **Create and use a Dataflow (Gen2) in Microsoft Fabric** : Learn to effectively ingest and transform data using Dataflows (Gen2) in Microsoft Fabric. Connect data sources, standardize the data, and efficiently load it to Lakehouse.
+- **Analyze data in a Data Warehouse** : Learn to create and manage a relational data warehouse in Microsoft Fabric. Utilize SQL to perform queries and visualizations.
 
 ## Objective
 
-In this lab, You will master dataflows, data warehousing, and reporting in Microsoft Fabric :
-
-- **Create and use a Dataflow (Gen2) and Analyze the data in Microsoft Fabric** : Learn to create and use Dataflows (Gen2) in Microsoft Fabric for efficient data ingestion, transformation, and standardization from various sources. Then, master building and querying a relational data warehouse, enhancing its data model, and leveraging the default dataset to generate detailed reports. This lab covers connecting to multiple data sources, cleansing data, optimizing the warehouse, and creating comprehensive analytics reports.
+Explore dataflows, data warehousing, and reporting in Microsoft Fabric. By the end of this lab, You will be able to:
+- Create and use Dataflows (Gen2) for data ingestion and transformation
+- Manage and standardize data for analysis in Lakehouses or other destinations 
+- Build and manage a relational data warehouse using Microsoft Fabric's SQL tools
+- Generate reports and visualizations for data-driven decision-making
 
 ## Pre-requisites
 
@@ -19,11 +23,11 @@ In this lab, You will master dataflows, data warehousing, and reporting in Micro
 
 ## Architecture
 
-This lab begins with setting up a workspace and a Lakehouse in the Data Engineering area (Tasks 1 and 2). Next, Dataflows (Gen2) are created to import and configure data sources (Tasks 3 and 4). These dataflows are then integrated into a pipeline (Task 5) for additional processing. Then  Data Warehouse is created (Task 6), where tables are created and structured (Tasks 7 and 8). Following this, data is queried (Task 9) and views are created for further analysis. Finally, visual queries are developed (Task 10) to enable data visualization and provide insights, completing the end-to-end data management and analysis workflow.
+This lab begins with setting up a workspace and a Lakehouse in the Data Engineering area. Next, Dataflows (Gen2) are created to import and configure data sources. These dataflows are then integrated into a pipeline for additional processing. Then  Data Warehouse is created, where tables are created and structured. Following this, data is queried and views are created for further analysis. Finally, visual queries are developed to enable data visualization and provide insights.
 
 ## Architecture Diagram
 
-![](./Images/updated-arch-new.png)
+![](./Images/updated-arch-v2.png)
 
 ## Explanation of Components
 
