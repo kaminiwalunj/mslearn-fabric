@@ -5,12 +5,16 @@
       "BaseURL": "https://github.com/CloudLabs-MOC/mslearn-fabric",
       "Files": [
         {
-          "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/mslearn-fabric/ms-innovation/Instructions/Labs/00-Getting-started-v2.md",
+          "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/mslearn-fabric/ms-innovation/Instructions/Labs/00-getting-started-v1.md",
           "Order": 1
         },
         {
-          "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/mslearn-fabric/ms-innovation/Instructions/Labs/06-data-warehouse-v2.md",
+          "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/mslearn-fabric/ms-innovation/Instructions/Labs/05-dataflows-gen2-v2.md",
           "Order": 2
+        },
+        {
+          "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/mslearn-fabric/ms-innovation/Instructions/Labs/06-data-warehouse-v2.md",
+          "Order": 3
         }
       ]
     }
