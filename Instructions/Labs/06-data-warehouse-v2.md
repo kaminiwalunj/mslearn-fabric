@@ -1,7 +1,9 @@
 # Exercise 2 : Analyze data in a Data Warehouse
-In this exercise, you will analyze the data within a relational data warehouse, leveraging SQL for querying and visualization, all within Microsoft Fabric.
+
+In this exercise, you will analyze data within a relational data warehouse using Microsoft Fabric. Utilize SQL for querying and create detailed visualizations to derive actionable insights. 
 
 ## Objectives:
+
 - Task 1 : Create a Data Warehouse
 - Task 2 : Create tables and insert data
 - Task 3 : Define a Data Model
