@@ -1,7 +1,7 @@
-# Lab 2 : Analyze data in a Data Warehouse
-In this lab, you will analyze the data within a relational data warehouse, leveraging SQL for querying and visualization, all within Microsoft Fabric.
+# Exercise 2 : Analyze data in a Data Warehouse
+In this exercise, you will analyze the data within a relational data warehouse, leveraging SQL for querying and visualization, all within Microsoft Fabric.
 
-## Lab Objectives:
+## Objectives:
 - Task 1 : Create a Data Warehouse
 - Task 2 : Create tables and insert data
 - Task 3 : Define a Data Model
@@ -10,7 +10,7 @@ In this lab, you will analyze the data within a relational data warehouse, lever
 
 ## Task 1 : Create a Data Warehouse
 
-Now that you have a workspace which you have created in the previous lab, it's time to switch to the *Data Warehouse* experience in the portal and create a data warehouse.
+Now that you have a workspace which you have created in the previous exercise, it's time to switch to the *Data Warehouse* experience in the portal and create a data warehouse.
 
 1. At the bottom left of the Power BI portal, switch to the **Data Warehouse** experience.
 
@@ -248,6 +248,6 @@ If you've finished exploring your lakehouse and data warehouse, you can delete t
 
 ## Summary 
 
-In this lab, You have established a data warehouse containing multiple tables, used SQL to insert and query data, and employed the visual query tool for analysis.
+In this exercise, You have established a data warehouse containing multiple tables, used SQL to insert and query data, and employed the visual query tool for analysis.
 
 ## You have successfully completed this Lab!
