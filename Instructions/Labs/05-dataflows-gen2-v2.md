@@ -1,5 +1,7 @@
 # Exercise 1 : Create and use a Dataflow (Gen2) in Microsoft Fabric 
 
+## Estimated Duration : 2 Hours
+
 In this exercise, you will use Dataflows (Gen2) to ingest, transform, and standardize data. You will set up data ingestion processes, apply necessary transformations, and create standardized datasets for analysis. This exercise will help you understand how to efficiently prepare and manage data using Dataflows (Gen2).
 
 ## Objectives:
