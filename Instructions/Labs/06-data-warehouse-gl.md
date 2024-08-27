@@ -42,11 +42,15 @@ Now that you have a workspace, it's time to switch to the *Data Warehouse* exper
 
 1. At the bottom left of the Power BI portal, switch to the **Data Warehouse** experience.
 
+   ![](./Images/new-workspaceq.png)
+
     The Data Warehouse home page includes a shortcut to create a new warehouse:
 
     > **Note**: If you don't see the icon in the bottom left corner, Fabric isn't enabled for your tenant. Fabric is enabled in the admin portal for tenants that have a Power BI Premium subscription.
 
 2. In the **Data Warehouse** home page, create a new **Warehouse** with a name it as **myDataWarehouse** and click on **Create**.
+
+   ![](./Images/new-workspaceqt.png)
 
     After a minute or so, a new warehouse will be created:
 
@@ -57,6 +61,8 @@ Now that you have a workspace, it's time to switch to the *Data Warehouse* exper
 A warehouse is a relational database in which you can define tables and other objects.
 
 1. In your new warehouse, select the **Create tables with T-SQL** tile, and replace the default SQL code with the following CREATE TABLE statement:
+
+   ![Screenshot of a new warehouse.](./Images/new-data-warehouse1a.png)
 
     ```sql
    CREATE TABLE dbo.DimProduct
@@ -89,7 +95,11 @@ A warehouse is a relational database in which you can define tables and other ob
 
 6. When the query has finished, select the **Data** tab at the bottom of the page in the data warehouse. In the **Explorer** pane, select the **DimProduct** table and verify that the three rows have been added to the table.
 
+   ![Screenshot of a new warehouse.](./Images/new-data-warehouse1b.png)
+
 7. On the **Home** menu tab, use the **New SQL Query** button to create a new query. Then copy and paste the Transact-SQL code from [https://raw.githubusercontent.com/MicrosoftLearning/dp-data/main/create-dw.txt](https://raw.githubusercontent.com/MicrosoftLearning/dp-data/main/create-dw.txt) into the new query pane.
+
+   >**Note:** Make sure copy all the code.
 
 <!-- I had to remove the GO command in this query as well -->
 
@@ -217,11 +227,15 @@ Instead of writing SQL code, you can use the graphical query designer to query t
 
 5. In the **Merge queries** window, select **DimProduct** as the right table for merge. Select **ProductKey** in both queries, leave the default **Left outer** join type, and click **OK**.
 
+   ![Screenshot of the preview pane with the DimProduct column expanded, with ProductName selected.](./Images/visual-query-preview1a.png)
+
 6. In the **Preview**, note that the new **DimProduct** column has been added to the FactSalesOrder table. Expand the column by clicking the arrow to the right of the column name. Select **ProductName** and click **OK**.
 
     ![Screenshot of the preview pane with the DimProduct column expanded, with ProductName selected.](./Images/visual-query-preview1.png)
 
 7. If you're interested in looking at data for a single product, per a manager request, you can now use the **ProductName** column to filter the data in the query. Filter the **ProductName** column to look at **Cable Lock** data only.
+
+   ![Screenshot of the preview pane with the DimProduct column expanded, with ProductName selected.](./Images/visual-query-preview1b.png)
 
 8. From here, you can analyze the results of this single query by selecting **Visualize results** or **Open in Excel**. You can now see exactly what the manager was asking for, so we don't need to analyze the results further.
 
@@ -254,11 +268,15 @@ You can easily visualize the data in either a single query, or in your data ware
 
 6. Ensure that the column chart on the canvas is active (with a gray border and handles), and then select **Category** from the **DimProduct** table to add a category to your column chart.
 
+   ![Screenshot of the Visualizations pane with the bar chart selected.](./Images/visualizations-pane1b.png)
+
 7. In the **Visualizations** pane, change the chart type from a column chart to a **clustered bar chart**. Then resize the chart as necessary to ensure that the categories are readable.
 
     ![Screenshot of the Visualizations pane with the bar chart selected.](./Images/visualizations-pane1.png)
 
 8. In the **Visualizations** pane, select the **Format your visual** tab and in the **General** sub-tab, in the **Title** section, change the **Text** to **Total Sales by Category**.
+
+   ![Screenshot of the Visualizations pane with the bar chart selected.](./Images/visualizations-pane1a.png)
 
 9. In the **File** menu, select **Save**. Then save the report as **Sales Report** in the workspace you created previously.
 
