@@ -44,19 +44,15 @@ Before working with data in Fabric, create a workspace with the Fabric trial ena
 
    ![](./Images/fabric-pbi.png)
    
-3. From the PowerBI home page, select **Account Manager** from the top-right corner to start the free **Microsoft Fabric trial**.
-    
-    ![](./Images/PwrBI_1.png)
-  
-4. In the Account Manager, select **Start Trial**.
+3. From the PowerBI home page, select **Account Manager (1)** from the top-right corner to start the **Free trail (2)** of  Microsoft Fabric.
 
-   ![](./Images/PwrBI_2.png)
-   
-5. If prompted, agree to the terms and then select **Start trial**. 
+   ![Account-manager-start](./Images/07.png)  
 
-   ![](./Images/PwrBI_3.png)
+5. A new prompt will appear asking you to **Upgrade to a free Microsoft Fabric trial**, click on **Start trial (1)**.
+
+   ![Start-trial](./Images/08.png)     
    
-6. Once your trial capacity is ready, you receive a confirmation message. Select **Got it** to begin working in Fabric.
+6. Once your trial capacity is ready, you receive a confirmation message. Select **Stay on current page** to begin working in Fabric.
 
     ![](./Images/PwrBI_4.png)
    
@@ -128,7 +124,7 @@ Fabric provides multiple ways to load data into the lakehouse, including built-i
    
     >Right-click anywhere on the page containing the data and select **Save as** to save the page as a CSV file.
 
-      - OR If you are using the lab virtual machine (lab VM) provided to you, you can get the file from the **C:\LabFiles** directory.
+      - OR If you are using the lab virtual machine (lab VM) provided to you, you can get the file from the **C:\LabFiles\dp-data-main** directory.
 
 1. Return to the web browser tab containing your lakehouse, and in the **...** menu for the **Files** folder in the **Lakehouse explorer** pane, select **New subfolder**, and create a subfolder named **data**.
 
