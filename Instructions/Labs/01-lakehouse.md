@@ -72,7 +72,7 @@ Before working with data in Fabric, create a workspace with the Fabric trial ena
 
 10. When your new workspace opens, it should be empty.
 
-     ![Screenshot of an empty workspace in Power BI.](./Images/new-workspace-u.png)
+      ![Screenshot of an empty workspace in Power BI.](./Images/new-workspace-u.png)
 
    > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
 	 - Click the Lab Validation tab located at the upper right corner of the lab guide section and navigate to the Lab Validation tab.
