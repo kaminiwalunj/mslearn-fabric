@@ -260,6 +260,8 @@ You can easily visualize the data in either a single query, or in your data ware
       - **ProductKey**
       - **ProductAltKey** 
 
+   ![Screenshot of the Visualizations pane with the bar chart selected.](./Images/visualizations-pane1at.png)
+
 3. Now you're ready to build a report and make this dataset available to others. On the Home menu, select **New report**. This will open a new window, where you can create a Power BI report.
 
 4. In the **Data** pane, expand **FactSalesOrder**. Note that the columns you hid are no longer visible. 
