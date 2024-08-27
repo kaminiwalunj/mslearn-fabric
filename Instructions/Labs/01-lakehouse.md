@@ -94,11 +94,11 @@ Now that you have a workspace, it's time to switch to the *Data engineering* exp
  
 2. In the **Data engineering** home page, Select **Lakehouse**
 
-    ![](./Images/lakehouse-preview.png)
+      ![](./Images/lakehouse-preview.png)
 
 3. Create a new **Lakehouse** with a name of your choice. 
 
-    ![](./Images/new-lakehouse.png)
+      ![](./Images/new-lakehouse.png)
 
 4. After a minute or so, a new lakehouse will be created.
 
