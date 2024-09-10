@@ -42,6 +42,8 @@ Before working with data in Fabric, create a workspace with the Fabric trial ena
 
    * **Password:** <inject key="AzureAdUserPassword"></inject>
 
+   ![](./Images/image001.png)
+
 3. From the Microsoft Fabric home page, select **PowerBI**
 
    ![](./Images/fabric-pbi.png)
