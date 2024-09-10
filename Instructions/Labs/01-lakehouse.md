@@ -38,15 +38,15 @@ Before working with data in Fabric, create a workspace with the Fabric trial ena
 
    * **Username/Email**:  <inject key="AzureAdUserEmail"></inject>
 
-   ![](./Images/fabric-submit.png)
+   ![](./Images/image1.png)
 
    * **Password:** <inject key="AzureAdUserPassword"></inject>
 
-   ![](./Images/image001.png)
+   ![](./Images/image2.png)
 
 3. From the Microsoft Fabric home page, select **PowerBI**
 
-   ![](./Images/fabric-pbi.png)
+   ![](./Images/image3.png)
    
 4. From the PowerBI home page, select **Account Manager (1)** from the top-right corner to start the **Free trail (2)** of  Microsoft Fabric.
 
@@ -62,17 +62,17 @@ Before working with data in Fabric, create a workspace with the Fabric trial ena
    
 7. Open your **Account manager** again. Notice that you now have a heading for **Trial status**. Your Account manager keeps track of the number of days remaining in your trial.
 
-    ![](./Images/PwrBI_5.png)
+    ![](./Images/image4.png)
 
    You now have a **Fabric (Preview) trial** that includes a **Power BI trial** and a **Fabric (Preview) trial capacity**.
      
 8. In the menu bar on the left, select **Workspaces** (the icon looks similar to &#128455;). Select **+New Workspace**
 
-   ![](./Images/fabric-ws.png)
+   ![](./Images/image5.png)
 
 9. Create a new workspace with a name of your choice, select a licensing mode that includes Fabric capacity (*Trial*, *Premium*, or *Fabric*), and click on **Apply**
 
-   ![](./Images/new-ws.png)
+   ![](./Images/image6.png)
 
 10. When your new workspace opens, it should be empty.
 
