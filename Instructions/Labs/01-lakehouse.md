@@ -34,17 +34,19 @@ This lab takes approximately **90** minutes to complete.
 
 Before working with data in Fabric, create a workspace with the Fabric trial enabled.
 
-1. Sign in to [Microsoft Fabric](https://app.fabric.microsoft.com) at `https://app.fabric.microsoft.com`, enter the following email/username, and then click on **Submit**.  
+1. Open the Edge Browser and Sign in to [Microsoft Fabric](https://app.fabric.microsoft.com) at `https://app.fabric.microsoft.com`, enter the following email/username, and then click on **Submit**.  
 
    * **Username/Email**:  <inject key="AzureAdUserEmail"></inject>
 
    ![](./Images/fabric-submit.png)
 
-2. From the Microsoft Fabric home page, select **PowerBI**
+   * **Password:** <inject key="AzureAdUserPassword"></inject>
+
+3. From the Microsoft Fabric home page, select **PowerBI**
 
    ![](./Images/fabric-pbi.png)
    
-3. From the PowerBI home page, select **Account Manager (1)** from the top-right corner to start the **Free trail (2)** of  Microsoft Fabric.
+4. From the PowerBI home page, select **Account Manager (1)** from the top-right corner to start the **Free trail (2)** of  Microsoft Fabric.
 
    ![Account-manager-start](./Images/07.png)  
 
