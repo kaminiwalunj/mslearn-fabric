@@ -130,15 +130,17 @@ Fabric provides multiple ways to load data into the lakehouse, including built-i
 
 1. Return to the web browser tab containing your lakehouse, and in the **...** menu for the **Files** folder in the **Lakehouse explorer** pane, select **New subfolder**, and create a subfolder named **data**.
 
-      ![](./Images/subfolder.png)
+      ![](./Images/image10.png)
+      ![](./Images/image11.png)
 
 1. In the **...** menu for the new **data** folder, select **Upload** and **Upload files**, and then upload the **sales.csv** file from your local computer (or lab VM if applicable).
 
-      ![](./Images/lab1-uploadfiles.png)
+      ![](./Images/image12.png)
+      ![](./Images/image13.png)
    
 1. After the file has been uploaded, select the **Files/data** folder and verify that the **sales.csv** file has been uploaded, as shown here:
 
-      ![Screenshot of uploaded sales.csv file in a lakehouse.](./Images/sales-file.png)
+      ![Screenshot of uploaded sales.csv file in a lakehouse.](./Images/image14.png)
 
 1. Select the **sales.csv** file to see a preview of its contents.
 
