@@ -52,9 +52,9 @@ Before working with data in Fabric, create a workspace with the Fabric trial ena
 
    ![Account-manager-start](./Images/07.png)  
 
-5. A new prompt will appear asking you to **Upgrade to a free Microsoft Fabric trial**, click on **Start trial (1)**.
+5. A new prompt will appear asking you to **Activate your 60-day free Fabric trial capacity**, click on **Activate**.
 
-   ![Start-trial](./Images/08.png)     
+   ![Start-trial](./Images/image002.png)     
    
 6. Once your trial capacity is ready, you receive a confirmation message. Select **Stay on current page** to begin working in Fabric.
 
@@ -160,7 +160,7 @@ The sales data you uploaded is in a file, which data analysts and engineers can 
 
 1. On the **Home** page, select the **Files/Data** folder so you can see the **sales.csv** file it contains.
 
-2. In the **...** menu for the **sales.csv** file, select **Load to Tables** and click on **New Tables**.
+2. In the **...** menu for the **sales.csv** file, select **Load to Tables** and click on **New Table**.
 
       ![](./Images/load-totables.png)
    
