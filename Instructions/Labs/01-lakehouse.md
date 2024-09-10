@@ -269,7 +269,7 @@ The tables in your lakehouse are automatically added to a default dataset that d
     - A default dataset for the tables in your lakehouse.
     - The **Item Sales Report** report.
 
-      ![Screenshot of a workspace view.](./Images/image004.png)
+      ![Screenshot of a workspace view.](./Images/image04.png)
 
    <validation step="8be3d605-b09f-4738-b1e5-c83a1e304b80" />
 
