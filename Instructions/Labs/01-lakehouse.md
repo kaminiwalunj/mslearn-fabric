@@ -187,7 +187,7 @@ When you create a lakehouse and define tables in it, a SQL endpoint is automatic
 1. At the top-right of the Lakehouse page, switch from **Lakehouse** to **SQL analytics endpoint**. Then wait a short time until the SQL query endpoint for your lakehouse opens in a visual interface from which you can query 
    its tables, as shown here:
 
-      ![Screenshot of the SQL endpoint page.](./Images/lakehouse-sql-endpoint-u.png)
+      ![Screenshot of the SQL endpoint page.](./Images/image003.png)
 
 1. Use the **New SQL query** button to open a new query editor, and enter the following SQL query:
 
@@ -237,8 +237,7 @@ The tables in your lakehouse are automatically added to a default dataset that d
 
       ![Screenshot of a data model.](./Images/data-model-u.png)
 
-     >**Note**: In this exercise, the data model consists of a single table. In a real-world scenario, you would likely create multiple tables in your lakehouse, each of which would be included in the model. You 
-        could then define relationships between these tables in the model.
+     >**Note**: In this exercise, the data model consists of a single table. In a real-world scenario, you would likely create multiple tables in your lakehouse, each of which would be included in the model. You could then define relationships between these tables in the model.
 
 2. In the menu ribbon, select the **Reporting** tab. Then select **New report**. Click on **Continue**.
 
@@ -264,11 +263,11 @@ The tables in your lakehouse are automatically added to a default dataset that d
 6. Close the browser tab containing the report to return to the SQL endpoint for your lakehouse. Then, in the hub menu bar on the left, select your workspace to verify that it contains the following items:
     
     - Your lakehouse.
-    - The SQL endpoint for your lakehouse.
+    - The SQL analytics endpoint for your lakehouse.
     - A default dataset for the tables in your lakehouse.
     - The **Item Sales Report** report.
 
-      ![Screenshot of a workspace view.](./Images/workspace-view.png)
+      ![Screenshot of a workspace view.](./Images/image004.png)
 
    <validation step="8be3d605-b09f-4738-b1e5-c83a1e304b80" />
 
