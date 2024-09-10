@@ -34,23 +34,27 @@ This lab takes approximately **90** minutes to complete.
 
 Before working with data in Fabric, create a workspace with the Fabric trial enabled.
 
-1. Sign in to [Microsoft Fabric](https://app.fabric.microsoft.com) at `https://app.fabric.microsoft.com`, enter the following email/username, and then click on **Submit**.  
+1. Open the Edge Browser and Sign in to [Microsoft Fabric](https://app.fabric.microsoft.com) at `https://app.fabric.microsoft.com`, enter the following email/username, and then click on **Submit**.  
 
    * **Username/Email**:  <inject key="AzureAdUserEmail"></inject>
 
-   ![](./Images/fabric-submit.png)
+   ![](./Images/image1.png)
 
-2. From the Microsoft Fabric home page, select **PowerBI**
+   * **Password:** <inject key="AzureAdUserPassword"></inject>
 
-   ![](./Images/fabric-pbi.png)
+   ![](./Images/image2.png)
+
+3. From the Microsoft Fabric home page, select **PowerBI**
+
+   ![](./Images/image3.png)
    
-3. From the PowerBI home page, select **Account Manager (1)** from the top-right corner to start the **Free trail (2)** of  Microsoft Fabric.
+4. From the PowerBI home page, select **Account Manager (1)** from the top-right corner to start the **Free trail (2)** of  Microsoft Fabric.
 
    ![Account-manager-start](./Images/07.png)  
 
-5. A new prompt will appear asking you to **Upgrade to a free Microsoft Fabric trial**, click on **Start trial (1)**.
+5. A new prompt will appear asking you to **Activate your 60-day free Fabric trial capacity**, click on **Activate**.
 
-   ![Start-trial](./Images/08.png)     
+   ![Start-trial](./Images/image002.png)     
    
 6. Once your trial capacity is ready, you receive a confirmation message. Select **Stay on current page** to begin working in Fabric.
 
@@ -58,17 +62,17 @@ Before working with data in Fabric, create a workspace with the Fabric trial ena
    
 7. Open your **Account manager** again. Notice that you now have a heading for **Trial status**. Your Account manager keeps track of the number of days remaining in your trial.
 
-    ![](./Images/PwrBI_5.png)
+    ![](./Images/image4.png)
 
    You now have a **Fabric (Preview) trial** that includes a **Power BI trial** and a **Fabric (Preview) trial capacity**.
      
 8. In the menu bar on the left, select **Workspaces** (the icon looks similar to &#128455;). Select **+New Workspace**
 
-   ![](./Images/fabric-ws.png)
+   ![](./Images/image5.png)
 
 9. Create a new workspace with a name of your choice, select a licensing mode that includes Fabric capacity (*Trial*, *Premium*, or *Fabric*), and click on **Apply**
 
-   ![](./Images/new-ws.png)
+   ![](./Images/image6.png)
 
 10. When your new workspace opens, it should be empty.
 
@@ -90,7 +94,7 @@ Now that you have a workspace, it's time to switch to the *Data engineering* exp
 
     - The data engineering home page includes tiles to create commonly used data engineering assets.
 
-      ![](./Images/data-engineering.png)
+      ![](./Images/image7.png)
  
 2. In the **Data engineering** home page, Select **Lakehouse**
 
@@ -98,7 +102,7 @@ Now that you have a workspace, it's time to switch to the *Data engineering* exp
 
 3. Create a new **Lakehouse** with a name of your choice. 
 
-      ![](./Images/new-lakehouse.png)
+      ![](./Images/image8.png)
 
 4. After a minute or so, a new lakehouse will be created.
 
@@ -109,7 +113,7 @@ Now that you have a workspace, it's time to switch to the *Data engineering* exp
        stored externally.
      - Currently, there are no tables or files in the lakehouse.
 
-       ![](./Images/lakehouse-explorer.png)
+       ![](./Images/image9.png)
    
 ## Task 3 : Upload a file
 
@@ -126,15 +130,17 @@ Fabric provides multiple ways to load data into the lakehouse, including built-i
 
 1. Return to the web browser tab containing your lakehouse, and in the **...** menu for the **Files** folder in the **Lakehouse explorer** pane, select **New subfolder**, and create a subfolder named **data**.
 
-      ![](./Images/subfolder.png)
+      ![](./Images/image10.png)
+      ![](./Images/image11.png)
 
 1. In the **...** menu for the new **data** folder, select **Upload** and **Upload files**, and then upload the **sales.csv** file from your local computer (or lab VM if applicable).
 
-      ![](./Images/lab1-uploadfiles.png)
+      ![](./Images/image12.png)
+      ![](./Images/image13.png)
    
 1. After the file has been uploaded, select the **Files/data** folder and verify that the **sales.csv** file has been uploaded, as shown here:
 
-      ![Screenshot of uploaded sales.csv file in a lakehouse.](./Images/sales-file.png)
+      ![Screenshot of uploaded sales.csv file in a lakehouse.](./Images/image14.png)
 
 1. Select the **sales.csv** file to see a preview of its contents.
 
@@ -156,11 +162,11 @@ The sales data you uploaded is in a file, which data analysts and engineers can 
 
 1. On the **Home** page, select the **Files/Data** folder so you can see the **sales.csv** file it contains.
 
-2. In the **...** menu for the **sales.csv** file, select **Load to Tables** and click on **New Tables**.
+2. In the **...** menu for the **sales.csv** file, select **Load to Tables** and click on **New Table**.
 
       ![](./Images/load-totables.png)
    
-3. In the **Load to table** dialog box, set the table name to **sales** and confirm the load operation by selecting **Load**. Then wait for the table to be created and loaded.
+3. In the **Load file to new table** dialog box, set the table name to **sales** and confirm the load operation by selecting **Load**. Then wait for the table to be created and loaded.
 
     >**Tip**: If the **sales** table does not automatically appear, in the **...** menu for the **Tables** folder, select **Refresh**.
 
@@ -180,10 +186,10 @@ The sales data you uploaded is in a file, which data analysts and engineers can 
 
 When you create a lakehouse and define tables in it, a SQL endpoint is automatically created through which the tables can be queried using SQL `SELECT` statements.
 
-1. At the top-right of the Lakehouse page, switch from **Lakehouse** to **SQL endpoint**. Then wait a short time until the SQL query endpoint for your lakehouse opens in a visual interface from which you can query 
+1. At the top-right of the Lakehouse page, switch from **Lakehouse** to **SQL analytics endpoint**. Then wait a short time until the SQL query endpoint for your lakehouse opens in a visual interface from which you can query 
    its tables, as shown here:
 
-      ![Screenshot of the SQL endpoint page.](./Images/lakehouse-sql-endpoint-u.png)
+      ![Screenshot of the SQL endpoint page.](./Images/image003.png)
 
 1. Use the **New SQL query** button to open a new query editor, and enter the following SQL query:
 
@@ -194,7 +200,7 @@ When you create a lakehouse and define tables in it, a SQL endpoint is automatic
      ORDER BY Revenue DESC;
       ```
 
-      ![Screenshot of the new sql query.](./Images/new-sql-query.png)
+      ![Screenshot of the new sql query.](./Images/image15.png)
 
 1. Use the **&#9655; Run** button to run the query and view the results, which should show the total revenue for each product.
 
@@ -233,8 +239,7 @@ The tables in your lakehouse are automatically added to a default dataset that d
 
       ![Screenshot of a data model.](./Images/data-model-u.png)
 
-     >**Note**: In this exercise, the data model consists of a single table. In a real-world scenario, you would likely create multiple tables in your lakehouse, each of which would be included in the model. You 
-        could then define relationships between these tables in the model.
+     >**Note**: In this exercise, the data model consists of a single table. In a real-world scenario, you would likely create multiple tables in your lakehouse, each of which would be included in the model. You could then define relationships between these tables in the model.
 
 2. In the menu ribbon, select the **Reporting** tab. Then select **New report**. Click on **Continue**.
 
@@ -260,11 +265,11 @@ The tables in your lakehouse are automatically added to a default dataset that d
 6. Close the browser tab containing the report to return to the SQL endpoint for your lakehouse. Then, in the hub menu bar on the left, select your workspace to verify that it contains the following items:
     
     - Your lakehouse.
-    - The SQL endpoint for your lakehouse.
+    - The SQL analytics endpoint for your lakehouse.
     - A default dataset for the tables in your lakehouse.
     - The **Item Sales Report** report.
 
-      ![Screenshot of a workspace view.](./Images/workspace-view.png)
+      ![Screenshot of a workspace view.](./Images/image04.png)
 
    <validation step="8be3d605-b09f-4738-b1e5-c83a1e304b80" />
 
