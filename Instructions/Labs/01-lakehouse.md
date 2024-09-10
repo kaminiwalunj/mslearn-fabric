@@ -164,7 +164,7 @@ The sales data you uploaded is in a file, which data analysts and engineers can 
 
       ![](./Images/load-totables.png)
    
-3. In the **Load to table** dialog box, set the table name to **sales** and confirm the load operation by selecting **Load**. Then wait for the table to be created and loaded.
+3. In the **Load file to new table** dialog box, set the table name to **sales** and confirm the load operation by selecting **Load**. Then wait for the table to be created and loaded.
 
     >**Tip**: If the **sales** table does not automatically appear, in the **...** menu for the **Tables** folder, select **Refresh**.
 
@@ -184,7 +184,7 @@ The sales data you uploaded is in a file, which data analysts and engineers can 
 
 When you create a lakehouse and define tables in it, a SQL endpoint is automatically created through which the tables can be queried using SQL `SELECT` statements.
 
-1. At the top-right of the Lakehouse page, switch from **Lakehouse** to **SQL endpoint**. Then wait a short time until the SQL query endpoint for your lakehouse opens in a visual interface from which you can query 
+1. At the top-right of the Lakehouse page, switch from **Lakehouse** to **SQL analytics endpoint**. Then wait a short time until the SQL query endpoint for your lakehouse opens in a visual interface from which you can query 
    its tables, as shown here:
 
       ![Screenshot of the SQL endpoint page.](./Images/lakehouse-sql-endpoint-u.png)
