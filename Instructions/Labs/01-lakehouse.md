@@ -200,7 +200,7 @@ When you create a lakehouse and define tables in it, a SQL endpoint is automatic
      ORDER BY Revenue DESC;
       ```
 
-      ![Screenshot of the new sql query.](./Images/new-sql-query.png)
+      ![Screenshot of the new sql query.](./Images/image15.png)
 
 1. Use the **&#9655; Run** button to run the query and view the results, which should show the total revenue for each product.
 
