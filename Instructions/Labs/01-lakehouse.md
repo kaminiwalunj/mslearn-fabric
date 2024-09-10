@@ -94,7 +94,7 @@ Now that you have a workspace, it's time to switch to the *Data engineering* exp
 
     - The data engineering home page includes tiles to create commonly used data engineering assets.
 
-      ![](./Images/data-engineering.png)
+      ![](./Images/image7.png)
  
 2. In the **Data engineering** home page, Select **Lakehouse**
 
@@ -102,7 +102,7 @@ Now that you have a workspace, it's time to switch to the *Data engineering* exp
 
 3. Create a new **Lakehouse** with a name of your choice. 
 
-      ![](./Images/new-lakehouse.png)
+      ![](./Images/image8.png)
 
 4. After a minute or so, a new lakehouse will be created.
 
@@ -113,7 +113,7 @@ Now that you have a workspace, it's time to switch to the *Data engineering* exp
        stored externally.
      - Currently, there are no tables or files in the lakehouse.
 
-       ![](./Images/lakehouse-explorer.png)
+       ![](./Images/image9.png)
    
 ## Task 3 : Upload a file
 
