@@ -1,6 +1,6 @@
 # Get Started with Data Warehouses and Ingesting Data with Dataflows Gen2 with Microsoft Fabric
 
-## Overall Estimated Duration: 4 Hours
+## Overall Estimated Duration: 2 Hours
 
 ## Overview
 

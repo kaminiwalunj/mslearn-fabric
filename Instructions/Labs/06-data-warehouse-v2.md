@@ -1,6 +1,6 @@
 # Exercise 2 : Analyze data in a Data Warehouse
 
-## Estimated Duration : 2 Hours 30 Minutes
+## Estimated Duration : 60 Minutes
 
 In this exercise, you will analyze data within a relational data warehouse using Microsoft Fabric. Utilize SQL for querying and create detailed visualizations to derive actionable insights. 
 
