@@ -1,6 +1,6 @@
 # Get Started with Data Warehouses and Ingesting Data with Dataflows Gen2 with Microsoft Fabric
 
-## Overall Estimated Duration: 4 Hours
+### Overall Estimated Duration: 4 Hours
 
 ## Overview
 
@@ -15,6 +15,8 @@ Explore dataflows, data warehousing, and reporting in Microsoft Fabric. By the e
 
 ## Pre-requisites
 
+Participants should have:
+
 - Fundamental knowledge on Microsoft Fabric
 - Basic understanding of Data Analytics
 
@@ -27,6 +29,8 @@ This lab begins with setting up a workspace and a Lakehouse in the Data Engineer
 ![](./Images/updated-architecture-v2.png)
 
 ## Explanation of Components
+
+The architecture for this lab involves the following key components:
 
 - **Workspace** : Acts as the central hub for organizing and managing data engineering activities in this lab, facilitating the setup and coordination of various components.
 - **Lakehouse** : Provides a unified storage solution for raw and processed data, supporting data ingestion and transformation processes crucial for this lab's analytics workflow.
@@ -62,11 +66,7 @@ For convenience, you can open the lab guide in a separate window by selecting th
 Feel free to start, stop, or restart your virtual machine as needed from the **Resources** tab. Your experience is in your hands!
  
 ![Manage Your Virtual Machine](./Images/updatedimg4.png)
- 
- 
- Click "Next" from the bottom right corner to embark on your Lab journey!
- 
-  ![Start Your Azure Journey](./Images/next.png)
+  
  
 Now you're all set to explore the powerful world of technology. Feel free to reach out if you have any questions along the way. Enjoy your workshop!
 
@@ -79,4 +79,8 @@ Learner Support Contacts:
 - Email Support: labs-support@spektrasystems.com
 - Live Chat Support: https://cloudlabs.ai/labs-support
 
-## Happy Learning!!
+Now, click on **Next** from the lower right corner to move on to the next page.
+
+![Start Your Azure Journey](./Images/next.png)
+
+### Happy Learning!!
