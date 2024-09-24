@@ -202,6 +202,8 @@ The dataframe object includes a wide range of functions that you can use to filt
    display(customers.distinct())
     ```
 
+    ![](./Images/powermodel2.png)
+
 2. Run the new code cell, and review the results. Observe the following details:
     - When you perform an operation on a dataframe, the result is a new dataframe (in this case, a new **customers** dataframe is created by selecting a specific subset of columns from the **df** dataframe)
     - Dataframes provide functions such as **count** and **distinct** that can be used to summarize and filter the data they contain.
