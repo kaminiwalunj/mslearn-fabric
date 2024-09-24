@@ -28,7 +28,7 @@ Now that you have a workspace, it's time to switch to the *Data engineering* exp
 
    ![](./Images/powermodel5.png)
 
-2. In the **Synapse Data Engineering** home page, create a new **Lakehouse** with a name **fabric_lakehouse**.
+2. In the **Synapse Data Engineering** home page, create a new **Lakehouse** with a name **fabric_lakehouse1**.
 
     After a minute or so, a new empty lakehouse. You need to ingest some data into the data lakehouse for analysis. There are multiple ways to do this, but in this exercise you'll simply download a text file to your local computer (or lab VM if applicable) and then upload it to your lakehouse.
 
@@ -52,7 +52,7 @@ Now that you have a workspace, it's time to switch to the *Data engineering* exp
 
 2. Select the existing cell in the notebook, which contains some simple code, and then use its **&#128465;** (*Delete*) icon at its top-right to remove it - you will not need this code.
 
-3. In the **Lakehouse explorer** pane on the left, expand **Files** and select **products** to reveal a new pane showing the **products.csv** file you uploaded previously:
+3. Click on **Lakehouse explorer** pane on the left, expand **Files** and select **products** to reveal a new pane showing the **products.csv** file you uploaded previously:
 
     ![Screenshot of a notebook with a Files pane.](./Images/notebook-products-1.png)
 
@@ -83,19 +83,22 @@ Now that you have a workspace, it's time to switch to the *Data engineering* exp
 
 You can save the dataframe as a delta table by using the `saveAsTable` method. Delta Lake supports the creation of both *managed* and *external* tables.
 
-### Create a *managed* table
+### Task 3.1: Create a *managed* table
 
 *Managed* tables are tables for which both the schema metadata and the data files are managed by Fabric. The data files for the table are created in the **Tables** folder.
 
 1. Under the results returned by the first code cell, use the **+ Code** button to add a new code cell if one doesn't already exist. Then enter the following code in the new cell and run it:
 
     ```python
+   df = spark.read.csv("Files/products/products.csv", header=True, inferSchema=True)
    df.write.format("delta").saveAsTable("managed_products")
     ```
 
+   > **Tip**: You will need to use **<<** icon to open Lakehouse explorer panes on the left
+
 2. In the **Lakehouse explorer** pane, in the **...** menu for the **Tables** folder, select **Refresh**. Then expand the **Tables** node and verify that the **managed_products** table has been created.
 
-### Create an *external* table
+### Task 3.2: Create an *external* table
 
 You can also create *external* tables for which the schema metadata is defined in the metastore for the lakehouse, but the data files are stored in an external location.
 
@@ -111,15 +114,20 @@ You can also create *external* tables for which the schema metadata is defined i
 
     *abfss://workspace@tenant-onelake.dfs.fabric.microsoft.com/lakehousename.Lakehouse/Files*
 
-3. In the code you entered into the code cell, replace **<abfs_path>** with the path you copied to the clipboard so that the code saves the dataframe as an external table with data files in a folder named **external_products** in your **Files** folder location. The full path should look similar to this:
+3. In the code you entered into the code cell, replace **<abfs_path>** with the path you copied to the clipboard and click on **Run Cell** so that the code saves the dataframe as an external table with data files in a folder named **external_products** in your **Files** folder location. The full path should look similar to this:
 
-    *abfss://workspace@tenant-onelake.dfs.fabric.microsoft.com/lakehousename.Lakehouse/Files/external_products*
+
+    ![Screenshot of a notebook with a Files pane.](./Images/powermodel6.png)
+
+   > **Tip**: Make sure you are adding the **external_products** file name at the end of the path, *abfss://workspace@tenant-onelake.dfs.fabric.microsoft.com/lakehousename.Lakehouse/Files/**external_products***. otherwise the script will fail becasue it did not found the location to store the data.
 
 4. In the **Lakehouse explorer** pane, in the **...** menu for the **Tables** folder, select **Refresh**. Then expand the **Tables** node and verify that the **external_products** table has been created.
+   
+
 
 5. In the **Lakehouse explorer** pane, in the **...** menu for the **Files** folder, select **Refresh**. Then expand the **Files** node and verify that the **external_products** folder has been created for the table's data files.
 
-### Compare *managed* and *external* tables
+### Task 3.3: Compare *managed* and *external* tables
 
 Let's explore the differences between managed and external tables.
 
@@ -133,7 +141,7 @@ Let's explore the differences between managed and external tables.
 
     In the results, view the **Location** property for the table, which should be a path to the OneLake storage for the lakehouse ending with **/Tables/managed_products** (you may need to widen the **Data type** column to see the full path).
 
-2. Modify the `DESCRIBE` command to show the details of the **external_products** table as shown here:
+2. Modify and Run the code to`DESCRIBE` command to show the details of the **external_products** table as shown here:
 
     ```sql
    %%sql
@@ -151,14 +159,13 @@ Let's explore the differences between managed and external tables.
    %%sql
 
    DROP TABLE managed_products;
-   DROP TABLE external_products;
     ```
 
 4. In the **Lakehouse explorer** pane, in the **...** menu for the **Tables** folder, select **Refresh**. Then expand the **Tables** node and verify that no tables are listed.
 
-5. In the **Lakehouse explorer** pane, expand the **Files** folder and verify that the **external_products** has not been deleted. Select this folder to view the Parquet data files and **_delta_log** folder for the data that was previously in the **external_products** table. The table metadata for the external table was deleted, but the files were not affected.
+5. In the **Lakehouse explorer** pane, expand the **Files** folder and verify that the **external_products** has not been deleted. Select this folder to view the Parquet data files and **_delta_log** folder for the data that was previously in the **managed_products** table. The table metadata for the external table was deleted, but the files were not affected.
 
-### Use SQL to create a table
+### Task 3.4: Use SQL to create a table
 
 1. Add another code cell and run the following code:
 
