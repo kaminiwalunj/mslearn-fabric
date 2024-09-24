@@ -34,75 +34,74 @@ This lab takes approximately **90** minutes to complete.
 
 Before working with data in Fabric, create a workspace with the Fabric trial enabled.
 
-1. Open the Edge Browser and Sign in to [Microsoft Fabric](https://app.fabric.microsoft.com) at `https://app.fabric.microsoft.com`, enter the following email/username, and then click on **Submit**.  
+1. Open the Edge Browser and Sign in to [Microsoft Fabric](https://app.fabric.microsoft.com) at `https://app.fabric.microsoft.com`, enter the following email/username, and then click on **Submit (2)**.  
 
-   * **Username/Email**:  <inject key="AzureAdUserEmail"></inject>
+   * **Username/Email (1)**:  <inject key="AzureAdUserEmail"></inject>
 
-   ![](./Images/image1.png)
+      ![](./Images/odluser.png)
 
    * **Password:** <inject key="AzureAdUserPassword"></inject>
 
-   ![](./Images/image2.png)
+      ![](./Images/image2.png)
 
 3. From the Microsoft Fabric home page, select **PowerBI**
 
-   ![](./Images/image3.png)
+   ![](./Images/powerbi.png)
    
 4. From the PowerBI home page, select **Account Manager (1)** from the top-right corner to start the **Free trail (2)** of  Microsoft Fabric.
 
-   ![Account-manager-start](./Images/07.png)  
+   ![Account-manager-start](./Images/freetrial.png)  
 
 5. A new prompt will appear asking you to **Activate your 60-day free Fabric trial capacity**, click on **Activate**.
 
-   ![Start-trial](./Images/image002.png)     
+   ![Start-trial](./Images/activate(1).png)     
    
 6. Once your trial capacity is ready, you receive a confirmation message. Select **Stay on current page** to begin working in Fabric.
 
-    ![](./Images/PwrBI_4.png)
+    ![](./Images/staycurrentonstage.png)
    
 7. Open your **Account manager** again. Notice that you now have a heading for **Trial status**. Your Account manager keeps track of the number of days remaining in your trial.
 
-    ![](./Images/image4.png)
+    ![](./Images/trialstatus.png)
 
-   You now have a **Fabric (Preview) trial** that includes a **Power BI trial** and a **Fabric (Preview) trial capacity**.
+      >**Note:** You now have a **Fabric (Preview) trial** that includes a **Power BI trial** and a **Fabric (Preview) trial capacity**.
      
-8. In the menu bar on the left, select **Workspaces** (the icon looks similar to &#128455;). Select **+New Workspace**
+8. In the menu bar on the left, select **Workspaces (1)** (the icon looks similar to &#128455;). Select **+ New Workspace (2)**
 
-   ![](./Images/image5.png)
+   ![](./Images/newworkspace.png)
 
-9. Create a new workspace with a name of your choice, select a licensing mode that includes Fabric capacity (*Trial*, *Premium*, or *Fabric*), and click on **Apply**
+9. Create a new workspace with a **name (1)** of your choice, select a licensing mode that includes Fabric capacity (*Trial*, *Premium*, or *Fabric*), and click on **Apply (2)**
 
-   ![](./Images/image6.png)
+   ![](./Images/fabriclab.png)
 
 10. When your new workspace opens, it should be empty.
 
-      ![Screenshot of an empty workspace in Power BI.](./Images/new-workspace-u.png)
+      ![Screenshot of an empty workspace in Power BI.](./Images/fabriclab.png)
 
-   > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
-	 - Click the Lab Validation tab located at the upper right corner of the lab guide section and navigate to the Lab Validation tab.
-   - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
-   - If you receive a success message, you can proceed to the next task. If not, carefully read the error message and retry the step, following the instructions in the lab guide.
-   - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
+> **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+> - If you receive a success message, you can proceed to the next task.
+> - If not, carefully read the error message and retry the step, following the instructions in the lab guide. 
+> - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
 
-    <validation step="f77f6f86-fc3c-4fca-a8d2-234693b73ba8" />
+<validation step="f77f6f86-fc3c-4fca-a8d2-234693b73ba8" />
 
 ## Task 2 : Create a Lakehouse
 
 Now that you have a workspace, it's time to switch to the *Data engineering* experience in the portal and create a data lakehouse for your data files.
 
-1. At the bottom left of the Power BI portal, switch to the **Data Engineering** experience.
+1. At the bottom left of the **Power BI (1)** portal, switch to the **Data Engineering (2)** experience.
 
     - The data engineering home page includes tiles to create commonly used data engineering assets.
 
-      ![](./Images/image7.png)
+      ![](./Images/dataengineering.png)
  
 2. In the **Data engineering** home page, Select **Lakehouse**
 
-      ![](./Images/lakehouse-preview.png)
+      ![](./Images/lakehouse.png)
 
-3. Create a new **Lakehouse** with a name of your choice. 
+3. Create a new **Lakehouse (1)** with a name of your choice, and select **Create (2)**. 
 
-      ![](./Images/image8.png)
+      ![](./Images/newlakehouse.png)
 
 4. After a minute or so, a new lakehouse will be created.
 
@@ -128,14 +127,16 @@ Fabric provides multiple ways to load data into the lakehouse, including built-i
 
       - OR If you are using the lab virtual machine (lab VM) provided to you, you can get the file from the **C:\LabFiles\dp-data-main** directory.
 
-1. Return to the web browser tab containing your lakehouse, and in the **...** menu for the **Files** folder in the **Lakehouse explorer** pane, select **New subfolder**, and create a subfolder named **data**.
+1. Return to the web browser tab containing your lakehouse, and in the **... (1)** menu for the **Files** folder in the **Lakehouse explorer** pane, select **New subfolder (2)**, and create a subfolder named **data**.
 
       ![](./Images/image10.png)
+
       ![](./Images/image11.png)
 
-1. In the **...** menu for the new **data** folder, select **Upload** and **Upload files**, and then upload the **sales.csv** file from your local computer (or lab VM if applicable).
+1. In the **... (1)** menu for the new **data** folder, select **Upload (2)** and **Upload files (3)**, and then upload the **sales.csv** file from your local computer (or lab VM if applicable).
 
       ![](./Images/image12.png)
+
       ![](./Images/image13.png)
    
 1. After the file has been uploaded, select the **Files/data** folder and verify that the **sales.csv** file has been uploaded, as shown here:
@@ -148,48 +149,48 @@ Fabric provides multiple ways to load data into the lakehouse, including built-i
 
 In many scenarios, the data you need to work with in your lakehouse may be stored in some other location. While there are many ways to ingest data into the OneLake storage for your lakehouse, another option is to instead create a *shortcut*. Shortcuts enable you to include externally sourced data in your analytics solution without the overhead and risk of data inconsistency associated with copying it.
 
-1. In the **...** menu for the **Files** folder, select **New shortcut**.
+1. In the **... (1)** menu for the **Files** folder, select **New shortcut (2)**.
 
-      ![](./Images/new-shortcut.png)
+      ![](./Images/newshortcut.png)
 
 2. View the available data source types for shortcuts. Then close the **New shortcut** dialog box without creating a shortcut.
-
-      ![](./Images/shortcuts.png)
 
 ## Task 5 : Load file data into a table
 
 The sales data you uploaded is in a file, which data analysts and engineers can work with directly by using Apache Spark code. However, in many scenarios you may want to load the data from the file into a table so that you can query it using SQL.
 
-1. On the **Home** page, select the **Files/Data** folder so you can see the **sales.csv** file it contains.
+1. On the **Home** page, select the **Files (1) > Data (2)** folder so you can see the **sales.csv (3)** file it contains.
 
-2. In the **...** menu for the **sales.csv** file, select **Load to Tables** and click on **New Table**.
+      ![](./Images/files-data.png)
 
-      ![](./Images/load-totables.png)
+2. In the **... (1)** menu for the **sales.csv** file, select **Load to Tables (2)** and click on **New Table (3)**.
+
+      ![](./Images/loadtables.png)
    
-3. In the **Load file to new table** dialog box, set the table name to **sales** and confirm the load operation by selecting **Load**. Then wait for the table to be created and loaded.
+3. In the **Load file to new table** dialog box, set the table name to **sales (1)** and confirm the load operation by selecting **Load (2)**. Then wait for the table to be created and loaded.
 
     >**Tip**: If the **sales** table does not automatically appear, in the **...** menu for the **Tables** folder, select **Refresh**.
 
-   ![](./Images/load.png)
+   ![](./Images/salesorder.png)
    
 4. In the **Lakehouse explorer** pane, select the **sales** table that has been created to view the data.
 
       ![Screenshot of a table preview.](./Images/table-preview-u.png)
 
-5. In the **...** menu for the **sales** table, select **View files** to see the underlying files for this table
+5. In the **... (1)** menu for the **sales** table, select **View files (2)** to see the underlying files for this table
 
-      ![Screenshot of a table preview.](./Images/delta-table-files-u.png)
+      ![Screenshot of a table preview.](./Images/tables.png)
 
-   Files for a delta table are stored in *Parquet* format, and include a subfolder named **_delta_log** in which details of transactions applied to the table are logged.
+   >**Note:** Files for a delta table are stored in *Parquet* format, and include a subfolder named **_delta_log** in which details of transactions applied to the table are logged.
 
 ## Task 6 : Use SQL to query tables
 
 When you create a lakehouse and define tables in it, a SQL endpoint is automatically created through which the tables can be queried using SQL `SELECT` statements.
 
-1. At the top-right of the Lakehouse page, switch from **Lakehouse** to **SQL analytics endpoint**. Then wait a short time until the SQL query endpoint for your lakehouse opens in a visual interface from which you can query 
+1. At the top-right of the Lakehouse page, switch from **Lakehouse (1)** to **SQL analytics endpoint (2)**. Then wait a short time until the SQL query endpoint for your lakehouse opens in a visual interface from which you can query 
    its tables, as shown here:
 
-      ![Screenshot of the SQL endpoint page.](./Images/image003.png)
+      ![Screenshot of the SQL endpoint page.](./Images/sqlendpoints.png)
 
 1. Use the **New SQL query** button to open a new query editor, and enter the following SQL query:
 
@@ -198,38 +199,40 @@ When you create a lakehouse and define tables in it, a SQL endpoint is automatic
      FROM sales
      GROUP BY Item
      ORDER BY Revenue DESC;
-      ```
+     ```
 
       ![Screenshot of the new sql query.](./Images/image15.png)
 
 1. Use the **&#9655; Run** button to run the query and view the results, which should show the total revenue for each product.
 
-      ![Screenshot of a SQL query with results.](./Images/sql-query-u.png)
+      ![Screenshot of a SQL query with results.](./Images/run.png)
 
 ## Task 7 : Create a visual query
 
 While many data professionals are familiar with SQL, data analysts with Power BI experience can apply their Power Query skills to create visual queries.
 
-1. On the toolbar, select **New visual query**.
+1. On the toolbar, select **New SQL Query (1) > New visual query (2)**.
 
-2. Drag the **sales** table to the new visual query editor pane that opens to create a Power Query as shown here: 
+      ![Screenshot of a Visual query.](./Images/newsqlquery.png)
 
-      ![Screenshot of a Visual query.](./Images/visual-query-u.png)
+2. Drag the **sales** table to the new visual query editor pane that opens to create a **Power Query (2)** as shown here: 
 
-3. In the **Manage columns** menu, select **Choose columns**. Then select only the **SalesOrderNumber** and **SalesOrderLineNumber** columns and click **OK**.
+      ![Screenshot of a Visual query.](./Images/salesquery.png)
 
-      ![Screenshot of a Choose columns dialog box.](./Images/choose-columns-u.png)
+3. In the **Manage columns (1)** menu, select **Choose columns (2)**. Then select only the **SalesOrderNumber** and **SalesOrderLineNumber** columns and click **OK**.
 
-4. In the **Transform** menu, select **Group by**. Then group the data by using the following **Basic** settings:
+      ![Screenshot of a Choose columns dialog box.](./Images/choosecolumns.png)
 
-      - **Group by**: SalesOrderNumber
-      - **New column name**: LineItems
-      - **Operation**: Count distinct values
-      - **Column**: SalesOrderLineNumber
+4. In the **Transform** menu, select **Group by**. Then group the data by using the following **Basic (1)** settings:
+
+      - **Group by (2)**: SalesOrderNumber
+      - **New column name (3)**: LineItems
+      - **Operation (4)**: Count distinct values
+      - **Column (5)**: SalesOrderLineNumber
 
       - When you're done, the results pane under the visual query shows the number of line items for each sales order.
 
-        ![Screenshot of a Visual query with results.](./Images/visual-query-results-u.png)
+      ![Screenshot of a Choose columns dialog box.](./Images/salesorderlinenumber.png)
 
 ## Task 8 : Create a Report
 
@@ -271,24 +274,12 @@ The tables in your lakehouse are automatically added to a default dataset that d
 
       ![Screenshot of a workspace view.](./Images/image04.png)
 
-   <validation step="8be3d605-b09f-4738-b1e5-c83a1e304b80" />
+<validation step="8be3d605-b09f-4738-b1e5-c83a1e304b80" />
 
 
-   <validation step="d75ef970-6298-404c-aeeb-8dafe17b3ac2" />
-   
+<validation step="d75ef970-6298-404c-aeeb-8dafe17b3ac2" />
 
-    >**Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
-    > - Click the Lab Validation tab located at the upper right corner of the lab guide section and navigate to the Lab Validation tab.
-    > - Hit the Validate button for the corresponding task.
-    > - If you receive a success message, you can proceed to the next task. If not, carefully read the error message and retry the step, following the instructions in the lab guide.
-    > - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
-
-## Clean up resources
-
-In this exercise, you have created a lakehouse and imported data into it. You've seen how a lakehouse consists of files and tables stored in a OneLake data store. The managed tables can be queried using SQL, and are included in a default dataset to support data visualizations.
-
-If you've finished exploring your lakehouse, you can delete the workspace you created for this exercise.
-
-1. In the bar on the left, select the icon for your workspace to view all of the items it contains.
-2. In the **...** menu on the toolbar, select **Workspace settings**.
-3. In the **Other** section, select **Remove this workspace**.
+> **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+> - If you receive a success message, you can proceed to the next task.
+> - If not, carefully read the error message and retry the step, following the instructions in the lab guide. 
+> - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
