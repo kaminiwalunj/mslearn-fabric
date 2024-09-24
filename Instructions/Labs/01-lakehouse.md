@@ -274,12 +274,13 @@ The tables in your lakehouse are automatically added to a default dataset that d
 
       ![Screenshot of a workspace view.](./Images/powermodel1.png)
 
-<validation step="8be3d605-b09f-4738-b1e5-c83a1e304b80" />
-
-
-<validation step="d75ef970-6298-404c-aeeb-8dafe17b3ac2" />
 
 > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
 > - If you receive a success message, you can proceed to the next task.
 > - If not, carefully read the error message and retry the step, following the instructions in the lab guide. 
 > - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
+
+<validation step="8be3d605-b09f-4738-b1e5-c83a1e304b80" />
+
+
+<validation step="d75ef970-6298-404c-aeeb-8dafe17b3ac2" />
