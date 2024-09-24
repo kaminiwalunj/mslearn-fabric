@@ -24,9 +24,9 @@ This exercise should take approximately **40** minutes to complete
 
 Now that you have a workspace, it's time to switch to the *Data engineering* experience in the portal and create a data lakehouse for the data you're going to analyze.
 
-1. At the bottom left of the Power BI portal, select the **Power BI (1)** icon and switch to the **Data Engineering (2)** experience.
+1. At the bottom left of the Power BI portal, select the **Data Engineering (1)** icon and Click on to the **Data Engineering (2)** experience.
 
-   ![](./Images/data-engineer.png)
+   ![](./Images/powermodel5.png)
 
 2. In the **Synapse Data Engineering** home page, create a new **Lakehouse** with a name **fabric_lakehouse**.
 
