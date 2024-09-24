@@ -284,3 +284,5 @@ The tables in your lakehouse are automatically added to a default dataset that d
 
 
 <validation step="d75ef970-6298-404c-aeeb-8dafe17b3ac2" />
+
+## **Congratulations! you have successfully completed this lab, please click on next**
