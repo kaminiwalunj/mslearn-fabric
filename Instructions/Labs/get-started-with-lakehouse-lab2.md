@@ -292,6 +292,8 @@ A common task for data engineers is to ingest data in a particular format or str
 
     ![Screenshot of a folder containing parquet files.](./Images/saved-parquet-1.png)
 
+   > **Tip**: You will need to use **<<** icon to open Lakehouse explorer panes on the left.
+
 3. Add a new cell with the following code to load a new dataframe from the parquet files in the **transformed_data/orders** folder:
 
     ```python
@@ -310,9 +312,9 @@ A common task for data engineers is to ingest data in a particular format or str
    print ("Transformed data saved!")
     ```
 
-2. Run the cell and wait for the message that the data has been saved. Then, in the **Explorer** pane on the left, in the **...** menu for the **Files** node, select **Refresh**; and expand the **partitioned_orders** folder to verify that it contains a hierarchy of folders named **Year=*xxxx***, each containing folders named **Month=*xxxx***. Each month folder contains a parquet file with the orders for that month.
+2. Run the cell and wait for the message that the data has been saved. Then, in the **Explorer** pane on the left, in the **...** menu for the **Files** node, select **Refresh**; and expand the **partitioned_data** folder to verify that it contains a hierarchy of folders named **Year=*xxxx***, each containing folders named **Month=*xxxx***. Each month folder contains a parquet file with the orders for that month.
 
-    ![Screenshot of a hierarchy of partitioned data files.](./Images/partitioned-files-1.png)
+    ![Screenshot of a hierarchy of partitioned data files.](./Images/powermodel3.png)
 
     Partitioning data files is a common way to optimize performance when dealing with large volumes of data. This technique can significant improve performance and make it easier to filter data.
 
@@ -400,7 +402,7 @@ A picture is proverbially worth a thousand words, and a chart is often better th
 
 2. Run the code and observe that it returns the data from the **salesorders** view you created previously.
 3. In the results section beneath the cell, change the **View** option from **Table** to **Chart**.
-4. Use the **View options** button at the top right of the chart to display the options pane for the chart. Then set the options as follows and select **Apply**:
+4. Use the **customize chart** button at the right of the chart to display the options pane for the chart. Then set the options as follows and select **Apply**:
     - **Chart type**: Bar chart
     - **Key**: Item
     - **Values**: Quantity
@@ -597,6 +599,8 @@ Now that you've finished working with the data, you can save the notebook with a
 1. In the notebook menu bar, use the ⚙️ **Settings** icon to view the notebook settings.
 2. Set the **Name** of the notebook to **Explore Sales Orders**, and then close the settings pane.
 3. On the notebook menu, select **Stop session** to end the Spark session.
+
+    ![Screenshot of the salesorder table in Explorer.](./Images/powermodel4.png)
 
 ## Clean up resources
 
