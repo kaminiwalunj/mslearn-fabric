@@ -1,4 +1,4 @@
-# Lab : Create and use a Dataflow (Gen2) in Microsoft Fabric 
+# Lab-04 : Create and use a Dataflow (Gen2) in Microsoft Fabric 
 
 ## Overview 
 Microsoft Fabric offers a unified solution for data engineering, integration, and analytics. A crucial step in end-to-end analytics is data ingestion. Dataflows (Gen2) are used to ingest and transform data from multiple sources, and then land the cleansed data to another destination. They can be incorporated into data pipelines for additional data movement, and used as a data source in Power BI.
@@ -21,7 +21,7 @@ This lab is designed to introduce the different elements of Dataflows (Gen2), an
 
 Now that you have a workspace, it's time to switch to the **Data Engineering** experience in the portal and create a data lakehouse into which you'll ingest data.
 
-1. At the bottom left of the Power BI portal, select the **Power BI** icon and switch to the **Data Engineering** experience.
+1. At the bottom left of the Power BI portal, select the **Data Engineering** icon and click to the **Data Engineering** experience.
 
 2. In the **Data engineering** home page, create a new **Lakehouse** with a name of **dp_lakehouse**.
 
@@ -35,7 +35,7 @@ Now that you have a lakehouse, you need to ingest some data into it. One way to 
 
 1. In the home page for your workspace, select **New Dataflow Gen2**. After a few seconds, the Power Query editor for your new dataflow opens as shown here.
 
-   ![New dataflow.](./Images/m6-fabric-2.png)
+   ![New dataflow.](./Images/powermodel7.png)
 
 2. Select **Import from a Text/CSV file**, and create a new data source with the following settings:
  - **Link to file**: *Selected*
@@ -44,15 +44,19 @@ Now that you have a lakehouse, you need to ingest some data into it. One way to 
  - **data gateway**: (none)
  - **Authentication kind**: Anonymous
 
+   ![New dataflow.](./Images/powermodel8.png)
+
+   ![New dataflow.](./Images/powermodel9.png)
+
 3. Select **Next** to preview the file data, and then **Create** the data source. The Power Query editor shows the data source and an initial set of query steps to format the data, as shown here:
 
    ![Query in the Power Query editor.](./Images/m6-fabric-3.png)
 
-4. On the toolbar ribbon, select the **Add column** tab. Then select **Custom column** and create a new column named **MonthNo** that contains a number based on the formula `Date.Month([OrderDate])` - as shown here:
+4. On the toolbar ribbon, select the **Add column** tab. Then select **Custom column**, create a new column named **MonthNo** that contains a number based on the formula `Date.Month([OrderDate])`and  click on **OK**. The step to add the custom column is added to the query and the resulting column is displayed in the data pane - as shown here:
 
-   ![Custom column in Power Query editor.](./Images/custom-column1.png)
+   ![New dataflow.](./Images/powermodel10.png)
 
- Click on **OK**. The step to add the custom column is added to the query and the resulting column is displayed in the data pane:
+   ![New dataflow.](./Images/powermodel11.png)
 
    ![Query with a custom column step.](./Images/custom-column-added1.png)
 
