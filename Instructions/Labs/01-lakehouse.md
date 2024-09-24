@@ -238,9 +238,9 @@ While many data professionals are familiar with SQL, data analysts with Power BI
 
 The tables in your lakehouse are automatically added to a default dataset that defines a data model for reporting with Power BI.
 
-1. At the bottom of the SQL Endpoint page, select the **Model** tab. The data model schema for the dataset is shown.
+1. At the bottom of the SQL Endpoint page, select the **Model** option. The data model schema for the dataset is shown. click on sales table to view the report.
 
-      ![Screenshot of a data model.](./Images/data-model-u.png)
+      ![Screenshot of a data model.](./Images/powermodel.png)
 
      >**Note**: In this exercise, the data model consists of a single table. In a real-world scenario, you would likely create multiple tables in your lakehouse, each of which would be included in the model. You could then define relationships between these tables in the model.
 
@@ -272,7 +272,7 @@ The tables in your lakehouse are automatically added to a default dataset that d
     - A default dataset for the tables in your lakehouse.
     - The **Item Sales Report** report.
 
-      ![Screenshot of a workspace view.](./Images/image04.png)
+      ![Screenshot of a workspace view.](./Images/powermodel1.png)
 
 <validation step="8be3d605-b09f-4738-b1e5-c83a1e304b80" />
 
