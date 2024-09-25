@@ -1,4 +1,4 @@
-# Lab : Create and use a Dataflow (Gen2) in Microsoft Fabric 
+# Lab-04 : Create and use a Dataflow (Gen2) in Microsoft Fabric 
 
 ## Overview 
 Microsoft Fabric offers a unified solution for data engineering, integration, and analytics. A crucial step in end-to-end analytics is data ingestion. Dataflows (Gen2) are used to ingest and transform data from multiple sources, and then land the cleansed data to another destination. They can be incorporated into data pipelines for additional data movement, and used as a data source in Power BI.
@@ -21,7 +21,7 @@ This lab is designed to introduce the different elements of Dataflows (Gen2), an
 
 Now that you have a workspace, it's time to switch to the **Data Engineering** experience in the portal and create a data lakehouse into which you'll ingest data.
 
-1. At the bottom left of the Power BI portal, select the **Power BI** icon and switch to the **Data Engineering** experience.
+1. At the bottom left of the Power BI portal, select the **Data Engineering** icon and click to the **Data Engineering** experience.
 
 2. In the **Data engineering** home page, create a new **Lakehouse** with a name of **dp_lakehouse**.
 
@@ -35,7 +35,7 @@ Now that you have a lakehouse, you need to ingest some data into it. One way to 
 
 1. In the home page for your workspace, select **New Dataflow Gen2**. After a few seconds, the Power Query editor for your new dataflow opens as shown here.
 
-   ![New dataflow.](./Images/m6-fabric-2.png)
+   ![New dataflow.](./Images/powermodel7.png)
 
 2. Select **Import from a Text/CSV file**, and create a new data source with the following settings:
  - **Link to file**: *Selected*
@@ -44,15 +44,19 @@ Now that you have a lakehouse, you need to ingest some data into it. One way to 
  - **data gateway**: (none)
  - **Authentication kind**: Anonymous
 
+   ![New dataflow.](./Images/powermodel8.png)
+
+   ![New dataflow.](./Images/powermodel9.png)
+
 3. Select **Next** to preview the file data, and then **Create** the data source. The Power Query editor shows the data source and an initial set of query steps to format the data, as shown here:
 
    ![Query in the Power Query editor.](./Images/m6-fabric-3.png)
 
-4. On the toolbar ribbon, select the **Add column** tab. Then select **Custom column** and create a new column named **MonthNo** that contains a number based on the formula `Date.Month([OrderDate])` - as shown here:
+4. On the toolbar ribbon, select the **Add column** tab. Then select **Custom column**, create a new column named **MonthNo** that contains a number based on the formula `Date.Month([OrderDate])`and  click on **OK**. The step to add the custom column is added to the query and the resulting column is displayed in the data pane - as shown here:
 
-   ![Custom column in Power Query editor.](./Images/custom-column1.png)
+   ![New dataflow.](./Images/powermodel10.png)
 
- Click on **OK**. The step to add the custom column is added to the query and the resulting column is displayed in the data pane:
+   ![New dataflow.](./Images/powermodel11.png)
 
    ![Query with a custom column step.](./Images/custom-column-added1.png)
 
@@ -64,17 +68,21 @@ Now that you have a lakehouse, you need to ingest some data into it. One way to 
 
 1. On the toolbar ribbon, select the **Home** tab. Then in the **Add data destination** drop-down menu, select **Lakehouse**.
 
+   ![New dataflow.](./Images/powermodel12.png)
+
    > **Note:** If this option is grayed out, you may already have a data destination set. Check the data destination at the bottom of the Query settings pane on the right side of the Power Query editor. If a destination is already set, you can change it using the gear.
 
 2. In the **Connect to data destination** dialog box, edit the connection and sign in using your Power BI organizational account to set the identity that the dataflow uses to access the lakehouse.
 
-   ![Data destination configuration page.](./Images/dataflow-connection1.png)
+   ![New dataflow.](./Images/powermodel13.png)
 
-3. Select **Next** and in the list of available workspaces, find your workspace and select the lakehouse you created in it at the start of this exercise. Then specify a new table named **orders**:
+   ![Data destination configuration page.](./Images/dataflow-connection1.pn)
 
-   ![Data destination configuration page.](./Images/data-destination-target1.png)
+3. Select **Next** and in the list of available workspaces, find your workspace and select the lakehouse **df_datahouse**. Then specify a new table named **orders**:
 
-   > **Note:** On the **Destination settings** page, notice how OrderDate and MonthNo are not selected in the Column mapping and there is an informational message: *Change to date/time*.
+   ![New dataflow.](./Images/powermodel14.png)
+
+   > **Note:** On the **Destination settings** page, notice how MonthNo are not selected in the Column mapping and there is an informational message: *Change to date/time*.
 
     ![Data destination settings page.](./Images/destination-settings1.png)
 
@@ -83,15 +91,19 @@ Now that you have a lakehouse, you need to ingest some data into it. One way to 
     - OrderDate = Date/Time
     - MonthNo = Whole number
 
-5. Now repeat the process outlined earlier to add a lakehouse destination.
+   ![New dataflow.](./Images/powermodel15.png)
 
-6. On the **Destination settings** page, select **Append**, and then save the settings.  The **Lakehouse** destination is indicated as an icon in the query in the Power Query editor.
+   ![New dataflow.](./Images/powermodel16.png)
 
-   ![Query with a lakehouse destination.](./Images/lakehouse-destination1.png)
+6. Now repeat the process outlined earlier to add a lakehouse destination.
 
-7. Select **Publish** to publish the dataflow. Then wait for the **Dataflow 1** dataflow to be created in your workspace.
+7. On the **Destination settings** page, select **Append**, and then save the settings.  The **Lakehouse** destination is indicated as an icon in the query in the Power Query editor.
 
-8. Once published, you can right-click on the dataflow in your workspace, select **Properties**, and rename your dataflow.
+   ![New dataflow.](./Images/powermodel17.png)
+
+8. Select **Publish** to publish the dataflow. Then wait for the **Dataflow 1** dataflow to be created in your workspace.
+
+9. Once published, you can right-click on the dataflow in your workspace, select **Properties**, and rename your dataflow.
 
 ## Task 4: Add a dataflow to a pipeline
 
@@ -101,22 +113,37 @@ You can include a dataflow as an activity in a pipeline. Pipelines are used to o
 
    The pipeline editor opens.
 
-   ![Empty data pipeline.](./Images/new-pipeline1.png)
+   ![New dataflow.](./Images/powermodel18.png)
+
+   ![New dataflow.](./Images/powermodel19.png)
+
 
    > **Tip**: If the Copy Data wizard opens automatically, close it!
 
-2. Select **Add pipeline activity**, and add a **Dataflow** activity to the pipeline.
+2. Select **pipeline activity**, and add a **Dataflow** activity to the pipeline.
+
+   ![New dataflow.](./Images/powermodel20.png)
+
+   ![New dataflow.](./Images/powermodel21.png)
+
 
 3. With the new **Dataflow1** activity selected, on the **Settings** tab, in the **Dataflow** drop-down list, select **Dataflow 1** (the data flow you created previously)
 
-   ![Pipeline with a dataflow activity.](./Images/dataflow-activity1.png)
+   ![New dataflow.](./Images/powermodel22.png)
 
-4. On the **Home** tab, save the pipeline using the **&#128427;** (*Save*) icon.
+
+4. On the **Home** tab, save the pipeline using the **&#128427;** (*Save*) icon. provide name to your dataflow and click on **Save.**
+
+   ![New dataflow.](./Images/powermodel23.png)
+
 5. Use the **&#9655; Run** button to run the pipeline, and wait for it to complete. It may take a few minutes.
 
    ![Pipeline with a dataflow that has completed successfully.](./Images/dataflow-pipeline-succeeded1.png)
 
 6. In the menu bar on the left edge, select your lakehouse.
+
+   ![New dataflow.](./Images/powermodel24.png)
+
 7. In the **...** menu for **Tables**, select **refresh**. Then expand **Tables** and select the **orders** table, which has been created by your dataflow.
 
    ![Table loaded by a dataflow.](./Images/loaded-table1.png)
@@ -136,3 +163,5 @@ If you've finished exploring dataflows in Microsoft Fabric, you can delete the w
 1. In the **...** menu on the toolbar, select **Workspace settings**.
 1. In the **Other** section, select **Remove this workspace**.
 1. Don't save the changes to Power BI Desktop, or delete the .pbix file if already saved.
+
+## **Congratulations! you have successfully completed this lab**

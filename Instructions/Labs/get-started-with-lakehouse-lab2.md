@@ -191,7 +191,7 @@ Now you're ready to run code that loads the data into a *dataframe*. Dataframes 
 
 The dataframe object includes a wide range of functions that you can use to filter, group, and otherwise manipulate the data it contains.
 
-### Filter a dataframe
+### Task 4.1: Filter a dataframe
 
 1. Use the **+ Code** icon below the cell output to add a new code cell to the notebook, and enter the following code in it.
 
@@ -201,6 +201,8 @@ The dataframe object includes a wide range of functions that you can use to filt
    print(customers.distinct().count())
    display(customers.distinct())
     ```
+
+    ![](./Images/powermodel2.png)
 
 2. Run the new code cell, and review the results. Observe the following details:
     - When you perform an operation on a dataframe, the result is a new dataframe (in this case, a new **customers** dataframe is created by selecting a specific subset of columns from the **df** dataframe)
@@ -218,9 +220,9 @@ The dataframe object includes a wide range of functions that you can use to filt
 
 4. Run the modified code to view the customers who have purchased the *Road-250 Red, 52* product. Note that you can "chain" multiple functions together so that the output of one function becomes the input for the next - in this case, the dataframe created by the **select** method is the source dataframe for the **where** method that is used to apply filtering criteria.
 
-### Aggregate and group data in a dataframe
+### Task 4.2: Aggregate and group data in a dataframe
 
-1. Add a new code cell to the notebook, and enter the following code in it:
+1. Add a new code cell to the notebook use **+ Code** icon below the cell output, and enter the following code in it:
 
     ```Python
    productSales = df.select("Item", "Quantity").groupBy("Item").sum()
@@ -229,7 +231,7 @@ The dataframe object includes a wide range of functions that you can use to filt
 
 2. Run the code cell you added, and note that the results show the sum of order quantities grouped by product. The **groupBy** method groups the rows by *Item*, and the subsequent **sum** aggregate function is applied to all of the remaining numeric columns (in this case, *Quantity*)
 
-3. Add another new code cell to the notebook, and enter the following code in it:
+3. Add another new code cell to the notebook below the cell output, and enter the following code in it:
 
     ```Python
    from pyspark.sql.functions import *
@@ -244,9 +246,9 @@ The dataframe object includes a wide range of functions that you can use to filt
 
 A common task for data engineers is to ingest data in a particular format or structure, and transform it for further downstream processing or analysis.
 
-### Use dataframe methods and functions to transform data
+### Task 5.1: Use dataframe methods and functions to transform data
 
-1. Add another new code cell to the notebook, and enter the following code in it:
+1. Add another new code cell to the notebook below the cell output, and enter the following code in it:
 
     ```Python
    from pyspark.sql.functions import *
@@ -275,7 +277,7 @@ A common task for data engineers is to ingest data in a particular format or str
 
     > **Tip**: See the [Spark dataframe documentation](https://spark.apache.org/docs/latest/api/python/reference/pyspark.sql/dataframe.html) to learn more about the methods of the Dataframe object.
 
-### Save the transformed data
+### Task 5.2: Save the transformed data
 
 1. Add a new cell with the following code to save the transformed dataframe in Parquet format (Overwriting the data if it already exists):
 
@@ -290,6 +292,8 @@ A common task for data engineers is to ingest data in a particular format or str
 
     ![Screenshot of a folder containing parquet files.](./Images/saved-parquet-1.png)
 
+   > **Tip**: You will need to use **<<** icon to open Lakehouse explorer panes on the left.
+
 3. Add a new cell with the following code to load a new dataframe from the parquet files in the **transformed_data/orders** folder:
 
     ```python
@@ -299,7 +303,7 @@ A common task for data engineers is to ingest data in a particular format or str
 
 4. Run the cell and verify that the results show the order data that has been loaded from the parquet files.
 
-### Save data in partitioned files
+### Task 5.3: Save data in partitioned files
 
 1. Add a new cell with the following code; which saves the dataframe, partitioning the data by **Year** and **Month**:
 
@@ -308,9 +312,9 @@ A common task for data engineers is to ingest data in a particular format or str
    print ("Transformed data saved!")
     ```
 
-2. Run the cell and wait for the message that the data has been saved. Then, in the **Explorer** pane on the left, in the **...** menu for the **Files** node, select **Refresh**; and expand the **partitioned_orders** folder to verify that it contains a hierarchy of folders named **Year=*xxxx***, each containing folders named **Month=*xxxx***. Each month folder contains a parquet file with the orders for that month.
+2. Run the cell and wait for the message that the data has been saved. Then, in the **Explorer** pane on the left, in the **...** menu for the **Files** node, select **Refresh**; and expand the **partitioned_data** folder to verify that it contains a hierarchy of folders named **Year=*xxxx***, each containing folders named **Month=*xxxx***. Each month folder contains a parquet file with the orders for that month.
 
-    ![Screenshot of a hierarchy of partitioned data files.](./Images/partitioned-files-1.png)
+    ![Screenshot of a hierarchy of partitioned data files.](./Images/powermodel3.png)
 
     Partitioning data files is a common way to optimize performance when dealing with large volumes of data. This technique can significant improve performance and make it easier to filter data.
 
@@ -327,7 +331,7 @@ A common task for data engineers is to ingest data in a particular format or str
 
 As you've seen, the native methods of the dataframe object enable you to query and analyze data from a file quite effectively. However, many data analysts are more comfortable working with tables that they can query using SQL syntax. Spark provides a *metastore* in which you can define relational tables. The Spark SQL library that provides the dataframe object also supports the use of SQL statements to query tables in the metastore. By using these capabilities of Spark, you can combine the flexibility of a data lake with the structured data schema and SQL-based queries of a relational data warehouse - hence the term "data lakehouse".
 
-### Create a table
+### Task 6.1: Create a table
 
 Tables in a Spark metastore are relational abstractions over files in the data lake. tables can be *managed* (in which case the files are managed by the metastore) or *external* (in which case the table references a file location in the data lake that you manage independently of the metastore).
 
@@ -361,7 +365,7 @@ Tables in a Spark metastore are relational abstractions over files in the data l
 
 6. Run the new code, which uses the Spark SQL library to embed a SQL query against the **salesorder** table in PySpark code and load the results of the query into a dataframe.
 
-### Run SQL code in a cell
+### Task 6.2: Run SQL code in a cell
 
 While it's useful to be able to embed SQL statements into a cell containing PySpark code, data analysts often just want to work directly in SQL.
 
@@ -387,7 +391,7 @@ While it's useful to be able to embed SQL statements into a cell containing PySp
 
 A picture is proverbially worth a thousand words, and a chart is often better than a thousand rows of data. While notebooks in Fabric include a built in chart view for data that is displayed from a dataframe or Spark SQL query, it is not designed for comprehensive charting. However, you can use Python graphics libraries like **matplotlib** and **seaborn** to create charts from data in dataframes.
 
-### View results as a chart
+### Task 7.1: View results as a chart
 
 1. Add a new code cell to the notebook, and enter the following code in it:
 
@@ -398,7 +402,7 @@ A picture is proverbially worth a thousand words, and a chart is often better th
 
 2. Run the code and observe that it returns the data from the **salesorders** view you created previously.
 3. In the results section beneath the cell, change the **View** option from **Table** to **Chart**.
-4. Use the **View options** button at the top right of the chart to display the options pane for the chart. Then set the options as follows and select **Apply**:
+4. Use the **customize chart** button at the right of the chart to display the options pane for the chart. Then set the options as follows and select **Apply**:
     - **Chart type**: Bar chart
     - **Key**: Item
     - **Values**: Quantity
@@ -410,7 +414,7 @@ A picture is proverbially worth a thousand words, and a chart is often better th
 
     ![Screenshot of a bar chart of products by total order quantiies](./Images/notebook-chart-1.png)
 
-### Get started with **matplotlib**
+### Task 7.2: Get started with **matplotlib**
 
 1. Add a new code cell to the notebook, and enter the following code in it:
 
@@ -535,7 +539,7 @@ A picture is proverbially worth a thousand words, and a chart is often better th
 
 > **Note**: To learn more about plotting with matplotlib, see the [matplotlib documentation](https://matplotlib.org/).
 
-### Use the **seaborn** library
+### Task 7.3: Use the **seaborn** library
 
 While **matplotlib** enables you to create complex charts of multiple types, it can require some complex code to achieve the best results. For this reason, over the years, many new libraries have been built on the base of matplotlib to abstract its complexity and enhance its capabilities. One such library is **seaborn**.
 
@@ -596,6 +600,8 @@ Now that you've finished working with the data, you can save the notebook with a
 2. Set the **Name** of the notebook to **Explore Sales Orders**, and then close the settings pane.
 3. On the notebook menu, select **Stop session** to end the Spark session.
 
+    ![Screenshot of the salesorder table in Explorer.](./Images/powermodel4.png)
+
 ## Clean up resources
 
 In this exercise, you've learned how to use Spark to work with data in Microsoft Fabric.
@@ -605,3 +611,5 @@ If you've finished exploring your lakehouse, you can delete the workspace you cr
 1. In the bar on the left, select the icon for your workspace to view all of the items it contains.
 2. In the **...** menu on the toolbar, select **Workspace settings**.
 3. In the **Other** section, select **Remove this workspace**.
+
+## **Congratulations! you have successfully completed this lab, please click on next**
