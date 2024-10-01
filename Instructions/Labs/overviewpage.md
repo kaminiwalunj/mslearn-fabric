@@ -82,6 +82,7 @@ Feel free to start, stop, or restart your virtual machine as needed from the **R
  
 ![Manage Your Virtual Machine](./Images/res.png)
  
+Now you're all set to explore the powerful world of technology. Feel free to reach out if you have any questions along the way. 
 
 ## Support Contact
 
@@ -89,12 +90,9 @@ Feel free to start, stop, or restart your virtual machine as needed from the **R
 
    Learner Support Contacts:
 
-    - Email Support: labs-support@spektrasystems.com
+    - Email Support: cloudlabs-support@spektrasystems.com
     - Live Chat Support: https://cloudlabs.ai/labs-support
-
 
 2. Now, click on Next from the lower right corner to move on to the next page.
 
-Now you're all set to explore the powerful world of technology. Feel free to reach out if you have any questions along the way. Enjoy your workshop!
-
-#### Happy Learning!!
+#### Happy Learning!
