@@ -109,7 +109,6 @@ Now that you have a lakehouse, you need to ingest some data into it. One way to 
    ![Query with a custom column step.](./Images/custom-column-added1.png)
 
 > **Tip:** In the Query Settings pane on the right side, notice the **Applied Steps** include each transformation step. At the bottom, you can also toggle the **Diagram flow** button to turn on the Visual Diagram of the steps.
->
 > Steps can be moved up or down, edited by selecting the gear icon, and you can select each step to see the transformations apply in the preview pane.
 
 ## Task 4 : Add data destination for Dataflow
@@ -147,7 +146,7 @@ Now that you have a lakehouse, you need to ingest some data into it. One way to 
 
 >**Note** : to view the visual query, select the icon from below right corner as shown below :
 
-   ![Query with a lakehouse destination.](./Images/visual_query.png)
+   >![Query with a lakehouse destination.](./Images/visual_query.png)
 
 9. Select **Publish** to publish the dataflow. Then wait for the **Dataflow 1** dataflow to be created in your workspace.
 
@@ -176,8 +175,7 @@ You can include a dataflow as an activity in a pipeline. Pipelines are used to o
 
    ![Pipeline with a dataflow that has completed successfully.](./Images/dataflow-pipeline-succeeded1.png)
 
-7. In the menu bar on the left edge, select your lakehouse.
-8. In the **ellipses** menu for **Tables**, select **refresh**. Then expand **Tables** and select the **orders** table, which has been created by your dataflow.
+8. Navigate back to the lakehouse . In the **ellipses** menu for **Tables**, select **refresh**. Then expand **Tables** and select the **orders** table, which has been created by your dataflow.
 
    ![Table loaded by a dataflow.](./Images/loaded-table1.png)
 
