@@ -152,6 +152,15 @@ Now that you have a lakehouse, you need to ingest some data into it. One way to 
 
 10. Once published, you can right-click on the dataflow in your workspace, select **Properties**, and rename your dataflow.
 
+#### Validation
+
+<validation step="8a7b316c-9513-4f0e-a48a-2e84f7b12eb2" />
+
+> **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps
+> - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
+> - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
+> - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help you out.
+
 ## Task 5 : Add a dataflow to a pipeline
 
 You can include a dataflow as an activity in a pipeline. Pipelines are used to orchestrate data ingestion and processing activities, enabling you to combine dataflows with other kinds of operation in a single, scheduled process. Pipelines can be created in a few different experiences, including Data Factory experience.
@@ -182,6 +191,15 @@ You can include a dataflow as an activity in a pipeline. Pipelines are used to o
 > **Note**: Use the Power BI Desktop *Dataflows connector* to connect directly to the data transformations done with your dataflow.
 > You can also make additional transformations, publish as a new dataset, and distribute with intended audience for specialized datasets.
  ![Power BI data source connectors](Images/pbid-dataflow-connectors1.png)
+
+#### Validation
+
+<validation step="8e4e892b-1a8b-4031-ae89-edc2622f0aae" />
+
+> **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps
+> - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
+> - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
+> - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help you out.
 
 ## Summary
 
