@@ -87,16 +87,24 @@ Now that you have a lakehouse, you need to ingest some data into it. One way to 
  - **Connection**: Create new connection
  - **data gateway**: (none)
  - **Authentication kind**: Anonymous
+ - **Privacy level** : none
 
+    ![Query in the Power Query editor.](./Images/connect-data-source.png)
+   
 3. Select **Next** to preview the file data, and then **Create** the data source. The Power Query editor shows the data source and an initial set of query steps to format the data, as shown here:
 
    ![Query in the Power Query editor.](./Images/m6-fabric-3.png)
 
-4. On the toolbar ribbon, select the **Add column** tab. Then select **Custom column** and create a new column named **MonthNo** that contains a number based on the formula `Date.Month([OrderDate])` - as shown here:
+4. On the toolbar ribbon, select the **Add column** tab. Then select **Custom column**.
+
+   ![Custom column in Power Query editor.](./Images/custom_column.png)
+   
+6. Create a new column named **MonthNo** that contains a number based on the formula `Date.Month([OrderDate])` - as shown here and 
+   Click on **OK**.
 
    ![Custom column in Power Query editor.](./Images/custom-column1.png)
 
- Click on **OK**. The step to add the custom column is added to the query and the resulting column is displayed in the data pane:
+7. The step to add the custom column is added to the query and the resulting column is displayed in the data pane:
 
    ![Query with a custom column step.](./Images/custom-column-added1.png)
 
