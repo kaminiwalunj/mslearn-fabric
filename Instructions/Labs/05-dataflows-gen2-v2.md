@@ -118,11 +118,11 @@ Now that you have a lakehouse, you need to ingest some data into it. One way to 
 
    > **Note:** If this option is grayed out, you may already have a data destination set. Check the data destination at the bottom of the Query settings pane on the right side of the Power Query editor. If a destination is already set, you can change it using the gear.
 
-2. In the **Connect to data destination** dialog box, edit the connection and sign in using your Power BI organizational account to set the identity that the dataflow uses to access the lakehouse.
+2. In the **Connect to data destination** dialog box, edit the connection and sign in using your Power BI organizational account to set the identity that the dataflow uses to access the lakehouse, Select **Next**.
 
-   ![Data destination configuration page.](./Images/dataflow-connection1.png)
+   ![Data destination configuration page.](./Images/connect_data_destination.png)
 
-3. Select **Next** and in the list of available workspaces, find your workspace and select the lakehouse you created in it at the start of this exercise. Then specify a new table named **orders**:
+3. In the list of available workspaces, find your workspace and select the lakehouse you created in it at the start of this exercise. Then specify a new table named **orders**:
 
    ![Data destination configuration page.](./Images/data-destination-target1.png)
 
