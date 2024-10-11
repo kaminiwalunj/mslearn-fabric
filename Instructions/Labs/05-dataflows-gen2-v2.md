@@ -15,7 +15,7 @@ In this exercise, you will use Dataflows (Gen2) to ingest, transform, and standa
 
 Before working with data in Fabric, create a workspace with the Fabric trial enabled.
 
-1. Sign into [Microsoft Fabric](https://app.fabric.microsoft.com) at `https://app.fabric.microsoft.com` and select **Power BI**.
+1. Sign into [Microsoft Fabric](https://app.fabric.microsoft.com) at `https://app.fabric.microsoft.com` and select **Power BI**
 
    ![](./Images/power-bi.png)
 
