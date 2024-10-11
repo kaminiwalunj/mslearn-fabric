@@ -15,34 +15,41 @@ In this exercise, you will use Dataflows (Gen2) to ingest, transform, and standa
 
 Before working with data in Fabric, create a workspace with the Fabric trial enabled.
 
-1. Sign into [Microsoft Fabric](https://app.fabric.microsoft.com) at `https://app.fabric.microsoft.com` and select **Power BI**
+1. Sign into [Microsoft Fabric](https://app.fabric.microsoft.com) at `https://app.fabric.microsoft.com`
+
+   ![](./Images/odl-01.png)
+   
+2. After logging in, choose **Power BI**.
 
    ![](./Images/power-bi.png)
 
-2. From the PowerBI home page, select **Account Manager** from the top-right corner to start the free **Microsoft Fabric trial**. and click on **Free trial**.
+4. From the PowerBI home page, select **Account Manager** from the top-right corner to start the free **Microsoft Fabric trial**. and click on **Free trial**.
     
     ![](./Images/updated1new.png)
      
-4. If prompted, agree to the terms and then select **Start trial**. 
+5. If prompted, agree to the terms and then select **Activate**. 
 
-   ![](./Images/updated2.png)
+   ![](./Images/activate-01.png)
    
-5. Once your trial capacity is ready, you receive a confirmation message. Select **Stay on current page** to begin working in Fabric.
+6. Once your trial capacity is ready, you receive a confirmation message. Select **Stay on current page** to begin working in Fabric.
 
     ![](./Images/updated3.png)
    
-6. On the dashboard, on the top menu you can see **Trial Status 59 days left**.
+7. On the dashboard, on the top menu you can see **Trial Status 59 days left**.
 
     ![](./Images/updated4.png)
 
-   You now have a **Fabric (Preview) trial** that includes a **Power BI trial** and a **Fabric (Preview) trial capacity**.
+ >**Note**: You now have a **Fabric (Preview) trial** that includes a **Power BI trial** and a **Fabric (Preview) trial capacity**.
 
-7. In the menu bar on the left, select **Workspaces** (the icon looks similar to &#128455;).
+8. In the left menu bar, click on **Workspaces (1)**, then select **+ New Workspace (2)**.
 
-   ![](./Images/workspace-1.png)
+   ![](./Images/new_workspace.png)
 
-8. Create a new workspace with a name **dp_fabric-<inject key="Deployment ID" enableCopy="false"/>**, selecting a licensing mode that includes Fabric capacity (*Trial*, *Premium*, or *Fabric*).
-9. When your new workspace opens, it should be empty, as shown here:
+9. Create a new workspace with a name **dp_fabric-<inject key="Deployment ID" enableCopy="false"/> (1)**, Choose a licensing mode as a **trial (2)**.
+
+    ![Screenshot of an empty workspace in Power BI.](./Images/dp-lakehouse.png)
+    
+10. When your new workspace opens, it should be empty, as shown here:
 
     ![Screenshot of an empty workspace in Power BI.](./Images/new-workspace-2.png)
 
@@ -50,13 +57,9 @@ Before working with data in Fabric, create a workspace with the Fabric trial ena
 
 Now that you have a workspace, it's time to switch to the **Data Engineering** experience in the portal and create a data lakehouse into which you'll ingest data.
 
-1. At the bottom left of the Power BI portal, select the **Power BI** icon and switch to the **Data Engineering** experience.
+1. At the bottom left of the Power BI portal, click the **Power BI** icon to access the **Data Engineering** experience. Then, from the **Data Engineering** homepage, select **Lakehouse**.
 
-2. In the **Data engineering** home page, create a new **Lakehouse** with a name of **dp_lakehouse**.
-
-    After a minute or so, a new empty lakehouse will be created.
-
-   ![New lakehouse.](./Images/m6-fabric-1.png)
+   ![New lakehouse.](./Images/lakehouse-1-1.png)
 
 ## Task 3 : Create a Dataflow (Gen2) to ingest data
 
