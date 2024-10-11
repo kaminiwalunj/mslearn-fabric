@@ -22,7 +22,7 @@ Now that you have a workspace which you have created in the previous exercise, i
 
 2. In the **Data Warehous**e home page, create a **new Warehouse**.
 
-   - Name: Enter **Data Warehouse-** .
+   - Name: Enter **Data Warehouse-<inject key="Deployment ID" enableCopy="false"/>** .
 
     ![Screenshot of a new warehouse.](./Images/warehouse.png)
 
