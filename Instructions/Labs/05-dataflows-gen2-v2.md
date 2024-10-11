@@ -152,8 +152,6 @@ Now that you have a lakehouse, you need to ingest some data into it. One way to 
 
 10. Once published, you can right-click on the dataflow in your workspace, select **Properties**, and rename your dataflow.
 
-#### Validation
-
 <validation step="61a34bd9-1fc1-47db-b51c-4720f310133d" />
 
 > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps
@@ -191,8 +189,6 @@ You can include a dataflow as an activity in a pipeline. Pipelines are used to o
 > **Note**: Use the Power BI Desktop *Dataflows connector* to connect directly to the data transformations done with your dataflow.
 > You can also make additional transformations, publish as a new dataset, and distribute with intended audience for specialized datasets.
  ![Power BI data source connectors](Images/pbid-dataflow-connectors1.png)
-
-#### Validation
 
 <validation step="38c64afd-7502-4783-8169-0e5730914f65" />
 
