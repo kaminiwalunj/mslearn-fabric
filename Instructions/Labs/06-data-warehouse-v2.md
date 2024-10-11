@@ -18,21 +18,17 @@ Now that you have a workspace which you have created in the previous exercise, i
 
 1. At the bottom left of the Power BI portal, switch to the **Data Warehouse** experience.
 
-    The Data Warehouse home page includes a shortcut to create a new warehouse:
-
     > **Note**: If you don't see the icon in the bottom left corner, Fabric isn't enabled for your tenant. Fabric is enabled in the admin portal for tenants that have a Power BI Premium subscription.
 
 2. In the **Data Warehouse** home page, create a new **Warehouse** with a name it as **myDataWarehouse** and click on **Create**.
 
-    After a minute or so, a new warehouse will be created:
-
-    ![Screenshot of a new warehouse.](./Images/new-data-warehouse1.png)
+    ![Screenshot of a new warehouse.](./Images/warehouse.png)
 
 ## Task 2 : Create tables and insert data
 
 A warehouse is a relational database in which you can define tables and other objects.
 
-1. In your new warehouse, select the **Create tables with T-SQL** tile, and replace the default SQL code with the following CREATE TABLE statement:
+1. In your new warehouse, select the **New SQL query** tile, and replace the default SQL code with the following CREATE TABLE statement:
 
     ```sql
    CREATE TABLE dbo.DimProduct
@@ -45,6 +41,8 @@ A warehouse is a relational database in which you can define tables and other ob
    );
    GO
     ```
+
+   ![Screenshot of the data warehouse model page.](./Images/sql-01.png)
 
 2. Use the **&#9655; Run** button to run the SQL script, which creates a new table named **DimProduct** in the **dbo** schema of the data warehouse.
 
