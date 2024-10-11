@@ -20,7 +20,9 @@ Now that you have a workspace which you have created in the previous exercise, i
 
     > **Note**: If you don't see the icon in the bottom left corner, Fabric isn't enabled for your tenant. Fabric is enabled in the admin portal for tenants that have a Power BI Premium subscription.
 
-2. In the **Data Warehouse** home page, create a new **Warehouse** with a name it as **myDataWarehouse** and click on **Create**.
+2. In the **Data Warehous**e home page, create a **new Warehouse**.
+
+   - Name: Enter **Data Warehouse-** .
 
     ![Screenshot of a new warehouse.](./Images/warehouse.png)
 
