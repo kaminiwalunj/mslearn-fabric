@@ -24,7 +24,6 @@ Now that you have a workspace which you have created in the previous exercise, i
 
     ![Screenshot of a new warehouse.](./Images/warehouse.png)
 
-#### Validation
 
 <validation step="d114c931-34ab-496c-ac20-062a1ced675f" />
 
