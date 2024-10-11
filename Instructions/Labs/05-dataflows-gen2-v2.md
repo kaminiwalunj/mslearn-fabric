@@ -168,7 +168,7 @@ You can include a dataflow as an activity in a pipeline. Pipelines are used to o
 
 4. With the new **Dataflow1** activity selected, on the **Settings** tab, in the **Dataflow** drop-down list, select **Dataflow 1** (the data flow you created previously)
 
-   ![Pipeline with a dataflow activity.](./Images/dataflow.png)
+   ![Pipeline with a dataflow activity.](./Images/dataflow-01.png)
 
 5. On the **Home** tab, save the pipeline using the **&#128427;** (*Save*) icon.
 6. Use the **&#9655; Run** button to run the pipeline, and wait for it to complete. It may take a few minutes.
