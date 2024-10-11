@@ -154,7 +154,7 @@ Now that you have a lakehouse, you need to ingest some data into it. One way to 
 
 #### Validation
 
-<validation step="8a7b316c-9513-4f0e-a48a-2e84f7b12eb2" />
+<validation step="61a34bd9-1fc1-47db-b51c-4720f310133d" />
 
 > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps
 > - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
@@ -194,7 +194,7 @@ You can include a dataflow as an activity in a pipeline. Pipelines are used to o
 
 #### Validation
 
-<validation step="8e4e892b-1a8b-4031-ae89-edc2622f0aae" />
+<validation step="38c64afd-7502-4783-8169-0e5730914f65" />
 
 > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps
 > - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
