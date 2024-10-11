@@ -124,11 +124,9 @@ Now that you have a lakehouse, you need to ingest some data into it. One way to 
 
 3. In the list of available workspaces, find your workspace and select the lakehouse you created in it at the start of this exercise. Then specify a new table named **orders**:
 
-   ![Data destination configuration page.](./Images/data-destination-target1.png)
+   ![Data destination configuration page.](./Images/orders.png)
 
    > **Note:** On the **Destination settings** page, notice how OrderDate and MonthNo are not selected in the Column mapping and there is an informational message: *Change to date/time*.
-
-    ![Data destination settings page.](./Images/destination-settings1.png)
 
 4. Cancel this action, then go back to OrderDate and MonthNo columns in Power Query online. Right-click on the column header and **Change Type**.
 
@@ -137,13 +135,21 @@ Now that you have a lakehouse, you need to ingest some data into it. One way to 
 
 5. Now repeat the process outlined earlier to add a lakehouse destination.
 
-6. On the **Destination settings** page, select **Append**, and then save the settings.  The **Lakehouse** destination is indicated as an icon in the query in the Power Query editor.
+6. On the **Destination settings** page, select **Append**, and then save the settings.  
 
+    ![Data destination settings page.](./Images/append.png)
+
+7. The **Lakehouse** destination is indicated as an icon in the query in the Power Query editor.
+   
    ![Query with a lakehouse destination.](./Images/lakehouse-destination1.png)
 
-7. Select **Publish** to publish the dataflow. Then wait for the **Dataflow 1** dataflow to be created in your workspace.
+>**Note** : to view the visual query, select the icon from below right corner as shown below :
 
-8. Once published, you can right-click on the dataflow in your workspace, select **Properties**, and rename your dataflow.
+   ![Query with a lakehouse destination.](./Images/visual_query.png)
+
+9. Select **Publish** to publish the dataflow. Then wait for the **Dataflow 1** dataflow to be created in your workspace.
+
+10. Once published, you can right-click on the dataflow in your workspace, select **Properties**, and rename your dataflow.
 
 ## Task 5 : Add a dataflow to a pipeline
 
