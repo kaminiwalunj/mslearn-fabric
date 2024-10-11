@@ -69,11 +69,19 @@ Now that you have a workspace, it's time to switch to the **Data Engineering** e
 
 Now that you have a lakehouse, you need to ingest some data into it. One way to do this is to define a dataflow that encapsulates an *extract, transform, and load* (ETL) process.
 
-1. In the home page for your workspace, select **New Dataflow Gen2**. After a few seconds, the Power Query editor for your new dataflow opens as shown here.
+1. Select your workspace, **dp_fabric-<inject key="Deployment ID" enableCopy="false"/>(1)**, then click **+ New item** 
+
+   ![New dataflow.](./Images/new_item.png)
+   
+2. Search for **Dataflow Gen2** and select it .
+
+   ![New dataflow.](./Images/datagenflow.png)
+   
+3. After a few seconds, the Power Query editor for your new dataflow opens as shown here.
 
    ![New dataflow.](./Images/m6-fabric-2.png)
 
-2. Select **Import from a Text/CSV file**, and create a new data source with the following settings:
+5. Select **Import from a Text/CSV file**, and create a new data source with the following settings:
  - **Link to file**: *Selected*
  - **File path or URL**: `https://raw.githubusercontent.com/MicrosoftLearning/dp-data/main/orders.csv`
  - **Connection**: Create new connection
