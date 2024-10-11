@@ -26,7 +26,7 @@ Now that you have a workspace which you have created in the previous exercise, i
 
 #### Validation
 
-<validation step="5caad8b0-f48a-4825-afec-241126f46d98" />
+<validation step="d114c931-34ab-496c-ac20-062a1ced675f" />
 
 > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps
 > - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
