@@ -115,31 +115,33 @@ Now that you have a lakehouse, you need to ingest some data into it. One way to 
 ## Task 4 : Add data destination for Dataflow
 
 1. On the toolbar ribbon, select the **Home** tab. Then in the **Add data destination** drop-down menu, select **Lakehouse**.
-
+   
    > **Note:** If this option is grayed out, you may already have a data destination set. Check the data destination at the bottom of the Query settings pane on the right side of the Power Query editor. If a destination is already set, you can change it using the gear.
 
-2. In the **Connect to data destination** dialog box, edit the connection and sign in using your Power BI organizational account to set the identity that the dataflow uses to access the lakehouse, Select **Next**.
+    ![Query with a custom column step.](./Images/data_destination-1.png)
+
+3. In the **Connect to data destination** dialog box, edit the connection and sign in using your Power BI organizational account to set the identity that the dataflow uses to access the lakehouse, Select **Next**.
 
    ![Data destination configuration page.](./Images/connect_data_destination.png)
 
-3. In the list of available workspaces, find your workspace and select the lakehouse you created in it at the start of this exercise. Then specify a new table named **orders**:
+4. In the list of available workspaces, find your workspace and select the lakehouse you created in it at the start of this exercise. Then specify a new table named **orders**:
 
    ![Data destination configuration page.](./Images/orders.png)
 
    > **Note:** On the **Destination settings** page, notice how OrderDate and MonthNo are not selected in the Column mapping and there is an informational message: *Change to date/time*.
 
-4. Cancel this action, then go back to OrderDate and MonthNo columns in Power Query online. Right-click on the column header and **Change Type**.
+5. Cancel this action, then go back to OrderDate and MonthNo columns in Power Query online. Right-click on the column header and **Change Type**.
 
     - OrderDate = Date/Time
     - MonthNo = Whole number
 
-5. Now repeat the process outlined earlier to add a lakehouse destination.
+6. Now repeat the process outlined earlier to add a lakehouse destination.
 
-6. On the **Destination settings** page, select **Append**, and then save the settings.  
+7. On the **Destination settings** page toggle off Use automatic settings, select **Append**, and then save the settings.  
 
     ![Data destination settings page.](./Images/append.png)
 
-7. The **Lakehouse** destination is indicated as an icon in the query in the Power Query editor.
+8. The **Lakehouse** destination is indicated as an icon in the query in the Power Query editor.
    
    ![Query with a lakehouse destination.](./Images/lakehouse-destination1.png)
 
@@ -155,35 +157,33 @@ Now that you have a lakehouse, you need to ingest some data into it. One way to 
 
 You can include a dataflow as an activity in a pipeline. Pipelines are used to orchestrate data ingestion and processing activities, enabling you to combine dataflows with other kinds of operation in a single, scheduled process. Pipelines can be created in a few different experiences, including Data Factory experience.
 
-1. From your Fabric-enabled workspace, make sure you're still in the **Data Engineering** experience. Select **New**, **Data pipeline**, then when prompted, create a new pipeline named **Load data**.
+1. In the fabric workspace, ensure you are in the **Data Engineering** experience. Select **Data pipeline**, then create a new pipeline and name it **Load data**.
 
-   The pipeline editor opens.
+   ![Empty data pipeline.](./Images/dataflow_pipeline.png)
 
-   ![Empty data pipeline.](./Images/new-pipeline1.png)
+   > **Note**: If the Copy Data wizard opens automatically, close it!
 
-   > **Tip**: If the Copy Data wizard opens automatically, close it!
+2. Select **Pipeline activity**, and add a **Dataflow** activity to the pipeline.
 
-2. Select **Add pipeline activity**, and add a **Dataflow** activity to the pipeline.
+   ![Empty data pipeline.](./Images/dataflow_1.png)
 
-3. With the new **Dataflow1** activity selected, on the **Settings** tab, in the **Dataflow** drop-down list, select **Dataflow 1** (the data flow you created previously)
+4. With the new **Dataflow1** activity selected, on the **Settings** tab, in the **Dataflow** drop-down list, select **Dataflow 1** (the data flow you created previously)
 
-   ![Pipeline with a dataflow activity.](./Images/dataflow-activity1.png)
+   ![Pipeline with a dataflow activity.](./Images/dataflow.png)
 
-4. On the **Home** tab, save the pipeline using the **&#128427;** (*Save*) icon.
-5. Use the **&#9655; Run** button to run the pipeline, and wait for it to complete. It may take a few minutes.
+5. On the **Home** tab, save the pipeline using the **&#128427;** (*Save*) icon.
+6. Use the **&#9655; Run** button to run the pipeline, and wait for it to complete. It may take a few minutes.
 
    ![Pipeline with a dataflow that has completed successfully.](./Images/dataflow-pipeline-succeeded1.png)
 
-6. In the menu bar on the left edge, select your lakehouse.
-7. In the **...** menu for **Tables**, select **refresh**. Then expand **Tables** and select the **orders** table, which has been created by your dataflow.
+7. In the menu bar on the left edge, select your lakehouse.
+8. In the **ellipses** menu for **Tables**, select **refresh**. Then expand **Tables** and select the **orders** table, which has been created by your dataflow.
 
    ![Table loaded by a dataflow.](./Images/loaded-table1.png)
 
-> **Tip**: Use the Power BI Desktop *Dataflows connector* to connect directly to the data transformations done with your dataflow.
->
+> **Note**: Use the Power BI Desktop *Dataflows connector* to connect directly to the data transformations done with your dataflow.
 > You can also make additional transformations, publish as a new dataset, and distribute with intended audience for specialized datasets.
->
->![Power BI data source connectors](Images/pbid-dataflow-connectors1.png)
+ ![Power BI data source connectors](Images/pbid-dataflow-connectors1.png)
 
 ## Summary
 
