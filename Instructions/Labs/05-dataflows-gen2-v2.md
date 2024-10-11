@@ -65,6 +65,11 @@ Now that you have a workspace, it's time to switch to the **Data Engineering** e
 
    ![New lakehouse.](./Images/lakehouse-1-1.png)
 
+4. Create a new Lakehouse
+
+   Name: Enter **Lakehouse_<inject key="Deployment ID" enableCopy="false"/>**.
+
+
 ## Task 3 : Create a Dataflow (Gen2) to ingest data
 
 Now that you have a lakehouse, you need to ingest some data into it. One way to do this is to define a dataflow that encapsulates an *extract, transform, and load* (ETL) process.
