@@ -18,13 +18,15 @@ Now that you have a workspace which you have created in the previous exercise, i
 
 1. At the bottom left of the Power BI portal, switch to the **Data Warehouse** experience.
 
+    ![Screenshot of a new warehouse.](./Images/warehouse.png)
+
     > **Note**: If you don't see the icon in the bottom left corner, Fabric isn't enabled for your tenant. Fabric is enabled in the admin portal for tenants that have a Power BI Premium subscription.
 
-2. In the **Data Warehous**e home page, create a **new Warehouse**.
+3. In the **Data Warehous**e home page, create a **new Warehouse**.
 
    - Name: Enter **Data Warehouse-<inject key="Deployment ID" enableCopy="false"/>** .
 
-    ![Screenshot of a new warehouse.](./Images/warehouse.png)
+    
 
 
 <validation step="d114c931-34ab-496c-ac20-062a1ced675f" />
