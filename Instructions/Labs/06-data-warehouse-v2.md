@@ -220,23 +220,25 @@ You can easily visualize the data in either a single query, or in your data ware
       - **ProductKey**
       - **ProductAltKey** 
 
-3. Now you're ready to build a report and make this dataset available to others. On the Home menu, select **New report**. This will open a new window, where you can create a Power BI report.
+3. On the Home menu, From the **Reporting tab (1)** select **New report (2)**. This will open a new window, where you can create a Power BI report.
 
-4. In the **Data** pane, expand **FactSalesOrder**. Note that the columns you hid are no longer visible. 
+   ![Screenshot of the Visualizations pane with the bar chart selected.](./Images/new_report.png)
+   
+5. In the **Data** pane, expand **FactSalesOrder**. Note that the columns you hid are no longer visible. 
 
-5. Select **SalesTotal**. This will add the column to the **Report canvas**. Because the column is a numeric value, the default visual is a **column chart**.
+6. Select **SalesTotal**. This will add the column to the **Report canvas**. Because the column is a numeric value, the default visual is a **column chart**.
 
-6. Ensure that the column chart on the canvas is active (with a gray border and handles), and then select **Category** from the **DimProduct** table to add a category to your column chart.
+7. Ensure that the column chart on the canvas is active (with a gray border and handles), and then select **Category** from the **DimProduct** table to add a category to your column chart.
 
-7. In the **Visualizations** pane, change the chart type from a column chart to a **clustered bar chart**. Then resize the chart as necessary to ensure that the categories are readable.
+8. In the **Visualizations** pane, change the chart type from a column chart to a **clustered bar chart**. Then resize the chart as necessary to ensure that the categories are readable.
 
     ![Screenshot of the Visualizations pane with the bar chart selected.](./Images/visualizations-pane1.png)
 
-8. In the **Visualizations** pane, select the **Format your visual** tab and in the **General** sub-tab, in the **Title** section, change the **Text** to **Total Sales by Category**.
+9. In the **Visualizations** pane, select the **Format your visual** tab and in the **General** sub-tab, in the **Title** section, change the **Text** to **Total Sales by Category**.
 
-9. In the **File** menu, select **Save**. Then save the report as **Sales Report** in the workspace you created previously.
+10. In the **File** menu, select **Save**. Then save the report as **Sales Report** in the workspace you created previously.
 
-10. In the menu hub on the left, navigate back to the workspace. Notice that you now have three items saved in your workspace: your data warehouse, its default dataset, and the report you created.
+11. In the menu hub on the left, navigate back to the workspace. Notice that you now have three items saved in your workspace: your data warehouse, its default dataset, and the report you created.
 
     ![Screenshot of the workspace with the three items listed.](./Images/workspace-items1.png)
 
