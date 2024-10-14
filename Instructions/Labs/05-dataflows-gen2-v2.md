@@ -67,7 +67,7 @@ Now that you have a workspace, it's time to switch to the **Data Engineering** e
 
 4. Create a new Lakehouse
 
-   Name: Enter **Lakehouse_<inject key="Deployment ID" enableCopy="false"/>**.
+   Name: Enter **dp_lakehouse**.
 
 
 ## Task 3 : Create a Dataflow (Gen2) to ingest data
