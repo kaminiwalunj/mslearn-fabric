@@ -40,7 +40,11 @@ Now that you have a workspace which you have created in the previous exercise, i
 
 A warehouse is a relational database in which you can define tables and other objects.
 
-1. In your new warehouse, select the **New SQL query** tile, and replace the default SQL code with the following CREATE TABLE statement:
+1. In the Data warehouse, select the **T-SQL**.
+
+   ![Screenshot of the data warehouse model page.](./Images/T-sql.png)
+
+1. Replace the default SQL code with the following CREATE TABLE statement:
 
     ```sql
    CREATE TABLE dbo.DimProduct
@@ -75,11 +79,19 @@ A warehouse is a relational database in which you can define tables and other ob
 
 6. When the query has finished, select the **Data** tab at the bottom of the page in the data warehouse. In the **Explorer** pane, select the **DimProduct** table and verify that the three rows have been added to the table.
 
-7. On the **Home** menu tab, use the **New SQL Query** button to create a new query. Then copy and paste the Transact-SQL code from [https://raw.githubusercontent.com/MicrosoftLearning/dp-data/main/create-dw.txt](https://raw.githubusercontent.com/MicrosoftLearning/dp-data/main/create-dw.txt) into the new query pane.
+7. On the **Home** menu tab, use the **New SQL Query** button to create a new query. Then copy and paste the Transact-SQL code from [https://raw.githubusercontent.com/MicrosoftLearning/dp-data/main/create-dw.txt](https://raw.githubusercontent.com/MicrosoftLearning/dp-data/main/create-dw.txt) into the new query pane. **Scroll down and ensure that the last line ends with a semicolon (;) and includes the GO command. Only then should you click on "Run." If not, please follow the steps below.**
+   
+   - If the code appears as shown below, please remove the highlighted line.
+
+      ![Screenshot of the data warehouse model page.](./Images/go_rem-1.png)
+
+   - Return to the previous line, add a semicolon (;) and include the GO command as shown below. After that, run the query. 
+
+      ![Screenshot of the data warehouse model page.](./Images/go_command.png)
 
 <!-- I had to remove the GO command in this query as well -->
 
-8. Run the query, which creates a simple data warehouse schema and loads some data. The script should take around 30 seconds to run.
+>**Note**: The script should take around 30 seconds to run.
 
 9. Use the **Refresh** button on the toolbar to refresh the view. Then in the **Explorer** pane, verify that the **dbo** schema in the data warehouse now contains the following four tables:
     - **DimCustomer**
