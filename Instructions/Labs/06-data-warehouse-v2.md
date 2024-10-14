@@ -105,13 +105,15 @@ A warehouse is a relational database in which you can define tables and other ob
 
 A relational data warehouse typically consists of *fact* and *dimension* tables. The fact tables contain numeric measures you can aggregate to analyze business performance (for example, sales revenue), and the dimension tables contain attributes of the entities by which you can aggregate the data (for example, product, customer, or time). In a Microsoft Fabric data warehouse, you can use these keys to define a data model that encapsulates the relationships between the tables.
 
-1. At the bottom of the page in the data warehouse, select the **Model layout** tab.
+1. In the Home page of data warehouse, select the **Model layouts** tab.
 
-2. In the model pane, rearrange the tables in your data warehouse so that the **FactSalesOrder** table is in the middle, like this:
+   ![Screenshot of the data warehouse model page.](./Images/model_layouts.png)
+
+3. In the model layouts pane, rearrange the tables in your data warehouse so that the **FactSalesOrder** table is in the middle, like this:
 
     ![Screenshot of the data warehouse model page.](./Images/model-dw1-1.png)
 
-3. Drag the **ProductKey** field from the **FactSalesOrder** table and drop it on the **ProductKey** field in the **DimProduct** table. Then confirm the following relationship details:
+4. Drag the **ProductKey** field from the **FactSalesOrder** table and drop it on the **ProductKey** field in the **DimProduct** table. Then confirm the following relationship details:
     - **Table 1**: FactSalesOrder
     - **Column**: ProductKey
     - **Table 2**: DimProduct
@@ -121,7 +123,7 @@ A relational data warehouse typically consists of *fact* and *dimension* tables.
     - **Make this relationship active**: Selected
     - **Assume referential integrity**: Unselected
 
-4. Repeat the process to create many-to-one relationships between the following tables:
+5. Repeat the process to create many-to-one relationships between the following tables:
     - **FactOrderSales.CustomerKey** &#8594; **DimCustomer.CustomerKey**
     - **FactOrderSales.SalesOrderDateKey** &#8594; **DimDate.DateKey**
 
@@ -221,15 +223,21 @@ Instead of writing SQL code, you can use the graphical query designer to query t
 
 7. If you're interested in looking at data for a single product, per a manager request, you can now use the **ProductName** column to filter the data in the query. Filter the **ProductName** column to look at **Cable Lock** data only.
 
+   ![Screenshot of the preview pane with the DimProduct column expanded, with ProductName selected.](./Images/cable_lock.png)
+
+  >**Note**: If you can't find the cable lock, click on **Load More**. 
+
 8. From here, you can analyze the results of this single query by selecting **Visualize results** or **Open in Excel**. You can now see exactly what the manager was asking for, so we don't need to analyze the results further.
 
 ### Visualize your data
 
 You can easily visualize the data in either a single query, or in your data warehouse. Before you visualize, hide columns and/or tables that aren't friendly to report designers.
 
-1. In the **Explorer** pane, select the **Model** view. 
+1. In the Home page of data warehouse, select the **Model layouts** tab.
 
-2. Hide the following columns in your Fact and Dimension tables that are not necessary to create a report. Note that this does not remove the columns from the model, it simply hides them from view on the report canvas.
+   ![Screenshot of the data warehouse model page.](./Images/model_layouts.png)
+
+3. Hide the following columns in your Fact and Dimension tables that are not necessary to create a report. Note that this does not remove the columns from the model, it simply hides them from view on the report canvas.
    1. FactSalesOrder
       - **SalesOrderDateKey**
       - **CustomerKey**
@@ -244,7 +252,7 @@ You can easily visualize the data in either a single query, or in your data ware
       - **ProductKey**
       - **ProductAltKey** 
 
-3. On the Home menu, From the **Reporting tab (1)** select **New report (2)**. This will open a new window, where you can create a Power BI report.
+4. On the Home menu, From the **Reporting tab (1)** select **New report (2)**. This will open a new window, where you can create a Power BI report.
 
    ![Screenshot of the Visualizations pane with the bar chart selected.](./Images/new_report.png)
    
