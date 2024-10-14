@@ -168,7 +168,7 @@ Now that you have a lakehouse, you need to ingest some data into it. One way to 
 
 You can include a dataflow as an activity in a pipeline. Pipelines are used to orchestrate data ingestion and processing activities, enabling you to combine dataflows with other kinds of operation in a single, scheduled process. Pipelines can be created in a few different experiences, including Data Factory experience.
 
-1. In the fabric workspace, ensure you are in the **Data Engineering** experience. Select **Data pipeline**, then create a new pipeline and name it **Load data**.
+1. In the fabric workspace, ensure you are in the **Data Engineering** experience. Select **Data pipeline**, then create a new pipeline and name it **Load Orders pipeline**.
 
    ![Empty data pipeline.](./Images/dataflow_pipeline.png)
 
