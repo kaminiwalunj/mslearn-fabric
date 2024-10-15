@@ -282,8 +282,14 @@ If you've finished exploring your lakehouse and data warehouse, you can delete t
 2. In the **...** menu on the toolbar, select **Workspace settings**.
 3. In the **Other** section, select **Remove this workspace**.
 
-## Summary 
+## Review
 
-In this exercise, You have established a data warehouse containing multiple tables, used SQL to insert and query data, and employed the visual query tool for analysis.
+In this lab you have completed the following tasks:
+
+- Set up a Data Warehouse.  
+- Create tables and insert data.  
+- Define a data model.  
+- Query the Data Warehouse tables and create a view.
+
 
 ## You have successfully completed this Lab!
