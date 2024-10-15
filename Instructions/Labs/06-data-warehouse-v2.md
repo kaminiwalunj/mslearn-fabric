@@ -292,4 +292,4 @@ In this lab you have completed the following tasks:
 - Query the Data Warehouse tables and create a view.
 
 
-## You have successfully completed this Lab!
+## You have successfully completed the Lab!
