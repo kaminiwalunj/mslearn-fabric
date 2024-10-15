@@ -202,7 +202,12 @@ You can include a dataflow as an activity in a pipeline. Pipelines are used to o
 > - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
 > - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help you out.
 
-## Summary
+## Review
 
-In this exercise, you have created a lakehouse and a Dataflows (Gen2) to ingest, transform, and standardize data.
+In this lab you have completed the following tasks:
+
+ - Set up a workspace.
+ - Create a lakehouse.  
+ - Develop a Dataflow (Gen2) for data ingestion and specify a data destination.  
+ - Integrate the Dataflow into a pipeline.
 
