@@ -211,3 +211,4 @@ In this lab you have completed the following tasks:
  - Develop a Dataflow (Gen2) for data ingestion and specify a data destination.  
  - Integrate the Dataflow into a pipeline.
 
+### You have successfully completed the lab , Proceed with next lab.
