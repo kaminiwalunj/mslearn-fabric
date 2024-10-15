@@ -47,7 +47,7 @@ Before working with data in Fabric, create a workspace with the Fabric trial ena
 
 9. Create a new workspace with a name **dp_fabric-<inject key="Deployment ID" enableCopy="false"/> (1)**, Choose a licensing mode as a **trial (2)**.
 
-    ![Screenshot of an empty workspace in Power BI.](./Images/dp-lakehouse.png)
+    ![Screenshot of an empty workspace in Power BI.](./Images/dp-lakehouse-1.png)
     
 10. When your new workspace opens, it should be empty, as shown here:
 
@@ -126,7 +126,7 @@ Now that you have a lakehouse, you need to ingest some data into it. One way to 
 
 3. In the **Connect to data destination** dialog box, edit the connection and sign in using your Power BI organizational account to set the identity that the dataflow uses to access the lakehouse, Select **Next**.
 
-   ![Data destination configuration page.](./Images/connect_data_destination.png)
+   ![Data destination configuration page.](./Images/connect_data_destination-1.png)
 
 4. In the list of available workspaces, find your workspace and select the lakehouse you created in it at the start of this exercise. Then specify a new table named **orders**:
 
