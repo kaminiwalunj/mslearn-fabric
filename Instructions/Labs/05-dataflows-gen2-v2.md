@@ -76,7 +76,7 @@ Now that you have a lakehouse, you need to ingest some data into it. One way to 
 
 1. Select your workspace, **dp_fabric-<inject key="Deployment ID" enableCopy="false"/>(1)**, then click **+ New item** 
 
-   ![New dataflow.](./Images/new_item.png)
+   ![New dataflow.](./Images/new_item-1.png)
    
 2. Search for **Dataflow Gen2** and select it .
 
