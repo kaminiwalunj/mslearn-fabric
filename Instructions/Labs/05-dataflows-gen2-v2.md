@@ -153,8 +153,7 @@ Now that you have a lakehouse, you need to ingest some data into it. One way to 
 
       ![Data destination configuration page.](./Images/connect_data_destination-1.png)
 
-3. In the list of available workspaces, find your workspace and select the lakehouse you created in it at the start of this exercise. Then specify a new table named
-   **orders**.
+3. In the list of available workspaces, find your workspace and select lakehouse you created in it at the start of this exercise. Specify a new table named **orders**.
 
       ![Data destination configuration page.](./Images/orders.png)
 
