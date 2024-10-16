@@ -80,7 +80,7 @@ Now that you have a workspace, it's time to switch to the **Data Engineering** e
 
 3. Create a new Lakehouse
 
-    Name: Enter **dp_lakehouse**.
+    Name: Enter **dp_lakehouse** and click on **Create**.
 
     ![New lakehouse.](./Images/fab-image12.png)
    
