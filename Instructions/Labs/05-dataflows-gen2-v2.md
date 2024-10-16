@@ -53,6 +53,17 @@ Before working with data in Fabric, create a workspace with the Fabric trial ena
 
     ![Screenshot of an empty workspace in Power BI.](./Images/new-workspace-2.png)
 
+    
+ 
+ >**Congratulations** on completing the Task! Now, it's time to validate it. Here are the steps:
+
+ > - Hit the Validate button for the corresponding task. If you receive a success message, you have successfully validated the lab. 
+ > - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
+ > - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com.
+  
+   <validation step="61a34bd9-1fc1-47db-b51c-4720f310133d" />
+
+
 ## Task 2 : Create a lakehouse
 
 Now that you have a workspace, it's time to switch to the **Data Engineering** experience in the portal and create a data lakehouse into which you'll ingest data.
@@ -69,6 +80,13 @@ Now that you have a workspace, it's time to switch to the **Data Engineering** e
 
    Name: Enter **dp_lakehouse**.
 
+>**Congratulations** on completing the Task! Now, it's time to validate it. Here are the steps:
+
+ > - Hit the Validate button for the corresponding task. If you receive a success message, you have successfully validated the lab. 
+ > - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
+ > - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com.
+
+ <validation step="38c64afd-7502-4783-8169-0e5730914f65" />
 
 ## Task 3 : Create a Dataflow (Gen2) to ingest data
 
@@ -164,6 +182,8 @@ Now that you have a lakehouse, you need to ingest some data into it. One way to 
 > - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
 > - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help you out.
 
+<validation step="0957818c-b310-4ba7-9c56-70042c49ede3" />
+
 ## Task 5 : Add a dataflow to a pipeline
 
 You can include a dataflow as an activity in a pipeline. Pipelines are used to orchestrate data ingestion and processing activities, enabling you to combine dataflows with other kinds of operation in a single, scheduled process. Pipelines can be created in a few different experiences, including Data Factory experience.
@@ -195,12 +215,12 @@ You can include a dataflow as an activity in a pipeline. Pipelines are used to o
 > You can also make additional transformations, publish as a new dataset, and distribute with intended audience for specialized datasets.
  ![Power BI data source connectors](Images/pbid-dataflow-connectors1.png)
 
-<validation step="38c64afd-7502-4783-8169-0e5730914f65" />
-
 > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps
 > - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
 > - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
 > - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help you out.
+
+<validation step="6f702ff3-1450-4b7c-b44f-052a3a77f380" />
 
 ## Review
 
