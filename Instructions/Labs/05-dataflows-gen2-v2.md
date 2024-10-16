@@ -43,7 +43,7 @@ Before working with data in Fabric, create a workspace with the Fabric trial ena
 
     ![](./Images/updated4.png)
 
- >**Note**: You now have a **Fabric (Preview) trial** that includes a **Power BI trial** and a **Fabric (Preview) trial capacity**.
+    >**Note**: You now have a **Fabric (Preview) trial** that includes a **Power BI trial** and a **Fabric (Preview) trial capacity**.
 
 8. In the left menu bar, click on **Workspaces (1)**, then select **+ New Workspace (2)**.
 
@@ -57,13 +57,13 @@ Before working with data in Fabric, create a workspace with the Fabric trial ena
 
     ![Screenshot of an empty workspace in Power BI.](./Images/new-workspace-2.png)
 
-> **Note**: If the prompt **"Introducing task flows (preview)"** appears, just click on **Got it**.   
+   > **Note**: If the prompt **"Introducing task flows (preview)"** appears, just click on **Got it**.   
  
- >**Congratulations** on completing the Task! Now, it's time to validate it. Here are the steps:
+   >**Congratulations** on completing the Task! Now, it's time to validate it. Here are the steps:
 
- > - Hit the Validate button for the corresponding task. If you receive a success message, you have successfully validated the lab. 
- > - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
- > - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com.
+   > - Hit the Validate button for the corresponding task. If you receive a success message, you have successfully validated the lab. 
+   > - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
+   > - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com.
   
    <validation step="61a34bd9-1fc1-47db-b51c-4720f310133d" />
 
@@ -74,23 +74,23 @@ Now that you have a workspace, it's time to switch to the **Data Engineering** e
 
 1. At the bottom left of the Power BI portal, click the **Power BI (1)** icon to access the **Data Engineering (2)** experience.
    
-   ![New lakehouse.](./Images/data-engineer.png)
+     ![New lakehouse.](./Images/data-engineer.png)
    
 3. From the **Data Engineering** homepage, select **Lakehouse**.
 
-   ![New lakehouse.](./Images/lakehouse-1-1.png)
+     ![New lakehouse.](./Images/lakehouse-1-1.png)
 
 4. Create a new Lakehouse
 
     Name: Enter **dp_lakehouse**.
 
->**Congratulations** on completing the Task! Now, it's time to validate it. Here are the steps:
+   >**Congratulations** on completing the Task! Now, it's time to validate it. Here are the steps:
 
- > - Hit the Validate button for the corresponding task. If you receive a success message, you have successfully validated the lab. 
- > - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
- > - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com.
+   > - Hit the Validate button for the corresponding task. If you receive a success message, you have successfully validated the lab. 
+   > - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
+   > - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com.
 
- <validation step="38c64afd-7502-4783-8169-0e5730914f65" />
+   <validation step="38c64afd-7502-4783-8169-0e5730914f65" />
 
 ## Task 3 : Create a Dataflow (Gen2) to ingest data
 
@@ -98,15 +98,15 @@ Now that you have a lakehouse, you need to ingest some data into it. One way to 
 
 1. Select your workspace, **dp_fabric-<inject key="Deployment ID" enableCopy="false"/>(1)**, then click **+ New item** 
 
-   ![New dataflow.](./Images/new_item-1.png)
+     ![New dataflow.](./Images/new_item-1.png)
    
 2. Search for **Dataflow Gen2** and select it .
 
-   ![New dataflow.](./Images/datagenflow.png)
+     ![New dataflow.](./Images/datagenflow.png)
    
 3. After a few seconds, the Power Query editor for your new dataflow opens as shown here.
 
-   ![New dataflow.](./Images/m6-fabric-2.png)
+    ![New dataflow.](./Images/m6-fabric-2.png)
 
 5. Select **Import from a Text/CSV file**, and create a new data source with the following settings:
  - **Link to file**: *Selected*
