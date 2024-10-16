@@ -220,7 +220,7 @@ You can include a dataflow as an activity in a pipeline. Pipelines are used to o
 
       > **Note**: Use the Power BI Desktop *Dataflows connector* to connect directly to the data transformations done with your dataflow.
       > You can also make additional transformations, publish as a new dataset, and distribute with intended audience for specialized datasets.
-        ![Power BI data source connectors](Images/pbid-dataflow-connectors1.png)
+      ![Power BI data source connectors](Images/pbid-dataflow-connectors1.png)
 
 > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps
 > - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
