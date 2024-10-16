@@ -153,7 +153,7 @@ Now that you have a lakehouse, you need to ingest some data into it. One way to 
 
       ![Data destination configuration page.](./Images/connect_data_destination-1.png)
 
-3. In the list of available workspaces, find your workspace and select the lakehouse you created in it at the start of this exercise. Then specify a new table named 
+3. In the list of available workspaces, find your workspace and select the lakehouse you created in it at the start of this exercise. Then specify a new table named
    **orders**.
 
       ![Data destination configuration page.](./Images/orders.png)
@@ -182,12 +182,12 @@ Now that you have a lakehouse, you need to ingest some data into it. One way to 
 
 8. Select **Publish** to publish the dataflow. Then wait for the **Dataflow 1** dataflow to be created in your workspace.
 
-   > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps
-   > - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
-   > - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
-   > - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help you out.
+> **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps
+> - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
+> - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
+> - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help you out.
     
-   <validation step="0957818c-b310-4ba7-9c56-70042c49ede3" />
+<validation step="0957818c-b310-4ba7-9c56-70042c49ede3" />
 
 ## Task 5 : Add a dataflow to a pipeline
 
