@@ -29,7 +29,7 @@ Before working with data in Fabric, create a workspace with the Fabric trial ena
 
 4. From the PowerBI home page, select **Account Manager** from the top-right corner to start the free **Microsoft Fabric trial**. and click on **Free trial**.
     
-    ![](./Images/updated1new.png)
+   ![](./Images/updated1new.png)
      
 5. If prompted, agree to the terms and then select **Activate**. 
 
@@ -37,11 +37,11 @@ Before working with data in Fabric, create a workspace with the Fabric trial ena
    
 6. Once your trial capacity is ready, you receive a confirmation message. Select **Stay on current page** to begin working in Fabric.
 
-    ![](./Images/updated3.png)
+   ![](./Images/updated3.png)
    
 7. On the dashboard, on the top menu you can see **Trial Status 59 days left**.
 
-    ![](./Images/updated4.png)
+   ![](./Images/updated4.png)
 
     >**Note**: You now have a **Fabric (Preview) trial** that includes a **Power BI trial** and a **Fabric (Preview) trial capacity**.
 
@@ -51,22 +51,20 @@ Before working with data in Fabric, create a workspace with the Fabric trial ena
 
 9. Create a new workspace with a name **dp_fabric-<inject key="Deployment ID" enableCopy="false"/> (1)**, Choose a licensing mode as a **trial (2)** under **Advanced**. and click on **Apply (3)**
 
-    ![Screenshot of an empty workspace in Power BI.](./Images/dp-lakehouse-1.png)
+   ![Screenshot of an empty workspace in Power BI.](./Images/dp-lakehouse-1.png)
     
 10. When your new workspace opens, it should be empty, as shown here:
 
     ![Screenshot of an empty workspace in Power BI.](./Images/new-workspace-2.png)
 
-   > **Note**: If the prompt **"Introducing task flows (preview)"** appears, just click on **Got it**.   
+    > **Note**: If the prompt **"Introducing task flows (preview)"** appears, just click on **Got it**.   
  
-   >**Congratulations** on completing the Task! Now, it's time to validate it. Here are the steps:
-
-   > - Hit the Validate button for the corresponding task. If you receive a success message, you have successfully validated the lab. 
-   > - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
-   > - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com.
+    >**Congratulations** on completing the Task! Now, it's time to validate it. Here are the steps:
+    > - Hit the Validate button for the corresponding task. If you receive a success message, you have successfully validated the lab. 
+    > - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
+    > - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com.
   
-   <validation step="61a34bd9-1fc1-47db-b51c-4720f310133d" />
-
+    <validation step="61a34bd9-1fc1-47db-b51c-4720f310133d" />
 
 ## Task 2 : Create a lakehouse
 
@@ -74,13 +72,13 @@ Now that you have a workspace, it's time to switch to the **Data Engineering** e
 
 1. At the bottom left of the Power BI portal, click the **Power BI (1)** icon to access the **Data Engineering (2)** experience.
    
-     ![New lakehouse.](./Images/data-engineer.png)
+   ![New lakehouse.](./Images/data-engineer.png)
    
-3. From the **Data Engineering** homepage, select **Lakehouse**.
+2. From the **Data Engineering** homepage, select **Lakehouse**.
 
-     ![New lakehouse.](./Images/lakehouse-1-1.png)
+   ![New lakehouse.](./Images/lakehouse-1-1.png)
 
-4. Create a new Lakehouse
+3. Create a new Lakehouse
 
     Name: Enter **dp_lakehouse**.
 
@@ -98,17 +96,17 @@ Now that you have a lakehouse, you need to ingest some data into it. One way to 
 
 1. Select your workspace, **dp_fabric-<inject key="Deployment ID" enableCopy="false"/>(1)**, then click **+ New item** 
 
-     ![New dataflow.](./Images/new_item-1.png)
+   ![New dataflow.](./Images/new_item-1.png)
    
 2. Search for **Dataflow Gen2** and select it .
 
-     ![New dataflow.](./Images/datagenflow.png)
+   ![New dataflow.](./Images/datagenflow.png)
    
 3. After a few seconds, the Power Query editor for your new dataflow opens as shown here.
 
-    ![New dataflow.](./Images/m6-fabric-2.png)
+   ![New dataflow.](./Images/m6-fabric-2.png)
 
-5. Select **Import from a Text/CSV file**, and create a new data source with the following settings:
+4. Select **Import from a Text/CSV file**, and create a new data source with the following settings:
 
     - **Link to file**: *Selected*
     - **File path or URL**: `https://raw.githubusercontent.com/MicrosoftLearning/dp-data/main/orders.csv`
@@ -119,57 +117,62 @@ Now that you have a lakehouse, you need to ingest some data into it. One way to 
 
       ![Query in the Power Query editor.](./Images/connect-data-source.png)
    
-3. Select **Next** to preview the file data, and then **Create** the data source. The Power Query editor shows the data source and an initial set of query steps to 
+5. Select **Next** to preview the file data, and then **Create** the data source. The Power Query editor shows the data source and an initial set of query steps to 
    format the data, as shown here:
 
-      ![Query in the Power Query editor.](./Images/m6-fabric-3.png)
+   ![Query in the Power Query editor.](./Images/m6-fabric-3.png)
 
-4. On the toolbar ribbon, select the **Add column** tab. Then select **Custom column**.
+6. On the toolbar ribbon, select the **Add column** tab. Then select **Custom column**.
 
-      ![Custom column in Power Query editor.](./Images/custom_column.png)
+   ![Custom column in Power Query editor.](./Images/custom_column.png)
    
-6. Create a new column named **MonthNo** that contains a number based on the formula `Date.Month([OrderDate])` - as shown here and 
+7. Create a new column named **MonthNo** that contains a number based on the formula `Date.Month([OrderDate])` - as shown here and 
    Click on **OK**.
 
-      ![Custom column in Power Query editor.](./Images/custom-column1.png)
+   ![Custom column in Power Query editor.](./Images/custom-column1.png)
 
-7. The step to add the custom column is added to the query and the resulting column is displayed in the data pane:
+8. The step to add the custom column is added to the query and the resulting column is displayed in the data pane:
 
-      ![Query with a custom column step.](./Images/custom-column-added1.png)
+   ![Query with a custom column step.](./Images/custom-column-added1.png)
 
-> **Tip:** In the Query Settings pane on the right side, notice the **Applied Steps** include each transformation step. At the bottom, you can also toggle the **Diagram flow** button to turn on the Visual Diagram of the steps.
-> Steps can be moved up or down, edited by selecting the gear icon, and you can select each step to see the transformations apply in the preview pane.
+    > **Tip:** In the Query Settings pane on the right side, notice the **Applied Steps** include each transformation step. At the bottom, you can also toggle the 
+      **Diagram flow** button to turn on the Visual Diagram of the steps.
+    > Steps can be moved up or down, edited by selecting the gear icon, and you can select each step to see the transformations apply in the preview pane.
 
 ## Task 4 : Add data destination for Dataflow
 
 1. On the toolbar ribbon, select the **Home** tab. Then in the **Add data destination** drop-down menu, select **Lakehouse**.
    
-   > **Note:** If this option is grayed out, you may already have a data destination set. Check the data destination at the bottom of the Query settings pane on the right side of the Power Query editor. If a destination is already set, you can change it using the gear.
+   > **Note:** If this option is grayed out, you may already have a data destination set. Check the data destination at the bottom of the Query settings pane on the 
+     right side of the Power Query editor. If a destination is already set, you can change it using the gear.
 
-    ![Query with a custom column step.](./Images/lakehouse_1-1.png)
+   ![Query with a custom column step.](./Images/lakehouse_1-1.png)
 
-3. In the **Connect to data destination** dialog box, edit the connection and sign in using your Power BI organizational account to set the identity that the dataflow uses to access the lakehouse, Select **Next**.
+2. In the **Connect to data destination** dialog box, edit the connection and sign in using your Power BI organizational account to set the identity that the dataflow 
+   uses to access the lakehouse, Select **Next**.
 
    ![Data destination configuration page.](./Images/connect_data_destination-1.png)
 
-4. In the list of available workspaces, find your workspace and select the lakehouse you created in it at the start of this exercise. Then specify a new table named **orders**:
+3. In the list of available workspaces, find your workspace and select the lakehouse you created in it at the start of this exercise. Then specify a new table named 
+   **orders**:
 
    ![Data destination configuration page.](./Images/orders.png)
 
-   > **Note:** On the **Destination settings** page, notice how OrderDate and MonthNo are not selected in the Column mapping and there is an informational message: *Change to date/time*.
+   > **Note:** On the **Destination settings** page, notice how OrderDate and MonthNo are not selected in the Column mapping and there is an informational message: 
+     *Change to date/time*.
 
-5. Cancel this action, then go back to OrderDate and MonthNo columns in Power Query online. Right-click on the column header and **Change Type**.
+4. Cancel this action, then go back to OrderDate and MonthNo columns in Power Query online. Right-click on the column header and **Change Type**.
 
     - OrderDate = Date/Time
     - MonthNo = Whole number
 
-6. Now repeat the process outlined earlier to add a lakehouse destination.
+5. Now repeat the process outlined earlier to add a lakehouse destination.
 
-7. On the **Destination settings** page toggle off Use automatic settings, select **Append**, and then save the settings.  
+6. On the **Destination settings** page toggle off Use automatic settings, select **Append**, and then save the settings.  
 
     ![Data destination settings page.](./Images/append.png)
 
-8. The **Lakehouse** destination is indicated as an icon in the query in the Power Query editor.
+7. The **Lakehouse** destination is indicated as an icon in the query in the Power Query editor.
    
    ![Query with a lakehouse destination.](./Images/lakehouse-destination1.png)
 
@@ -177,20 +180,21 @@ Now that you have a lakehouse, you need to ingest some data into it. One way to 
 
    >![Query with a lakehouse destination.](./Images/visual_query.png)
 
-9. Select **Publish** to publish the dataflow. Then wait for the **Dataflow 1** dataflow to be created in your workspace.
+8. Select **Publish** to publish the dataflow. Then wait for the **Dataflow 1** dataflow to be created in your workspace.
 
-> **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps
-> - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
-> - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
-> - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help you out.
-
-<validation step="0957818c-b310-4ba7-9c56-70042c49ede3" />
+   > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps
+   > - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
+   > - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
+   > - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help you out.
+    
+   <validation step="0957818c-b310-4ba7-9c56-70042c49ede3" />
 
 ## Task 5 : Add a dataflow to a pipeline
 
 You can include a dataflow as an activity in a pipeline. Pipelines are used to orchestrate data ingestion and processing activities, enabling you to combine dataflows with other kinds of operation in a single, scheduled process. Pipelines can be created in a few different experiences, including Data Factory experience.
 
-1. In the fabric workspace, ensure you are in the **Data Engineering** experience. Select **Data pipeline**, then create a new pipeline and name it **Load Orders pipeline**.
+1. In the fabric workspace, ensure you are in the **Data Engineering** experience. Select **Data pipeline**, then create a new pipeline and name it **Load Orders 
+   pipeline**.
 
    ![Empty data pipeline.](./Images/dataflow_pipeline.png)
 
@@ -210,20 +214,21 @@ You can include a dataflow as an activity in a pipeline. Pipelines are used to o
 
    ![Pipeline with a dataflow that has completed successfully.](./Images/dataflow-pipeline-succeeded1.png)
 
-8. Navigate back to the lakehouse . In the **ellipses** menu for **Tables**, select **refresh**. Then expand **Tables** and select the **orders** table, which has been created by your dataflow.
+8. Navigate back to the lakehouse . In the **ellipses** menu for **Tables**, select **refresh**. Then expand **Tables** and select the **orders** table, which has been 
+   created by your dataflow.
 
    ![Table loaded by a dataflow.](./Images/loaded-table1.png)
 
-> **Note**: Use the Power BI Desktop *Dataflows connector* to connect directly to the data transformations done with your dataflow.
-> You can also make additional transformations, publish as a new dataset, and distribute with intended audience for specialized datasets.
- ![Power BI data source connectors](Images/pbid-dataflow-connectors1.png)
+   > **Note**: Use the Power BI Desktop *Dataflows connector* to connect directly to the data transformations done with your dataflow.
+   > You can also make additional transformations, publish as a new dataset, and distribute with intended audience for specialized datasets.
+     ![Power BI data source connectors](Images/pbid-dataflow-connectors1.png)
 
-> **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps
-> - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
-> - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
-> - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help you out.
+   > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps
+   > - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
+   > - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
+   > - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help you out.
 
-<validation step="6f702ff3-1450-4b7c-b44f-052a3a77f380" />
+   <validation step="6f702ff3-1450-4b7c-b44f-052a3a77f380" />
 
 ## Review
 
