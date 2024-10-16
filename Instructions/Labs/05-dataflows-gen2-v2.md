@@ -17,6 +17,10 @@ Before working with data in Fabric, create a workspace with the Fabric trial ena
 
 1. Sign into [Microsoft Fabric](https://app.fabric.microsoft.com) at `https://app.fabric.microsoft.com`
 
+   * Email/Username: <inject key="AzureAdUserEmail"></inject>
+
+   * Password: <inject key="AzureAdUserPassword"></inject>
+
    ![](./Images/odl-01.png)
    
 2. After logging in, choose **Power BI**.
@@ -45,7 +49,7 @@ Before working with data in Fabric, create a workspace with the Fabric trial ena
 
    ![](./Images/new_workspace.png)
 
-9. Create a new workspace with a name **dp_fabric-<inject key="Deployment ID" enableCopy="false"/> (1)**, Choose a licensing mode as a **trial (2)**.
+9. Create a new workspace with a name **dp_fabric-<inject key="Deployment ID" enableCopy="false"/> (1)**, Choose a licensing mode as a **trial (2)** under **Advanced**. and click on **Apply (3)**
 
     ![Screenshot of an empty workspace in Power BI.](./Images/dp-lakehouse-1.png)
     
@@ -53,7 +57,7 @@ Before working with data in Fabric, create a workspace with the Fabric trial ena
 
     ![Screenshot of an empty workspace in Power BI.](./Images/new-workspace-2.png)
 
-    
+> **Note**: If the prompt **"Introducing task flows (preview)"** appears, just click on **Got it**.   
  
  >**Congratulations** on completing the Task! Now, it's time to validate it. Here are the steps:
 
@@ -78,7 +82,7 @@ Now that you have a workspace, it's time to switch to the **Data Engineering** e
 
 4. Create a new Lakehouse
 
-   Name: Enter **dp_lakehouse**.
+    Name: Enter **dp_lakehouse**.
 
 >**Congratulations** on completing the Task! Now, it's time to validate it. Here are the steps:
 
@@ -172,10 +176,6 @@ Now that you have a lakehouse, you need to ingest some data into it. One way to 
    >![Query with a lakehouse destination.](./Images/visual_query.png)
 
 9. Select **Publish** to publish the dataflow. Then wait for the **Dataflow 1** dataflow to be created in your workspace.
-
-10. Once published, you can right-click on the dataflow in your workspace, select **Properties**, and rename your dataflow.
-
-<validation step="61a34bd9-1fc1-47db-b51c-4720f310133d" />
 
 > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps
 > - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 

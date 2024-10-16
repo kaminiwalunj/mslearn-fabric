@@ -113,6 +113,8 @@ A relational data warehouse typically consists of *fact* and *dimension* tables.
     ![Screenshot of the data warehouse model page.](./Images/model-dw1-1.png)
 
 4. Drag the **ProductKey** field from the **FactSalesOrder** table and drop it on the **ProductKey** field in the **DimProduct** table. Then confirm the following relationship details:
+and click on **Save**.
+
     - **Table 1**: FactSalesOrder
     - **Column**: ProductKey
     - **Table 2**: DimProduct
@@ -123,8 +125,8 @@ A relational data warehouse typically consists of *fact* and *dimension* tables.
     - **Assume referential integrity**: Unselected
 
 5. Repeat the process to create many-to-one relationships between the following tables:
-    - **FactOrderSales.CustomerKey** &#8594; **DimCustomer.CustomerKey**
-    - **FactOrderSales.SalesOrderDateKey** &#8594; **DimDate.DateKey**
+    - **FactSalesOrder.CustomerKey** &#8594; **DimCustomer.CustomerKey**
+    - **FactSalesOrder.SalesOrderDateKey** &#8594; **DimDate.DateKey**
 
     When all of the relationships have been defined, the model should look like this:
 
@@ -255,6 +257,8 @@ You can easily visualize the data in either a single query, or in your data ware
 
    ![Screenshot of the Visualizations pane with the bar chart selected.](./Images/new_report.png)
    
+   >**Note:** Click on **Continue** if the **New report with all available data** pop-up appears.
+
 5. In the **Data** pane, expand **FactSalesOrder**. Note that the columns you hid are no longer visible. 
 
 6. Select **SalesTotal**. This will add the column to the **Report canvas**. Because the column is a numeric value, the default visual is a **column chart**.
