@@ -109,31 +109,33 @@ Now that you have a lakehouse, you need to ingest some data into it. One way to 
     ![New dataflow.](./Images/m6-fabric-2.png)
 
 5. Select **Import from a Text/CSV file**, and create a new data source with the following settings:
- - **Link to file**: *Selected*
- - **File path or URL**: `https://raw.githubusercontent.com/MicrosoftLearning/dp-data/main/orders.csv`
- - **Connection**: Create new connection
- - **data gateway**: (none)
- - **Authentication kind**: Anonymous
- - **Privacy level** : none
 
-    ![Query in the Power Query editor.](./Images/connect-data-source.png)
+    - **Link to file**: *Selected*
+    - **File path or URL**: `https://raw.githubusercontent.com/MicrosoftLearning/dp-data/main/orders.csv`
+    - **Connection**: Create new connection
+    - **data gateway**: (none)
+    - **Authentication kind**: Anonymous
+    - **Privacy level** : none
+
+       ![Query in the Power Query editor.](./Images/connect-data-source.png)
    
-3. Select **Next** to preview the file data, and then **Create** the data source. The Power Query editor shows the data source and an initial set of query steps to format the data, as shown here:
+3. Select **Next** to preview the file data, and then **Create** the data source. The Power Query editor shows the data source and an initial set of query steps to 
+   format the data, as shown here:
 
-   ![Query in the Power Query editor.](./Images/m6-fabric-3.png)
+    ![Query in the Power Query editor.](./Images/m6-fabric-3.png)
 
 4. On the toolbar ribbon, select the **Add column** tab. Then select **Custom column**.
 
-   ![Custom column in Power Query editor.](./Images/custom_column.png)
+     ![Custom column in Power Query editor.](./Images/custom_column.png)
    
 6. Create a new column named **MonthNo** that contains a number based on the formula `Date.Month([OrderDate])` - as shown here and 
    Click on **OK**.
 
-   ![Custom column in Power Query editor.](./Images/custom-column1.png)
+    ![Custom column in Power Query editor.](./Images/custom-column1.png)
 
 7. The step to add the custom column is added to the query and the resulting column is displayed in the data pane:
 
-   ![Query with a custom column step.](./Images/custom-column-added1.png)
+     ![Query with a custom column step.](./Images/custom-column-added1.png)
 
 > **Tip:** In the Query Settings pane on the right side, notice the **Applied Steps** include each transformation step. At the bottom, you can also toggle the **Diagram flow** button to turn on the Visual Diagram of the steps.
 > Steps can be moved up or down, edited by selecting the gear icon, and you can select each step to see the transformations apply in the preview pane.
@@ -171,7 +173,7 @@ Now that you have a lakehouse, you need to ingest some data into it. One way to 
    
    ![Query with a lakehouse destination.](./Images/lakehouse-destination1.png)
 
->**Note** : to view the visual query, select the icon from below right corner as shown below :
+   >**Note** : to view the visual query, select the icon from below right corner as shown below :
 
    >![Query with a lakehouse destination.](./Images/visual_query.png)
 
@@ -203,6 +205,7 @@ You can include a dataflow as an activity in a pipeline. Pipelines are used to o
    ![Pipeline with a dataflow activity.](./Images/dataflow-01.png)
 
 5. On the **Home** tab, save the pipeline using the **&#128427;** (*Save*) icon.
+
 6. Use the **&#9655; Run** button to run the pipeline, and wait for it to complete. It may take a few minutes.
 
    ![Pipeline with a dataflow that has completed successfully.](./Images/dataflow-pipeline-succeeded1.png)
