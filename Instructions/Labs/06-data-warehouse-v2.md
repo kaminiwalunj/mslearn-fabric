@@ -285,7 +285,11 @@ If you've finished exploring your lakehouse and data warehouse, you can delete t
 2. In the **...** menu on the toolbar, select **Workspace settings**.
 3. In the **Other** section, select **Remove this workspace**.
 
-## Review
+### Summary
+
+In this exercise, you analyzed data in a Microsoft Fabric data warehouse. You created a data warehouse, defined tables, inserted data, and built relationships between fact and dimension tables. Using SQL, you queried and aggregated data for insights. You also created a view to streamline queries and used the visual query designer for no-code data exploration. Finally, you visualized the data in a Power BI report, learning how to effectively analyze and present warehouse data for decision-making.
+
+### Review
 
 In this lab you have completed the following tasks:
 
