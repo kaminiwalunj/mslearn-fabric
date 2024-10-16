@@ -196,39 +196,39 @@ You can include a dataflow as an activity in a pipeline. Pipelines are used to o
 1. In the fabric workspace, ensure you are in the **Data Engineering** experience. Select **Data pipeline**, then create a new pipeline and name it **Load Orders 
    pipeline**.
 
-   ![Empty data pipeline.](./Images/dataflow_pipeline.png)
+      ![Empty data pipeline.](./Images/dataflow_pipeline.png)
 
-   > **Note**: If the Copy Data wizard opens automatically, close it!
+      > **Note**: If the Copy Data wizard opens automatically, close it!
 
 2. Select **Pipeline activity**, and add a **Dataflow** activity to the pipeline.
 
-   ![Empty data pipeline.](./Images/dataflow_1.png)
+      ![Empty data pipeline.](./Images/dataflow_1.png)
 
 4. With the new **Dataflow1** activity selected, on the **Settings** tab, in the **Dataflow** drop-down list, select **Dataflow 1** (the data flow you created previously)
 
-   ![Pipeline with a dataflow activity.](./Images/dataflow-01.png)
+      ![Pipeline with a dataflow activity.](./Images/dataflow-01.png)
 
 5. On the **Home** tab, save the pipeline using the **&#128427;** (*Save*) icon.
 
 6. Use the **&#9655; Run** button to run the pipeline, and wait for it to complete. It may take a few minutes.
 
-   ![Pipeline with a dataflow that has completed successfully.](./Images/dataflow-pipeline-succeeded1.png)
+      ![Pipeline with a dataflow that has completed successfully.](./Images/dataflow-pipeline-succeeded1.png)
 
 8. Navigate back to the lakehouse . In the **ellipses** menu for **Tables**, select **refresh**. Then expand **Tables** and select the **orders** table, which has been 
    created by your dataflow.
 
-   ![Table loaded by a dataflow.](./Images/loaded-table1.png)
+      ![Table loaded by a dataflow.](./Images/loaded-table1.png)
 
-   > **Note**: Use the Power BI Desktop *Dataflows connector* to connect directly to the data transformations done with your dataflow.
-   > You can also make additional transformations, publish as a new dataset, and distribute with intended audience for specialized datasets.
-     ![Power BI data source connectors](Images/pbid-dataflow-connectors1.png)
+      > **Note**: Use the Power BI Desktop *Dataflows connector* to connect directly to the data transformations done with your dataflow.
+      > You can also make additional transformations, publish as a new dataset, and distribute with intended audience for specialized datasets.
+        ![Power BI data source connectors](Images/pbid-dataflow-connectors1.png)
 
-   > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps
-   > - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
-   > - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
-   > - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help you out.
+> **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps
+> - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
+> - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
+> - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help you out.
 
-   <validation step="6f702ff3-1450-4b7c-b44f-052a3a77f380" />
+<validation step="6f702ff3-1450-4b7c-b44f-052a3a77f380" />
 
 ## Review
 
