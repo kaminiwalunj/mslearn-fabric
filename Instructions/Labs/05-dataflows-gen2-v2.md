@@ -72,11 +72,11 @@ Now that you have a workspace, it's time to switch to the **Data Engineering** e
 
 1. At the bottom left of the Power BI portal, click the **Power BI (1)** icon to access the **Data Engineering (2)** experience.
    
-   ![New lakehouse.](./Images/data-engineer.png)
+      ![New lakehouse.](./Images/data-engineer.png)
    
 2. From the **Data Engineering** homepage, select **Lakehouse**.
 
-   ![New lakehouse.](./Images/lakehouse-1-1.png)
+      ![New lakehouse.](./Images/lakehouse-1-1.png)
 
 3. Create a new Lakehouse
 
@@ -95,15 +95,15 @@ Now that you have a lakehouse, you need to ingest some data into it. One way to 
 
 1. Select your workspace, **dp_fabric-<inject key="Deployment ID" enableCopy="false"/>(1)**, then click **+ New item** 
 
-   ![New dataflow.](./Images/new_item-1.png)
+      ![New dataflow.](./Images/new_item-1.png)
    
 2. Search for **Dataflow Gen2** and select it .
 
-   ![New dataflow.](./Images/datagenflow.png)
+      ![New dataflow.](./Images/datagenflow.png)
    
 3. After a few seconds, the Power Query editor for your new dataflow opens as shown here.
 
-   ![New dataflow.](./Images/m6-fabric-2.png)
+      ![New dataflow.](./Images/m6-fabric-2.png)
 
 4. Select **Import from a Text/CSV file**, and create a new data source with the following settings:
 
@@ -119,65 +119,66 @@ Now that you have a lakehouse, you need to ingest some data into it. One way to 
 5. Select **Next** to preview the file data, and then **Create** the data source. The Power Query editor shows the data source and an initial set of query steps to 
    format the data, as shown here:
 
-   ![Query in the Power Query editor.](./Images/m6-fabric-3.png)
+      ![Query in the Power Query editor.](./Images/m6-fabric-3.png)
 
 6. On the toolbar ribbon, select the **Add column** tab. Then select **Custom column**.
 
-   ![Custom column in Power Query editor.](./Images/custom_column.png)
+      ![Custom column in Power Query editor.](./Images/custom_column.png)
    
 7. Create a new column named **MonthNo** that contains a number based on the formula `Date.Month([OrderDate])` - as shown here and 
    Click on **OK**.
 
-   ![Custom column in Power Query editor.](./Images/custom-column1.png)
+      ![Custom column in Power Query editor.](./Images/custom-column1.png)
 
 8. The step to add the custom column is added to the query and the resulting column is displayed in the data pane:
 
-   ![Query with a custom column step.](./Images/custom-column-added1.png)
+      ![Query with a custom column step.](./Images/custom-column-added1.png)
 
-    > **Tip:** In the Query Settings pane on the right side, notice the **Applied Steps** include each transformation step. At the bottom, you can also toggle the 
+      > **Tip:** In the Query Settings pane on the right side, notice the **Applied Steps** include each transformation step. At the bottom, you can also toggle the 
       **Diagram flow** button to turn on the Visual Diagram of the steps.
-    > Steps can be moved up or down, edited by selecting the gear icon, and you can select each step to see the transformations apply in the preview pane.
+    
+      > Steps can be moved up or down, edited by selecting the gear icon, and you can select each step to see the transformations apply in the preview pane.
 
 ## Task 4 : Add data destination for Dataflow
 
 1. On the toolbar ribbon, select the **Home** tab. Then in the **Add data destination** drop-down menu, select **Lakehouse**.
    
-   > **Note:** If this option is grayed out, you may already have a data destination set. Check the data destination at the bottom of the Query settings pane on the 
-     right side of the Power Query editor. If a destination is already set, you can change it using the gear.
+      > **Note:** If this option is grayed out, you may already have a data destination set. Check the data destination at the bottom of the Query settings pane on the 
+        right side of the Power Query editor. If a destination is already set, you can change it using the gear.
 
-   ![Query with a custom column step.](./Images/lakehouse_1-1.png)
+      ![Query with a custom column step.](./Images/lakehouse_1-1.png)
 
 2. In the **Connect to data destination** dialog box, edit the connection and sign in using your Power BI organizational account to set the identity that the dataflow 
    uses to access the lakehouse, Select **Next**.
 
-   ![Data destination configuration page.](./Images/connect_data_destination-1.png)
+      ![Data destination configuration page.](./Images/connect_data_destination-1.png)
 
 3. In the list of available workspaces, find your workspace and select the lakehouse you created in it at the start of this exercise. Then specify a new table named 
    **orders**:
 
-   ![Data destination configuration page.](./Images/orders.png)
+      ![Data destination configuration page.](./Images/orders.png)
 
-   > **Note:** On the **Destination settings** page, notice how OrderDate and MonthNo are not selected in the Column mapping and there is an informational message: 
-     *Change to date/time*.
+      > **Note:** On the **Destination settings** page, notice how OrderDate and MonthNo are not selected in the Column mapping and there is an informational message: 
+        *Change to date/time*.
 
 4. Cancel this action, then go back to OrderDate and MonthNo columns in Power Query online. Right-click on the column header and **Change Type**.
 
-    - OrderDate = Date/Time
-    - MonthNo = Whole number
+      - OrderDate = Date/Time
+      - MonthNo = Whole number
 
 5. Now repeat the process outlined earlier to add a lakehouse destination.
 
 6. On the **Destination settings** page toggle off Use automatic settings, select **Append**, and then save the settings.  
 
-    ![Data destination settings page.](./Images/append.png)
+      ![Data destination settings page.](./Images/append.png)
 
 7. The **Lakehouse** destination is indicated as an icon in the query in the Power Query editor.
    
-   ![Query with a lakehouse destination.](./Images/lakehouse-destination1.png)
+      ![Query with a lakehouse destination.](./Images/lakehouse-destination1.png)
 
-   >**Note** : to view the visual query, select the icon from below right corner as shown below :
+      >**Note** : to view the visual query, select the icon from below right corner as shown below :
 
-   >![Query with a lakehouse destination.](./Images/visual_query.png)
+      >![Query with a lakehouse destination.](./Images/visual_query.png)
 
 8. Select **Publish** to publish the dataflow. Then wait for the **Dataflow 1** dataflow to be created in your workspace.
 
