@@ -59,12 +59,12 @@ Before working with data in Fabric, create a workspace with the Fabric trial ena
 
     > **Note**: If the prompt **"Introducing task flows (preview)"** appears, just click on **Got it**.   
  
-    >**Congratulations** on completing the Task! Now, it's time to validate it. Here are the steps:
-    > - Hit the Validate button for the corresponding task. If you receive a success message, you have successfully validated the lab. 
-    > - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
-    > - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com.
+>**Congratulations** on completing the Task! Now, it's time to validate it. Here are the steps:
+> - Hit the Validate button for the corresponding task. If you receive a success message, you have successfully validated the lab. 
+> - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
+> - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com.
   
-    <validation step="61a34bd9-1fc1-47db-b51c-4720f310133d" />
+<validation step="61a34bd9-1fc1-47db-b51c-4720f310133d" />
 
 ## Task 2 : Create a lakehouse
 
@@ -82,13 +82,12 @@ Now that you have a workspace, it's time to switch to the **Data Engineering** e
 
     Name: Enter **dp_lakehouse**.
 
-   >**Congratulations** on completing the Task! Now, it's time to validate it. Here are the steps:
+>**Congratulations** on completing the Task! Now, it's time to validate it. Here are the steps:
+> - Hit the Validate button for the corresponding task. If you receive a success message, you have successfully validated the lab. 
+> - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
+> - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com.
 
-   > - Hit the Validate button for the corresponding task. If you receive a success message, you have successfully validated the lab. 
-   > - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
-   > - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com.
-
-   <validation step="38c64afd-7502-4783-8169-0e5730914f65" />
+<validation step="38c64afd-7502-4783-8169-0e5730914f65" />
 
 ## Task 3 : Create a Dataflow (Gen2) to ingest data
 
