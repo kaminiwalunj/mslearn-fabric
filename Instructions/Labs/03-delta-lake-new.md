@@ -10,6 +10,15 @@ advanced analytics solutions.
 Delta Lake is an open-source storage layer that adds relational database semantics to Spark-based data lake processing. Tables in Microsoft Fabric lakehouses are Delta tables, which is 
 signified by the triangular Delta (▴) icon on tables in the lakehouse user interface.
 
+## Objectives
+
+   - Task 1 : Create a workspace
+   - Task 2 : Create a lakehouse and upload data
+   - Task 3 : Explore data in a dataframe
+   - Task 4 : Create delta tables
+   - Task 5 : Explore table versioning
+   - Task 6 : Use delta tables for streaming data
+
 ## _Architecture Diagram_
 
    ![](./Images/Use-delta-tables-in-Apache-Spark.png)
@@ -26,38 +35,51 @@ This exercise should take approximately **40** minutes to complete
 
 Before working with data in Fabric, create a workspace with the Fabric trial enabled.
 
-1. Sign into [Microsoft Fabric](https://app.fabric.microsoft.com) at `https://app.fabric.microsoft.com` and select **Power BI**.
+1. Open the Edge Browser and Sign in to [Microsoft Fabric](https://app.fabric.microsoft.com) at `https://app.fabric.microsoft.com`, enter the following email/username, and then click on **Submit (2)**.  
 
-   ![](./Images/power-bi.png)
+   * **Username/Email (1)**:  <inject key="AzureAdUserEmail"></inject>
 
-2. From the PowerBI home page, select **Account Manager** from the top-right corner to start the free **Microsoft Fabric trial**.
-    
-    ![](./Images/PwrBI_1.png)
+      ![](./Images/odluser.png)
+
+   * **Password:** <inject key="AzureAdUserPassword"></inject>
+
+      ![](./Images/image2.png)
+
+2. From the Microsoft Fabric home page, select **PowerBI**
+
+   ![](./Images/powerbi.png)
+
+3. From the PowerBI home page, select **Account Manager (1)** from the top-right corner to start the free **Microsoft Fabric trial**.
   
-3. In the Account Manager, select **Start Trial**.
+4. In the Account Manager, select **Free trial (2)**.
 
-   ![](./Images/PwrBI_2.png)
+   ![Account-manager-start](./Images/freetrial.png)  
    
-4. If prompted, agree to the terms and then select **Start trial**. 
+5. A new prompt will appear asking you to **Activate your 60-day free Fabric trial capacity**, click on **Activate**.
 
-   ![](./Images/PwrBI_3.png)
+   ![Start-trial](./Images/activate(1).png)    
    
-5. Once your trial capacity is ready, you receive a confirmation message. Select **Got it** to begin working in Fabric.
-    ![](./Images/PwrBI_4.png)
+6. Once your trial capacity is ready, you receive a confirmation message. Select **Stay on current page** to begin working in Fabric.
+
+    ![](./Images/staycurrentonstage.png)
    
-6. Open your **Account manager** again. Notice that you now have a heading for **Trial status**. Your Account manager keeps track of the number of days remaining in your trial.
+7. Open your **Account manager** again. Notice that you now have a heading for **Trial Status**. Your Account manager keeps track of the number of days remaining in your trial.
 
-    ![](./Images/PwrBI_5.png)
+    ![](./Images/trialstatus.png)
 
-   You now have a **Fabric (Preview) trial** that includes a **Power BI trial** and a **Fabric (Preview) trial capacity**.
+      >**Note:** You now have a **Fabric (Preview) trial** that includes a **Power BI trial** and a **Fabric (Preview) trial capacity**.
 
-7. In the menu bar on the left, select **Workspaces** (the icon looks similar to &#128455;).
+8. In the menu bar on the left, select **Workspaces (1)** (the icon looks similar to &#128455;). Select **+ New Workspace (2)**
 
-   ![](./Images/workspace-1.png)
+   ![](./Images/newworkspace.png)
 
-8. Create a new workspace with a name **dp_fabric-<inject key="DeploymentID" enableCopy="false" />**, selecting a licensing mode that includes Fabric capacity (*Trial*, *Premium*, or *Fabric*).
+9. Create a new workspace with a name **dp_fabric-<inject key="DeploymentID" enableCopy="false" />**, select a licensing mode that includes Fabric capacity (*Trial*, *Premium*, or *Fabric*), and click on **Apply**
 
-9. When your new workspace opens, it should be empty, as shown here:
+   ![](./Images/imag1.png)
+
+10. Select **Got it** to begin working in Fabric.
+   
+11. When your new workspace opens, it should be empty, as shown here:
 
     ![Screenshot of an empty workspace in Power BI.](./Images/new-workspace-2.png)
 
