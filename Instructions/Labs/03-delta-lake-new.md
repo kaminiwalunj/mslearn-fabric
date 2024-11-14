@@ -10,6 +10,17 @@ advanced analytics solutions.
 Delta Lake is an open-source storage layer that adds relational database semantics to Spark-based data lake processing. Tables in Microsoft Fabric lakehouses are Delta tables, which is 
 signified by the triangular Delta (▴) icon on tables in the lakehouse user interface.
 
+## Lab Objectives
+
+In this lab, you will complete the following tasks:
+
+   - Task 1 : Create a workspace
+   - Task 2 : Create a lakehouse and upload data
+   - Task 3 : Explore data in a dataframe
+   - Task 4 : Create delta tables
+   - Task 5 : Explore table versioning
+   - Task 6 : Use delta tables for streaming data
+
 ## _Architecture Diagram_
 
    ![](./Images/Use-delta-tables-in-Apache-Spark.png)
@@ -26,38 +37,51 @@ This exercise should take approximately **40** minutes to complete
 
 Before working with data in Fabric, create a workspace with the Fabric trial enabled.
 
-1. Sign into [Microsoft Fabric](https://app.fabric.microsoft.com) at `https://app.fabric.microsoft.com` and select **Power BI**.
+1. Open the Edge Browser and Sign in to [Microsoft Fabric](https://app.fabric.microsoft.com) at `https://app.fabric.microsoft.com`, enter the following email/username, and then click on **Submit (2)**.  
 
-   ![](./Images/power-bi.png)
+   * **Username/Email (1)**:  <inject key="AzureAdUserEmail"></inject>
 
-2. From the PowerBI home page, select **Account Manager** from the top-right corner to start the free **Microsoft Fabric trial**.
-    
-    ![](./Images/PwrBI_1.png)
+      ![](./Images/odluser.png)
+
+   * **Password:** <inject key="AzureAdUserPassword"></inject>
+
+      ![](./Images/image2.png)
+
+2. From the Microsoft Fabric home page, select **PowerBI**
+
+   ![](./Images/powerbi.png)
+
+3. From the PowerBI home page, select **Account Manager (1)** from the top-right corner to start the free **Microsoft Fabric trial**.
   
-3. In the Account Manager, select **Start Trial**.
+4. In the Account Manager, select **Free trial (2)**.
 
-   ![](./Images/PwrBI_2.png)
+   ![Account-manager-start](./Images/freetrial.png)  
    
-4. If prompted, agree to the terms and then select **Start trial**. 
+5. A new prompt will appear asking you to **Activate your 60-day free Fabric trial capacity**, click on **Activate**.
 
-   ![](./Images/PwrBI_3.png)
+   ![Start-trial](./Images/activate(1).png)    
    
-5. Once your trial capacity is ready, you receive a confirmation message. Select **Got it** to begin working in Fabric.
-    ![](./Images/PwrBI_4.png)
+6. Once your trial capacity is ready, you receive a confirmation message. Select **Stay on current page** to begin working in Fabric.
+
+    ![](./Images/staycurrentonstage.png)
    
-6. Open your **Account manager** again. Notice that you now have a heading for **Trial status**. Your Account manager keeps track of the number of days remaining in your trial.
+7. Open your **Account manager** again. Notice that you now have a heading for **Trial Status**. Your Account manager keeps track of the number of days remaining in your trial.
 
-    ![](./Images/PwrBI_5.png)
+    ![](./Images/trialstatus.png)
 
-   You now have a **Fabric (Preview) trial** that includes a **Power BI trial** and a **Fabric (Preview) trial capacity**.
+      >**Note:** You now have a **Fabric (Preview) trial** that includes a **Power BI trial** and a **Fabric (Preview) trial capacity**.
 
-7. In the menu bar on the left, select **Workspaces** (the icon looks similar to &#128455;).
+8. In the menu bar on the left, select **Workspaces (1)** (the icon looks similar to &#128455;). Select **+ New Workspace (2)**
 
-   ![](./Images/workspace-1.png)
+   ![](./Images/newworkspace.png)
 
-8. Create a new workspace with a name **dp_fabric-<inject key="DeploymentID" enableCopy="false" />**, selecting a licensing mode that includes Fabric capacity (*Trial*, *Premium*, or *Fabric*).
+9. Create a new workspace with a name **dp_fabric-<inject key="DeploymentID" enableCopy="false" /> (1)**, select a licensing mode that includes Fabric capacity (*Trial*, *Premium*, or *Fabric*) **(2)**, and click on **Apply (3)**
 
-9. When your new workspace opens, it should be empty, as shown here:
+   ![](./Images/imag1.png)
+
+10. Select **Got it** to begin working in Fabric.
+   
+11. When your new workspace opens, it should be empty, as shown here:
 
     ![Screenshot of an empty workspace in Power BI.](./Images/new-workspace-2.png)
 
@@ -67,27 +91,53 @@ Now that you have a workspace, it's time to switch to the *Data engineering* exp
 
 1. At the bottom left of the Power BI portal, select the **Power BI (1)** icon and switch to the **Data Engineering (2)** experience.
 
-   ![](./Images/data-engineer.png)
+   ![](./Images/dataengineering.png)
 
-2. In the **Synapse Data Engineering** home page, create a new **Lakehouse** with a name **fabric_lakehouse**.
+2. In the **Synapse Data Engineering** home page, Select **Lakehouse**
+  
+   ![](./Images/imag3.png)  
+ 
+3. create a new **Lakehouse** with a name **fabric_lakehouse (1)** and click on **Create (2)**.
 
+   ![](./Images/imag4.png)
+   
     After a minute or so, a new empty lakehouse. You need to ingest some data into the data lakehouse for analysis. There are multiple ways to do this, but in this exercise you'll simply download a text file to your local computer (or lab VM if applicable) and then upload it to your lakehouse.
 
-3. Download the data file for this exercise from [https://github.com/MicrosoftLearning/dp-data/raw/main/products.csv](https://github.com/MicrosoftLearning/dp-data/raw/main/products.csv), saving it as **products.csv** on your local computer (or lab VM if applicable).
+4. View the new lakehouse, and note that the **Lakehouse explorer** pane on the left enables you to browse tables and files in the lakehouse:
+    
+     - The **Tables** folder contains tables that you can query using SQL semantics. Tables in a Microsoft Fabric lakehouse are based on the open source *Delta Lake* file format, commonly used in Apache Spark.
+     - The **Files** folder contains data files in the OneLake storage for the lakehouse that aren't associated with managed delta tables. You can also create *shortcuts* in this folder to reference data that is stored externally.
+     - Currently, there are no tables or files in the lakehouse.
 
-   OR If you are using the lab virtual machine (lab VM) provided to you, you can get the file from the **C:\LabFiles** directory.
+       ![](./Images/image9.png)
 
-4. Return to the web browser tab containing your lakehouse, and in the **...** menu for the **Files** folder in the **Explorer** pane, select **New subfolder** and create a folder named **products**.
+5. Download the data file for this exercise from [https://github.com/MicrosoftLearning/dp-data/raw/main/products.csv](https://github.com/MicrosoftLearning/dp-data/raw/main/products.csv), saving it as **products.csv** on your local computer (or lab VM if applicable).
 
-5. In the **...** menu for the **products** folder, select **Upload** and **Upload files**, and then upload the **products.csv** file from your local computer (or lab VM if applicable) to the lakehouse.
+   >**Note**: To download the file, open a new tab in the browser and paste it into the URL.
+   
+   >Right-click anywhere on the page containing the data and select **Save as** to save the page as a CSV file.
 
-6. After the file has been uploaded, select the **products** folder; and verify that the **products.csv** file has been uploaded, as shown here:
+      - OR If you are using the lab virtual machine (lab VM) provided to you, you can get the file from the **C:\LabFiles\dp-data-main** directory.
+
+6. Return to the web browser tab containing your lakehouse, and in the **... (1)** menu for the **Files** folder in the **Explorer** pane, select **New subfolder (2)**.
+   
+   ![](./Images/image10.png)
+   
+8. On **New subfolder** pop up, provide the Folder name as **products (1)** and click on **Create (2)**.
+
+   ![](./Images/imag5.png)
+
+9. In the **...** menu for the **products** folder, select **Upload** and **Upload files**, and then upload the **products.csv** file from your local computer (or lab VM if applicable) to the lakehouse.
+
+7. After the file has been uploaded, select the **products** folder; and verify that the **products.csv** file has been uploaded, as shown here:
 
     ![Screenshot of uploaded products.csv file in a lakehouse.](./Images/products-file-1.png)
 
 ## Task 3 : Explore data in a dataframe
 
 1. On the **Home** page while viewing the contents of the **products** folder in your datalake, in the **Open notebook** menu, select **New notebook**.
+
+    ![](./Images/imag6.png)
 
     After a few seconds, a new notebook containing a single *cell* will open. Notebooks are made up of one or more cells that can contain *code* or *markdown* (formatted text).
 
@@ -98,6 +148,8 @@ Now that you have a workspace, it's time to switch to the *Data engineering* exp
     ![Screenshot of a notebook with a Files pane.](./Images/notebook-products-1.png)
 
 4. In the **...** menu for **products.csv**, select **Load data** > **Spark**. A new code cell containing the following code should be added to the notebook:
+
+    ![](./Images/imag7.png)
 
     ```python
    df = spark.read.format("csv").option("header","true").load("Files/products/products.csv")
@@ -145,6 +197,7 @@ You can also create *external* tables for which the schema metadata is defined i
     ```python
    df.write.format("delta").saveAsTable("external_products", path="<abfs_path>/external_products")
     ```
+    **Note :** Make sure to replace the <abfs_path>.
 
 2. In the **Lakehouse explorer** pane, in the **...** menu for the **Files** folder, select **Copy ABFS path**.
 
@@ -358,12 +411,8 @@ Delta lake supports streaming data. Delta tables can be a *sink* or a *source* f
 
     This code stops the stream.
 
-## Clean up resources
+## Summary
 
-In this exercise, you've learned how to work with delta tables in Microsoft Fabric.
+In this lab, you created a workspace, set up a lakehouse, and uploaded data for processing. You explored data in a DataFrame, converted it into Delta tables, and utilized Delta’s versioning and time-travel features for efficient data management. Finally, you implemented streaming data pipelines using Delta tables, gaining practical experience in ingesting, transforming, and managing data within a scalable and robust data architecture.
 
-If you've finished exploring your lakehouse, you can delete the workspace you created for this exercise.
-
-1. In the bar on the left, select the icon for your workspace to view all of the items it contains.
-2. In the **...** menu on the toolbar, select **Workspace settings**.
-3. In the **Other** section, select **Remove this workspace**.
+### You have successfully completed the lab.

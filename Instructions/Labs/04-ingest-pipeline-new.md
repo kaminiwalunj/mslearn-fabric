@@ -5,6 +5,15 @@
 ## Overview
 Data pipelines define a sequence of activities that orchestrate an overall process, usually by extracting data from one or more sources and loading it into a destination; often transforming it along the way. Pipelines are commonly used to automate extract, transform, and load (ETL) processes that ingest transactional data from operational data stores into an analytical data store, such as a lakehouse or data warehouse. The graphical pipeline canvas in the Fabric user interface enables you to build complex pipelines with minimal or no coding required.
 
+## Lab Objectives
+
+In this lab, you will complete the following tasks:
+
+ - Task 1 : Create a pipeline
+ - Task 2 : Create a notebook
+ - Task 3 : Modify the pipeline
+
+
 ## _Architecture Diagram_
 
 ![Architecture Diagram](./Images/Ingest-Data-with-a-pipeline.png)
@@ -19,71 +28,27 @@ This lab will take approximately **60** minutes to complete.
 
 > **Note**: You'll need a Microsoft Fabric license to complete this exercise. Complete the previous task to proceed further.
 
-## Task 1 : Create a workspace
-
-Before working with data in Fabric, create a workspace with the Fabric trial enabled.
-
-1. Sign into [Microsoft Fabric](https://app.fabric.microsoft.com) at `https://app.fabric.microsoft.com` and select **Power BI**.
-
-2. From the PowerBI home page, select **Account Manager** from the top-right corner to start the free **Microsoft Fabric trial**.
-    
-    ![](./Images/PwrBI_1.png)
-  
-3. In the Account Manager, select **Start Trial**.
-
-   ![](./Images/PwrBI_2.png)
-   
-4. If prompted, agree to the terms and then select **Start trial**. 
-
-   ![](./Images/PwrBI_3.png)
-   
-5. Once your trial capacity is ready, you receive a confirmation message. Select **Got it** to begin working in Fabric.
-
-    ![](./Images/PwrBI_4.png)
-   
-6. Open your **Account manager** again. Notice that you now have a heading for **Trial status**. Your Account manager keeps track of the number of days remaining in your trial.
-
-    ![](./Images/PwrBI_5.png)
-
-   You now have a **Fabric (Preview) trial** that includes a **Power BI trial** and a **Fabric (Preview) trial capacity**.
-
-7. In the menu bar on the left, select **Workspaces** (the icon looks similar to &#128455;).
-
-8. Create a new workspace with a name of **dp_fabric**, selecting a licensing mode that includes Fabric capacity (*Trial*, *Premium*, or *Fabric*).
-
-9. When your new workspace opens, it should be empty, as shown here:
-
-    ![Screenshot of an empty workspace in Power BI.](./Images/new-workspace1.png)
-
-## Task 2 : Create a lakehouse
-
-Now that you have a workspace, it's time to switch to the *Data engineering* experience in the portal and create a data lakehouse into which you will ingest data.
-
-1. At the bottom left of the Power BI portal, select the **Power BI** icon and switch to the **Data Engineering** experience.
-
-2. In the **Data engineering** home page, create a new **Lakehouse** with a name of **dp_lakehouse**.
-
-    After a minute or so, a new lakehouse with no **Tables** or **Files** will be created.
-
-3. On the **Lake view** tab in the pane on the left, in the **...** menu for the **Files** node, select **New subfolder** and create a subfolder named **new_data**.
-
-## Task 3 : Create a pipeline
+## Task 1 : Create a pipeline
 
 A simple way to ingest data is to use a **Copy Data** activity in a pipeline to extract the data from a source and copy it to a file in the lakehouse.
 
 1. On the **Home** page for your lakehouse, select **New data pipeline**, and create a new data pipeline named **Ingest Sales Data**.
 
+    ![](./Images/imag8.png)
+
 2. If the **Copy Data** wizard doesn't open automatically, select **Copy Data** in the pipeline editor page.
 
-3. In the **Copy Data** wizard, on the **Choose a data source** page, in the **data sources** section, select the **Generic protocol** tab and then select **HTTP**.
+3. In the **Copy Data** wizard, on the **Choose a data source** page, in the **New sources** section, search and select **Http**
 
-    ![Screenshot of the Choose data source page.](./Images/choose-data-source1.png)
+    ![Screenshot of the Choose data source page.](./Images/imag9.png)
 
-4. Select **Next** and then select **Create new connection** and enter the following settings for the connection to your data source:
+4. You will be navigated to Connect to data source.
+
+5. On **Connect to data source** section, enter the following settings for the connection to your data source:
     - **URL**: `https://raw.githubusercontent.com/MicrosoftLearning/dp-data/main/sales.csv`
     - **Connection**: Create new connection
     - **Connection name**: *Specify a unique name*
-    - **Authentication kind**: Basic (*Leave the username and password blank*)
+    - **Authentication kind**: Basic (*Provide the username and password and note it in notepad*)
 
 5. Select **Next**. Then ensure the following settings are selected:
     - **Relative URL**: *Leave blank*
@@ -102,7 +67,10 @@ A simple way to ingest data is to use a **Copy Data** activity in a pipeline to 
 
 7. Select **Preview data** to see a sample of the data that will be ingested. Then close the data preview and select **Next**.
 
-8. On the **Choose data destination** page, select your existing lakehouse. Then select **Next**.
+8. On the **Choose data destination** page, select your existing lakehouse.
+
+    ![](./Images/imag12.png)
+
 
 9. Set the following data destination options, and then select **Next**:
     - **Root folder**: Files
@@ -129,9 +97,11 @@ A simple way to ingest data is to use a **Copy Data** activity in a pipeline to 
 
 14. On the **Home** page, in the **Lakehouse explorer** pane, expand **Files** and select the **new_data** folder to verify that the **sales.csv** file has been copied.
 
-## Task 4 : Create a notebook
+## Task 2 : Create a notebook
 
 1. On the **Home** page for your lakehouse, in the **Open notebook** menu, select **New notebook**.
+
+   ![](./Images/imag6.png)
 
     After a few seconds, a new notebook containing a single *cell* will open. Notebooks are made up of one or more cells that can contain *code* or *markdown* (formatted text).
 
@@ -142,6 +112,8 @@ A simple way to ingest data is to use a **Copy Data** activity in a pipeline to 
     ```
 
 3. In the **...** menu for the cell (at its top-right) select **Toggle parameter cell**. This configures the cell so that the variables declared in it are treated as parameters when running the notebook from a pipeline.
+
+    ![](./Images/imag11.png)
 
 4. Under the parameters cell, use the **+ Code** button to add a new code cell. Then add the following code to it:
 
@@ -170,8 +142,6 @@ A simple way to ingest data is to use a **Copy Data** activity in a pipeline to 
 
     ![Screenshot of a notebook with a parameters cell and code to transform data.](./Images/notebook1.png)
 
-    > **Note**: Since this is the first time you've run any Spark code in this session, the Spark pool must be started. This means that the first cell can take a minute or so to complete.
-
 6. When the notebook run has completed, in the **Lakehouse explorer** pane on the left, in the **...** menu for **Tables** select **Refresh** and verify that a **sales** table has been created.
 
 7. In the notebook menu bar, use the ⚙️ **Settings** icon to view the notebook settings. Then set the **Name** of the notebook to **Load Sales** and close the settings pane.
@@ -180,19 +150,24 @@ A simple way to ingest data is to use a **Copy Data** activity in a pipeline to 
 
 9. In the **Explorer** pane, refresh the view. Then expand **Tables**, and select the **sales** table to see a preview of the data it contains.
 
-## Task 5 : Modify the pipeline
+## Task 3 : Modify the pipeline
 
 Now that you've implemented a notebook to transform data and load it into a table, you can incorporate the notebook into a pipeline to create a reusable ETL process.
 
 1. In the hub menu bar on the left select the **Ingest Sales Data** pipeline you created previously.
 
-2. On the **Activities** tab, in the **More activities** list, select **Delete data**. Then position the new **Delete data**  activity to the left of the **Copy data** activity and connect its **On completion** output to the **Copy data** activity, as shown here:
+2. On the **Activities** tab, in the **More activities** list, select **Delete data**. Then position the new **Delete data**  activity to the left of the **Copy data** activity and connect its **On completion** output to the **Copy data** activity, as shown below:
+
+    ![](./Images/imag13.png)
 
     ![Screenshot of a pipeline with Delete data and Copy data activities.](./Images/delete-data-activity1.png)
 
 3. Select the **Delete data** activity, and in the pane below the design canvas, set the following properties:
     - **General**:
         - **Name**: Delete old files
+
+          ![](./Images/imag14.png)
+
     - **Source**
         - **Data store type**: Workspace
         - **Workspace data store**: *Your lakehouse*
@@ -200,8 +175,13 @@ Now that you've implemented a notebook to transform data and load it into a tabl
         - **Folder path**: Files / **new_data**
         - **Wildcard file name**: *.csv        
         - **Recursively**: *Selected*
+
+          ![](./Images/imag15.png)
+
     - **Logging settings**:
         - **Enable logging**: *<u>Un</u>selected*
+
+          ![](./Images/imag16.png)
 
     These settings will ensure that any existing .csv files are deleted before copying the **sales.csv** file.
 
@@ -236,6 +216,10 @@ Now that you've implemented a notebook to transform data and load it into a tabl
 
 In this exercise, you implemented a data ingestion solution that uses a pipeline to copy data to your lakehouse from an external source, and then uses a Spark notebook to transform the data and load it into a table.
 
+## Summary
+
+In this lab, you created a pipeline to automate data processing, developed a notebook for writing and testing your pipeline logic, and then modified the pipeline to refine its functionality. These tasks helped you gain practical experience in building and optimizing data workflows within a pipeline.
+
 ## Clean up resources
 
 In this exercise, you've learned how to implement a pipeline in Microsoft Fabric.
@@ -245,3 +229,5 @@ If you've finished exploring your lakehouse, you can delete the workspace you cr
 1. In the bar on the left, select the icon for your workspace to view all of the items it contains.
 2. In the **...** menu on the toolbar, select **Workspace settings**.
 3. In the **Other** section, select **Remove this workspace**.
+
+## You have successfully completed the lab
