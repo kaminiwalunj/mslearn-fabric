@@ -73,7 +73,7 @@ Before working with data in Fabric, create a workspace with the Fabric trial ena
 
    ![](./Images/newworkspace.png)
 
-9. Create a new workspace with a name **dp_fabric-<inject key="DeploymentID" enableCopy="false" />**, select a licensing mode that includes Fabric capacity (*Trial*, *Premium*, or *Fabric*), and click on **Apply**
+9. Create a new workspace with a name **dp_fabric-<inject key="DeploymentID" enableCopy="false" /> (1)**, select a licensing mode that includes Fabric capacity (*Trial*, *Premium*, or *Fabric*) **(2)**, and click on **Apply (3)**
 
    ![](./Images/imag1.png)
 
@@ -89,7 +89,8 @@ Now that you have a workspace, it's time to switch to the *Data engineering* exp
 
 1. At the bottom left of the Power BI portal, select the **Power BI (1)** icon and switch to the **Data Engineering (2)** experience.
 
-   ![](./Images/data-engineer.png)
+   ![](./Images/dataengineering.png)
+ 
 
 2. In the **Synapse Data Engineering** home page, create a new **Lakehouse** with a name **fabric_lakehouse**.
 
