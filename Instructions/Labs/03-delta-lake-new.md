@@ -116,15 +116,17 @@ Now that you have a workspace, it's time to switch to the *Data engineering* exp
    
    >Right-click anywhere on the page containing the data and select **Save as** to save the page as a CSV file.
 
-      - OR If you are using the lab virtual machine (lab VM) provided to you, you can get the file from the **C:\LabFiles** directory.
+      - OR If you are using the lab virtual machine (lab VM) provided to you, you can get the file from the **C:\LabFiles\dp-data-main** directory.
 
-6. Return to the web browser tab containing your lakehouse, and in the **... (1)** menu for the **Files** folder in the **Explorer** pane, select **New subfolder (2)** and create a folder named **products**.
-
+6. Return to the web browser tab containing your lakehouse, and in the **... (1)** menu for the **Files** folder in the **Explorer** pane, select **New subfolder (2)**.
+   
    ![](./Images/image10.png)
+   
+8. On **New subfolder** pop up, provide the Folder name as **products (1)** and click on **Create (2)**.
 
-   ![](./Images/image5.png)
+   ![](./Images/imag5.png)
 
-8. In the **...** menu for the **products** folder, select **Upload** and **Upload files**, and then upload the **products.csv** file from your local computer (or lab VM if applicable) to the lakehouse.
+9. In the **...** menu for the **products** folder, select **Upload** and **Upload files**, and then upload the **products.csv** file from your local computer (or lab VM if applicable) to the lakehouse.
 
 7. After the file has been uploaded, select the **products** folder; and verify that the **products.csv** file has been uploaded, as shown here:
 
