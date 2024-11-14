@@ -10,7 +10,9 @@ advanced analytics solutions.
 Delta Lake is an open-source storage layer that adds relational database semantics to Spark-based data lake processing. Tables in Microsoft Fabric lakehouses are Delta tables, which is 
 signified by the triangular Delta (▴) icon on tables in the lakehouse user interface.
 
-## Objectives
+## Lab Objectives
+
+In this lab, you will complete the following tasks:
 
    - Task 1 : Create a workspace
    - Task 2 : Create a lakehouse and upload data
@@ -136,6 +138,8 @@ Now that you have a workspace, it's time to switch to the *Data engineering* exp
 
 1. On the **Home** page while viewing the contents of the **products** folder in your datalake, in the **Open notebook** menu, select **New notebook**.
 
+    ![](./Images/imag6.png)
+
     After a few seconds, a new notebook containing a single *cell* will open. Notebooks are made up of one or more cells that can contain *code* or *markdown* (formatted text).
 
 2. Select the existing cell in the notebook, which contains some simple code, and then use its **&#128465;** (*Delete*) icon at its top-right to remove it - you will not need this code.
@@ -145,6 +149,8 @@ Now that you have a workspace, it's time to switch to the *Data engineering* exp
     ![Screenshot of a notebook with a Files pane.](./Images/notebook-products-1.png)
 
 4. In the **...** menu for **products.csv**, select **Load data** > **Spark**. A new code cell containing the following code should be added to the notebook:
+
+    ![](./Images/imag7.png)
 
     ```python
    df = spark.read.format("csv").option("header","true").load("Files/products/products.csv")
@@ -192,6 +198,7 @@ You can also create *external* tables for which the schema metadata is defined i
     ```python
    df.write.format("delta").saveAsTable("external_products", path="<abfs_path>/external_products")
     ```
+    **Note :** Make sure to replace the <abfs_path>.
 
 2. In the **Lakehouse explorer** pane, in the **...** menu for the **Files** folder, select **Copy ABFS path**.
 
@@ -405,12 +412,8 @@ Delta lake supports streaming data. Delta tables can be a *sink* or a *source* f
 
     This code stops the stream.
 
-## Clean up resources
+## Summary
 
-In this exercise, you've learned how to work with delta tables in Microsoft Fabric.
+In this lab, you created a workspace, set up a lakehouse, and uploaded data for processing. You explored data in a DataFrame, converted it into Delta tables, and utilized Delta’s versioning and time-travel features for efficient data management. Finally, you implemented streaming data pipelines using Delta tables, gaining practical experience in ingesting, transforming, and managing data within a scalable and robust data architecture.
 
-If you've finished exploring your lakehouse, you can delete the workspace you created for this exercise.
-
-1. In the bar on the left, select the icon for your workspace to view all of the items it contains.
-2. In the **...** menu on the toolbar, select **Workspace settings**.
-3. In the **Other** section, select **Remove this workspace**.
+### You have successfully completed the lab.
