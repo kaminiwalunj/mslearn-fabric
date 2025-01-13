@@ -15,19 +15,19 @@ In this exercise, you will use Dataflows (Gen2) to ingest, transform, and standa
 
 Before working with data in Fabric, create a workspace with the Fabric trial enabled.
 
-1. Sign into [Microsoft Fabric](https://app.fabric.microsoft.com) at `https://app.fabric.microsoft.com`
+1. Click on Microsoft Edge and sign into [Microsoft Fabric](https://app.fabric.microsoft.com) at `https://app.fabric.microsoft.com`
 
-   * Email/Username: <inject key="AzureAdUserEmail"></inject>
+   * Email/Username: <inject key="AzureAdUserEmail"></inject> and click on **Submit**.
 
-   * Password: <inject key="AzureAdUserPassword"></inject>
+   * Password: <inject key="AzureAdUserPassword"></inject> and click on **Yes**.
 
    ![](./Images/odl-01.png)
    
-2. After logging in, choose **Power BI**.
+2. After signing in, choose **Power BI**.
 
    ![](./Images/power-bi.png)
 
-4. From the PowerBI home page, select **Account Manager** from the top-right corner to start the free **Microsoft Fabric trial**. and click on **Free trial**.
+4. From the PowerBI home page, select **Account Manager** from the top-right corner to start the free **Microsoft Fabric trial** and click on **Free trial**.
     
    ![](./Images/imageupdatee1.png)
      
@@ -99,7 +99,7 @@ Now that you have a lakehouse, you need to ingest some data into it. One way to 
 
       ![New dataflow.](./Images/new_item-1.png)
    
-2. Search for **Dataflow Gen2** and select it .
+2. Search for **Dataflow Gen2** and select it.
 
       ![New dataflow.](./Images/datagenflow.png)
 
@@ -111,34 +111,35 @@ Now that you have a lakehouse, you need to ingest some data into it. One way to 
 
       ![New dataflow.](./Images/m6-fabric-2.png)
 
-4. Select **Import from a Text/CSV file**, and create a new data source with the following settings:
-
-    - **Link to file**: *Selected*
-    - **File path or URL**: `https://raw.githubusercontent.com/MicrosoftLearning/dp-data/main/orders.csv`
-    - **Connection**: Create new connection
-    - **data gateway**: (none)
-    - **Authentication kind**: Anonymous
-    - **Privacy level** : none
+4. Select **Import from a Text/CSV file**.
 
       ![New lakehouse.](./Images/fab-image5.png)
 
+5. Create a new data source with the following settings and click on **Next (7)** :
+ 
+    - **Link to file**: *Selected* (1)
+    - **File path or URL**: `https://raw.githubusercontent.com/MicrosoftLearning/dp-data/main/orders.csv` (2)
+    - **Connection**: Create new connection (3)
+    - **data gateway**: (none) (4)
+    - **Authentication kind**: Anonymous (5)
+    - **Privacy level** : none (6)
+
       ![New lakehouse.](./Images/fab-image6.png)
    
-5. Select **Next** to preview the file data, and then **Create** the data source. The Power Query editor shows the data source and an initial set of query steps to 
-   format the data, as shown here:
+6. Create the data source. The Power Query editor shows the data source and an initial set of query steps to format the data, as shown here:
 
       ![Query in the Power Query editor.](./Images/m6-fabric-3.png)
 
-6. On the toolbar ribbon, select the **Add column** tab. Then select **Custom column**.
+7. On the toolbar ribbon, select the **Add column** tab. Then select **Custom column**.
 
       ![New lakehouse.](./Images/fab-image7.png)
    
-7. Create a new column named **MonthNo** that contains a number based on the formula `Date.Month([OrderDate])` - as shown here and 
+8. Create a new column named **MonthNo** that contains a number based on the formula `Date.Month([OrderDate])` - as shown here and 
    Click on **OK**.
 
       ![Custom column in Power Query editor.](./Images/custom-column1.png)
 
-8. The step to add the custom column is added to the query and the resulting column is displayed in the data pane:
+9. The step to add the custom column is added to the query and the resulting column is displayed in the data pane:
 
       ![Query with a custom column step.](./Images/custom-column-added1.png)
 
