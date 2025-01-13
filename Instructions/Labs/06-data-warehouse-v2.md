@@ -1,6 +1,6 @@
 # Exercise 2 : Analyze data in a Data Warehouse
 
-## Estimated Duration : 60 Minutes
+## Estimated Duration : 120 Minutes
 
 In this exercise, you will analyze data within a relational data warehouse using Microsoft Fabric. Utilize SQL for querying and create detailed visualizations to derive actionable insights. 
 
@@ -18,15 +18,13 @@ Now that you have a workspace which you have created in the previous exercise, i
 
 1. At the bottom left of the Power BI portal, switch to the **Data Warehouse** experience.
 
-    ![Screenshot of a new warehouse.](./Images/warehouse.png)
+     ![Screenshot of a new warehouse.](./Images/gen2-7.png)
 
     > **Note**: If you don't see the icon in the bottom left corner, Fabric isn't enabled for your tenant. Fabric is enabled in the admin portal for tenants that have a Power BI Premium subscription.
 
-3. In the **Data Warehous**e home page, create a **new Warehouse**.
+2. In the **Data Warehouse** home page, create a **new Warehouse** and provide the name as **Data Warehouse-<inject key="Deployment ID" enableCopy="false"/>**.
 
-   - Name: Enter **Data Warehouse-<inject key="Deployment ID" enableCopy="false"/>** .
-
-
+   ![Screenshot of a new warehouse.](./Images/warehouse.png)
 
 > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps
 > - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
@@ -61,7 +59,9 @@ A warehouse is a relational database in which you can define tables and other ob
 
 2. Use the **&#9655; Run** button to run the SQL script, which creates a new table named **DimProduct** in the **dbo** schema of the data warehouse.
 
-3. Use the **Refresh** button on the toolbar to refresh the view. Then, in the **Explorer** pane, expand **Schemas** > **dbo** > **Tables** and verify that the **DimProduct** table has been created.
+3. In the **Explorer** pane, expand **Schemas** > **dbo** > **Tables** and verify that the **DimProduct** table has been created.
+
+     ![Screenshot of a new warehouse.](./Images/gen2-9.png)
 
 4. On the **Home** menu tab, use the **New SQL Query** button to create a new query, and enter the following INSERT statement:
 
@@ -74,9 +74,13 @@ A warehouse is a relational database in which you can define tables and other ob
    GO
     ```
 
+     ![Screenshot of a new warehouse.](./Images/gen2-10.png)
+
 5. Run the new query to insert three rows into the **DimProduct** table.
 
-6. When the query has finished, select the **Data** tab at the bottom of the page in the data warehouse. In the **Explorer** pane, select the **DimProduct** table and verify that the three rows have been added to the table.
+6. In the **Explorer** pane, select the **DimProduct** table and verify that the three rows have been added to the table.
+
+     ![Screenshot of a new warehouse.](./Images/gen2-11.png)
 
 7. On the **Home** menu tab, use the **New SQL Query** button to create a new query. Then copy and paste the Transact-SQL code from [https://raw.githubusercontent.com/MicrosoftLearning/dp-data/main/create-dw.txt](https://raw.githubusercontent.com/MicrosoftLearning/dp-data/main/create-dw.txt) into the new query pane. **Scroll down and ensure that the last line ends with a semicolon (;) and includes the GO command. Only then should you click on "Run." If not, please follow the steps below.**
    
@@ -92,7 +96,7 @@ A warehouse is a relational database in which you can define tables and other ob
 
 >**Note**: The script should take around 30 seconds to run.
 
-9. Use the **Refresh** button on the toolbar to refresh the view. Then in the **Explorer** pane, verify that the **dbo** schema in the data warehouse now contains the following four tables:
+9. In the **Explorer** pane, verify that the **dbo** schema in the data warehouse now contains the following four tables:
     - **DimCustomer**
     - **DimDate**
     - **DimProduct**
@@ -115,9 +119,9 @@ A relational data warehouse typically consists of *fact* and *dimension* tables.
 4. Drag the **ProductKey** field from the **FactSalesOrder** table and drop it on the **ProductKey** field in the **DimProduct** table. Then confirm the following relationship details:
 and click on **Save**.
 
-    - **Table 1**: FactSalesOrder
+    - **From Table**: FactSalesOrder
     - **Column**: ProductKey
-    - **Table 2**: DimProduct
+    - **To Table**: DimProduct
     - **Column**: ProductKey
     - **Cardinality**: Many to one (*:1)
     - **Cross filter direction**: Single
@@ -208,15 +212,19 @@ Instead of writing SQL code, you can use the graphical query designer to query t
 
 1. On the **Home** menu, select **New visual query**.
 
-2. Drag **FactSalesOrder** onto the **canvas**. Notice that a preview of the table is displayed in the **Preview** pane below.
+     ![Screenshot of a new warehouse.](./Images/gen2-12.png)
+
+2. Drag **FactSalesOrder** from the Explorer menu onto the **canvas**. Notice that a preview of the table is displayed in the **Preview** pane below.
+
+     ![Screenshot of a new warehouse.](./Images/gen2-13.png)
 
 3. Drag **DimProduct** onto the **canvas**. We now have two tables in our query.
 
 4. Use the **(+)** button on the **FactSalesOrder** table on the canvas to **Merge queries**.
 
-    ![Screenshot of the canvas with the FactSalesOrder table selected.](./Images/visual-query-merge1.png)
+     ![Screenshot of a new warehouse.](./Images/gen2-14.png)
 
-5. In the **Merge queries** window, select **DimProduct** as the right table for merge. Select **ProductKey** in both queries, leave the default **Left outer** join type, and click **OK**.
+5. In the **Merge queries** window, select **DimProduct** as the right table for merge. Select **ProductKey** in both queries, leave the default **Left outer** join kind, and click **OK**.
 
 6. In the **Preview**, note that the new **DimProduct** column has been added to the FactSalesOrder table. Expand the column by clicking the arrow to the right of the column name. Select **ProductName** and click **OK**.
 
