@@ -41,7 +41,7 @@ Before working with data in Fabric, create a workspace with the Fabric trial ena
    
 7. On the dashboard, on the top menu you can see **Trial Status 59 days left**.
 
-   ![](./Images/updated4.png)
+   ![](./Images/gen2-1.png)
 
     >**Note**: You now have a **Fabric (Preview) trial** that includes a **Power BI trial** and a **Fabric (Preview) trial capacity**.
 
@@ -49,7 +49,7 @@ Before working with data in Fabric, create a workspace with the Fabric trial ena
 
    ![New lakehouse.](./Images/fab-image2.png)
 
-9. Create a new workspace with a name **dp_fabric-<inject key="Deployment ID" enableCopy="false"/> (1)**, Choose a licensing mode as a **trial (2)** under **Advanced**. and click on **Apply (3)**
+9. Create a new workspace with a name **dp_fabric-<inject key="Deployment ID" enableCopy="false"/> (1)**, Choose a licensing mode as a **trial (2)** under **Advanced**. and click on **Apply (3)**.
 
    ![New lakehouse.](./Images/fab-image3.png)
     
@@ -150,12 +150,12 @@ Now that you have a lakehouse, you need to ingest some data into it. One way to 
 
 ## Task 4 : Add data destination for Dataflow
 
-1. On the toolbar ribbon, select the **Home** tab. In the home tab, click on the dropdown for Query, click on **Add data destination** drop-down menu and select **Lakehouse**.
+1. On the toolbar ribbon, select the **Home** tab. In the home tab, click on the dropdown for **Query (1)**, click on **Add data destination (2)** drop-down menu and select **Lakehouse (3)**.
    
       > **Note:** If this option is grayed out, you may already have a data destination set. Check the data destination at the bottom of the Query settings pane on the 
       right side of the Power Query editor. If a destination is already set, you can change it using the gear.
 
-      ![New lakehouse.](./Images/fab-image8.png)
+      ![New lakehouse.](./Images/gen2-2.png)
 
 2. In the **Connect to data destination** dialog box, keep all the values as default and select **Next**.
 
@@ -172,15 +172,17 @@ Now that you have a lakehouse, you need to ingest some data into it. One way to 
       - OrderDate = Date/Time
       - MonthNo = Whole number
 
+      ![New lakehouse.](./Images/gen2-3.png)
+
 5. Now repeat the process outlined earlier to add a lakehouse destination.
-   - Choose the existing destination that we previously created and select **Lakehouse (none)**.
-   - Click on **Next**.
+   - Choose the existing destination that we previously created, select **Lakehouse (none) (1)** and click on **Next (2)**.
+           ![New lakehouse.](./Images/gen2-4.png)
    - Select the lakehouse you created in it at the start of this exercise and the associated table **orders**.
    - Click on **Next**.
 
-6. On the **Destination settings** page toggle off Use automatic settings, select **Append**, and then save the settings.  
+6. On the **Destination settings** page toggle off Use automatic settings, select **Append**, and then click on **Save Settings**.  
 
-      ![Data destination settings page.](./Images/append.png)
+      ![New lakehouse.](./Images/gen2-5.png)
 
 7. The **Lakehouse** destination is indicated as an icon in the query in the Power Query editor.
    
@@ -191,6 +193,8 @@ Now that you have a lakehouse, you need to ingest some data into it. One way to 
       >![Query with a lakehouse destination.](./Images/visual_query.png)
 
 8. Select **Publish** from the bottom right to publish the dataflow. Then wait for the **Dataflow 1** dataflow to be created in your workspace.
+
+      ![New lakehouse.](./Images/gen2-6.png)
 
 > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps
 > - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
