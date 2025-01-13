@@ -18,7 +18,7 @@ Now that you have a workspace which you have created in the previous exercise, i
 
 1. At the bottom left of the Power BI portal, switch to the **Data Warehouse** experience.
 
-     ![Screenshot of a new warehouse.](./Images/gen2-7.png)
+     ![Screenshot of a new warehouse.](./Images/gen2-8.png)
 
     > **Note**: If you don't see the icon in the bottom left corner, Fabric isn't enabled for your tenant. Fabric is enabled in the admin portal for tenants that have a Power BI Premium subscription.
 

@@ -175,16 +175,19 @@ Now that you have a lakehouse, you need to ingest some data into it. One way to 
       ![New lakehouse.](./Images/gen2-3.png)
 
 5. Now repeat the process outlined earlier to add a lakehouse destination.
+
    - Choose the existing destination that we previously created, select **Lakehouse (none) (1)** and click on **Next (2)**.
-           ![New lakehouse.](./Images/gen2-4.png)
+
+        ![New lakehouse.](./Images/gen2-4.png)
+
    - Select the lakehouse you created in it at the start of this exercise and the associated table **orders**.
    - Click on **Next**.
 
-6. On the **Destination settings** page toggle off Use automatic settings, select **Append**, and then click on **Save Settings**.  
+7. On the **Destination settings** page toggle off Use automatic settings, select **Append**, and then click on **Save Settings**.  
 
       ![New lakehouse.](./Images/gen2-5.png)
 
-7. The **Lakehouse** destination is indicated as an icon in the query in the Power Query editor.
+8. The **Lakehouse** destination is indicated as an icon in the query in the Power Query editor.
    
       ![Query with a lakehouse destination.](./Images/lakehouse-destination1.png)
 
@@ -192,7 +195,7 @@ Now that you have a lakehouse, you need to ingest some data into it. One way to 
 
       >![Query with a lakehouse destination.](./Images/visual_query.png)
 
-8. Select **Publish** from the bottom right to publish the dataflow. Then wait for the **Dataflow 1** dataflow to be created in your workspace.
+9. Select **Publish** from the bottom right to publish the dataflow. Then wait for the **Dataflow 1** dataflow to be created in your workspace.
 
       ![New lakehouse.](./Images/gen2-6.png)
 
