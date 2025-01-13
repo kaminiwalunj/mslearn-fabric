@@ -18,15 +18,11 @@ Now that you have a workspace which you have created in the previous exercise, i
 
 1. At the bottom left of the Power BI portal, switch to the **Data Warehouse** experience.
 
-    ![Screenshot of a new warehouse.](./Images/warehouse.png)
-
     > **Note**: If you don't see the icon in the bottom left corner, Fabric isn't enabled for your tenant. Fabric is enabled in the admin portal for tenants that have a Power BI Premium subscription.
 
-3. In the **Data Warehous**e home page, create a **new Warehouse**.
+2. In the **Data Warehouse** home page, create a **new Warehouse** and provide the name as **Data Warehouse-<inject key="Deployment ID" enableCopy="false"/>**.
 
-   - Name: Enter **Data Warehouse-<inject key="Deployment ID" enableCopy="false"/>** .
-
-
+   ![Screenshot of a new warehouse.](./Images/warehouse.png)
 
 > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps
 > - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
@@ -61,7 +57,7 @@ A warehouse is a relational database in which you can define tables and other ob
 
 2. Use the **&#9655; Run** button to run the SQL script, which creates a new table named **DimProduct** in the **dbo** schema of the data warehouse.
 
-3. Use the **Refresh** button on the toolbar to refresh the view. Then, in the **Explorer** pane, expand **Schemas** > **dbo** > **Tables** and verify that the **DimProduct** table has been created.
+3. In the **Explorer** pane, expand **Schemas** > **dbo** > **Tables** and verify that the **DimProduct** table has been created.
 
 4. On the **Home** menu tab, use the **New SQL Query** button to create a new query, and enter the following INSERT statement:
 
@@ -76,7 +72,7 @@ A warehouse is a relational database in which you can define tables and other ob
 
 5. Run the new query to insert three rows into the **DimProduct** table.
 
-6. When the query has finished, select the **Data** tab at the bottom of the page in the data warehouse. In the **Explorer** pane, select the **DimProduct** table and verify that the three rows have been added to the table.
+6. In the **Explorer** pane, select the **DimProduct** table and verify that the three rows have been added to the table.
 
 7. On the **Home** menu tab, use the **New SQL Query** button to create a new query. Then copy and paste the Transact-SQL code from [https://raw.githubusercontent.com/MicrosoftLearning/dp-data/main/create-dw.txt](https://raw.githubusercontent.com/MicrosoftLearning/dp-data/main/create-dw.txt) into the new query pane. **Scroll down and ensure that the last line ends with a semicolon (;) and includes the GO command. Only then should you click on "Run." If not, please follow the steps below.**
    
