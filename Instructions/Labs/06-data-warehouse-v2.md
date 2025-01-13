@@ -88,7 +88,7 @@ A warehouse is a relational database in which you can define tables and other ob
 
 >**Note**: The script should take around 30 seconds to run.
 
-9. Use the **Refresh** button on the toolbar to refresh the view. Then in the **Explorer** pane, verify that the **dbo** schema in the data warehouse now contains the following four tables:
+9. In the **Explorer** pane, verify that the **dbo** schema in the data warehouse now contains the following four tables:
     - **DimCustomer**
     - **DimDate**
     - **DimProduct**
@@ -111,9 +111,9 @@ A relational data warehouse typically consists of *fact* and *dimension* tables.
 4. Drag the **ProductKey** field from the **FactSalesOrder** table and drop it on the **ProductKey** field in the **DimProduct** table. Then confirm the following relationship details:
 and click on **Save**.
 
-    - **Table 1**: FactSalesOrder
+    - **From Table**: FactSalesOrder
     - **Column**: ProductKey
-    - **Table 2**: DimProduct
+    - **To Table**: DimProduct
     - **Column**: ProductKey
     - **Cardinality**: Many to one (*:1)
     - **Cross filter direction**: Single
@@ -212,7 +212,7 @@ Instead of writing SQL code, you can use the graphical query designer to query t
 
     ![Screenshot of the canvas with the FactSalesOrder table selected.](./Images/visual-query-merge1.png)
 
-5. In the **Merge queries** window, select **DimProduct** as the right table for merge. Select **ProductKey** in both queries, leave the default **Left outer** join type, and click **OK**.
+5. In the **Merge queries** window, select **DimProduct** as the right table for merge. Select **ProductKey** in both queries, leave the default **Left outer** join kind, and click **OK**.
 
 6. In the **Preview**, note that the new **DimProduct** column has been added to the FactSalesOrder table. Expand the column by clicking the arrow to the right of the column name. Select **ProductName** and click **OK**.
 
