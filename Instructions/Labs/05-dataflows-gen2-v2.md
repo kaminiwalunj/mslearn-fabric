@@ -41,13 +41,13 @@ Before working with data in Fabric, create a workspace with the Fabric trial ena
    
 7. On the dashboard, on the top menu you can see **Trial Status 59 days left**.
 
-   ![](./Images/gen2-1.png)
+   ![](./Images/updated4.png)
 
     >**Note**: You now have a **Fabric (Preview) trial** that includes a **Power BI trial** and a **Fabric (Preview) trial capacity**.
 
 8. In the left menu bar, click on **Workspaces (1)**, then select **+ New Workspace (2)**.
 
-   ![New lakehouse.](./Images/fab-image2.png)
+   ![New lakehouse.](./Images/gen2-1.png)
 
 9. Create a new workspace with a name **dp_fabric-<inject key="Deployment ID" enableCopy="false"/> (1)**, Choose a licensing mode as a **trial (2)** under **Advanced**. and click on **Apply (3)**.
 
