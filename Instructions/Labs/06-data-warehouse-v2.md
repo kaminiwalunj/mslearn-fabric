@@ -18,6 +18,8 @@ Now that you have a workspace which you have created in the previous exercise, i
 
 1. At the bottom left of the Power BI portal, switch to the **Data Warehouse** experience.
 
+     ![Screenshot of a new warehouse.](./Images/gen2-7.png)
+
     > **Note**: If you don't see the icon in the bottom left corner, Fabric isn't enabled for your tenant. Fabric is enabled in the admin portal for tenants that have a Power BI Premium subscription.
 
 2. In the **Data Warehouse** home page, create a **new Warehouse** and provide the name as **Data Warehouse-<inject key="Deployment ID" enableCopy="false"/>**.
@@ -59,6 +61,8 @@ A warehouse is a relational database in which you can define tables and other ob
 
 3. In the **Explorer** pane, expand **Schemas** > **dbo** > **Tables** and verify that the **DimProduct** table has been created.
 
+     ![Screenshot of a new warehouse.](./Images/gen2-9.png)
+
 4. On the **Home** menu tab, use the **New SQL Query** button to create a new query, and enter the following INSERT statement:
 
     ```sql
@@ -70,9 +74,13 @@ A warehouse is a relational database in which you can define tables and other ob
    GO
     ```
 
+     ![Screenshot of a new warehouse.](./Images/gen2-10.png)
+
 5. Run the new query to insert three rows into the **DimProduct** table.
 
 6. In the **Explorer** pane, select the **DimProduct** table and verify that the three rows have been added to the table.
+
+     ![Screenshot of a new warehouse.](./Images/gen2-11.png)
 
 7. On the **Home** menu tab, use the **New SQL Query** button to create a new query. Then copy and paste the Transact-SQL code from [https://raw.githubusercontent.com/MicrosoftLearning/dp-data/main/create-dw.txt](https://raw.githubusercontent.com/MicrosoftLearning/dp-data/main/create-dw.txt) into the new query pane. **Scroll down and ensure that the last line ends with a semicolon (;) and includes the GO command. Only then should you click on "Run." If not, please follow the steps below.**
    
@@ -204,13 +212,17 @@ Instead of writing SQL code, you can use the graphical query designer to query t
 
 1. On the **Home** menu, select **New visual query**.
 
-2. Drag **FactSalesOrder** onto the **canvas**. Notice that a preview of the table is displayed in the **Preview** pane below.
+     ![Screenshot of a new warehouse.](./Images/gen2-12.png)
+
+2. Drag **FactSalesOrder** from the Explorer menu onto the **canvas**. Notice that a preview of the table is displayed in the **Preview** pane below.
+
+     ![Screenshot of a new warehouse.](./Images/gen2-13.png)
 
 3. Drag **DimProduct** onto the **canvas**. We now have two tables in our query.
 
 4. Use the **(+)** button on the **FactSalesOrder** table on the canvas to **Merge queries**.
 
-    ![Screenshot of the canvas with the FactSalesOrder table selected.](./Images/visual-query-merge1.png)
+     ![Screenshot of a new warehouse.](./Images/gen2-14.png)
 
 5. In the **Merge queries** window, select **DimProduct** as the right table for merge. Select **ProductKey** in both queries, leave the default **Left outer** join kind, and click **OK**.
 
