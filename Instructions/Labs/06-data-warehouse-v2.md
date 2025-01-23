@@ -16,15 +16,15 @@ In this exercise, you will analyze data within a relational data warehouse using
 
 Now that you have a workspace which you have created in the previous exercise, it's time to switch to the *Data Warehouse* experience in the portal and create a data warehouse.
 
-1. At the bottom left of the Power BI portal, switch to the **Data Warehouse** experience.
+1. From the bottom left , Choose the **Powerbi** 
 
-     ![Screenshot of a new warehouse.](./Images/gen2-8.png)
+     ![Screenshot of a new warehouse.](./Images/powerbi.png)
 
     > **Note**: If you don't see the icon in the bottom left corner, Fabric isn't enabled for your tenant. Fabric is enabled in the admin portal for tenants that have a Power BI Premium subscription.
 
-2. In the **Data Warehouse** home page, create a **new Warehouse** and provide the name as **Data Warehouse-<inject key="Deployment ID" enableCopy="false"/>**.
+2. Select the workspace, click on **+ New Item**, create a **New Warehouse**, and name it **Data Warehouse-<inject key="Deployment ID" enableCopy="false"/>**.
 
-   ![Screenshot of a new warehouse.](./Images/warehouse.png)
+   ![Screenshot of a new warehouse.](./Images/warehouse-1.png)
 
 > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps
 > - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
