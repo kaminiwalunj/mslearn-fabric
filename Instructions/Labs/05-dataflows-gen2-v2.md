@@ -23,9 +23,9 @@ Before working with data in Fabric, create a workspace with the Fabric trial ena
 
    ![](./Images/odl-01.png)
    
-2. After signing in, choose **Power BI**.
+2. After signing in, From the bottom left choose **Power BI** .
 
-   ![](./Images/power-bi.png)
+   ![](./Images/powerbi.png)
 
 4. From the PowerBI home page, select **Account Manager** from the top-right corner to start the free **Microsoft Fabric trial** and click on **Free trial**.
     
@@ -68,15 +68,12 @@ Before working with data in Fabric, create a workspace with the Fabric trial ena
 
 ## Task 2 : Create a lakehouse
 
-Now that you have a workspace, it's time to switch to the **Data Engineering** experience in the portal and create a data lakehouse into which you'll ingest data.
+Now that you have a workspace, it's time to and create a data lakehouse into which you'll ingest data.
 
-1. At the bottom left of the Power BI portal, click the **Power BI (1)** icon to access the **Data Engineering (2)** experience.
    
-      ![New lakehouse.](./Images/fab-image13.png)
-   
-2. From the **Data Engineering** homepage, select **Lakehouse**.
+1. Select **+New Item (1)**, search for **Lakehouse(2)**, and then choose **Lakehouse(3)** from the results.
 
-      ![New lakehouse.](./Images/fab-image1.png)
+      ![New lakehouse.](./Images/lakehouse-1.png)
 
 3. Create a new Lakehouse
 
@@ -105,7 +102,7 @@ Now that you have a lakehouse, you need to ingest some data into it. One way to 
 
       >**Note**: If the option is not visible as mentioned above, please follow the steps highlighted in the screenshot below.
       
-      ![New lakehouse.](./Images/fab-image4.png)
+
 
 3. After a few seconds, the Power Query editor for your new dataflow opens as shown here.
 
@@ -210,9 +207,9 @@ Now that you have a lakehouse, you need to ingest some data into it. One way to 
 
 You can include a dataflow as an activity in a pipeline. Pipelines are used to orchestrate data ingestion and processing activities, enabling you to combine dataflows with other kinds of operation in a single, scheduled process. Pipelines can be created in a few different experiences, including Data Factory experience.
 
-1. In the fabric workspace, ensure you are in the Home page of **Data Engineering** experience. Select **Data pipeline** (select > the arrow if the Data pipeline option is not visible.)  then create a new pipeline and name it **Load Orders pipeline**.
+1. In the **fabric workspace(1)**, Click on **+New Item (2)** Select **Data pipeline (3)** (select > the arrow if the Data pipeline option is not visible.)  then create a new pipeline and name it **Load Orders pipeline**.
 
-      ![New lakehouse.](./Images/fab-image9.png)
+      ![New lakehouse.](./Images/datapipeline-1.png)
 
       ![New lakehouse.](./Images/fab-image10.png)
 
