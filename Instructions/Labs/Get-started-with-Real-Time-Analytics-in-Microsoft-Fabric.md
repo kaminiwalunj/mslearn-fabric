@@ -28,35 +28,37 @@ This lab takes approximately **30** minutes to complete.
 
    ![Navigate-To-AAD](./Images/entra01.png)
 
-2. Navigate to **Roles and administrators (1)**.
+2. On the **Microsoft Entra ID** page, navigate to **Roles and administrators (1)**.
 
-   ![Roles-and-Administrator](./Images/entraa02.png)
+   ![Roles-and-Administrator](./Images/29.png)
 
 3. In the **Roles and administrators** page, type **Fabric Administrator (1)** in the search box and select **Fabric Administrator (2)** from the results.
 
-   ![search-fabric-admin](./Images/entra02.png)
+   ![search-fabric-admin](./Images/31.png)
 
 4. This will take you to the **Fabric Administrator | Assignments** page where you will have to assign yourself the **Fabric Administrator role**. Now, click on **+ Add assignments (1)**.
 
-   ![click-add-assignments](./Images/04.png)
+   ![click-add-assignments](./Images/30.png)
 
-5. Make sure to **check the box (1)** next to your username, confirm if it is **Selected (2)** and click on **Add (3)**.
+5. Make sure to **check the box (1)** next to  **<inject key="AzureAdUserEmail"></inject>**, confirm if it is **Selected (2)** and click on **Add (3)**.
 
-   ![check-and-add-role](./Images/05.png)
+   ![check-and-add-role](./Images/32.png)
 
-6. You can confirm the **Fabric Administrator** role has been added successfully by **Refresh (1)** Fabric Administrators | Assignments page. After **confirming (2)** it has been added successfully, navigate back to **Home (3)**.
+6. You can confirm the **Fabric Administrator** role has been added successfully by **Refresh** Fabric Administrators | Assignments page. After **confirming** it has been added successfully, navigate back to **Home**.
 
-   ![check-and-navigate-back-to-home](./Images/06.png)
+   ![check-and-navigate-back-to-home](./Images/33.png)
 
 ## Task 2 : Create a workspace
 
 Before working with data in Fabric, create a workspace with the Fabric trial enabled.
 
-1. Sign into [Microsoft Fabric](https://app.fabric.microsoft.com) at `https://app.fabric.microsoft.com`.
+1. Click on the Microsoft Edge browser in the virtual machine (VM) on the left, and navigate to [Microsoft Power BI Portal](https://app.powerbi.com). You will be navigated to the login page.
 
-   ![](./Images/power-bi.png)
+    > **Note:** If you're using the lab environment, it may sign you indirectly.
 
-1. In the Power BI tab, provide the **Email/Username:** <inject key="AzureAdUserEmail"></inject> and select **Submit**.
+    > **Note:** If you are not using the lab environment and have an existing Power BI account, you may want to use the browser in private / incognito mode.
+
+1. In the Power BI tab, provide the **Email/Username: <inject key="AzureAdUserEmail"></inject> (1)** and select **Submit (2)**.
 
    ![](./Images/lab1-7.png)
 
@@ -70,38 +72,35 @@ Before working with data in Fabric, create a workspace with the Fabric trial ena
    
 1. Leave the Microsoft Edge browser window open.
 
-1. Select **Account manager (1)**, and click on **Start trial (2)**.
+1. Select **Account manager (1)**, and click on **Free trial (2)**.
 
    ![Account-manager-start](./Images/07.png)
 
-1. A new prompt will appear asking you to **Upgrade to a free Microsoft Fabric trial**, click on **Start trial (1)**.
+1. Upgrade to a free Microsoft Fabric trial dialog opens. Select **Activate**.
 
    ![Start-trial](./Images/lab1-11.png)
 
-   >**Note:** On the **Successfully upgraded to Microsoft Fabric** pop-up, select **Stay on current page**.
-
-1. Now, open **Account manager (1)** again, and verify **Trial Status (2)**.
-
-
-7. In the menu bar on the left, select **Workspaces** (the icon looks similar to &#128455;).
+7. In the menu bar on the left, select **Workspaces (1)** (the icon looks similar to &#128455;) and click on **New workplace (2)**.
 
    ![](./Images/workspace-1.png)
 
-8. Create a new workspace with a name **dp_fabric-<inject key="Deployment ID" enableCopy="false"/>**, expand  **Advanced:** and Under **License mode**, select **Trial capacity (1)** and click on **Apply (2)** to create and open the workspace.
+8. Create a new workspace named **dp_fabric-<inject key="Deployment ID" enableCopy="false"/> (1)**. Expand **Advanced**, then under **License mode**, select **Trial (2)** and click **Apply (3)** to create and open the workspace.
    
+   ![](./Images/workspace-3.png)
+
 9. When your new workspace opens, it should be empty, as shown here:
 
-    ![Screenshot of an empty workspace in Power BI.](./Images/new-workspace-2.png)
+   ![Screenshot of an empty workspace in Power BI.](./Images/34.png)
  
-10. At the bottom left of the Power BI portal, select the **Power BI** icon and switch to the **Microsoft Fabric** experience.
+10. At the bottom left of the Power BI portal, select the **Power BI** icon and switch to the **Fabric** experience.
+
+    ![](./Images/35.png)
 
 ## Task 3 : Download file for KQL database
 
 Now that you have a workspace, it's time to switch to the *Synapse Real-Time Analytics* experience in the portal and download the data file you're going to analyze.
 
-1. Download the data file for this exercise from [https://raw.githubusercontent.com/MicrosoftLearning/dp-data/main/sales.csv](https://raw.githubusercontent.com/MicrosoftLearning/dp-data/main/sales.csv), saving it as **sales.csv** on your local computer (or lab VM if applicable)
-
-   OR If you are using the lab virtual machine (lab VM) provided to you, you can get the file from the **C:\LabFiles\dp-data-main** directory.
+1. Download the **sales.csv** data file for this exercise from **[this link](https://raw.githubusercontent.com/MicrosoftLearning/dp-data/main/sales.csv)** and save it on your local computer or lab VM. **Alternatively,** if you are using the provided lab virtual machine (lab VM), you can find the file in the **C:\LabFiles\dp-data-main** directory.
 
 2. Return to browser window with **Microsoft Fabric** Experience.
 
@@ -109,37 +108,41 @@ Now that you have a workspace, it's time to switch to the *Synapse Real-Time Ana
 
 Kusto query language (KQL) is used to query static or streaming data in a table that is defined in a KQL database. To analyze the sales data, you must create a table in a KQL database and ingest the data from the file.
 
-1. In the **Microsoft Fabric** experience portal, select the **Synapse Real-Time Analytics** experience image as shown here:
+1. Navigate to **dp_fabric-<inject key="Deployment ID" enableCopy="false"/>** workspace from the hub menu bar on the left.
 
-    ![Screenshot of selected Fabric Experience home with RTA selected](./Images/fabric-experience-home.png)
+    ![](./Images/dp_fabric.png)
 
-2. On the **Home** page for the **Real-Time Analytics** experience, select **KQL database** and create a new database with a name as **kql-database**.
+1. In the **dp_fabric-<inject key="Deployment ID" enableCopy="false"/>** page, click on **New item (1)** and in the search bar serch for **Eventhouse (2)** and select **Eventhouse (3)**.
+   
+   ![](./Images/36.png)
 
-    ![Screenshot of selected Fabric Experience home with RTA selected](./Images/lab1-15.png)
+1. Enter **Eventhouse-<inject key="Deployment ID" enableCopy="false"/> (1)** as the name and click **Create (2)**.
 
-3. When the new database has been created, select the option to Get Data from **Local File**. Then use the wizard to import the data into a new table by selecting the following options:
+    ![](./Images/37.png)
 
-    ![Screenshot of selected Fabric Experience home with RTA selected](./Images/select-data.png)
+3. When the new eventhouse has been created, select the option to Get Data from **Local File**. Then use the wizard to import the data into a new table by selecting the following options:
+
+    ![Screenshot of selected Fabric Experience home with RTA selected](./Images/38.png)
     
     - **Destination**:
         - **Database**: *The database you created is already selected*
         - **Table**: *Create a new table named* **sales** by clicking on the + sign to the left of ***New table***
 
-        ![New table wizard step one](./Images/import-wizard-local-file-1.png?raw=true)
+        ![New table wizard step one](./Images/39.png)
 
         - You will now see the **Drag files here or a Browse for files** hyperlink appear in the same window.
 
-        ![New table wizard step two](./Images/import-wizard-local-file-2.png?raw=true)
+        ![New table wizard step two](./Images/40.png)
 
         - Browse or drag your **sales.csv** onto the screen and wait for the Status box to change to a green check box and then select **Next**
 
-        ![New table wizard step three](./Images/import-wizard-local-file-3.png?raw=true)
+        ![New table wizard step three](./Images/41.png)
 
         - In this screen you'll see that your column headings are in the first row although the system detected them, we still need to move the slider above these lines **First row is column header** in order to get keep from getting any errors.
 
         - Once you select this slider you will see everything looks good to go, select the **Finish** button on the bottom right of the panel.
 
-        ![New table wizard step five](./Images/lab1-18.png?raw=true)
+        ![New table wizard step five](./Images/42.png)
 
         - Wait for the steps in the summary screen to complete which include:
             - Create table (sales)
@@ -148,7 +151,7 @@ Kusto query language (KQL) is used to query static or streaming data in a table 
             - Ingestion
         - Select the **Close** button
 
-        ![New table wizard step six](./Images/import-wizard-local-file-6.png?raw=true)
+        ![New table wizard step six](./Images/43.png)
 
 > **Note**: In this example, you imported a very small amount of static data from a file, which is fine for the purposes of this exercise. In reality, you can use Kusto to analyze much larger volumes of data; including real-time data from a streaming source such as Azure Event Hubs.
 
@@ -156,7 +159,9 @@ Kusto query language (KQL) is used to query static or streaming data in a table 
 
 Now that you have a table of data in your database, you can use KQL code to query it.
 
-1. Make sure you have the **sales** table highlighted. From the menu bar, select the **Query table** drop-down, and from there select **Show any 100 records** .
+1. Make sure you have the **sales (1)** table highlighted. From the menu bar, select the **Query with code (2)** drop-down, and from there select **Show any 100 records (3)** .
+
+   ![](./Images/44.png)
 
 2. A new pane will open with the query and its result. 
 
@@ -190,7 +195,17 @@ Now that you have a table of data in your database, you can use KQL code to quer
 
 8. Run the query and review the results, which should contain the total net revenue for each product between January 1st and December 31st 2020 in ascending order of product name.
 
-9. Select **Save as KQL queryset** and save the query as **Revenue by Product**.
+1. Navigate to **dp_fabric-<inject key="Deployment ID" enableCopy="false"/>** workspace from the hub menu bar on the left.
+
+    ![](./Images/dp_fabric.png)
+
+1. Select **KQL Queryset** from the list.
+
+   ![](./Images/45.png)
+
+9. Change the name of KQL queryset to **Revenue by Product** and click on **Save**.
+
+   ![](./Images/46.png)
 
 ## Task 6 : Create a Power BI report from a KQL Query set
 
@@ -206,19 +221,16 @@ You can use your KQL Queryset as the basis for a Power BI report.
 
     ![Screenshot of a report from a KQL query.](./Images/powerbireport.png)
 
-5. In the **Power BI** window, in the **File** menu, select **Save**. Then save the report as **Revenue by Item.pbix** in the workspace where your lakehouse and KQL database are defined using a **Non-Business** sensitivity label.
+5. In the **Power BI** window, in the **File (1)** menu, select **Save (2)**. 
+
+   ![](./Images/47.png)
+
+1. Then save the report as **Revenue by Item.pbix** in the workspace where your lakehouse and select your workplace from the dropdown.
+
 6. Close the **Power BI** window, and in the bar on the left, select the icon for your workspace.
 
     Refresh the Workspace page if necessary to view all of the items it contains.
 
 7. In the list of items in your workspace, note that the **Revenue by Item** report is listed.
 
-## Clean up resources
-
-In this exercise, you have created a lakehouse, a KQL database to analyze the data uploaded into the lakehouse. You used KQL to query the data and create a query set, which was then used to create a Power BI report.
-
-If you've finished exploring your KQL database, you can delete the workspace you created for this exercise.
-
-1. In the bar on the left, select the icon for your workspace.
-2. In the **...** menu on the toolbar, select **Workspace settings**.
-3. In the **Other** section, select **Remove this workspace** and select **Delete**.
+## **Congratulations! you have successfully completed this lab, please click on next**

@@ -15,52 +15,63 @@ This lab will take approximately **45** minutes to complete.
 
 > **Note**: You'll need a Microsoft Fabric license to complete this exercise.
 
-## Task 1 : Create a workspace
-
-Before working with data in Fabric, create a workspace with the Fabric trial enabled.
-
-1. In the menu bar on the left, select **Workspaces** (the icon looks similar to &#128455;).
-
-   ![](./Images/workspace-1.png)
-
-1. Create a new workspace with a name **dp_fabric-<inject key="Deployment ID" enableCopy="false"/>**, expand  **Advanced:** and Under **License mode**, select **Trial capacity (1)** and click on **Apply (2)** to create and open the workspace.
-   
-1. When your new workspace opens, it should be empty, as shown here:
-
-    ![Screenshot of an empty workspace in Power BI.](./Images/new-workspace-2.png)
-
-## Task 2 : Create a Lakehouse and upload files
+## Task 1 : Create a Lakehouse and upload files
 
 Now that you have a workspace, it's time to switch to the *Data science* experience in the portal and create a data lakehouse for the data files you're going to analyze.
 
-1. At the bottom left of the Power BI portal, select the **Power BI** icon and switch to the **Data Engineering** experience.
-1. In the **Data engineering** home page, select **Lakehouse** and provide name of your choice and select **Create**.
+1. Navigate to **dp_fabric-<inject key="Deployment ID" enableCopy="false"/>** workspace from the hub menu bar on the left.
 
-    After a minute or so, a new lakehouse with no **Tables** or **Files** will be created. You need to ingest some data into the data lakehouse for analysis. There are multiple ways to do this, but in this exercise you'll simply download and extract a folder of text files your local computer (or lab VM if applicable) and then upload them to your lakehouse.
+    ![](./Images/dp_fabric.png)
 
-1. Download and save the `churn.csv` CSV file for this exercise from [https://raw.githubusercontent.com/MicrosoftLearning/dp-data/main/churn.csv](https://raw.githubusercontent.com/MicrosoftLearning/dp-data/main/churn.csv).
+1. In the **dp_fabric-<inject key="Deployment ID" enableCopy="false"/>** page, click on **New item (1)** and in the search bar serch for **Lakehouse (2)** and select **Lakehouse (3)**.
+   
+   ![](./Images/17.png)
 
-   OR If you are using the lab virtual machine (lab VM) provided to you, you can get the file from the **C:\LabFiles\dp-data-main** directory.
+1. Enter **Lakehouse<inject key="Deployment ID" enableCopy="false"/> (1)** as the name and click **Create (2)**.
 
-1. Return to the web browser tab containing your lakehouse, and in the **...** menu for the **Files** node in the **Lake view** pane, select **Upload** and **Upload files**, and then upload the **churn.csv** file from your local computer (or lab VM if applicable) to the lakehouse.
+    ![](./Images/18.png)
+
+    >**Note:** After a minute or so, a new lakehouse with no **Tables** or **Files** will be created. You need to ingest some data into the data lakehouse for analysis. There are multiple ways to do this, but in this exercise you'll simply download and extract a folder of text files your local computer (or lab VM if applicable) and then upload them to your lakehouse.
+
+1. Download the **churn.csv** file for this exercise from **[churn.csv](https://raw.githubusercontent.com/MicrosoftLearning/dp-data/main/churn.csv)** and save it on your local computer or lab VM. **Alternatively,** if you are using the provided lab virtual machine (lab VM), you can find the file in the **C:\LabFiles\dp-data-main** directory.
+
+1. Return to the web browser tab containing your lakehouse, and under **Get data in your lakehouse**  select **Upload files**.
+
+    ![](./Images/19.png)
+
+1. Upload the **churn.csv** file from your local computer (or lab VM if applicable) to the lakehouse.
+
+   ![](./Images/20.png)
 
 1. After the files have been uploaded, select **Files** and verify that the CSV file have been uploaded.
 
-## Task 3 : Create a Notebook
+   ![](./Images/21.png)
+
+## Task 2 : Create a Notebook
 
 To train a model, you can create a *notebook*. Notebooks provide an interactive environment in which you can write and run code (in multiple languages) as *experiments*.
 
-1. At the bottom left of the Power BI portal, select the **Data engineering** icon and switch to the **Data science** experience.
+1. Navigate to **dp_fabric-<inject key="Deployment ID" enableCopy="false"/>** workspace from the hub menu bar on the left.
 
-1. In the **Data science** home page, create a new **Notebook** by selecting **Notebook** tab.
+    ![](./Images/dp_fabric.png)
+
+1. In the **dp_fabric-<inject key="Deployment ID" enableCopy="false"/>** page, click on **New item** and in the search bar serch for **Notebook (1)** and select **Notebook (2)**.
+
+     ![](./Images/16.png)
 
     After a few seconds, a new notebook containing a single *cell* will open. Notebooks are made up of one or more cells that can contain *code* or *markdown* (formatted text).
 
 1. Select the first cell (which is currently a *code* cell), and then in the dynamic tool bar at its top-right, use the **M&#8595;** button to convert the cell to a *markdown* cell.
 
+    ![](./Images/22.png)
+
     When the cell changes to a markdown cell, the text it contains is rendered.
 
-1. Use the **&#128393;** (Edit) button to switch the cell to editing mode, then delete the content and enter the following text:
+1. Use the **&#128393;** (Edit) button to switch the cell to editing mode.
+
+   ![](./Images/24.png)
+
+1. Delete the content and enter the following text:
 
     ```text
    # Train a machine learning model and track with MLflow
@@ -68,23 +79,33 @@ To train a model, you can create a *notebook*. Notebooks provide an interactive 
    Use the code in this notebook to train and track models.
     ``` 
 
-## Task 4 : Load data into a dataframe
+## Task 3 : Load data into a dataframe
 
 Now you're ready to run code to prepare data and train a model. To work with data, you'll use *dataframes*. Dataframes in Spark are similar to Pandas dataframes in Python, and provide a common structure for working with data in rows and columns.
 
-1. Select **Lakehouses** from the explorer. In the **Add lakehouse** pane, select **Add** to add a lakehouse.
+1. Select **Lakehouses** from the explorer.
 
-   ![](./Images/lab2-6.png)
+   ![](./Images/25.png)
 
-   ![](./Images/lab2-7.png)
+1. In the **Add lakehouse** pane, select **Add** to add a lakehouse.
 
-1. Select **Existing lakehouse** in Add Lakehouse pane and select **Add**.
+   ![](./Images/26.png)
+
+1. Select **Existing Lakehouse without Schema** in Add Lakehouse pane and select **Add**.
+
+    ![](./Images/27.png)
+
 1. Select the lakehouse you created in a previous section and select **Add**
 
-   ![](./Images/lab2-9.png)
+   ![](./Images/28.png)
 
-1. Select the **Files** folder so that the CSV file is listed next to the notebook editor.
-1. In the **...** menu for **churn.csv**, select **Load data** > **Pandas**. A new code cell containing the following code should be added to the notebook:
+1. Select the **Files (1)** folder so that the CSV file is listed next to the notebook editor.
+
+1. In the **...** menu for **churn.csv (2)**, select **Load data (3)** > **Pandas (4)**. 
+
+    ![](./Images/23.png)
+
+1. A new code cell containing the following code should be added to the notebook:
 
     ```python
    import pandas as pd
@@ -111,11 +132,15 @@ Now you're ready to run code to prepare data and train a model. To work with dat
 
     The output shows the rows and columns of customer data from the churn.csv file.
 
-## Task 5 : Train a Machine Learning model
+## Task 4 : Train a Machine Learning model
 
 Now that you've loaded the data, you can use it to train a machine learning model and predict customer churn. You'll train a model using the Scikit-Learn library and track the model with MLflow. 
 
-1. Use the **+ Code** icon below the cell output to add a new code cell to the notebook, and enter the following code in it. If the **+ Code** icon isn't visible, hover below the cell to make it appear.:
+1. Use the **+ Code** icon below the cell output to add a new code cell to the notebook.
+
+   ![](./Images/15.png)
+
+1. Enter the following code in it. If the **+ Code** icon isn't visible, hover below the cell to make it appear.:
 
     ```python
    from sklearn.model_selection import train_test_split
@@ -125,6 +150,8 @@ Now that you've loaded the data, you can use it to train a machine learning mode
    
    X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.30, random_state=0)
     ```
+
+    ![](./Images/13.png)
 
 1. Run the code cell you added, and note you're omitting 'CustomerID' from the dataset, and splitting the data into a training and test dataset.
 1. Add another new code cell to the notebook, enter the following code in it, and run it:
@@ -136,6 +163,8 @@ Now that you've loaded the data, you can use it to train a machine learning mode
     ```
     
     The code creates an MLflow experiment named `experiment-churn`. Your models will be tracked in this experiment.
+
+    ![](./Images/14.png)
 
 1. Add another new code cell to the notebook, enter the following code in it, and run it:
 
@@ -152,6 +181,9 @@ Now that you've loaded the data, you can use it to train a machine learning mode
     
     The code trains a classification model using Logistic Regression. Parameters, metrics, and artifacts, are automatically logged with MLflow. Additionally, you're logging a parameter called `estimator`, with the value `LogisticRegression`.
 
+    ![](./Images/12.png)
+
+
 1. Add another new code cell to the notebook, enter the following code in it, and run it:
 
     ```python
@@ -167,7 +199,9 @@ Now that you've loaded the data, you can use it to train a machine learning mode
 
     The code trains a classification model using Decision Tree Classifier. Parameters, metrics, and artifacts, are automatically logged with MLflow. Additionally, you're logging a parameter called `estimator`, with the value `DecisionTreeClassifier`.
 
-## Task 6 : Use MLflow to search and view your experiments
+    ![](./Images/11.png)
+
+## Task 5 : Use MLflow to search and view your experiments
 
 When you've trained and tracked models with MLflow, you can use the MLflow library to retrieve your experiments and its details.
 
@@ -180,6 +214,8 @@ When you've trained and tracked models with MLflow, you can use the MLflow libra
        print(exp.name)
     ```
 
+   ![](./Images/10.png)
+
 1. To retrieve a specific experiment, you can get it by its name:
 
     ```python
@@ -188,17 +224,22 @@ When you've trained and tracked models with MLflow, you can use the MLflow libra
    print(exp)
     ```
 
+    ![](./Images/9.png)
+
 1. Using an experiment name, you can retrieve all jobs of that experiment:
 
     ```python
    mlflow.search_runs(exp.experiment_id)
     ```
+    ![](./Images/8.png)
 
 1. To more easily compare job runs and outputs, you can configure the search to order the results. For example, the following cell orders the results by `start_time`, and only shows a maximum of `2` results: 
 
     ```python
    mlflow.search_runs(exp.experiment_id, order_by=["start_time DESC"], max_results=2)
     ```
+
+    ![](./Images/7.png)
 
 1. Finally, you can plot the evaluation metrics of multiple models next to each other to easily compare models:
 
@@ -221,39 +262,51 @@ When you've trained and tracked models with MLflow, you can use the MLflow libra
 
     ![Screenshot of the plotted evaluation metrics.](./Images/plotted-metrics.png)
 
-## Task 7 : Explore your experiments
+## Task 6 : Explore your experiments
 
 Microsoft Fabric will keep track of all your experiments and allows you to visually explore them.
 
-1. Navigate to your workspace from the hub menu bar on the left.
+1. Navigate to **dp_fabric-<inject key="Deployment ID" enableCopy="false"/>** workspace from the hub menu bar on the left.
+
+    ![](./Images/dp_fabric.png)
+
 1. Select the `experiment-churn` experiment to open it.
 
-    > **Tip:**
-    > If you don't see any logged experiment runs, refresh the page.
+    ![](./Images/6.png)
+
+    > **Tip:** If you don't see any logged experiment runs, refresh the page.
 
 1. Review the **Run metrics** to explore accurate your regression model is.
-1. Navigate back to the home page and select the `experiment-churn` experiment to open it.
-1. Review the **Run metrics** to explore the accuracy of the classification model. Note that the type of metrics are different as you trained a different type of model.
 
-## Task 8 : Save the model
+## Task 7 : Save the model
 
 After comparing machine learning models that you've trained across experiments, you can choose the best performing model. To use the best performing model, save the model and use it to generate predictions.
 
 1. Select **Save as ML model** in the experiment ribbon.
-1. Select **Create a new ML model** in the newly opened pop-up window.
-1. Select the `model` folder.
-1. Name the ML model name as `model-churn`, and select **Save**.
+   
+   ![](./Images/5.png)
+
+1. In the newly opened pop-up window, select **Create a new ML model**, then choose the `model` **(1)** folder. Enter **model-churn** as the name **(2)** and click **Save (3)**.
+
+    ![](./Images/4.png)
+
 1. Select **View ML model** in the notification that appears at the top right of your screen when the model is created. You can also refresh the window. The saved model is linked under **ML model versions**.
+
+   ![](./Images/3.png)
 
 Note that the model, the experiment, and the experiment run are linked, allowing you to review how the model is trained.
 
-## Task 9 : Save the Notebook and end the Spark session
+## Task 8 : Save the Notebook and end the Spark session
 
 Now that you've finished training and evaluating the models, you can save the notebook with a meaningful name and end the Spark session.
 
-1. In the notebook menu bar, use the ⚙️ **Settings** icon to view the notebook settings.
-2. Set the **Name** of the notebook to **Train and compare models**, and then close the settings pane.
-3. On the notebook menu, select **Stop session** to end the Spark session.
+1. In the notebook menu bar, click the ⚙️ **Settings (1)** icon to open the notebook settings. Set the **Name** of the notebook to **Train and compare models (2)**, then **close (3)** the settings pane.
+
+   ![](./Images/2.png)
+
+2. On the notebook menu, select **Stop session** to end the Spark session.
+
+    ![](./Images/1.png)
 
 ## Clean up resources
 
@@ -261,6 +314,20 @@ In this exercise, you have created a notebook and trained a machine learning mod
 
 If you've finished exploring your model and experiments, you can delete the workspace you created for this exercise.
 
-1. In the bar on the left, select the icon for your workspace to view all of the items it contains.
-2. In the **...** menu on the toolbar, select **Workspace settings**.
-3. In the **Other** section, select **Remove this workspace** and select **Delete** .
+1. In the bar on the left, select the **dp_fabric-<inject key="Deployment ID" enableCopy="false"/>** to view all of the items it contains.
+
+   ![](./Images/dp_fabric.png)
+
+1. From the top right corner, click on **Workspace settings**.
+
+   ![](./Images/setting.png)
+
+1. In the **General** section, scroll down and select **Remove this workspace** .
+
+    ![](./Images/remove.png)
+
+1. In the **Delete workspace** pop-up, click **Delete**.
+
+   ![Screenshot of the plotted evaluation metrics.](./Images/delete.png)
+
+## **Congratulations! you have successfully completed this lab.**
