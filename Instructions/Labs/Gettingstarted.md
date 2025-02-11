@@ -8,8 +8,8 @@ In this lab, we will use Microsoft Fabric to perform real-time data analytics an
 
 ## Objectives
 
-- **Real-Time Analytics in Microsoft Fabric** : In this lab, you'll learn how to process and analyze real-time data using Microsoft Fabric. You'll explore key services such as event processing, data streaming, and analytics integration to gain insights from live data efficiently.
-- **Data science in Microsoft Fabric** : In this lab, you'll learn how to leverage Microsoft Fabric for data science, from data preparation to model training and deployment. 
+- **Real-Time Analytics in Microsoft Fabric** : Learn how to process and analyze real-time data using Microsoft Fabric. You'll explore key services such as event processing, data streaming, and analytics integration to gain insights from live data efficiently.
+- **Data science in Microsoft Fabric** :Learn how to leverage Microsoft Fabric for data science, from data preparation to model training and deployment. 
 
 ## Prerequisites
 
@@ -20,7 +20,7 @@ In this lab, we will use Microsoft Fabric to perform real-time data analytics an
 
 ## Architecture
 
- These labs utilize a step-by-step workflow for data processing and machine learning processes. Lab 1 focuses on setting up a workspace, querying data with KQL, and generating PBI reports. Lab 2 involves uploading files in the datalake, training machine learning models, conducting experiments with MLflow, and saving the model and notebook.
+These labs utilize a step-by-step workflow for data processing and machine learning processes. Lab 1 focuses on setting up a workspace, querying data with KQL, and generating PBI reports. Lab 2 involves uploading files in the datalake, training machine learning models, conducting experiments with MLflow, and saving the model and notebook.
 
 ## Architecture Diagram
 
@@ -38,6 +38,7 @@ The architecture for this lab involves several key components:
 - **Notebook**: An interactive document for writing, executing, and visualizing code, commonly used in data science and engineering.
 
 ## Getting Started with the Lab
+
 Welcome to Real-Time Analytics and Data Science with Microsoft Fabric Workshop! We've prepared a seamless environment for you to explore and learn about fabric services. Let's begin by making the most of this experience.
 
 ## Accessing Your Lab Environment
@@ -64,11 +65,11 @@ Feel free to start, stop, or restart your virtual machine as needed from the **R
  
 ![Manage Your Virtual Machine](./Images/res.png)
  
-1. ## Lab Guide Zoom In/Zoom Out
+## Lab Guide Zoom In/Zoom Out
  
 1. To adjust the zoom level for the environment page, click the **A↕ : 100%** icon located next to the timer in the lab environment.
 
-     ![OpenAI](./Images/A.png)
+  ![OpenAI](./Images/A.png)
 
 ### Support Contact
 The CloudLabs support team is available 24/7, 365 days a year, via email and live chat to ensure seamless assistance at any time. We offer dedicated support channels tailored specifically for both learners and instructors, ensuring that all your needs are promptly and efficiently addressed.
