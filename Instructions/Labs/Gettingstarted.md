@@ -1,6 +1,10 @@
-# Get started with Real-Time Analytics and data science with Microsoft Fabric
+# Get started with Real-Time Analytics and Data Science with Microsoft Fabric
 
-This hands-on lab provides an immersive experience in real-time analytics and data science using Microsoft Fabric. We've set up a seamless environment for you to explore and learn about Microsoft Fabric services. 
+## Overall Estimated Duration: 75 Minutes
+
+## Overview
+
+In this lab, we will use Microsoft Fabric to create a notebook and train a machine learning model to predict customer churn using Scikit-Learn and MLflow for tracking. Synapse Real-Time Analytics in Fabric leverages a KQL Database and Kusto Query Language KQL for efficient real-time data analysis, helping uncover insights from structured and time-series data. By completing this lab, you will gain hands-on experience in machine learning, model tracking, and real-time analytics using Microsoft Fabric.
 
 ## Objectives
 

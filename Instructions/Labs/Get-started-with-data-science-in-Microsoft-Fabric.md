@@ -1,15 +1,11 @@
 # Lab 2: Get started with data science in Microsoft Fabric
 
-## Estimated Duration: 45 minutes
+### Estimated Duration: 45 minutes
 
-## Overview
-Data science is a combination of mathematics, statistics, and computer engineering. When you perform data science, you can analyze your data and identify complicated patterns that can provide you with meaningful insights for your organization. You can use data science to create artificial intelligence (AI) models that encompass the complicated patterns you find in your data. A common approach is to use data science to train machine learning models using libraries like scikit-learn in Python to achieve AI. 
-
-## Architecture Diagram
-
-![Architecture Diagram](./Images/Data-science-in-Microsoft-Fabric.png)
+Data science is a combination of mathematics, statistics, and computer engineering. When you perform data science, you can analyze your data and identify complicated patterns that can provide you with meaningful insights for your organization. You can use data science to create artificial intelligence (AI) models that encompass the complicated patterns you find in your data. A common approach is to use data science to train machine learning models using libraries like scikit-learn in Python to achieve AI.
 
 ## Lab Objectives
+
 You will be able to complete the following tasks:
 
 - Task 1: Create a Lakehouse and upload files
@@ -21,13 +17,9 @@ You will be able to complete the following tasks:
 - Task 7: Save the model
 - Task 8: Save the Notebook and end the Spark session
 
-## Get started with data science in Microsoft Fabric
-
-In this lab, we will use Microsoft Fabric to create a notebook and train a machine learning model to predict customer churn. We will use Scikit-Learn to train the model and MLflow to track its performance. Customer churn is a critical business problem that many companies face, and predicting which customers are likely to churn can help companies retain their customers and increase revenue. By completing this lab, you will gain hands-on experience in machine learning and model tracking, and learn how to use Microsoft Fabric to create a notebook for your projects.
-
-> **Note**: You'll need a Microsoft Fabric license to complete this exercise.
-
 ## Task 1 : Create a Lakehouse and upload files
+
+In this task, you will learn how to create a Lakehouse in Microsoft Fabric and upload files for data storage and processing.
 
 Now that you have a workspace, it's time to switch to the *Data science* experience in the portal and create a data lakehouse for the data files you're going to analyze.
 
@@ -59,7 +51,11 @@ Now that you have a workspace, it's time to switch to the *Data science* experie
 
    ![](./Images/21.png)
 
+#### Congratulations! You have successfully completed this task. Please move on to the next task.
+
 ## Task 2 : Create a Notebook
+
+In this task, you will learn how to create a Notebook in Microsoft Fabric for interactive data exploration and analysis.
 
 To train a model, you can create a *notebook*. Notebooks provide an interactive environment in which you can write and run code (in multiple languages) as *experiments*.
 
@@ -90,8 +86,11 @@ To train a model, you can create a *notebook*. Notebooks provide an interactive 
 
    Use the code in this notebook to train and track models.
     ``` 
+#### Congratulations! You have successfully completed this task. Please move on to the next task.
 
 ## Task 3 : Load data into a dataframe
+
+In this task, you will learn how to load data into a DataFrame in Microsoft Fabric for processing and analysis.
 
 Now you're ready to run code to prepare data and train a model. To work with data, you'll use *dataframes*. Dataframes in Spark are similar to Pandas dataframes in Python, and provide a common structure for working with data in rows and columns.
 
@@ -144,7 +143,11 @@ Now you're ready to run code to prepare data and train a model. To work with dat
 
     The output shows the rows and columns of customer data from the churn.csv file.
 
+#### Congratulations! You have successfully completed this task. Please move on to the next task.
+
 ## Task 4 : Train a Machine Learning model
+
+In this task, you will learn how to train a Machine Learning model in Microsoft Fabric using a dataset to make predictions and gain insights.
 
 Now that you've loaded the data, you can use it to train a machine learning model and predict customer churn. You'll train a model using the Scikit-Learn library and track the model with MLflow. 
 
@@ -195,7 +198,6 @@ Now that you've loaded the data, you can use it to train a machine learning mode
 
     ![](./Images/12.png)
 
-
 1. Add another new code cell to the notebook, enter the following code in it, and run it:
 
     ```python
@@ -213,7 +215,11 @@ Now that you've loaded the data, you can use it to train a machine learning mode
 
     ![](./Images/11.png)
 
+#### Congratulations! You have successfully completed this task. Please move on to the next task.
+
 ## Task 5 : Use MLflow to search and view your experiments
+
+In this task, you will learn how to use MLflow to search and view your machine learning experiments in Microsoft Fabric for tracking and managing model performance.
 
 When you've trained and tracked models with MLflow, you can use the MLflow library to retrieve your experiments and its details.
 
@@ -274,7 +280,11 @@ When you've trained and tracked models with MLflow, you can use the MLflow libra
 
     ![Screenshot of the plotted evaluation metrics.](./Images/plotted-metrics.png)
 
+#### Congratulations! You have successfully completed this task. Please move on to the next task.
+
 ## Task 6 : Explore your experiments
+
+In this task, you will learn how to explore your machine learning experiments in Microsoft Fabric to analyze performance metrics and insights.
 
 Microsoft Fabric will keep track of all your experiments and allows you to visually explore them.
 
@@ -290,7 +300,11 @@ Microsoft Fabric will keep track of all your experiments and allows you to visua
 
 1. Review the **Run metrics** to explore accurate your regression model is.
 
+#### Congratulations! You have successfully completed this task. Please move on to the next task.
+
 ## Task 7 : Save the model
+
+In this task, you will learn how to save the trained Machine Learning model in Microsoft Fabric for future use and deployment.
 
 After comparing machine learning models that you've trained across experiments, you can choose the best performing model. To use the best performing model, save the model and use it to generate predictions.
 
@@ -308,7 +322,11 @@ After comparing machine learning models that you've trained across experiments, 
 
 Note that the model, the experiment, and the experiment run are linked, allowing you to review how the model is trained.
 
+#### Congratulations! You have successfully completed this task. Please move on to the next task.
+
 ## Task 8 : Save the Notebook and end the Spark session
+
+In this task, you will learn how to save the Notebook and end the Spark session in Microsoft Fabric to preserve your work and free up resources.
 
 Now that you've finished training and evaluating the models, you can save the notebook with a meaningful name and end the Spark session.
 
@@ -320,9 +338,9 @@ Now that you've finished training and evaluating the models, you can save the no
 
     ![](./Images/1.png)
 
-## Clean up resources
+#### Congratulations! You have successfully completed this task.
 
-In this exercise, you have created a notebook and trained a machine learning model. You used Scikit-Learn to train the model and MLflow to track it´s performance.
+## Clean up resources
 
 If you've finished exploring your model and experiments, you can delete the workspace you created for this exercise.
 

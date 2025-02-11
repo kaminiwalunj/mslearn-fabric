@@ -1,38 +1,22 @@
-# Lab 1: Get started with Real-Time Analytics in Microsoft Fabric
+# Lab 1: Get Started with Real-Time Analytics in Microsoft Fabric
 
-## Estimated Duration: 30 minutes
-
-## Overview
+### Estimated Duration: 30 minutes
 
 Microsoft Fabric provides an end-to-end platform for data solutions, including real-time data analytics. Synapse Real-Time Analytics in Fabric uses a KQL Database to provide table storage and Kusto Query Language (KQL) which is a powerful tool for analyzing data. This structure provides an efficient way to find insights and patterns from textual or structured data. Moreover, KQL is optimized for data that includes a time series component, such as real-time data from log files or streaming services. With Real-Time Analytics, you can focus and scale up your analytics solution while democratizing data for the needs for your entire data organization.
 
-### Architecture Diagram
-
-![Architecture Diagram](./Images/Synapse-Real-Time-Analytics-in-Fabric.png)
-
 ## Lab Objectives
+
 You will be able to complete the following tasks:
 
 - Task 1: Assign Fabric Administrator Role
-- Task 2: Create a workspace
-- Task 3: Download file for KQL database
-- Task 4: Create a KQL database
-- Task 5: Use KQL to query the sales table
-- Task 6: Create a Power BI report from a KQL Query set
-
-## Get started with Real-Time Analytics in Microsoft Fabric
-
-Microsoft Fabric provides a runtime that you can use to store and query data by using Kusto Query Language (KQL). Kusto is optimized for data that includes a time series component, such 
-as real-time data from log files or IoT devices.
-
-In Fabric, you only need a source and a Kusto database to start streaming data in and out of Fabric and writing your queries using KQL. Microsoft Fabric also provides KQL Querysets that 
-can be shared within the tenant and Power BI using what's known as quick create.
-
-   ![](./Images/realtime-analtyics1.png)
-
-> **Note**: You'll need a Microsoft Fabric license to complete this exercise.
+- Task 2: Create a workspace and Download file for KQL database
+- Task 3: Create a KQL database
+- Task 4: Use KQL to query the sales table
+- Task 5: Create a Power BI report from a KQL Query set
 
 ## Task 1: Assign Fabric Administrator Role
+
+In this task, you will learn how to assign the Fabric Administrator role to manage permissions and access within Microsoft Fabric.
 
 1. In the Azure portal, type **Microsoft Entra ID (1)** in the search box and select **Microsoft Entra ID (2)** from the results.
 
@@ -58,9 +42,11 @@ can be shared within the tenant and Power BI using what's known as quick create.
 
    ![check-and-navigate-back-to-home](./Images/33.png)
 
+#### Congratulations! You have successfully completed this task. Please move on to the next task.
+
 ## Task 2 : Create a workspace
 
-Before working with data in Fabric, create a workspace with the Fabric trial enabled.
+In this task, you will learn how to create a workspace in Microsoft Fabric.
 
 1. Click on the Microsoft Edge browser in the virtual machine (VM) on the left, and navigate to [Microsoft Power BI Portal](https://app.powerbi.com). You will be navigated to the login page.
 
@@ -106,17 +92,18 @@ Before working with data in Fabric, create a workspace with the Fabric trial ena
 
     ![](./Images/35.png)
 
-## Task 3 : Download file for KQL database
 
-Now that you have a workspace, it's time to switch to the *Synapse Real-Time Analytics* experience in the portal and download the data file you're going to analyze.
+#### Congratulations! You have successfully completed this task. Please move on to the next task.
 
-1. Download the **sales.csv** data file for this exercise from **[this link](https://raw.githubusercontent.com/MicrosoftLearning/dp-data/main/sales.csv)** and save it on your local computer or lab VM. **Alternatively,** if you are using the provided lab virtual machine (lab VM), you can find the file in the **C:\LabFiles\dp-data-main** directory.
+## Task 3 : Download file for KQL database and Create a KQL database
 
-2. Return to browser window with **Microsoft Fabric** Experience.
+In this task, you will learn how to download a file for a KQL database and create a KQL database in Microsoft Fabric for querying and analyzing data efficiently.
 
-## Task 4 : Create a KQL database
+Now that you have a workspace, switch to the *Synapse Real-Time Analytics* experience in the portal and download the data file for analysis. Using *Kusto Query Language (KQL)*, you can query static or streaming data in a table within a KQL database. To analyze sales data, create a table in the database and ingest the downloaded file.
 
-Kusto query language (KQL) is used to query static or streaming data in a table that is defined in a KQL database. To analyze the sales data, you must create a table in a KQL database and ingest the data from the file.
+1. Download the **sales.csv** data file for this exercise from **[Sales](https://raw.githubusercontent.com/MicrosoftLearning/dp-data/main/sales.csv)** and save it on your local computer or lab VM. **Alternatively,** if you are using the provided lab virtual machine (lab VM), you can find the file in the **C:\LabFiles\dp-data-main** directory.
+
+1. Return to browser window with **Microsoft Fabric** Experience.
 
 1. Navigate to **dp_fabric-<inject key="Deployment ID" enableCopy="false"/>** workspace from the hub menu bar on the left.
 
@@ -138,21 +125,21 @@ Kusto query language (KQL) is used to query static or streaming data in a table 
         - **Database**: *The database you created is already selected*
         - **Table**: *Create a new table named* **sales** by clicking on the + sign to the left of ***New table***
 
-        ![New table wizard step one](./Images/39.png)
+          ![New table wizard step one](./Images/39.png)
 
         - You will now see the **Drag files here or a Browse for files** hyperlink appear in the same window.
 
-        ![New table wizard step two](./Images/40.png)
+          ![New table wizard step two](./Images/40.png)
 
         - Browse or drag your **sales.csv** onto the screen and wait for the Status box to change to a green check box and then select **Next**
 
-        ![New table wizard step three](./Images/41.png)
+          ![New table wizard step three](./Images/41.png)
 
         - In this screen you'll see that your column headings are in the first row although the system detected them, we still need to move the slider above these lines **First row is column header** in order to get keep from getting any errors.
 
         - Once you select this slider you will see everything looks good to go, select the **Finish** button on the bottom right of the panel.
 
-        ![New table wizard step five](./Images/42.png)
+          ![New table wizard step five](./Images/42.png)
 
         - Wait for the steps in the summary screen to complete which include:
             - Create table (sales)
@@ -161,11 +148,15 @@ Kusto query language (KQL) is used to query static or streaming data in a table 
             - Ingestion
         - Select the **Close** button
 
-        ![New table wizard step six](./Images/43.png)
+          ![New table wizard step six](./Images/43.png)
 
 > **Note**: In this example, you imported a very small amount of static data from a file, which is fine for the purposes of this exercise. In reality, you can use Kusto to analyze much larger volumes of data; including real-time data from a streaming source such as Azure Event Hubs.
 
-## Task 5 : Use KQL to query the sales table
+#### Congratulations! You have successfully completed this task. Please move on to the next task.
+
+## Task 4 : Use KQL to query the sales table
+
+In this task, you will learn how to use KQL (Kusto Query Language) to query the Sales table and analyze data efficiently in Microsoft Fabric.
 
 Now that you have a table of data in your database, you can use KQL code to query it.
 
@@ -203,7 +194,7 @@ Now that you have a table of data in your database, you can use KQL code to quer
    | sort by Item asc
     ```
 
-8. Run the query and review the results, which should contain the total net revenue for each product between January 1st and December 31st 2020 in ascending order of product name.
+1. Run the query and review the results, which should contain the total net revenue for each product between January 1st and December 31st 2020 in ascending order of product name.
 
 1. Navigate to **dp_fabric-<inject key="Deployment ID" enableCopy="false"/>** workspace from the hub menu bar on the left.
 
@@ -213,11 +204,15 @@ Now that you have a table of data in your database, you can use KQL code to quer
 
    ![](./Images/45.png)
 
-9. Change the name of KQL queryset to **Revenue by Product** and click on **Save**.
+1. Change the name of KQL queryset to **Revenue by Product** and click on **Save**.
 
    ![](./Images/46.png)
 
-## Task 6 : Create a Power BI report from a KQL Query set
+#### You have successfully completed this task. Please proceed to the next task.
+
+### Task 5 : Create a Power BI report from a KQL Query set
+
+In this task, you will learn how to create a Power BI report from a KQL query set to visualize and analyze data effectively.
 
 You can use your KQL Queryset as the basis for a Power BI report.
 
@@ -243,12 +238,14 @@ You can use your KQL Queryset as the basis for a Power BI report.
 
 7. In the list of items in your workspace, note that the **Revenue by Item** report is listed.
 
+#### You have successfully completed this task.
+
 ## Review
+You have completed the following tasks:
 
 - Assigned Fabric Administrator Role
 - Created a workspace
-- Downloaded file for KQL database
-- Created a KQL database
+- Downloaded file for KQL database and Created a KQL database
 - Used KQL to query the sales table
 - Created a Power BI report from a KQL Query set
 
