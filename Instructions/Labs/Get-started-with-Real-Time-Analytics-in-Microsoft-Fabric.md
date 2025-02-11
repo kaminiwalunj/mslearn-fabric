@@ -22,23 +22,23 @@ In this task, you will learn how to assign the Fabric Administrator role to mana
 
    ![Navigate-To-AAD](./Images/entra01.png)
 
-2. On the **Microsoft Entra ID** page, navigate to **Roles and administrators (1)**.
+1. On the **Microsoft Entra ID** page, navigate to **Roles and administrators (1)**.
 
    ![Roles-and-Administrator](./Images/29.png)
 
-3. In the **Roles and administrators** page, type **Fabric Administrator (1)** in the search box and select **Fabric Administrator (2)** from the results.
+1. In the **Roles and administrators** page, type **Fabric Administrator (1)** in the search box and select **Fabric Administrator (2)** from the results.
 
    ![search-fabric-admin](./Images/31.png)
 
-4. This will take you to the **Fabric Administrator | Assignments** page where you will have to assign yourself the **Fabric Administrator role**. Now, click on **+ Add assignments (1)**.
+1. This will take you to the **Fabric Administrator | Assignments** page where you will have to assign yourself the **Fabric Administrator role**. Now, click on **+ Add assignments (1)**.
 
    ![click-add-assignments](./Images/30.png)
 
-5. Make sure to **check the box (1)** next to  **<inject key="AzureAdUserEmail"></inject>**, confirm if it is **Selected (2)** and click on **Add (3)**.
+1. Make sure to **check the box (1)** next to  **<inject key="AzureAdUserEmail"></inject>**, confirm if it is **Selected (2)** and click on **Add (3)**.
 
    ![check-and-add-role](./Images/32.png)
 
-6. You can confirm the **Fabric Administrator** role has been added successfully by **Refresh** Fabric Administrators | Assignments page. After **confirming** it has been added successfully, navigate back to **Home**.
+1. You can confirm the **Fabric Administrator** role has been added successfully by **Refresh** Fabric Administrators | Assignments page. After **confirming** it has been added successfully, navigate back to **Home**.
 
    ![check-and-navigate-back-to-home](./Images/33.png)
 
@@ -76,22 +76,21 @@ In this task, you will learn how to create a workspace in Microsoft Fabric.
 
    ![Start-trial](./Images/lab1-11.png)
 
-7. In the menu bar on the left, select **Workspaces (1)** (the icon looks similar to &#128455;) and click on **New workplace (2)**.
+1. In the menu bar on the left, select **Workspaces (1)** (the icon looks similar to &#128455;) and click on **New workplace (2)**.
 
    ![](./Images/workspace-1.png)
 
-8. Create a new workspace named **dp_fabric-<inject key="Deployment ID" enableCopy="false"/> (1)**. Expand **Advanced**, then under **License mode**, select **Trial (2)** and click **Apply (3)** to create and open the workspace.
+1. Create a new workspace named **dp_fabric-<inject key="Deployment ID" enableCopy="false"/> (1)**. Expand **Advanced**, then under **License mode**, select **Trial (2)** and click **Apply (3)** to create and open the workspace.
    
    ![](./Images/workspace-3.png)
 
-9. When your new workspace opens, it should be empty, as shown here:
+1. When your new workspace opens, it should be empty, as shown here:
 
    ![Screenshot of an empty workspace in Power BI.](./Images/34.png)
  
-10. At the bottom left of the Power BI portal, select the **Power BI** icon and switch to the **Fabric** experience.
+1. At the bottom left of the Power BI portal, select the **Power BI** icon and switch to the **Fabric** experience.
 
     ![](./Images/35.png)
-
 
 #### Congratulations! You have successfully completed this task. Please move on to the next task.
 
@@ -150,7 +149,7 @@ Now that you have a workspace, switch to the *Synapse Real-Time Analytics* exper
 
           ![New table wizard step six](./Images/43.png)
 
-> **Note**: In this example, you imported a very small amount of static data from a file, which is fine for the purposes of this exercise. In reality, you can use Kusto to analyze much larger volumes of data; including real-time data from a streaming source such as Azure Event Hubs.
+> **Note**: In this task, you imported a very small amount of static data from a file, which is fine for the purposes of this task. In reality, you can use Kusto to analyze much larger volumes of data; including real-time data from a streaming source such as Azure Event Hubs.
 
 #### Congratulations! You have successfully completed this task. Please move on to the next task.
 
@@ -164,18 +163,18 @@ Now that you have a table of data in your database, you can use KQL code to quer
 
    ![](./Images/44.png)
 
-2. A new pane will open with the query and its result. 
+1. A new pane will open with the query and its result. 
 
-3. Modify the query as follows:
+1. Modify the query as follows:
 
     ```kusto
    sales
    | where Item == 'Road-250 Black, 48'
     ```
 
-4. Run the query. Then review the results, which should contain only the rows for sales orders for the *Road-250 Black, 48* product.
+1. Run the query. Then review the results, which should contain only the rows for sales orders for the *Road-250 Black, 48* product.
 
-5. Modify the query as follows:
+1. Modify the query as follows:
 
     ```kusto
    sales
@@ -183,9 +182,9 @@ Now that you have a table of data in your database, you can use KQL code to quer
    | where datetime_part('year', OrderDate) > 2020
     ```
 
-6. Run the query and review the results, which should contain only sales orders for *Road-250 Black, 48* made after 2020.
+1. Run the query and review the results, which should contain only sales orders for *Road-250 Black, 48* made after 2020.
 
-7. Modify the query as follows:
+1. Modify the query as follows:
 
     ```kusto
    sales
@@ -208,9 +207,9 @@ Now that you have a table of data in your database, you can use KQL code to quer
 
    ![](./Images/46.png)
 
-#### You have successfully completed this task. Please proceed to the next task.
+#### Congratulations! You have successfully completed this task. Please move on to the next task.
 
-### Task 5 : Create a Power BI report from a KQL Query set
+## Task 5 : Create a Power BI report from a KQL Query set
 
 In this task, you will learn how to create a Power BI report from a KQL query set to visualize and analyze data effectively.
 
@@ -218,27 +217,27 @@ You can use your KQL Queryset as the basis for a Power BI report.
 
 1. In the query workbench editor for your query set, run the query and wait for the results.
 
-2. Select **Build Power BI report** and wait for the report editor to open.
+1. Select **Build Power BI report** and wait for the report editor to open.
 
-3. In the report editor, in the **Data** pane, expand **Kusto Query Result** and select the **Item** and **TotalRevenue** fields.
+1. In the report editor, in the **Data** pane, expand **Kusto Query Result** and select the **Item** and **TotalRevenue** fields.
 
-4. On the report design canvas, select the table visualization that has been added and then in the **Visualizations** pane, select **Clustered bar chart**.
+1. On the report design canvas, select the table visualization that has been added and then in the **Visualizations** pane, select **Clustered bar chart**.
 
     ![Screenshot of a report from a KQL query.](./Images/powerbireport.png)
 
-5. In the **Power BI** window, in the **File (1)** menu, select **Save (2)**. 
+1. In the **Power BI** window, in the **File (1)** menu, select **Save (2)**. 
 
    ![](./Images/47.png)
 
 1. Then save the report as **Revenue by Item.pbix** in the workspace where your lakehouse and select your workplace from the dropdown.
 
-6. Close the **Power BI** window, and in the bar on the left, select the icon for your workspace.
+1. Close the **Power BI** window, and in the bar on the left, select the icon for your workspace.
 
     Refresh the Workspace page if necessary to view all of the items it contains.
 
-7. In the list of items in your workspace, note that the **Revenue by Item** report is listed.
+1. In the list of items in your workspace, note that the **Revenue by Item** report is listed.
 
-#### You have successfully completed this task.
+#### Congratulations! You have successfully completed this task.
 
 ## Review
 You have completed the following tasks:
