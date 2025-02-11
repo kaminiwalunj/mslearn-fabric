@@ -334,7 +334,7 @@ Now that you've finished training and evaluating the models, you can save the no
 
    ![](./Images/2.png)
 
-2. On the notebook menu, select **Stop session** to end the Spark session.
+1. On the notebook menu, select **Stop session** to end the Spark session.
 
     ![](./Images/1.png)
 
@@ -359,6 +359,8 @@ If you've finished exploring your model and experiments, you can delete the work
 1. In the **Delete workspace** pop-up, click **Delete**.
 
    ![Screenshot of the plotted evaluation metrics.](./Images/delete.png)
+
+#### Congratulations! You have successfully cleaned up the resources.
 
 ## Review:
 You have completed the following tasks:
