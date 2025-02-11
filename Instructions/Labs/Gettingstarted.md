@@ -4,7 +4,7 @@
 
 ## Overview
 
-In this lab, we will use Microsoft Fabric to create a notebook and train a machine learning model to predict customer churn using Scikit-Learn and MLflow for tracking. Synapse Real-Time Analytics in Fabric leverages a KQL Database and Kusto Query Language KQL for efficient real-time data analysis, helping uncover insights from structured and time-series data. By completing this lab, you will gain hands-on experience in machine learning, model tracking, and real-time analytics using Microsoft Fabric.
+In this lab, we will use Microsoft Fabric to perform real-time data analytics and data science. Fabric provides an end-to-end platform for data solutions, including Synapse Real-Time Analytics, which leverages a KQL Database and Kusto Query Language (KQL) to analyze structured and unstructured data efficiently. Real-time analytics enables organizations to process log files, streaming data, and time-series information at scale. Additionally, data science techniques, including machine learning with scikit-learn in Python, help identify complex patterns and train AI models. This integration empowers organizations to extract meaningful insights and democratize data access for informed decision-making.
 
 ## Objectives
 
@@ -38,7 +38,7 @@ The architecture for this lab involves several key components:
 - **Notebook**: An interactive document for writing, executing, and visualizing code, commonly used in data science and engineering.
 
 ## Getting Started with the Lab
-Welcome to Real-Time Analytics and data science with Microsoft Fabric Workshop! We've prepared a seamless environment for you to explore and learn about fabric services. Let's begin by making the most of this experience.
+Welcome to Real-Time Analytics and Data Science with Microsoft Fabric Workshop! We've prepared a seamless environment for you to explore and learn about fabric services. Let's begin by making the most of this experience.
 
 ## Accessing Your Lab Environment
 
