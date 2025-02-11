@@ -1,4 +1,4 @@
-# Get started with Real-Time Analytics and data science with Microsoft Fabric
+# Get started with Real-Time Analytics and Data science with Microsoft Fabric
 
 This hands-on lab provides an immersive experience in real-time analytics and data science using Microsoft Fabric. We've set up a seamless environment for you to explore and learn about Microsoft Fabric services. 
 
