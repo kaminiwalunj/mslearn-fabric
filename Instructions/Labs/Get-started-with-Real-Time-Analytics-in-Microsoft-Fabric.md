@@ -1,5 +1,7 @@
 # Lab 1: Get started with Real-Time Analytics in Microsoft Fabric
 
+## Estimated Duration: 30 minutes
+
 ## Overview
 
 Microsoft Fabric provides an end-to-end platform for data solutions, including real-time data analytics. Synapse Real-Time Analytics in Fabric uses a KQL Database to provide table storage and Kusto Query Language (KQL) which is a powerful tool for analyzing data. This structure provides an efficient way to find insights and patterns from textual or structured data. Moreover, KQL is optimized for data that includes a time series component, such as real-time data from log files or streaming services. With Real-Time Analytics, you can focus and scale up your analytics solution while democratizing data for the needs for your entire data organization.
@@ -17,8 +19,6 @@ In Fabric, you only need a source and a Kusto database to start streaming data i
 can be shared within the tenant and Power BI using what's known as quick create.
 
    ![](./Images/realtime-analtyics1.png)
-
-This lab takes approximately **30** minutes to complete.
 
 > **Note**: You'll need a Microsoft Fabric license to complete this exercise.
 
