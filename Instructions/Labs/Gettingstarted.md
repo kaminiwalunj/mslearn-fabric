@@ -1,6 +1,6 @@
-# Real-Time Analytics and data science with Microsoft Fabric Workshop
+# Get started with Real-Time Analytics and data science with Microsoft Fabric
 
- This hands-on lab provides an immersive experience in real-time analytics and data science using Microsoft Fabric. We've set up a seamless environment for you to explore and learn about Microsoft Fabric services. 
+This hands-on lab provides an immersive experience in real-time analytics and data science using Microsoft Fabric. We've set up a seamless environment for you to explore and learn about Microsoft Fabric services. 
 
 ## Objectives
 
@@ -14,8 +14,27 @@
 - A Microsoft Fabric-enabled workspace with necessary permissions.  
 - Access to Microsoft Fabric services such as OneLake, Data Engineering, and Data Science experiences.  
 
+## Architecture
+
+ These labs utilize a step-by-step workflow for data processing and machine learning processes. Lab 1 focuses on setting up a workspace, querying data with KQL, and generating PBI reports. Lab 2 involves uploading files in the datalake, training machine learning models, conducting experiments with MLflow, and saving the model and notebook.
+
+## Architecture Diagram
+
+![Architecture Diagram](./Images/archdia.png)
+
+## Explanation of Components
+
+The architecture for this lab involves several key components:
+
+- **Workspace**: A centralized environment for managing resources, projects, and collaboration.
+- **KQL Database**: A structured database supporting Kusto Query Language (KQL) for analyzing large datasets efficiently.
+- **KQL Querysets**: Predefined queries using KQL to extract, manipulate, and visualize data.
+- **PBI**: Power BI-generated reports for data visualization and insights.
+- **Lakehouse**: A unified storage solution combining data lakes and warehouses for scalable analytics.
+- **Notebook**: An interactive document for writing, executing, and visualizing code, commonly used in data science and engineering.
+
 ## Getting Started with the Lab
-Welcome to Real-Time Analytics and data science with Microsoft Fabric Workshop Workshop! We've prepared a seamless environment for you to explore and learn about fabric services. Let's begin by making the most of this experience.
+Welcome to Real-Time Analytics and data science with Microsoft Fabric Workshop! We've prepared a seamless environment for you to explore and learn about fabric services. Let's begin by making the most of this experience.
 
 ## Accessing Your Lab Environment
 

@@ -1,17 +1,29 @@
 # Lab 2: Get started with data science in Microsoft Fabric
 
+## Estimated Duration: 45 minutes
+
 ## Overview
 Data science is a combination of mathematics, statistics, and computer engineering. When you perform data science, you can analyze your data and identify complicated patterns that can provide you with meaningful insights for your organization. You can use data science to create artificial intelligence (AI) models that encompass the complicated patterns you find in your data. A common approach is to use data science to train machine learning models using libraries like scikit-learn in Python to achieve AI. 
 
-### _Architecture Diagram_
+## Architecture Diagram
 
 ![Architecture Diagram](./Images/Data-science-in-Microsoft-Fabric.png)
+
+## Lab Objectives
+You will be able to complete the following tasks:
+
+- Task 1: Create a Lakehouse and upload files
+- Task 2: Create a Notebook
+- Task 3: Load data into a dataframe
+- Task 4: Train a Machine Learning model
+- Task 5: Use MLflow to search and view your experiments
+- Task 6: Explore your experiments
+- Task 7: Save the model
+- Task 8: Save the Notebook and end the Spark session
 
 ## Get started with data science in Microsoft Fabric
 
 In this lab, we will use Microsoft Fabric to create a notebook and train a machine learning model to predict customer churn. We will use Scikit-Learn to train the model and MLflow to track its performance. Customer churn is a critical business problem that many companies face, and predicting which customers are likely to churn can help companies retain their customers and increase revenue. By completing this lab, you will gain hands-on experience in machine learning and model tracking, and learn how to use Microsoft Fabric to create a notebook for your projects.
-
-This lab will take approximately **45** minutes to complete.
 
 > **Note**: You'll need a Microsoft Fabric license to complete this exercise.
 
@@ -330,4 +342,16 @@ If you've finished exploring your model and experiments, you can delete the work
 
    ![Screenshot of the plotted evaluation metrics.](./Images/delete.png)
 
-## **Congratulations! you have successfully completed this lab.**
+## Review:
+You have completed the following tasks:
+
+- Created a Lakehouse and upload files
+- Created a Notebook
+- Loaded data into a dataframe
+- Trained a Machine Learning model
+- Used MLflow to search and view your experiments
+- Explored your experiments
+- Saved the model
+- Saved the Notebook and ended the Spark session
+
+## Congratulations! you have successfully completed this lab.
