@@ -361,11 +361,10 @@ If you've finished exploring your model and experiments, you can delete the work
 
 #### Congratulations! You have successfully cleaned up the resources.
 
-## Summary:
+## Review:
 
 In this lab, you have learned how to set up a data science workflow in Microsoft Fabric. You created a Lakehouse, uploaded data, and used Notebooks to explore and preprocess the data. You trained a machine learning model, tracked experiments using MLflow, and saved both the model and the Notebook. This hands-on experience demonstrated how Microsoft Fabric streamlines data science and AI development.
 
-## Review:
 You have completed the following tasks:
 
 - Created a Lakehouse and upload files
