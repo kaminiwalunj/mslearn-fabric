@@ -1,6 +1,6 @@
 # Lab 1: Get Started with Real-Time Analytics in Microsoft Fabric
 
-### Estimated Duration: 30 minutes
+#### Estimated Duration: 30 minutes
 
 Microsoft Fabric provides an end-to-end platform for data solutions, including real-time data analytics. Synapse Real-Time Analytics in Fabric uses a KQL Database to provide table storage and Kusto Query Language (KQL) which is a powerful tool for analyzing data. This structure provides an efficient way to find insights and patterns from textual or structured data. Moreover, KQL is optimized for data that includes a time series component, such as real-time data from log files or streaming services. With Real-Time Analytics, you can focus and scale up your analytics solution while democratizing data for the needs for your entire data organization.
 
@@ -46,9 +46,9 @@ In this task, you will learn how to assign the Fabric Administrator role to mana
 
 ## Task 2 : Create a workspace
 
-In this task, you will learn how to create a workspace in Microsoft Fabric.
+This task will guide you through creating a workspace in Microsoft Fabric.
 
-1. Click on the Microsoft Edge browser in the virtual machine (VM) on the left, and navigate to [Microsoft Power BI Portal](https://app.powerbi.com). You will be navigated to the login page.
+1. Click on the **Microsoft Edge** browser in the virtual machine (VM) on the left, and navigate to [Microsoft Power BI Portal](https://app.powerbi.com). You will be navigated to the login page.
 
     > **Note:** If you're using the lab environment, it may sign you indirectly.
 
@@ -100,9 +100,9 @@ In this task, you will learn how to download a file for a KQL database and creat
 
 Now that you have a workspace, switch to the *Synapse Real-Time Analytics* experience in the portal and download the data file for analysis. Using *Kusto Query Language (KQL)*, you can query static or streaming data in a table within a KQL database. To analyze sales data, create a table in the database and ingest the downloaded file.
 
-1. Download the **sales.csv** data file for this exercise from **[Sales](https://raw.githubusercontent.com/MicrosoftLearning/dp-data/main/sales.csv)** and save it on your local computer or lab VM. **Alternatively,** if you are using the provided lab virtual machine (lab VM), you can find the file in the **C:\LabFiles\dp-data-main** directory.
+1. Download the **sales.csv** data file for this exercise from **[Sales.csv](https://raw.githubusercontent.com/MicrosoftLearning/dp-data/main/sales.csv)** and save it on your local computer or lab VM. **Alternatively,** if you are using the provided lab virtual machine (lab VM), you can find the file in the **C:\LabFiles\dp-data-main** directory.
 
-1. Return to browser window with **Microsoft Fabric** Experience.
+1. Return to browser window with **Microsoft Fabric** experience.
 
 1. Navigate to **dp_fabric-<inject key="Deployment ID" enableCopy="false"/>** workspace from the hub menu bar on the left.
 
@@ -116,11 +116,13 @@ Now that you have a workspace, switch to the *Synapse Real-Time Analytics* exper
 
     ![](./Images/37.png)
 
-3. When the new eventhouse has been created, select the option to Get Data from **Local File**. Then use the wizard to import the data into a new table by selecting the following options:
+1. When the new eventhouse has been created, select the option to Get Data from **Local File**. 
 
     ![Screenshot of selected Fabric Experience home with RTA selected](./Images/38.png)
-    
-    - **Destination**:
+
+1. Then use the wizard to import the data into a new table by selecting the following options: 
+
+    - **Select or create a destination table**:
         - **Database**: *The database you created is already selected*
         - **Table**: *Create a new table named* **sales** by clicking on the + sign to the left of ***New table***
 
@@ -134,17 +136,15 @@ Now that you have a workspace, switch to the *Synapse Real-Time Analytics* exper
 
           ![New table wizard step three](./Images/41.png)
 
-        - In this screen you'll see that your column headings are in the first row although the system detected them, we still need to move the slider above these lines **First row is column header** in order to get keep from getting any errors.
-
-        - Once you select this slider you will see everything looks good to go, select the **Finish** button on the bottom right of the panel.
+        - In this below screen, you'll notice that the column headings are in the first row. Although the system has detected them, we still need to move the **First row is column header** slider above these lines to prevent any errors. Once you adjust the slider, everything should appear correctly. Finally, click the **Finish** button in the bottom right corner of the panel to proceed.
 
           ![New table wizard step five](./Images/42.png)
 
         - Wait for the steps in the summary screen to complete which include:
             - Create table (sales)
-            - create mapping (sales_mapping)
+            - Create mapping (sales_mapping)
             - Data queuing
-            - Ingestion
+            - Blob ingestion
         - Select the **Close** button
 
           ![New table wizard step six](./Images/43.png)
@@ -155,7 +155,7 @@ Now that you have a workspace, switch to the *Synapse Real-Time Analytics* exper
 
 ## Task 4 : Use KQL to query the sales table
 
-In this task, you will learn how to use KQL (Kusto Query Language) to query the Sales table and analyze data efficiently in Microsoft Fabric.
+This task will walk you through using KQL (Kusto Query Language) to query the Sales table and analyze data efficiently in Microsoft Fabric.
 
 Now that you have a table of data in your database, you can use KQL code to query it.
 
@@ -211,7 +211,7 @@ Now that you have a table of data in your database, you can use KQL code to quer
 
 ## Task 5 : Create a Power BI report from a KQL Query set
 
-In this task, you will learn how to create a Power BI report from a KQL query set to visualize and analyze data effectively.
+This task will guide you through visualizing and analyzing data effectively by creating a Power BI report using a KQL query set. You will learn how to transform query results into insightful reports and dashboards.
 
 You can use your KQL Queryset as the basis for a Power BI report.
 
@@ -238,6 +238,10 @@ You can use your KQL Queryset as the basis for a Power BI report.
 1. In the list of items in your workspace, note that the **Revenue by Item** report is listed.
 
 #### Congratulations! You have successfully completed this task.
+
+## Summary
+
+In this lab, you have the opportunity to explore Microsoft Fabric as a platform for real-time analytics using Synapse Real-Time Analytics and Kusto Query Language (KQL). You will learn to assign the Fabric Administrator role, create a workspace, set up a KQL database, query data, and generate a Power BI report from KQL queries. This lab demonstrates how to efficiently analyze real-time data using KQL, particularly for time-series data like logs and streaming services.
 
 ## Review
 You have completed the following tasks:

@@ -1,6 +1,6 @@
 # Get started with Real-Time Analytics and Data Science with Microsoft Fabric
 
-## Overall Estimated Duration: 75 Minutes
+### Overall Estimated Duration: 75 Minutes
 
 ## Overview
 
@@ -8,8 +8,8 @@ In this lab, we will use Microsoft Fabric to perform real-time data analytics an
 
 ## Objectives
 
-- **Real-Time Analytics in Microsoft Fabric** : Learn how to process and analyze real-time data using Microsoft Fabric. You'll explore key services such as event processing, data streaming, and analytics integration to gain insights from live data efficiently.
-- **Data science in Microsoft Fabric** :Learn how to leverage Microsoft Fabric for data science, from data preparation to model training and deployment. 
+- **Real-Time Analytics in Microsoft Fabric** : This lab introduces Real-Time Analytics in Microsoft Fabric, focusing on Synapse Real-Time Analytics using Kusto Query Language (KQL) for data analysis. Participants will learn to assign the Fabric Administrator role, create a workspace, set up a KQL database, and analyze data using KQL. The lab also covers integrating KQL queries into Power BI reports, enabling users to gain insights from real-time data efficiently.
+- **Data science in Microsoft Fabric** : This lab introduces data science in Microsoft Fabric, covering essential concepts and practical applications. Participants will learn to create a Lakehouse, upload files, and use Notebooks for interactive data exploration. The lab guides users through loading data into a DataFrame, training a machine learning model, and leveraging MLflow for experiment tracking. By the end, participants will be able to analyze data, build AI models, and manage machine learning workflows effectively. 
 
 ## Prerequisites
 
@@ -17,10 +17,11 @@ In this lab, we will use Microsoft Fabric to perform real-time data analytics an
 - Familiarity with Microsoft Azure services.  
 - A Microsoft Fabric-enabled workspace with necessary permissions.  
 - Access to Microsoft Fabric services such as OneLake, Data Engineering, and Data Science experiences.  
+- Familiarity with PowerBI reports.
 
 ## Architecture
 
-These labs utilize a step-by-step workflow for data processing and machine learning processes. Lab 1 focuses on setting up a workspace, querying data with KQL, and generating PBI reports. Lab 2 involves uploading files in the datalake, training machine learning models, conducting experiments with MLflow, and saving the model and notebook.
+These labs follow a structured, step-by-step workflow to streamline data processing and machine learning operations. The process begins with authentication and access management, ensuring secure entry into the environment. Next, a workspace is established, where users interact with datasets, perform queries using KQL, and generate insightful reports. Data is then uploaded into the system, stored efficiently, and prepared for further processing. Once the data is available, it is loaded into notebooks for analysis, followed by the training of machine learning models to extract meaningful insights. To enhance the experimentation process, MLflow is utilized to track and manage various model iterations, ensuring optimal performance. Finally, the trained models and notebooks are systematically saved, and the computational session is terminated to optimize resource utilization. This structured approach ensures a seamless transition from data ingestion to model training and experiment tracking while maintaining efficiency and reproducibility throughout the process.
 
 ## Architecture Diagram
 
