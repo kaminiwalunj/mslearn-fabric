@@ -1,6 +1,6 @@
 # Lab 2: Get started with data science in Microsoft Fabric
 
-### Estimated Duration: 45 minutes
+#### Estimated Duration: 45 minutes
 
 Data science is a combination of mathematics, statistics, and computer engineering. When you perform data science, you can analyze your data and identify complicated patterns that can provide you with meaningful insights for your organization. You can use data science to create artificial intelligence (AI) models that encompass the complicated patterns you find in your data. A common approach is to use data science to train machine learning models using libraries like scikit-learn in Python to achieve AI.
 
@@ -19,7 +19,7 @@ You will be able to complete the following tasks:
 
 ## Task 1 : Create a Lakehouse and upload files
 
-In this task, you will learn how to create a Lakehouse in Microsoft Fabric and upload files for data storage and processing.
+This task will guide you through setting up a Lakehouse in Microsoft Fabric, where you will upload files for efficient data storage and processing.
 
 Now that you have a workspace, it's time to switch to the *Data science* experience in the portal and create a data lakehouse for the data files you're going to analyze.
 
@@ -90,7 +90,7 @@ To train a model, you can create a *notebook*. Notebooks provide an interactive 
 
 ## Task 3 : Load data into a dataframe
 
-In this task, you will learn how to load data into a DataFrame in Microsoft Fabric for processing and analysis.
+You will explore how to import data into a DataFrame in Microsoft Fabric for processing and analysis in this task.
 
 Now you're ready to run code to prepare data and train a model. To work with data, you'll use *dataframes*. Dataframes in Spark are similar to Pandas dataframes in Python, and provide a common structure for working with data in rows and columns.
 
@@ -110,9 +110,7 @@ Now you're ready to run code to prepare data and train a model. To work with dat
 
    ![](./Images/28.png)
 
-1. Select the **Files (1)** folder so that the CSV file is listed next to the notebook editor.
-
-1. In the **...** menu for **churn.csv (2)**, select **Load data (3)** > **Pandas (4)**. 
+1. Click on the **Files (1)** folder to display the CSV file next to the notebook editor. Then, open the **...** menu for **churn.csv (2)** and select **Load data (3)** > **Pandas (4)**.
 
     ![](./Images/23.png)
 
@@ -155,7 +153,7 @@ Now that you've loaded the data, you can use it to train a machine learning mode
 
    ![](./Images/15.png)
 
-1. Enter the following code in it. If the **+ Code** icon isn't visible, hover below the cell to make it appear.:
+1. Enter the following code in it. If the **+ Code** icon isn't visible, hover below the cell to make it appear :
 
     ```python
    from sklearn.model_selection import train_test_split
@@ -219,7 +217,7 @@ Now that you've loaded the data, you can use it to train a machine learning mode
 
 ## Task 5 : Use MLflow to search and view your experiments
 
-In this task, you will learn how to use MLflow to search and view your machine learning experiments in Microsoft Fabric for tracking and managing model performance.
+You will learn how to use MLflow to search and view your machine learning experiments in Microsoft Fabric for tracking and managing model performance.
 
 When you've trained and tracked models with MLflow, you can use the MLflow library to retrieve your experiments and its details.
 
@@ -249,6 +247,7 @@ When you've trained and tracked models with MLflow, you can use the MLflow libra
     ```python
    mlflow.search_runs(exp.experiment_id)
     ```
+
     ![](./Images/8.png)
 
 1. To more easily compare job runs and outputs, you can configure the search to order the results. For example, the following cell orders the results by `start_time`, and only shows a maximum of `2` results: 
@@ -284,7 +283,7 @@ When you've trained and tracked models with MLflow, you can use the MLflow libra
 
 ## Task 6 : Explore your experiments
 
-In this task, you will learn how to explore your machine learning experiments in Microsoft Fabric to analyze performance metrics and insights.
+Learn how to analyze performance metrics and gain insights from your machine learning experiments in Microsoft Fabric. Explore various tools and techniques to evaluate and optimize your models effectively.
 
 Microsoft Fabric will keep track of all your experiments and allows you to visually explore them.
 
@@ -312,7 +311,7 @@ After comparing machine learning models that you've trained across experiments, 
    
    ![](./Images/5.png)
 
-1. In the newly opened pop-up window, select **Create a new ML model**, then choose the `model` **(1)** folder. Enter **model-churn** as the name **(2)** and click **Save (3)**.
+1. In the newly opened pop-up window, select **Create a new ML model**, then choose the `model` **(1)** folder. Enter **model-churn (2)** as the name and click **Save (3)**.
 
     ![](./Images/4.png)
 
@@ -326,7 +325,7 @@ Note that the model, the experiment, and the experiment run are linked, allowing
 
 ## Task 8 : Save the Notebook and end the Spark session
 
-In this task, you will learn how to save the Notebook and end the Spark session in Microsoft Fabric to preserve your work and free up resources.
+In this task, you will discover how to preserve your work by saving the Notebook and efficiently end the Spark session in Microsoft Fabric to free up resources.
 
 Now that you've finished training and evaluating the models, you can save the notebook with a meaningful name and end the Spark session.
 
@@ -361,6 +360,10 @@ If you've finished exploring your model and experiments, you can delete the work
    ![Screenshot of the plotted evaluation metrics.](./Images/delete.png)
 
 #### Congratulations! You have successfully cleaned up the resources.
+
+## Summary:
+
+In this lab, you have learned how to set up a data science workflow in Microsoft Fabric. You created a Lakehouse, uploaded data, and used Notebooks to explore and preprocess the data. You trained a machine learning model, tracked experiments using MLflow, and saved both the model and the Notebook. This hands-on experience demonstrated how Microsoft Fabric streamlines data science and AI development.
 
 ## Review:
 You have completed the following tasks:
