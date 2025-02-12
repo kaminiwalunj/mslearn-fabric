@@ -239,11 +239,10 @@ You can use your KQL Queryset as the basis for a Power BI report.
 
 #### Congratulations! You have successfully completed this task.
 
-## Summary
+## Review:
 
 In this lab, you have the opportunity to explore Microsoft Fabric as a platform for real-time analytics using Synapse Real-Time Analytics and Kusto Query Language (KQL). You will learn to assign the Fabric Administrator role, create a workspace, set up a KQL database, query data, and generate a Power BI report from KQL queries. This lab demonstrates how to efficiently analyze real-time data using KQL, particularly for time-series data like logs and streaming services.
 
-## Review
 You have completed the following tasks:
 
 - Assigned Fabric Administrator Role
