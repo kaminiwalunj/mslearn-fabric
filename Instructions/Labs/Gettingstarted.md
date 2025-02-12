@@ -8,8 +8,9 @@ In this lab, we will use Microsoft Fabric to perform real-time data analytics an
 
 ## Objective
 
-- **Real-Time Analytics in Microsoft Fabric** : Participants will learn how to leverage Real-Time Analytics in Microsoft Fabric, with a focus on Synapse Real-Time Analytics using Kusto Query Language (KQL) for data analysis. They will gain hands-on experience in assigning the Fabric Administrator role, creating a workspace, and setting up a KQL database. Additionally, they will learn how to analyze real-time data using KQL and integrate KQL queries into Power BI reports to derive actionable insights efficiently.
-- **Data science in Microsoft Fabric** : Participants will learn the fundamentals of data science in Microsoft Fabric, exploring key concepts and practical applications. They will gain hands-on experience in creating a Lakehouse, uploading files, and using Notebooks for interactive data exploration. The lab will guide them through loading data into a DataFrame, training a machine learning model, and leveraging MLflow for experiment tracking. By the end, participants will be able to analyze data, build AI models, and efficiently manage machine learning workflows.
+- **Real-Time Analytics in Microsoft Fabric**: Learn how to use Real-Time Analytics in Microsoft Fabric, focusing on Synapse Real-Time Analytics with Kusto Query Language (KQL) for data analysis. By the end of this session, you will know how to analyze real-time data using KQL and add KQL queries to Power BI reports to get useful insights easily.
+- **Data science in Microsoft Fabric**: Learn the basics of data science in Microsoft Fabric, covering important concepts and real-world uses. By the end of this session, you will be able to analyze data, create AI models, and manage machine learning workflows effectively.
+
 ## Prerequisites
 
 - Basic understanding of cloud computing and data analytics concepts.  
