@@ -70,11 +70,11 @@ In this task, you will learn how to assign the Fabric Administrator role to mana
 
 #### Congratulations! You have successfully completed this task. Please move on to the next task.
 
-## Task 2 : Create a workspace
+## Task 2: Create a workspace
 
 This task will guide you through creating a workspace in Microsoft Fabric.
 
-1. Click on the **Microsoft Edge** browser in the virtual machine (VM) on the left, and navigate to [Microsoft Power BI Portal](https://app.powerbi.com). You will be navigated to the login page.
+1. In **Microsoft Edge**, open a new tab and go to the [Microsoft Power BI Portal](https://app.powerbi.com). This will take you to the login page.
 
     > **Note:** If you're using the lab environment, it may sign you indirectly.
 
