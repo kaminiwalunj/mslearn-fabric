@@ -266,4 +266,10 @@ You have completed the following tasks:
 - Used KQL to query the sales table
 - Created a Power BI report from a KQL Query set
 
+## References:
+
+- [Microsoft Fabric Documentation](https://learn.microsoft.com/en-us/fabric/)
+- [Kusto Query Language (KQL) Overview](https://learn.microsoft.com/en-us/azure/data-explorer/kusto/query/)
+- [Power BI Documentation](https://learn.microsoft.com/en-us/power-bi/)
+
 ## You have successfully completed the lab, please click on the next
