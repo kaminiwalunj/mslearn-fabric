@@ -120,15 +120,15 @@ This task will guide you through creating a workspace in Microsoft Fabric.
 
 #### Congratulations! You have successfully completed this task. Please move on to the next task.
 
-## Task 3 : Download file for KQL database and Create a KQL database
+## Task 3: Download file for KQL database and Create a KQL database
 
 In this task, you will learn how to download a file for a KQL database and create a KQL database in Microsoft Fabric for querying and analyzing data efficiently.
 
-Now that you have a workspace, switch to the *Synapse Real-Time Analytics* experience in the portal and download the data file for analysis. Using *Kusto Query Language (KQL)*, you can query static or streaming data in a table within a KQL database. To analyze sales data, create a table in the database and ingest the downloaded file.
+Now that you have a workspace, Download the data file for analysis. Using *Kusto Query Language (KQL)*, you can query static or streaming data in a table within a KQL database. To analyze sales data, create a table in the database and ingest the downloaded file.
 
 1. Download the **sales.csv** data file for this exercise from **[Sales.csv](https://raw.githubusercontent.com/MicrosoftLearning/dp-data/main/sales.csv)** and save it on your local computer or lab VM. **Alternatively,** if you are using the provided lab virtual machine (lab VM), you can find the file in the **C:\LabFiles\dp-data-main** directory.
 
-1. Return to browser window with **Microsoft Fabric** experience.
+1. Return to the browser window with the **Microsoft Fabric** experience.
 
 1. Navigate to **dp_fabric-<inject key="Deployment ID" enableCopy="false"/>** workspace from the hub menu bar on the left.
 
@@ -162,7 +162,7 @@ Now that you have a workspace, switch to the *Synapse Real-Time Analytics* exper
 
           ![New table wizard step three](./Images/41.png)
 
-        - In this below screen, you'll notice that the column headings are in the first row. Although the system has detected them, we still need to move the **First row is column header** slider above these lines to prevent any errors. Once you adjust the slider, everything should appear correctly. Finally, click the **Finish** button in the bottom right corner of the panel to proceed.
+        - In the below screen, you'll notice that the column headings are in the first row. Although the system has detected them, we still need to move the **First row is column header** slider above these lines to prevent any errors. Once you adjust the slider, everything should appear correctly. Finally, click the **Finish** button in the bottom right corner of the panel to proceed.
 
           ![New table wizard step five](./Images/42.png)
 
@@ -179,7 +179,7 @@ Now that you have a workspace, switch to the *Synapse Real-Time Analytics* exper
 
 #### Congratulations! You have successfully completed this task. Please move on to the next task.
 
-## Task 4 : Use KQL to query the sales table
+## Task 4: Use KQL to query the sales table
 
 This task will walk you through using KQL (Kusto Query Language) to query the Sales table and analyze data efficiently in Microsoft Fabric.
 
@@ -235,7 +235,7 @@ Now that you have a table of data in your database, you can use KQL code to quer
 
 #### Congratulations! You have successfully completed this task. Please move on to the next task.
 
-## Task 5 : Create a Power BI report from a KQL Query set
+## Task 5: Create a Power BI report from a KQL Query set
 
 This task will guide you through visualizing and analyzing data effectively by creating a Power BI report using a KQL query set. You will learn how to transform query results into insightful reports and dashboards.
 
