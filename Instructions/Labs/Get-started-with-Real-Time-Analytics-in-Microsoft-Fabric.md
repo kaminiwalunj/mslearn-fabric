@@ -2,7 +2,7 @@
 
 #### Estimated Duration: 30 minutes
 
-Microsoft Fabric provides an end-to-end platform for data solutions, including real-time data analytics. Synapse Real-Time Analytics in Fabric uses a KQL Database to provide table storage and Kusto Query Language (KQL) which is a powerful tool for analyzing data. This structure provides an efficient way to find insights and patterns from textual or structured data. Moreover, KQL is optimized for data that includes a time series component, such as real-time data from log files or streaming services. With Real-Time Analytics, you can focus and scale up your analytics solution while democratizing data for the needs for your entire data organization.
+Microsoft Fabric provides an end-to-end platform for data solutions, including real-time data analytics. Synapse Real-Time Analytics in Fabric uses a KQL Database to provide table storage and Kusto Query Language (KQL) which is a powerful tool for analyzing data. This structure provides an efficient way to find insights and patterns from textual or structured data. Moreover, KQL is optimized for data that includes a time series component, such as real-time data from log files or streaming services. With Real-Time Analytics, you can focus and scale up your analytics solution while democratizing data for the needs of your entire data organization.
 
 ## Lab Objectives
 
@@ -218,7 +218,6 @@ Now that you have a table of data in your database, you can use KQL code to quer
    | summarize TotalNetRevenue = sum(UnitPrice) by Item
    | sort by Item asc
     ```
-
 1. Run the query and review the results, which should contain the total net revenue for each product between January 1st and December 31st 2020 in ascending order of product name.
 
 1. Navigate to **dp_fabric-<inject key="Deployment ID" enableCopy="false"/>** workspace from the hub menu bar on the left.
@@ -277,4 +276,4 @@ You have completed the following tasks:
 - Used KQL to query the sales table
 - Created a Power BI report from a KQL Query set
 
-## You have successfully completed the lab, please click on next
+## You have successfully completed the lab, please click on the next
