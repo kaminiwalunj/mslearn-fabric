@@ -361,4 +361,10 @@ You have completed the following tasks:
 - Saved the model
 - Saved the Notebook and ended the Spark session
 
+## Reference:
+
+- [Microsoft Learn](https://learn.microsoft.com)
+- [Microsoft Fabric Documentation](https://learn.microsoft.com/en-us/fabric/)
+- [Azure Machine Learning Documentation](https://learn.microsoft.com/en-us/azure/machine-learning/)
+
 ## Congratulations! you have successfully completed this lab.
