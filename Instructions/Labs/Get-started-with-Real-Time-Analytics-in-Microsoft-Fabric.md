@@ -68,8 +68,6 @@ In this task, you will learn how to assign the Fabric Administrator role to mana
 
    ![check-and-navigate-back-to-home](./Images/33.png)
 
-#### Congratulations! You have successfully completed this task. Please move on to the next task.
-
 ## Task 2: Create a workspace
 
 This task will guide you through creating a workspace in Microsoft Fabric.
@@ -117,8 +115,6 @@ This task will guide you through creating a workspace in Microsoft Fabric.
 1. At the bottom left of the Power BI portal, select the **Power BI** icon and switch to the **Fabric** experience.
 
     ![](./Images/35.png)
-
-#### Congratulations! You have successfully completed this task. Please move on to the next task.
 
 ## Task 3: Download file for KQL database and Create a KQL database
 
@@ -177,8 +173,6 @@ Now that you have a workspace, Download the data file for analysis. Using *Kusto
 
 > **Note**: In this task, you imported a very small amount of static data from a file, which is fine for the purposes of this task. In reality, you can use Kusto to analyze much larger volumes of data; including real-time data from a streaming source such as Azure Event Hubs.
 
-#### Congratulations! You have successfully completed this task. Please move on to the next task.
-
 ## Task 4: Use KQL to query the sales table
 
 This task will walk you through using KQL (Kusto Query Language) to query the Sales table and analyze data efficiently in Microsoft Fabric.
@@ -232,8 +226,6 @@ Now that you have a table of data in your database, you can use KQL code to quer
 
    ![](./Images/46.png)
 
-#### Congratulations! You have successfully completed this task. Please move on to the next task.
-
 ## Task 5: Create a Power BI report from a KQL Query set
 
 This task will guide you through visualizing and analyzing data effectively by creating a Power BI report using a KQL query set. You will learn how to transform query results into insightful reports and dashboards.
@@ -261,9 +253,7 @@ You can use your KQL Queryset as the basis for a Power BI report.
     Refresh the Workspace page if necessary to view all of the items it contains.
 
 1. In the list of items in your workspace, note that the **Revenue by Item** report is listed.
-
-#### Congratulations! You have successfully completed this task.
-
+   
 ## Review:
 
 In this lab, you have the opportunity to explore Microsoft Fabric as a platform for real-time analytics using Synapse Real-Time Analytics and Kusto Query Language (KQL). You will learn to assign the Fabric Administrator role, create a workspace, set up a KQL database, query data, and generate a Power BI report from KQL queries. This lab demonstrates how to efficiently analyze real-time data using KQL, particularly for time-series data like logs and streaming services.
