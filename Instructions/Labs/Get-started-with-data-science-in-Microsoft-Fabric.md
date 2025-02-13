@@ -1,4 +1,4 @@
-# Lab 2: Get started with data science in Microsoft Fabric
+# Lab 2: Get started with Data Science in Microsoft Fabric
 
 #### Estimated Duration: 45 minutes
 
@@ -51,8 +51,6 @@ Now that you have a workspace, it's time to switch to the *Data science* experie
 
    ![](./Images/21.png)
 
-#### Congratulations! You have successfully completed this task. Please move on to the next task.
-
 ## Task 2: Create a Notebook
 
 In this task, you will learn how to create a Notebook in Microsoft Fabric for interactive data exploration and analysis.
@@ -85,9 +83,8 @@ To train a model, you can create a *notebook*. Notebooks provide an interactive 
    # Train a machine learning model and track with MLflow
 
    Use the code in this notebook to train and track models.
-    ``` 
-#### Congratulations! You have successfully completed this task. Please move on to the next task.
-
+    ```
+    
 ## Task 3: Load data into a dataframe
 
 You will explore how to import data into a DataFrame in Microsoft Fabric for processing and analysis in this task.
@@ -140,8 +137,6 @@ Now you're ready to run code to prepare data and train a model. To work with dat
     | ... | ... | ... | ... | ... | ... | ... | ... | ... | ... | ... |
 
     The output shows the rows and columns of customer data from the churn.csv file.
-
-#### Congratulations! You have successfully completed this task. Please move on to the next task.
 
 ## Task 4: Train a Machine Learning model
 
@@ -214,7 +209,6 @@ Now that you've loaded the data, you can use it to train a machine learning mode
 
     ![](./Images/11.png)
 
-#### Congratulations! You have successfully completed this task. Please move on to the next task.
 
 ## Task 5: Use MLflow to search and view your experiments
 
@@ -280,8 +274,6 @@ When you've trained and tracked models with MLflow, you can use the MLflow libra
 
     ![Screenshot of the plotted evaluation metrics.](./Images/plotted-metrics.png)
 
-#### Congratulations! You have successfully completed this task. Please move on to the next task.
-
 ## Task 6: Explore your experiments
 
 Learn how to analyze performance metrics and gain insights from your machine learning experiments in Microsoft Fabric. Explore various tools and techniques to evaluate and optimize your models effectively.
@@ -299,8 +291,6 @@ Microsoft Fabric will keep track of all your experiments and allow you to visual
     > **Tip:** If you don't see any logged experiment runs, refresh the page.
 
 1. Review the **Run metrics** to explore how accurate your regression model is.
-
-#### Congratulations! You have successfully completed this task. Please move on to the next task.
 
 ## Task 7: Save the model
 
@@ -322,8 +312,6 @@ After comparing machine learning models that you've trained across experiments, 
 
 Note that the model, the experiment, and the experiment run are linked, allowing you to review how the model is trained.
 
-#### Congratulations! You have successfully completed this task. Please move on to the next task.
-
 ## Task 8: Save the Notebook and end the Spark session
 
 In this task, you will discover how to preserve your work by saving the Notebook and efficiently ending the Spark session in Microsoft Fabric to free up resources.
@@ -337,8 +325,6 @@ Now that you've finished training and evaluating the models, you can save the no
 1. On the notebook menu, select **Stop session** to end the Spark session.
 
     ![](./Images/1.png)
-
-#### Congratulations! You have successfully completed this task.
 
 ## Clean up resources
 
@@ -359,8 +345,6 @@ If you've finished exploring your model and experiments, you can delete the work
 1. In the **Delete workspace** pop-up, click **Delete**.
 
    ![Screenshot of the plotted evaluation metrics.](./Images/delete.png)
-
-#### Congratulations! You have successfully cleaned up the resources.
 
 ## Review:
 
