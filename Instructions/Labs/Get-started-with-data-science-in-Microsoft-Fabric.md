@@ -17,7 +17,7 @@ You will be able to complete the following tasks:
 - Task 7: Save the model
 - Task 8: Save the Notebook and end the Spark session
 
-## Task 1 : Create a Lakehouse and upload files
+## Task 1: Create a Lakehouse and upload files
 
 This task will guide you through setting up a Lakehouse in Microsoft Fabric, where you will upload files for efficient data storage and processing.
 
@@ -35,7 +35,7 @@ Now that you have a workspace, it's time to switch to the *Data science* experie
 
     ![](./Images/18.png)
 
-    >**Note:** After a minute or so, a new lakehouse with no **Tables** or **Files** will be created. You need to ingest some data into the data lakehouse for analysis. There are multiple ways to do this, but in this exercise you'll simply download and extract a folder of text files your local computer (or lab VM if applicable) and then upload them to your lakehouse.
+    >**Note:** After a minute or so, a new lakehouse with no **Tables** or **Files** will be created. You need to ingest some data into the data lakehouse for analysis. There are multiple ways to do this, but in this task, you'll simply download and extract a folder of text files from your local computer (or lab VM if applicable) and then upload them to your lakehouse.
 
 1. Download the **churn.csv** file for this exercise from **[churn.csv](https://raw.githubusercontent.com/MicrosoftLearning/dp-data/main/churn.csv)** and save it on your local computer or lab VM. **Alternatively,** if you are using the provided lab virtual machine (lab VM), you can find the file in the **C:\LabFiles\dp-data-main** directory.
 
@@ -47,13 +47,13 @@ Now that you have a workspace, it's time to switch to the *Data science* experie
 
    ![](./Images/20.png)
 
-1. After the files have been uploaded, select **Files** and verify that the CSV file have been uploaded.
+1. After the files have been uploaded, select **Files** and verify that the CSV file has been uploaded.
 
    ![](./Images/21.png)
 
 #### Congratulations! You have successfully completed this task. Please move on to the next task.
 
-## Task 2 : Create a Notebook
+## Task 2: Create a Notebook
 
 In this task, you will learn how to create a Notebook in Microsoft Fabric for interactive data exploration and analysis.
 
@@ -88,7 +88,7 @@ To train a model, you can create a *notebook*. Notebooks provide an interactive 
     ``` 
 #### Congratulations! You have successfully completed this task. Please move on to the next task.
 
-## Task 3 : Load data into a dataframe
+## Task 3: Load data into a dataframe
 
 You will explore how to import data into a DataFrame in Microsoft Fabric for processing and analysis in this task.
 
@@ -129,7 +129,7 @@ Now you're ready to run code to prepare data and train a model. To work with dat
 
     > **Note**: Since this is the first time you've run any Spark code in this session, the Spark pool must be started. This means that the first run in the session can take a minute or so to complete. Subsequent runs will be quicker.
 
-1. When the cell command has completed, review the output below the cell, which should look similar to this:
+1. When the cell command has been completed, review the output below the cell, which should look similar to this:
 
     |Index|CustomerID|years_with_company|total_day_calls|total_eve_calls|total_night_calls|total_intl_calls|average_call_minutes|total_customer_service_calls|age|churn|
     | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- |
@@ -143,7 +143,7 @@ Now you're ready to run code to prepare data and train a model. To work with dat
 
 #### Congratulations! You have successfully completed this task. Please move on to the next task.
 
-## Task 4 : Train a Machine Learning model
+## Task 4: Train a Machine Learning model
 
 In this task, you will learn how to train a Machine Learning model in Microsoft Fabric using a dataset to make predictions and gain insights.
 
@@ -167,6 +167,7 @@ Now that you've loaded the data, you can use it to train a machine learning mode
     ![](./Images/13.png)
 
 1. Run the code cell you added, and note you're omitting 'CustomerID' from the dataset, and splitting the data into a training and test dataset.
+   
 1. Add another new code cell to the notebook, enter the following code in it, and run it:
     
     ```python
@@ -192,7 +193,7 @@ Now that you've loaded the data, you can use it to train a machine learning mode
        mlflow.log_param("estimator", "LogisticRegression")
     ```
     
-    The code trains a classification model using Logistic Regression. Parameters, metrics, and artifacts, are automatically logged with MLflow. Additionally, you're logging a parameter called `estimator`, with the value `LogisticRegression`.
+    The code trains a classification model using Logistic Regression. Parameters, metrics, and artifacts are automatically logged with MLflow. Additionally, you're logging a parameter called `estimator`, with the value `LogisticRegression`.
 
     ![](./Images/12.png)
 
@@ -209,17 +210,17 @@ Now that you've loaded the data, you can use it to train a machine learning mode
        mlflow.log_param("estimator", "DecisionTreeClassifier")
     ```
 
-    The code trains a classification model using Decision Tree Classifier. Parameters, metrics, and artifacts, are automatically logged with MLflow. Additionally, you're logging a parameter called `estimator`, with the value `DecisionTreeClassifier`.
+    The code trains a classification model using a Decision Tree Classifier. Parameters, metrics, and artifacts are automatically logged with MLflow. Additionally, you're logging a parameter called `estimator`, with the value `DecisionTreeClassifier`.
 
     ![](./Images/11.png)
 
 #### Congratulations! You have successfully completed this task. Please move on to the next task.
 
-## Task 5 : Use MLflow to search and view your experiments
+## Task 5: Use MLflow to search and view your experiments
 
 You will learn how to use MLflow to search and view your machine learning experiments in Microsoft Fabric for tracking and managing model performance.
 
-When you've trained and tracked models with MLflow, you can use the MLflow library to retrieve your experiments and its details.
+When you've trained and tracked models with MLflow, you can use the MLflow library to retrieve your experiments and their details.
 
 1. To list all experiments, use the following code:
 
@@ -281,11 +282,11 @@ When you've trained and tracked models with MLflow, you can use the MLflow libra
 
 #### Congratulations! You have successfully completed this task. Please move on to the next task.
 
-## Task 6 : Explore your experiments
+## Task 6: Explore your experiments
 
 Learn how to analyze performance metrics and gain insights from your machine learning experiments in Microsoft Fabric. Explore various tools and techniques to evaluate and optimize your models effectively.
 
-Microsoft Fabric will keep track of all your experiments and allows you to visually explore them.
+Microsoft Fabric will keep track of all your experiments and allow you to visually explore them.
 
 1. Navigate to **dp_fabric-<inject key="Deployment ID" enableCopy="false"/>** workspace from the hub menu bar on the left.
 
@@ -297,11 +298,11 @@ Microsoft Fabric will keep track of all your experiments and allows you to visua
 
     > **Tip:** If you don't see any logged experiment runs, refresh the page.
 
-1. Review the **Run metrics** to explore accurate your regression model is.
+1. Review the **Run metrics** to explore how accurate your regression model is.
 
 #### Congratulations! You have successfully completed this task. Please move on to the next task.
 
-## Task 7 : Save the model
+## Task 7: Save the model
 
 In this task, you will learn how to save the trained Machine Learning model in Microsoft Fabric for future use and deployment.
 
@@ -323,9 +324,9 @@ Note that the model, the experiment, and the experiment run are linked, allowing
 
 #### Congratulations! You have successfully completed this task. Please move on to the next task.
 
-## Task 8 : Save the Notebook and end the Spark session
+## Task 8: Save the Notebook and end the Spark session
 
-In this task, you will discover how to preserve your work by saving the Notebook and efficiently end the Spark session in Microsoft Fabric to free up resources.
+In this task, you will discover how to preserve your work by saving the Notebook and efficiently ending the Spark session in Microsoft Fabric to free up resources.
 
 Now that you've finished training and evaluating the models, you can save the notebook with a meaningful name and end the Spark session.
 
@@ -367,11 +368,11 @@ In this lab, you have learned how to set up a data science workflow in Microsoft
 
 You have completed the following tasks:
 
-- Created a Lakehouse and upload files
+- Created a Lakehouse and uploaded files
 - Created a Notebook
 - Loaded data into a dataframe
 - Trained a Machine Learning model
-- Used MLflow to search and view your experiments
+- Used MLflow to search and viewed your experiments
 - Explored your experiments
 - Saved the model
 - Saved the Notebook and ended the Spark session
