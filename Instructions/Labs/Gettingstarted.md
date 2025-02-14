@@ -1,6 +1,6 @@
 # Get started with Real-Time Analytics and Data Science with Microsoft Fabric
 
-### Overall Estimated Duration: 75 Minutes
+### Overall Estimated Duration: 2 hours
 
 ## Overview
 
