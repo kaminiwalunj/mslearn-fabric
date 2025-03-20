@@ -21,7 +21,7 @@ Before working with data in Fabric, create a workspace with the Fabric trial ena
 
    * Password: <inject key="AzureAdUserPassword"></inject> and click on **Yes**.
 
-   ![](./Images/odl-01.png)
+     ![](./Images/odl-01.png)
    
 2. After signing in, From the bottom left choose **Power BI** .
 
@@ -47,8 +47,6 @@ Before working with data in Fabric, create a workspace with the Fabric trial ena
 
 8. In the left menu bar, click on **Workspaces (1)**, then select **+ New Workspace (2)**.
 
-   ![New lakehouse.](./Images/gen2-1.png)
-
 9. Create a new workspace with a name **dp_fabric-<inject key="Deployment ID" enableCopy="false"/> (1)**, Choose a licensing mode as a **trial (2)** under **Advanced**. and click on **Apply (3)**.
 
    ![New lakehouse.](./Images/fab-image3.png)
@@ -71,7 +69,7 @@ Before working with data in Fabric, create a workspace with the Fabric trial ena
 Now that you have a workspace, it's time to and create a data lakehouse into which you'll ingest data.
 
    
-1. Select **+New Item (1)**, search for **Lakehouse(2)**, and then choose **Lakehouse(3)** from the results.
+1. Select **+ New Item (1)**, search for **Lakehouse(2)**, and then choose **Lakehouse(3)** from the results.
 
       ![New lakehouse.](./Images/lakehouse-1.png)
 
@@ -101,8 +99,6 @@ Now that you have a lakehouse, you need to ingest some data into it. One way to 
       ![New dataflow.](./Images/datagenflow.png)
 
       >**Note**: If the option is not visible as mentioned above, please follow the steps highlighted in the screenshot below.
-      
-
 
 3. After a few seconds, the Power Query editor for your new dataflow opens as shown here.
 
@@ -127,7 +123,7 @@ Now that you have a lakehouse, you need to ingest some data into it. One way to 
 
       ![Query in the Power Query editor.](./Images/m6-fabric-3.png)
 
-7. On the toolbar ribbon, select the **Add column** tab. Then select **Custom column**.
+7. On the toolbar ribbon, select the **Add column (1)** tab. Then select **Custom column (2)**.
 
       ![New lakehouse.](./Images/fab-image7.png)
    
@@ -149,7 +145,7 @@ Now that you have a lakehouse, you need to ingest some data into it. One way to 
 
 1. On the toolbar ribbon, select the **Home** tab. In the home tab, click on the dropdown for **Query (1)**, click on **Add data destination (2)** drop-down menu and select **Lakehouse (3)**.
    
-      > **Note:** If this option is grayed out, you may already have a data destination set. Check the data destination at the bottom of the Query settings pane on the 
+   > **Note:** If this option is grayed out, you may already have a data destination set. Check the data destination at the bottom of the Query settings pane on the 
       right side of the Power Query editor. If a destination is already set, you can change it using the gear.
 
       ![New lakehouse.](./Images/gen2-2.png)
@@ -169,7 +165,7 @@ Now that you have a lakehouse, you need to ingest some data into it. One way to 
       - OrderDate = Date/Time
       - MonthNo = Whole number
 
-      ![New lakehouse.](./Images/gen2-3.png)
+        ![New lakehouse.](./Images/gen2-3.png)
 
 5. Now repeat the process outlined earlier to add a lakehouse destination.
 
