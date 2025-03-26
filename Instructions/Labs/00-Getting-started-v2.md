@@ -44,6 +44,12 @@ Once you're ready to dive in, your virtual machine and lab guide will be right a
  
 ![](./Images/updatedimg1.png)
 
+## Lab Guide Zoom In/Zoom Out
+
+To adjust the zoom level for the environment page, click the **A↕ : 100%** icon located next to the timer in the lab environment.
+
+![](media/ing2.png)
+
 ### Virtual Machine & Lab Guide
  
 Your virtual machine is your workhorse throughout the workshop. The lab guide is your roadmap to success.
