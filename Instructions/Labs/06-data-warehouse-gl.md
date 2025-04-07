@@ -1,5 +1,7 @@
 # Lab -02 : Analyze data in a Data Warehouse
 
+### Overall Estimated Duration: 120 minutes
+
 ## Overview
 
 Data warehouses are analytical stores built on a relational schema to support SQL queries. Microsoft Fabric enables you to create a relational data warehouse in your workspace and 
