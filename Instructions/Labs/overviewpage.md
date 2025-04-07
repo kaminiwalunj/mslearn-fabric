@@ -81,7 +81,12 @@ For convenience, you can open the lab guide in a separate window by selecting th
 Feel free to start, stop, or restart your virtual machine as needed from the **Resources** tab. Your experience is in your hands!
  
 ![Manage Your Virtual Machine](./Images/res.png)
- 
+
+## Lab Guide Zoom In/Zoom Out
+
+To adjust the zoom level for the environment page, click the **A↕ : 100%** icon located next to the timer in the lab environment.
+
+![](./Images/A.png)
 
 Now you're all set to explore the powerful world of technology. Feel free to reach out if you have any questions along the way. 
 
