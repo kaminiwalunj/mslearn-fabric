@@ -1,6 +1,6 @@
 # Lab 01: Use Delta tables in Apache Spark
 
-### Estimated Duration: 90 minutes
+### Estimated Duration: 140 minutes
 
 ## Overview
 
