@@ -74,11 +74,11 @@ Before working with data in Fabric, create a workspace with the Fabric trial ena
 
 9. Create a new workspace with a **name (1)** of your choice, select a licensing mode that includes Fabric capacity (*Trial*, *Premium*, or *Fabric*), and click on **Apply (2)**
 
-   ![](./Images/fabriclab.png)
+      ![](./Images/apply.png)
 
 10. When your new workspace opens, it should be empty.
 
-      ![Screenshot of an empty workspace in Power BI.](./Images/fabriclab.png)
+      ![Screenshot of an empty workspace in Power BI.](./Images/powerbi-01.png)
 
 > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
 > - If you receive a success message, you can proceed to the next task.
@@ -90,14 +90,12 @@ Before working with data in Fabric, create a workspace with the Fabric trial ena
 ## Task 2 : Create a Lakehouse
 
 Now that you have a workspace, it's time to switch to the *Data engineering* experience in the portal and create a data lakehouse for your data files.
-
-1. At the bottom left of the **Power BI (1)** portal, switch to the **Data Engineering (2)** experience.
-
-    - The data engineering home page includes tiles to create commonly used data engineering assets.
-
-      ![](./Images/dataengineering.png)
  
-2. In the **Data engineering** home page, Select **Lakehouse**
+1. Click on **+New Item** from the workspace
+
+      ![](./Images/powerbi-01.png)
+
+2. Search for **Lakehouse (1)** and select the option labeled **Lakehouse (2)** from the results.
 
       ![](./Images/lakehouse.png)
 
@@ -129,13 +127,13 @@ Fabric provides multiple ways to load data into the lakehouse, including built-i
 
       - OR If you are using the lab virtual machine (lab VM) provided to you, you can get the file from the **C:\LabFiles\dp-data-main** directory.
 
-1. Return to the web browser tab containing your lakehouse, and in the **... (1)** menu for the **Files** folder in the **Lakehouse explorer** pane, select **New subfolder (2)**, and create a subfolder named **data**.
+1. Return to the web browser tab containing your lakehouse, and in the **ellipses (1)** menu for the **Files** folder in the **Lakehouse explorer** pane, select **New subfolder (2)**, and create a subfolder named **data**.
 
       ![](./Images/image10.png)
 
       ![](./Images/image11.png)
 
-1. In the **... (1)** menu for the new **data** folder, select **Upload (2)** and **Upload files (3)**, and then upload the **sales.csv** file from your local computer (or lab VM if applicable).
+1. In the **ellipses (1)** menu for the new **data** folder, select **Upload (2)** and **Upload files (3)**, and then upload the **sales.csv** file from your local computer (or lab VM if applicable).
 
       ![](./Images/image12.png)
 
@@ -151,7 +149,7 @@ Fabric provides multiple ways to load data into the lakehouse, including built-i
 
 In many scenarios, the data you need to work with in your lakehouse may be stored in some other location. While there are many ways to ingest data into the OneLake storage for your lakehouse, another option is to instead create a *shortcut*. Shortcuts enable you to include externally sourced data in your analytics solution without the overhead and risk of data inconsistency associated with copying it.
 
-1. In the **... (1)** menu for the **Files** folder, select **New shortcut (2)**.
+1. In the **ellipses (1)** menu for the **Files** folder, select **New shortcut (2)**.
 
       ![](./Images/newshortcut.png)
 
@@ -165,13 +163,13 @@ The sales data you uploaded is in a file, which data analysts and engineers can 
 
       ![](./Images/files-data.png)
 
-2. In the **... (1)** menu for the **sales.csv** file, select **Load to Tables (2)** and click on **New Table (3)**.
+2. In the **ellipses (1)** menu for the **sales.csv** file, select **Load to Tables (2)** and click on **New Table (3)**.
 
       ![](./Images/loadtables.png)
    
 3. In the **Load file to new table** dialog box, set the table name to **sales (1)** and confirm the load operation by selecting **Load (2)**. Then wait for the table to be created and loaded.
 
-    >**Tip**: If the **sales** table does not automatically appear, in the **...** menu for the **Tables** folder, select **Refresh**.
+    >**Tip**: If the **sales** table does not automatically appear, in the **ellipses** menu for the **Tables** folder, select **Refresh**.
 
    ![](./Images/salesorder.png)
    
@@ -179,7 +177,7 @@ The sales data you uploaded is in a file, which data analysts and engineers can 
 
       ![Screenshot of a table preview.](./Images/table-preview-u.png)
 
-5. In the **... (1)** menu for the **sales** table, select **View files (2)** to see the underlying files for this table
+5. In the **ellipses (1)** menu for the **sales** table, select **View files (2)** to see the underlying files for this table
 
       ![Screenshot of a table preview.](./Images/tables.png)
 
@@ -203,7 +201,7 @@ When you create a lakehouse and define tables in it, a SQL endpoint is automatic
      ORDER BY Revenue DESC;
      ```
 
-      ![Screenshot of the new sql query.](./Images/image15.png)
+      ![Screenshot of the new sql query.](./Images/new-sql-query.png)
 
 1. Use the **&#9655; Run** button to run the query and view the results, which should show the total revenue for each product.
 
@@ -215,7 +213,7 @@ While many data professionals are familiar with SQL, data analysts with Power BI
 
 1. On the toolbar, select **New SQL Query (1) > New visual query (2)**.
 
-      ![Screenshot of a Visual query.](./Images/newsqlquery.png)
+      ![Screenshot of a Visual query.](./Images/new-visal-query.png)
 
 2. Drag the **sales** table to the new visual query editor pane that opens to create a **Power Query (2)** as shown here: 
 
