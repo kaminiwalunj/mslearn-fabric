@@ -48,7 +48,7 @@ Before working with data in Fabric, create a workspace with the Fabric trial ena
 
 3. From the Microsoft Fabric home page, select **PowerBI**
 
-   ![](./Images/powerbi.png)
+   ![](./Images/powerbi-1.png)
    
 4. From the PowerBI home page, select **Account Manager (1)** from the top-right corner to start the **Free trail (2)** of  Microsoft Fabric.
 
