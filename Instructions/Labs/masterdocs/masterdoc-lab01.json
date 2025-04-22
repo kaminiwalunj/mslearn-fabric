@@ -13,8 +13,8 @@
         "Order": 2
       },
       {
-        "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/mslearn-fabric/main/Instructions/Labs/06-data-warehouse-gl.md",
-        "Order": 2
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/mslearn-fabric/refs/heads/main/Instructions/Labs/06-data-warehouse-msinnovation.md",
+        "Order": 3
       }
     ]
   }
