@@ -272,7 +272,7 @@ The tables in your lakehouse are automatically added to a default dataset that d
     - A default dataset for the tables in your lakehouse.
     - The **Item Sales Report** report.
 
-      ![Screenshot of a workspace view.](./Images/powermodel1.png)
+      ![Screenshot of a workspace view.](./Images/powermodel1-1.png)
 
 
 > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
