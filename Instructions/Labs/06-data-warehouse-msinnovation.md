@@ -1,4 +1,4 @@
-# Lab : Analyze data in a Data Warehouse
+# Lab-02 : Analyze data in a Data Warehouse
 
 ## Overview
 
@@ -28,12 +28,13 @@ This lab will take approximately **30** minutes to complete.
 
 Now that you have a workspace, it's time to create a data warehouse.
 
-1. Select the workspace that's been created in previous task.
+1. Choose the workspace **fabriclab_<inject key="DeploymentID" enableCopy="false"/>**
 
-1. At the bottom left of the Power BI portal.
+1. Click on **+New Item** from the workspace.
+
+      ![](./Images/powerbi-01.png)
     
-
-2. In the **PowerBI** home page, create a new **Warehouse** with a name it as **myDataWarehouse** and click on **Create**.
+1. Create a new **Warehouse** with a name it as **myDataWarehouse** and click on **Create**.
 
     After a minute or so, a new warehouse will be created:
 
