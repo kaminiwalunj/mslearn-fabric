@@ -72,7 +72,7 @@ Before working with data in Fabric, create a workspace with the Fabric trial ena
 
    ![](./Images/newworkspace.png)
 
-9. Create a new workspace with a **name (1)** of your choice, select a licensing mode that includes Fabric capacity (*Trial*, *Premium*, or *Fabric*), and click on **Apply (2)**
+9. Create a new workspace with a **Fabriclab_<inject key="DeploymentID" enableCopy="false"/> (1)** , select a licensing mode that includes Fabric capacity **Trail**, and click on **Apply (2)**
 
       ![](./Images/apply.png)
 
