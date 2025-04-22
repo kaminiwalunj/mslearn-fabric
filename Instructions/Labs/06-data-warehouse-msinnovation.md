@@ -24,43 +24,7 @@ This lab will take approximately **30** minutes to complete.
 
 > **Note**: You'll need a Microsoft Fabric license to complete this exercise. Complete the previous task to proceed further.
 
-## Task 1 : Create a workspace
-
-Before working with data in Fabric, create a workspace with the Fabric trial enabled.
-
-1. Sign into [Microsoft Fabric](https://app.fabric.microsoft.com) at `https://app.fabric.microsoft.com` and select **Power BI**.
-
-   ![](./Images/power-bi.png)
-
-2. From the PowerBI home page, select **Account Manager** from the top-right corner to start the free **Microsoft Fabric trial**. and click on **Free trial**.
-    
-    ![](./Images/updated1new.png)
-     
-4. If prompted, agree to the terms and then select **Start trial**. 
-
-   ![](./Images/updated2.png)
-   
-5. Once your trial capacity is ready, you receive a confirmation message. Select **Stay on current page** to begin working in Fabric.
-
-    ![](./Images/updated3.png)
-   
-6. On the dashboard, on the top menu you can see **Trial Status 59 days left**.
-
-    ![](./Images/updated4.png)
-
-   You now have a **Fabric (Preview) trial** that includes a **Power BI trial** and a **Fabric (Preview) trial capacity**.
-
-7. In the menu bar on the left, select **Workspaces** (the icon looks similar to &#128455;).
-
-   ![](./Images/workspace-1.png)
-
-8. Create a new workspace with a name **dp_fabric-<inject key="Deployment ID" enableCopy="false"/>**, selecting a licensing mode that includes Fabric capacity (*Trial*, *Premium*, or *Fabric*).
-
-9. When your new workspace opens, it should be empty, as shown here:
-
-    ![Screenshot of an empty workspace in Power BI.](./Images/new-workspace.png)
-
-## Task 2 : Create a Data Warehouse
+## Task 1 : Create a Data Warehouse
 
 Now that you have a workspace, it's time to switch to the *Data Warehouse* experience in the portal and create a data warehouse.
 
