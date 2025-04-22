@@ -112,7 +112,7 @@ Now that you have a workspace, it's time to switch to the *Data engineering* exp
        stored externally.
      - Currently, there are no tables or files in the lakehouse.
 
-       ![](./Images/image9.png)
+       ![](./Images/image91-1.png)
    
 ## Task 3 : Upload a file
 
