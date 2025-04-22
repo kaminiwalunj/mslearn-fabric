@@ -135,7 +135,7 @@ Fabric provides multiple ways to load data into the lakehouse, including built-i
 
 1. In the **ellipses (1)** menu for the new **data** folder, select **Upload (2)** and **Upload files (3)**, and then upload the **sales.csv** file from your local computer (or lab VM if applicable).
 
-      ![](./Images/image12.png)
+      ![](./Images/image12-1.png)
 
       ![](./Images/image13.png)
    
@@ -261,7 +261,7 @@ The tables in your lakehouse are automatically added to a default dataset that d
 4. Hide the **Data** and **Filters** panes to create more space. Then ensure the table visualization is selected and in the **Visualizations** pane, change the visualization to a **Clustered bar chart** and resize it 
    as shown here.
 
-      ![Screenshot of a report containing a clustered bar chart.](./Images/clustered-bar-chart-u.png)
+      ![Screenshot of a report containing a clustered bar chart.](./Images/fabric-1.png)
 
 5. On the **File** menu, select **Save**. Then save the report as **Item Sales Report** in the workspace you created previously.
 
