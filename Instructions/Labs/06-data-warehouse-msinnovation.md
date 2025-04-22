@@ -103,6 +103,7 @@ A relational data warehouse typically consists of *fact* and *dimension* tables.
 
 1. At the bottom of the page , select the **Model** tab.
    
+   
    ![Screenshot of the data warehouse model page.](./Images/model-layouts.png)
 
 
