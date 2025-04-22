@@ -151,7 +151,7 @@ In many scenarios, the data you need to work with in your lakehouse may be store
 
 1. In the **ellipses (1)** menu for the **Files** folder, select **New shortcut (2)**.
 
-      ![](./Images/newshortcut.png)
+   ![](./Images/newshortcut.png)
 
 2. View the available data source types for shortcuts. Then close the **New shortcut** dialog box without creating a shortcut.
 
