@@ -26,15 +26,14 @@ This lab will take approximately **30** minutes to complete.
 
 ## Task 1 : Create a Data Warehouse
 
-Now that you have a workspace, it's time to switch to the *Data Warehouse* experience in the portal and create a data warehouse.
+Now that you have a workspace, it's time to create a data warehouse.
 
-1. At the bottom left of the Power BI portal, switch to the **Data Warehouse** experience.
+1. Select the workspace that's been created in previous task.
 
-    The Data Warehouse home page includes a shortcut to create a new warehouse:
+1. At the bottom left of the Power BI portal.
+    
 
-    > **Note**: If you don't see the icon in the bottom left corner, Fabric isn't enabled for your tenant. Fabric is enabled in the admin portal for tenants that have a Power BI Premium subscription.
-
-2. In the **Data Warehouse** home page, create a new **Warehouse** with a name it as **myDataWarehouse** and click on **Create**.
+2. In the **PowerBI** home page, create a new **Warehouse** with a name it as **myDataWarehouse** and click on **Create**.
 
     After a minute or so, a new warehouse will be created:
 
