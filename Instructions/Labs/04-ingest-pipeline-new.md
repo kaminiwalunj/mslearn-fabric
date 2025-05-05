@@ -38,13 +38,13 @@ A simple way to ingest data is to use a **Copy Data** activity in a pipeline to 
 
 2. If the **Copy Data** wizard doesn't open automatically, select **Copy Data** in the pipeline editor page.
 
-3. In the **Copy Data** wizard, on the **Choose source** page, in the **Connection** section, select **More**, then search and select **Http**.
+3. In the **Copy Data** wizard, on the **Choose a data source** page, in the **New sources** section, search and select **Http**.
 
     ![Screenshot of the Choose data source page.](./Images/imag9.png)
 
 4. You will be navigated to Connect to data source.
 
-5. On **Connect data source** section, enter the following settings for the connection to your data source:
+5. On **Connect to data source** section, enter the following settings for the connection to your data source:
     - **URL**: `https://raw.githubusercontent.com/MicrosoftLearning/dp-data/main/sales.csv`
     - **Connection**: Create new connection
     - **Connection name**: *Specify a unique name*
@@ -58,7 +58,6 @@ A simple way to ingest data is to use a **Copy Data** activity in a pipeline to 
     - **Request timeout**: *Leave blank*
     - **Max concurrent connections**: *Leave blank*
 
-
 6. Select **Next**, and wait for the data to be sampled and then ensure that the following settings are selected:
     - **File format**: DelimitedText
     - **Column delimiter**: Comma (,)
@@ -66,36 +65,36 @@ A simple way to ingest data is to use a **Copy Data** activity in a pipeline to 
     - **First row as header**: Selected
     - **Compression type**: None
 
-8. Select **Preview data** to see a sample of the data that will be ingested. Then close the data preview and select **Next**.
+7. Select **Preview data** to see a sample of the data that will be ingested. Then close the data preview and select **Next**.
 
-9. On the **Choose data destination** page, select your existing lakehouse.
+8. On the **Choose data destination** page, select your existing lakehouse.
 
     ![](./Images/imag12.png)
 
-10. Set the following data destination options, and then select **Next**:
+9. Set the following data destination options, and then select **Next**:
     - **Root folder**: Files
     - **Folder path name**: new_data
     - **File name**: sales.csv
     - **Copy behavior**: None
 
-11. Set the following file format options in and then select **Next**:
+10. Set the following file format options and then select **Next**:
     - **File format**: DelimitedText
     - **Column delimiter**: Comma (,)
     - **Row delimiter**: Line feed (\n)
     - **Add header to file**: Selected
     - **Compression type**: None
 
-12. On the **Copy summary** page, review the details of your copy operation and then select **Save + Run**.
+11. On the **Copy summary** page, review the details of your copy operation and then select **Save + Run**.
 
     A new pipeline containing a **Copy Data** activity is created, as shown here:
 
     ![Screenshot of a pipeline with a Copy Data activity.](./Images/copy-data-pipeline2.png)
 
-13. When the pipeline starts to run, you can monitor its status in the **Output** pane under the pipeline designer. Use the **&#8635;** (*Refresh*) icon to refresh the status, and wait until it has succeeeded.
+12. When the pipeline starts to run, you can monitor its status in the **Output** pane under the pipeline designer. Use the **&#8635;** (*Refresh*) icon to refresh the status, and wait until it has succeeeded.
 
-14. In the menu bar on the left, select your lakehouse.
+13. In the menu bar on the left, select your lakehouse.
 
-15. On the **Home** page, in the **Lakehouse explorer** pane, expand **Files** and select the **new_data** folder to verify that the **sales.csv** file has been copied.
+14. On the **Home** page, in the **Lakehouse explorer** pane, expand **Files** and select the **new_data** folder to verify that the **sales.csv** file has been copied.
 
 ## Task 2 : Create a notebook
 
