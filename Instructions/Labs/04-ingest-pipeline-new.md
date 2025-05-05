@@ -32,13 +32,13 @@ This lab will take approximately **60** minutes to complete.
 
 A simple way to ingest data is to use a **Copy Data** activity in a pipeline to extract the data from a source and copy it to a file in the lakehouse.
 
-1. On the **Home** page for your lakehouse, select **New data pipeline**, and create a new data pipeline named **Ingest Sales Data**.
+1. On the **Home** page for your lakehouse, Under **Get data** select **New data pipeline**, and create a new data pipeline named **Ingest Sales Data**.
 
-    ![](./Images/imag8.png)
+    ![](./Images/newPipeline.png)
 
 2. If the **Copy Data** wizard doesn't open automatically, select **Copy Data** in the pipeline editor page.
 
-3. In the **Copy Data** wizard, on the **Choose a data source** page, in the **New sources** section, search and select **Http**
+3. In the **Copy Data** wizard, on the **Choose a data source** page, in the **New sources** section, search and select **Http**.
 
     ![Screenshot of the Choose data source page.](./Images/imag9.png)
 
@@ -70,7 +70,6 @@ A simple way to ingest data is to use a **Copy Data** activity in a pipeline to 
 8. On the **Choose data destination** page, select your existing lakehouse.
 
     ![](./Images/imag12.png)
-
 
 9. Set the following data destination options, and then select **Next**:
     - **Root folder**: Files
