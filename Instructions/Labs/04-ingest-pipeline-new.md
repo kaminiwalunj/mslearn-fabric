@@ -38,64 +38,64 @@ A simple way to ingest data is to use a **Copy Data** activity in a pipeline to 
 
 2. If the **Copy Data** wizard doesn't open automatically, select **Copy Data** in the pipeline editor page.
 
-3. In the **Copy Data** wizard, on the **Choose a data source** page, in the **New sources** section, search and select **Http**
+3. In the **Copy Data** wizard, on the **Choose source** page, in the **Connection** section, select **More**, then search and select **Http**.
 
     ![Screenshot of the Choose data source page.](./Images/imag9.png)
 
 4. You will be navigated to Connect to data source.
 
-5. On **Connect to data source** section, enter the following settings for the connection to your data source:
+5. On **Connect data source** section, enter the following settings for the connection to your data source:
     - **URL**: `https://raw.githubusercontent.com/MicrosoftLearning/dp-data/main/sales.csv`
     - **Connection**: Create new connection
     - **Connection name**: *Specify a unique name*
     - **Authentication kind**: Basic (*Provide the username and password and note it in notepad*)
 
-5. Select **Next**. Then ensure the following settings are selected:
+5. Select **Connect**. Then ensure the following settings are selected:
     - **Relative URL**: *Leave blank*
+    - **File format**: DelimitedText
     - **Request method**: GET
     - **Additional headers**: *Leave blank*
     - **Binary copy**: <u>Un</u>selected
     - **Request timeout**: *Leave blank*
     - **Max concurrent connections**: *Leave blank*
 
-6. Select **Next**, and wait for the data to be sampled and then ensure that the following settings are selected:
-    - **File format**: DelimitedText
+
+6. Select **Settings** for File format, and wait for the data to be sampled and then ensure that the following settings are selected:
+    - **Compression type**: None
     - **Column delimiter**: Comma (,)
     - **Row delimiter**: Line feed (\n)
     - **First row as header**: Selected
-    - **Compression type**: None
 
-7. Select **Preview data** to see a sample of the data that will be ingested. Then close the data preview and select **Next**.
+7. Select **Preview data** to see a sample of the data that will be ingested. Then close the data preview and select **Destination**.
 
-8. On the **Choose data destination** page, select your existing lakehouse.
+8. On the **Choose data destination** page, select your existing lakehouse in **Connection**.
 
     ![](./Images/imag12.png)
-
 
 9. Set the following data destination options, and then select **Next**:
     - **Root folder**: Files
     - **Folder path name**: new_data
     - **File name**: sales.csv
+    - **File format**: DelimitedText
     - **Copy behavior**: None
 
-10. Set the following file format options and then select **Next**:
-    - **File format**: DelimitedText
+10. Set the following file format options in **Settings**:
+    - **Compression type**: None
     - **Column delimiter**: Comma (,)
     - **Row delimiter**: Line feed (\n)
     - **Add header to file**: Selected
-    - **Compression type**: None
 
-11. On the **Copy summary** page, review the details of your copy operation and then select **Save + Run**.
+12. On the **Copy summary** page, review the details of your copy operation and then select **Save + Run**.
 
     A new pipeline containing a **Copy Data** activity is created, as shown here:
 
     ![Screenshot of a pipeline with a Copy Data activity.](./Images/copy-data-pipeline2.png)
 
-12. When the pipeline starts to run, you can monitor its status in the **Output** pane under the pipeline designer. Use the **&#8635;** (*Refresh*) icon to refresh the status, and wait until it has succeeeded.
+13. When the pipeline starts to run, you can monitor its status in the **Output** pane under the pipeline designer. Use the **&#8635;** (*Refresh*) icon to refresh the status, and wait until it has succeeeded.
 
-13. In the menu bar on the left, select your lakehouse.
+14. In the menu bar on the left, select your lakehouse.
 
-14. On the **Home** page, in the **Lakehouse explorer** pane, expand **Files** and select the **new_data** folder to verify that the **sales.csv** file has been copied.
+15. On the **Home** page, in the **Lakehouse explorer** pane, in the ... menu for the Files folder, select Refresh and select the **new_data** folder to verify that the **sales.csv** file has been copied.
 
 ## Task 2 : Create a notebook
 
