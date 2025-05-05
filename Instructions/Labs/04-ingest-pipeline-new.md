@@ -32,9 +32,9 @@ This lab will take approximately **60** minutes to complete.
 
 A simple way to ingest data is to use a **Copy Data** activity in a pipeline to extract the data from a source and copy it to a file in the lakehouse.
 
-1. On the **Home** page for your lakehouse, select **New data pipeline**, and create a new data pipeline named **Ingest Sales Data**.
+1. On the **Home** page for your lakehouse, Under **Get data** select **New data pipeline**, and create a new data pipeline named **Ingest Sales Data**.
 
-    ![](./Images/imag8.png)
+    ![](./Images/newPipeline.png)
 
 2. If the **Copy Data** wizard doesn't open automatically, select **Copy Data** in the pipeline editor page.
 
@@ -50,9 +50,8 @@ A simple way to ingest data is to use a **Copy Data** activity in a pipeline to 
     - **Connection name**: *Specify a unique name*
     - **Authentication kind**: Basic (*Provide the username and password and note it in notepad*)
 
-5. Select **Connect**. Then ensure the following settings are selected:
+5. Select **Next**. Then ensure the following settings are selected:
     - **Relative URL**: *Leave blank*
-    - **File format**: DelimitedText
     - **Request method**: GET
     - **Additional headers**: *Leave blank*
     - **Binary copy**: <u>Un</u>selected
@@ -60,30 +59,31 @@ A simple way to ingest data is to use a **Copy Data** activity in a pipeline to 
     - **Max concurrent connections**: *Leave blank*
 
 
-6. Select **Settings** for File format, and wait for the data to be sampled and then ensure that the following settings are selected:
-    - **Compression type**: None
+6. Select **Next**, and wait for the data to be sampled and then ensure that the following settings are selected:
+    - **File format**: DelimitedText
     - **Column delimiter**: Comma (,)
     - **Row delimiter**: Line feed (\n)
     - **First row as header**: Selected
+    - **Compression type**: None
 
-7. Select **Preview data** to see a sample of the data that will be ingested. Then close the data preview and select **Destination**.
+8. Select **Preview data** to see a sample of the data that will be ingested. Then close the data preview and select **Next**.
 
-8. On the **Choose data destination** page, select your existing lakehouse in **Connection**.
+9. On the **Choose data destination** page, select your existing lakehouse.
 
     ![](./Images/imag12.png)
 
-9. Set the following data destination options, and then select **Next**:
+10. Set the following data destination options, and then select **Next**:
     - **Root folder**: Files
     - **Folder path name**: new_data
     - **File name**: sales.csv
-    - **File format**: DelimitedText
     - **Copy behavior**: None
 
-10. Set the following file format options in **Settings**:
-    - **Compression type**: None
+11. Set the following file format options in and then select **Next**:
+    - **File format**: DelimitedText
     - **Column delimiter**: Comma (,)
     - **Row delimiter**: Line feed (\n)
     - **Add header to file**: Selected
+    - **Compression type**: None
 
 12. On the **Copy summary** page, review the details of your copy operation and then select **Save + Run**.
 
@@ -95,7 +95,7 @@ A simple way to ingest data is to use a **Copy Data** activity in a pipeline to 
 
 14. In the menu bar on the left, select your lakehouse.
 
-15. On the **Home** page, in the **Lakehouse explorer** pane, in the ... menu for the Files folder, select Refresh and select the **new_data** folder to verify that the **sales.csv** file has been copied.
+15. On the **Home** page, in the **Lakehouse explorer** pane, expand **Files** and select the **new_data** folder to verify that the **sales.csv** file has been copied.
 
 ## Task 2 : Create a notebook
 
