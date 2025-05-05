@@ -47,7 +47,7 @@ Before working with data in Fabric, create a workspace with the Fabric trial ena
 
       ![](./Images/image2.png)
 
-2. From the Microsoft Fabric home page, select **PowerBI**
+2. From the Microsoft Fabric home page, click the Fabric icon in the bottom-left corner, then select **Power BI**.
 
    ![](./Images/powerbi.png)
 
