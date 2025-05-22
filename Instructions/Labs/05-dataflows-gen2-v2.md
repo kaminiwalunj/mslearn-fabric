@@ -33,7 +33,7 @@ Before working with data in Fabric, create a workspace with the Fabric trial ena
      
 5. If prompted, agree to the terms and then select **Activate**. 
 
-   ![](./Images/activate-01.png)
+   ![](./Images/E1T1S4.png)
    
 6. Once your trial capacity is ready, you receive a confirmation message. Select **Stay on current page** to begin working in Fabric.
 
@@ -53,7 +53,7 @@ Before working with data in Fabric, create a workspace with the Fabric trial ena
     
 10. When your new workspace opens, it should be empty, as shown here:
 
-    ![Screenshot of an empty workspace in Power BI.](./Images/new-workspace-2.png)
+    ![Screenshot of an empty workspace in Power BI.](./Images/E1T1S9.png)
 
     > **Note**: If the prompt **"Introducing task flows (preview)"** appears, just click on **Got it**.   
  
@@ -178,7 +178,7 @@ Now that you have a lakehouse, you need to ingest some data into it. One way to 
 
 7. On the **Destination settings** page toggle off Use automatic settings, select **Append**, and then click on **Save Settings**.  
 
-      ![New lakehouse.](./Images/gen2-5.png)
+      ![New lakehouse.](./Images/E1T4S7.png)
 
 8. The **Lakehouse** destination is indicated as an icon in the query in the Power Query editor.
    
