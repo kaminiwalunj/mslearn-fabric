@@ -144,30 +144,29 @@ Now that you have a lakehouse, you need to ingest some data into it. One way to 
 ## Task 4 : Add data destination for Dataflow
 
 1. On the toolbar ribbon, select the **Home** tab. In the home tab, click on the dropdown for **Query (1)**, click on **Add data destination (2)** drop-down menu and select **Lakehouse (3)**.
-   
-   > **Note:** If this option is grayed out, you may already have a data destination set. Check the data destination at the bottom of the Query settings pane on the 
-      right side of the Power Query editor. If a destination is already set, you can change it using the gear.
-   
-     ![New lakehouse.](Images/gen2-2.png)
 
-2. In the **Connect to data destination** dialog box, keep all the values as default and select **Next**.
+   ![New lakehouse.](./Images/gen2-2.png)
+
+   > **Note:** If this option is grayed out, you may already have a data destination set. Check the data destination at the bottom of the Query settings pane on the right side of the Power Query editor. If a destination is already set, you can change it using the gear.
+
+3. In the **Connect to data destination** dialog box, keep all the values as default and select **Next**.
 
       ![Data destination configuration page.](./Images/connect_data_destination-1.png)
 
-3. In the list of available workspaces, find your workspace and select lakehouse you created in it at the start of this exercise. The associated table **orders** will automatically come up. Click on **Next**.
+4. In the list of available workspaces, find your workspace and select lakehouse you created in it at the start of this exercise. The associated table **orders** will automatically come up. Click on **Next**.
 
       ![Data destination configuration page.](./Images/orders.png)
 
       > **Note:** On the **Destination settings** page, notice how OrderDate and MonthNo are not selected in the Column mapping and there is an informational message: *Change to date/time*.
 
-4. Cancel this action, then go back to OrderDate and MonthNo columns in Power Query online. Right-click on the column header and **Change Type**.
+5. Cancel this action, then go back to OrderDate and MonthNo columns in Power Query online. Right-click on the column header and **Change Type**.
 
       - OrderDate = Date/Time
       - MonthNo = Whole number
 
         ![New lakehouse.](./Images/gen2-3.png)
 
-5. Now repeat the process outlined earlier to add a lakehouse destination.
+6. Now repeat the process outlined earlier to add a lakehouse destination.
 
    - Choose the existing destination that we previously created, select **Lakehouse (none) (1)** and click on **Next (2)**.
 
