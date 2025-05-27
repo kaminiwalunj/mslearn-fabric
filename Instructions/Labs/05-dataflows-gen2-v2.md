@@ -149,6 +149,11 @@ Now that you have a lakehouse, you need to ingest some data into it. One way to 
 
    > **Note:** If this option is grayed out, you may already have a data destination set. Check the data destination at the bottom of the Query settings pane on the right side of the Power Query editor. If a destination is already set, you can change it using the gear.
 
+2. In the **Connect to data destination** dialog box, keep all the values as default and select **Next**.
+
+      ![Data destination configuration page.](./Images/connect_data_destination-1.png)
+
+
 3. In the **Connect to data destination** dialog box, keep all the values as default and select **Next**.
 
       ![Data destination configuration page.](./Images/connect_data_destination-1.png)
