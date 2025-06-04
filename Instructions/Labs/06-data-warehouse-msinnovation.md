@@ -2,19 +2,19 @@
 
 ## Overview
 
-Data warehouses are analytical stores built on a relational schema to support SQL queries. Microsoft Fabric enables you to create a relational data warehouse in your workspace and 
+Data warehouses are analytical stores built on a relational schema to support SQL queries. Microsoft Fabric enables you to create a relational data warehouse in your workspace and
 integrate it easily with other elements of your end-to-end analytics solution.
 
-Microsoft Fabric's data warehouse is a modern version of the traditional data warehouse. It centralizes and organizes data from different departments, systems, and databases into a 
-single, unified view for analysis and reporting purposes. Fabric's data warehouse provides full SQL semantics, including the ability to insert, update, and delete data in the tables. 
-Fabric's data warehouse is unique because it's built on the Lakehouse, which is stored in Delta format and can be queried using SQL. It's designed for use by the whole data team, not 
+Microsoft Fabric's data warehouse is a modern version of the traditional data warehouse. It centralizes and organizes data from different departments, systems, and databases into a
+single, unified view for analysis and reporting purposes. Fabric's data warehouse provides full SQL semantics, including the ability to insert, update, and delete data in the tables.
+Fabric's data warehouse is unique because it's built on the Lakehouse, which is stored in Delta format and can be queried using SQL. It's designed for use by the whole data team, not
 just data engineers.
 
 Here, you'll learn about data warehouses in Fabric, create a data warehouse, load, query, and visualize data, and describe datasets.
 
 ## _Architecture Diagram_
 
-   ![New lakehouse.](./Images/Analyze-data-in-data-warehouse.png)
+![New lakehouse.](./Images/Analyze-data-in-data-warehouse.png)
 
 ## Get started with data warehouses in Microsoft Fabric
 
@@ -28,21 +28,21 @@ This lab will take approximately **30** minutes to complete.
 
 Now that you have a workspace, it's time to create a data warehouse.
 
-1. Choose the workspace **fabriclab_<inject key="DeploymentID" enableCopy="false"/>**
+1. Choose the workspace **fabriclab\_<inject key="DeploymentID" enableCopy="false"/>**
 
 1. Click on **+New Item** from the workspace.
 
-      ![](./Images/powerbi-01.png)
+   ![](<./Images/powerbi-01(1).png>)
 
 1. Search for **warehouse** and select it .
 
-      ![Screenshot of a new warehouse.](./Images/warehouse.png)
-    
+   ![Screenshot of a new warehouse.](./Images/warehouse.png)
+
 1. Name it as **myDataWarehouse** and click on **Create**.
 
-    After a minute or so, a new warehouse will be created:
+   After a minute or so, a new warehouse will be created:
 
-    ![Screenshot of a new warehouse.](./Images/mydatawarehouse.png)
+   ![Screenshot of a new warehouse.](./Images/mydatawarehouse.png)
 
 ## Task 3 : Create tables and insert data
 
@@ -50,19 +50,19 @@ A warehouse is a relational database in which you can define tables and other ob
 
 1. In your new warehouse, select the **Create tables with T-SQL** tile, and replace the default SQL code with the following CREATE TABLE statement:
 
-    ![Screenshot of a new warehouse.](./Images/t-sql.png)
+   ![Screenshot of a new warehouse.](<./Images/t-sql(1).png>)
 
-    ```sql
+   ```sql
    CREATE TABLE dbo.DimProduct
    (
-       ProductKey INTEGER NOT NULL,
-       ProductAltKey VARCHAR(25) NULL,
-       ProductName VARCHAR(50) NOT NULL,
-       Category VARCHAR(50) NULL,
-       ListPrice DECIMAL(5,2) NULL
+      ProductKey INTEGER NOT NULL,
+      ProductAltKey VARCHAR(25) NULL,
+      ProductName VARCHAR(50) NOT NULL,
+      Category VARCHAR(50) NULL,
+      ListPrice DECIMAL(5,2) NULL
    );
    GO
-    ```
+   ```
 
 2. Use the **&#9655; Run** button to run the SQL script, which creates a new table named **DimProduct** in the **dbo** schema of the data warehouse.
 
@@ -70,14 +70,14 @@ A warehouse is a relational database in which you can define tables and other ob
 
 4. On the **Home** menu tab, use the **New SQL Query** button to create a new query, and enter the following INSERT statement:
 
-    ```sql
+   ```sql
    INSERT INTO dbo.DimProduct
    VALUES
    (1, 'RING1', 'Bicycle bell', 'Accessories', 5.99),
    (2, 'BRITE1', 'Front light', 'Accessories', 15.49),
    (3, 'BRITE2', 'Rear light', 'Accessories', 15.49);
    GO
-    ```
+   ```
 
 5. Run the new query to insert three rows into the **DimProduct** table.
 
@@ -90,43 +90,45 @@ A warehouse is a relational database in which you can define tables and other ob
 8. Run the query, which creates a simple data warehouse schema and loads some data. The script should take around 30 seconds to run.
 
 9. Use the **Refresh** button on the toolbar to refresh the view. Then in the **Explorer** pane, verify that the **dbo** schema in the data warehouse now contains the following four tables:
-    - **DimCustomer**
-    - **DimDate**
-    - **DimProduct**
-    - **FactSalesOrder**
 
-    > **Tip**: If the schema takes a while to load, just refresh the browser page.
+   - **DimCustomer**
+   - **DimDate**
+   - **DimProduct**
+   - **FactSalesOrder**
+
+   > **Tip**: If the schema takes a while to load, just refresh the browser page.
 
 ## Task 4 : Define a Data Model
 
-A relational data warehouse typically consists of *fact* and *dimension* tables. The fact tables contain numeric measures you can aggregate to analyze business performance (for example, sales revenue), and the dimension tables contain attributes of the entities by which you can aggregate the data (for example, product, customer, or time). In a Microsoft Fabric data warehouse, you can use these keys to define a data model that encapsulates the relationships between the tables.
+A relational data warehouse typically consists of _fact_ and _dimension_ tables. The fact tables contain numeric measures you can aggregate to analyze business performance (for example, sales revenue), and the dimension tables contain attributes of the entities by which you can aggregate the data (for example, product, customer, or time). In a Microsoft Fabric data warehouse, you can use these keys to define a data model that encapsulates the relationships between the tables.
 
 1. At the bottom of the page , select the **Model** tab.
 
-    ![Screenshot of the data warehouse model page.](./Images/model-layouts.png)
-
+   ![Screenshot of the data warehouse model page.](./Images/model-layouts.png)
 
 2. In the model pane, rearrange the tables in your data warehouse so that the **FactSalesOrder** table is in the middle, like this:
 
-    ![Screenshot of the data warehouse model page.](./Images/model-dw1-1.png)
+   ![Screenshot of the data warehouse model page.](./Images/model-dw1-1.png)
 
 3. Drag the **ProductKey** field from the **FactSalesOrder** table and drop it on the **ProductKey** field in the **DimProduct** table. Then confirm the following relationship details:
-    - **Table 1**: FactSalesOrder
-    - **Column**: ProductKey
-    - **Table 2**: DimProduct
-    - **Column**: ProductKey
-    - **Cardinality**: Many to one (*:1)
-    - **Cross filter direction**: Single
-    - **Make this relationship active**: Selected
-    - **Assume referential integrity**: Unselected
+
+   - **Table 1**: FactSalesOrder
+   - **Column**: ProductKey
+   - **Table 2**: DimProduct
+   - **Column**: ProductKey
+   - **Cardinality**: Many to one (\*:1)
+   - **Cross filter direction**: Single
+   - **Make this relationship active**: Selected
+   - **Assume referential integrity**: Unselected
 
 4. Repeat the process to create many-to-one relationships between the following tables:
-    - **FactOrderSales.CustomerKey** &#8594; **DimCustomer.CustomerKey**
-    - **FactOrderSales.SalesOrderDateKey** &#8594; **DimDate.DateKey**
 
-    When all of the relationships have been defined, the model should look like this:
+   - **FactOrderSales.CustomerKey** &#8594; **DimCustomer.CustomerKey**
+   - **FactOrderSales.SalesOrderDateKey** &#8594; **DimDate.DateKey**
 
-    ![Screenshot of the model with relationships.](./Images/dw-relationships1-1-1.png)
+   When all of the relationships have been defined, the model should look like this:
+
+   ![Screenshot of the model with relationships.](./Images/dw-relationships1-1-1.png)
 
 ## Task 5 : Query data Warehouse tables
 
@@ -138,65 +140,65 @@ Most queries in a relational data warehouse involve aggregating and grouping dat
 
 1. Create a new SQL Query, and run the following code:
 
-    ```sql
+   ```sql
    SELECT  d.[Year] AS CalendarYear,
-            d.[Month] AS MonthOfYear,
-            d.MonthName AS MonthName,
-           SUM(so.SalesTotal) AS SalesRevenue
+           d.[Month] AS MonthOfYear,
+           d.MonthName AS MonthName,
+          SUM(so.SalesTotal) AS SalesRevenue
    FROM FactSalesOrder AS so
    JOIN DimDate AS d ON so.SalesOrderDateKey = d.DateKey
    GROUP BY d.[Year], d.[Month], d.MonthName
    ORDER BY CalendarYear, MonthOfYear;
-    ```
+   ```
 
-    Note that the attributes in the time dimension enable you to aggregate the measures in the fact table at multiple hierarchical levels - in this case, year and month. This is a common pattern in data warehouses.
+   Note that the attributes in the time dimension enable you to aggregate the measures in the fact table at multiple hierarchical levels - in this case, year and month. This is a common pattern in data warehouses.
 
 2. Modify the query as follows to add a second dimension to the aggregation.
 
-    ```sql
+   ```sql
    SELECT  d.[Year] AS CalendarYear,
-           d.[Month] AS MonthOfYear,
-           d.MonthName AS MonthName,
-           c.CountryRegion AS SalesRegion,
-          SUM(so.SalesTotal) AS SalesRevenue
+          d.[Month] AS MonthOfYear,
+          d.MonthName AS MonthName,
+          c.CountryRegion AS SalesRegion,
+         SUM(so.SalesTotal) AS SalesRevenue
    FROM FactSalesOrder AS so
    JOIN DimDate AS d ON so.SalesOrderDateKey = d.DateKey
    JOIN DimCustomer AS c ON so.CustomerKey = c.CustomerKey
    GROUP BY d.[Year], d.[Month], d.MonthName, c.CountryRegion
    ORDER BY CalendarYear, MonthOfYear, SalesRegion;
-    ```
+   ```
 
 3. Run the modified query and review the results, which now include sales revenue aggregated by year, month, and sales region.
 
 ## Task 6 : Create a View
 
-A data warehouse in Microsoft Fabric has many of the same capabilities you may be used to in relational databases. For example, you can create database objects like *views* and *stored procedures* to encapsulate SQL logic.
+A data warehouse in Microsoft Fabric has many of the same capabilities you may be used to in relational databases. For example, you can create database objects like _views_ and _stored procedures_ to encapsulate SQL logic.
 
 1. Modify the query you created previously as follows to create a view (note that you need to remove the ORDER BY clause to create a view).
 
-    ```sql
+   ```sql
    CREATE VIEW vSalesByRegion
    AS
    SELECT  d.[Year] AS CalendarYear,
-           d.[Month] AS MonthOfYear,
-           d.MonthName AS MonthName,
-           c.CountryRegion AS SalesRegion,
-          SUM(so.SalesTotal) AS SalesRevenue
+          d.[Month] AS MonthOfYear,
+          d.MonthName AS MonthName,
+          c.CountryRegion AS SalesRegion,
+         SUM(so.SalesTotal) AS SalesRevenue
    FROM FactSalesOrder AS so
    JOIN DimDate AS d ON so.SalesOrderDateKey = d.DateKey
    JOIN DimCustomer AS c ON so.CustomerKey = c.CustomerKey
    GROUP BY d.[Year], d.[Month], d.MonthName, c.CountryRegion;
-    ```
+   ```
 
 2. Run the query to create the view. Then refresh the data warehouse schema and verify that the new view is listed in the **Explorer** pane.
 
 3. Create a new SQL query and run the following SELECT statement:
 
-    ```SQL
+   ```SQL
    SELECT CalendarYear, MonthName, SalesRegion, SalesRevenue
    FROM vSalesByRegion
    ORDER BY CalendarYear, MonthOfYear, SalesRegion;
-    ```
+   ```
 
 ### Create a visual query
 
@@ -210,13 +212,13 @@ Instead of writing SQL code, you can use the graphical query designer to query t
 
 4. Use the **(+)** button on the **FactSalesOrder** table on the canvas to **Merge queries**.
 
-    ![Screenshot of the canvas with the FactSalesOrder table selected.](./Images/visual-query-merge1.png)
+   ![Screenshot of the canvas with the FactSalesOrder table selected.](./Images/visual-query-merge1.png)
 
 5. In the **Merge queries** window, select **DimProduct** as the right table for merge. Select **ProductKey** in both queries, leave the default **Left outer** join type, and click **OK**.
 
 6. In the **Preview**, note that the new **DimProduct** column has been added to the FactSalesOrder table. Expand the column by clicking the arrow to the right of the column name. Select **ProductName** and click **OK**.
 
-    ![Screenshot of the preview pane with the DimProduct column expanded, with ProductName selected.](./Images/visual-query-preview1.png)
+   ![Screenshot of the preview pane with the DimProduct column expanded, with ProductName selected.](./Images/visual-query-preview1.png)
 
 7. If you're interested in looking at data for a single product, per a manager request, you can now use the **ProductName** column to filter the data in the query. Filter the **ProductName** column to look at **Cable Lock** data only.
 
@@ -226,9 +228,10 @@ Instead of writing SQL code, you can use the graphical query designer to query t
 
 You can easily visualize the data in either a single query, or in your data warehouse. Before you visualize, hide columns and/or tables that aren't friendly to report designers.
 
-1. In the **Explorer** pane, select the **Model** view. 
+1. In the **Explorer** pane, select the **Model** view.
 
 2. Hide the following columns in your Fact and Dimension tables that are not necessary to create a report. Note that this does not remove the columns from the model, it simply hides them from view on the report canvas.
+
    1. FactSalesOrder
       - **SalesOrderDateKey**
       - **CustomerKey**
@@ -241,13 +244,13 @@ You can easily visualize the data in either a single query, or in your data ware
       - **DateAltKey**
    1. DimProduct
       - **ProductKey**
-      - **ProductAltKey** 
+      - **ProductAltKey**
 
    ![Screenshot of the Visualizations pane with the bar chart selected.](./Images/visualizations-pane1at.png)
 
-3. Now you're ready to build a report and make this dataset available to others. On the Home menu, select **New report**. This will open a new window, where you can create a Power BI report.
+3. Now you're ready to build a report and make this dataset available to others. On the Reporting menu, select **New report**. This will open a new window, where you can create a Power BI report.
 
-4. In the **Data** pane, expand **FactSalesOrder**. Note that the columns you hid are no longer visible. 
+4. In the **Data** pane, expand **FactSalesOrder**. Note that the columns you hid are no longer visible.
 
 5. Select **SalesTotal**. This will add the column to the **Report canvas**. Because the column is a numeric value, the default visual is a **column chart**.
 
@@ -255,7 +258,7 @@ You can easily visualize the data in either a single query, or in your data ware
 
 7. In the **Visualizations** pane, change the chart type from a column chart to a **clustered bar chart**. Then resize the chart as necessary to ensure that the categories are readable.
 
-    ![Screenshot of the Visualizations pane with the bar chart selected.](./Images/visualizations-pane1.png)
+   ![Screenshot of the Visualizations pane with the bar chart selected.](./Images/visualizations-pane1.png)
 
 8. In the **Visualizations** pane, select the **Format your visual** tab and in the **General** sub-tab, in the **Title** section, change the **Text** to **Total Sales by Category**.
 
