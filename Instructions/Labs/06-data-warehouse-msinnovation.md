@@ -44,7 +44,7 @@ Now that you have a workspace, it's time to create a data warehouse.
 
    ![Screenshot of a new warehouse.](./Images/mydatawarehouse.png)
 
-## Task 3 : Create tables and insert data
+## Task 2 : Create tables and insert data
 
 A warehouse is a relational database in which you can define tables and other objects.
 
@@ -98,7 +98,7 @@ A warehouse is a relational database in which you can define tables and other ob
 
    > **Tip**: If the schema takes a while to load, just refresh the browser page.
 
-## Task 4 : Define a Data Model
+## Task 3 : Define a Data Model
 
 A relational data warehouse typically consists of _fact_ and _dimension_ tables. The fact tables contain numeric measures you can aggregate to analyze business performance (for example, sales revenue), and the dimension tables contain attributes of the entities by which you can aggregate the data (for example, product, customer, or time). In a Microsoft Fabric data warehouse, you can use these keys to define a data model that encapsulates the relationships between the tables.
 
@@ -130,7 +130,7 @@ A relational data warehouse typically consists of _fact_ and _dimension_ tables.
 
    ![Screenshot of the model with relationships.](./Images/dw-relationships1-1-1.png)
 
-## Task 5 : Query data Warehouse tables
+## Task 4 : Query data Warehouse tables
 
 Since the data warehouse is a relational database, you can use SQL to query its tables.
 
@@ -170,7 +170,7 @@ Most queries in a relational data warehouse involve aggregating and grouping dat
 
 3. Run the modified query and review the results, which now include sales revenue aggregated by year, month, and sales region.
 
-## Task 6 : Create a View
+## Task 5 : Create a View
 
 A data warehouse in Microsoft Fabric has many of the same capabilities you may be used to in relational databases. For example, you can create database objects like _views_ and _stored procedures_ to encapsulate SQL logic.
 
