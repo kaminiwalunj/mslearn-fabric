@@ -154,7 +154,7 @@ This task will walk you through using KQL (Kusto Query Language) to query the Sa
 
 Now that you have a table of data in your database, you can use KQL code to query it.
 
-1. Make sure you have the **sales (1)** table highlighted. From the menu bar, select the **Query with code (2)** drop-down, and from there select **Show any 100 records (3)** .
+1. Make sure you have the **sales (1)** table highlighted. From the menu bar, select the **Query with code (2)** drop-down, and from there select **Show any 100 records (3)**.
 
    ![](./Images/44.png)
 
