@@ -48,7 +48,7 @@ This task will guide you through creating a workspace in Microsoft Fabric.
 
 1. In **Microsoft Edge**, open a new tab and go to the [Microsoft Power BI Portal](https://app.powerbi.com). This will take you to the login page.
 
-    > **Note:** If you're using the lab environment, it may sign you indirectly.
+    > **Note:** If you're using the lab environment, it may sign you in indirectly.
 
     > **Note:** If you are not using the lab environment and have an existing Power BI account, you may want to use the browser in private / incognito mode.
 
@@ -56,11 +56,11 @@ This task will guide you through creating a workspace in Microsoft Fabric.
 
    ![](./Images/lab1-7.png)
 
-1. Complete the sign in process by clicking on **Continue**
+1. Complete the sign-in process by clicking on **Continue**
 
    ![](./Images/lab1-8.png)
    
-1. Enter a 10 digit phone number and select **Get started**. Select **Get started** once more. You will be redirected to Power BI. If prompted provide the **Password:** <inject key="AzureAdUserPassword"></inject>
+1. Enter a 10-digit phone number and select **Get started**. Select **Get started** once more. You will be redirected to Power BI. If prompted provide the **Password:** <inject key="AzureAdUserPassword"></inject>
    
    ![](./Images/lab1-9.png)
    
@@ -82,6 +82,7 @@ This task will guide you through creating a workspace in Microsoft Fabric.
    
    ![](./Images/workspace-3.png)
 
+   >**Note:** If you see a pop-up saying **"Upgrade to a paid Power BI license"**, click on **"Try Free"** to proceed with the trial.
 1. When your new workspace opens, it should be empty, as shown here:
 
    ![Screenshot of an empty workspace in Power BI.](./Images/34.png)
@@ -94,7 +95,7 @@ This task will guide you through creating a workspace in Microsoft Fabric.
 
 In this task, you will learn how to download a file for a KQL database and create a KQL database in Microsoft Fabric for querying and analyzing data efficiently.
 
-Now that you have a workspace, Download the data file for analysis. Using *Kusto Query Language (KQL)*, you can query static or streaming data in a table within a KQL database. To analyze sales data, create a table in the database and ingest the downloaded file.
+Now that you have a workspace, download the data file for analysis. Using *Kusto Query Language (KQL)*, you can query static or streaming data in a table within a KQL database. To analyze sales data, create a table in the database and ingest the downloaded file.
 
 1. Download the **sales.csv** data file for this exercise from **[Sales.csv](https://raw.githubusercontent.com/MicrosoftLearning/dp-data/main/sales.csv)** and save it on your local computer or lab VM. **Alternatively,** if you are using the provided lab virtual machine (lab VM), you can find the file in the **C:\LabFiles\dp-data-main** directory.
 
@@ -136,7 +137,7 @@ Now that you have a workspace, Download the data file for analysis. Using *Kusto
 
           ![New table wizard step five](./Images/42.png)
 
-        - Wait for the steps in the summary screen to complete which include:
+        - Wait for the steps in the summary screen to complete, which include:
             - Create table (sales)
             - Create mapping (sales_mapping)
             - Data queuing
