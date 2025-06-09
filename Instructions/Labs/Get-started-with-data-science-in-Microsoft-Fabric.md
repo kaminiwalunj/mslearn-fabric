@@ -67,7 +67,7 @@ To train a model, you can create a *notebook*. Notebooks provide an interactive 
 
     After a few seconds, a new notebook containing a single *cell* will open. Notebooks are made up of one or more cells that can contain *code* or *markdown* (formatted text).
 
-1. Select the first cell (which is currently a *code* cell), and then in the dynamic tool bar at its top-right, use the **M&#8595;** button to convert the cell to a *markdown* cell.
+1. Select the first cell (which is currently a *code* cell), and then in the dynamic toolbar at its top-right, use the **M&#8595;** button to convert the cell to a *markdown* cell.
 
     ![](./Images/22.png)
 
@@ -288,7 +288,7 @@ Microsoft Fabric will keep track of all your experiments and allow you to visual
 
 In this task, you will learn how to save the trained Machine Learning model in Microsoft Fabric for future use and deployment.
 
-After comparing machine learning models that you've trained across experiments, you can choose the best performing model. To use the best performing model, save the model and use it to generate predictions.
+After comparing machine learning models that you've trained across experiments, you can choose the best-performing model. To use the best-performing model, save the model and use it to generate predictions.
 
 1. Select **Save as ML model** in the experiment ribbon.
    
@@ -348,7 +348,7 @@ You have completed the following tasks:
 - Created a Notebook
 - Loaded data into a dataframe
 - Trained a Machine Learning model
-- Used MLflow to search and viewed your experiments
+- Used MLflow to search and view your experiments
 - Explored your experiments
 - Saved the model
 - Saved the Notebook and ended the Spark session
@@ -358,4 +358,4 @@ You have completed the following tasks:
 - [Microsoft Fabric Documentation](https://learn.microsoft.com/en-us/fabric/)
 - [Azure Machine Learning Documentation](https://learn.microsoft.com/en-us/azure/machine-learning/)
 
-## Congratulations! you have successfully completed this lab.
+## Congratulations! You have successfully completed this lab.
