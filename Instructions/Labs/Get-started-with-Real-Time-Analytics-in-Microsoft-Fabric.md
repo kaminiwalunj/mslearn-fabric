@@ -84,7 +84,10 @@ This task will guide you through creating a workspace in Microsoft Fabric.
    
    ![](./Images/workspace-3.png)
 
-   >**Note:** If you see a pop-up saying **"Upgrade to a paid Power BI license"**, click on **"Try Free"** to proceed with the trial.
+   >**Note:** If you see a pop-up saying **"Upgrade to a paid Power BI license"**, click on **"Try free"** to proceed with the trial.
+
+   ![](./Images/10062025(2).png)
+
 1. When your new workspace opens, it should be empty, as shown here:
 
    ![Screenshot of an empty workspace in Power BI.](./Images/34.png)
