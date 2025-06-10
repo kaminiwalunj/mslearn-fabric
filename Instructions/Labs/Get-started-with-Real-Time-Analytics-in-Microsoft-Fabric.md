@@ -1,6 +1,6 @@
 # Lab 1: Get Started with Real-Time Analytics in Microsoft Fabric
 
-#### Estimated Duration: 100 minutes
+### Estimated Duration: 100 minutes
 
 Microsoft Fabric provides an end-to-end platform for data solutions, including real-time data analytics. Synapse Real-Time Analytics in Fabric uses a KQL Database to provide table storage and Kusto Query Language (KQL) which is a powerful tool for analyzing data. This structure provides an efficient way to find insights and patterns from textual or structured data. Moreover, KQL is optimized for data that includes a time series component, such as real-time data from log files or streaming services. With Real-Time Analytics, you can focus and scale up your analytics solution while democratizing data for the needs of your entire data organization.
 
@@ -30,7 +30,7 @@ In this task, you will learn how to assign the Fabric Administrator role to mana
 
    ![search-fabric-admin](./Images/31.png)
 
-1. This will take you to the **Fabric Administrator | Assignments** page where you will have to assign yourself the **Fabric Administrator role**. Now, click on **+ Add assignments (1)**.
+1. This will take you to the **Fabric Administrator | Assignments** page where you will have to assign yourself the **Fabric Administrator role**. Now, click on **+ Add assignments**.
 
    ![click-add-assignments](./Images/30.png)
 
@@ -73,6 +73,8 @@ This task will guide you through creating a workspace in Microsoft Fabric.
 1. Upgrade to a free Microsoft Fabric trial dialog opens. Select **Activate**.
 
    ![Start-trial](./Images/lab1-11.png)
+
+   >**Note:** The trial capacity region may differ from the one shown in the screenshot. No need to worry – simply use the default selected region, activate it, and continue to the next step.
 
 1. In the menu bar on the left, select **Workspaces (1)** (the icon looks similar to &#128455;) and click on **New workplace (2)**.
 
