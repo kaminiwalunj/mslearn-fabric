@@ -46,31 +46,31 @@ Welcome to Real-Time Analytics and Data Science with Microsoft Fabric Workshop! 
 
 Once you're ready to dive in, your virtual machine and lab guide will be right at your fingertips within your web browser.
  
-![](./Images/labguide.png)
+![](./Images/june-getting-started-1.png)
  
 ## Exploring Your Lab Resources
  
 To get a better understanding of your lab resources and credentials, navigate to the **Environment Details** tab.
  
-![Explore Lab Resources](./Images/env.png)
+![Explore Lab Resources](./Images/june-getting-started-3.png)
  
 ## Utilizing the Split Window Feature
  
 For convenience, you can open the lab guide in a separate window by selecting the **Split Window** button from the top right corner.
  
-![Use the Split Window Feature](./Images/spl.png)
+![Use the Split Window Feature](./Images/june-getting-started-2.png)
  
 ## Managing Your Virtual Machine
  
 Feel free to start, stop, or restart your virtual machine as needed from the **Resources** tab. Your experience is in your hands!
  
-![Manage Your Virtual Machine](./Images/res.png)
+![Manage Your Virtual Machine](./Images/june-getting-started-5.png)
  
 ## Lab Guide Zoom In/Zoom Out
  
 1. To adjust the zoom level for the environment page, click the **A↕ : 100%** icon located next to the timer in the lab environment.
 
-  ![OpenAI](./Images/A.png)
+  ![OpenAI](./Images/june-getting-started-6.png)
 
 ## Login to the Azure Portal
 
