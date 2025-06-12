@@ -52,7 +52,7 @@ Welcome to your Work with Data Lake and Data Factory Pipelines in Microsoft Fabr
  
 Once you're ready to dive in, your virtual machine and lab guide will be right at your fingertips within your web browser.
 
-![](./Images/labguide.png)
+![](./Images/gt-001.png)
 
 ### Virtual Machine & Lab Guide
  
@@ -62,25 +62,25 @@ Your virtual machine is your workhorse throughout the workshop. The lab guide is
  
 To get a better understanding of your lab resources and credentials, navigate to the **Environment** tab.
  
-![Explore Lab Resources](./Images/env.png)
+![Explore Lab Resources](./Images/gt-002.png)
  
 ## Utilizing the Split Window Feature
  
 For convenience, you can open the lab guide in a separate window by selecting the **Split Window** button from the Top right corner.
  
-![Use the Split Window Feature](./Images/spl.png)
+![Use the Split Window Feature](./Images/gt-003.png)
  
 ## Managing Your Virtual Machine
  
 Feel free to start, stop, or restart your virtual machine as needed from the **Resources** tab. Your experience is in your hands!
 
-![Manage Your Virtual Machine](./Images/res.png)
+![Manage Your Virtual Machine](./Images/gt-004.png)
 
 ## Lab Guide Zoom In/Zoom Out
 
 To adjust the zoom level for the environment page, click the **A↕ : 100%** icon located next to the timer in the lab environment.
 
-![](./Images/A.png)
+![](./Images/gt-005.png)
 
 ## Support Contact
  
