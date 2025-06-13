@@ -102,11 +102,11 @@ Now that you have a lakehouse, you need to ingest some data into it. One way to 
 
 3. After a few seconds, the Power Query editor for your new dataflow opens as shown here.
 
-      ![New dataflow.](./Images/m6-fabric-2.png)
+      ![New dataflow.](./Images/m6-fabric-2upd.png)
 
 4. Select **Import from a Text/CSV file**.
 
-      ![New lakehouse.](./Images/fab-image5.png)
+      ![New lakehouse.](./Images/fab-image5upd.png)
 
 5. Create a new data source with the following settings and click on **Next (7)** :
  
@@ -118,7 +118,11 @@ Now that you have a lakehouse, you need to ingest some data into it. One way to 
     - **Privacy level** : none (6)
 
       ![New lakehouse.](./Images/fab-image6.png)
-   
+
+6. On the *Preview file data* click on **Create**
+
+      ![New lakehouse.](./Images/createdata.png)
+
 6. Create the data source. The Power Query editor shows the data source and an initial set of query steps to format the data, as shown here:
 
       ![Query in the Power Query editor.](./Images/m6-fabric-3.png)
@@ -127,10 +131,9 @@ Now that you have a lakehouse, you need to ingest some data into it. One way to 
 
       ![New lakehouse.](./Images/fab-image7.png)
    
-8. Create a new column named **MonthNo** that contains a number based on the formula `Date.Month([OrderDate])` - as shown here and 
-   Click on **OK**.
+8. Create a new column named **MonthNo (1)** that contains a number based on the formula `Date.Month([OrderDate])` (2) - as shown here and click on **OK (3)**.
 
-      ![Custom column in Power Query editor.](./Images/custom-column1.png)
+      ![Custom column in Power Query editor.](./Images/custom-column1upd.png)
 
 9. The step to add the custom column is added to the query and the resulting column is displayed in the data pane:
 
@@ -145,7 +148,7 @@ Now that you have a lakehouse, you need to ingest some data into it. One way to 
 
 1. On the toolbar ribbon, select the **Home** tab. In the home tab, click on the dropdown for **Query (1)**, click on **Add data destination (2)** drop-down menu and select **Lakehouse (3)**.
 
-   ![New lakehouse.](./Images/gen2-2.png)
+   ![New lakehouse.](./Images/gen2-2upd1.png)
 
    > **Note:** If this option is grayed out, you may already have a data destination set. Check the data destination at the bottom of the Query settings pane on the right side of the Power Query editor. If a destination is already set, you can change it using the gear.
 
@@ -153,18 +156,13 @@ Now that you have a lakehouse, you need to ingest some data into it. One way to 
 
       ![Data destination configuration page.](./Images/connect_data_destination-1.png)
 
+4. In the list of available workspaces, find your workspace and select lakehouse you created **(1)** in at the start of this exercise. The associated table **orders (2)** will automatically come up. Click on **Next (3)**.
 
-3. In the **Connect to data destination** dialog box, keep all the values as default and select **Next**.
-
-      ![Data destination configuration page.](./Images/connect_data_destination-1.png)
-
-4. In the list of available workspaces, find your workspace and select lakehouse you created in it at the start of this exercise. The associated table **orders** will automatically come up. Click on **Next**.
-
-      ![Data destination configuration page.](./Images/orders.png)
+      ![Data destination configuration page.](./Images/ordersupd.png)
 
       > **Note:** On the **Destination settings** page, notice how OrderDate and MonthNo are not selected in the Column mapping and there is an informational message: *Change to date/time*.
 
-5. Cancel this action, then go back to OrderDate and MonthNo columns in Power Query online. Right-click on the column header and **Change Type**.
+5. **Cancel** this action, then go back to **OrderDate** and **MonthNo** columns in Power Query online. Right-click on the column header and **Change Type**.
 
       - OrderDate = Date/Time
       - MonthNo = Whole number
@@ -180,9 +178,9 @@ Now that you have a lakehouse, you need to ingest some data into it. One way to 
    - Select the lakehouse you created in it at the start of this exercise and the associated table **orders**.
    - Click on **Next**.
 
-7. On the **Destination settings** page toggle off Use automatic settings, select **Append**, and then click on **Save Settings**.  
+7. On the **Destination settings** page toggle off Use automatic settings (1), select **Append (2)**, and then click on **Save Settings (3)**.  
 
-      ![New lakehouse.](./Images/E1T4S7.png)
+      ![New lakehouse.](./Images/E1T4S7upd.png)
 
 8. The **Lakehouse** destination is indicated as an icon in the query in the Power Query editor.
    

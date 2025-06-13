@@ -94,7 +94,7 @@ A warehouse is a relational database in which you can define tables and other ob
 
 <!-- I had to remove the GO command in this query as well -->
 
->**Note**: The script should take around 30 seconds to run.
+    >**Note**: The script should take around 30 seconds to run.
 
 9. In the **Explorer** pane, verify that the **dbo** schema in the data warehouse now contains the following four tables:
     - **DimCustomer**

@@ -43,7 +43,7 @@ The architecture for this lab involves the following key components:
 
 Once you're ready to dive in, your virtual machine and lab guide will be right at your fingertips within your web browser.
  
-![](./Images/updatedimg1.png)
+![](./Images/updatedimg1upd.png)
 
 ### Virtual Machine & Lab Guide
  
@@ -53,31 +53,31 @@ Your virtual machine is your workhorse throughout the workshop. The lab guide is
  
 To get a better understanding of your lab resources and credentials, navigate to the **Environment Details** tab.
  
-![Explore Lab Resources](./Images/updatedimg2.png)
+![Explore Lab Resources](./Images/updatedimg2upd.png)
  
 ## Utilizing the Split Window Feature
  
 For convenience, you can open the lab guide in a separate window by selecting the **Split Window** button from the top right corner.
  
-![Use the Split Window Feature](./Images/updatedimg3.png)
+![Use the Split Window Feature](./Images/updatedimg3upd.png)
  
 ## Managing Your Virtual Machine
  
 Feel free to start, stop, or restart your virtual machine as needed from the **Resources** tab. Your experience is in your hands!
  
-![Manage Your Virtual Machine](./Images/updatedimg4.png)
+![Manage Your Virtual Machine](./Images/updatedimg4upd.png)
 
 ## Lab Guide Zoom In/Zoom Out
 
 To adjust the zoom level for the environment page, click the **A↕ : 100%** icon located next to the timer in the lab environment.
 
-![](./Images/labzoom-2.png)
+![](./Images/image.png)
 
 ## Lab Validation
 
 After completing the task, hit the **Validate** button under Validation tab integrated within your lab guide. If you receive a success message, you can proceed to the next task, if not, carefully read the error message and retry the step, following the instructions in the lab guide.
 
-   ![Inline Validation](./Images/inline-validation.png)
+   ![Inline Validation](./Images/inline-validationupd.png)
  
 Now you're all set to explore the powerful world of technology. Feel free to reach out if you have any questions along the way. 
 
