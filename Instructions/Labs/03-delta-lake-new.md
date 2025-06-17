@@ -31,8 +31,6 @@ Tables in a Microsoft Fabric lakehouse are based on the open source *Delta Lake*
 
 This exercise should take approximately **40** minutes to complete
 
-> **Note**: You'll need a Microsoft Fabric license to complete this exercise. Complete the previous task to proceed further.
-
 ## Task 1 : Create a workspace
 
 Before working with data in Fabric, create a workspace with the Fabric trial enabled.
@@ -125,6 +123,8 @@ Now that you have a workspace, it's time to switch to the *Data engineering* exp
 
 7. In the **...** menu for the **products** folder, select **Upload** and **Upload files**, and then upload the **products.csv** file from your local computer (or lab VM if applicable) to the lakehouse.
 
+   ![](./Images/fbimg1.png)
+
 8. After the file has been uploaded, select the **products** folder; and verify that the **products.csv** file has been uploaded, as shown here:
 
     ![Screenshot of uploaded products.csv file in a lakehouse.](./Images/products-file-1.png)
@@ -142,6 +142,8 @@ Now that you have a workspace, it's time to switch to the *Data engineering* exp
 3. In the **Lakehouse explorer** pane on the left, expand **Files** and select **products** to reveal a new pane showing the **products.csv** file you uploaded previously:
 
     ![Screenshot of a notebook with a Files pane.](./Images/notebook-products-1.png)
+
+    >**Note:** If you are not able to find **Lakehouse explorer**, under **Explorer** pane, expand Items and expand the lakehouse, you now see the lakehouse explorer.
 
 4. In the **...** menu for **products.csv**, select **Load data** > **Spark**. A new code cell containing the following code should be added to the notebook:
 
@@ -168,6 +170,8 @@ Now that you have a workspace, it's time to switch to the *Data engineering* exp
     | 3 | 773 | Mountain-100 Silver, 44 | Mountain Bikes | 3399.9900 |
     | ... | ... | ... | ... | ... |
 
+    >**Note:** If you are getting errors here and also getting table, then please ignore the errors and move with further tasks.
+
 ## Task 4 : Create delta tables
 
 You can save the dataframe as a delta table by using the `saveAsTable` method. Delta Lake supports the creation of both *managed* and *external* tables.
@@ -183,6 +187,10 @@ You can save the dataframe as a delta table by using the `saveAsTable` method. D
     ```
 
 2. In the **Lakehouse explorer** pane, in the **...** menu for the **Tables** folder, select **Refresh**. Then expand the **Tables** node and verify that the **managed_products** table has been created.
+
+   ![](./Images/fbimg2.png)
+
+   ![](./Images/fbimg3.png)
 
 ### Create an *external* table
 
@@ -208,6 +216,8 @@ You can also create *external* tables for which the schema metadata is defined i
 4. In the **Lakehouse explorer** pane, in the **...** menu for the **Tables** folder, select **Refresh**. Then expand the **Tables** node and verify that the **external_products** table has been created.
 
 5. In the **Lakehouse explorer** pane, in the **...** menu for the **Files** folder, select **Refresh**. Then expand the **Files** node and verify that the **external_products** folder has been created for the table's data files.
+
+   ![](./Images/fbimg4.png)
 
 ### Compare *managed* and *external* tables
 
@@ -261,6 +271,8 @@ Let's explore the differences between managed and external tables.
     ```
 
 2. In the **Lakehouse explorer** pane, in the **...** menu for the **Tables** folder, select **Refresh**. Then expand the **Tables** node and verify that a new table named **products** is listed. Then expand the table to verify that it's schema matches the original dataframe that was saved in the **external_products** folder.
+
+   ![](./Images/fbimg5.png)
 
 3. Add another code cell and run the following code:
 
