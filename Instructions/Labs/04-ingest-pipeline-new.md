@@ -34,6 +34,8 @@ A simple way to ingest data is to use a **Copy Data** activity in a pipeline to 
 
 1. On the **Home** page for your lakehouse, Under **Get data** select **New data pipeline**, and create a new data pipeline named **Ingest Sales Data**.
 
+    ![](./Images/fbimg6.png)
+
     ![](./Images/newPipeline.png)
 
 2. If the **Copy Data** wizard doesn't open automatically, select **Copy Data** in the pipeline editor page.
@@ -70,6 +72,8 @@ A simple way to ingest data is to use a **Copy Data** activity in a pipeline to 
 8. On the **Choose data destination** page, select your existing lakehouse.
 
     ![](./Images/imag12.png)
+
+    >**Note:** If the fabric lakehouse is already selected, please continue with the further steps.
 
 9. Set the following data destination options, and then select **Next**:
     - **Root folder**: Files
