@@ -22,7 +22,7 @@ Now that you have a workspace which you have created in the previous exercise, i
 
     > **Note**: If you don't see the icon in the bottom left corner, Fabric isn't enabled for your tenant. Fabric is enabled in the admin portal for tenants that have a Power BI Premium subscription.
 
-2. Select the workspace, click on **+ New Item**, create a **New Warehouse**, and name it **Data Warehouse-<inject key="Deployment ID" enableCopy="false"/>**.
+**2.** In the selected workspace (1), click **+ New Item (2)**, type **Warehouse (3)** into the search bar, and then choose to create a **New Warehouse (4)**. Name it **Data Warehouse-<inject key="Deployment ID" enableCopy="false"/>**.
 
    ![Screenshot of a new warehouse.](./Images/warehouse-1.png)
 
@@ -94,7 +94,7 @@ A warehouse is a relational database in which you can define tables and other ob
 
 <!-- I had to remove the GO command in this query as well -->
 
-    >**Note**: The script should take around 30 seconds to run.
+    > **Note**: The script should take around 30 seconds to run.
 
 9. In the **Explorer** pane, verify that the **dbo** schema in the data warehouse now contains the following four tables:
     - **DimCustomer**
@@ -226,15 +226,15 @@ Instead of writing SQL code, you can use the graphical query designer to query t
 
 5. In the **Merge queries** window, select **DimProduct** as the right table for merge. Select **ProductKey** in both queries, leave the default **Left outer** join kind, and click **OK**.
 
-6. In the **Preview**, note that the new **DimProduct** column has been added to the FactSalesOrder table. Expand the column by clicking the arrow to the right of the column name. Select **ProductName** and click **OK**.
+6. In the **Preview**, note that the new **DimProduct** column has been added to the FactSalesOrder table. Expand the column by clicking the arrow (1) to the right of the column name. Select **ProductName (2)** and click **OK (3)**.
 
     ![Screenshot of the preview pane with the DimProduct column expanded, with ProductName selected.](./Images/visual-query-preview1.png)
 
-7. If you're interested in looking at data for a single product, per a manager request, you can now use the **ProductName** column to filter the data in the query. Filter the **ProductName** column to look at **Cable Lock** data only.
+7. If you're interested in looking at data for a single product, per a manager request, you can now use the **ProductName** column to filter the data in the query. Filter the **ProductName** column to look at **Cable Lock (1)** data only and click on **OK (2)**
 
    ![Screenshot of the preview pane with the DimProduct column expanded, with ProductName selected.](./Images/cable_lock.png)
 
-  >**Note**: If you can't find the cable lock, click on **Load More**. 
+    >**Note**: If you can't find the cable lock, click on **Load More**. 
 
 8. From here, you can analyze the results of this single query by selecting **Visualize results** or **Open in Excel**. You can now see exactly what the manager was asking for, so we don't need to analyze the results further.
 
@@ -305,6 +305,5 @@ In this lab you have completed the following tasks:
 - Create tables and insert data.  
 - Define a data model.  
 - Query the Data Warehouse tables and create a view.
-
 
 ## You have successfully completed the Lab!

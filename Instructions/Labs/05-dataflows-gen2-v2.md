@@ -25,23 +25,23 @@ Before working with data in Fabric, create a workspace with the Fabric trial ena
    
 2. After signing in, From the bottom left choose **Power BI** .
 
-   ![](./Images/powerbi.png)
+   ![](./Images/powerbiupd.png)
 
 4. From the PowerBI home page, select **Account Manager** from the top-right corner to start the free **Microsoft Fabric trial** and click on **Free trial**.
     
-   ![](./Images/imageupdatee1.png)
+   ![](./Images/imageupdatee2.png)
      
 5. If prompted, agree to the terms and then select **Activate**. 
 
-   ![](./Images/E1T1S4.png)
+   ![](./Images/E1T1S4upd.png)
    
 6. Once your trial capacity is ready, you receive a confirmation message. Select **Stay on current page** to begin working in Fabric.
 
-   ![](./Images/updated3.png)
+   ![](./Images/updated3upd.png)
    
 7. On the dashboard, on the top menu you can see **Trial Status 59 days left**.
 
-   ![](./Images/updated4.png)
+   ![](./Images/updated4upd.png)
 
     >**Note**: You now have a **Fabric (Preview) trial** that includes a **Power BI trial** and a **Fabric (Preview) trial capacity**.
 
@@ -49,11 +49,11 @@ Before working with data in Fabric, create a workspace with the Fabric trial ena
 
 9. Create a new workspace with a name **dp_fabric-<inject key="Deployment ID" enableCopy="false"/> (1)**, Choose a licensing mode as a **trial (2)** under **Advanced**. and click on **Apply (3)**.
 
-   ![New lakehouse.](./Images/fab-image3.png)
+   ![New lakehouse.](./Images/fab-image3upd.png)
     
 10. When your new workspace opens, it should be empty, as shown here:
 
-    ![Screenshot of an empty workspace in Power BI.](./Images/E1T1S9.png)
+    ![Screenshot of an empty workspace in Power BI.](./Images/E1T1S9upd.png)
 
     > **Note**: If the prompt **"Introducing task flows (preview)"** appears, just click on **Got it**.   
  
@@ -68,7 +68,6 @@ Before working with data in Fabric, create a workspace with the Fabric trial ena
 
 Now that you have a workspace, it's time to and create a data lakehouse into which you'll ingest data.
 
-   
 1. Select **+ New Item (1)**, search for **Lakehouse(2)**, and then choose **Lakehouse(3)** from the results.
 
       ![New lakehouse.](./Images/lakehouse-1.png)
@@ -92,11 +91,11 @@ Now that you have a lakehouse, you need to ingest some data into it. One way to 
 
 1. Select your workspace, **dp_fabric-<inject key="Deployment ID" enableCopy="false"/>(1)**, then click **+ New item** 
 
-      ![New dataflow.](./Images/new_item-1.png)
+      ![New dataflow.](./Images/new_item-1upd.png)
    
-2. Search for **Dataflow Gen2** and select it.
+2. Search for **Dataflow Gen2** and select it. When the pop-up appears, go ahead and accept the default name, then select **Create** to continue.  
 
-      ![New dataflow.](./Images/datagenflow.png)
+      ![New dataflow.](./Images/datagenflowupd.png)
 
       >**Note**: If the option is not visible as mentioned above, please follow the steps highlighted in the screenshot below.
 
@@ -108,20 +107,20 @@ Now that you have a lakehouse, you need to ingest some data into it. One way to 
 
       ![New lakehouse.](./Images/fab-image5upd.png)
 
-5. Create a new data source with the following settings and click on **Next (7)** :
+5. Create a new data source with the following settings and click on **Next (6)** :
  
-    - **Link to file**: *Selected* (1)
-    - **File path or URL**: `https://raw.githubusercontent.com/MicrosoftLearning/dp-data/main/orders.csv` (2)
-    - **Connection**: Create new connection (3)
-    - **data gateway**: (none) (4)
-    - **Authentication kind**: Anonymous (5)
-    - **Privacy level** : none (6)
+    - **Link to file**: *Selected*
+    - **File path or URL**: `https://raw.githubusercontent.com/MicrosoftLearning/dp-data/main/orders.csv` (1)
+    - **Connection**: Create new connection (2)
+    - **data gateway**: (none) (3)
+    - **Authentication kind**: Anonymous (4)
+    - **Privacy level** : none (5)
 
-      ![New lakehouse.](./Images/fab-image6.png)
+      ![New lakehouse.](./Images/fab-image6upd.png)
 
 6. On the *Preview file data* click on **Create**
 
-      ![New lakehouse.](./Images/createdata.png)
+      ![New lakehouse.](./Images/createdataupd.png)
 
 6. Create the data source. The Power Query editor shows the data source and an initial set of query steps to format the data, as shown here:
 
@@ -137,7 +136,7 @@ Now that you have a lakehouse, you need to ingest some data into it. One way to 
 
 9. The step to add the custom column is added to the query and the resulting column is displayed in the data pane:
 
-      ![Query with a custom column step.](./Images/custom-column-added1.png)
+      ![Query with a custom column step.](./Images/custom-column-added1upd.png)
 
       > **Tip:** In the Query Settings pane on the right side, notice the **Applied Steps** include each transformation step. At the bottom, you can also toggle the 
       **Diagram flow** button to turn on the Visual Diagram of the steps.
@@ -148,13 +147,13 @@ Now that you have a lakehouse, you need to ingest some data into it. One way to 
 
 1. On the toolbar ribbon, select the **Home** tab. In the home tab, click on the dropdown for **Query (1)**, click on **Add data destination (2)** drop-down menu and select **Lakehouse (3)**.
 
-   ![New lakehouse.](./Images/gen2-2upd1.png)
+      ![New lakehouse.](./Images/gen2-2upd1.png)
 
-   > **Note:** If this option is grayed out, you may already have a data destination set. Check the data destination at the bottom of the Query settings pane on the right side of the Power Query editor. If a destination is already set, you can change it using the gear.
+      > **Note:** If this option is grayed out, you may already have a data destination set. Check the data destination at the bottom of the Query settings pane on the right side of the Power Query editor. If a destination is already set, you can change it using the gear.
 
 2. In the **Connect to data destination** dialog box, keep all the values as default and select **Next**.
 
-      ![Data destination configuration page.](./Images/connect_data_destination-1.png)
+      ![Data destination configuration page.](./Images/connect_data_destination-1upd.png)
 
 4. In the list of available workspaces, find your workspace and select lakehouse you created **(1)** in at the start of this exercise. The associated table **orders (2)** will automatically come up. Click on **Next (3)**.
 
@@ -167,20 +166,20 @@ Now that you have a lakehouse, you need to ingest some data into it. One way to 
       - OrderDate = Date/Time
       - MonthNo = Whole number
 
-        ![New lakehouse.](./Images/gen2-3.png)
+        ![New lakehouse.](./Images/gen2-3upd.png)
 
 6. Now repeat the process outlined earlier to add a lakehouse destination.
 
    - Choose the existing destination that we previously created, select **Lakehouse (none) (1)** and click on **Next (2)**.
 
-        ![New lakehouse.](./Images/gen2-4.png)
+        ![New lakehouse.](./Images/gen2-4upd.png)
 
    - Select the lakehouse you created in it at the start of this exercise and the associated table **orders**.
    - Click on **Next**.
 
 7. On the **Destination settings** page toggle off Use automatic settings (1), select **Append (2)**, and then click on **Save Settings (3)**.  
 
-      ![New lakehouse.](./Images/E1T4S7upd.png)
+      ![New lakehouse.](./Images/E1T4S7upd1.png)
 
 8. The **Lakehouse** destination is indicated as an icon in the query in the Power Query editor.
    
@@ -209,17 +208,17 @@ You can include a dataflow as an activity in a pipeline. Pipelines are used to o
 
       ![New lakehouse.](./Images/datapipeline-1.png)
 
-      ![New lakehouse.](./Images/fab-image10.png)
+      ![New lakehouse.](./Images/fab-image10upd.png)
 
       > **Note**: If the Copy Data wizard opens automatically, close it!
 
 3. Select **Pipeline activity (1)**, and add a **Dataflow (2)** activity to the pipeline.
 
-      ![New lakehouse.](./Images/fab-image11.png)
+      ![New lakehouse.](./Images/fab-image11upd.png)
 
-4. With the new **Dataflow1** activity selected, on the **Settings** tab, in the **Dataflow** drop-down list, select **Dataflow 1** (the data flow you created previously)
+4. With the new **Dataflow1** activity selected, on the **Settings (1)** tab, in the **Dataflow** drop-down list, select **Dataflow 1 (2)** (the data flow you created previously)
 
-      ![Pipeline with a dataflow activity.](./Images/dataflow-01.png)
+      ![Pipeline with a dataflow activity.](./Images/dataflow-01upd.png)
 
 5. On the **Home** tab, save the pipeline using the **&#128427;** (*Save*) icon.
 
