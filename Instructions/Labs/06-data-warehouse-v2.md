@@ -18,13 +18,17 @@ Now that you have a workspace which you have created in the previous exercise, i
 
 1. From the bottom left , Choose the **Powerbi** 
 
-     ![Screenshot of a new warehouse.](./Images/powerbi.png)
+     ![Screenshot of a new warehouse.](./Images/powerbiupd.png)
 
     > **Note**: If you don't see the icon in the bottom left corner, Fabric isn't enabled for your tenant. Fabric is enabled in the admin portal for tenants that have a Power BI Premium subscription.
 
-**2.** In the selected workspace (1), click **+ New Item (2)**, type **Warehouse (3)** into the search bar, and then choose to create a **New Warehouse (4)**. Name it **Data Warehouse-<inject key="Deployment ID" enableCopy="false"/>**.
+2. In the selected workspace (1), click **+ New Item (2)**, type **Warehouse (3)** into the search bar, and then choose to create a **New Warehouse (4)**.
 
    ![Screenshot of a new warehouse.](./Images/warehouse-1.png)
+
+3. Name the Warehouse as **Data Warehouse-<inject key="Deployment ID" enableCopy="false"/> (1)** and click on **Create (2)**
+
+   ![Screenshot of a new warehouse.](./Images/warehouse-2.png)
 
 > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps
 > - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
@@ -55,13 +59,13 @@ A warehouse is a relational database in which you can define tables and other ob
    GO
     ```
 
-   ![Screenshot of the data warehouse model page.](./Images/sql-01.png)
+   ![Screenshot of the data warehouse model page.](./Images/sql-01upd.png)
 
 2. Use the **&#9655; Run** button to run the SQL script, which creates a new table named **DimProduct** in the **dbo** schema of the data warehouse.
 
 3. In the **Explorer** pane, expand **Schemas** > **dbo** > **Tables** and verify that the **DimProduct** table has been created.
 
-     ![Screenshot of a new warehouse.](./Images/gen2-9.png)
+     ![Screenshot of a new warehouse.](./Images/gen2-9upd.png)
 
 4. On the **Home** menu tab, use the **New SQL Query** button to create a new query, and enter the following INSERT statement:
 
@@ -74,7 +78,7 @@ A warehouse is a relational database in which you can define tables and other ob
    GO
     ```
 
-     ![Screenshot of a new warehouse.](./Images/gen2-10.png)
+     ![Screenshot of a new warehouse.](./Images/gen2-10upd.png)
 
 5. Run the new query to insert three rows into the **DimProduct** table.
 
@@ -88,13 +92,11 @@ A warehouse is a relational database in which you can define tables and other ob
 
       ![Screenshot of the data warehouse model page.](./Images/go_rem-1.png)
 
-   - Return to the previous line, add a semicolon (;) and include the GO command as shown below. After that, run the query. 
+   - Return to the previous line, add a semicolon (;) and include the GO command as shown below. After that, **Run** the query. 
 
-      ![Screenshot of the data warehouse model page.](./Images/go_command.png)
+      ![Screenshot of the data warehouse model page.](./Images/go_commandupd.png)
 
-<!-- I had to remove the GO command in this query as well -->
-
-    > **Note**: The script should take around 30 seconds to run.
+      > **Note**: The script should take around 30 seconds to run.
 
 9. In the **Explorer** pane, verify that the **dbo** schema in the data warehouse now contains the following four tables:
     - **DimCustomer**
@@ -110,11 +112,11 @@ A relational data warehouse typically consists of *fact* and *dimension* tables.
 
 1. In the Home page of data warehouse, select the **Model layouts** tab.
 
-   ![Screenshot of the data warehouse model page.](./Images/model_layouts.png)
+   ![Screenshot of the data warehouse model page.](./Images/model_layoutsupd.png)
 
 3. In the model layouts pane, rearrange the tables in your data warehouse so that the **FactSalesOrder** table is in the middle, like this:
 
-    ![Screenshot of the data warehouse model page.](./Images/model-dw1-1.png)
+    ![Screenshot of the data warehouse model page.](./Images/model-dw1-1upd.png)
 
 4. Drag the **ProductKey** field from the **FactSalesOrder** table and drop it on the **ProductKey** field in the **DimProduct** table. Then confirm the following relationship details:
 and click on **Save**.
@@ -134,7 +136,7 @@ and click on **Save**.
 
     When all of the relationships have been defined, the model should look like this:
 
-    ![Screenshot of the model with relationships.](./Images/dw-relationships1-1.png)
+    ![Screenshot of the model with relationships.](./Images/dw-relationships1-1upd.png)
 
 ## Task 4 : Query data Warehouse tables
 
@@ -212,27 +214,29 @@ Instead of writing SQL code, you can use the graphical query designer to query t
 
 1. On the **Home** menu, select **New visual query**.
 
-     ![Screenshot of a new warehouse.](./Images/gen2-12.png)
+     ![Screenshot of a new warehouse.](./Images/gen2-12upd.png)
 
 2. Drag **FactSalesOrder** from the Explorer menu onto the **canvas**. Notice that a preview of the table is displayed in the **Preview** pane below.
 
-     ![Screenshot of a new warehouse.](./Images/gen2-13.png)
+     ![Screenshot of a new warehouse.](./Images/gen2-13upd.png)
 
 3. Drag **DimProduct** onto the **canvas**. We now have two tables in our query.
 
 4. Use the **(+)** button on the **FactSalesOrder** table on the canvas to **Merge queries**.
 
-     ![Screenshot of a new warehouse.](./Images/gen2-14.png)
+     ![Screenshot of a new warehouse.](./Images/gen2-14upd.png)
 
-5. In the **Merge queries** window, select **DimProduct** as the right table for merge. Select **ProductKey** in both queries, leave the default **Left outer** join kind, and click **OK**.
+5. In the **Merge queries** window, select **DimProduct (1)** as the right table for merge. Select **ProductKey (2)** in both queries, leave the default **Left outer (3)** join kind, and click **OK (4)**.
+
+     ![Screenshot of a new warehouse.](./Images/leftjoin.png)
 
 6. In the **Preview**, note that the new **DimProduct** column has been added to the FactSalesOrder table. Expand the column by clicking the arrow (1) to the right of the column name. Select **ProductName (2)** and click **OK (3)**.
 
-    ![Screenshot of the preview pane with the DimProduct column expanded, with ProductName selected.](./Images/visual-query-preview1.png)
+    ![Screenshot of the preview pane with the DimProduct column expanded, with ProductName selected.](./Images/visual-query-preview1upd.png)
 
 7. If you're interested in looking at data for a single product, per a manager request, you can now use the **ProductName** column to filter the data in the query. Filter the **ProductName** column to look at **Cable Lock (1)** data only and click on **OK (2)**
 
-   ![Screenshot of the preview pane with the DimProduct column expanded, with ProductName selected.](./Images/cable_lock.png)
+   ![Screenshot of the preview pane with the DimProduct column expanded, with ProductName selected.](./Images/cable_lockupd.png)
 
     >**Note**: If you can't find the cable lock, click on **Load More**. 
 
@@ -244,7 +248,7 @@ You can easily visualize the data in either a single query, or in your data ware
 
 1. In the Home page of data warehouse, select the **Model layouts** tab.
 
-   ![Screenshot of the data warehouse model page.](./Images/model_layouts.png)
+   ![Screenshot of the data warehouse model page.](./Images/model_layoutsupd.png)
 
 3. Hide the following columns in your Fact and Dimension tables that are not necessary to create a report. Note that this does not remove the columns from the model, it simply hides them from view on the report canvas.
    1. FactSalesOrder
@@ -263,7 +267,7 @@ You can easily visualize the data in either a single query, or in your data ware
 
 4. On the Home menu, From the **Reporting tab (1)** select **New report (2)**. This will open a new window, where you can create a Power BI report.
 
-   ![Screenshot of the Visualizations pane with the bar chart selected.](./Images/new_report.png)
+   ![Screenshot of the Visualizations pane with the bar chart selected.](./Images/new_reportupd.png)
    
    >**Note:** Click on **Continue** if the **New report with all available data** pop-up appears.
 
