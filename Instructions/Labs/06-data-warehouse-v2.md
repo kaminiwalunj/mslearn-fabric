@@ -28,7 +28,7 @@ Now that you have a workspace which you have created in the previous exercise, i
 
 3. Name the Warehouse as **Data Warehouse-<inject key="Deployment ID" enableCopy="false"/> (1)** and click on **Create (2)**
 
-   ![Screenshot of a new warehouse.](./Images/warehouse-2.png)
+   ![Screenshot of a new warehouse.](./Images/warehouse-3.png)
 
 > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps
 > - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
@@ -59,13 +59,13 @@ A warehouse is a relational database in which you can define tables and other ob
    GO
     ```
 
-   ![Screenshot of the data warehouse model page.](./Images/sql-01upd.png)
+   ![Screenshot of the data warehouse model page.](./Images/sql-01upd1.png)
 
 2. Use the **&#9655; Run** button to run the SQL script, which creates a new table named **DimProduct** in the **dbo** schema of the data warehouse.
 
 3. In the **Explorer** pane, expand **Schemas** > **dbo** > **Tables** and verify that the **DimProduct** table has been created.
 
-     ![Screenshot of a new warehouse.](./Images/gen2-9upd.png)
+     ![Screenshot of a new warehouse.](./Images/gen2-9upd2.png)
 
 4. On the **Home** menu tab, use the **New SQL Query** button to create a new query, and enter the following INSERT statement:
 
@@ -116,7 +116,7 @@ A relational data warehouse typically consists of *fact* and *dimension* tables.
 
 3. In the model layouts pane, rearrange the tables in your data warehouse so that the **FactSalesOrder** table is in the middle, like this:
 
-    ![Screenshot of the data warehouse model page.](./Images/model-dw1-1upd.png)
+    ![Screenshot of the data warehouse model page.](./Images/model-dw1-1upd1.png)
 
 4. Drag the **ProductKey** field from the **FactSalesOrder** table and drop it on the **ProductKey** field in the **DimProduct** table. Then confirm the following relationship details:
 and click on **Save**.
@@ -136,7 +136,7 @@ and click on **Save**.
 
     When all of the relationships have been defined, the model should look like this:
 
-    ![Screenshot of the model with relationships.](./Images/dw-relationships1-1upd.png)
+    ![Screenshot of the model with relationships.](./Images/dw-relationships1-1upd1.png)
 
 ## Task 4 : Query data Warehouse tables
 
@@ -218,7 +218,7 @@ Instead of writing SQL code, you can use the graphical query designer to query t
 
 2. Drag **FactSalesOrder** from the Explorer menu onto the **canvas**. Notice that a preview of the table is displayed in the **Preview** pane below.
 
-     ![Screenshot of a new warehouse.](./Images/gen2-13upd.png)
+     ![Screenshot of a new warehouse.](./Images/gen2-13upd1.png)
 
 3. Drag **DimProduct** onto the **canvas**. We now have two tables in our query.
 
