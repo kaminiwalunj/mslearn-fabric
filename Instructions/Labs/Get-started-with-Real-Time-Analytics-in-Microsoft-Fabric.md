@@ -1,4 +1,4 @@
-# Get-started-with-data-science-in-Microsoft-Fabric.md
+# Get-started-with-data-science-in-Microsoft-Fabric
 
 ### Estimated Duration: 4 hours
 
