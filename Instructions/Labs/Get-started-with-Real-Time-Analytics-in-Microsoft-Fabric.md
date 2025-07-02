@@ -1,6 +1,6 @@
 # Get-started-with-data-science-in-Microsoft-Fabric.md
 
-### Estimated Duration: 240 minutes
+### Estimated Duration: 4 hours
 
 Microsoft Fabric provides an end-to-end platform for data solutions, including real-time data analytics. Data science is a combination of mathematics, statistics, and computer engineering. When you perform data science, you can analyze your data and identify complicated patterns that can provide you with meaningful insights for your organization. You can use data science to create artificial intelligence (AI) models that encompass the complicated patterns you find in your data. A common approach is to use data science to train machine learning models using libraries like scikit-learn in Python to achieve AI.
 
