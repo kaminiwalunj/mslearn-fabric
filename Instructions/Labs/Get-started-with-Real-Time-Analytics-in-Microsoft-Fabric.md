@@ -1,18 +1,23 @@
-# Lab 1: Get Started with Real-Time Analytics in Microsoft Fabric
+# Get Started with Real-Time Analytics in Microsoft Fabric
 
-### Estimated Duration: 100 minutes
+### Estimated Duration: 240 minutes
 
-Microsoft Fabric provides an end-to-end platform for data solutions, including real-time data analytics. Synapse Real-Time Analytics in Fabric uses a KQL Database to provide table storage and Kusto Query Language (KQL) which is a powerful tool for analyzing data. This structure provides an efficient way to find insights and patterns from textual or structured data. Moreover, KQL is optimized for data that includes a time series component, such as real-time data from log files or streaming services. With Real-Time Analytics, you can focus and scale up your analytics solution while democratizing data for the needs of your entire data organization.
+Microsoft Fabric provides an end-to-end platform for data solutions, including real-time data analytics. Data science is a combination of mathematics, statistics, and computer engineering. When you perform data science, you can analyze your data and identify complicated patterns that can provide you with meaningful insights for your organization. You can use data science to create artificial intelligence (AI) models that encompass the complicated patterns you find in your data. A common approach is to use data science to train machine learning models using libraries like scikit-learn in Python to achieve AI.
 
 ## Lab Objectives
 
 You will be able to complete the following tasks:
 
 - Task 1: Assign Fabric Administrator Role
-- Task 2: Create a workspace and Download file for KQL database
-- Task 3: Create a KQL database
-- Task 4: Use KQL to query the sales table
-- Task 5: Create a Power BI report from a KQL Query set
+- Task 2: Create a workspace
+- Task 3: Create a Lakehouse and upload files
+- Task 4: Create a Notebook
+- Task 5: Load data into a dataframe
+- Task 6: Train a Machine Learning model
+- Task 7: Use MLflow to search and view your experiments
+- Task 8: Explore your experiments
+- Task 9: Save the model
+- Task 10: Save the Notebook and end the Spark session
 
 ## Task 1: Assign Fabric Administrator Role
 
@@ -96,160 +101,347 @@ This task will guide you through creating a workspace in Microsoft Fabric.
 
     ![](./Images/35.png)
 
-## Task 3: Download file for KQL database and Create a KQL database
+## Task 3: Create a Lakehouse and upload files
 
-In this task, you will learn how to download a file for a KQL database and create a KQL database in Microsoft Fabric for querying and analyzing data efficiently.
+This task will guide you through setting up a Lakehouse in Microsoft Fabric, where you will upload files for efficient data storage and processing.
 
-Now that you have a workspace, download the data file for analysis. Using *Kusto Query Language (KQL)*, you can query static or streaming data in a table within a KQL database. To analyze sales data, create a table in the database and ingest the downloaded file.
-
-1. Download the **sales.csv** data file for this exercise from **[Sales.csv](https://raw.githubusercontent.com/MicrosoftLearning/dp-data/main/sales.csv)** and save it on your local computer or lab VM. **Alternatively,** if you are using the provided lab virtual machine (lab VM), you can find the file in the **C:\LabFiles\dp-data-main** directory.
-
-1. Return to the browser window with the **Microsoft Fabric** experience.
+Now that you have a workspace, it's time to switch to the *Data science* experience in the portal and create a data lakehouse for the data files you're going to analyze.
 
 1. Navigate to **dp_fabric-<inject key="Deployment ID" enableCopy="false"/>** workspace from the hub menu bar on the left.
 
     ![](./Images/dp_fabric.png)
 
-1. In the **dp_fabric-<inject key="Deployment ID" enableCopy="false"/>** page, click on **New item (1)** and in the search bar serch for **Eventhouse (2)** and select **Eventhouse (3)**.
+1. In the **dp_fabric-<inject key="Deployment ID" enableCopy="false"/>** page, click on **New item (1)** and in the search bar serch for **Lakehouse (2)** and select **Lakehouse (3)**.
    
-   ![](./Images/36.png)
+   ![](./Images/17.png)
 
-1. Enter **Eventhouse-<inject key="Deployment ID" enableCopy="false"/> (1)** as the name and click **Create (2)**.
+1. Enter **Lakehouse<inject key="Deployment ID" enableCopy="false"/> (1)** as the name and click **Create (2)**.
 
-    ![](./Images/37.png)
+    ![](./Images/18.png)
 
-1. When the new eventhouse has been created, select the option to Get Data from **Local File**. 
+    >**Note:** After a minute or so, a new lakehouse with no **Tables** or **Files** will be created. You need to ingest some data into the data lakehouse for analysis. There are multiple ways to do this, but in this task, you'll simply download and extract a folder of text files from your local computer (or lab VM if applicable) and then upload them to your lakehouse.
 
-    ![Screenshot of selected Fabric Experience home with RTA selected](./Images/38.png)
+1. Download the **churn.csv** file for this exercise from **[churn.csv](https://raw.githubusercontent.com/MicrosoftLearning/dp-data/main/churn.csv)** and save it on your local computer or lab VM. **Alternatively,** if you are using the provided lab virtual machine (lab VM), you can find the file in the **C:\LabFiles\dp-data-main** directory.
 
-1. Then use the wizard to import the data into a new table by selecting the following options: 
+1. Return to the web browser tab containing your lakehouse, and under **Get data in your lakehouse**  select **Upload files**.
 
-    - **Select or create a destination table**:
-        - **Database**: *The database you created is already selected*
-        - **Table**: *Create a new table named* **sales** by clicking on the + sign to the left of ***New table***
+    ![](./Images/19.png)
 
-          ![New table wizard step one](./Images/39.png)
+1. Upload the **churn.csv** file from your local computer (or lab VM if applicable) to the lakehouse.
 
-        - You will now see the **Drag files here or a Browse for files** hyperlink appear in the same window.
+   ![](./Images/20.png)
 
-          ![New table wizard step two](./Images/40.png)
+1. After the files have been uploaded, select **Files** and verify that the CSV file has been uploaded.
 
-        - Browse or drag your **sales.csv** onto the screen and wait for the Status box to change to a green check box and then select **Next**
+   ![](./Images/21.png)
 
-          ![New table wizard step three](./Images/41.png)
+## Task 4: Create a Notebook
 
-        - In the below screen, you'll notice that the column headings are in the first row. Although the system has detected them, we still need to move the **First row is column header** slider above these lines to prevent any errors. Once you adjust the slider, everything should appear correctly. Finally, click the **Finish** button in the bottom right corner of the panel to proceed.
+In this task, you will learn how to create a Notebook in Microsoft Fabric for interactive data exploration and analysis.
 
-          ![New table wizard step five](./Images/42.png)
-
-        - Wait for the steps in the summary screen to complete, which include:
-            - Create table (sales)
-            - Create mapping (sales_mapping)
-            - Data queuing
-            - Blob ingestion
-        - Select the **Close** button
-
-          ![New table wizard step six](./Images/43.png)
-
-> **Note**: In this task, you imported a very small amount of static data from a file, which is fine for the purposes of this task. In reality, you can use Kusto to analyze much larger volumes of data; including real-time data from a streaming source such as Azure Event Hubs.
-
-## Task 4: Use KQL to query the sales table
-
-This task will walk you through using KQL (Kusto Query Language) to query the Sales table and analyze data efficiently in Microsoft Fabric.
-
-Now that you have a table of data in your database, you can use KQL code to query it.
-
-1. Right-click on the **sales (1)** table, select the **Query with code (2)**, and then select **Show any 100 records**.
-
-   ![](./Images/44.png)
-
-1. A new pane will open with the query and its result. 
-
-1. Modify the query as follows:
-
-    ```kusto
-   sales
-   | where Item == 'Road-250 Black, 48'
-    ```
-
-1. Run the query. Then review the results, which should contain only the rows for sales orders for the *Road-250 Black, 48* product.
-
-1. Modify the query as follows:
-
-    ```kusto
-   sales
-   | where Item == 'Road-250 Black, 48'
-   | where datetime_part('year', OrderDate) > 2020
-    ```
-
-1. Run the query and review the results, which should contain only sales orders for *Road-250 Black, 48* made after 2020.
-
-1. Modify the query as follows:
-
-    ```kusto
-   sales
-   | where OrderDate between (datetime(2020-01-01 00:00:00) .. datetime(2020-12-31 23:59:59))
-   | summarize TotalNetRevenue = sum(UnitPrice) by Item
-   | sort by Item asc
-    ```
-1. Run the query and review the results, which should contain the total net revenue for each product between January 1st and December 31st 2020 in ascending order of product name.
+To train a model, you can create a *notebook*. Notebooks provide an interactive environment in which you can write and run code (in multiple languages) as *experiments*.
 
 1. Navigate to **dp_fabric-<inject key="Deployment ID" enableCopy="false"/>** workspace from the hub menu bar on the left.
 
     ![](./Images/dp_fabric.png)
 
-1. Select **KQL Queryset** from the list.
+1. In the **dp_fabric-<inject key="Deployment ID" enableCopy="false"/>** page, click on **New item** and in the search bar serch for **Notebook (1)** and select **Notebook (2)**.
 
-   ![](./Images/45.png)
+     ![](./Images/16.png)
 
-1. Change the name of KQL queryset to **Revenue by Product** and click on **Save**.
+    After a few seconds, a new notebook containing a single *cell* will open. Notebooks are made up of one or more cells that can contain *code* or *markdown* (formatted text).
 
-   ![](./Images/46.png)
+1. Select the first cell (which is currently a *code* cell), and then in the dynamic toolbar at its top-right, use the **M&#8595;** button to convert the cell to a *markdown* cell.
 
-## Task 5: Create a Power BI report from a KQL Query set
+    ![](./Images/22.png)
 
-This task will guide you through visualizing and analyzing data effectively by creating a Power BI report using a KQL query set. You will learn how to transform query results into insightful reports and dashboards.
+    When the cell changes to a markdown cell, the text it contains is rendered.
 
-You can use your KQL Queryset as the basis for a Power BI report.
+1. Use the **&#128393;** (Edit) button to switch the cell to editing mode.
 
-1. In the query workbench editor for your query set, run the query and wait for the results.
+   ![](./Images/24.png)
 
-1. Select **Build Power BI report** and wait for the report editor to open.
+1. Delete the content and enter the following text:
 
-1. In the report editor, in the **Data** pane, expand **Kusto Query Result** and select the **Item** and **TotalRevenue** fields.
+    ```text
+   # Train a machine learning model and track with MLflow
 
-1. On the report design canvas, select the table visualization that has been added and then in the **Visualizations** pane, select **Clustered bar chart**.
+   Use the code in this notebook to train and track models.
+    ```
+    
+## Task 5: Load data into a dataframe
 
-    ![Screenshot of a report from a KQL query.](./Images/powerbireport.png)
+You will explore how to import data into a DataFrame in Microsoft Fabric for processing and analysis in this task.
 
-1. In the **Power BI** window, in the **File (1)** menu, select **Save (2)**. 
+Now you're ready to run code to prepare data and train a model. To work with data, you'll use *dataframes*. Dataframes in Spark are similar to Pandas dataframes in Python, and provide a common structure for working with data in rows and columns.
 
-   ![](./Images/47.png)
+1. Click on Data items in the Explorer panel, then select Add data items and choose Existing data sources from the dropdown menu.
 
-1. Then save the report as **Revenue by Item.pbix** in the workspace where your lakehouse and select your workplace from the dropdown.
+   ![](./Images/nb-01.png)
 
-1. Close the **Power BI** window, and in the bar on the left, select the icon for your workspace.
+1. Select the lakehouse you created in a previous section and select **Connect**.
 
-    Refresh the Workspace page if necessary to view all of the items it contains.
+   ![](./Images/nb-02.png)
 
-1. In the list of items in your workspace, note that the **Revenue by Item** report is listed.
+1. Click on the **Files (1)** folder to display the CSV file next to the notebook editor. Then, open the **...** menu for **churn.csv (2)** and select **Load data (3)** > **Pandas (4)**.
+
+    ![](./Images/23.png)
+
+1. A new code cell containing the following code should be added to the notebook:
+
+    ```python
+   import pandas as pd
+   # Load data into pandas DataFrame from "/lakehouse/default/" + "Files/churn.csv"
+   df = pd.read_csv("/lakehouse/default/" + "Files/churn.csv")
+   display(df)
+    ```
+
+    > **Tip**: You can hide the pane containing the files on the left by using its **<<** icon. Doing so will help you focus on the notebook.
+
+1. Use the **&#9655; Run cell** button on the left of the cell to run it.
+
+    > **Note**: Since this is the first time you've run any Spark code in this session, the Spark pool must be started. This means that the first run in the session can take a minute or so to complete. Subsequent runs will be quicker.
+
+1. When the cell command has been completed, review the output below the cell, which should look similar to this:
+
+    |Index|CustomerID|years_with_company|total_day_calls|total_eve_calls|total_night_calls|total_intl_calls|average_call_minutes|total_customer_service_calls|age|churn|
+    | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- |
+    |1|1000038|0|117|88|32|607|43.90625678|0.810828179|34|0|
+    |2|1000183|1|164|102|22|40|49.82223317|0.294453889|35|0|
+    |3|1000326|3|116|43|45|207|29.83377967|1.344657937|57|1|
+    |4|1000340|0|92|24|11|37|31.61998183|0.124931779|34|0|
+    | ... | ... | ... | ... | ... | ... | ... | ... | ... | ... | ... |
+
+    The output shows the rows and columns of customer data from the churn.csv file.
+
+## Task 6: Train a Machine Learning model
+
+In this task, you will learn how to train a Machine Learning model in Microsoft Fabric using a dataset to make predictions and gain insights.
+
+Now that you've loaded the data, you can use it to train a machine learning model and predict customer churn. You'll train a model using the Scikit-Learn library and track the model with MLflow. 
+
+1. Use the **+ Code** icon below the cell output to add a new code cell to the notebook.
+
+   ![](./Images/15.png)
+
+1. Enter the following code in it. If the **+ Code** icon isn't visible, hover below the cell to make it appear :
+
+    ```python
+   from sklearn.model_selection import train_test_split
+
+   print("Splitting data...")
+   X, y = df[['years_with_company','total_day_calls','total_eve_calls','total_night_calls','total_intl_calls','average_call_minutes','total_customer_service_calls','age']].values, df['churn'].values
    
+   X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.30, random_state=0)
+    ```
+
+    ![](./Images/13.png)
+
+1. Run the code cell you added, and note you're omitting 'CustomerID' from the dataset, and splitting the data into a training and test dataset.
+   
+1. Add another new code cell to the notebook, enter the following code in it, and run it:
+    
+    ```python
+   import mlflow
+   experiment_name = "experiment-churn"
+   mlflow.set_experiment(experiment_name)
+    ```
+    
+    The code creates an MLflow experiment named `experiment-churn`. Your models will be tracked in this experiment.
+
+    ![](./Images/14.png)
+
+1. Add another new code cell to the notebook, enter the following code in it, and run it:
+
+    ```python
+   from sklearn.linear_model import LogisticRegression
+   
+   with mlflow.start_run():
+       mlflow.autolog()
+
+       model = LogisticRegression(C=1/0.1, solver="liblinear").fit(X_train, y_train)
+
+       mlflow.log_param("estimator", "LogisticRegression")
+    ```
+    
+    The code trains a classification model using Logistic Regression. Parameters, metrics, and artifacts are automatically logged with MLflow. Additionally, you're logging a parameter called `estimator`, with the value `LogisticRegression`.
+
+    ![](./Images/12.png)
+
+1. Add another new code cell to the notebook, enter the following code in it, and run it:
+
+    ```python
+   from sklearn.tree import DecisionTreeClassifier
+   
+   with mlflow.start_run():
+       mlflow.autolog()
+
+       model = DecisionTreeClassifier().fit(X_train, y_train)
+   
+       mlflow.log_param("estimator", "DecisionTreeClassifier")
+    ```
+
+    The code trains a classification model using a Decision Tree Classifier. Parameters, metrics, and artifacts are automatically logged with MLflow. Additionally, you're logging a parameter called `estimator`, with the value `DecisionTreeClassifier`.
+
+    ![](./Images/11.png)
+
+
+## Task 7: Use MLflow to search and view your experiments
+
+You will learn how to use MLflow to search and view your machine learning experiments in Microsoft Fabric for tracking and managing model performance.
+
+When you've trained and tracked models with MLflow, you can use the MLflow library to retrieve your experiments and their details.
+
+1. To list all experiments, use the following code:
+
+    ```python
+   import mlflow
+   experiments = mlflow.search_experiments()
+   for exp in experiments:
+       print(exp.name)
+    ```
+
+   ![](./Images/10.png)
+
+1. To retrieve a specific experiment, you can get it by its name:
+
+    ```python
+   experiment_name = "experiment-churn"
+   exp = mlflow.get_experiment_by_name(experiment_name)
+   print(exp)
+    ```
+
+    ![](./Images/9.png)
+
+1. Using an experiment name, you can retrieve all jobs of that experiment:
+
+    ```python
+   mlflow.search_runs(exp.experiment_id)
+    ```
+
+    ![](./Images/8.png)
+
+1. To more easily compare job runs and outputs, you can configure the search to order the results. For example, the following cell orders the results by `start_time`, and only shows a maximum of `2` results: 
+
+    ```python
+   mlflow.search_runs(exp.experiment_id, order_by=["start_time DESC"], max_results=2)
+    ```
+
+    ![](./Images/7.png)
+
+1. Finally, you can plot the evaluation metrics of multiple models next to each other to easily compare models:
+
+    ```python
+   import matplotlib.pyplot as plt
+   
+   df_results = mlflow.search_runs(exp.experiment_id, order_by=["start_time DESC"], max_results=2)[["metrics.training_accuracy_score", "params.estimator"]]
+   
+   fig, ax = plt.subplots()
+   ax.bar(df_results["params.estimator"], df_results["metrics.training_accuracy_score"])
+   ax.set_xlabel("Estimator")
+   ax.set_ylabel("Accuracy")
+   ax.set_title("Accuracy by Estimator")
+   for i, v in enumerate(df_results["metrics.training_accuracy_score"]):
+       ax.text(i, v, str(round(v, 2)), ha='center', va='bottom', fontweight='bold')
+   plt.show()
+    ```
+
+    The output should resemble the following image:
+
+    ![Screenshot of the plotted evaluation metrics.](./Images/plotted-metrics.png)
+
+## Task 8: Explore your experiments
+
+Learn how to analyze performance metrics and gain insights from your machine learning experiments in Microsoft Fabric. Explore various tools and techniques to evaluate and optimize your models effectively.
+
+Microsoft Fabric will keep track of all your experiments and allow you to visually explore them.
+
+1. Navigate to **dp_fabric-<inject key="Deployment ID" enableCopy="false"/>** workspace from the hub menu bar on the left.
+
+    ![](./Images/dp_fabric.png)
+
+1. Select the `experiment-churn` experiment to open it.
+
+    ![](./Images/6.png)
+
+    > **Tip:** If you don't see any logged experiment runs, refresh the page.
+
+1. Review the **Run metrics** to explore how accurate your regression model is.
+
+## Task 9: Save the model
+
+In this task, you will learn how to save the trained Machine Learning model in Microsoft Fabric for future use and deployment.
+
+After comparing machine learning models that you've trained across experiments, you can choose the best-performing model. To use the best-performing model, save the model and use it to generate predictions.
+
+1. Select **Save as ML model** in the experiment ribbon.
+   
+   ![](./Images/5.png)
+
+1. In the newly opened pop-up window, select **Create a new ML model**, then choose the `model` **(1)** folder. Enter **model-churn (2)** as the name and click **Save (3)**.
+
+    ![](./Images/4.png)
+
+1. Select **View ML model** in the notification that appears at the top right of your screen when the model is created. You can also refresh the window. The saved model is linked under **ML model versions**.
+
+   ![](./Images/3.png)
+
+Note that the model, the experiment, and the experiment run are linked, allowing you to review how the model is trained.
+
+## Task 10: Save the Notebook and end the Spark session
+
+In this task, you will discover how to preserve your work by saving the Notebook and efficiently ending the Spark session in Microsoft Fabric to free up resources.
+
+Now that you've finished training and evaluating the models, you can save the notebook with a meaningful name and end the Spark session.
+
+1. In the notebook menu bar, click the ⚙️ **Settings (1)** icon to open the notebook settings. Set the **Name** of the notebook to **Train and compare models (2)**, then **close (3)** the settings pane.
+
+   ![](./Images/2.png)
+
+1. On the notebook menu, select **Stop session** to end the Spark session.
+
+    ![](./Images/1.png)
+
+## Clean up resources
+
+If you've finished exploring your model and experiments, you can delete the workspace you created for this exercise.
+
+1. In the bar on the left, select the **dp_fabric-<inject key="Deployment ID" enableCopy="false"/>** to view all of the items it contains.
+
+   ![](./Images/dp_fabric.png)
+
+1. From the top right corner, click on **Workspace settings**.
+
+   ![](./Images/setting.png)
+
+1. In the **General** section, scroll down and select **Remove this workspace** .
+
+    ![](./Images/remove.png)
+
+1. In the **Delete workspace** pop-up, click **Delete**.
+
+   ![Screenshot of the plotted evaluation metrics.](./Images/delete.png)
+
 ## Review:
 
-In this lab, you have the opportunity to explore Microsoft Fabric as a platform for real-time analytics using Synapse Real-Time Analytics and Kusto Query Language (KQL). You will learn to assign the Fabric Administrator role, create a workspace, set up a KQL database, query data, and generate a Power BI report from KQL queries. This lab demonstrates how to efficiently analyze real-time data using KQL, particularly for time-series data like logs and streaming services.
+In this lab, you have learned how to set up a data science workflow in Microsoft Fabric. You created a Lakehouse, uploaded data, and used Notebooks to explore and preprocess the data. You trained a machine learning model, tracked experiments using MLflow, and saved both the model and the Notebook. This hands-on experience demonstrated how Microsoft Fabric streamlines data science and AI development.
 
 You have completed the following tasks:
-
-- Assigned Fabric Administrator Role
-- Created a workspace
-- Downloaded file for KQL database and Created a KQL database
-- Used KQL to query the sales table
-- Created a Power BI report from a KQL Query set
+ 
+- Assign Fabric Administrator Role
+- Create a workspace
+- Created a Lakehouse and uploaded files
+- Created a Notebook
+- Loaded data into a dataframe
+- Trained a Machine Learning model
+- Used MLflow to search and view your experiments
+- Explored your experiments
+- Saved the model
+- Saved the Notebook and ended the Spark session
 
 ## References:
-
+- [Microsoft Learn](https://learn.microsoft.com)
 - [Microsoft Fabric Documentation](https://learn.microsoft.com/en-us/fabric/)
-- [Kusto Query Language (KQL) Overview](https://learn.microsoft.com/en-us/azure/data-explorer/kusto/query/)
-- [Power BI Documentation](https://learn.microsoft.com/en-us/power-bi/)
+- [Azure Machine Learning Documentation](https://learn.microsoft.com/en-us/azure/machine-learning/)
 
-## You have successfully completed the lab, please click on the next
+## Congratulations! You have successfully completed this lab.
