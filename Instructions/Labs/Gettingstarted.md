@@ -16,7 +16,7 @@ The architecture for this lab is designed to enable a seamless, end-to-end workf
 
 ## Architecture Diagram
 
-![Architecture Diagram](./Images/archdia2.png)
+![Architecture Diagram](./Images/archdiagram.png)
 
 ## Explanation of Components
 
