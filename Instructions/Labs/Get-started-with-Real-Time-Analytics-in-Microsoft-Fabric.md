@@ -1,6 +1,6 @@
 # Get-started-with-data-science-in-Microsoft-Fabric
 
-### Estimated Duration: 4 hours
+### Estimated Duration: 4 Hours
 
 Microsoft Fabric provides an end-to-end platform for data solutions, including real-time data analytics. Data science is a combination of mathematics, statistics, and computer engineering. When you perform data science, you can analyze your data and identify complicated patterns that can provide you with meaningful insights for your organization. You can use data science to create artificial intelligence (AI) models that encompass the complicated patterns you find in your data. A common approach is to use data science to train machine learning models using libraries like scikit-learn in Python to achieve AI.
 
@@ -12,7 +12,7 @@ You will be able to complete the following tasks:
 - Task 2: Create a workspace
 - Task 3: Create a Lakehouse and upload files
 - Task 4: Create a Notebook
-- Task 5: Load data into a dataframe
+- Task 5: Load data into a data frame
 - Task 6: Train a Machine Learning model
 - Task 7: Use MLflow to search and view your experiments
 - Task 8: Explore your experiments
@@ -25,7 +25,7 @@ In this task, you will learn how to assign the Fabric Administrator role to mana
    
 1. In the Azure portal, type **Microsoft Entra ID (1)** in the search box and select **Microsoft Entra ID (2)** from the results.
 
-   ![Navigate-To-AAD](./Images/entra01.png)
+   ![Navigate-To-AAD](./Images/8-7-25-l1-1.png)
 
 1. On the **Microsoft Entra ID** page, navigate to **Roles and administrators (1)**.
 
@@ -33,19 +33,19 @@ In this task, you will learn how to assign the Fabric Administrator role to mana
 
 1. In the **Roles and administrators** page, type **Fabric Administrator (1)** in the search box and select **Fabric Administrator (2)** from the results.
 
-   ![search-fabric-admin](./Images/31.png)
+   ![search-fabric-admin](./Images/8-7-25-l1-2.png)
 
 1. This will take you to the **Fabric Administrator | Assignments** page where you will have to assign yourself the **Fabric Administrator role**. Now, click on **+ Add assignments**.
 
-   ![click-add-assignments](./Images/30.png)
+   ![click-add-assignments](./Images/8-7-25-l1-3.png)
 
 1. Make sure to **check the box (1)** next to  **<inject key="AzureAdUserEmail"></inject>**, confirm if it is **Selected (2)** and click on **Add (3)**.
 
-   ![check-and-add-role](./Images/32.png)
+   ![check-and-add-role](./Images/8-7-25-l1-4.png)
 
 1. You can confirm the **Fabric Administrator** role has been added successfully by **Refresh** Fabric Administrators | Assignments page. After **confirming** it has been added successfully, navigate back to **Home**.
 
-   ![check-and-navigate-back-to-home](./Images/33.png)
+   ![check-and-navigate-back-to-home](./Images/8-7-25-l1-5.png)
 
 ## Task 2: Create a workspace
 
@@ -59,7 +59,7 @@ This task will guide you through creating a workspace in Microsoft Fabric.
 
 1. In the Power BI tab, provide the **Email/Username: <inject key="AzureAdUserEmail"></inject> (1)** and select **Submit (2)**.
 
-   ![](./Images/lab1-7.png)
+   ![](./Images/8-7-25-l1-6.png)
 
 1. Complete the sign-in process by clicking on **Continue**
 
@@ -73,21 +73,21 @@ This task will guide you through creating a workspace in Microsoft Fabric.
 
 1. Select **Account manager (1)**, and click on **Free trial (2)**.
 
-   ![Account-manager-start](./Images/07.png)
+   ![Account-manager-start](./Images/8-7-25-l1-7.png)
 
 1. Upgrade to a free Microsoft Fabric trial dialog opens. Select **Activate**.
 
-   ![Start-trial](./Images/lab1-11.png)
+   ![Start-trial](./Images/8-7-25-l1-8.png)
 
    >**Note:** The trial capacity region may differ from the one shown in the screenshot. No need to worry – simply use the default selected region, activate it, and continue to the next step.
 
 1. In the menu bar on the left, select **Workspaces (1)** (the icon looks similar to &#128455;) and click on **New workplace (2)**.
 
-   ![](./Images/workspace-1.png)
+   ![](./Images/8-7-25-l1-9.png)
 
 1. Create a new workspace named **dp_fabric-<inject key="Deployment ID" enableCopy="false"/> (1)**. Expand **Advanced**, then under **License mode**, select **Trial (2)** and click **Apply (3)** to create and open the workspace.
    
-   ![](./Images/workspace-3.png)
+   ![](./Images/8-7-25-l1-10.png)
 
    >**Note:** If you see a pop-up saying **"Upgrade to a paid Power BI license"**, click on **"Try free"** to proceed with the trial.
 
@@ -95,7 +95,7 @@ This task will guide you through creating a workspace in Microsoft Fabric.
 
 1. When your new workspace opens, it should be empty, as shown here:
 
-   ![Screenshot of an empty workspace in Power BI.](./Images/34.png)
+   ![Screenshot of an empty workspace in Power BI.](./Images/8-7-25-l1-11.png)
  
 1. At the bottom left of the Power BI portal, select the **Power BI** icon and switch to the **Fabric** experience.
 
@@ -109,15 +109,15 @@ Now that you have a workspace, it's time to switch to the *Data science* experie
 
 1. Navigate to **dp_fabric-<inject key="Deployment ID" enableCopy="false"/>** workspace from the hub menu bar on the left.
 
-    ![](./Images/dp_fabric.png)
+    ![](./Images/8-7-25-l1-12.png)
 
 1. In the **dp_fabric-<inject key="Deployment ID" enableCopy="false"/>** page, click on **New item (1)** and in the search bar serch for **Lakehouse (2)** and select **Lakehouse (3)**.
    
-   ![](./Images/17.png)
+   ![](./Images/8-7-25-l1-13.png)
 
 1. Enter **Lakehouse<inject key="Deployment ID" enableCopy="false"/> (1)** as the name and click **Create (2)**.
 
-    ![](./Images/18.png)
+    ![](./Images/8-7-25-l1-14.png)
 
     >**Note:** After a minute or so, a new lakehouse with no **Tables** or **Files** will be created. You need to ingest some data into the data lakehouse for analysis. There are multiple ways to do this, but in this task, you'll simply download and extract a folder of text files from your local computer (or lab VM if applicable) and then upload them to your lakehouse.
 
@@ -125,15 +125,19 @@ Now that you have a workspace, it's time to switch to the *Data science* experie
 
 1. Return to the web browser tab containing your lakehouse, and under **Get data in your lakehouse**  select **Upload files**.
 
-    ![](./Images/19.png)
+    ![](./Images/8-7-25-l1-15.png)
 
-1. Upload the **churn.csv** file from your local computer (or lab VM if applicable) to the lakehouse.
+1. Browse and navigate to **C:\LabFiles\dp-data-main** **(1)**, select **churn.csv (2)** and click on **open (3)**.
 
-   ![](./Images/20.png)
+   ![](./Images/8-7-25-l1-16.png)
+
+1. Upload the **churn.csv (4)** file from your local computer (or lab VM if applicable) to the lakehouse.
+
+   ![](./Images/8-7-25-l1-17.png)
 
 1. After the files have been uploaded, select **Files** and verify that the CSV file has been uploaded.
 
-   ![](./Images/21.png)
+   ![](./Images/8-7-25-l1-18.png)
 
 ## Task 4: Create a Notebook
 
@@ -143,17 +147,17 @@ To train a model, you can create a *notebook*. Notebooks provide an interactive 
 
 1. Navigate to **dp_fabric-<inject key="Deployment ID" enableCopy="false"/>** workspace from the hub menu bar on the left.
 
-    ![](./Images/dp_fabric.png)
+    ![](./Images/8-7-25-l1-12.png)
 
-1. In the **dp_fabric-<inject key="Deployment ID" enableCopy="false"/>** page, click on **New item** and in the search bar serch for **Notebook (1)** and select **Notebook (2)**.
+1. In the **dp_fabric-<inject key="Deployment ID" enableCopy="false"/>** page, click on **New item (1)** and in the search bar serch for **Notebook (2)** and select **Notebook (3)**.
 
-     ![](./Images/16.png)
+     ![](./Images/8-7-25-l1-19.png)
 
     After a few seconds, a new notebook containing a single *cell* will open. Notebooks are made up of one or more cells that can contain *code* or *markdown* (formatted text).
 
 1. Select the first cell (which is currently a *code* cell), and then in the dynamic toolbar at its top-right, use the **M&#8595;** button to convert the cell to a *markdown* cell.
 
-    ![](./Images/22.png)
+    ![](./Images/8-7-25-l1-20.png)
 
     When the cell changes to a markdown cell, the text it contains is rendered.
 
@@ -175,17 +179,17 @@ You will explore how to import data into a DataFrame in Microsoft Fabric for pro
 
 Now you're ready to run code to prepare data and train a model. To work with data, you'll use *dataframes*. Dataframes in Spark are similar to Pandas dataframes in Python, and provide a common structure for working with data in rows and columns.
 
-1. Click on Data items in the Explorer panel, then select Add data items and choose Existing data sources from the dropdown menu.
+1. Click on **Data items (1)** in the Explorer panel, then select **Add data items (2)** and choose **Existing data sources (3)** from the dropdown menu.
 
-   ![](./Images/nb-01.png)
+   ![](./Images/8-7-25-l1-21.png)
 
-1. Select the lakehouse you created in a previous section and select **Connect**.
+1. Select the **lakehouse (1)** you created in a previous section and select **Connect (2)**.
 
-   ![](./Images/nb-02.png)
+   ![](./Images/8-7-25-l1-22.png)
 
 1. Click on the **Files (1)** folder to display the CSV file next to the notebook editor. Then, open the **...** menu for **churn.csv (2)** and select **Load data (3)** > **Pandas (4)**.
 
-    ![](./Images/23.png)
+    ![](./Images/8-7-25-l1-23.png)
 
 1. A new code cell containing the following code should be added to the notebook:
 
@@ -198,7 +202,11 @@ Now you're ready to run code to prepare data and train a model. To work with dat
 
     > **Tip**: You can hide the pane containing the files on the left by using its **<<** icon. Doing so will help you focus on the notebook.
 
+      ![](./Images/8-7-25-l1-23.png)
+
 1. Use the **&#9655; Run cell** button on the left of the cell to run it.
+
+   ![](./Images/8-7-25-l1-23.png)
 
     > **Note**: Since this is the first time you've run any Spark code in this session, the Spark pool must be started. This means that the first run in the session can take a minute or so to complete. Subsequent runs will be quicker.
 
@@ -222,7 +230,7 @@ Now that you've loaded the data, you can use it to train a machine learning mode
 
 1. Use the **+ Code** icon below the cell output to add a new code cell to the notebook.
 
-   ![](./Images/15.png)
+   ![](./Images/8-7-25-l1-26.png)
 
 1. Enter the following code in it. If the **+ Code** icon isn't visible, hover below the cell to make it appear :
 
@@ -235,7 +243,7 @@ Now that you've loaded the data, you can use it to train a machine learning mode
    X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.30, random_state=0)
     ```
 
-    ![](./Images/13.png)
+    ![](./Images/8-7-25-l1-27.png)
 
 1. Run the code cell you added, and note you're omitting 'CustomerID' from the dataset, and splitting the data into a training and test dataset.
    
@@ -249,7 +257,7 @@ Now that you've loaded the data, you can use it to train a machine learning mode
     
     The code creates an MLflow experiment named `experiment-churn`. Your models will be tracked in this experiment.
 
-    ![](./Images/14.png)
+    ![](./Images/8-7-25-l1-28.png)
 
 1. Add another new code cell to the notebook, enter the following code in it, and run it:
 
@@ -266,7 +274,7 @@ Now that you've loaded the data, you can use it to train a machine learning mode
     
     The code trains a classification model using Logistic Regression. Parameters, metrics, and artifacts are automatically logged with MLflow. Additionally, you're logging a parameter called `estimator`, with the value `LogisticRegression`.
 
-    ![](./Images/12.png)
+    ![](./Images/8-7-25-l1-29.png)
 
 1. Add another new code cell to the notebook, enter the following code in it, and run it:
 
@@ -283,7 +291,7 @@ Now that you've loaded the data, you can use it to train a machine learning mode
 
     The code trains a classification model using a Decision Tree Classifier. Parameters, metrics, and artifacts are automatically logged with MLflow. Additionally, you're logging a parameter called `estimator`, with the value `DecisionTreeClassifier`.
 
-    ![](./Images/11.png)
+    ![](./Images/8-7-25-l1-30.png)
 
 
 ## Task 7: Use MLflow to search and view your experiments
@@ -301,7 +309,7 @@ When you've trained and tracked models with MLflow, you can use the MLflow libra
        print(exp.name)
     ```
 
-   ![](./Images/10.png)
+   ![](./Images/8-7-25-l1-31.png)
 
 1. To retrieve a specific experiment, you can get it by its name:
 
@@ -311,7 +319,7 @@ When you've trained and tracked models with MLflow, you can use the MLflow libra
    print(exp)
     ```
 
-    ![](./Images/9.png)
+    ![](./Images/8-7-25-l1-32.png)
 
 1. Using an experiment name, you can retrieve all jobs of that experiment:
 
@@ -319,7 +327,7 @@ When you've trained and tracked models with MLflow, you can use the MLflow libra
    mlflow.search_runs(exp.experiment_id)
     ```
 
-    ![](./Images/8.png)
+    ![](./Images/8-7-25-l1-33.png)
 
 1. To more easily compare job runs and outputs, you can configure the search to order the results. For example, the following cell orders the results by `start_time`, and only shows a maximum of `2` results: 
 
@@ -327,7 +335,7 @@ When you've trained and tracked models with MLflow, you can use the MLflow libra
    mlflow.search_runs(exp.experiment_id, order_by=["start_time DESC"], max_results=2)
     ```
 
-    ![](./Images/7.png)
+    ![](./Images/8-7-25-l1-34.png)
 
 1. Finally, you can plot the evaluation metrics of multiple models next to each other to easily compare models:
 
@@ -348,7 +356,7 @@ When you've trained and tracked models with MLflow, you can use the MLflow libra
 
     The output should resemble the following image:
 
-    ![Screenshot of the plotted evaluation metrics.](./Images/plotted-metrics.png)
+    ![Screenshot of the plotted evaluation metrics.](./Images/8-7-25-l1-35.png)
 
 ## Task 8: Explore your experiments
 
