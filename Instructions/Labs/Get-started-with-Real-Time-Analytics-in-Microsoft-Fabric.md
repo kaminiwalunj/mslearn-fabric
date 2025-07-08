@@ -27,7 +27,7 @@ In this task, you will learn how to assign the Fabric Administrator role to mana
 
    ![Navigate-To-AAD](./Images/8-7-25-l1-1.png)
 
-1. On the **Microsoft Entra ID** page, navigate to **Roles and administrators (1)**.
+1. On the **Microsoft Entra ID** page, under the **Manage** section, select **Roles and administrators** **(1)**.
 
    ![Roles-and-Administrator](./Images/29.png)
 
@@ -71,7 +71,7 @@ This task will guide you through creating a workspace in Microsoft Fabric.
    
 1. Leave the Microsoft Edge browser window open.
 
-1. Select **Account manager (1)**, and click on **Free trial (2)**.
+1. Select the **Account manager** icon at the top-right corner **(1)**, then click on **Free trial** **(2)**.
 
    ![Account-manager-start](./Images/8-7-25-l1-7.png)
 
