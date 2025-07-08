@@ -1,6 +1,6 @@
 # Get started with Real-Time Analytics and Data Science with Microsoft Fabric
 
-### Overall Estimated Duration: 4 hours
+### Overall Estimated Duration: 4 Hours
 
 ## Prerequisites
 
@@ -32,9 +32,9 @@ Welcome to Real-Time Analytics and Data Science with Microsoft Fabric Workshop! 
 
 ## Accessing Your Lab Environment
 
-Once you're ready to dive in, your virtual machine and lab guide will be right at your fingertips within your web browser.
+Once you're ready to dive in, your virtual machine and **Guide** will be right at your fingertips within your web browser.
  
-![](./Images/june-getting-started-1.png)
+![](./Images/8-7-25-g1.png)
  
 ## Exploring Your Lab Resources
  
@@ -44,7 +44,7 @@ To get a better understanding of your lab resources and credentials, navigate to
  
 ## Utilizing the Split Window Feature
  
-For convenience, you can open the lab guide in a separate window by selecting the **Split Window** button from the top right corner.
+For convenience, you can open the guide in a separate window by selecting the **Split Window** button from the top right corner.
  
 ![Use the Split Window Feature](./Images/june-getting-started-2.png)
  
@@ -52,7 +52,7 @@ For convenience, you can open the lab guide in a separate window by selecting th
  
 Feel free to start, stop, or restart your virtual machine as needed from the **Resources** tab. Your experience is in your hands!
  
-![Manage Your Virtual Machine](./Images/june-getting-started-5.png)
+![Manage Your Virtual Machine](./Images/8-7-25-g2.png)
  
 ## Lab Guide Zoom In/Zoom Out
  
@@ -78,13 +78,13 @@ Feel free to start, stop, or restart your virtual machine as needed from the **R
  
        ![Enter Your Password](./Images/sc900-image-2.png)
 
-1. If you see the pop-up Action Required, click Ask Later.
+1. If you see the 'Action Required' pop-up, click 'Ask Later'.
  
    > **NOTE**: Do not enable MFA, select Ask Later.
 
 1. If you see the pop-up Stay Signed in?, select No.
 
-   > **NOTE**: If prompted with MFA, and Ask Later option is not available please follow the steps highlighted under - [Steps to Proceed with MFA Setup if Ask Later Option is Not Visible](#steps-to-proceed-with-mfa-setup-if-ask-later-option-is-not-visible)
+   > **NOTE**: If prompted with MFA, and the Ask Later option is not available, please follow the steps highlighted under - [Steps to Proceed with MFA Setup if Ask Later Option is Not Visible](#steps-to-proceed-with-mfa-setup-if-ask-later-option-is-not-visible)
 
 1. If you see the pop-up **You have free Azure Advisor recommendations!**, close the window to continue the lab.
 
