@@ -35,7 +35,7 @@ In this task, you will learn how to assign the Fabric Administrator role to mana
 
    ![search-fabric-admin](./Images/8-7-25-l1-2.png)
 
-1. This will take you to the **Fabric Administrator | Assignments** page where you will have to assign yourself the **Fabric Administrator role**. Now, click on **+ Add assignments**.
+1. This will take you to the **Fabric Administrator | Assignments** page, where you will have to assign yourself the **Fabric Administrator role**. Now, click on **+ Add assignments**.
 
    ![click-add-assignments](./Images/8-7-25-l1-3.png)
 
@@ -95,11 +95,12 @@ This task will guide you through creating a workspace in Microsoft Fabric.
 
 1. When your new workspace opens, it should be empty, as shown here:
 
-   ![Screenshot of an empty workspace in Power BI.](./Images/8-7-25-l1-11.png)
+   ![Screenshot of an empty workspace in Power BI](./Images/8-7-25-l1-11.png)
  
-1. At the bottom left of the Power BI portal, select the **Power BI** icon and switch to the **Fabric** experience.
+1. At the bottom left of the Power BI portal, select the **Power BI (1)** icon and switch to the **Fabric (2)** experience.
 
-    ![](./Images/35.png)
+    ![](./Images/8-7-25-l1-t2-3.png)
+    ![](./Images/8-7-25-l1-t2-4.png)
 
 ## Task 3: Create a Lakehouse and upload files
 
@@ -202,11 +203,11 @@ Now you're ready to run code to prepare data and train a model. To work with dat
 
     > **Tip**: You can hide the pane containing the files on the left by using its **<<** icon. Doing so will help you focus on the notebook.
 
-      ![](./Images/8-7-25-l1-23.png)
+      ![](./Images/8-7-25-l1-24.png)
 
 1. Use the **&#9655; Run cell** button on the left of the cell to run it.
 
-   ![](./Images/8-7-25-l1-23.png)
+   ![](./Images/8-7-25-l1-25.png)
 
     > **Note**: Since this is the first time you've run any Spark code in this session, the Spark pool must be started. This means that the first run in the session can take a minute or so to complete. Subsequent runs will be quicker.
 
@@ -247,7 +248,7 @@ Now that you've loaded the data, you can use it to train a machine learning mode
 
 1. Run the code cell you added, and note you're omitting 'CustomerID' from the dataset, and splitting the data into a training and test dataset.
    
-1. Add another new code cell to the notebook, enter the following code in it, and run it:
+1. Add a new code cell to the notebook, enter the following code in it, and run it:
     
     ```python
    import mlflow
@@ -370,7 +371,7 @@ Microsoft Fabric will keep track of all your experiments and allow you to visual
 
 1. Select the `experiment-churn` experiment to open it.
 
-    ![](./Images/8-7-25-l1-36.png)
+    ![](./Images/8-7-25-l1-37.png)
 
     > **Tip:** If you don't see any logged experiment runs, refresh the page.
 
