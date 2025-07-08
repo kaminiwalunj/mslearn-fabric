@@ -63,11 +63,11 @@ This task will guide you through creating a workspace in Microsoft Fabric.
 
 1. Complete the sign-in process by clicking on **Continue**
 
-   ![](./Images/lab1-8.png)
+   ![](./Images/8-7-25-l1-t2-1.png)
    
 1. Enter a 10-digit phone number and select **Get started**. Select **Get started** once more. You will be redirected to Power BI. If prompted provide the **Password:** <inject key="AzureAdUserPassword"></inject>
    
-   ![](./Images/lab1-9.png)
+   ![](./Images/8-7-25-l1-t2-2.png)
    
 1. Leave the Microsoft Edge browser window open.
 
@@ -366,11 +366,11 @@ Microsoft Fabric will keep track of all your experiments and allow you to visual
 
 1. Navigate to **dp_fabric-<inject key="Deployment ID" enableCopy="false"/>** workspace from the hub menu bar on the left.
 
-    ![](./Images/dp_fabric.png)
+    ![](./Images/8-7-25-l1-36.png)
 
 1. Select the `experiment-churn` experiment to open it.
 
-    ![](./Images/6.png)
+    ![](./Images/8-7-25-l1-36.png)
 
     > **Tip:** If you don't see any logged experiment runs, refresh the page.
 
@@ -384,11 +384,11 @@ After comparing machine learning models that you've trained across experiments, 
 
 1. Select **Save as ML model** in the experiment ribbon.
    
-   ![](./Images/5.png)
+   ![](./Images/8-7-25-l1-38.png)
 
-1. In the newly opened pop-up window, select **Create a new ML model**, then choose the `model` **(1)** folder. Enter **model-churn (2)** as the name and click **Save (3)**.
+1. In the newly opened pop-up window, select **Create a new ML model (1)**, then choose the `model` **(2)** folder. Enter **model-churn (3)** as the name and click **Save (4)**.
 
-    ![](./Images/4.png)
+    ![](./Images/8-7-25-l1-39.png)
 
 1. Select **View ML model** in the notification that appears at the top right of your screen when the model is created. You can also refresh the window. The saved model is linked under **ML model versions**.
 
@@ -402,9 +402,9 @@ In this task, you will discover how to preserve your work by saving the Notebook
 
 Now that you've finished training and evaluating the models, you can save the notebook with a meaningful name and end the Spark session.
 
-1. In the notebook menu bar, click the ⚙️ **Settings (1)** icon to open the notebook settings. Set the **Name** of the notebook to **Train and compare models (2)**, then **close (3)** the settings pane.
+1. In the notebook menu bar, click the ⚙️ **Settings (1)** icon to open the notebook settings. Set the **Name** of the notebook to **Train and compare models (2)**, then **close** the settings pane.
 
-   ![](./Images/2.png)
+   ![](./Images/8-7-25-l1-40.png)
 
 1. On the notebook menu, select **Stop session** to end the Spark session.
 
@@ -416,15 +416,15 @@ If you've finished exploring your model and experiments, you can delete the work
 
 1. In the bar on the left, select the **dp_fabric-<inject key="Deployment ID" enableCopy="false"/>** to view all of the items it contains.
 
-   ![](./Images/dp_fabric.png)
+   ![](./Images/8-7-25-l1-41.png)
 
 1. From the top right corner, click on **Workspace settings**.
 
-   ![](./Images/setting.png)
+   ![](./Images/8-7-25-l1-42.png)
 
 1. In the **General** section, scroll down and select **Remove this workspace** .
 
-    ![](./Images/remove.png)
+    ![](./Images/8-7-25-l1-43.png)
 
 1. In the **Delete workspace** pop-up, click **Delete**.
 
