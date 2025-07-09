@@ -2,6 +2,8 @@
 
 ### Estimated Duration: 4 Hours
 
+### Overview
+
 Microsoft Fabric provides an end-to-end platform for data solutions, including real-time data analytics. Data science is a combination of mathematics, statistics, and computer engineering. When you perform data science, you can analyze your data and identify complicated patterns that can provide you with meaningful insights for your organization. You can use data science to create artificial intelligence (AI) models that encompass the complicated patterns you find in your data. A common approach is to use data science to train machine learning models using libraries like scikit-learn in Python to achieve AI.
 
 ## Lab Objectives
@@ -23,15 +25,15 @@ You will be able to complete the following tasks:
 
 In this task, you will learn how to assign the Fabric Administrator role to manage permissions and access within Microsoft Fabric.
    
-1. In the Azure portal, type **Microsoft Entra ID (1)** in the search box and select **Microsoft Entra ID (2)** from the results.
+1. In the Azure portal, type **Microsoft Entra ID (1)** in the search box and select **Microsoft Entra ID (2)** from the Services list.
 
    ![Navigate-To-AAD](./Images/8-7-25-l1-1.png)
 
-1. On the **Microsoft Entra ID** page, under the **Manage** section, select **Roles and administrators** **(1)**.
+1. On the **Microsoft Entra ID** page, from the **left-hand menu**, under the **Manage** section, select **Roles and administrators (1)**.
 
    ![Roles-and-Administrator](./Images/29.png)
 
-1. In the **Roles and administrators** page, type **Fabric Administrator (1)** in the search box and select **Fabric Administrator (2)** from the results.
+1. In the **Roles and administrators** page, type **Fabric Administrator (1)** in the search box. From the search results, select the **checkbox** next to **Fabric Administrator (2)**.
 
    ![search-fabric-admin](./Images/8-7-25-l1-2.png)
 
@@ -39,7 +41,7 @@ In this task, you will learn how to assign the Fabric Administrator role to mana
 
    ![click-add-assignments](./Images/8-7-25-l1-3.png)
 
-1. Make sure to **check the box (1)** next to  **<inject key="AzureAdUserEmail"></inject>**, confirm if it is **Selected (2)** and click on **Add (3)**.
+1. In the **Add assignments** pane, **check the box (1)** next to **<inject key="AzureAdUserEmail"></inject>**, confirm it appears in the **Selected** section **(2)**, and then click on **Add** **(3)** to assign the role.
 
    ![check-and-add-role](./Images/8-7-25-l1-4.png)
 
@@ -57,11 +59,11 @@ This task will guide you through creating a workspace in Microsoft Fabric.
 
     > **Note:** If you are not using the lab environment and have an existing Power BI account, you may want to use the browser in private / incognito mode.
 
-1. In the Power BI tab, provide the **Email/Username: <inject key="AzureAdUserEmail"></inject> (1)** and select **Submit (2)**.
+1. In the Power BI tab, provide the **Email/Username: <inject key="AzureAdUserEmail"></inject> (1)** and click **Submit (2)**.
 
    ![](./Images/8-7-25-l1-6.png)
 
-1. Complete the sign-in process by clicking on **Continue**
+1. On the **You've selected Microsoft Fabric free** screen, under **Step 1: Let's get you started**, Click on **Continue** to proceed with the setup process.
 
    ![](./Images/8-7-25-l1-t2-1.png)
    
@@ -71,23 +73,23 @@ This task will guide you through creating a workspace in Microsoft Fabric.
    
 1. Leave the Microsoft Edge browser window open.
 
-1. Select the **Account manager** icon at the top-right corner **(1)**, then click on **Free trial** **(2)**.
+1. Select the **Account manager** icon at the top-right corner **(1)** of the portal. In the profile pane that appears, click on **Free trial** **(2)** to begin activating your Microsoft Fabric trial.
 
    ![Account-manager-start](./Images/8-7-25-l1-7.png)
 
-1. Upgrade to a free Microsoft Fabric trial dialog opens. Select **Activate**.
+1. In the **Upgrade to a free Microsoft Fabric trial** dialog that appears, click on **Activate**.
 
    ![Start-trial](./Images/8-7-25-l1-8.png)
 
    >**Note:** The trial capacity region may differ from the one shown in the screenshot. No need to worry – simply use the default selected region, activate it, and continue to the next step.
 
-1. In the menu bar on the left, select **Workspaces (1)** (the icon looks similar to &#128455;) and click on **New workplace (2)**.
+1. In the menu bar on the left, select **Workspaces (1)** (the icon looks similar to &#128455;) and click on **+ New workplace (2)**.
 
    ![](./Images/8-7-25-l1-9.png)
 
-1. Create a new workspace named **dp_fabric-<inject key="Deployment ID" enableCopy="false"/> (1)**. Expand **Advanced**, then under **License mode**, select **Trial (2)** and click **Apply (3)** to create and open the workspace.
+1. On the **Create a new workspace** pane, enter the Name as **dp_fabric-<inject key="Deployment ID" enableCopy="false"/> (1)**. Expand the **Advanced** section **(2)**, then under **License mode**, select **Trial** **(3)** and click **Apply** **(4)** to create and open the workspace.
    
-   ![](./Images/8-7-25-l1-10.png)
+   ![](./Images/8-7-25-new-1.png)
 
    >**Note:** If you see a pop-up saying **"Upgrade to a paid Power BI license"**, click on **"Try free"** to proceed with the trial.
 
@@ -112,11 +114,11 @@ Now that you have a workspace, it's time to switch to the *Data science* experie
 
     ![](./Images/8-7-25-l1-12.png)
 
-1. In the **dp_fabric-<inject key="Deployment ID" enableCopy="false"/>** page, click on **New item (1)** and in the search bar serch for **Lakehouse (2)** and select **Lakehouse (3)**.
+1. On the **dp_fabric-<inject key="Deployment ID" enableCopy="false"/>** workspace page, click on **+ New item (1)** and in the search bar serch for **Lakehouse (2)** and select **Lakehouse (3)**.
    
    ![](./Images/8-7-25-l1-13.png)
 
-1. Enter **Lakehouse<inject key="Deployment ID" enableCopy="false"/> (1)** as the name and click **Create (2)**.
+1. On the **New lakehouse** pane, Enter **Lakehouse<inject key="Deployment ID" enableCopy="false"/> (1)** in the Name field **(1)** and click **Create** **(2)**.
 
     ![](./Images/8-7-25-l1-14.png)
 
@@ -128,17 +130,17 @@ Now that you have a workspace, it's time to switch to the *Data science* experie
 
     ![](./Images/8-7-25-l1-15.png)
 
-1. Browse and navigate to **C:\LabFiles\dp-data-main** **(1)**, select **churn.csv (2)** and click on **open (3)**.
+1. In the file explorer window, navigate to **C:\LabFiles\dp-data-main** **(1)**, select **churn.csv** **(2)**, and click **Open** **(3)**.
 
    ![](./Images/8-7-25-l1-16.png)
 
-1. Upload the **churn.csv (4)** file from your local computer (or lab VM if applicable) to the lakehouse.
+1. On the **Upload files** window, verify that **churn.csv** is listed and click **Upload** **(4)** to add the file to the lakehouse.
 
    ![](./Images/8-7-25-l1-17.png)
 
-1. After the files have been uploaded, select **Files** and verify that the CSV file has been uploaded.
+1. After the upload is complete, select **Files** (1) in the Explorer pane and verify that **churn.csv** (2) appears in the list.
 
-   ![](./Images/8-7-25-l1-18.png)
+   ![](./Images/8-7-25-new-2.png)
 
 ## Task 4: Create a Notebook
 
@@ -150,7 +152,7 @@ To train a model, you can create a *notebook*. Notebooks provide an interactive 
 
     ![](./Images/8-7-25-l1-12.png)
 
-1. In the **dp_fabric-<inject key="Deployment ID" enableCopy="false"/>** page, click on **New item (1)** and in the search bar serch for **Notebook (2)** and select **Notebook (3)**.
+1. In the **dp_fabric-<inject key="Deployment ID" enableCopy="false"/>** page, click on **+ New item (1)** and in the search bar serch for **Notebook (2)** and select **Notebook (3)**.
 
      ![](./Images/8-7-25-l1-19.png)
 
@@ -184,7 +186,7 @@ Now you're ready to run code to prepare data and train a model. To work with dat
 
    ![](./Images/8-7-25-l1-21.png)
 
-1. Select the **lakehouse (1)** you created in a previous section and select **Connect (2)**.
+1. On the **OneLake catalog** window, select the **lakehouse (1)** you created earlier and click on **Connect (2)**.
 
    ![](./Images/8-7-25-l1-22.png)
 
