@@ -35,7 +35,11 @@ Welcome to Real-Time Analytics and Data Science with Microsoft Fabric Workshop! 
 Once you're ready to dive in, your virtual machine and **Guide** will be right at your fingertips within your web browser.
  
 ![](./Images/8-7-25-g1.png)
- 
+
+## Virtual Machine & Lab Guide
+
+Your virtual machine is your workhorse throughout the workshop. The lab guide is your roadmap to success.
+
 ## Exploring Your Lab Resources
  
 To get a better understanding of your lab resources and credentials, navigate to the **Environment Details** tab.
@@ -56,9 +60,9 @@ Feel free to start, stop, or restart your virtual machine as needed from the **R
  
 ## Lab Guide Zoom In/Zoom Out
  
-1. To adjust the zoom level for the environment page, click the **A↕ : 100%** icon located next to the timer in the lab environment.
+To adjust the zoom level for the environment page, click the **A↕ : 100%** icon located next to the timer in the lab environment.
 
-  ![OpenAI](./Images/june-getting-started-6upd.png)
+ ![OpenAI](./Images/june-getting-started-6upd.png)
 
 ## Login to the Azure Portal
 
@@ -72,7 +76,7 @@ Feel free to start, stop, or restart your virtual machine as needed from the **R
  
        ![Enter Your Username](./Images/sc900-image-1.png)
  
-1. Next, provide your password:
+1. Next, provide your password and click on **Sign in**
  
    - **Password:** <inject key="AzureAdUserPassword"></inject>
  
