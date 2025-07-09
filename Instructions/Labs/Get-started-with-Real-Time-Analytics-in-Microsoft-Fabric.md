@@ -138,7 +138,7 @@ Now that you have a workspace, it's time to switch to the *Data science* experie
 
    ![](./Images/8-7-25-l1-17.png)
 
-1. After the upload is complete, select **Files** (1) in the Explorer pane and verify that **churn.csv** (2) appears in the list.
+1. After the upload is complete, select **Files** **(1)** in the Explorer pane and verify that **churn.csv** **(2)** appears in the list.
 
    ![](./Images/8-7-25-new-2.png)
 
@@ -190,7 +190,7 @@ Now you're ready to run code to prepare data and train a model. To work with dat
 
    ![](./Images/8-7-25-l1-22.png)
 
-1. Click on the **Files (1)** folder to display the CSV file next to the notebook editor. Then, open the **...** menu for **churn.csv (2)** and select **Load data (3)** > **Pandas (4)**.
+1. On the notebook interface, click on the **Files (1)** folder to display the CSV file next to the notebook editor. Then, open the ellipsis **...** menu for **churn.csv (2)** and select **Load data (3)** -> **Pandas (4)**.
 
     ![](./Images/8-7-25-l1-23.png)
 
@@ -235,7 +235,7 @@ Now that you've loaded the data, you can use it to train a machine learning mode
 
    ![](./Images/8-7-25-l1-26.png)
 
-1. Enter the following code in it. If the **+ Code** icon isn't visible, hover below the cell to make it appear :
+1. Enter the following code in it. If the **+ Code** icon isn't visible, hover your mouse below the cell to make it appear :
 
     ```python
    from sklearn.model_selection import train_test_split
@@ -371,7 +371,7 @@ Microsoft Fabric will keep track of all your experiments and allow you to visual
 
     ![](./Images/8-7-25-l1-36.png)
 
-1. Select the `experiment-churn` experiment to open it.
+1. **dp_fabric-<inject key="Deployment ID" enableCopy="false"/>** workspace page, select the **experiment-churn** experiment to open it.
 
     ![](./Images/8-7-25-l1-37.png)
 
@@ -385,11 +385,11 @@ In this task, you will learn how to save the trained Machine Learning model in M
 
 After comparing machine learning models that you've trained across experiments, you can choose the best-performing model. To use the best-performing model, save the model and use it to generate predictions.
 
-1. Select **Save as ML model** in the experiment ribbon.
+1. On the **experiment-churn** page, Select **Save as ML model** in the experiment ribbon.
    
    ![](./Images/8-7-25-l1-38.png)
 
-1. In the newly opened pop-up window, select **Create a new ML model (1)**, then choose the `model` **(2)** folder. Enter **model-churn (3)** as the name and click **Save (4)**.
+1. In the **Save as ML model** pop-up window, select **Create a new ML model (1)**, then Choose the **model** folder from the dropdown **(2)** . Enter **model-churn (3)** as the ML model name and click **Save (4)**. 
 
     ![](./Images/8-7-25-l1-39.png)
 
@@ -405,7 +405,7 @@ In this task, you will discover how to preserve your work by saving the Notebook
 
 Now that you've finished training and evaluating the models, you can save the notebook with a meaningful name and end the Spark session.
 
-1. In the notebook menu bar, click the ⚙️ **Settings (1)** icon to open the notebook settings. Set the **Name** of the notebook to **Train and compare models (2)**, then **close** the settings pane.
+1. On the notebook menu bar, click the ⚙️ **Settings (1)** icon to open the notebook settings pane. Set the **Name** of the notebook to **Train and compare models (2)**, then **close** the settings pane.
 
    ![](./Images/8-7-25-l1-40.png)
 
@@ -425,11 +425,11 @@ If you've finished exploring your model and experiments, you can delete the work
 
    ![](./Images/8-7-25-l1-42.png)
 
-1. In the **General** section, scroll down and select **Remove this workspace** .
+1. In the **General** section of the Workspace settings, scroll down and select **Remove this workspace** .
 
     ![](./Images/8-7-25-l1-43.png)
 
-1. In the **Delete workspace** pop-up, click **Delete**.
+1. On the **Delete workspace?** pop-up, click **Delete**.
 
    ![Screenshot of the plotted evaluation metrics.](./Images/delete.png)
 
