@@ -8,7 +8,22 @@
 - Familiarity with Microsoft Azure services.  
 - A Microsoft Fabric-enabled workspace with necessary permissions.  
 - Access to Microsoft Fabric services such as OneLake, Data Engineering, and Data Science experiences.  
-- Familiarity with PowerBI reports.
+- Familiarity with Power BI reports.
+
+## Overview
+
+This lab provides a hands-on, end-to-end experience with data science in Microsoft Fabric using the Lakehouse architecture. You’ll begin by setting up administrative access and creating a workspace. From there, you’ll create a Lakehouse to store your dataset, explore data using Notebooks, and train machine learning models with Scikit-learn in Python. With built-in Apache Spark support, you’ll perform scalable data processing and model training. You’ll also integrate MLflow to track, compare, and evaluate multiple experiments. Finally, you'll save your model and notebook. This lab demonstrates a complete and reproducible machine learning workflow using Microsoft Fabric’s unified data science environment.
+
+## Objective
+
+- Set up Microsoft Fabric by assigning roles, creating a workspace, and configuring a Lakehouse.
+
+- Upload data and use Notebooks to explore, preprocess, and train machine learning models using Scikit-learn.
+
+- Track and compare model performance using MLflow experiments.
+
+- Save the trained model and Notebook, then end the Spark session to complete the workflow.
+
 
 ## Architecture
 
