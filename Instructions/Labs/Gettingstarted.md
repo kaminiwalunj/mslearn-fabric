@@ -24,7 +24,6 @@ This lab provides a hands-on, end-to-end experience with data science in Microso
 
 - Save the trained model and Notebook, then end the Spark session to complete the workflow.
 
-
 ## Architecture
 
 The architecture for this lab is designed to enable a seamless, end-to-end workflow for data processing and machine learning within a Lakehouse environment. The process begins with the creation of a Lakehouse, which acts as the central data storage layer where raw files are uploaded for further analysis. Users then operate within a notebook interface, where data is loaded into DataFrames for exploration and transformation. Leveraging Apache Spark, machine learning models are trained efficiently at scale within this environment. To manage and monitor experiments, MLflow is integrated into the architecture, allowing users to track, compare, and analyze multiple model runs. Once a model is finalized, it is saved for future use, and the notebook is persisted as part of the workflow. Finally, the Spark session is properly terminated to optimize resource usage. This architecture supports a structured, scalable, and reproducible pipeline—from data ingestion to model training and experiment tracking, ensuring clarity and control at every stage of the lab.
@@ -69,7 +68,7 @@ For convenience, you can open the guide in a separate window by selecting the **
  
 ## Managing Your Virtual Machine
  
-Feel free to start, stop, or restart your virtual machine as needed from the **Resources** tab. Your experience is in your hands!
+Feel free to **start, stop, or restart (2)** your virtual machine as needed from the **Resources** **(1)** tab. Your experience is in your hands!
  
 ![Manage Your Virtual Machine](./Images/8-7-25-g2.png)
  
@@ -147,7 +146,7 @@ Learner Support Contacts:
 
 Now you're all set to explore the powerful world of technology. Feel free to reach out if you have any questions along the way. Enjoy your workshop!
 
-Now, click on **Next** from the lower right corner to move on to the next page.
+Now, click on **Next >>** from the lower right corner to move on to the next page.
 
   ![Asklater](./Images/next.png)
  
