@@ -29,7 +29,7 @@ In this task, you will learn how to assign the Fabric Administrator role to mana
 
    ![Navigate-To-AAD](./Images/8-7-25-l1-1.png)
 
-1. On the **Microsoft Entra ID** page, from the **left-hand menu**, under the **Manage** section, select **Roles and administrators (1)**.
+1. On the **Microsoft Entra ID** page, from the **left-hand menu**, click **Roles and administrators (1)** under the **Manage** section.
 
    ![Roles-and-Administrator](./Images/29.png)
 
