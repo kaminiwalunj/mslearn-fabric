@@ -33,7 +33,7 @@ In this task, you will learn how to assign the Fabric Administrator role to mana
 
    ![Roles-and-Administrator](./Images/29.png)
 
-1. In the **Roles and administrators** page, type **Fabric Administrator (1)** in the search box. From the search results, select the **checkbox** next to **Fabric Administrator (2)**.
+1. In the **Roles and administrators | All roles page**, type **Fabric Administrator (1)** in the search box. From the search results, select the **checkbox** next to **Fabric Administrator (2)**.
 
    ![search-fabric-admin](./Images/8-7-25-l1-2.png)
 
@@ -77,17 +77,20 @@ This task will guide you through creating a workspace in Microsoft Fabric.
 
    ![Account-manager-start](./Images/8-7-25-l1-7.png)
 
-1. In the **Upgrade to a free Microsoft Fabric trial** dialog that appears, click on **Activate**.
+1. On the **Activate your 60-day free Fabric trial capacity** page, click **Activate** to start your trial.
+
+   ![](./media/0dfcef10-c935-4505-9b8f-d115c10534fa.png)
+
 
    ![Start-trial](./Images/8-7-25-l1-8.png)
 
    >**Note:** The trial capacity region may differ from the one shown in the screenshot. No need to worry – simply use the default selected region, activate it, and continue to the next step.
 
-1. In the menu bar on the left, select **Workspaces (1)** (the icon looks similar to &#128455;) and click on **+ New workplace (2)**.
+1. In the menu bar on the left, select **Workspaces (1)** (the icon looks similar to &#128455;) and click on **+ New workspace (2)**.
 
    ![](./Images/8-7-25-l1-9.png)
 
-1. On the **Create a new workspace** pane, enter the Name as **dp_fabric-<inject key="Deployment ID" enableCopy="false"/> (1)**. Expand the **Advanced** section **(2)**, then under **License mode**, select **Trial** **(3)** and click **Apply** **(4)** to create and open the workspace.
+1. On the **Create a workspace** pane, enter the Name as **dp_fabric-<inject key="Deployment ID" enableCopy="false"/> (1)**. Expand the **Advanced** section **(2)**, then under **License mode**, select **Trial** **(3)** and click **Apply** **(4)** to create and open the workspace.
    
    ![](./Images/8-7-25-new-1.png)
 
@@ -134,7 +137,7 @@ Now that you have a workspace, it's time to switch to the *Data science* experie
 
    ![](./Images/8-7-25-l1-16.png)
 
-1. On the **Upload files** window, verify that **churn.csv** is listed and click **Upload** **(4)** to add the file to the lakehouse.
+1. On the **Upload files** pane, verify that **churn.csv** is listed and click **Upload** **(4)** to add the file to the lakehouse.
 
    ![](./Images/8-7-25-l1-17.png)
 
