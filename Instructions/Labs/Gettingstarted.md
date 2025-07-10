@@ -39,6 +39,8 @@ The architecture for this lab involves several key components:
 - **Workspace**: A centralized environment for managing resources, projects, and collaboration.
 - **Lakehouse**: A unified storage solution combining data lakes and warehouses for scalable analytics.
 - **Notebook**: An interactive document for writing, executing, and visualizing code, commonly used in data science and engineering.
+- **Machine Learning Model**: The trained output of your data and algorithm, used to make predictions on new inputs.
+- **MLflow**: An open-source platform integrated into Microsoft Fabric for managing the ML lifecycle: tracking experiments, parameters, metrics, and models.
 
 ## Getting Started with the Lab
 
