@@ -1,4 +1,5 @@
 # Get started with Data Science with Microsoft Fabric
+##  Let's begin the Hands-On Lab
 
 ### Estimated Duration: 4 hours
 
