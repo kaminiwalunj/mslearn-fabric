@@ -44,7 +44,7 @@ This task will guide you through setting up a Lakehouse in Microsoft Fabric, whe
 
 Now that you have a workspace, it's time to switch to the *Data science* experience in the portal and create a data lakehouse for the data files you're going to analyze.
 
-1. Navigate to **dp_fabric-<inject key="Deployment ID" enableCopy="false"/>** workspace from the hub menu bar on the left.
+1. From the left-hand menu, under the **Workloads** section, select the **dp_fabric-<inject key="Deployment ID" enableCopy="false"/>** workspace to open it.
 
     ![](./Images/8-7-25-l1-12.png)
 
@@ -82,7 +82,7 @@ In this task, you will learn how to create a Notebook in Microsoft Fabric for in
 
 To train a model, you can create a *notebook*. Notebooks provide an interactive environment in which you can write and run code (in multiple languages) as *experiments*.
 
-1. Navigate to **dp_fabric-<inject key="Deployment ID" enableCopy="false"/>** workspace from the hub menu bar on the left.
+1. From the left-hand menu, under the **Workloads** section, select the **dp_fabric-<inject key="Deployment ID" enableCopy="false"/>** workspace to open it.
 
     ![](./Images/8-7-25-l1-12.png)
 
@@ -300,17 +300,17 @@ Learn how to analyze performance metrics and gain insights from your machine lea
 
 Microsoft Fabric will keep track of all your experiments and allow you to visually explore them.
 
-1. Navigate to **dp_fabric-<inject key="Deployment ID" enableCopy="false"/>** workspace from the hub menu bar on the left.
-
+1. From the left-hand navigation pane, click on  **dp_fabric-<inject key="Deployment ID" enableCopy="false"/>** under the Workspaces section to open your workspace.
+   
     ![](./Images/8-7-25-l1-36.png)
 
-1. **dp_fabric-<inject key="Deployment ID" enableCopy="false"/>** workspace page, select the **experiment-churn** to open it.
-
+1. On the **dp_fabric-<inject key="Deployment ID" enableCopy="false"/>** workspace page, select the **experiment-churn** to open the experiment details.
+   
     ![](./Images/8-7-25-l1-37.png)
 
     > **Tip:** If you don't see any logged experiment runs, refresh the page.
 
-1. Review the **Run metrics** to explore how accurate your regression model is.
+1. Review the **Run metrics** to explore how accurate your regression model is and assess its overall performance.
 
    ![](./Images/11-7-25-lab-2.png)
 
