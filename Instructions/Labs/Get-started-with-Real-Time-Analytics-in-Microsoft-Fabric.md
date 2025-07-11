@@ -1,6 +1,4 @@
-# Get started with Data Science with Microsoft Fabric
-##  Let's begin the Hands-On Lab
-
+# Get Started with Real-Time Analytics and Data Science with Microsoft Fabric
 ### Estimated Duration: 4 Hours
 
 ### Overview
@@ -11,80 +9,21 @@ Microsoft Fabric provides an end-to-end platform for data solutions, including r
 
 You will be able to complete the following tasks:
 
-- Task 1: Assign Fabric Administrator Role
-- Task 2: Create a workspace
-- Task 3: Create a Lakehouse and upload files
-- Task 4: Create a Notebook
-- Task 5: Load data into a data frame
-- Task 6: Train a Machine Learning model
-- Task 7: Use MLflow to search and view your experiments
-- Task 8: Explore your experiments
-- Task 9: Save the model
-- Task 10: Save the Notebook and end the Spark session
+- Task 1: Create a workspace
+- Task 2: Create a Lakehouse and upload files
+- Task 3: Create a Notebook
+- Task 4: Load data into a data frame
+- Task 5: Train a Machine Learning model
+- Task 6: Use MLflow to search and view your experiments
+- Task 7: Explore your experiments
+- Task 8: Save the model
+- Task 9: Save the Notebook and end the Spark session
 
-## Task 1: Assign Fabric Administrator Role
-
-In this task, you will learn how to assign the Fabric Administrator role to manage permissions and access within Microsoft Fabric.
-   
-1. In the Azure portal, type **Microsoft Entra ID (1)** in the search box and select **Microsoft Entra ID (2)** from the Services list.
-
-   ![Navigate-To-AAD](./Images/8-7-25-l1-1.png)
-
-1. On the **Microsoft Entra ID** page, from the **left-hand menu**, click **Roles and administrators (1)** under the **Manage** section.
-
-   ![Roles-and-Administrator](./Images/29.png)
-
-1. In the **Roles and administrators** | All roles page, type **Fabric Administrator (1)** in the search box. From the search results, select the **checkbox** next to **Fabric Administrator (2)**.
-
-   ![search-fabric-admin](./Images/8-7-25-l1-2.png)
-
-1. This will take you to the **Fabric Administrator | Assignments** page, where you will have to assign yourself the **Fabric Administrator role**. Now, click on **+ Add assignments**.
-
-   ![click-add-assignments](./Images/8-7-25-l1-3.png)
-
-1. In the **Add assignments** pane, **check the box (1)** next to **<inject key="AzureAdUserEmail"></inject>**, confirm it appears in the **Selected** section **(2)**, and then click on **Add** **(3)** to assign the role.
-
-   ![check-and-add-role](./Images/8-7-25-l1-4.png)
-
-1. You can confirm the **Fabric Administrator** role has been added successfully by **Refresh** Fabric Administrators | Assignments page. After **confirming** it has been added successfully, navigate back to **Home**.
-
-   ![check-and-navigate-back-to-home](./Images/8-7-25-l1-5.png)
-
-## Task 2: Create a workspace
+## Task 1: Create a workspace
 
 This task will guide you through creating a workspace in Microsoft Fabric.
 
-1. In **Microsoft Edge**, open a new tab and go to the [Microsoft Power BI Portal](https://app.powerbi.com). This will take you to the login page.
-
-    > **Note:** If you're using the lab environment, it may sign you in indirectly.
-
-    > **Note:** If you are not using the lab environment and have an existing Power BI account, you may want to use the browser in private / incognito mode.
-
-1. In the Power BI tab, provide the **Email: <inject key="AzureAdUserEmail"></inject> (1)** and click **Submit (2)**.
-
-   ![](./Images/8-7-25-l1-6.png)
-
-1. On the **You've selected Microsoft Fabric free** screen, under **Step 1: Let's get you started**, Click on **Continue** to proceed with the setup process.
-
-   ![](./Images/8-7-25-l1-t2-1.png)
-   
-1. Enter a 10-digit phone number and select **Get started**. Select **Get started** once more. You will be redirected to Power BI. If prompted provide the **Password:** <inject key="AzureAdUserPassword"></inject>
-   
-   ![](./Images/8-7-25-l1-t2-2.png)
-   
-1. Leave the Microsoft Edge browser window open.
-
-1. Select the **Account manager** icon at the top-right corner **(1)** of the portal. In the profile pane that appears, click on **Free trial** **(2)** to begin activating your Microsoft Fabric trial.
-
-   ![Account-manager-start](./Images/8-7-25-l1-7.png)
-
-1. On the **Activate your 60-day free Fabric trial capacity** page, click **Activate** to start your trial.
-
-   ![Start-trial](./Images/8-7-25-l1-8.png)
-
-   >**Note:** The trial capacity region may differ from the one shown in the screenshot. No need to worry – simply use the default selected region, activate it, and continue to the next step.
-
-1. In the menu bar on the left, select **Workspaces (1)** (the icon looks similar to &#128455;) and click on **+ New workspace (2)**.
+1. On the Microsoft Fabric portal, from the left-hand menu, select **Workspaces (1)** (the icon looks similar to &#128455;) At the bottom of the Workspaces pane, click on **+ New workspace (2)**.
 
    ![](./Images/8-7-25-l1-9.png)
 
@@ -100,12 +39,7 @@ This task will guide you through creating a workspace in Microsoft Fabric.
 
    ![Screenshot of an empty workspace in Power BI](./Images/8-7-25-l1-11.png)
  
-1. At the bottom left of the Power BI portal, select the **Power BI (1)** icon and switch to the **Fabric (2)** experience.
-
-    ![](./Images/8-7-25-l1-t2-3.png)
-    ![](./Images/8-7-25-l1-t2-4.png)
-
-## Task 3: Create a Lakehouse and upload files
+## Task 2: Create a Lakehouse and upload files
 
 This task will guide you through setting up a Lakehouse in Microsoft Fabric, where you will upload files for efficient data storage and processing.
 
@@ -143,7 +77,7 @@ Now that you have a workspace, it's time to switch to the *Data science* experie
 
    ![](./Images/8-7-25-new-2.png)
 
-## Task 4: Create a Notebook
+## Task 3: Create a Notebook
 
 In this task, you will learn how to create a Notebook in Microsoft Fabric for interactive data exploration and analysis.
 
@@ -177,7 +111,7 @@ To train a model, you can create a *notebook*. Notebooks provide an interactive 
    Use the code in this notebook to train and track models.
     ```
     
-## Task 5: Load data into a dataframe
+## Task 4: Load data into a dataframe
 
 You will explore how to import data into a DataFrame in Microsoft Fabric for processing and analysis in this task.
 
@@ -226,7 +160,7 @@ Now you're ready to run code to prepare data and train a model. To work with dat
 
     The output shows the rows and columns of customer data from the churn.csv file.
 
-## Task 6: Train a Machine Learning model
+## Task 5: Train a Machine Learning model
 
 In this task, you will learn how to train a Machine Learning model in Microsoft Fabric using a dataset to make predictions and gain insights.
 
@@ -297,8 +231,7 @@ Now that you've loaded the data, you can use it to train a machine learning mode
 
     ![](./Images/8-7-25-l1-30.png)
 
-
-## Task 7: Use MLflow to search and view your experiments
+## Task 6: Use MLflow to search and view your experiments
 
 You will learn how to use MLflow to search and view your machine learning experiments in Microsoft Fabric for tracking and managing model performance.
 
@@ -362,7 +295,7 @@ When you've trained and tracked models with MLflow, you can use the MLflow libra
 
     ![Screenshot of the plotted evaluation metrics.](./Images/8-7-25-l1-35.png)
 
-## Task 8: Explore your experiments
+## Task 7: Explore your experiments
 
 Learn how to analyze performance metrics and gain insights from your machine learning experiments in Microsoft Fabric. Explore various tools and techniques to evaluate and optimize your models effectively.
 
@@ -380,7 +313,9 @@ Microsoft Fabric will keep track of all your experiments and allow you to visual
 
 1. Review the **Run metrics** to explore how accurate your regression model is.
 
-## Task 9: Save the model
+   ![](./Images/11-7-25-lab-2.png)
+
+## Task 8: Save the model
 
 In this task, you will learn how to save the trained Machine Learning model in Microsoft Fabric for future use and deployment.
 
@@ -400,7 +335,7 @@ After comparing machine learning models that you've trained across experiments, 
 
 Note that the model, the experiment, and the experiment run are linked, allowing you to review how the model is trained.
 
-## Task 10: Save the Notebook and end the Spark session
+## Task 9: Save the Notebook and end the Spark session
 
 In this task, you will discover how to preserve your work by saving the Notebook and efficiently ending the Spark session in Microsoft Fabric to free up resources.
 
@@ -440,7 +375,6 @@ In this lab, you have learned how to set up a data science workflow in Microsoft
 
 You have completed the following tasks:
  
-- Assign Fabric Administrator Role
 - Create a workspace
 - Created a Lakehouse and uploaded files
 - Created a Notebook
@@ -451,9 +385,5 @@ You have completed the following tasks:
 - Saved the model
 - Saved the Notebook and ended the Spark session
 
-## References:
-- [Microsoft Learn](https://learn.microsoft.com)
-- [Microsoft Fabric Documentation](https://learn.microsoft.com/en-us/fabric/)
-- [Azure Machine Learning Documentation](https://learn.microsoft.com/en-us/azure/machine-learning/)
 
 ## Congratulations! You have successfully completed this lab.
