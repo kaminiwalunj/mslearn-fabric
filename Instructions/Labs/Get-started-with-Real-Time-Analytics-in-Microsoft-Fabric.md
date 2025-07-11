@@ -231,7 +231,6 @@ Now that you've loaded the data, you can use it to train a machine learning mode
 
     ![](./Images/8-7-25-l1-30.png)
 
-
 ## Task 6: Use MLflow to search and view your experiments
 
 You will learn how to use MLflow to search and view your machine learning experiments in Microsoft Fabric for tracking and managing model performance.
@@ -376,7 +375,6 @@ In this lab, you have learned how to set up a data science workflow in Microsoft
 
 You have completed the following tasks:
  
-- Assign Fabric Administrator Role
 - Create a workspace
 - Created a Lakehouse and uploaded files
 - Created a Notebook
