@@ -33,7 +33,7 @@ In this task, you will learn how to assign the Fabric Administrator role to mana
 
    ![Roles-and-Administrator](./Images/29.png)
 
-1. In the **Roles and administrators | All roles page**, type **Fabric Administrator (1)** in the search box. From the search results, select the **checkbox** next to **Fabric Administrator (2)**.
+1. In the **Roles and administrators** | All roles page, type **Fabric Administrator (1)** in the search box. From the search results, select the **checkbox** next to **Fabric Administrator (2)**.
 
    ![search-fabric-admin](./Images/8-7-25-l1-2.png)
 
@@ -59,7 +59,7 @@ This task will guide you through creating a workspace in Microsoft Fabric.
 
     > **Note:** If you are not using the lab environment and have an existing Power BI account, you may want to use the browser in private / incognito mode.
 
-1. In the Power BI tab, provide the **Email/Username: <inject key="AzureAdUserEmail"></inject> (1)** and click **Submit (2)**.
+1. In the Power BI tab, provide the **Email: <inject key="AzureAdUserEmail"></inject> (1)** and click **Submit (2)**.
 
    ![](./Images/8-7-25-l1-6.png)
 
@@ -78,9 +78,6 @@ This task will guide you through creating a workspace in Microsoft Fabric.
    ![Account-manager-start](./Images/8-7-25-l1-7.png)
 
 1. On the **Activate your 60-day free Fabric trial capacity** page, click **Activate** to start your trial.
-
-   ![](./media/0dfcef10-c935-4505-9b8f-d115c10534fa.png)
-
 
    ![Start-trial](./Images/8-7-25-l1-8.png)
 
@@ -117,7 +114,7 @@ Now that you have a workspace, it's time to switch to the *Data science* experie
 
     ![](./Images/8-7-25-l1-12.png)
 
-1. On the **dp_fabric-<inject key="Deployment ID" enableCopy="false"/>** workspace page, click on **+ New item (1)** and in the search bar serch for **Lakehouse (2)** and select **Lakehouse (3)**.
+1. On the **dp_fabric-<inject key="Deployment ID" enableCopy="false"/>** workspace page, click on **+ New item (1)** and in the search bar serch for **Lakehouse (2)** and under Store data, select **Lakehouse (3)**.
    
    ![](./Images/8-7-25-l1-13.png)
 
@@ -137,7 +134,7 @@ Now that you have a workspace, it's time to switch to the *Data science* experie
 
    ![](./Images/8-7-25-l1-16.png)
 
-1. On the **Upload files** pane, verify that **churn.csv** is listed and click **Upload** **(4)** to add the file to the lakehouse.
+1. On the **Upload files** pane, verify that **churn.csv** is selected and click **Upload** **(4)** to add the file to the lakehouse.
 
    ![](./Images/8-7-25-l1-17.png)
 
@@ -155,7 +152,7 @@ To train a model, you can create a *notebook*. Notebooks provide an interactive 
 
     ![](./Images/8-7-25-l1-12.png)
 
-1. In the **dp_fabric-<inject key="Deployment ID" enableCopy="false"/>** page, click on **+ New item (1)** and in the search bar serch for **Notebook (2)** and select **Notebook (3)**.
+1. In the **dp_fabric-<inject key="Deployment ID" enableCopy="false"/>** page, click on **+ New item (1)** and in the search bar serch for **Notebook (2)** and under Get data, select **Notebook (3)**.
 
      ![](./Images/8-7-25-l1-19.png)
 
@@ -167,7 +164,7 @@ To train a model, you can create a *notebook*. Notebooks provide an interactive 
 
     When the cell changes to a markdown cell, the text it contains is rendered.
 
-1. Use the **&#128393;** (Edit) button to switch the cell to editing mode.
+1. Click the **&#128393;** (Edit) button to switch the cell to editing mode.
 
    ![](./Images/24.png)
 
@@ -183,7 +180,7 @@ To train a model, you can create a *notebook*. Notebooks provide an interactive 
 
 You will explore how to import data into a DataFrame in Microsoft Fabric for processing and analysis in this task.
 
-Now you're ready to run code to prepare data and train a model. To work with data, you'll use *dataframes*. Dataframes in Spark are similar to Pandas dataframes in Python, and provide a common structure for working with data in rows and columns.
+Now you're ready to run code to prepare data and train a model. To work with data, you'll use *dataframes*. Dataframes in Spark are similar to Pandas dataframes in Python and provide a common structure for working with data in rows and columns.
 
 1. Click on **Data items (1)** in the Explorer panel, then select **Add data items (2)** and choose **Existing data sources (3)** from the dropdown menu.
 
@@ -193,7 +190,7 @@ Now you're ready to run code to prepare data and train a model. To work with dat
 
    ![](./Images/8-7-25-l1-22.png)
 
-1. On the notebook interface, click on the **Files (1)** folder to display the CSV file next to the notebook editor. Then, open the ellipsis **...** menu for **churn.csv (2)** and select **Load data (3)** -> **Pandas (4)**.
+1. On the notebook interface, click on the **Files (1)** folder to display the CSV file next to the notebook editor. Then, open the ellipsis **(...)** menu for **churn.csv (2)** and select **Load data (3)** -> **Pandas (4)**.
 
     ![](./Images/8-7-25-l1-23.png)
 
@@ -206,7 +203,7 @@ Now you're ready to run code to prepare data and train a model. To work with dat
    display(df)
     ```
 
-    > **Tip**: You can hide the pane containing the files on the left by using its **<<** icon. Doing so will help you focus on the notebook.
+    > **Tip:** You can hide the pane containing the files on the left by using its **<< icon**. Doing so will help you focus on the notebook.
 
       ![](./Images/8-7-25-l1-24.png)
 
@@ -214,7 +211,7 @@ Now you're ready to run code to prepare data and train a model. To work with dat
 
    ![](./Images/8-7-25-l1-25.png)
 
-    > **Note**: Since this is the first time you've run any Spark code in this session, the Spark pool must be started. This means that the first run in the session can take a minute or so to complete. Subsequent runs will be quicker.
+    > **Note:** Since this is the first time you've run any Spark code in this session, the Spark pool must be started. This means that the first run in the session can take a minute or so to complete. Subsequent runs will be quicker.
 
 1. When the cell command has been completed, review the output below the cell, which should look similar to this:
 
@@ -234,7 +231,7 @@ In this task, you will learn how to train a Machine Learning model in Microsoft 
 
 Now that you've loaded the data, you can use it to train a machine learning model and predict customer churn. You'll train a model using the Scikit-Learn library and track the model with MLflow. 
 
-1. Use the **+ Code** icon below the cell output to add a new code cell to the notebook.
+1. Click the **+ Code** icon below the cell output to add a new code cell to the notebook.
 
    ![](./Images/8-7-25-l1-26.png)
 
@@ -374,7 +371,7 @@ Microsoft Fabric will keep track of all your experiments and allow you to visual
 
     ![](./Images/8-7-25-l1-36.png)
 
-1. **dp_fabric-<inject key="Deployment ID" enableCopy="false"/>** workspace page, select the **experiment-churn** experiment to open it.
+1. **dp_fabric-<inject key="Deployment ID" enableCopy="false"/>** workspace page, select the **experiment-churn** to open it.
 
     ![](./Images/8-7-25-l1-37.png)
 
@@ -392,7 +389,7 @@ After comparing machine learning models that you've trained across experiments, 
    
    ![](./Images/8-7-25-l1-38.png)
 
-1. In the **Save as ML model** pop-up window, select **Create a new ML model (1)**, then Choose the **model** folder from the dropdown **(2)** . Enter **model-churn (3)** as the ML model name and click **Save (4)**. 
+1. In the **Save as ML model** pop-up window, select **Create a new ML model (1)**, then Choose the **model** folder from the Select folder dropdown **(2)** . Enter **model-churn (3)** as the ML model name and click **Save (4)**. 
 
     ![](./Images/8-7-25-l1-39.png)
 
@@ -428,7 +425,7 @@ If you've finished exploring your model and experiments, you can delete the work
 
    ![](./Images/8-7-25-l1-42.png)
 
-1. In the **General** section of the Workspace settings, scroll down and select **Remove this workspace** .
+1. In the **General** section of the Workspace settings, scroll down and select **Remove this workspace**.
 
     ![](./Images/8-7-25-l1-43.png)
 
