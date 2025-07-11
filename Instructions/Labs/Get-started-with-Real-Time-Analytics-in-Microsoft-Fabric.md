@@ -1,9 +1,8 @@
 # Get Started with Real-Time Analytics and Data Science with Microsoft Fabric
-### Estimated Duration: 4 Hours
 
-### Overview
+## Lab Overview
 
-Microsoft Fabric provides an end-to-end platform for data solutions, including real-time data analytics. Data science is a combination of mathematics, statistics, and computer engineering. When you perform data science, you can analyze your data and identify complicated patterns that can provide you with meaningful insights for your organization. You can use data science to create artificial intelligence (AI) models that encompass the complicated patterns you find in your data. A common approach is to use data science to train machine learning models using libraries like scikit-learn in Python to achieve AI.
+In this lab, you will create a complete data science workflow using Microsoft Fabric. You'll start by activating the trial, creating a workspace, and uploading churn data into a Lakehouse. Using Notebooks, you'll explore the dataset and train machine learning models with Scikit-learn. MLflow will be used to track and compare experiment runs, and you’ll generate visual charts to compare model accuracy. Finally, you'll save the best model, export the Notebook, end the Spark session, and clean up your workspace.
 
 ## Lab Objectives
 
@@ -35,7 +34,7 @@ This task will guide you through creating a workspace in Microsoft Fabric.
 
    ![](./Images/10062025(2).png)
 
-1. When your new workspace opens, it should be empty, as shown here:
+1. Once the workspace is created, it will open automatically. You’ll see an empty workspace area with the message **"There's nothing here yet"**, confirming the workspace is ready for use.
 
    ![Screenshot of an empty workspace in Power BI](./Images/8-7-25-l1-11.png)
  
