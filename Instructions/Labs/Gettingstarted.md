@@ -22,8 +22,6 @@ This lab provides a comprehensive, hands-on walkthrough of building an end-to-en
 - Familiarity with Microsoft Azure services.  
 - A Microsoft Fabric-enabled workspace with necessary permissions.  
 - Access to Microsoft Fabric services such as OneLake, Data Engineering, and Data Science experiences.  
-- Familiarity with Power BI reports.
-
 
 ## Architecture
 
@@ -87,15 +85,19 @@ To adjust the zoom level for the environment page, click the **A↕ : 100%** ico
  
    ![Launch Azure Portal](./Images/11-7-25-g1.png)
 
-1. In **Microsoft Edge**, go to the [Microsoft Fabric portal](https://app.fabric.microsoft.com). This will take you to the login page.
- 
-1. On the **Microsoft Fabric** login page, enter your credentials:
- 
+1. In the new tab, navigate to the **Microsoft Fabric** portal by copying and pasting the following URL into the address bar.
+
+   ```
+   https://app.fabric.microsoft.com
+   ```
+   
+1. On the **Enter your email, we’ll check if you need to create a new account.** tab, you will see the login screen. In that enter the following email/username **(1)** and click **Submit (2)**:
+
    - **Email/Username:** <inject key="AzureAdUserEmail"></inject>
  
        ![Enter Your Username](./Images/11-7-25-g2.png)
  
-1. Next, provide your password and click on **Sign in**
+1. Next, provide your password **(1)** and click on **Sign in (2)**
  
    - **Password:** <inject key="AzureAdUserPassword"></inject>
  
