@@ -23,7 +23,7 @@ You will be able to complete the following tasks:
 
 This task will guide you through creating a workspace in Microsoft Fabric.
 
-1. From the left-hand menu, select **Workspaces (1)** (the icon looks similar to &#128455;) At the bottom of the Workspaces pane, click on **+ New workspace (2)**.
+1. On the Microsoft Fabric portal, from the left-hand menu, select **Workspaces (1)** (the icon looks similar to &#128455;) At the bottom of the Workspaces pane, click on **+ New workspace (2)**.
 
    ![](./Images/8-7-25-l1-9.png)
 
