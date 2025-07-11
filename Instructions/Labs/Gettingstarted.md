@@ -18,10 +18,8 @@ This lab provides a comprehensive, hands-on walkthrough of building an end-to-en
 
 ## Prerequisites
 
-- Basic understanding of cloud computing and data analytics concepts.  
-- Familiarity with Microsoft Azure services.  
-- A Microsoft Fabric-enabled workspace with necessary permissions.  
-- Access to Microsoft Fabric services such as OneLake, Data Engineering, and Data Science experiences.  
+- Basic understanding of cloud computing and data analytics concepts.
+- A Microsoft Fabric-enabled workspace with necessary permissions.
 
 ## Architecture
 
@@ -29,7 +27,7 @@ The architecture for this lab is designed to enable a seamless, end-to-end workf
 
 ## Architecture Diagram
 
-![Architecture Diagram](./Images/archdiagram.png)
+![Architecture Diagram](./Images/architecture-fabric.png)
 
 ## Explanation of Components
 
@@ -79,7 +77,7 @@ To adjust the zoom level for the environment page, click the **A↕ : 100%** ico
 
  ![OpenAI](./Images/june-getting-started-6upd.png)
 
-## Login to the Azure Portal
+## ‎Let's Get Started with Fabric Portal
 
 1. On your virtual machine, click on the **Microsoft Edge** icon as shown below:
  
