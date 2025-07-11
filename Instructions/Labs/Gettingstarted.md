@@ -105,8 +105,10 @@ To adjust the zoom level for the environment page, click the **A↕ : 100%** ico
 
    ![](./Images/11-7-25-g4.png)
 
-1. On the Microsoft Fabric portal, select the **Account manager** icon at the top-right corner **(1)** of the portal. In the profile pane that appears, click on **Free trial** **(2)** to begin activating your Microsoft Fabric trial.
+1. After signing in, you’ll be directed to the Microsoft Fabric home page. click on the **Account manager** icon at the top-right corner **(1)** of the portal. In the profile pane that appears, click on **Free trial** **(2)** to begin activating your Microsoft Fabric trial.
 
+   ![](./Images/fabric-portal.png)
+   
    ![Account-manager-start](./Images/8-7-25-l1-7.png)
 
 1. On the **Activate your 60-day free Fabric trial capacity** page, click **Activate** to start your trial.
