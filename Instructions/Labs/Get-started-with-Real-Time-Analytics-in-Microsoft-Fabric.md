@@ -44,7 +44,7 @@ This task will guide you through setting up a Lakehouse in Microsoft Fabric, whe
 
 Now that you have a workspace, it's time to switch to the *Data science* experience in the portal and create a data lakehouse for the data files you're going to analyze.
 
-1. On the left-hand menu of the home page, select the **dp_fabric-<inject key="Deployment ID" enableCopy="false"/>** workspace to open it.
+1. On the left-hand menu of the Home page, select the **dp_fabric-<inject key="Deployment ID" enableCopy="false"/>** workspace to open it.
 
     ![](./Images/8-7-25-l1-12.png)
 
@@ -72,7 +72,7 @@ Now that you have a workspace, it's time to switch to the *Data science* experie
 
    ![](./Images/8-7-25-l1-17.png)
 
-1. After the upload is complete, select **Files** **(1)** in the Explorer pane and verify that **churn.csv** **(2)** appears in the list.
+1. After the upload is complete, select **Files** **(1)** in the Explorer pane and verify that **churn.csv** **(2)** appears.
 
    ![](./Images/8-7-25-new-2.png)
 
@@ -82,7 +82,7 @@ In this task, you will learn how to create a Notebook in Microsoft Fabric for in
 
 To train a model, you can create a *notebook*. Notebooks provide an interactive environment in which you can write and run code (in multiple languages) as *experiments*.
 
-1. On the left-hand menu of the home page, select the **dp_fabric-<inject key="Deployment ID" enableCopy="false"/>** workspace to open it.
+1. On the left-hand menu of the Home page, select the **dp_fabric-<inject key="Deployment ID" enableCopy="false"/>** workspace to open it.
 
     ![](./Images/8-7-25-l1-12.png)
 
@@ -124,7 +124,7 @@ Now you're ready to run code to prepare data and train a model. To work with dat
 
    ![](./Images/8-7-25-l1-22.png)
 
-1. On the **Notebook 1** interface, click on the **Files (1)** folder to display the CSV file next to the notebook editor. Then, open the ellipsis **(...)** menu for **churn.csv (2)** and select **Load data (3)** -> **Pandas (4)**.
+1. On the **Notebook 1** page, click on the **Files (1)** folder to display the CSV file next to the notebook editor. Then, open the ellipsis **(...)** menu for **churn.csv (2)** and select **Load data (3)** -> **Pandas (4)**.
 
     ![](./Images/8-7-25-l1-23.png)
 
@@ -213,8 +213,7 @@ Now that you've loaded the data, you can use it to train a machine learning mode
 
     ![](./Images/8-7-25-l1-29.png)
 
-1. Add another new code cell to the notebook, enter the following code, and run it to train a Decision Tree model and log the run with MLflow:
-
+1. Add another new code cell to the notebook, enter the following code, and run it.
     ```python
    from sklearn.tree import DecisionTreeClassifier
    
@@ -310,7 +309,7 @@ Microsoft Fabric will keep track of all your experiments and allow you to visual
 
     > **Tip:** If you don't see any logged experiment runs, refresh the page.
 
-1. Review the **Run metrics** to explore how accurate your regression model is and assess its overall performance.
+1. On the **experiment-churn** pane, review the **Run metrics** to explore how accurate your regression model is and assess its overall performance.
 
    ![](./Images/11-7-25-lab-2.png)
 
@@ -344,7 +343,7 @@ Now that you've finished training and evaluating the models, you can save the no
 
    ![](./Images/8-7-25-l1-40.png)
 
-1. On the notebook menu, select **Stop session** to end the Spark session.
+1. On the **Train and compare models** page, from the notebook menu bar, click the square **Stop** icon next to **Standard session** to end the Spark session.
 
     ![](./Images/1.png)
 
