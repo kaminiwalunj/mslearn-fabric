@@ -80,7 +80,7 @@ In this task, you will learn how to create a Notebook in Microsoft Fabric for in
 
     ![](./Images/8-7-25-l1-12.png)
 
-1. On the **dp_fabric-<inject key="Deployment ID" enableCopy="false"/>** page, click on **+ New item (1)** and in the search bar search for **Notebook (2)** and under the Get data section, select **Notebook (3)**.
+1. On the **dp_fabric-<inject key="Deployment ID" enableCopy="false"/>** page, click on **+ New item (1)**. In the search bar, type **Notebook (2)** and under the Get data section, select **Notebook (3)**.
    
      ![](./Images/8-7-25-l1-19.png)
 
@@ -106,7 +106,7 @@ In this task, you will learn how to create a Notebook in Microsoft Fabric for in
     
 ## Task 4: Load data into a dataframe
 
-You will explore how to import data into a DataFrame in Microsoft Fabric for processing and analysis in this task. Now you're ready to run code to prepare data and train a model. To work with data, you'll use *dataframes*. Dataframes in Spark are similar to Pandas dataframes in Python and provide a common structure for working with data in rows and columns.
+In this task, you will explore how to import data into a DataFrame in Microsoft Fabric for processing and analysis. Now you're ready to run code to prepare data and train a model. To work with data, you'll use *dataframes*. Dataframes in Spark are similar to Pandas dataframes in Python and provide a common structure for working with data in rows and columns.
 
 1. On the **Notebook 1** page, click on **Data items (1)** in the Explorer panel, then select **Add data items (2)** and choose **Existing data sources (3)** from the dropdown menu.
 
@@ -313,7 +313,7 @@ After comparing machine learning models that you've trained across experiments, 
    
    ![](./Images/8-7-25-l1-38.png)
 
-1. In the **Save as ML model** pop-up window, under Select methods, select **Create a new ML model (1)**, then Choose the **model** folder from the Select folder dropdown **(2)** . Enter **model-churn (3)** as the ML model name and click **Save (4)**. 
+1. In the **Save as ML model** pop-up window, under Select methods, choose **Create a new ML model (1)**. From the Select folder dropdown, select the folder named **model** **(2)**. Enter **model-churn (3)** as the ML model name, and then click **Save (4)**.
 
    ![](./Images/8-7-25-l1-39.png)
 
