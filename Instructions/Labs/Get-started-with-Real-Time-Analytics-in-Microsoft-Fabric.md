@@ -165,7 +165,7 @@ In this task, you will learn how to train a Machine Learning model in Microsoft 
 
 Now that you've loaded the data, you can use it to train a machine learning model and predict customer churn. You'll train a model using the Scikit-Learn library and track the model with MLflow. 
 
-1. Click the **+ Code** icon below the cell output to add a new code cell to the notebook.
+1. On the **Notebook 1 page**, click the **+ Code** icon below the cell output to add a new code cell to the notebook.
 
    ![](./Images/8-7-25-l1-26.png)
 
@@ -309,7 +309,7 @@ Microsoft Fabric will keep track of all your experiments and allow you to visual
 
     > **Tip:** If you don't see any logged experiment runs, refresh the page.
 
-1. On the **experiment-churn** pane, review the **Run metrics** to explore how accurate your regression model is and assess its overall performance.
+1. On the **experiment-churn** pane, under **Run details**, review the **Run metrics** section to explore how accurate your regression model is and assess its overall performance.
 
    ![](./Images/11-7-25-lab-2.png)
 
