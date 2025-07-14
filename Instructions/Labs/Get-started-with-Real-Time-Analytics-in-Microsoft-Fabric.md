@@ -1,4 +1,4 @@
-# Get Started with Real-Time Analytics and Data Science with Microsoft Fabric
+# Get Started with Data Science with Microsoft Fabric
 
 ## Lab Overview
 
@@ -42,25 +42,21 @@ This task will guide you through creating a workspace in Microsoft Fabric.
 
 This task will guide you through setting up a Lakehouse in Microsoft Fabric, where you will upload files for efficient data storage and processing.
 
-Now that you have a workspace, it's time to switch to the *Data science* experience in the portal and create a data lakehouse for the data files you're going to analyze.
-
 1. On the left-hand menu of the Home page, select the **dp_fabric-<inject key="Deployment ID" enableCopy="false"/>** workspace to open it.
 
     ![](./Images/8-7-25-l1-12.png)
 
-1. On the **dp_fabric-<inject key="Deployment ID" enableCopy="false"/>** workspace page, click on **+ New item (1)** and in the search bar serch for **Lakehouse (2)** and under Store data, select **Lakehouse (3)**.
-   
+1. On the **dp_fabric-<inject key="Deployment ID" enableCopy="false"/>** workspace page, click on **+ New item (1)**. In the search bar, type **Lakehouse (2)**, and under the Store data section, select **Lakehouse (3)**.
+ 
    ![](./Images/8-7-25-l1-13.png)
 
-1. On the **New lakehouse** pane, Enter **Lakehouse<inject key="Deployment ID" enableCopy="false"/> (1)** in the Name field **(1)** and click **Create** **(2)**.
+1. On the **New lakehouse** pane, Enter **Lakehouse<inject key="Deployment ID" enableCopy="false"/>** in the Name field **(1)** and click **Create** **(2)**.
 
     ![](./Images/8-7-25-l1-14.png)
 
     >**Note:** After a minute or so, a new lakehouse with no **Tables** or **Files** will be created. You need to ingest some data into the data lakehouse for analysis. There are multiple ways to do this, but in this task, you'll simply download and extract a folder of text files from your local computer (or lab VM if applicable) and then upload them to your lakehouse.
 
-1. Download the **churn.csv** file for this exercise from **[churn.csv](https://raw.githubusercontent.com/MicrosoftLearning/dp-data/main/churn.csv)** and save it on your local computer or lab VM. **Alternatively,** if you are using the provided lab virtual machine (lab VM), you can find the file in the **C:\LabFiles\dp-data-main** directory.
-
-1. Return to the web browser tab containing your lakehouse, and under **Get data in your lakehouse**  select **Upload files**.
+1. On the **Lakehouse** page, and under **Get data in your lakehouse**  select **Upload files** to upload data.
 
     ![](./Images/8-7-25-l1-15.png)
 
@@ -78,16 +74,14 @@ Now that you have a workspace, it's time to switch to the *Data science* experie
 
 ## Task 3: Create a Notebook
 
-In this task, you will learn how to create a Notebook in Microsoft Fabric for interactive data exploration and analysis.
-
-To train a model, you can create a *notebook*. Notebooks provide an interactive environment in which you can write and run code (in multiple languages) as *experiments*.
+In this task, you will learn how to create a Notebook in Microsoft Fabric for interactive data exploration and analysis. To train a model, you can create a *notebook*. Notebooks provide an interactive environment in which you can write and run code (in multiple languages) as *experiments*.
 
 1. On the left-hand menu of the Home page, select the **dp_fabric-<inject key="Deployment ID" enableCopy="false"/>** workspace to open it.
 
     ![](./Images/8-7-25-l1-12.png)
 
-1. In the **dp_fabric-<inject key="Deployment ID" enableCopy="false"/>** page, click on **+ New item (1)** and in the search bar serch for **Notebook (2)** and under Get data, select **Notebook (3)**.
-
+1. On the **dp_fabric-<inject key="Deployment ID" enableCopy="false"/>** page, click on **+ New item (1)** and in the search bar search for **Notebook (2)** and under the Get data section, select **Notebook (3)**.
+   
      ![](./Images/8-7-25-l1-19.png)
 
     After a few seconds, a new notebook containing a single *cell* will open. Notebooks are made up of one or more cells that can contain *code* or *markdown* (formatted text).
@@ -112,19 +106,17 @@ To train a model, you can create a *notebook*. Notebooks provide an interactive 
     
 ## Task 4: Load data into a dataframe
 
-You will explore how to import data into a DataFrame in Microsoft Fabric for processing and analysis in this task.
-
-Now you're ready to run code to prepare data and train a model. To work with data, you'll use *dataframes*. Dataframes in Spark are similar to Pandas dataframes in Python and provide a common structure for working with data in rows and columns.
+You will explore how to import data into a DataFrame in Microsoft Fabric for processing and analysis in this task. Now you're ready to run code to prepare data and train a model. To work with data, you'll use *dataframes*. Dataframes in Spark are similar to Pandas dataframes in Python and provide a common structure for working with data in rows and columns.
 
 1. On the **Notebook 1** page, click on **Data items (1)** in the Explorer panel, then select **Add data items (2)** and choose **Existing data sources (3)** from the dropdown menu.
 
    ![](./Images/8-7-25-l1-21.png)
 
-1. On the **OneLake catalog** window, select the **lakehouse (1)** you created earlier and click on **Connect (2)**.
+1. On the **OneLake catalog** page, select the **lakehouse (1)** you created earlier and click on **Connect (2)**.
 
    ![](./Images/8-7-25-l1-22.png)
 
-1. On the **Notebook 1** page, click on the **Files (1)** folder to display the CSV file next to the notebook editor. Then, open the ellipsis **(...)** menu for **churn.csv (2)** and select **Load data (3)** -> **Pandas (4)**.
+1. Click on the **Files (1)** folder to display the CSV file alongside the notebook editor. Then, open the ellipsis menu **(...)** next to **churn.csv (2)** and select **Load data (3)** -> **Pandas (4)**.
 
     ![](./Images/8-7-25-l1-23.png)
 
@@ -161,16 +153,16 @@ Now you're ready to run code to prepare data and train a model. To work with dat
 
 ## Task 5: Train a Machine Learning model
 
-In this task, you will learn how to train a Machine Learning model in Microsoft Fabric using a dataset to make predictions and gain insights.
-
-Now that you've loaded the data, you can use it to train a machine learning model and predict customer churn. You'll train a model using the Scikit-Learn library and track the model with MLflow. 
+In this task, you will learn how to train a Machine Learning model in Microsoft Fabric using a dataset to make predictions and gain insights. Now that you've loaded the data, you can use it to train a machine learning model and predict customer churn. You'll train a model using the Scikit-Learn library and track the model with MLflow. 
 
 1. On the **Notebook 1 page**, click the **+ Code** icon below the cell output to add a new code cell to the notebook.
 
    ![](./Images/8-7-25-l1-26.png)
 
-1. Enter the following code in it. If the **+ Code** icon isn't visible, hover your mouse below the cell to make it appear.
+   > **Note:** If the **+ Code** icon isn't visible, hover your mouse below the cell to make it appear.
 
+1. Enter the following code in the code cell.
+   
     ```python
    from sklearn.model_selection import train_test_split
 
@@ -231,9 +223,7 @@ Now that you've loaded the data, you can use it to train a machine learning mode
 
 ## Task 6: Use MLflow to search and view your experiments
 
-You will learn how to use MLflow to search and view your machine learning experiments in Microsoft Fabric for tracking and managing model performance.
-
-When you've trained and tracked models with MLflow, you can use the MLflow library to retrieve your experiments and their details.
+In this task, you will learn how to use MLflow to search and view your machine learning experiments in Microsoft Fabric for tracking and managing model performance.
 
 1. To list all experiments, add a new code cell with the following code and run it:
 
@@ -323,9 +313,9 @@ After comparing machine learning models that you've trained across experiments, 
    
    ![](./Images/8-7-25-l1-38.png)
 
-1. In the **Save as ML model** pop-up window, select **Create a new ML model (1)**, then Choose the **model** folder from the Select folder dropdown **(2)** . Enter **model-churn (3)** as the ML model name and click **Save (4)**. 
+1. In the **Save as ML model** pop-up window, under Select methods, select **Create a new ML model (1)**, then Choose the **model** folder from the Select folder dropdown **(2)** . Enter **model-churn (3)** as the ML model name and click **Save (4)**. 
 
-    ![](./Images/8-7-25-l1-39.png)
+   ![](./Images/8-7-25-l1-39.png)
 
 1. Select **View ML model** in the notification that appears at the top right of your screen when the model is created. You can also refresh the window. The saved model is linked under **ML model versions**.
 
@@ -343,7 +333,7 @@ Now that you've finished training and evaluating the models, you can save the no
 
    ![](./Images/8-7-25-l1-40.png)
 
-1. On the **Train and compare models** page, from the notebook menu bar, click the square **Stop** icon next to **Standard session** to end the Spark session.
+1. On the notebook menu bar, click the square **Stop** icon next to **Standard session** to end the Spark session.
 
     ![](./Images/1.png)
 
@@ -367,7 +357,7 @@ If you've finished exploring your model and experiments, you can delete the work
 
    ![Screenshot of the plotted evaluation metrics.](./Images/delete.png)
 
-## Review:
+## Summary:
 
 In this lab, you have learned how to set up a data science workflow in Microsoft Fabric. You created a Lakehouse, uploaded data, and used Notebooks to explore and preprocess the data. You trained a machine learning model, tracked experiments using MLflow, and saved both the model and the Notebook. This hands-on experience demonstrated how Microsoft Fabric streamlines data science and AI development.
 
@@ -384,4 +374,4 @@ You have completed the following tasks:
 - Saved the Notebook and ended the Spark session
 
 
-## Congratulations! You have successfully completed this lab.
+## Congratulations! You have successfully completed the Hands-on Lab.
