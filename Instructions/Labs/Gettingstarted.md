@@ -18,10 +18,8 @@ This lab provides a comprehensive, hands-on walkthrough of building an end-to-en
 
 ## Prerequisites
 
-- Basic understanding of cloud computing and data analytics concepts.  
-- Familiarity with Microsoft Azure services.  
-- A Microsoft Fabric-enabled workspace with necessary permissions.  
-- Access to Microsoft Fabric services such as OneLake, Data Engineering, and Data Science experiences.  
+- Basic understanding of cloud computing and data analytics concepts.
+- A Microsoft Fabric-enabled workspace with necessary permissions.
 
 ## Architecture
 
@@ -29,7 +27,7 @@ The architecture for this lab is designed to enable a seamless, end-to-end workf
 
 ## Architecture Diagram
 
-![Architecture Diagram](./Images/archdiagram.png)
+![Architecture Diagram](./Images/architecture-fabric.png)
 
 ## Explanation of Components
 
@@ -79,7 +77,7 @@ To adjust the zoom level for the environment page, click the **A↕ : 100%** ico
 
  ![OpenAI](./Images/june-getting-started-6upd.png)
 
-## Login to the Azure Portal
+## ‎Let's Get Started with Fabric Portal
 
 1. On your virtual machine, click on the **Microsoft Edge** icon as shown below:
  
@@ -107,9 +105,9 @@ To adjust the zoom level for the environment page, click the **A↕ : 100%** ico
 
    ![](./Images/11-7-25-g4.png)
 
-1. On the Microsoft Fabric portal, select the **Account manager** icon at the top-right corner **(1)** of the portal. In the profile pane that appears, click on **Free trial** **(2)** to begin activating your Microsoft Fabric trial.
+1. After signing in, you’ll be directed to the **Fabric** Home page. click on the **Account manager** icon at the top-right corner **(1)** of the portal. In the profile pane that appears, click on **Free trial** **(2)** to begin activating your Microsoft Fabric trial.
 
-   ![Account-manager-start](./Images/8-7-25-l1-7.png)
+   ![](./Images/fabric-ft.png)
 
 1. On the **Activate your 60-day free Fabric trial capacity** page, click **Activate** to start your trial.
 

@@ -1,10 +1,8 @@
-# Get Started with Data Science with Microsoft Fabric
+# Get Started with Real-Time Analytics and Data Science with Microsoft Fabric
 
-### Estimated Duration: 4 Hours
+## Lab Overview
 
-### Overview
-
-Microsoft Fabric provides an end-to-end platform for data solutions, including real-time data analytics. Data science is a combination of mathematics, statistics, and computer engineering. When you perform data science, you can analyze your data and identify complicated patterns that can provide you with meaningful insights for your organization. You can use data science to create artificial intelligence (AI) models that encompass the complicated patterns you find in your data. A common approach is to use data science to train machine learning models using libraries like scikit-learn in Python to achieve AI.
+In this lab, you will create a complete data science workflow using Microsoft Fabric. You'll start by activating the trial, creating a workspace, and uploading churn data into a Lakehouse. Using Notebooks, you'll explore the dataset and train machine learning models with Scikit-learn. MLflow will be used to track and compare experiment runs, and you’ll generate visual charts to compare model accuracy. Finally, you'll save the best model, end the Spark session, and clean up your workspace.
 
 ## Lab Objectives
 
@@ -36,7 +34,7 @@ This task will guide you through creating a workspace in Microsoft Fabric.
 
    ![](./Images/10062025(2).png)
 
-1. When your new workspace opens, it should be empty, as shown here:
+1. Once the workspace is created, it will open automatically. You’ll see an empty workspace with the message **"There's nothing here yet"**, confirming the workspace is ready for use.
 
    ![Screenshot of an empty workspace in Power BI](./Images/8-7-25-l1-11.png)
  
@@ -46,7 +44,7 @@ This task will guide you through setting up a Lakehouse in Microsoft Fabric, whe
 
 Now that you have a workspace, it's time to switch to the *Data science* experience in the portal and create a data lakehouse for the data files you're going to analyze.
 
-1. Navigate to **dp_fabric-<inject key="Deployment ID" enableCopy="false"/>** workspace from the hub menu bar on the left.
+1. On the left-hand menu of the Home page, select the **dp_fabric-<inject key="Deployment ID" enableCopy="false"/>** workspace to open it.
 
     ![](./Images/8-7-25-l1-12.png)
 
@@ -74,7 +72,7 @@ Now that you have a workspace, it's time to switch to the *Data science* experie
 
    ![](./Images/8-7-25-l1-17.png)
 
-1. After the upload is complete, select **Files** **(1)** in the Explorer pane and verify that **churn.csv** **(2)** appears in the list.
+1. After the upload is complete, select **Files** **(1)** in the Explorer pane and verify that **churn.csv** **(2)** appears.
 
    ![](./Images/8-7-25-new-2.png)
 
@@ -84,7 +82,7 @@ In this task, you will learn how to create a Notebook in Microsoft Fabric for in
 
 To train a model, you can create a *notebook*. Notebooks provide an interactive environment in which you can write and run code (in multiple languages) as *experiments*.
 
-1. Navigate to **dp_fabric-<inject key="Deployment ID" enableCopy="false"/>** workspace from the hub menu bar on the left.
+1. On the left-hand menu of the Home page, select the **dp_fabric-<inject key="Deployment ID" enableCopy="false"/>** workspace to open it.
 
     ![](./Images/8-7-25-l1-12.png)
 
@@ -100,7 +98,7 @@ To train a model, you can create a *notebook*. Notebooks provide an interactive 
 
     When the cell changes to a markdown cell, the text it contains is rendered.
 
-1. Click the **&#128393;** (Edit) button to switch the cell to editing mode.
+1. On the notebook cell, click the **&#128393;** (Edit) button to switch the cell to editing mode.
 
    ![](./Images/24.png)
 
@@ -118,7 +116,7 @@ You will explore how to import data into a DataFrame in Microsoft Fabric for pro
 
 Now you're ready to run code to prepare data and train a model. To work with data, you'll use *dataframes*. Dataframes in Spark are similar to Pandas dataframes in Python and provide a common structure for working with data in rows and columns.
 
-1. Click on **Data items (1)** in the Explorer panel, then select **Add data items (2)** and choose **Existing data sources (3)** from the dropdown menu.
+1. On the **Notebook 1** page, click on **Data items (1)** in the Explorer panel, then select **Add data items (2)** and choose **Existing data sources (3)** from the dropdown menu.
 
    ![](./Images/8-7-25-l1-21.png)
 
@@ -126,11 +124,11 @@ Now you're ready to run code to prepare data and train a model. To work with dat
 
    ![](./Images/8-7-25-l1-22.png)
 
-1. On the notebook interface, click on the **Files (1)** folder to display the CSV file next to the notebook editor. Then, open the ellipsis **(...)** menu for **churn.csv (2)** and select **Load data (3)** -> **Pandas (4)**.
+1. On the **Notebook 1** page, click on the **Files (1)** folder to display the CSV file next to the notebook editor. Then, open the ellipsis **(...)** menu for **churn.csv (2)** and select **Load data (3)** -> **Pandas (4)**.
 
     ![](./Images/8-7-25-l1-23.png)
 
-1. A new code cell containing the following code should be added to the notebook:
+1. Add a new code cell with the following code to load and display the churn dataset:
 
     ```python
    import pandas as pd
@@ -149,7 +147,7 @@ Now you're ready to run code to prepare data and train a model. To work with dat
 
     > **Note:** Since this is the first time you've run any Spark code in this session, the Spark pool must be started. This means that the first run in the session can take a minute or so to complete. Subsequent runs will be quicker.
 
-1. When the cell command has been completed, review the output below the cell, which should look similar to this:
+1. After the cell has finished executing, review the output below the cell, which should look similar to this:
 
     |Index|CustomerID|years_with_company|total_day_calls|total_eve_calls|total_night_calls|total_intl_calls|average_call_minutes|total_customer_service_calls|age|churn|
     | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- |
@@ -167,11 +165,11 @@ In this task, you will learn how to train a Machine Learning model in Microsoft 
 
 Now that you've loaded the data, you can use it to train a machine learning model and predict customer churn. You'll train a model using the Scikit-Learn library and track the model with MLflow. 
 
-1. Click the **+ Code** icon below the cell output to add a new code cell to the notebook.
+1. On the **Notebook 1 page**, click the **+ Code** icon below the cell output to add a new code cell to the notebook.
 
    ![](./Images/8-7-25-l1-26.png)
 
-1. Enter the following code in it. If the **+ Code** icon isn't visible, hover your mouse below the cell to make it appear :
+1. Enter the following code in it. If the **+ Code** icon isn't visible, hover your mouse below the cell to make it appear.
 
     ```python
    from sklearn.model_selection import train_test_split
@@ -186,7 +184,7 @@ Now that you've loaded the data, you can use it to train a machine learning mode
 
 1. Run the code cell you added, and note you're omitting 'CustomerID' from the dataset, and splitting the data into a training and test dataset.
    
-1. Add a new code cell to the notebook, enter the following code in it, and run it:
+1. Add a new code cell to the notebook, enter the following  code, and run it to set the experiment:
     
     ```python
    import mlflow
@@ -198,7 +196,7 @@ Now that you've loaded the data, you can use it to train a machine learning mode
 
     ![](./Images/8-7-25-l1-28.png)
 
-1. Add another new code cell to the notebook, enter the following code in it, and run it:
+1. Add another new code cell to the notebook, enter the following code, and run it to train the model and log the run with MLflow:
 
     ```python
    from sklearn.linear_model import LogisticRegression
@@ -215,8 +213,7 @@ Now that you've loaded the data, you can use it to train a machine learning mode
 
     ![](./Images/8-7-25-l1-29.png)
 
-1. Add another new code cell to the notebook, enter the following code in it, and run it:
-
+1. Add another new code cell to the notebook, enter the following code, and run it.
     ```python
    from sklearn.tree import DecisionTreeClassifier
    
@@ -238,7 +235,7 @@ You will learn how to use MLflow to search and view your machine learning experi
 
 When you've trained and tracked models with MLflow, you can use the MLflow library to retrieve your experiments and their details.
 
-1. To list all experiments, use the following code:
+1. To list all experiments, add a new code cell with the following code and run it:
 
     ```python
    import mlflow
@@ -249,7 +246,7 @@ When you've trained and tracked models with MLflow, you can use the MLflow libra
 
    ![](./Images/8-7-25-l1-31.png)
 
-1. To retrieve a specific experiment, you can get it by its name:
+1. To retrieve a specific experiment by its name, add a new code cell with the following code and run it:
 
     ```python
    experiment_name = "experiment-churn"
@@ -259,7 +256,7 @@ When you've trained and tracked models with MLflow, you can use the MLflow libra
 
     ![](./Images/8-7-25-l1-32.png)
 
-1. Using an experiment name, you can retrieve all jobs of that experiment:
+1. To retrieve all runs of an experiment using its name, add a new code cell with the following code and run it:
 
     ```python
    mlflow.search_runs(exp.experiment_id)
@@ -302,17 +299,17 @@ Learn how to analyze performance metrics and gain insights from your machine lea
 
 Microsoft Fabric will keep track of all your experiments and allow you to visually explore them.
 
-1. Navigate to **dp_fabric-<inject key="Deployment ID" enableCopy="false"/>** workspace from the hub menu bar on the left.
-
+1. On the left-hand navigation pane, click on **dp_fabric-<inject key="Deployment ID" enableCopy="false"/>** workspace to open it.
+   
     ![](./Images/8-7-25-l1-36.png)
 
-1. **dp_fabric-<inject key="Deployment ID" enableCopy="false"/>** workspace page, select the **experiment-churn** to open it.
-
+1. On the **dp_fabric-<inject key="Deployment ID" enableCopy="false"/>** workspace page, select the **experiment-churn** to open the experiment details.
+   
     ![](./Images/8-7-25-l1-37.png)
 
     > **Tip:** If you don't see any logged experiment runs, refresh the page.
 
-1. Review the **Run metrics** to explore how accurate your regression model is.
+1. On the **experiment-churn** pane, under **Run details**, review the **Run metrics** section to explore how accurate your regression model is and assess its overall performance.
 
    ![](./Images/11-7-25-lab-2.png)
 
@@ -346,7 +343,7 @@ Now that you've finished training and evaluating the models, you can save the no
 
    ![](./Images/8-7-25-l1-40.png)
 
-1. On the notebook menu, select **Stop session** to end the Spark session.
+1. On the **Train and compare models** page, from the notebook menu bar, click the square **Stop** icon next to **Standard session** to end the Spark session.
 
     ![](./Images/1.png)
 
@@ -354,15 +351,15 @@ Now that you've finished training and evaluating the models, you can save the no
 
 If you've finished exploring your model and experiments, you can delete the workspace you created for this exercise.
 
-1. In the bar on the left, select the **dp_fabric-<inject key="Deployment ID" enableCopy="false"/>** to view all of the items it contains.
+1. From the left-hand menu, click on **dp_fabric-<inject key="Deployment ID" enableCopy="false"/>** workspace to view all of the items it contains.
 
    ![](./Images/8-7-25-l1-41.png)
 
-1. From the top right corner, click on **Workspace settings**.
+1. From the top right corner of the screen, click on **Workspace settings**.
 
    ![](./Images/8-7-25-l1-42.png)
 
-1. In the **General** section of the Workspace settings, scroll down and select **Remove this workspace**.
+1. In the **Workspace settings**, under the **General** section, scroll down and click on **Remove this workspace** to delete it.
 
     ![](./Images/8-7-25-l1-43.png)
 
