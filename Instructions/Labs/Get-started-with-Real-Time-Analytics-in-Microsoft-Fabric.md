@@ -80,7 +80,7 @@ In this task, you will learn how to create a Notebook in Microsoft Fabric for in
 
     ![](./Images/8-7-25-l1-12.png)
 
-1. On the **dp_fabric-<inject key="Deployment ID" enableCopy="false"/>** page, click on **+ New item (1)**. In the search bar, type **Notebook (2)** and under the Get data section, select **Notebook (3)**.
+1. On the **dp_fabric-<inject key="Deployment ID" enableCopy="false"/>** workspace page, click on **+ New item (1)**. In the search bar, type **Notebook (2)** and under the Get data section, select **Notebook (3)**.
    
      ![](./Images/8-7-25-l1-19.png)
 
