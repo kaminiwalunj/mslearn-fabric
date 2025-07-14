@@ -27,7 +27,7 @@ The architecture for this lab is designed to enable a seamless, end-to-end workf
 
 ## Architecture Diagram
 
-![Architecture Diagram](./Images/architecture-fabric.png)
+![Architecture Diagram](./Images/archdia1.png)
 
 ## Explanation of Components
 
@@ -41,13 +41,13 @@ The architecture for this lab involves several key components:
 
 ## Getting Started with the Lab
 
-Welcome to Real-Time Analytics and Data Science with Microsoft Fabric Workshop! We've prepared a seamless environment for you to explore and learn about fabric services. Let's begin by making the most of this experience.
+Welcome to Get Started with Data Science with Microsoft Fabric Workshop! We've prepared a seamless environment for you to explore and learn about fabric services. Let's begin by making the most of this experience.
 
 ## Accessing Your Lab Environment
 
 Once you're ready to dive in, your virtual machine and **Guide** will be right at your fingertips within your web browser.
  
-![](./Images/8-7-25-g1.png)
+![](./Images/fabric-home.png)
 
 ## Virtual Machine & Lab Guide
 
@@ -81,7 +81,7 @@ To adjust the zoom level for the environment page, click the **A↕ : 100%** ico
 
 1. On your virtual machine, click on the **Microsoft Edge** icon as shown below:
  
-   ![Launch Azure Portal](./Images/11-7-25-g1.png)
+   ![Launch Azure Portal](./Images/portal.png)
 
 1. In the new tab, navigate to the **Microsoft Fabric** portal by copying and pasting the following URL into the address bar.
 
