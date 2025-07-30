@@ -39,11 +39,11 @@ Before working with data in Fabric, create a workspace with the Fabric trial ena
 
    - **Username/Email (1)**: <inject key="AzureAdUserEmail"></inject>
 
-     ![](./Images/odluser.png)
+     ![](./Images/fb_ex1_0.png)
 
    - **Password:** <inject key="AzureAdUserPassword"></inject>
 
-     ![](./Images/image2.png)
+     ![](./Images/fb_ex1_0_1.png)
 
 2. From the Microsoft Fabric home page, select **PowerBI**
 
