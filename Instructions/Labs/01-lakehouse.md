@@ -103,7 +103,7 @@ Before working with data in Fabric, create a workspace with the Fabric trial ena
 
 Now that you have a workspace, it's time to switch to the _Data engineering_ experience in the portal and create a data lakehouse for your data files.
 
-1. Click on **+New Item** from the workspace
+1. Ensure the **Power BI** **(1)** icon is visible in the left pane. If available, click it, then click **New item** **(2)** at the top of the workspace.
 
    ![](<./Images/powerbi-01(1).png>)
 
