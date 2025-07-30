@@ -35,49 +35,61 @@ This lab takes approximately **90** minutes to complete.
 
 Before working with data in Fabric, create a workspace with the Fabric trial enabled.
 
-1. Open the Edge Browser and Sign in to [Microsoft Fabric](https://app.fabric.microsoft.com) at `https://app.fabric.microsoft.com`, enter the following email/username, and then click on **Submit (2)**.
+1. Open the Edge browser and sign in to [Microsoft Fabric](https://app.fabric.microsoft.com) at `https://app.fabric.microsoft.com`.
 
-   - **Username/Email (1)**: <inject key="AzureAdUserEmail"></inject>
+   - On the Microsoft Fabric page, enter your **email:** <inject key="AzureAdUserEmail"></inject> **(1)** and click **Submit** **(2)**.
 
      ![](./Images/fb_ex1_0.png)
 
-   - **Password:** <inject key="AzureAdUserPassword"></inject>
+   - On the **Enter password** screen, enter your **Password:** <inject key="AzureAdUserPassword"></inject> **(1)** and click **Sign in** **(2)**.
 
      ![](./Images/fb_ex1_0_1.png)
+   
+      > **Note**: If you receive the **Welcome to the Fabric view** pop-up, click **Cancel** to skip the tour.
 
-2. From the Microsoft Fabric home page, select **PowerBI**
+      ![](./Images/fb_ex1_1.png)
+
+1. On the Fabric home page, click the **Fabric** icon from the left pane to open the Fabric experience.
+
+   ![](./Images/fb_ex1_4.png)
+
+1. In the Power BI view, select **Power BI** from the dropdown.
 
    ![](./Images/powerbi-1.png)
 
-3. From the PowerBI home page, select **Account Manager (1)** from the top-right corner to start the **Free trail (2)** of Microsoft Fabric.
+1. From the PowerBI home page, select **Account Manager (1)** from the top-right corner to start the **Free trail (2)** of Microsoft Fabric.
 
    ![Account-manager-start](./Images/freetrial.png)
 
-4. A new prompt will appear asking you to **Activate your 60-day free Fabric trial capacity**, click on **Activate**.
+1. On the **Activate your 60-day free Fabric trial capacity** window, click **Activate** to continue with the default region.
 
-   ![Start-trial](<./Images/activate(1).png>)
+   ![Start-trial](<./Images/fb_ex1_5.png>)
 
-5. Once your trial capacity is ready, you receive a confirmation message. Select **Stay on current page** to begin working in Fabric.
+1. Once your trial capacity is ready, you receive a confirmation message. Select **Stay on current page** to begin working in Fabric.
 
    ![](./Images/staycurrentonstage.png)
 
-6. Open your **Account manager** again. Notice that you now have a heading for **Trial status**. Your Account manager keeps track of the number of days remaining in your trial.
+1. Click the **Account manager (1)** icon in the top-right corner. Under the **Profile** section, verify that the **Trial Status**  **(2)** shows the number of days remaining.
 
-   ![](./Images/trialstatus.png)
+   ![](./Images/fb_ex1_6.png)
 
    > **Note:** You now have a **Fabric (Preview) trial** that includes a **Power BI trial** and a **Fabric (Preview) trial capacity**.
 
-7. In the menu bar on the left, select **Workspaces (1)** (the icon looks similar to &#128455;). Select **+ New Workspace (2)**
+1. In the menu bar on the left, select **Workspaces (1)** (the icon looks similar to &#128455;). Select **+ New Workspace (2)**
 
    ![](./Images/newworkspace.png)
 
-8. Create a new workspace with a **Fabriclab\_<inject key="DeploymentID" enableCopy="false"/> (1)** , select a licensing mode that includes Fabric capacity **Trail**, and click on **Apply (2)**
+1. Create a new workspace with a **Fabriclab\_<inject key="DeploymentID" enableCopy="false"/> (1)** , select a licensing mode that includes Fabric capacity **Trail**, and click on **Apply (2)**
 
-   ![](<./Images/apply(1).png>)
+   ![](<./Images/fb_ex1_7.png>)
 
-9. When your new workspace opens, it should be empty.
+   > **Note**: If you receive the **Introducing task flows (preview)** pop-up, click **Got it** to continue.
 
-   ![Screenshot of an empty workspace in Power BI.](<./Images/powerbi-01(1).png>)
+   ![](<./Images/fb_ex1_8.png>)
+
+1. When your new workspace opens, it should be empty.
+
+   ![Screenshot of an empty workspace in Power BI.](<./Images/fb_ex1_9.png>)
 
 > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
 >
@@ -95,17 +107,17 @@ Now that you have a workspace, it's time to switch to the _Data engineering_ exp
 
    ![](<./Images/powerbi-01(1).png>)
 
-2. Search for **Lakehouse (1)** and select the option labeled **Lakehouse (2)** from the results.
+1. Search for **Lakehouse (1)** and select the option labeled **Lakehouse (2)** from the results.
 
    ![](<./Images/lakehouse(1).png>)
 
-3. Create a new **Lakehouse (1)** with a name of your choice, and select **Create (2)**.
+1. Create a new **Lakehouse (1)** with a name of your choice, and select **Create (2)**.
 
    ![](<./Images/newlakehouse(1).png>)
 
-4. After a minute or so, a new lakehouse will be created.
+1. After a minute or so, a new lakehouse will be created.
 
-5. View the new lakehouse, and note that the **Lakehouse explorer** pane on the left enables you to browse tables and files in the lakehouse:
+1. View the new lakehouse, and note that the **Lakehouse explorer** pane on the left enables you to browse tables and files in the lakehouse:
 
    - The **Tables** folder contains tables that you can query using SQL semantics. Tables in a Microsoft Fabric lakehouse are based on the open source _Delta Lake_ file format, commonly used in Apache Spark.
    - The **Files** folder contains data files in the OneLake storage for the lakehouse that aren't associated with managed delta tables. You can also create _shortcuts_ in this folder to reference data that is
@@ -153,7 +165,7 @@ In many scenarios, the data you need to work with in your lakehouse may be store
 
    ![](./Images/newshortcut.png)
 
-2. View the available data source types for shortcuts. Then close the **New shortcut** dialog box without creating a shortcut.
+1. View the available data source types for shortcuts. Then close the **New shortcut** dialog box without creating a shortcut.
 
 ## Task 5 : Load file data into a table
 
@@ -163,21 +175,21 @@ The sales data you uploaded is in a file, which data analysts and engineers can 
 
    ![](<./Images/files-data(1).png>)
 
-2. In the **ellipses (1)** menu for the **sales.csv** file, select **Load to Tables (2)** and click on **New Table (3)**.
+1. In the **ellipses (1)** menu for the **sales.csv** file, select **Load to Tables (2)** and click on **New Table (3)**.
 
    ![](./Images/loadtables.png)
 
-3. In the **Load file to new table** dialog box, set the table name to **sales (1)** and confirm the load operation by selecting **Load (2)**. Then wait for the table to be created and loaded.
+1. In the **Load file to new table** dialog box, set the table name to **sales (1)** and confirm the load operation by selecting **Load (2)**. Then wait for the table to be created and loaded.
 
    > **Tip**: If the **sales** table does not automatically appear, in the **ellipses** menu for the **Tables** folder, select **Refresh**.
 
    ![](./Images/salesorder.png)
 
-4. In the **Lakehouse explorer** pane, select the **sales** table that has been created to view the data.
+1. In the **Lakehouse explorer** pane, select the **sales** table that has been created to view the data.
 
    ![Screenshot of a table preview.](./Images/table-preview-u.png)
 
-5. In the **ellipses (1)** menu for the **sales** table, select **View files (2)** to see the underlying files for this table
+1. In the **ellipses (1)** menu for the **sales** table, select **View files (2)** to see the underlying files for this table
 
    ![Screenshot of a table preview.](./Images/tables.png)
 
@@ -215,15 +227,15 @@ While many data professionals are familiar with SQL, data analysts with Power BI
 
    ![Screenshot of a Visual query.](./Images/new-visal-query.png)
 
-2. Drag the **sales** table to the new visual query editor pane that opens to create a **Power Query (2)** as shown here:
+1. Drag the **sales** table to the new visual query editor pane that opens to create a **Power Query (2)** as shown here:
 
    ![Screenshot of a Visual query.](./Images/salesquery.png)
 
-3. In the **Manage columns (1)** menu, select **Choose columns (2)**. Then select only the **SalesOrderNumber** and **SalesOrderLineNumber** columns and click **OK**.
+1. In the **Manage columns (1)** menu, select **Choose columns (2)**. Then select only the **SalesOrderNumber** and **SalesOrderLineNumber** columns and click **OK**.
 
    ![Screenshot of a Choose columns dialog box.](./Images/choosecolumns.png)
 
-4. In the **Transform** menu, select **Group by**. Then group the data by using the following **Basic (1)** settings:
+1. In the **Transform** menu, select **Group by**. Then group the data by using the following **Basic (1)** settings:
 
    - **Group by (2)**: SalesOrderNumber
    - **New column name (3)**: LineItems
@@ -244,13 +256,13 @@ The tables in your lakehouse are automatically added to a default dataset that d
 
    > **Note**: In this exercise, the data model consists of a single table. In a real-world scenario, you would likely create multiple tables in your lakehouse, each of which would be included in the model. You could then define relationships between these tables in the model.
 
-2. In the menu ribbon, select the **Reporting** tab. Then select **New report**. Click on **Continue**.
+1. In the menu ribbon, select the **Reporting** tab. Then select **New report**. Click on **Continue**.
 
    ![Screenshot of the new report .](./Images/new-report.png)
 
    ![Screenshot of the report designer.](./Images/report-designer-u-1-1.png)
 
-3. In the **Data** pane on the right, expand the **sales** table. Then select the following fields:
+1. In the **Data** pane on the right, expand the **sales** table. Then select the following fields:
 
    - **Item**
    - **Quantity**
@@ -258,14 +270,14 @@ The tables in your lakehouse are automatically added to a default dataset that d
 
      ![Screenshot of a report containing a table.](./Images/table-visualization-u.png)
 
-4. Hide the **Data** and **Filters** panes to create more space. Then ensure the table visualization is selected and in the **Visualizations** pane, change the visualization to a **Clustered bar chart** and resize it
+1. Hide the **Data** and **Filters** panes to create more space. Then ensure the table visualization is selected and in the **Visualizations** pane, change the visualization to a **Clustered bar chart** and resize it
    as shown here.
 
    ![Screenshot of a report containing a clustered bar chart.](./Images/fabric-1.png)
 
-5. On the **File** menu, select **Save**. Then save the report as **Item Sales Report** in the workspace you created previously.
+1. On the **File** menu, select **Save**. Then save the report as **Item Sales Report** in the workspace you created previously.
 
-6. Close the browser tab containing the report to return to the SQL endpoint for your lakehouse. Then, in the hub menu bar on the left, select your workspace to verify that it contains the following items:
+1. Close the browser tab containing the report to return to the SQL endpoint for your lakehouse. Then, in the hub menu bar on the left, select your workspace to verify that it contains the following items:
 
    - Your lakehouse.
    - The SQL analytics endpoint for your lakehouse.
