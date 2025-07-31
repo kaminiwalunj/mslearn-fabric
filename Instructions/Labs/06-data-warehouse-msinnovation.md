@@ -1,4 +1,4 @@
-# Lab-02 : Analyze data in a Data Warehouse
+# Lab-02: Analyze data in a Data Warehouse
 
 ## Overview
 
@@ -18,13 +18,13 @@ Here, you'll learn about data warehouses in Fabric, create a data warehouse, loa
 
 ## Get started with data warehouses in Microsoft Fabric
 
-In Microsoft Fabric, a data warehouse provides a relational database for large-scale analytics. Unlike the default read-only SQL endpoint for tables defined in a lakehouse, a data warehouse provides full SQL semantics; including the ability to insert, update, and delete data in the tables.
+In Microsoft Fabric, a data warehouse provides a relational database for large-scale analytics. Unlike the default read-only SQL endpoint for tables defined in a lakehouse, a data warehouse provides full SQL semantics, including the ability to insert, update, and delete data in the tables.
 
 This lab will take approximately **30** minutes to complete.
 
 > **Note**: You'll need a Microsoft Fabric license to complete this exercise. Complete the previous task to proceed further.
 
-## Task 1 : Create a Data Warehouse
+## Task 1: Create a Data Warehouse
 
 1. In the Power BI portal, in the workspace **fabriclab_<inject key="DeploymentID" enableCopy="false"/>**, then click **Power BI** **(1)** on the left navigation bar, and click **New item** **(2)** to create a new workspace item.
 
@@ -38,7 +38,7 @@ This lab will take approximately **30** minutes to complete.
 
    ![](<./Images/gr_fb_e2_3.png>)
 
-## Task 2 : Create tables and insert data
+## Task 2: Create tables and insert data
 
 A warehouse is a relational database in which you can define tables and other objects.
 
@@ -66,7 +66,7 @@ A warehouse is a relational database in which you can define tables and other ob
 
    ![](<./Images/gr_fb_e2_5.png>)
 
-1. In the **Explorer** pane, expand **myDataWarehouse** **(1)**, then expand the **Schemas** section **(2)** to view the available schema objects including `dbo`, `INFORMATION_SCHEMA`, `queryinsights`, and `sys`.
+1. In the **Explorer** pane, expand **myDataWarehouse** **(1)**, then expand the **Schemas** section **(2)** to view the available schema objects, including `dbo`, `INFORMATION_SCHEMA`, `queryinsights`, and `sys`.
 
    ![](<./Images/gr_fb_e2_6.png>)
 
@@ -114,7 +114,7 @@ A warehouse is a relational database in which you can define tables and other ob
 
    > **Tip**: If the schema takes a while to load, just refresh the browser page.
 
-## Task 3 : Define a Data Model
+## Task 3: Define a Data Model
 
 A relational data warehouse typically consists of _fact_ and _dimension_ tables. The fact tables contain numeric measures you can aggregate to analyze business performance (for example, sales revenue), and the dimension tables contain attributes of the entities by which you can aggregate the data (for example, product, customer, or time). In a Microsoft Fabric data warehouse, you can use these keys to define a data model that encapsulates the relationships between the tables.
 
@@ -148,7 +148,7 @@ A relational data warehouse typically consists of _fact_ and _dimension_ tables.
 
    ![Screenshot of the model with relationships.](./Images/dw-relationships1-1-1.png)
 
-## Task 4 : Query data Warehouse tables
+## Task 4: Query data Warehouse tables
 
 Since the data warehouse is a relational database, you can use SQL to query its tables.
 
@@ -196,7 +196,7 @@ Most queries in a relational data warehouse involve aggregating and grouping dat
 
    ![](<./Images/gr_fb_e2_15.png>)
 
-## Task 5 : Create a View
+## Task 5: Create a View
 
 A data warehouse in Microsoft Fabric has many of the same capabilities you may be used to in relational databases. For example, you can create database objects like _views_ and _stored procedures_ to encapsulate SQL logic.
 
@@ -250,19 +250,19 @@ Instead of writing SQL code, you can use the graphical query designer to query t
 
    ![Screenshot of the preview pane with the DimProduct column expanded, with ProductName selected.](./Images/visual-query-preview1.png)
 
-1. If you're interested in looking at data for a single product, per a manager request, you can now use the **ProductName** column to filter the data in the query. Filter the **ProductName** column to look at **Cable Lock** data only.
+1. If you're interested in looking at data for a single product, per a manager's request, you can now use the **ProductName** column to filter the data in the query. Filter the **ProductName** column to look at **Cable Lock** data only.
 
 1. From here, you can analyze the results of this single query by selecting **Visualize results** or **Open in Excel**. You can now see exactly what the manager was asking for, so we don't need to analyze the results further.
 
 ### Visualize your data
 
-You can easily visualize the data in either a single query, or in your data warehouse. Before you visualize, hide columns and/or tables that aren't friendly to report designers.
+You can easily visualize the data in either a single query or in your data warehouse. Before you visualize, hide columns and/or tables that aren't friendly to report designers.
 
 1. In the **Explorer** pane, under your warehouse, expand the **Queries** section and click on **Model layouts (1)** to open the model layout editor.
 
    ![](<./Images/gr_fb_e2_17.png>)
 
-1. Hide the following columns in your Fact and Dimension tables that are not necessary to create a report. Note that this does not remove the columns from the model, it simply hides them from view on the report canvas.
+1. Hide the following columns in your Fact and Dimension tables that are not necessary to create a report. Note that this does not remove the columns from the model; it simply hides them from view on the report canvas.
 
    1. FactSalesOrder
       - **SalesOrderDateKey**
@@ -318,4 +318,6 @@ If you've finished exploring your data warehouse, you can delete the workspace y
 2. In the **ellipses** menu on the toolbar, select **Workspace settings**.
 3. In the **Other** section, select **Remove this workspace**.
 
-## Congratulations! you have successfully completed this lab
+## Congratulations! You have successfully completed this lab
+
+#### Happy Learning!!
