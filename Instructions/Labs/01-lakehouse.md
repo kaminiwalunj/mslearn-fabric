@@ -1,4 +1,4 @@
-# Lab-01 : Create and Ingest Data with a Microsoft Fabric Lakehouse
+# Lab-01: Create and Ingest Data with a Microsoft Fabric Lakehouse
 
 ### Overall Estimated Duration: 120 minutes
 
@@ -31,53 +31,65 @@ This lab takes approximately **90** minutes to complete.
 
 > **Note**: You'll need a Microsoft Fabric license to complete this exercise. Complete the previous task to proceed further.
 
-## Task 1 : Create a workspace
+## Task 1: Create a workspace
 
 Before working with data in Fabric, create a workspace with the Fabric trial enabled.
 
-1. Open the Edge Browser and Sign in to [Microsoft Fabric](https://app.fabric.microsoft.com) at `https://app.fabric.microsoft.com`, enter the following email/username, and then click on **Submit (2)**.
+1. Open the Edge browser and sign in to [Microsoft Fabric](https://app.fabric.microsoft.com) at `https://app.fabric.microsoft.com`.
 
-   - **Username/Email (1)**: <inject key="AzureAdUserEmail"></inject>
+   - On the Microsoft Fabric page, enter your **email:** <inject key="AzureAdUserEmail"></inject> **(1)** and click **Submit** **(2)**.
 
-     ![](./Images/odluser.png)
+     ![](./Images/fb_g2_1_0.png)
 
-   - **Password:** <inject key="AzureAdUserPassword"></inject>
+   - On the **Enter password** screen, enter your **Password:** <inject key="AzureAdUserPassword"></inject> **(1)** and click **Sign in** **(2)**.
 
-     ![](./Images/image2.png)
+     ![](./Images/fb_ex1_0_1.png)
+   
+      > **Note**: If you receive the **Welcome to the Fabric view** pop-up, click **Cancel** to skip the tour.
 
-2. From the Microsoft Fabric home page, select **PowerBI**
+      ![](./Images/fb_ex1_1.png)
+
+1. On the Fabric home page, click the **Fabric** icon from the left pane to open the Fabric experience.
+
+   ![](./Images/fb_ex1_4.png)
+
+1. In the Power BI view, select **Power BI** from the dropdown.
 
    ![](./Images/powerbi-1.png)
 
-3. From the PowerBI home page, select **Account Manager (1)** from the top-right corner to start the **Free trail (2)** of Microsoft Fabric.
+1. From the PowerBI home page, select **Account Manager (1)** from the top-right corner to start the **Free trial (2)** of Microsoft Fabric.
 
    ![Account-manager-start](./Images/freetrial.png)
 
-4. A new prompt will appear asking you to **Activate your 60-day free Fabric trial capacity**, click on **Activate**.
+1. On the **Activate your 60-day free Fabric trial capacity** window, click **Activate** to continue with the default region.
 
-   ![Start-trial](<./Images/activate(1).png>)
+   ![Start-trial](<./Images/fb_ex1_5.png>)
 
-5. Once your trial capacity is ready, you receive a confirmation message. Select **Stay on current page** to begin working in Fabric.
+1. Once your trial capacity is ready, you receive a confirmation message. Select **Stay on current page** to begin working in Fabric.
 
    ![](./Images/staycurrentonstage.png)
 
-6. Open your **Account manager** again. Notice that you now have a heading for **Trial status**. Your Account manager keeps track of the number of days remaining in your trial.
+1. Click the **Account manager (1)** icon in the top-right corner. Under the **Profile** section, verify that the **Trial Status**  **(2)** shows the number of days remaining.
 
-   ![](./Images/trialstatus.png)
+   ![](./Images/fb_ex1_6.png)
 
    > **Note:** You now have a **Fabric (Preview) trial** that includes a **Power BI trial** and a **Fabric (Preview) trial capacity**.
 
-7. In the menu bar on the left, select **Workspaces (1)** (the icon looks similar to &#128455;). Select **+ New Workspace (2)**
+1. In the menu bar on the left, select **Workspaces (1)** (the icon looks similar to &#128455;). Select **+ New Workspace (2)**
 
    ![](./Images/newworkspace.png)
 
-8. Create a new workspace with a **Fabriclab\_<inject key="DeploymentID" enableCopy="false"/> (1)** , select a licensing mode that includes Fabric capacity **Trail**, and click on **Apply (2)**
+1. Create a new workspace with a **Fabriclab\_<inject key="DeploymentID" enableCopy="false"/> (1)** , select a licensing mode that includes Fabric capacity **Trail**, and click on **Apply (2)**
 
-   ![](<./Images/apply(1).png>)
+   ![](<./Images/fb_ex1_7.png>)
 
-9. When your new workspace opens, it should be empty.
+   > **Note**: If you receive the **Introducing task flows (preview)** pop-up, click **Got it** to continue.
 
-   ![Screenshot of an empty workspace in Power BI.](<./Images/powerbi-01(1).png>)
+   ![](<./Images/fb_ex1_8.png>)
+
+1. When your new workspace opens, it should be empty.
+
+   ![Screenshot of an empty workspace in Power BI.](<./Images/fb_ex1_9.png>)
 
 > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
 >
@@ -87,25 +99,23 @@ Before working with data in Fabric, create a workspace with the Fabric trial ena
 
 <validation step="f77f6f86-fc3c-4fca-a8d2-234693b73ba8" />
 
-## Task 2 : Create a Lakehouse
+## Task 2: Create a Lakehouse
 
 Now that you have a workspace, it's time to switch to the _Data engineering_ experience in the portal and create a data lakehouse for your data files.
 
-1. Click on **+New Item** from the workspace
+1. Ensure the **Power BI** **(1)** icon is visible in the left pane. If available, click it, then click **New item** **(2)** at the top of the workspace.
 
-   ![](<./Images/powerbi-01(1).png>)
+   ![](<./Images/fb_g2_1_1.png>)
 
-2. Search for **Lakehouse (1)** and select the option labeled **Lakehouse (2)** from the results.
+1. Search for **Lakehouse (1)** and select the option labeled **Lakehouse (2)** from the results.
 
-   ![](<./Images/lakehouse(1).png>)
+   ![](<./Images/fb_g2_1_2.png>)
 
-3. Create a new **Lakehouse (1)** with a name of your choice, and select **Create (2)**.
+1. On the **New lakehouse** pane, enter **Lakehouse** **(1)** in the **Name** field, then click **Create** **(2)** to proceed.
 
-   ![](<./Images/newlakehouse(1).png>)
+   ![](<./Images/fb_g2_1_3.png>)
 
-4. After a minute or so, a new lakehouse will be created.
-
-5. View the new lakehouse, and note that the **Lakehouse explorer** pane on the left enables you to browse tables and files in the lakehouse:
+1. View the new lakehouse, and note that the **Lakehouse explorer** pane on the left enables you to browse tables and files in the lakehouse:
 
    - The **Tables** folder contains tables that you can query using SQL semantics. Tables in a Microsoft Fabric lakehouse are based on the open source _Delta Lake_ file format, commonly used in Apache Spark.
    - The **Files** folder contains data files in the OneLake storage for the lakehouse that aren't associated with managed delta tables. You can also create _shortcuts_ in this folder to reference data that is
@@ -114,9 +124,9 @@ Now that you have a workspace, it's time to switch to the _Data engineering_ exp
 
      ![](./Images/image91-1.png)
 
-## Task 3 : Upload a file
+## Task 3: Upload a file
 
-Fabric provides multiple ways to load data into the lakehouse, including built-in support for pipelines that copy data external sources and data flows (Gen 2) that you can define using visual tools based on Power Query. However one of the simplest ways to ingest small amounts of data is to upload files or folders from your local computer (or lab VM if applicable).
+Fabric provides multiple ways to load data into the lakehouse, including built-in support for pipelines that copy data from external sources and data flows (Gen 2) that you can define using visual tools based on Power Query. However, one of the simplest ways to ingest small amounts of data is to upload files or folders from your local computer (or lab VM if applicable).
 
 1. Download the **sales.csv** file from [https://raw.githubusercontent.com/MicrosoftLearning/dp-data/main/sales.csv](https://raw.githubusercontent.com/MicrosoftLearning/dp-data/main/sales.csv), saving it as
    **sales.csv** on your local computer (or lab VM if applicable).
@@ -127,25 +137,39 @@ Fabric provides multiple ways to load data into the lakehouse, including built-i
 
    - OR If you are using the lab virtual machine (lab VM) provided to you, you can get the file from the **C:\LabFiles\dp-data-main** directory.
 
-1. Return to the web browser tab containing your lakehouse, and in the **ellipses (1)** menu for the **Files** folder in the **Lakehouse explorer** pane, select **New subfolder (2)**, and create a subfolder named **data**.
+1. On the **Lakehouse explorer** pane, click the ellipses **(1)** next to the **Files** folder, then select **New subfolder** **(2)**.
 
-   ![](<./Images/image10(1).png>)
+   ![](<./Images/fb_g2_1_4.png>)
 
-   ![](./Images/image11.png)
+1. On the **New subfolder** pane, enter **data** **(1)** in the **Folder name** field, then click **Create** **(2)** to add the subfolder.
 
-1. In the **ellipses (1)** menu for the new **data** folder, select **Upload (2)** and **Upload files (3)**, and then upload the **sales.csv** file from your local computer (or lab VM if applicable).
+   ![](<./Images/fb_g2_1_5.png>)
 
-   ![](<./Images/image12-1(1).png>)
+1. On the **Lakehouse explorer** pane, click the ellipses **(1)** next to the **data** folder, hover over **Upload** **(2)**, then select **Upload files** **(3)**.
 
-   ![](./Images/image13.png)
+   ![](<./Images/fb_g2_1_6.png>)
 
-1. After the file has been uploaded, select the **Files/data** folder and verify that the **sales.csv** file has been uploaded, as shown here:
+1. On the **Upload files** dialog, click the folder icon on the right to browse and select the **sales.csv** file from your local or lab machine.
 
-   ![Screenshot of uploaded sales.csv file in a lakehouse.](./Images/image14.png)
+   ![](<./Images/fb_g2_1_7.png>)
+
+1. On the **Upload files** dialog, after selecting the **sales.csv** file, click **Upload** **(1)** to upload the file into the `data` folder.
+
+   ![](<./Images/fb_g2_1_9.png>)
+
+1. Once the upload is complete and the status shows **Completed**, click the **Close** icon at the top right to exit the **Upload files** dialog.
+
+   ![](<./Images/fb_g2_1_10.png>)
+
+1. In the **Lakehouse explorer** pane, expand **Lakehouse** **(1)**, then expand **Files** **(2)** and select the **data** **(3)** folder. Verify that the **sales.csv** **(4)** file has been uploaded successfully.
+
+   ![Screenshot of uploaded sales.csv file in a lakehouse.](./Images/fb_g2_1_11.png)
 
 1. Select the **sales.csv** file to see a preview of its contents.
 
-## Task 4 : Explore shortcuts
+   ![](<./Images/fb_cor_1_1.png>)
+
+## Task 4: Explore shortcuts
 
 In many scenarios, the data you need to work with in your lakehouse may be stored in some other location. While there are many ways to ingest data into the OneLake storage for your lakehouse, another option is to instead create a _shortcut_. Shortcuts enable you to include externally sourced data in your analytics solution without the overhead and risk of data inconsistency associated with copying it.
 
@@ -153,46 +177,58 @@ In many scenarios, the data you need to work with in your lakehouse may be store
 
    ![](./Images/newshortcut.png)
 
-2. View the available data source types for shortcuts. Then close the **New shortcut** dialog box without creating a shortcut.
+1. View the available data source types for shortcuts. Then close the **New shortcut** dialog box without creating a shortcut.
 
-## Task 5 : Load file data into a table
+## Task 5: Load file data into a table
 
-The sales data you uploaded is in a file, which data analysts and engineers can work with directly by using Apache Spark code. However, in many scenarios you may want to load the data from the file into a table so that you can query it using SQL.
+The sales data you uploaded is in a file, which data analysts and engineers can work with directly by using Apache Spark code. However, in many scenarios, you may want to load the data from the file into a table so that you can query it using SQL.
 
-1. On the **Home** page, select the **Files (1) > Data (2)** folder so you can see the **sales.csv (3)** file it contains.
+1. In the **Lakehouse explorer** pane, expand **Lakehouse** **(1)**, then expand **Files** **(2)** and select the **data** folder **(3)**. Confirm that the **sales.csv** file appears in the folder **(4)**.
 
-   ![](<./Images/files-data(1).png>)
+   ![](<./Images/fb_g2_1_11.png>)
 
-2. In the **ellipses (1)** menu for the **sales.csv** file, select **Load to Tables (2)** and click on **New Table (3)**.
+1. In the **data** folder, click the ellipses next to the **sales.csv** file to open the context menu.
 
-   ![](./Images/loadtables.png)
+   ![](<./Images/fb_g2_1_12.png>)
 
-3. In the **Load file to new table** dialog box, set the table name to **sales (1)** and confirm the load operation by selecting **Load (2)**. Then wait for the table to be created and loaded.
+1. In the context menu, hover over **Load to Tables** **(1)**, then select **New table** **(2)** to start creating a table from the CSV file.
+
+   ![](./Images/fb_cor_1_2.png)
+
+1. In the **Load file to new table** dialog box, set the table name to **sales (1)** and confirm the load operation by selecting **Load (2)**. Then wait for the table to be created and loaded.
 
    > **Tip**: If the **sales** table does not automatically appear, in the **ellipses** menu for the **Tables** folder, select **Refresh**.
 
    ![](./Images/salesorder.png)
 
-4. In the **Lakehouse explorer** pane, select the **sales** table that has been created to view the data.
+1. In the **Lakehouse explorer** pane, expand **Lakehouse** **(1)**, then expand **Tables** and select **sales** **(2)**. Confirm that the data from the **sales.csv** file is now loaded and displayed in table format **(3)**.
 
-   ![Screenshot of a table preview.](./Images/table-preview-u.png)
+   ![Screenshot of a table preview.](./Images/fb_g2_1_13.png)
 
-5. In the **ellipses (1)** menu for the **sales** table, select **View files (2)** to see the underlying files for this table
+1. In the **ellipses (1)** menu for the **sales** table, select **View files (2)** to see the underlying files for this table
 
    ![Screenshot of a table preview.](./Images/tables.png)
 
+1. In the **File view** for the **sales** table, observe that it contains Delta Lake log files and Parquet data files. These represent the physical storage format of the table.
+
+   ![Screenshot of a table preview.](./Images/fb_g2_1_14.png)
+
    > **Note:** Files for a delta table are stored in _Parquet_ format, and include a subfolder named **\_delta_log** in which details of transactions applied to the table are logged.
 
-## Task 6 : Use SQL to query tables
+## Task 6: Use SQL to query tables
 
 When you create a lakehouse and define tables in it, a SQL endpoint is automatically created through which the tables can be queried using SQL `SELECT` statements.
 
 1. At the top-right of the Lakehouse page, switch from **Lakehouse (1)** to **SQL analytics endpoint (2)**. Then wait a short time until the SQL query endpoint for your lakehouse opens in a visual interface from which you can query
-   its tables, as shown here:
+   It's tables, as shown here:
 
-   ![Screenshot of the SQL endpoint page.](./Images/sqlendpoints.png)
+   ![Screenshot of the SQL endpoint page.](./Images/fb_g2_1_15.png)
 
-1. Use the **New SQL query** button to open a new query editor, and enter the following SQL query:
+1. On the **Home** tab, click the dropdown arrow next to **New SQL query** **(1)**, then select **New SQL query** **(2)** to open a new query editor.
+
+   ![Screenshot of the SQL endpoint page.](./Images/fb_g2_1_16.png)
+
+1. In the new query editor, enter the following SQL query to calculate the total revenue by item:
 
    ```sql
    SELECT Item, SUM(Quantity * UnitPrice) AS Revenue
@@ -201,78 +237,96 @@ When you create a lakehouse and define tables in it, a SQL endpoint is automatic
    ORDER BY Revenue DESC;
    ```
 
-   ![Screenshot of the new sql query.](./Images/new-sql-query.png)
-
 1. Use the **&#9655; Run** button to run the query and view the results, which should show the total revenue for each product.
 
    ![Screenshot of a SQL query with results.](./Images/run.png)
 
-## Task 7 : Create a visual query
+## Task 7: Create a visual query
 
 While many data professionals are familiar with SQL, data analysts with Power BI experience can apply their Power Query skills to create visual queries.
 
-1. On the toolbar, select **New SQL Query (1) > New visual query (2)**.
+1. On the **Home** tab, click the dropdown arrow next to **New SQL query** **(1)**, then select **New visual query** **(2)** to open the visual query editor.
 
-   ![Screenshot of a Visual query.](./Images/new-visal-query.png)
+   ![Screenshot of a Visual query.](./Images/fb_g2_1_17.png)
 
-2. Drag the **sales** table to the new visual query editor pane that opens to create a **Power Query (2)** as shown here:
+1. Drag the **sales (1)** table to the new visual query editor pane that opens to create a **Power Query (2)** as shown here:
 
    ![Screenshot of a Visual query.](./Images/salesquery.png)
 
-3. In the **Manage columns (1)** menu, select **Choose columns (2)**. Then select only the **SalesOrderNumber** and **SalesOrderLineNumber** columns and click **OK**.
+1. In the **SQL query 1** pane, click **Manage columns** **(1)** and select **Choose columns** **(2)**.
 
    ![Screenshot of a Choose columns dialog box.](./Images/choosecolumns.png)
 
-4. In the **Transform** menu, select **Group by**. Then group the data by using the following **Basic (1)** settings:
+1. In the **Choose columns** dialog, select only **SalesOrderNumber** and **SalesOrderLineNumber** **(1)**, then click **OK** **(2)**.
 
-   - **Group by (2)**: SalesOrderNumber
-   - **New column name (3)**: LineItems
-   - **Operation (4)**: Count distinct values
-   - **Column (5)**: SalesOrderLineNumber
+   ![Screenshot of a Choose columns dialog box.](./Images/fb_g2_1_18.png)
+
+1. On the **Visual query 1** tab, click **Transform** **(1)**, then select **Group by** **(2)** to start grouping the selected columns.
+
+   ![Screenshot of a Choose columns dialog box.](./Images/fb_g2_1_19.png)
+
+1. On the **Group by** dialog, configure the following **Basic** **(1)** settings:
+
+   - **Group by**: SalesOrderNumber **(2)**
+   - **New column name**: LineItems **(3)**
+   - **Operation**: Count distinct values **(4)**
+   - **Column**: SalesOrderLineNumber **(5)**
+   - Click **OK** **(6)** to apply the grouping.
 
    - When you're done, the results pane under the visual query shows the number of line items for each sales order.
 
-   ![Screenshot of a Choose columns dialog box.](<./Images/salesorderlinenumber(1).png>)
+   ![Screenshot of a Choose columns dialog box.](<./Images/fb_g2_1_20.png>)
 
-## Task 8 : Create a Report
+## Task 8: Create a Report
 
 The tables in your lakehouse are automatically added to a default dataset that defines a data model for reporting with Power BI.
 
-1. At the bottom of the SQL Endpoint page, select the **Model** option. The data model schema for the dataset is shown. click on sales table to view the report.
+1. In the **Explorer** pane, select **Model layouts** **(1)** to view the semantic model. Confirm that the **sales** table is included in the model layout **(2)**.
 
-   ![Screenshot of a data model.](./Images/powermodel.png)
+   ![Screenshot of a data model.](./Images/fb_g2_1_21.png)
 
    > **Note**: In this exercise, the data model consists of a single table. In a real-world scenario, you would likely create multiple tables in your lakehouse, each of which would be included in the model. You could then define relationships between these tables in the model.
 
-2. In the menu ribbon, select the **Reporting** tab. Then select **New report**. Click on **Continue**.
+1. On the **Reporting** tab **(1)**, click **New report** **(2)** to begin creating a report using the semantic model.
 
-   ![Screenshot of the new report .](./Images/new-report.png)
+   ![](./Images/fb_g2_1_22.png)
 
-   ![Screenshot of the report designer.](./Images/report-designer-u-1-1.png)
+1. On the **New report with all available data** dialog, ensure the **sales** table is selected, then click **Continue** to proceed.
 
-3. In the **Data** pane on the right, expand the **sales** table. Then select the following fields:
+   ![](./Images/fb_g2_1_23.png)
 
-   - **Item**
-   - **Quantity**
-   - A table visualization is added to the report:
+1. In the **Data** pane, expand the **sales** table **(1)**, then:
 
-     ![Screenshot of a report containing a table.](./Images/table-visualization-u.png)
+   - Select **Item** **(2)** to use it as the category.
+   - Select **Quantity** **(3)** to calculate the total quantity for each item.
+   - A **Table Visualization** **(4)** is automatically added to the report canvas.
 
-4. Hide the **Data** and **Filters** panes to create more space. Then ensure the table visualization is selected and in the **Visualizations** pane, change the visualization to a **Clustered bar chart** and resize it
-   as shown here.
+      ![](./Images/fb_g2_1_24.png)
 
-   ![Screenshot of a report containing a clustered bar chart.](./Images/fabric-1.png)
+1. In the **Visualizations** pane, follow these steps to convert the table into a clustered bar chart:
 
-5. On the **File** menu, select **Save**. Then save the report as **Item Sales Report** in the workspace you created previously.
+   - Click the **Build visual** icon **(1)** to ensure you're in visual editing mode.
+   - Select the **Clustered bar chart** visualization type **(2)**.
+   - The report canvas updates to display the item-wise total quantity in a bar chart **(3)**.
 
-6. Close the browser tab containing the report to return to the SQL endpoint for your lakehouse. Then, in the hub menu bar on the left, select your workspace to verify that it contains the following items:
+      ![](./Images/fb_g2_1_25.png)
+
+1. To save the report, click **File** **(1)** in the top menu, then select **Save** **(2)**.
+
+   ![](./Images/fb_g2_1_26.png)
+
+1. On the **Save your report** screen, enter **Item Sales Report** **(1)** as the name, then click **Save** **(2)** to save it to the selected workspace.
+
+   ![](./Images/fb_g2_1_27.png)
+
+1. Close the browser tab containing the report to return to the SQL endpoint for your lakehouse. Then, in the hub menu bar on the left, select your workspace to verify that it contains the following items:
 
    - Your lakehouse.
    - The SQL analytics endpoint for your lakehouse.
    - A default dataset for the tables in your lakehouse.
    - The **Item Sales Report** report.
 
-     ![Screenshot of a workspace view.](./Images/powermodel1-1.png)
+      ![](./Images/fb_g2_1_28.png)
 
 > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
 >
@@ -284,4 +338,8 @@ The tables in your lakehouse are automatically added to a default dataset that d
 
 <validation step="d75ef970-6298-404c-aeeb-8dafe17b3ac2" />
 
-## **Congratulations! you have successfully completed this lab, please click on next**
+## **Congratulations! You have successfully completed this lab, Please click on next**
+
+![](./Images/bar_g_g_2.png)
+
+#### Happy Learning!!
