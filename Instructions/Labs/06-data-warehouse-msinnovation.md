@@ -318,4 +318,4 @@ If you've finished exploring your data warehouse, you can delete the workspace y
 2. In the **ellipses** menu on the toolbar, select **Workspace settings**.
 3. In the **Other** section, select **Remove this workspace**.
 
-## **Congratulations! you have successfully completed this lab**
+## Congratulations! you have successfully completed this lab
