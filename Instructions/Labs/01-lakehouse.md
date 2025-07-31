@@ -341,3 +341,5 @@ The tables in your lakehouse are automatically added to a default dataset that d
 ## **Congratulations! You have successfully completed this lab, Please click on next**
 
 ![](./Images/bar_g_g_2.png)
+
+#### Happy Learning!!
