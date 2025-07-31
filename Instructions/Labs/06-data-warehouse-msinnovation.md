@@ -103,12 +103,14 @@ A warehouse is a relational database in which you can define tables and other ob
 
    ![](<./Images/cor_e2_fz_2.png>)
 
-9. Use the **Refresh** button on the toolbar to refresh the view. Then in the **Explorer** pane, verify that the **dbo** schema in the data warehouse now contains the following four tables:
+9. Use the **Refresh (1)** button on the toolbar to refresh the view. Then in the **Explorer** pane, verify that the **dbo** schema in the data warehouse now contains the following four **tables (2)**:
 
    - **DimCustomer**
    - **DimDate**
    - **DimProduct**
    - **FactSalesOrder**
+
+   ![](<./Images/gr_fb_e2_12.png>)
 
    > **Tip**: If the schema takes a while to load, just refresh the browser page.
 
