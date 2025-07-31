@@ -126,18 +126,20 @@ A relational data warehouse typically consists of _fact_ and _dimension_ tables.
 
    ![Screenshot of the data warehouse model page.](./Images/model-dw1-1.png)
 
-3. Drag the **ProductKey** field from the **FactSalesOrder** table and drop it on the **ProductKey** field in the **DimProduct** table. Then confirm the following relationship details:
+3. Drag the **ProductKey** field from the **FactSalesOrder** table and drop it on the **ProductKey** field in the **DimProduct** table. In the **New relationship** dialog, confirm the following:
 
-   - **Table 1**: FactSalesOrder
-   - **Column**: ProductKey
-   - **Table 2**: DimProduct
-   - **Column**: ProductKey
-   - **Cardinality**: Many to one (\*:1)
-   - **Cross filter direction**: Single
-   - **Make this relationship active**: Selected
-   - **Assume referential integrity**: Unselected
+   - **From table**: FactSalesOrder **(1)**
+   - **Column**: ProductKey **(2)**
+   - **To table**: DimProduct **(3)**
+   - **Column**: ProductKey **(4)**
+   - **Cardinality**: Many to one (*:1) **(5)**
+   - **Cross-filter direction**: Single **(6)**
+   - **Make this relationship active**: Checked **(7)**
+   - **Click **Save** to create the relationship **(8)**
 
-4. Repeat the process to create many-to-one relationships between the following tables:
+      ![](<./Images/gr_fb_e2_13.png>)
+
+1. Repeat the process to create many-to-one relationships between the following tables:
 
    - **FactOrderSales.CustomerKey** &#8594; **DimCustomer.CustomerKey**
    - **FactOrderSales.SalesOrderDateKey** &#8594; **DimDate.DateKey**
