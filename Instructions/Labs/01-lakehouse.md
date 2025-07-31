@@ -1,4 +1,4 @@
-# Lab-01 : Create and Ingest Data with a Microsoft Fabric Lakehouse
+# Lab-01: Create and Ingest Data with a Microsoft Fabric Lakehouse
 
 ### Overall Estimated Duration: 120 minutes
 
@@ -31,7 +31,7 @@ This lab takes approximately **90** minutes to complete.
 
 > **Note**: You'll need a Microsoft Fabric license to complete this exercise. Complete the previous task to proceed further.
 
-## Task 1 : Create a workspace
+## Task 1: Create a workspace
 
 Before working with data in Fabric, create a workspace with the Fabric trial enabled.
 
@@ -57,7 +57,7 @@ Before working with data in Fabric, create a workspace with the Fabric trial ena
 
    ![](./Images/powerbi-1.png)
 
-1. From the PowerBI home page, select **Account Manager (1)** from the top-right corner to start the **Free trail (2)** of Microsoft Fabric.
+1. From the PowerBI home page, select **Account Manager (1)** from the top-right corner to start the **Free trial (2)** of Microsoft Fabric.
 
    ![Account-manager-start](./Images/freetrial.png)
 
@@ -99,7 +99,7 @@ Before working with data in Fabric, create a workspace with the Fabric trial ena
 
 <validation step="f77f6f86-fc3c-4fca-a8d2-234693b73ba8" />
 
-## Task 2 : Create a Lakehouse
+## Task 2: Create a Lakehouse
 
 Now that you have a workspace, it's time to switch to the _Data engineering_ experience in the portal and create a data lakehouse for your data files.
 
@@ -115,8 +115,6 @@ Now that you have a workspace, it's time to switch to the _Data engineering_ exp
 
    ![](<./Images/fb_g2_1_3.png>)
 
-1. After a minute or so, a new lakehouse will be created.
-
 1. View the new lakehouse, and note that the **Lakehouse explorer** pane on the left enables you to browse tables and files in the lakehouse:
 
    - The **Tables** folder contains tables that you can query using SQL semantics. Tables in a Microsoft Fabric lakehouse are based on the open source _Delta Lake_ file format, commonly used in Apache Spark.
@@ -126,9 +124,9 @@ Now that you have a workspace, it's time to switch to the _Data engineering_ exp
 
      ![](./Images/image91-1.png)
 
-## Task 3 : Upload a file
+## Task 3: Upload a file
 
-Fabric provides multiple ways to load data into the lakehouse, including built-in support for pipelines that copy data external sources and data flows (Gen 2) that you can define using visual tools based on Power Query. However one of the simplest ways to ingest small amounts of data is to upload files or folders from your local computer (or lab VM if applicable).
+Fabric provides multiple ways to load data into the lakehouse, including built-in support for pipelines that copy data from external sources and data flows (Gen 2) that you can define using visual tools based on Power Query. However, one of the simplest ways to ingest small amounts of data is to upload files or folders from your local computer (or lab VM if applicable).
 
 1. Download the **sales.csv** file from [https://raw.githubusercontent.com/MicrosoftLearning/dp-data/main/sales.csv](https://raw.githubusercontent.com/MicrosoftLearning/dp-data/main/sales.csv), saving it as
    **sales.csv** on your local computer (or lab VM if applicable).
@@ -171,7 +169,7 @@ Fabric provides multiple ways to load data into the lakehouse, including built-i
 
    ![](<./Images/fb_cor_1_1.png>)
 
-## Task 4 : Explore shortcuts
+## Task 4: Explore shortcuts
 
 In many scenarios, the data you need to work with in your lakehouse may be stored in some other location. While there are many ways to ingest data into the OneLake storage for your lakehouse, another option is to instead create a _shortcut_. Shortcuts enable you to include externally sourced data in your analytics solution without the overhead and risk of data inconsistency associated with copying it.
 
@@ -181,9 +179,9 @@ In many scenarios, the data you need to work with in your lakehouse may be store
 
 1. View the available data source types for shortcuts. Then close the **New shortcut** dialog box without creating a shortcut.
 
-## Task 5 : Load file data into a table
+## Task 5: Load file data into a table
 
-The sales data you uploaded is in a file, which data analysts and engineers can work with directly by using Apache Spark code. However, in many scenarios you may want to load the data from the file into a table so that you can query it using SQL.
+The sales data you uploaded is in a file, which data analysts and engineers can work with directly by using Apache Spark code. However, in many scenarios, you may want to load the data from the file into a table so that you can query it using SQL.
 
 1. In the **Lakehouse explorer** pane, expand **Lakehouse** **(1)**, then expand **Files** **(2)** and select the **data** folder **(3)**. Confirm that the **sales.csv** file appears in the folder **(4)**.
 
@@ -243,7 +241,7 @@ When you create a lakehouse and define tables in it, a SQL endpoint is automatic
 
    ![Screenshot of a SQL query with results.](./Images/run.png)
 
-## Task 7 : Create a visual query
+## Task 7: Create a visual query
 
 While many data professionals are familiar with SQL, data analysts with Power BI experience can apply their Power Query skills to create visual queries.
 
@@ -279,7 +277,7 @@ While many data professionals are familiar with SQL, data analysts with Power BI
 
    ![Screenshot of a Choose columns dialog box.](<./Images/fb_g2_1_20.png>)
 
-## Task 8 : Create a Report
+## Task 8: Create a Report
 
 The tables in your lakehouse are automatically added to a default dataset that defines a data model for reporting with Power BI.
 
@@ -340,6 +338,6 @@ The tables in your lakehouse are automatically added to a default dataset that d
 
 <validation step="d75ef970-6298-404c-aeeb-8dafe17b3ac2" />
 
-## **Congratulations! you have successfully completed this lab, please click on next**
+## **Congratulations! You have successfully completed this lab, Please click on next**
 
 ![](./Images/bar_g_g_2.png)
