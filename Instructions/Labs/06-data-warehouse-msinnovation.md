@@ -97,8 +97,6 @@ A warehouse is a relational database in which you can define tables and other ob
 
 1. On the **Home** menu tab, use the **New SQL Query** button to create a new query. Then copy and paste the Transact-SQL code from [https://raw.githubusercontent.com/MicrosoftLearning/dp-data/main/create-dw.txt](https://raw.githubusercontent.com/MicrosoftLearning/dp-data/main/create-dw.txt) into the new query pane.
 
-<!-- I had to remove the GO command in this query as well -->
-
 1. Run the query, which creates a simple data warehouse schema and loads some data. The script should take around 30 seconds to run.
 
    ![](<./Images/cor_e2_fz_2.png>)
