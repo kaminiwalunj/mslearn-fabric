@@ -276,7 +276,7 @@ You can easily visualize the data in either a single query or in your data wareh
       - **ProductKey**
       - **ProductAltKey**
 
-   ![Screenshot of the Visualizations pane with the bar chart selected.](./Images/visualizations-pane1at.png)
+      ![](./Images/visualizations-pane1at.png)
 
 1. Now you're ready to build a report and make this dataset available to others.
 
