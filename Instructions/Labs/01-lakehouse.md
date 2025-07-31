@@ -289,26 +289,37 @@ The tables in your lakehouse are automatically added to a default dataset that d
 
    > **Note**: In this exercise, the data model consists of a single table. In a real-world scenario, you would likely create multiple tables in your lakehouse, each of which would be included in the model. You could then define relationships between these tables in the model.
 
-1. In the menu ribbon, select the **Reporting** tab. Then select **New report**. Click on **Continue**.
+1. On the **Reporting** tab **(1)**, click **New report** **(2)** to begin creating a report using the semantic model.
 
-   ![Screenshot of the new report .](./Images/new-report.png)
+   ![](./Images/fb_g2_1_22.png)
 
-   ![Screenshot of the report designer.](./Images/report-designer-u-1-1.png)
+1. On the **New report with all available data** dialog, ensure the **sales** table is selected, then click **Continue** to proceed.
 
-1. In the **Data** pane on the right, expand the **sales** table. Then select the following fields:
+   ![](./Images/fb_g2_1_23.png)
 
-   - **Item**
-   - **Quantity**
-   - A table visualization is added to the report:
+1. In the **Data** pane, expand the **sales** table **(1)**, then:
 
-     ![Screenshot of a report containing a table.](./Images/table-visualization-u.png)
+   - Select **Item** **(2)** to use it as the category.
+   - Select **Quantity** **(3)** to calculate the total quantity for each item.
+   - A **Table Visualization** **(4)** is automatically added to the report canvas.
 
-1. Hide the **Data** and **Filters** panes to create more space. Then ensure the table visualization is selected and in the **Visualizations** pane, change the visualization to a **Clustered bar chart** and resize it
-   as shown here.
+      ![](./Images/fb_g2_1_24.png)
 
-   ![Screenshot of a report containing a clustered bar chart.](./Images/fabric-1.png)
+1. In the **Visualizations** pane, follow these steps to convert the table into a clustered bar chart:
 
-1. On the **File** menu, select **Save**. Then save the report as **Item Sales Report** in the workspace you created previously.
+   - Click the **Build visual** icon **(1)** to ensure you're in visual editing mode.
+   - Select the **Clustered bar chart** visualization type **(2)**.
+   - The report canvas updates to display the item-wise total quantity in a bar chart **(3)**.
+
+      ![](./Images/fb_g2_1_25.png)
+
+1. To save the report, click **File** **(1)** in the top menu, then select **Save** **(2)**.
+
+   ![](./Images/fb_g2_1_26.png)
+
+1. On the **Save your report** screen, enter **Item Sales Report** **(1)** as the name, then click **Save** **(2)** to save it to the selected workspace.
+
+   ![](./Images/fb_g2_1_27.png)
 
 1. Close the browser tab containing the report to return to the SQL endpoint for your lakehouse. Then, in the hub menu bar on the left, select your workspace to verify that it contains the following items:
 
@@ -317,7 +328,7 @@ The tables in your lakehouse are automatically added to a default dataset that d
    - A default dataset for the tables in your lakehouse.
    - The **Item Sales Report** report.
 
-     ![Screenshot of a workspace view.](./Images/powermodel1-1.png)
+      ![](./Images/fb_g2_1_28.png)
 
 > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
 >
@@ -330,3 +341,5 @@ The tables in your lakehouse are automatically added to a default dataset that d
 <validation step="d75ef970-6298-404c-aeeb-8dafe17b3ac2" />
 
 ## **Congratulations! you have successfully completed this lab, please click on next**
+
+![](./Images/bar_g_g_2.png)
