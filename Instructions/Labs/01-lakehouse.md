@@ -275,7 +275,7 @@ While many data professionals are familiar with SQL, data analysts with Power BI
 
    - When you're done, the results pane under the visual query shows the number of line items for each sales order.
 
-   ![Screenshot of a Choose columns dialog box.](<./Images/fb_g2_1_20.png>)
+      ![](<./Images/fb_g2_1_20.png>)
 
 ## Task 8: Create a Report
 
