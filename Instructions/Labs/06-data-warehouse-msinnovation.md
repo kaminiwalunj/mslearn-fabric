@@ -26,29 +26,23 @@ This lab will take approximately **30** minutes to complete.
 
 ## Task 1 : Create a Data Warehouse
 
-Now that you have a workspace, it's time to create a data warehouse.
+1. In the Power BI portal, in the workspace **fabriclab_<inject key="DeploymentID" enableCopy="false"/>**, then click **Power BI** **(1)** on the left navigation bar, and click **New item** **(2)** to create a new workspace item.
 
-1. Choose the workspace **fabriclab\_<inject key="DeploymentID" enableCopy="false"/>**
+   ![](<./Images/gr_fb_e2_1.png>)
 
-1. Click on **+New Item** from the workspace.
+1. On the **New item** page, search for **Warehouse** in the search bar **(1)**, then select the **Warehouse** tile **(2)** to create a new warehouse.
 
-   ![](<./Images/powerbi-01(1).png>)
+   ![](<./Images/gr_fb_e2_2.png>)
 
-1. Search for **warehouse** and select it .
+1. On the **New warehouse** pane, enter **myDataWarehouse** **(1)** in the Name field, then click **Create** **(2)** to provision the warehouse.
 
-   ![Screenshot of a new warehouse.](./Images/warehouse.png)
-
-1. Name it as **myDataWarehouse** and click on **Create**.
-
-   After a minute or so, a new warehouse will be created:
-
-   ![Screenshot of a new warehouse.](./Images/mydatawarehouse.png)
+   ![](<./Images/gr_fb_e2_3.png>)
 
 ## Task 2 : Create tables and insert data
 
 A warehouse is a relational database in which you can define tables and other objects.
 
-1. In your new warehouse, select the **Create tables with T-SQL** tile, and replace the default SQL code with the following CREATE TABLE statement:
+1. In your new warehouse, select the **Create tables** with **T-SQL** tile, and replace the default SQL code with the following CREATE TABLE statement:
 
    ![Screenshot of a new warehouse.](<./Images/t-sql(1).png>)
 
@@ -66,9 +60,21 @@ A warehouse is a relational database in which you can define tables and other ob
 
 2. Use the **&#9655; Run** button to run the SQL script, which creates a new table named **DimProduct** in the **dbo** schema of the data warehouse.
 
-3. Use the **Refresh** button on the toolbar to refresh the view. Then, in the **Explorer** pane, expand **Schemas** > **dbo** > **Tables** and verify that the **DimProduct** table has been created.
+   ![](<./Images/gr_fb_e2_4.png>)
 
-4. On the **Home** menu tab, use the **New SQL Query** button to create a new query, and enter the following INSERT statement:
+3. To refresh the Explorer pane and view the latest changes, click the **Refresh** icon in the top left menu bar.
+
+   ![](<./Images/gr_fb_e2_5.png>)
+
+3. In the **Explorer** pane, expand **myDataWarehouse** **(1)**, then expand the **Schemas** section **(2)** to view the available schema objects including `dbo`, `INFORMATION_SCHEMA`, `queryinsights`, and `sys`.
+
+   ![](<./Images/gr_fb_e2_6.png>)
+
+4. On the **Home** tab, click the dropdown next to **New SQL query** **(1)**, then select **New SQL query** **(2)** to open a new query editor
+
+   ![](<./Images/gr_fb_e2_7.png>)
+
+4. After inserting the query, click **Run** to execute it. This query will insert three rows into the **DimProduct** table.
 
    ```sql
    INSERT INTO dbo.DimProduct
@@ -79,15 +85,23 @@ A warehouse is a relational database in which you can define tables and other ob
    GO
    ```
 
-5. Run the new query to insert three rows into the **DimProduct** table.
+   ![](<./Images/gr_fb_e2_8.png>)
 
-6. When the query has finished, select the **Data** tab at the bottom of the page in the data warehouse. In the **Explorer** pane, select the **DimProduct** table and verify that the three rows have been added to the table.
+6. In the **Explorer** pane, expand **myDataWarehouse** **(1)**, then expand **Schemas** **(2)**, **dbo** **(3)**, and **Tables** **(4)**, then select the **DimProduct** table **(5)** and verify that the three inserted rows are displayed in the data preview.
+
+   ![](<./Images/gr_fb_e2_9.png>)
+
+4. On the **Home** tab, click the dropdown next to **New SQL query** **(1)**, then select **New SQL query** **(2)** to open a new query editor
+
+   ![](<./Images/gr_fb_e2_10.png>)
 
 7. On the **Home** menu tab, use the **New SQL Query** button to create a new query. Then copy and paste the Transact-SQL code from [https://raw.githubusercontent.com/MicrosoftLearning/dp-data/main/create-dw.txt](https://raw.githubusercontent.com/MicrosoftLearning/dp-data/main/create-dw.txt) into the new query pane.
 
 <!-- I had to remove the GO command in this query as well -->
 
 8. Run the query, which creates a simple data warehouse schema and loads some data. The script should take around 30 seconds to run.
+
+   ![](<./Images/cor_e2_fz_2.png>)
 
 9. Use the **Refresh** button on the toolbar to refresh the view. Then in the **Explorer** pane, verify that the **dbo** schema in the data warehouse now contains the following four tables:
 
