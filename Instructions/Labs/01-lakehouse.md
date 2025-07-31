@@ -39,7 +39,7 @@ Before working with data in Fabric, create a workspace with the Fabric trial ena
 
    - On the Microsoft Fabric page, enter your **email:** <inject key="AzureAdUserEmail"></inject> **(1)** and click **Submit** **(2)**.
 
-     ![](./Images/fb_ex1_0.png)
+     ![](./Images/fb_g2_1_0.png)
 
    - On the **Enter password** screen, enter your **Password:** <inject key="AzureAdUserPassword"></inject> **(1)** and click **Sign in** **(2)**.
 
@@ -105,15 +105,15 @@ Now that you have a workspace, it's time to switch to the _Data engineering_ exp
 
 1. Ensure the **Power BI** **(1)** icon is visible in the left pane. If available, click it, then click **New item** **(2)** at the top of the workspace.
 
-   ![](<./Images/powerbi-01(1).png>)
+   ![](<./Images/fb_g2_1_1.png>)
 
 1. Search for **Lakehouse (1)** and select the option labeled **Lakehouse (2)** from the results.
 
-   ![](<./Images/lakehouse(1).png>)
+   ![](<./Images/fb_g2_1_2.png>)
 
-1. Create a new **Lakehouse (1)** with a name of your choice, and select **Create (2)**.
+1. On the **New lakehouse** pane, enter **Lakehouse** **(1)** in the **Name** field, then click **Create** **(2)** to proceed.
 
-   ![](<./Images/newlakehouse(1).png>)
+   ![](<./Images/fb_g2_1_3.png>)
 
 1. After a minute or so, a new lakehouse will be created.
 
@@ -139,23 +139,37 @@ Fabric provides multiple ways to load data into the lakehouse, including built-i
 
    - OR If you are using the lab virtual machine (lab VM) provided to you, you can get the file from the **C:\LabFiles\dp-data-main** directory.
 
-1. Return to the web browser tab containing your lakehouse, and in the **ellipses (1)** menu for the **Files** folder in the **Lakehouse explorer** pane, select **New subfolder (2)**, and create a subfolder named **data**.
+1. On the **Lakehouse explorer** pane, click the ellipses **(1)** next to the **Files** folder, then select **New subfolder** **(2)**.
 
-   ![](<./Images/image10(1).png>)
+   ![](<./Images/fb_g2_1_4.png>)
 
-   ![](./Images/image11.png)
+1. On the **New subfolder** pane, enter **data** **(1)** in the **Folder name** field, then click **Create** **(2)** to add the subfolder.
 
-1. In the **ellipses (1)** menu for the new **data** folder, select **Upload (2)** and **Upload files (3)**, and then upload the **sales.csv** file from your local computer (or lab VM if applicable).
+   ![](<./Images/fb_g2_1_5.png>)
 
-   ![](<./Images/image12-1(1).png>)
+1. On the **Lakehouse explorer** pane, click the ellipses **(1)** next to the **data** folder, hover over **Upload** **(2)**, then select **Upload files** **(3)**.
 
-   ![](./Images/image13.png)
+   ![](<./Images/fb_g2_1_6.png>)
 
-1. After the file has been uploaded, select the **Files/data** folder and verify that the **sales.csv** file has been uploaded, as shown here:
+1. On the **Upload files** dialog, click the folder icon on the right to browse and select the **sales.csv** file from your local or lab machine.
 
-   ![Screenshot of uploaded sales.csv file in a lakehouse.](./Images/image14.png)
+   ![](<./Images/fb_g2_1_7.png>)
+
+1. On the **Upload files** dialog, after selecting the **sales.csv** file, click **Upload** **(1)** to upload the file into the `data` folder.
+
+   ![](<./Images/fb_g2_1_9.png>)
+
+1. Once the upload is complete and the status shows **Completed**, click the **Close** icon at the top right to exit the **Upload files** dialog.
+
+   ![](<./Images/fb_g2_1_10.png>)
+
+1. In the **Lakehouse explorer** pane, expand **Lakehouse** **(1)**, then expand **Files** **(2)** and select the **data** **(3)** folder. Verify that the **sales.csv** **(4)** file has been uploaded successfully.
+
+   ![Screenshot of uploaded sales.csv file in a lakehouse.](./Images/fb_g2_1_11.png)
 
 1. Select the **sales.csv** file to see a preview of its contents.
+
+   ![](<./Images/fb_cor_1_!.png>)
 
 ## Task 4 : Explore shortcuts
 
