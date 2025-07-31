@@ -215,12 +215,12 @@ The sales data you uploaded is in a file, which data analysts and engineers can 
 
    > **Note:** Files for a delta table are stored in _Parquet_ format, and include a subfolder named **\_delta_log** in which details of transactions applied to the table are logged.
 
-## Task 6 : Use SQL to query tables
+## Task 6: Use SQL to query tables
 
 When you create a lakehouse and define tables in it, a SQL endpoint is automatically created through which the tables can be queried using SQL `SELECT` statements.
 
 1. At the top-right of the Lakehouse page, switch from **Lakehouse (1)** to **SQL analytics endpoint (2)**. Then wait a short time until the SQL query endpoint for your lakehouse opens in a visual interface from which you can query
-   its tables, as shown here:
+   It's tables, as shown here:
 
    ![Screenshot of the SQL endpoint page.](./Images/fb_g2_1_15.png)
 
