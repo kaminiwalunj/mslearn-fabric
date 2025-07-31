@@ -135,7 +135,7 @@ A relational data warehouse typically consists of _fact_ and _dimension_ tables.
    - **Cardinality**: Many to one (*:1) **(5)**
    - **Cross-filter direction**: Single **(6)**
    - **Make this relationship active**: Checked **(7)**
-   - **Click **Save** to create the relationship **(8)**
+   - Click **Save** **(8)** to create the relationship.
 
       ![](<./Images/gr_fb_e2_13.png>)
 
@@ -156,7 +156,11 @@ Since the data warehouse is a relational database, you can use SQL to query its 
 
 Most queries in a relational data warehouse involve aggregating and grouping data (using aggregate functions and GROUP BY clauses) across related tables (using JOIN clauses).
 
-1. Create a new SQL Query, and run the following code:
+1. On the **Home** tab, click the dropdown next to **New SQL query** **(1)**, then select **New SQL query** **(2)** to open a new query editor
+
+   ![](<./Images/gr_fb_e2_10.png>)
+
+1. Run the following code:
 
    ```sql
    SELECT  d.[Year] AS CalendarYear,
@@ -169,7 +173,9 @@ Most queries in a relational data warehouse involve aggregating and grouping dat
    ORDER BY CalendarYear, MonthOfYear;
    ```
 
-   Note that the attributes in the time dimension enable you to aggregate the measures in the fact table at multiple hierarchical levels - in this case, year and month. This is a common pattern in data warehouses.
+   ![](<./Images/gr_fb_e2_14.png>)
+
+   > **Note:** that the attributes in the time dimension enable you to aggregate the measures in the fact table at multiple hierarchical levels - in this case, year and month. This is a common pattern in data warehouses.
 
 2. Modify the query as follows to add a second dimension to the aggregation.
 
@@ -187,6 +193,8 @@ Most queries in a relational data warehouse involve aggregating and grouping dat
    ```
 
 3. Run the modified query and review the results, which now include sales revenue aggregated by year, month, and sales region.
+
+   ![](<./Images/gr_fb_e2_15.png>)
 
 ## Task 5 : Create a View
 
@@ -222,7 +230,9 @@ A data warehouse in Microsoft Fabric has many of the same capabilities you may b
 
 Instead of writing SQL code, you can use the graphical query designer to query the tables in your data warehouse. This experience is similar to Power Query online, where you can create data transformation steps with no code. For more complex tasks, you can use Power Query's M (Mashup) language.
 
-1. On the **Home** menu, select **New visual query**.
+1. On the **Home** tab, click the dropdown arrow next to **New SQL query** **(1)**, then select **New visual query** **(2)** to open the visual query editor.
+
+   ![Screenshot of a Visual query.](./Images/fb_g2_1_17.png)
 
 2. Drag **FactSalesOrder** onto the **canvas**. Notice that a preview of the table is displayed in the **Preview** pane below.
 
@@ -232,7 +242,9 @@ Instead of writing SQL code, you can use the graphical query designer to query t
 
    ![Screenshot of the canvas with the FactSalesOrder table selected.](./Images/visual-query-merge1.png)
 
-5. In the **Merge queries** window, select **DimProduct** as the right table for merge. Select **ProductKey** in both queries, leave the default **Left outer** join type, and click **OK**.
+5. In the **Merge queries** window, select **DimProduct** as the right table for merge **(1)**, then select the **ProductKey** column in both the source table **(2)** and the right table **(3)**, keep the join kind as **Left outer** **(4)**, and click **OK** to proceed **(5)**.
+
+   ![Screenshot of a Visual query.](./Images/cor_e2_fz_4.png)
 
 6. In the **Preview**, note that the new **DimProduct** column has been added to the FactSalesOrder table. Expand the column by clicking the arrow to the right of the column name. Select **ProductName** and click **OK**.
 
