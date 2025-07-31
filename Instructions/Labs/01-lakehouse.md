@@ -169,7 +169,7 @@ Fabric provides multiple ways to load data into the lakehouse, including built-i
 
 1. Select the **sales.csv** file to see a preview of its contents.
 
-   ![](<./Images/fb_cor_1_!.png>)
+   ![](<./Images/fb_cor_1_1.png>)
 
 ## Task 4 : Explore shortcuts
 
@@ -185,13 +185,17 @@ In many scenarios, the data you need to work with in your lakehouse may be store
 
 The sales data you uploaded is in a file, which data analysts and engineers can work with directly by using Apache Spark code. However, in many scenarios you may want to load the data from the file into a table so that you can query it using SQL.
 
-1. On the **Home** page, select the **Files (1) > Data (2)** folder so you can see the **sales.csv (3)** file it contains.
+1. In the **Lakehouse explorer** pane, expand **Lakehouse** **(1)**, then expand **Files** **(2)** and select the **data** folder **(3)**. Confirm that the **sales.csv** file appears in the folder **(4)**.
 
-   ![](<./Images/files-data(1).png>)
+   ![](<./Images/fb_g2_1_11.png>)
 
-1. In the **ellipses (1)** menu for the **sales.csv** file, select **Load to Tables (2)** and click on **New Table (3)**.
+1. In the **data** folder, click the ellipses next to the **sales.csv** file to open the context menu.
 
-   ![](./Images/loadtables.png)
+   ![](<./Images/fb_g2_1_12.png>)
+
+1. In the context menu, hover over **Load to Tables** **(1)**, then select **New table** **(2)** to start creating a table from the CSV file.
+
+   ![](./Images/fb_cor_1_2.png)
 
 1. In the **Load file to new table** dialog box, set the table name to **sales (1)** and confirm the load operation by selecting **Load (2)**. Then wait for the table to be created and loaded.
 
@@ -199,13 +203,17 @@ The sales data you uploaded is in a file, which data analysts and engineers can 
 
    ![](./Images/salesorder.png)
 
-1. In the **Lakehouse explorer** pane, select the **sales** table that has been created to view the data.
+1. In the **Lakehouse explorer** pane, expand **Lakehouse** **(1)**, then expand **Tables** and select **sales** **(2)**. Confirm that the data from the **sales.csv** file is now loaded and displayed in table format **(3)**.
 
-   ![Screenshot of a table preview.](./Images/table-preview-u.png)
+   ![Screenshot of a table preview.](./Images/fb_g2_1_13.png)
 
 1. In the **ellipses (1)** menu for the **sales** table, select **View files (2)** to see the underlying files for this table
 
    ![Screenshot of a table preview.](./Images/tables.png)
+
+1. In the **File view** for the **sales** table, observe that it contains Delta Lake log files and Parquet data files. These represent the physical storage format of the table.
+
+   ![Screenshot of a table preview.](./Images/fb_g2_1_14.png)
 
    > **Note:** Files for a delta table are stored in _Parquet_ format, and include a subfolder named **\_delta_log** in which details of transactions applied to the table are logged.
 
@@ -216,9 +224,13 @@ When you create a lakehouse and define tables in it, a SQL endpoint is automatic
 1. At the top-right of the Lakehouse page, switch from **Lakehouse (1)** to **SQL analytics endpoint (2)**. Then wait a short time until the SQL query endpoint for your lakehouse opens in a visual interface from which you can query
    its tables, as shown here:
 
-   ![Screenshot of the SQL endpoint page.](./Images/sqlendpoints.png)
+   ![Screenshot of the SQL endpoint page.](./Images/fb_g2_1_15.png)
 
-1. Use the **New SQL query** button to open a new query editor, and enter the following SQL query:
+1. On the **Home** tab, click the dropdown arrow next to **New SQL query** **(1)**, then select **New SQL query** **(2)** to open a new query editor.
+
+   ![Screenshot of the SQL endpoint page.](./Images/fb_g2_1_16.png)
+
+1. In the new query editor, enter the following SQL query to calculate the total revenue by item:
 
    ```sql
    SELECT Item, SUM(Quantity * UnitPrice) AS Revenue
@@ -226,8 +238,6 @@ When you create a lakehouse and define tables in it, a SQL endpoint is automatic
    GROUP BY Item
    ORDER BY Revenue DESC;
    ```
-
-   ![Screenshot of the new sql query.](./Images/new-sql-query.png)
 
 1. Use the **&#9655; Run** button to run the query and view the results, which should show the total revenue for each product.
 
@@ -237,36 +247,45 @@ When you create a lakehouse and define tables in it, a SQL endpoint is automatic
 
 While many data professionals are familiar with SQL, data analysts with Power BI experience can apply their Power Query skills to create visual queries.
 
-1. On the toolbar, select **New SQL Query (1) > New visual query (2)**.
+1. On the **Home** tab, click the dropdown arrow next to **New SQL query** **(1)**, then select **New visual query** **(2)** to open the visual query editor.
 
-   ![Screenshot of a Visual query.](./Images/new-visal-query.png)
+   ![Screenshot of a Visual query.](./Images/fb_g2_1_17.png)
 
-1. Drag the **sales** table to the new visual query editor pane that opens to create a **Power Query (2)** as shown here:
+1. Drag the **sales (1)** table to the new visual query editor pane that opens to create a **Power Query (2)** as shown here:
 
    ![Screenshot of a Visual query.](./Images/salesquery.png)
 
-1. In the **Manage columns (1)** menu, select **Choose columns (2)**. Then select only the **SalesOrderNumber** and **SalesOrderLineNumber** columns and click **OK**.
+1. In the **SQL query 1** pane, click **Manage columns** **(1)** and select **Choose columns** **(2)**.
 
    ![Screenshot of a Choose columns dialog box.](./Images/choosecolumns.png)
 
-1. In the **Transform** menu, select **Group by**. Then group the data by using the following **Basic (1)** settings:
+1. In the **Choose columns** dialog, select only **SalesOrderNumber** and **SalesOrderLineNumber** **(1)**, then click **OK** **(2)**.
 
-   - **Group by (2)**: SalesOrderNumber
-   - **New column name (3)**: LineItems
-   - **Operation (4)**: Count distinct values
-   - **Column (5)**: SalesOrderLineNumber
+   ![Screenshot of a Choose columns dialog box.](./Images/fb_g2_1_18.png)
+
+1. On the **Visual query 1** tab, click **Transform** **(1)**, then select **Group by** **(2)** to start grouping the selected columns.
+
+   ![Screenshot of a Choose columns dialog box.](./Images/fb_g2_1_19.png)
+
+1. On the **Group by** dialog, configure the following **Basic** **(1)** settings:
+
+   - **Group by**: SalesOrderNumber **(2)**
+   - **New column name**: LineItems **(3)**
+   - **Operation**: Count distinct values **(4)**
+   - **Column**: SalesOrderLineNumber **(5)**
+   - Click **OK** **(6)** to apply the grouping.
 
    - When you're done, the results pane under the visual query shows the number of line items for each sales order.
 
-   ![Screenshot of a Choose columns dialog box.](<./Images/salesorderlinenumber(1).png>)
+   ![Screenshot of a Choose columns dialog box.](<./Images/fb_g2_1_20.png>)
 
 ## Task 8 : Create a Report
 
 The tables in your lakehouse are automatically added to a default dataset that defines a data model for reporting with Power BI.
 
-1. At the bottom of the SQL Endpoint page, select the **Model** option. The data model schema for the dataset is shown. click on sales table to view the report.
+1. In the **Explorer** pane, select **Model layouts** **(1)** to view the semantic model. Confirm that the **sales** table is included in the model layout **(2)**.
 
-   ![Screenshot of a data model.](./Images/powermodel.png)
+   ![Screenshot of a data model.](./Images/fb_g2_1_21.png)
 
    > **Note**: In this exercise, the data model consists of a single table. In a real-world scenario, you would likely create multiple tables in your lakehouse, each of which would be included in the model. You could then define relationships between these tables in the model.
 
