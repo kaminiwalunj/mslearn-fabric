@@ -97,8 +97,6 @@ A warehouse is a relational database in which you can define tables and other ob
 
 1. On the **Home** menu tab, use the **New SQL Query** button to create a new query. Then copy and paste the Transact-SQL code from [https://raw.githubusercontent.com/MicrosoftLearning/dp-data/main/create-dw.txt](https://raw.githubusercontent.com/MicrosoftLearning/dp-data/main/create-dw.txt) into the new query pane.
 
-<!-- I had to remove the GO command in this query as well -->
-
 1. Run the query, which creates a simple data warehouse schema and loads some data. The script should take around 30 seconds to run.
 
    ![](<./Images/cor_e2_fz_2.png>)
@@ -110,9 +108,9 @@ A warehouse is a relational database in which you can define tables and other ob
    - **DimProduct**
    - **FactSalesOrder**
 
-   ![](<./Images/gr_fb_e2_12.png>)
+      ![](<./Images/gr_fb_e2_12.png>)
 
-   > **Tip**: If the schema takes a while to load, just refresh the browser page.
+      > **Tip**: If the schema takes a while to load, just refresh the browser page.
 
 ## Task 3: Define a Data Model
 
@@ -144,9 +142,9 @@ A relational data warehouse typically consists of _fact_ and _dimension_ tables.
    - **FactOrderSales.CustomerKey** &#8594; **DimCustomer.CustomerKey**
    - **FactOrderSales.SalesOrderDateKey** &#8594; **DimDate.DateKey**
 
-   When all of the relationships have been defined, the model should look like this:
+      ![](./Images/dw-relationships1-1-1.png)
 
-   ![Screenshot of the model with relationships.](./Images/dw-relationships1-1-1.png)
+      > **Note**: When all of the relationships have been defined, the model should look like this.
 
 ## Task 4: Query data Warehouse tables
 
@@ -278,7 +276,7 @@ You can easily visualize the data in either a single query or in your data wareh
       - **ProductKey**
       - **ProductAltKey**
 
-   ![Screenshot of the Visualizations pane with the bar chart selected.](./Images/visualizations-pane1at.png)
+      ![](./Images/visualizations-pane1at.png)
 
 1. Now you're ready to build a report and make this dataset available to others.
 
