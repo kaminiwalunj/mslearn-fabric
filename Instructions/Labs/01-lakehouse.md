@@ -74,6 +74,8 @@ Before working with data in Fabric, create a workspace with the Fabric trial ena
    ![](./Images/fb_ex1_6.png)
 
    > **Note:** You now have a **Fabric (Preview) trial** that includes a **Power BI trial** and a **Fabric (Preview) trial capacity**.
+   
+   > **Note:** Fabric trial gives full access to most features, but excludes **Copilot**, **trusted workspace access**, and **private link**.
 
 1. In the menu bar on the left, select **Workspaces (1)** (the icon looks similar to &#128455;). Select **+ New Workspace (2)**
 
