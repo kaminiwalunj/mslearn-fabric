@@ -1,6 +1,6 @@
 # Lab-01: Create and Ingest Data with a Microsoft Fabric Lakehouse
 
-### Estimated Duration: 120 minutes
+### Estimated Duration: 120 Minutes
 
 ## Overview
 
