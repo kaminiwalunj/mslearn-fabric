@@ -17,6 +17,9 @@ This lab will take approximately **45** minutes to complete.
 
 > **Note**: You'll need a Microsoft Fabric license to complete this exercise. Complete the previous task to proceed further.
 
+**Fabric trial provides access to most features, but excludes Copilot, private links, and trusted workspace access ([learn more](https://learn.microsoft.com/en-us/fabric/fundamentals/fabric-trial#overview-of-the-trial-capacity)).**
+
+
 ## Task 1 : Create a workspace
 
 Before working with data in Fabric, create a workspace with the Fabric trial enabled.
