@@ -39,6 +39,9 @@ The architecture for this lab involves the following key components:
 - **Pipeline** : Orchestrates the movement and transformation of data, ensuring seamless integration and data flow between different components.
 - **Visual Query Tool** :  Enables the creation of visual queries and views, allowing participants to easily analyze and visualize data, and draw actionable insights from the lab's dataset.
 
+**Fabric trial provides access to most features, but excludes Copilot, private links, and trusted workspace access ([learn more](https://learn.microsoft.com/en-us/fabric/fundamentals/fabric-trial#overview-of-the-trial-capacity)).**
+
+
 ## Getting Started with Lab
 
 Once you're ready to dive in, your virtual machine and lab guide will be right at your fingertips within your web browser.
@@ -95,3 +98,4 @@ Now, click on **Next** from the lower right corner to move on to the next page.
 ![Start Your Azure Journey](./Images/next.png)
 
 ### Happy Learning!!
+
