@@ -8,7 +8,7 @@ The foundation of Microsoft Fabric is a Lakehouse, which is built on top of the 
 Lakehouse is a unified platform that combines:
 
 1. The flexible and scalable storage of a data lake
-2. The ability to query and analyze data of a data warehouse
+2. The ability to query and analyze data in a data warehouse
 
 Imagine your company has been using a data warehouse to store structured data from its transactional systems, such as order history, inventory levels, and customer information. You have
 also collected unstructured data from social media, website logs, and third-party sources that are difficult to manage and analyze using the existing data warehouse infrastructure. Your
@@ -338,7 +338,7 @@ The tables in your lakehouse are automatically added to a default dataset that d
 
 <validation step="d75ef970-6298-404c-aeeb-8dafe17b3ac2" />
 
-## **Congratulations! You have successfully completed this lab, Please click on next**
+## **Congratulations! You have successfully completed this lab. Please click on next**
 
 ![](./Images/bar_g_g_2.png)
 
