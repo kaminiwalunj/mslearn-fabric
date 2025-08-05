@@ -52,6 +52,9 @@ This lab introduces the Microsoft Fabric Lakehouse, a unified data platform that
 
 - **Report Building:** The creation of interactive reports using Power BI, based on the data stored in the Lakehouse. This involves designing report layouts, selecting visualizations, and configuring report elements to effectively display data insights.
 
+**Fabric trial provides access to most features, but excludes Copilot, private links, and trusted workspace access ([learn more](https://learn.microsoft.com/en-us/fabric/fundamentals/fabric-trial#overview-of-the-trial-capacity)).**
+
+
 ## Getting Started with the lab
 
 ## Accessing Your Lab Environment
