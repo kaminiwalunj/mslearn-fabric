@@ -326,4 +326,4 @@ If you've finished exploring your data warehouse, you can delete the workspace y
 
 ## Congratulations! You have successfully completed this lab
 
-#### Happy Learning!!
+You've gained practical skills in setting up and working with Microsoft Fabric Lakehouse and Data Warehouse - ingesting, transforming, querying data, and visualizing insights with Power BI.
