@@ -29,8 +29,6 @@ In this lab, you will complete the following tasks:
 
 Tables in a Microsoft Fabric lakehouse are based on the open source *Delta Lake* format for Apache Spark. Delta Lake adds support for relational semantics for both batch and streaming data operations, and enables the creation of a Lakehouse architecture in which Apache Spark can be used to process and query data in tables that are based on underlying files in a data lake.
 
-This exercise should take approximately **40** minutes to complete
-
 ## Task 1 : Create a workspace
 
 Before working with data in Fabric, create a workspace with the Fabric trial enabled.
@@ -89,7 +87,7 @@ Now that you have a workspace, it's time to switch to the *Data engineering* exp
 
 1. In the newly created workspace, click the **+ New Item button** and search and select **Lakehouse**.
 
-   ![](./Images/lakehouse01.png)
+   ![](./Images/LAKEHOUSE.png)
  
 2. create a new **Lakehouse** with a name **fabric_lakehouse (1)** and click on **Create (2)**.
 
@@ -423,4 +421,4 @@ Delta lake supports streaming data. Delta tables can be a *sink* or a *source* f
 
 In this lab, you created a workspace, set up a lakehouse, and uploaded data for processing. You explored data in a DataFrame, converted it into Delta tables, and utilized Delta’s versioning and time-travel features for efficient data management. Finally, you implemented streaming data pipelines using Delta tables, gaining practical experience in ingesting, transforming, and managing data within a scalable and robust data architecture.
 
-### You have successfully completed the lab.
+### Click on Next >> to proceed with the next lab.
