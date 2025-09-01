@@ -221,4 +221,4 @@ In this exercise, you implemented a data ingestion solution that uses a pipeline
 
 In this lab, you created a pipeline to automate data processing, developed a notebook for writing and testing your pipeline logic, and then modified the pipeline to refine its functionality. These tasks helped you gain practical experience in building and optimizing data workflows within a pipeline.
 
-### You have successfully completed the lab
+### You have successfully completed the lab.
