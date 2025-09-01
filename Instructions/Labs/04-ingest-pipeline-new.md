@@ -24,8 +24,6 @@ A data lakehouse is a common analytical data store for cloud-scale analytics sol
 
 Fabric also supports Apache Spark, enabling you to write and run code to process data at scale. By combining the pipeline and Spark capabilities in Fabric, you can implement complex data ingestion logic that copies data from external sources into the OneLake storage on which the lakehouse is based, and then uses Spark code to perform custom data transformations before loading it into tables for analysis.
 
-This lab will take approximately **60** minutes to complete.
-
 > **Note**: You'll need a Microsoft Fabric license to complete this exercise. Complete the previous task to proceed further.
 
 ## Task 1 : Create a pipeline
@@ -223,14 +221,4 @@ In this exercise, you implemented a data ingestion solution that uses a pipeline
 
 In this lab, you created a pipeline to automate data processing, developed a notebook for writing and testing your pipeline logic, and then modified the pipeline to refine its functionality. These tasks helped you gain practical experience in building and optimizing data workflows within a pipeline.
 
-## Clean up resources
-
-In this exercise, you've learned how to implement a pipeline in Microsoft Fabric.
-
-If you've finished exploring your lakehouse, you can delete the workspace you created for this exercise.
-
-1. In the bar on the left, select the icon for your workspace to view all of the items it contains.
-2. In the **...** menu on the toolbar, select **Workspace settings**.
-3. In the **Other** section, select **Remove this workspace**.
-
-## You have successfully completed the lab
+### You have successfully completed the lab
