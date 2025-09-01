@@ -87,7 +87,7 @@ Now that you have a workspace, it's time to switch to the *Data engineering* exp
 
 1. In the newly created workspace, click the **+ New Item button** and search and select **Lakehouse**.
 
-   ![](./Images/lakehouse01.png)
+   ![](./Images/LAKEHOUSE.png)
  
 2. create a new **Lakehouse** with a name **fabric_lakehouse (1)** and click on **Create (2)**.
 
