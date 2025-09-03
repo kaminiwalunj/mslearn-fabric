@@ -42,7 +42,6 @@ Large-scale data analytics solutions have traditionally been built around a _dat
 
 In Microsoft Fabric, a lakehouse provides highly scalable file storage in a _OneLake_ store (built on Azure Data Lake Store Gen2) with a metastore for relational objects such as tables and views based on the open source _Delta Lake_ table format. Delta Lake enables you to define a schema of tables in your lakehouse that you can query using SQL.
 
-> **Note**: You'll need a Microsoft Fabric license to complete this exercise. Complete the previous task to proceed further.
 
 ## Task 1: Create a workspace
 
