@@ -21,7 +21,7 @@ SQL.
 
 ![](./Images/Create-and-ingest-data-with-MS-fabric-lakehouse.png)
 
-## Get started with lakehouses in Microsoft Fabric
+## Get started with Microsoft Fabric with Its Lakehouses
 
 Large-scale data analytics solutions have traditionally been built around a _data warehouse_, in which data is stored in relational tables and queried using SQL. The growth in "big data" (characterized by high _volumes_, _variety_, and _velocity_ of new data assets) together with the availability of low-cost storage and cloud-scale distributed compute technologies has led to an alternative approach to analytical data storage; the _data lake_. In a data lake, data is stored as files without imposing a fixed schema for storage. Increasingly, data engineers and analysts seek to benefit from the best features of both of these approaches by combining them in a _data lakehouse_; in which data is stored in files in a data lake and a relational schema is applied to them as a metadata layer so that they can be queried using traditional SQL semantics.
 
