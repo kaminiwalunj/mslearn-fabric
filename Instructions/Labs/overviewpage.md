@@ -1,4 +1,4 @@
-# Get started with Lakehouse in Microsoft Fabric
+# Get started with Microsoft Fabric with Its Lakehouses
 
 ## Overall Estimated Duration: 4 Hours
 
