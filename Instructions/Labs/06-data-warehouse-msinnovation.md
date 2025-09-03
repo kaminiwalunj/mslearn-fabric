@@ -1,4 +1,4 @@
-# Lab-02: Analyze data in a Data Warehouse
+# Lab 02: Analyze data in a Data Warehouse
 
 ### Estimated Duration: 120 Minutes
 
