@@ -130,7 +130,7 @@ A relational data warehouse typically consists of fact and dimension tables. The
 
    ![](<./Images/task3-2.jpg>)
 
-1. In the hub menu bar on the left, Click on your workspace **Fabriclab_XXXXX**.
+1. In the hub menu bar on the left, Click on your workspace **Fabriclab\_<inject key="DeploymentID" enableCopy="false"/> (1)**
 
    ![](<./Images/task3-3.jpg>)
 
@@ -176,7 +176,7 @@ Since the data warehouse is a relational database, you can use SQL to query its 
 
 Most queries in a relational data warehouse involve aggregating and grouping data (using aggregate functions and GROUP BY clauses) across related tables (using JOIN clauses).
 
-1. In the hub menu bar on the left, Click on your workspace **Fabriclab_XXXXX** **(1)** and select the **myDataWarehouse** **(2)** warehouse.
+1. In the hub menu bar on the left, Click on your workspace **Fabriclab\_<inject key="DeploymentID" enableCopy="false"/> (1)** and select the **myDataWarehouse** **(2)** warehouse.
 
    ![](<./Images/task4-1.jpg>)
 
