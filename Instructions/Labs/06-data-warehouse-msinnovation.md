@@ -26,7 +26,7 @@ In this exercise, you will complete the following tasks:
 - Task 2: Create tables and insert data
 - Task 3: Define a Data Model
 - Task 4: Query data Warehouse tables
-- Task 5: Create a View
+- Task 5: Create a View, Visual Query and Visualizing data
 
 ## Get started with data warehouses in Microsoft Fabric
 
@@ -222,7 +222,7 @@ Most queries in a relational data warehouse involve aggregating and grouping dat
 
    ![](<./Images/gr_fb_e2_15.png>)
 
-## Task 5: Create a View
+## Task 5: Create a View, Visual Query and Visualizing data
 
 A data warehouse in Microsoft Fabric has many of the same capabilities you may be used to in relational databases. For example, you can create database objects like _views_ and _stored procedures_ to encapsulate SQL logic.
 
