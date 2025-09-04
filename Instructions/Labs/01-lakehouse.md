@@ -126,8 +126,8 @@ Now that you have a workspace, it's time to switch to the Data engineering exper
 
 1. View the new lakehouse, and note that the **Lakehouse explorer** pane on the left enables you to browse tables and files in the lakehouse:
 
-   - The **Tables** folder contains tables that you can query using SQL semantics. Tables in a Microsoft Fabric lakehouse are based on the open source _Delta Lake_ file format, commonly used in Apache Spark.
-   - The **Files** folder contains data files in the OneLake storage for the lakehouse that aren't associated with managed delta tables. You can also create _shortcuts_ in this folder to reference data that is
+   - The **Tables** folder contains tables that you can query using SQL semantics. Tables in a Microsoft Fabric lakehouse are based on the open source Delta Lake file format, commonly used in Apache Spark.
+   - The **Files** folder contains data files in the OneLake storage for the lakehouse that aren't associated with managed delta tables. You can also create shortcuts in this folder to reference data that is
      stored externally.
    - Currently, there are no tables or files in the lakehouse.
 
@@ -144,7 +144,7 @@ Fabric provides multiple ways to load data into the lakehouse, including built-i
 
    > Right-click anywhere on the page containing the data and select **Save as** to save the page as a CSV file.
 
-   - OR If you are using the lab virtual machine (lab VM) provided to you, you can get the file from the **C:\LabFiles\dp-data-main** directory.
+   - Or If you are using the lab virtual machine (lab VM) provided to you, you can get the file from the **C:\LabFiles\dp-data-main** directory.
 
 1. On the **Lakehouse explorer** pane, click the ellipses **(1)** next to the **Files** folder, then select **New subfolder** **(2)**.
 
@@ -162,7 +162,7 @@ Fabric provides multiple ways to load data into the lakehouse, including built-i
 
    ![](<./Images/fb_g2_1_7.png>)
 
-1. On the **Upload files** dialog, after selecting the **sales.csv** file, click **Upload** **(1)** to upload the file into the `data` folder.
+1. On the **Upload files** dialog, after selecting the **sales.csv** file, click **Upload** **(1)** to upload the file into the **data** folder.
 
    ![](<./Images/fb_g2_1_9.png>)
 
@@ -222,7 +222,7 @@ The sales data you uploaded is in a file, which data analysts and engineers can 
 
    ![Screenshot of a table preview.](./Images/fb_g2_1_14.png)
 
-   > **Note:** Files for a delta table are stored in _Parquet_ format, and include a subfolder named **\_delta_log** in which details of transactions applied to the table are logged.
+   > **Note:** Files for a delta table are stored in Parquet format, and include a subfolder named **\_delta_log** in which details of transactions applied to the table are logged.
 
 ## Task 6: Use SQL to query tables
 
@@ -292,7 +292,7 @@ While many data professionals are familiar with SQL, data analysts with Power BI
 In this task, we will create a new semantic model and add a table to the dataset, which will define the data model to be used for reporting in Power BI.
 
 
-1. Under the **Home** tab, Click on  **New semantic model** **(1)** to create the semantic model.
+1. Under the **Home** tab, click on **New semantic model** **(1)** to create the semantic model.
 
    ![Screenshot of a data model.](./Images/task8-1.jpg)
 
@@ -302,7 +302,7 @@ In this task, we will create a new semantic model and add a table to the dataset
 
    ![](./Images/task8-2.jpg)
 
-1. In the hub menu bar on the left, Click on your workspace **Fabriclab_XXXXX** **(1)**.
+1. In the hub menu bar on the left, click on your workspace **Fabriclab_XXXXX** **(1)**.
 
    ![](./Images/task8-3.jpg)
 
