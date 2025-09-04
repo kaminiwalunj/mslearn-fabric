@@ -297,7 +297,7 @@ While many data professionals are familiar with SQL, data analysts with Power BI
 In this task, we will create a new semantic model and add a table to the dataset, which will define the data model to be used for reporting in Power BI.
 
 
-1. Under the **Home** Menu Bar, Click on  **New semantic model** **(1)** to create the semantic model.
+1. Under the **Home** tab, Click on  **New semantic model** **(1)** to create the semantic model.
 
    ![Screenshot of a data model.](./Images/task8-1.jpg)
 
