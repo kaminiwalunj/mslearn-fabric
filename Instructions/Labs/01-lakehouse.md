@@ -267,7 +267,7 @@ While many data professionals are familiar with SQL, data analysts with Power BI
 
    ![Screenshot of a Visual query.](./Images/salesquery.png)
 
-1. In the **SQL query 1** pane, click **Manage columns** **(1)** and select **Choose columns** **(2)**.
+1. In the **Visual query 1** pane, click **Manage columns** **(1)** and select **Choose columns** **(2)**.
 
    ![Screenshot of a Choose columns dialog box.](./Images/choosecolumns.png)
 
@@ -293,21 +293,21 @@ While many data professionals are familiar with SQL, data analysts with Power BI
 
 ## Task 8: Create a Report
 
-The tables in your lakehouse are automatically added to a default dataset that defines a data model for reporting with Power BI.
 
-1. In the **Explorer** pane, select **Model layouts** **(1)** to view the semantic model. Confirm that the **sales** table is included in the model layout **(2)**.
+In this task, we will create a new semantic model and add a table to the dataset, which will define the data model to be used for reporting in Power BI.
+
+
+1. Under the **Home** Menu Bar, Click on  **New semantic model** **(1)** to create the semantic model.
 
    ![Screenshot of a data model.](./Images/fb_g2_1_21.png)
 
    > **Note**: In this exercise, the data model consists of a single table. In a real-world scenario, you would likely create multiple tables in your lakehouse, each of which would be included in the model. You could then define relationships between these tables in the model.
 
-1. On the **Reporting** tab **(1)**, click **New report** **(2)** to begin creating a report using the semantic model.
+1. Enter **Custom semantic model** **1** in the name field and select the table **sales** **2**, than click on **confirm** **3** to proceed.
 
-   ![](./Images/fb_g2_1_22.png)
+1. In the left side pane, Click on workspace **Fabriclab_XXXXX** **1**.
 
-1. On the **New report with all available data** dialog, ensure the **sales** table is selected, then click **Continue** to proceed.
-
-   ![](./Images/fb_g2_1_23.png)
+1. Select the semantic mode and click on **Create report** option to begin creating a report using the semantic model.
 
 1. In the **Data** pane, expand the **sales** table **(1)**, then:
 
@@ -333,7 +333,7 @@ The tables in your lakehouse are automatically added to a default dataset that d
 
    ![](./Images/fb_g2_1_27.png)
 
-1. Close the browser tab containing the report to return to the SQL endpoint for your lakehouse. Then, in the hub menu bar on the left, select your workspace to verify that it contains the following items:
+1. Then, in the hub menu bar on the left, select your workspace to verify that it contains the following items:
 
    - Your lakehouse.
    - The SQL analytics endpoint for your lakehouse.
