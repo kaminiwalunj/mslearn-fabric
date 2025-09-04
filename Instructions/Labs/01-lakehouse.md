@@ -341,7 +341,7 @@ In this task, we will create a new semantic model and add a table to the dataset
    - A default dataset for the tables in your lakehouse.
    - The **Item Sales Report** report.
 
-      ![](./Images/task8-8.jpg)
+      ![](./Images/task8-8.png)
 
 > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
 >
