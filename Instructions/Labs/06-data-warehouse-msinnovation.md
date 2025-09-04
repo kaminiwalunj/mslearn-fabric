@@ -124,16 +124,25 @@ A warehouse is a relational database in which you can define tables and other ob
 
 A relational data warehouse typically consists of _fact_ and _dimension_ tables. The fact tables contain numeric measures you can aggregate to analyze business performance (for example, sales revenue), and the dimension tables contain attributes of the entities by which you can aggregate the data (for example, product, customer, or time). In a Microsoft Fabric data warehouse, you can use these keys to define a data model that encapsulates the relationships between the tables.
 
-1. Under the **Home** tab, Click on  **New semantic model** **(1)** to create the semantic model.
+1. Under the **Home** tab, Click on  **New semantic model** to create the semantic model.
+
+   ![](<./Images/task3-1.jpg>)
 
 1. Enter **dw semantic model** **(1)** in the name field and select the tables **DimCustomer**,**DimDate**,**DimProduct**,**FactSalesOrder** **(2)**, than click on **Confirm** **(3)** to proceed.
 
-1. In the hub menu bar on the left, Click on your workspace **Fabriclab_XXXXX** **(1)**.
+   ![](<./Images/task3-2.jpg>)
+
+1. In the hub menu bar on the left, Click on your workspace **Fabriclab_XXXXX**.
+
+   ![](<./Images/task3-3.jpg>)
 
 1. Select the **dw semantic model** **(1)** and click on **Open data model** **(2)** option to edit the semantic model.
 
+   ![](<./Images/task3-4.jpg>)
+
 1. At the top right corner, Click on **Viewing** **1** to change it to **Editing** **2** permission settings. 
 
+   ![](<./Images/task3-5.jpg>)
 
 1. In the model pane, rearrange the tables in your data warehouse so that the **FactSalesOrder** table is in the middle, like this:
 
@@ -171,7 +180,7 @@ Most queries in a relational data warehouse involve aggregating and grouping dat
 
 1. In the hub menu bar on the left, Click on your workspace **Fabriclab_XXXXX** **(1)** and select the **myDataWarehouse** **(2)** warehouse.
 
-
+   ![](<./Images/task4-1.jpg>)
 
 1. On the **Home** tab, click the dropdown next to **New SQL query** **(1)**, then select **New SQL query** **(2)** to open a new query editor
 
@@ -275,12 +284,17 @@ Instead of writing SQL code, you can use the graphical query designer to query t
 
 You can easily visualize the data in either a single query or in your data warehouse. Before you visualize, hide columns and/or tables that aren't friendly to report designers.
 
-1. In the hub menu bar on the left, Click on your workspace **Fabriclab_XXXXX** **(1)**.
+1. In the hub menu bar on the left, Click on your workspace **Fabriclab_XXXXX**.
+
+   ![](<./Images/task3-3.jpg>)
 
 1. Select the **dw semantic model** **(1)** and click on **Open data model** **(2)** option to edit the semantic model.
 
+   ![](<./Images/task3-4.jpg>)
+
 1. At the top right corner, Click on **Viewing** **1** to change it to **Editing** **2** permission settings. 
 
+   ![](<./Images/task3-5.jpg>)
 
 1. Hide the following columns in your Fact and Dimension tables that are not necessary to create a report. Note that this does not remove the columns from the model; it simply hides them from view on the report canvas.
 
@@ -302,12 +316,15 @@ You can easily visualize the data in either a single query or in your data wareh
 
 1. Now you're ready to build a report and make this dataset available to others.
 
+   ![](<./Images/gr_fb_e2_18.png>)
+
 1. On the **File** tab **(1)**, click on **Create new report** **(2)** to begin creating a new Power BI report.
+
+   ![](<./Images/gr_fb_e2_18.png>)
 
 1. In the **Data** pane, expand **FactSalesOrder**. Note that the columns you hid are no longer visible.
 
    ![](<./Images/gr_fb_e2_18.png>)
-
 
 
 1. In the report canvas, expand the **DimProduct (1)** and **FactSalesOrder (2)** tables from the **Data** pane, then select the **Clustered bar chart** visual **(3)**. Add **Category** to the Y-axis and **SalesTotal** to the X-axis to create a bar chart visual **(4)**.
