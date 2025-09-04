@@ -369,6 +369,5 @@ In this exercise, you have accomplished the following:
 
 ## You have successfully completed the lab. Click on Next >>.
 
-![](./Images/bar_g_g_2.png)
 
 
