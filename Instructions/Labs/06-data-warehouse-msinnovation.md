@@ -126,8 +126,13 @@ A relational data warehouse typically consists of _fact_ and _dimension_ tables.
 
 1. Under the **Home** tab, Click on  **New semantic model** **(1)** to create the semantic model.
 
-1. Enter **dw semantic model** **(1)** in the name field and select the table **DimCustomer**,**DimDate**,**DimProduct**,**FactSalesOrder** **(2)**, than click on **Confirm** **(3)** to proceed.
+1. Enter **dw semantic model** **(1)** in the name field and select the tables **DimCustomer**,**DimDate**,**DimProduct**,**FactSalesOrder** **(2)**, than click on **Confirm** **(3)** to proceed.
 
+1. In the hub menu bar on the left, Click on your workspace **Fabriclab_XXXXX** **(1)**.
+
+1. Select the **dw semantic model** **(1)** and click on **Open data model** **(2)** option to edit the semantic model.
+
+1. At the top right corner, Click on **Viewing** **1** to change it to **Editing** **2** permission settings. 
 
 
 1. In the model pane, rearrange the tables in your data warehouse so that the **FactSalesOrder** table is in the middle, like this:
@@ -149,8 +154,8 @@ A relational data warehouse typically consists of _fact_ and _dimension_ tables.
 
 1. Repeat the process to create many-to-one relationships between the following tables:
 
-   - **FactOrderSales.CustomerKey** &#8594; **DimCustomer.CustomerKey**
-   - **FactOrderSales.SalesOrderDateKey** &#8594; **DimDate.DateKey**
+   - **FactSalesOrder.CustomerKey** &#8594; **DimCustomer.CustomerKey**
+   - **FactSalesOrder.SalesOrderDateKey** &#8594; **DimDate.DateKey**
 
       ![](./Images/dw-relationships1-1-1.png)
 
