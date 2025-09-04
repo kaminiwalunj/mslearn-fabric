@@ -316,20 +316,13 @@ You can easily visualize the data in either a single query or in your data wareh
 
 1. Now you're ready to build a report and make this dataset available to others.
 
-   ![](<./Images/gr_fb_e2_18.png>)
-
 1. On the **File** tab **(1)**, click on **Create new report** **(2)** to begin creating a new Power BI report.
 
-   ![](<./Images/gr_fb_e2_18.png>)
-
-1. In the **Data** pane, expand **FactSalesOrder**. Note that the columns you hid are no longer visible.
-
-   ![](<./Images/gr_fb_e2_18.png>)
-
+   ![](<./Images/task5-1.jpg>)
 
 1. In the report canvas, expand the **DimProduct (1)** and **FactSalesOrder (2)** tables from the **Data** pane, then select the **Clustered bar chart** visual **(3)**. Add **Category** to the Y-axis and **SalesTotal** to the X-axis to create a bar chart visual **(4)**.
 
-   ![](<./Images/gr_fb_e2_20.png>)
+   ![](<./Images/task5-2.jpg>)
 
 1. To save the report, click **File** **(1)** in the top menu, then select **Save** **(2)**.
 
@@ -337,7 +330,7 @@ You can easily visualize the data in either a single query or in your data wareh
 
 1. In the **Save report** dialog box, enter the name **Sales Report (1)** in the text field (1), then click **Save** **(2)** to store the report.
 
-   ![](./Images/gr_fb_e2_21.png)
+   ![](./Images/task5-3.jpg.png)
 
 1. In the menu hub on the left, navigate back to the workspace. Notice that you now have three items saved in your workspace: your data warehouse, its default dataset, and the report you created.
 
