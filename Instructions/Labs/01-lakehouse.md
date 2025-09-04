@@ -38,6 +38,8 @@ In this exercise, you will complete the following tasks:
 
 ## Task 1: Create a workspace
 
+In this task, you will create a new workspace that serves as a collaborative environment for managing datasets, reports, dashboards, and other related resources. The workspace will act as a centralized location where you and your team can securely store, organize, and share content, enabling better collaboration and streamlined access for reporting and analytics.
+
 Before working with data in Fabric, create a workspace with the Fabric trial enabled.
 
 1. Open the Edge browser and sign in to [Microsoft Fabric](https://app.fabric.microsoft.com) at `https://app.fabric.microsoft.com`.
