@@ -302,7 +302,7 @@ In this task, we will create a new semantic model and add a table to the dataset
 
    ![](./Images/task8-2.jpg)
 
-1. In the hub menu bar on the left, click on your workspace **Fabriclab_XXXXX** **(1)**.
+1. In the hub menu bar on the left, click on your workspace **Fabriclab\_<inject key="DeploymentID" enableCopy="false"/> (1)**.
 
    ![](./Images/task8-3.jpg)
 
