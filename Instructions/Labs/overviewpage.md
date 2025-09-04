@@ -17,9 +17,9 @@ By the end of this lab, you will learn:
 
 Participants should have:
 
-- Basic Understanding of Data Warehousing and Data Lakes: Familiarity with the concepts of structured and unstructured data storage.
-- SQL Knowledge: Ability to write and understand basic SQL queries.
-- Data Analysis: Basic experience with data analysis and reporting.
+- **Basic Understanding of Data Warehousing and Data Lakes:** Familiarity with the concepts of structured and unstructured data storage.
+- **SQL Knowledge:** Ability to write and understand basic SQL queries.
+- **Data Analysis:** Basic experience with data analysis and reporting.
 
 
 ## Architecture
