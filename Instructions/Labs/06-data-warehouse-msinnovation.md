@@ -14,7 +14,7 @@ just data engineers.
 
 Here, you'll learn about data warehouses in Fabric, create a data warehouse, load, query, and visualize data, and describe datasets.
 
-## _Architecture Diagram_
+## Architecture Diagram
 
 ![New lakehouse.](./Images/archlab2.png)
 
@@ -28,11 +28,9 @@ In this exercise, you will complete the following tasks:
 - Task 4: Query data Warehouse tables
 - Task 5: Create a View, Visual Query and Visualizing data
 
-## Get started with data warehouses in Microsoft Fabric
-
-In Microsoft Fabric, a data warehouse provides a relational database for large-scale analytics. Unlike the default read-only SQL endpoint for tables defined in a lakehouse, a data warehouse provides full SQL semantics, including the ability to insert, update, and delete data in the tables.
-
 ## Task 1: Create a Data Warehouse
+
+In this task, you will provision a new data warehouse within Microsoft Fabric. A data warehouse in Fabric offers a fully managed relational database designed for large-scale analytics. Unlike the default read-only SQL endpoint provided for lakehouse tables, a data warehouse supports complete SQL capabilities, including inserting, updating, and deleting data. This enables you to design and manage structured schemas, load data efficiently, and prepare it for advanced querying and reporting.
 
 1. In the Power BI portal, in the workspace **fabriclab_<inject key="DeploymentID" enableCopy="false"/>**, then click **Power BI** **(1)** on the left navigation bar, and click **New item** **(2)** to create a new workspace item.
 
@@ -122,7 +120,7 @@ A warehouse is a relational database in which you can define tables and other ob
 
 ## Task 3: Define a Data Model
 
-A relational data warehouse typically consists of _fact_ and _dimension_ tables. The fact tables contain numeric measures you can aggregate to analyze business performance (for example, sales revenue), and the dimension tables contain attributes of the entities by which you can aggregate the data (for example, product, customer, or time). In a Microsoft Fabric data warehouse, you can use these keys to define a data model that encapsulates the relationships between the tables.
+A relational data warehouse typically consists of fact and dimension tables. The fact tables contain numeric measures you can aggregate to analyze business performance (for example, sales revenue), and the dimension tables contain attributes of the entities by which you can aggregate the data (for example, product, customer, or time). In a Microsoft Fabric data warehouse, you can use these keys to define a data model that encapsulates the relationships between the tables.
 
 1. Under the **Home** tab, Click on  **New semantic model** to create the semantic model.
 
@@ -224,7 +222,7 @@ Most queries in a relational data warehouse involve aggregating and grouping dat
 
 ## Task 5: Create a View, Visual Query and Visualizing data
 
-A data warehouse in Microsoft Fabric has many of the same capabilities you may be used to in relational databases. For example, you can create database objects like _views_ and _stored procedures_ to encapsulate SQL logic.
+A data warehouse in Microsoft Fabric has many of the same capabilities you may be used to in relational databases. For example, you can create database objects like views and stored procedures to encapsulate SQL logic.
 
 1. Modify the query you created previously as follows to create a view (note that you need to remove the ORDER BY clause to create a view).
 
@@ -365,6 +363,6 @@ In this exercise, you have accomplished the following:
 - Queried data from the Data Warehouse tables.
 - Created a View, performed Visual Queries, and visualized the data.
 
-## Congratulations! You have successfully completed this lab
+## Congratulations! You have successfully completed the Hands-on lab.
 
 You've gained practical skills in setting up and working with Microsoft Fabric Lakehouse and Data Warehouse - ingesting, transforming, querying data, and visualizing insights with Power BI.
