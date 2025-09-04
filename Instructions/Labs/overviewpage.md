@@ -28,7 +28,7 @@ This lab introduces the Microsoft Fabric Lakehouse, a unified data platform that
 
 ## Architecture diagram
 
-![](./Images/archoverview.png)
+![](./Images/archoverview.jpg)
 
 ## Explanation of Components
 
