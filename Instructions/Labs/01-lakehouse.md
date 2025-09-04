@@ -172,7 +172,7 @@ Fabric provides multiple ways to load data into the lakehouse, including built-i
 
 1. In the **Lakehouse explorer** pane, expand **Lakehouse** **(1)**, then expand **Files** **(2)** and select the **data** **(3)** folder. Verify that the **sales.csv** **(4)** file has been uploaded successfully.
 
-   ![Screenshot of uploaded sales.csv file in a lakehouse.](./Images/fb_g2_1_11.png)
+   ![Screenshot of uploaded sales.csv file in a lakehouse.](./Images/fb_g2_1_11-1.png)
 
 1. Select the **sales.csv** file to see a preview of its contents.
 
@@ -194,7 +194,7 @@ The sales data you uploaded is in a file, which data analysts and engineers can 
 
 1. In the **Lakehouse explorer** pane, expand **Lakehouse** **(1)**, then expand **Files** **(2)** and select the **data** folder **(3)**. Confirm that the **sales.csv** file appears in the folder **(4)**.
 
-   ![](<./Images/fb_g2_1_11.png>)
+   ![](<./Images/fb_g2_1_11-1.png>)
 
 1. In the **data** folder, click the ellipses next to the **sales.csv** file to open the context menu.
 
@@ -212,11 +212,11 @@ The sales data you uploaded is in a file, which data analysts and engineers can 
 
 1. In the **Lakehouse explorer** pane, expand **Lakehouse** **(1)**, then expand **Tables** and select **sales** **(2)**. Confirm that the data from the **sales.csv** file is now loaded and displayed in table format **(3)**.
 
-   ![Screenshot of a table preview.](./Images/fb_g2_1_13.png)
+   ![Screenshot of a table preview.](./Images/fb_g2_1_13-1.png)
 
 1. In the **ellipses (1)** menu for the **sales** table, select **View files (2)** to see the underlying files for this table
 
-   ![Screenshot of a table preview.](./Images/tables.png)
+   ![Screenshot of a table preview.](./Images/tables-1.png)
 
 1. In the **File view** for the **sales** table, observe that it contains Delta Lake log files and Parquet data files. These represent the physical storage format of the table.
 
