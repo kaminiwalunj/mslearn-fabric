@@ -19,7 +19,7 @@ SQL.
 
 ### Architecture Diagram
 
-![](./Images/Create-and-ingest-data-with-MS-fabric-lakehouse.png)
+![](./Images/archlab1.jpg)
 
 
 ## Lab objectives
