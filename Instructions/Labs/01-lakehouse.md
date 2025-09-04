@@ -7,8 +7,8 @@
 The foundation of Microsoft Fabric is a Lakehouse, which is built on top of the OneLake scalable storage layer and uses Apache Spark and SQL compute engines for big data processing. A
 Lakehouse is a unified platform that combines:
 
-1. The flexible and scalable storage of a data lake
-2. The ability to query and analyze data in a data warehouse
+- The flexible and scalable storage of a data lake
+- The ability to query and analyze data in a data warehouse
 
 Imagine your company has been using a data warehouse to store structured data from its transactional systems, such as order history, inventory levels, and customer information. You have
 also collected unstructured data from social media, website logs, and third-party sources that are difficult to manage and analyze using the existing data warehouse infrastructure. Your
@@ -17,9 +17,9 @@ company's new directive is to improve its decision-making capabilities by analyz
 Here, we explore how a lakehouse in Microsoft Fabric can help address scenarios like this by providing a scalable and flexible data store for files and tables that you can query using
 SQL.
 
-### _Architecture Diagram_
+### Architecture Diagram
 
-![](./Images/Create-and-ingest-data-with-MS-fabric-lakehouse.png)
+![](./Images/archlab1.jpg)
 
 
 ## Lab objectives
@@ -36,14 +36,9 @@ In this exercise, you will complete the following tasks:
 - Task 8: Create a Report
 
 
-## Get started with Microsoft Fabric with Its Lakehouses
-
-Large-scale data analytics solutions have traditionally been built around a _data warehouse_, in which data is stored in relational tables and queried using SQL. The growth in "big data" (characterized by high _volumes_, _variety_, and _velocity_ of new data assets) together with the availability of low-cost storage and cloud-scale distributed compute technologies has led to an alternative approach to analytical data storage; the _data lake_. In a data lake, data is stored as files without imposing a fixed schema for storage. Increasingly, data engineers and analysts seek to benefit from the best features of both of these approaches by combining them in a _data lakehouse_; in which data is stored in files in a data lake and a relational schema is applied to them as a metadata layer so that they can be queried using traditional SQL semantics.
-
-In Microsoft Fabric, a lakehouse provides highly scalable file storage in a _OneLake_ store (built on Azure Data Lake Store Gen2) with a metastore for relational objects such as tables and views based on the open source _Delta Lake_ table format. Delta Lake enables you to define a schema of tables in your lakehouse that you can query using SQL.
-
-
 ## Task 1: Create a workspace
+
+In this task, you will create a new workspace that serves as a collaborative environment for managing datasets, reports, dashboards, and other related resources. The workspace will act as a centralized location where you and your team can securely store, organize, and share content, enabling better collaboration and streamlined access for reporting and analytics.
 
 Before working with data in Fabric, create a workspace with the Fabric trial enabled.
 
@@ -115,7 +110,7 @@ Before working with data in Fabric, create a workspace with the Fabric trial ena
 
 ## Task 2: Create a Lakehouse
 
-Now that you have a workspace, it's time to switch to the _Data engineering_ experience in the portal and create a data lakehouse for your data files.
+Now that you have a workspace, it's time to switch to the Data engineering experience in the portal and create a data lakehouse for your data files.
 
 1. Ensure the **Power BI** **(1)** icon is visible in the left pane. If available, click it, then click **New item** **(2)** at the top of the workspace.
 
@@ -131,8 +126,8 @@ Now that you have a workspace, it's time to switch to the _Data engineering_ exp
 
 1. View the new lakehouse, and note that the **Lakehouse explorer** pane on the left enables you to browse tables and files in the lakehouse:
 
-   - The **Tables** folder contains tables that you can query using SQL semantics. Tables in a Microsoft Fabric lakehouse are based on the open source _Delta Lake_ file format, commonly used in Apache Spark.
-   - The **Files** folder contains data files in the OneLake storage for the lakehouse that aren't associated with managed delta tables. You can also create _shortcuts_ in this folder to reference data that is
+   - The **Tables** folder contains tables that you can query using SQL semantics. Tables in a Microsoft Fabric lakehouse are based on the open source Delta Lake file format, commonly used in Apache Spark.
+   - The **Files** folder contains data files in the OneLake storage for the lakehouse that aren't associated with managed delta tables. You can also create shortcuts in this folder to reference data that is
      stored externally.
    - Currently, there are no tables or files in the lakehouse.
 
@@ -149,7 +144,7 @@ Fabric provides multiple ways to load data into the lakehouse, including built-i
 
    > Right-click anywhere on the page containing the data and select **Save as** to save the page as a CSV file.
 
-   - OR If you are using the lab virtual machine (lab VM) provided to you, you can get the file from the **C:\LabFiles\dp-data-main** directory.
+   - Or If you are using the lab virtual machine (lab VM) provided to you, you can get the file from the **C:\LabFiles\dp-data-main** directory.
 
 1. On the **Lakehouse explorer** pane, click the ellipses **(1)** next to the **Files** folder, then select **New subfolder** **(2)**.
 
@@ -167,7 +162,7 @@ Fabric provides multiple ways to load data into the lakehouse, including built-i
 
    ![](<./Images/fb_g2_1_7.png>)
 
-1. On the **Upload files** dialog, after selecting the **sales.csv** file, click **Upload** **(1)** to upload the file into the `data` folder.
+1. On the **Upload files** dialog, after selecting the **sales.csv** file, click **Upload** **(1)** to upload the file into the **data** folder.
 
    ![](<./Images/fb_g2_1_9.png>)
 
@@ -185,7 +180,7 @@ Fabric provides multiple ways to load data into the lakehouse, including built-i
 
 ## Task 4: Explore shortcuts
 
-In many scenarios, the data you need to work with in your lakehouse may be stored in some other location. While there are many ways to ingest data into the OneLake storage for your lakehouse, another option is to instead create a _shortcut_. Shortcuts enable you to include externally sourced data in your analytics solution without the overhead and risk of data inconsistency associated with copying it.
+In many scenarios, the data you need to work with in your lakehouse may be stored in some other location. While there are many ways to ingest data into the OneLake storage for your lakehouse, another option is to instead create a shortcut. Shortcuts enable you to include externally sourced data in your analytics solution without the overhead and risk of data inconsistency associated with copying it.
 
 1. In the **ellipses (1)** menu for the **Files** folder, select **New shortcut (2)**.
 
@@ -227,7 +222,7 @@ The sales data you uploaded is in a file, which data analysts and engineers can 
 
    ![Screenshot of a table preview.](./Images/fb_g2_1_14.png)
 
-   > **Note:** Files for a delta table are stored in _Parquet_ format, and include a subfolder named **\_delta_log** in which details of transactions applied to the table are logged.
+   > **Note:** Files for a delta table are stored in Parquet format, and include a subfolder named **\_delta_log** in which details of transactions applied to the table are logged.
 
 ## Task 6: Use SQL to query tables
 
@@ -297,7 +292,7 @@ While many data professionals are familiar with SQL, data analysts with Power BI
 In this task, we will create a new semantic model and add a table to the dataset, which will define the data model to be used for reporting in Power BI.
 
 
-1. Under the **Home** tab, Click on  **New semantic model** **(1)** to create the semantic model.
+1. Under the **Home** tab, click on **New semantic model** **(1)** to create the semantic model.
 
    ![Screenshot of a data model.](./Images/task8-1.jpg)
 
@@ -307,7 +302,7 @@ In this task, we will create a new semantic model and add a table to the dataset
 
    ![](./Images/task8-2.jpg)
 
-1. In the hub menu bar on the left, Click on your workspace **Fabriclab_XXXXX** **(1)**.
+1. In the hub menu bar on the left, click on your workspace **Fabriclab_XXXXX** **(1)**.
 
    ![](./Images/task8-3.jpg)
 
@@ -372,8 +367,8 @@ In this exercise, you have accomplished the following:
 - Created a report to visualize and share your findings
 
 
-## **Congratulations! You have successfully completed this lab. Please click on next**
+## **Congratulations! You have successfully completed this lab. Please click on Next**
 
 ![](./Images/bar_g_g_2.png)
 
-#### Happy Learning!!
+
