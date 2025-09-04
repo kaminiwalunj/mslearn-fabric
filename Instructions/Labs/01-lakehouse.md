@@ -303,7 +303,7 @@ In this task, we will create a new semantic model and add a table to the dataset
 
    > **Note**: In this exercise, the data model consists of a single table. In a real-world scenario, you would likely create multiple tables in your lakehouse, each of which would be included in the model. You could then define relationships between these tables in the model.
 
-1. Enter **Custom semantic model** **(1)** in the name field and select the table **sales** **(2)**, than click on **confirm** **(3)** to proceed.
+1. Enter **Custom semantic model** **(1)** in the name field and select the table **sales** **(2)**, than click on **Confirm** **(3)** to proceed.
 
    ![](./Images/task8-2.jpg)
 
