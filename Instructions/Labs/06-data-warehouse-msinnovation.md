@@ -354,6 +354,17 @@ If you've finished exploring your data warehouse, you can delete the workspace y
 
    ![](./Images/g_cor_g_2.png)
 
+
+## Summary
+
+In this exercise, you have accomplished the following:
+
+- Created a Data Warehouse.
+- Created tables and inserted sample data.
+- Defined a Data Model to support reporting.
+- Queried data from the Data Warehouse tables.
+- Created a View, performed Visual Queries, and visualized the data.
+
 ## Congratulations! You have successfully completed this lab
 
 You've gained practical skills in setting up and working with Microsoft Fabric Lakehouse and Data Warehouse - ingesting, transforming, querying data, and visualizing insights with Power BI.
