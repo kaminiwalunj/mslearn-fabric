@@ -311,7 +311,7 @@ In this task, we will create a new semantic model and add a table to the dataset
 
    ![](./Images/task8-3.jpg)
 
-1. Select the Custom semantic mode and click on **Create report** option to begin creating a report using the semantic model.
+1. Select the **Custom semantic model** and click on **Create report** option to begin creating a report using the semantic model.
 
    ![](./Images/task8-4.jpg)
 
