@@ -1,6 +1,6 @@
 # Get started with Microsoft Fabric with Its Lakehouses
 
-## Overall Estimated Duration: 4 Hours
+### Overall Estimated Duration: 4 Hours
 
 ## Overview
 This lab provides hands-on exercises in using Microsoft Fabric Lakehouse and Data Warehouse. Participants will set up a Microsoft Fabric workspace, configure a Lakehouse, ingest data, convert files into tables, and perform data analysis using SQL queries and Power Query. You will also create a Data Warehouse, define a data model, query tables, and create views. These exercises will enhance your skills in data management, analysis, and reporting using Power BI for visualization.
