@@ -322,7 +322,7 @@ You can easily visualize the data in either a single query or in your data wareh
 
 1. In the report canvas, expand the **DimProduct (1)** and **FactSalesOrder (2)** tables from the **Data** pane, then select the **Clustered bar chart** visual **(3)**. Add **Category** to the Y-axis and **SalesTotal** to the X-axis to create a bar chart visual **(4)**.
 
-   ![](<./Images/task5-2.jpg>)
+   ![](<./Images/task5-2.png>)
 
 1. To save the report, click **File** **(1)** in the top menu, then select **Save** **(2)**.
 
