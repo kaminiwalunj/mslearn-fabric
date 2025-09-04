@@ -7,13 +7,11 @@ This lab provides hands-on exercises in using Microsoft Fabric Lakehouse and Dat
 
 ## Objective
 
-This lab is designed to give learners hands-on experience with data management and analysis using Microsoft Fabric. Learners will enhance their proficiency in data integration, transformation, storage, and analysis by utilizing the advanced tools and features offered by Microsoft Fabric.
+By the end of this lab, you will learn:
 
-Participants will learn:
+- **Creating and Ingesting Data with a Microsoft Fabric Lakehouse**: This hands-on exercise guides through setting up a Microsoft Fabric workspace and configuring a Lakehouse for scalable storage. You will ingest data from various sources, convert files into structured tables, and apply SQL queries for data manipulation and analysis. Participants will also use Power Query for advanced data transformations and create insightful reports with Power BI to effectively visualize and share their findings.
 
-1. **Creating and Ingesting Data with a Microsoft Fabric Lakehouse**: This hands-on exercise guides through setting up a Microsoft Fabric workspace and configuring a Lakehouse for scalable storage. You will ingest data from various sources, convert files into structured tables, and apply SQL queries for data manipulation and analysis. Participants will also use Power Query for advanced data transformations and create insightful reports with Power BI to effectively visualize and share their findings.
-
-2. **Analyze data in a Data Warehouse**: This hands-on exercise involves creating a workspace and setting up a Data Warehouse. You will create tables and insert data, then define a data model for structured analysis. You will learn to query the Data Warehouse tables and create views for efficient data retrieval and reporting. Participants will enhance their skills in managing and analyzing data within a Data Warehouse environment.
+- **Analyze data in a Data Warehouse**: This hands-on exercise involves creating a workspace and setting up a Data Warehouse. You will create tables and insert data, then define a data model for structured analysis. You will learn to query the Data Warehouse tables and create views for efficient data retrieval and reporting. Participants will enhance their skills in managing and analyzing data within a Data Warehouse environment.
 
 ## Prerequisites 
 
@@ -95,15 +93,14 @@ Now you're all set to explore the powerful world of technology. Feel free to rea
 
 ## Support Contact
 
-1. The CloudLabs support team is available 24/7, 365 days a year, via email and live chat to ensure seamless assistance at any time. We offer dedicated support channels tailored specifically for both learners and instructors, ensuring that all your needs are promptly and efficiently addressed.
+The CloudLabs support team is available 24/7, 365 days a year, via email and live chat to ensure seamless assistance at any time. We offer dedicated support channels tailored specifically for both learners and instructors, ensuring that all your needs are promptly and efficiently addressed.
 
-   Learner Support Contacts:
+Learner Support Contacts:
+- Email Support: cloudlabs-support@spektrasystems.com
+- Live Chat Support: https://cloudlabs.ai/labs-support
 
-    - Email Support: cloudlabs-support@spektrasystems.com
-    - Live Chat Support: https://cloudlabs.ai/labs-support
-
-2. Now, click on Next from the lower right corner to move on to the next page.
+Now, click on Next from the lower right corner to move on to the next page.
 
 ![](./Images/bar_g_g_1.png)
 
-#### Happy Learning!!
+### Happy Learning!!
