@@ -299,15 +299,21 @@ In this task, we will create a new semantic model and add a table to the dataset
 
 1. Under the **Home** Menu Bar, Click on  **New semantic model** **(1)** to create the semantic model.
 
-   ![Screenshot of a data model.](./Images/fb_g2_1_21.png)
+   ![Screenshot of a data model.](./Images/task8-1.jpg)
 
    > **Note**: In this exercise, the data model consists of a single table. In a real-world scenario, you would likely create multiple tables in your lakehouse, each of which would be included in the model. You could then define relationships between these tables in the model.
 
 1. Enter **Custom semantic model** **1** in the name field and select the table **sales** **2**, than click on **confirm** **3** to proceed.
 
-1. In the left side pane, Click on workspace **Fabriclab_XXXXX** **1**.
+   ![](./Images/task8-2.jpg)
+
+1. In the hub menu bar on the left, Click on your workspace **Fabriclab_XXXXX** **1**.
+
+   ![](./Images/task8-3.jpg)
 
 1. Select the semantic mode and click on **Create report** option to begin creating a report using the semantic model.
+
+   ![](./Images/task8-4.jpg)
 
 1. In the **Data** pane, expand the **sales** table **(1)**, then:
 
@@ -315,7 +321,7 @@ In this task, we will create a new semantic model and add a table to the dataset
    - Select **Quantity** **(3)** to calculate the total quantity for each item.
    - A **Table Visualization** **(4)** is automatically added to the report canvas.
 
-      ![](./Images/fb_g2_1_24.png)
+      ![](./Images/task8-5.jpg)
 
 1. In the **Visualizations** pane, follow these steps to convert the table into a clustered bar chart:
 
@@ -323,7 +329,7 @@ In this task, we will create a new semantic model and add a table to the dataset
    - Select the **Clustered bar chart** visualization type **(2)**.
    - The report canvas updates to display the item-wise total quantity in a bar chart **(3)**.
 
-      ![](./Images/fb_g2_1_25.png)
+      ![](./Images/task8-6.jpg)
 
 1. To save the report, click **File** **(1)** in the top menu, then select **Save** **(2)**.
 
@@ -331,7 +337,7 @@ In this task, we will create a new semantic model and add a table to the dataset
 
 1. On the **Save your report** screen, enter **Item Sales Report** **(1)** as the name, then click **Save** **(2)** to save it to the selected workspace.
 
-   ![](./Images/fb_g2_1_27.png)
+   ![](./Images/task8-7.jpg)
 
 1. Then, in the hub menu bar on the left, select your workspace to verify that it contains the following items:
 
@@ -340,7 +346,7 @@ In this task, we will create a new semantic model and add a table to the dataset
    - A default dataset for the tables in your lakehouse.
    - The **Item Sales Report** report.
 
-      ![](./Images/fb_g2_1_28.png)
+      ![](./Images/task8-8.jpg)
 
 > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
 >
