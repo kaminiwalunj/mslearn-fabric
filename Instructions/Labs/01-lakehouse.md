@@ -303,15 +303,15 @@ In this task, we will create a new semantic model and add a table to the dataset
 
    > **Note**: In this exercise, the data model consists of a single table. In a real-world scenario, you would likely create multiple tables in your lakehouse, each of which would be included in the model. You could then define relationships between these tables in the model.
 
-1. Enter **Custom semantic model** **1** in the name field and select the table **sales** **2**, than click on **confirm** **3** to proceed.
+1. Enter **Custom semantic model** **(1)** in the name field and select the table **sales** **(2)**, than click on **confirm** **(3)** to proceed.
 
    ![](./Images/task8-2.jpg)
 
-1. In the hub menu bar on the left, Click on your workspace **Fabriclab_XXXXX** **1**.
+1. In the hub menu bar on the left, Click on your workspace **Fabriclab_XXXXX** **(1)**.
 
    ![](./Images/task8-3.jpg)
 
-1. Select the semantic mode and click on **Create report** option to begin creating a report using the semantic model.
+1. Select the Custom semantic mode and click on **Create report** option to begin creating a report using the semantic model.
 
    ![](./Images/task8-4.jpg)
 
