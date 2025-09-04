@@ -365,5 +365,3 @@ In this exercise, you have accomplished the following:
 - Created a View, performed Visual Queries, and visualized the data.
 
 ## Congratulations! You have successfully completed the Hands-on lab.
-
-You've gained practical skills in setting up and working with Microsoft Fabric Lakehouse and Data Warehouse - ingesting, transforming, querying data, and visualizing insights with Power BI.
