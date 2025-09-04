@@ -330,7 +330,7 @@ You can easily visualize the data in either a single query or in your data wareh
 
 1. In the **Save report** dialog box, enter the name **Sales Report (1)** in the text field (1), then click **Save** **(2)** to store the report.
 
-   ![](./Images/task5-3.jpg.png)
+   ![](./Images/task5-3.png)
 
 1. In the menu hub on the left, navigate back to the workspace. Notice that you now have three items saved in your workspace: your data warehouse, its default dataset, and the report you created.
 
