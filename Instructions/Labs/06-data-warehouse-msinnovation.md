@@ -169,6 +169,10 @@ Since the data warehouse is a relational database, you can use SQL to query its 
 
 Most queries in a relational data warehouse involve aggregating and grouping data (using aggregate functions and GROUP BY clauses) across related tables (using JOIN clauses).
 
+1. In the hub menu bar on the left, Click on your workspace **Fabriclab_XXXXX** **(1)** and select the **myDataWarehouse** **(2)** warehouse.
+
+
+
 1. On the **Home** tab, click the dropdown next to **New SQL query** **(1)**, then select **New SQL query** **(2)** to open a new query editor
 
    ![](<./Images/gr_fb_e2_10.png>)
