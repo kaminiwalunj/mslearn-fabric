@@ -32,8 +32,6 @@ In this exercise, you will complete the following tasks:
 
 In Microsoft Fabric, a data warehouse provides a relational database for large-scale analytics. Unlike the default read-only SQL endpoint for tables defined in a lakehouse, a data warehouse provides full SQL semantics, including the ability to insert, update, and delete data in the tables.
 
-> **Note**: You'll need a Microsoft Fabric license to complete this exercise. Complete the previous lab to proceed further.
-
 ## Task 1: Create a Data Warehouse
 
 1. In the Power BI portal, in the workspace **fabriclab_<inject key="DeploymentID" enableCopy="false"/>**, then click **Power BI** **(1)** on the left navigation bar, and click **New item** **(2)** to create a new workspace item.
