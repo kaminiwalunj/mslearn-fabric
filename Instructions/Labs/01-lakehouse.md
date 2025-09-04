@@ -358,6 +358,20 @@ In this task, we will create a new semantic model and add a table to the dataset
 
 <validation step="d75ef970-6298-404c-aeeb-8dafe17b3ac2" />
 
+## Summary
+
+In this exercise, you have accomplished the following:
+
+- Created a workspace to organize and manage your resources
+- Built a Lakehouse for storing and processing data
+- Uploaded a file into the Lakehouse environment
+- Explored shortcuts to efficiently manage data access
+- Loaded file data into a structured table
+- Queried tables using SQL for data exploration
+- Designed a visual query for easier insights
+- Created a report to visualize and share your findings
+
+
 ## **Congratulations! You have successfully completed this lab. Please click on next**
 
 ![](./Images/bar_g_g_2.png)
