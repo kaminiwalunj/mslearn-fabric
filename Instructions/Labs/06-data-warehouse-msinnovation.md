@@ -16,7 +16,7 @@ Here, you'll learn about data warehouses in Fabric, create a data warehouse, loa
 
 ## _Architecture Diagram_
 
-![New lakehouse.](./Images/Analyze-data-in-data-warehouse.png)
+![New lakehouse.](./Images/archlab2.png)
 
 ## Lab objectives
 
