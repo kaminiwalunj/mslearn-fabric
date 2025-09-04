@@ -284,7 +284,7 @@ Instead of writing SQL code, you can use the graphical query designer to query t
 
 You can easily visualize the data in either a single query or in your data warehouse. Before you visualize, hide columns and/or tables that aren't friendly to report designers.
 
-1. In the hub menu bar on the left, Click on your workspace **Fabriclab_XXXXX**.
+1. In the hub menu bar on the left, Click on your workspace **Fabriclab\_<inject key="DeploymentID" enableCopy="false"/>**.
 
    ![](<./Images/task3-3.jpg>)
 
