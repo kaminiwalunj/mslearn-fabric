@@ -367,7 +367,7 @@ In this exercise, you have accomplished the following:
 - Created a report to visualize and share your findings
 
 
-## **Congratulations! You have successfully completed this lab. Please click on next**
+## **Congratulations! You have successfully completed this lab. Please click on Next**
 
 ![](./Images/bar_g_g_2.png)
 
