@@ -36,13 +36,6 @@ In this exercise, you will complete the following tasks:
 - Task 8: Create a Report
 
 
-## Get started with Microsoft Fabric with Its Lakehouses
-
-Large-scale data analytics solutions have traditionally been built around a _data warehouse_, in which data is stored in relational tables and queried using SQL. The growth in "big data" (characterized by high _volumes_, _variety_, and _velocity_ of new data assets) together with the availability of low-cost storage and cloud-scale distributed compute technologies has led to an alternative approach to analytical data storage; the _data lake_. In a data lake, data is stored as files without imposing a fixed schema for storage. Increasingly, data engineers and analysts seek to benefit from the best features of both of these approaches by combining them in a _data lakehouse_; in which data is stored in files in a data lake and a relational schema is applied to them as a metadata layer so that they can be queried using traditional SQL semantics.
-
-In Microsoft Fabric, a lakehouse provides highly scalable file storage in a _OneLake_ store (built on Azure Data Lake Store Gen2) with a metastore for relational objects such as tables and views based on the open source _Delta Lake_ table format. Delta Lake enables you to define a schema of tables in your lakehouse that you can query using SQL.
-
-
 ## Task 1: Create a workspace
 
 Before working with data in Fabric, create a workspace with the Fabric trial enabled.
@@ -115,7 +108,7 @@ Before working with data in Fabric, create a workspace with the Fabric trial ena
 
 ## Task 2: Create a Lakehouse
 
-Now that you have a workspace, it's time to switch to the _Data engineering_ experience in the portal and create a data lakehouse for your data files.
+Now that you have a workspace, it's time to switch to the Data engineering experience in the portal and create a data lakehouse for your data files.
 
 1. Ensure the **Power BI** **(1)** icon is visible in the left pane. If available, click it, then click **New item** **(2)** at the top of the workspace.
 
@@ -185,7 +178,7 @@ Fabric provides multiple ways to load data into the lakehouse, including built-i
 
 ## Task 4: Explore shortcuts
 
-In many scenarios, the data you need to work with in your lakehouse may be stored in some other location. While there are many ways to ingest data into the OneLake storage for your lakehouse, another option is to instead create a _shortcut_. Shortcuts enable you to include externally sourced data in your analytics solution without the overhead and risk of data inconsistency associated with copying it.
+In many scenarios, the data you need to work with in your lakehouse may be stored in some other location. While there are many ways to ingest data into the OneLake storage for your lakehouse, another option is to instead create a shortcut. Shortcuts enable you to include externally sourced data in your analytics solution without the overhead and risk of data inconsistency associated with copying it.
 
 1. In the **ellipses (1)** menu for the **Files** folder, select **New shortcut (2)**.
 
@@ -376,4 +369,4 @@ In this exercise, you have accomplished the following:
 
 ![](./Images/bar_g_g_2.png)
 
-#### Happy Learning!!
+
