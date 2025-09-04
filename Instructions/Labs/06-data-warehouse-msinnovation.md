@@ -224,6 +224,8 @@ Most queries in a relational data warehouse involve aggregating and grouping dat
 
 A data warehouse in Microsoft Fabric has many of the same capabilities you may be used to in relational databases. For example, you can create database objects like views and stored procedures to encapsulate SQL logic.
 
+### Create a View
+
 1. Modify the query you created previously as follows to create a view (note that you need to remove the ORDER BY clause to create a view).
 
    ```sql
