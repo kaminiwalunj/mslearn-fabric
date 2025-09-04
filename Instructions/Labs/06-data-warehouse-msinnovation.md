@@ -275,9 +275,12 @@ Instead of writing SQL code, you can use the graphical query designer to query t
 
 You can easily visualize the data in either a single query or in your data warehouse. Before you visualize, hide columns and/or tables that aren't friendly to report designers.
 
-1. In the **Explorer** pane, under your warehouse, expand the **Queries** section and click on **Model layouts (1)** to open the model layout editor.
+1. In the hub menu bar on the left, Click on your workspace **Fabriclab_XXXXX** **(1)**.
 
-   ![](<./Images/gr_fb_e2_17.png>)
+1. Select the **dw semantic model** **(1)** and click on **Open data model** **(2)** option to edit the semantic model.
+
+1. At the top right corner, Click on **Viewing** **1** to change it to **Editing** **2** permission settings. 
+
 
 1. Hide the following columns in your Fact and Dimension tables that are not necessary to create a report. Note that this does not remove the columns from the model; it simply hides them from view on the report canvas.
 
@@ -299,15 +302,13 @@ You can easily visualize the data in either a single query or in your data wareh
 
 1. Now you're ready to build a report and make this dataset available to others.
 
-1. On the **Reporting** tab **(1)**, click **New report** to begin creating a new Power BI report **(2)**.
+1. On the **File** tab **(1)**, click on **Create new report** **(2)** to begin creating a new Power BI report.
 
 1. In the **Data** pane, expand **FactSalesOrder**. Note that the columns you hid are no longer visible.
 
    ![](<./Images/gr_fb_e2_18.png>)
 
-1. On the **New report with all available data** dialog, click **Continue** to use all available tables in the report.
 
-   ![](<./Images/gr_fb_e2_19.png>)
 
 1. In the report canvas, expand the **DimProduct (1)** and **FactSalesOrder (2)** tables from the **Data** pane, then select the **Clustered bar chart** visual **(3)**. Add **Category** to the Y-axis and **SalesTotal** to the X-axis to create a bar chart visual **(4)**.
 
