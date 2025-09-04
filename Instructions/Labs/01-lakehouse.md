@@ -1,4 +1,4 @@
-# Lab-01: Create and Ingest Data with a Microsoft Fabric Lakehouse
+# Lab 01: Create and Ingest Data with a Microsoft Fabric Lakehouse
 
 ### Estimated Duration: 120 Minutes
 
@@ -21,13 +21,27 @@ SQL.
 
 ![](./Images/Create-and-ingest-data-with-MS-fabric-lakehouse.png)
 
-## Get started with lakehouses in Microsoft Fabric
+
+## Lab objectives
+
+In this exercise, you will complete the following tasks:
+
+- Task 1: Create a workspace
+- Task 2: Create a Lakehouse
+- Task 3: Upload a file
+- Task 4: Explore shortcuts
+- Task 5: Load file data into a table
+- Task 6: Use SQL to query tables
+- Task 7: Create a visual query
+- Task 8: Create a Report
+
+
+## Get started with Microsoft Fabric with Its Lakehouses
 
 Large-scale data analytics solutions have traditionally been built around a _data warehouse_, in which data is stored in relational tables and queried using SQL. The growth in "big data" (characterized by high _volumes_, _variety_, and _velocity_ of new data assets) together with the availability of low-cost storage and cloud-scale distributed compute technologies has led to an alternative approach to analytical data storage; the _data lake_. In a data lake, data is stored as files without imposing a fixed schema for storage. Increasingly, data engineers and analysts seek to benefit from the best features of both of these approaches by combining them in a _data lakehouse_; in which data is stored in files in a data lake and a relational schema is applied to them as a metadata layer so that they can be queried using traditional SQL semantics.
 
 In Microsoft Fabric, a lakehouse provides highly scalable file storage in a _OneLake_ store (built on Azure Data Lake Store Gen2) with a metastore for relational objects such as tables and views based on the open source _Delta Lake_ table format. Delta Lake enables you to define a schema of tables in your lakehouse that you can query using SQL.
 
-> **Note**: You'll need a Microsoft Fabric license to complete this exercise. Complete the previous task to proceed further.
 
 ## Task 1: Create a workspace
 
@@ -253,7 +267,7 @@ While many data professionals are familiar with SQL, data analysts with Power BI
 
    ![Screenshot of a Visual query.](./Images/salesquery.png)
 
-1. In the **SQL query 1** pane, click **Manage columns** **(1)** and select **Choose columns** **(2)**.
+1. In the **Visual query 1** pane, click **Manage columns** **(1)** and select **Choose columns** **(2)**.
 
    ![Screenshot of a Choose columns dialog box.](./Images/choosecolumns.png)
 
@@ -279,21 +293,27 @@ While many data professionals are familiar with SQL, data analysts with Power BI
 
 ## Task 8: Create a Report
 
-The tables in your lakehouse are automatically added to a default dataset that defines a data model for reporting with Power BI.
 
-1. In the **Explorer** pane, select **Model layouts** **(1)** to view the semantic model. Confirm that the **sales** table is included in the model layout **(2)**.
+In this task, we will create a new semantic model and add a table to the dataset, which will define the data model to be used for reporting in Power BI.
 
-   ![Screenshot of a data model.](./Images/fb_g2_1_21.png)
+
+1. Under the **Home** tab, Click on  **New semantic model** **(1)** to create the semantic model.
+
+   ![Screenshot of a data model.](./Images/task8-1.jpg)
 
    > **Note**: In this exercise, the data model consists of a single table. In a real-world scenario, you would likely create multiple tables in your lakehouse, each of which would be included in the model. You could then define relationships between these tables in the model.
 
-1. On the **Reporting** tab **(1)**, click **New report** **(2)** to begin creating a report using the semantic model.
+1. Enter **Custom semantic model** **(1)** in the name field and select the table **sales** **(2)**, than click on **Confirm** **(3)** to proceed.
 
-   ![](./Images/fb_g2_1_22.png)
+   ![](./Images/task8-2.jpg)
 
-1. On the **New report with all available data** dialog, ensure the **sales** table is selected, then click **Continue** to proceed.
+1. In the hub menu bar on the left, Click on your workspace **Fabriclab_XXXXX** **(1)**.
 
-   ![](./Images/fb_g2_1_23.png)
+   ![](./Images/task8-3.jpg)
+
+1. Select the **Custom semantic model** and click on **Create report** option to begin creating a report using the semantic model.
+
+   ![](./Images/task8-4.jpg)
 
 1. In the **Data** pane, expand the **sales** table **(1)**, then:
 
@@ -301,7 +321,7 @@ The tables in your lakehouse are automatically added to a default dataset that d
    - Select **Quantity** **(3)** to calculate the total quantity for each item.
    - A **Table Visualization** **(4)** is automatically added to the report canvas.
 
-      ![](./Images/fb_g2_1_24.png)
+      ![](./Images/task8-5.jpg)
 
 1. In the **Visualizations** pane, follow these steps to convert the table into a clustered bar chart:
 
@@ -309,7 +329,7 @@ The tables in your lakehouse are automatically added to a default dataset that d
    - Select the **Clustered bar chart** visualization type **(2)**.
    - The report canvas updates to display the item-wise total quantity in a bar chart **(3)**.
 
-      ![](./Images/fb_g2_1_25.png)
+      ![](./Images/task8-6.jpg)
 
 1. To save the report, click **File** **(1)** in the top menu, then select **Save** **(2)**.
 
@@ -317,16 +337,16 @@ The tables in your lakehouse are automatically added to a default dataset that d
 
 1. On the **Save your report** screen, enter **Item Sales Report** **(1)** as the name, then click **Save** **(2)** to save it to the selected workspace.
 
-   ![](./Images/fb_g2_1_27.png)
+   ![](./Images/task8-7.jpg)
 
-1. Close the browser tab containing the report to return to the SQL endpoint for your lakehouse. Then, in the hub menu bar on the left, select your workspace to verify that it contains the following items:
+1. Then, in the hub menu bar on the left, select your workspace to verify that it contains the following items:
 
    - Your lakehouse.
    - The SQL analytics endpoint for your lakehouse.
    - A default dataset for the tables in your lakehouse.
    - The **Item Sales Report** report.
 
-      ![](./Images/fb_g2_1_28.png)
+      ![](./Images/task8-8.jpg)
 
 > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
 >
@@ -337,6 +357,20 @@ The tables in your lakehouse are automatically added to a default dataset that d
 <validation step="8be3d605-b09f-4738-b1e5-c83a1e304b80" />
 
 <validation step="d75ef970-6298-404c-aeeb-8dafe17b3ac2" />
+
+## Summary
+
+In this exercise, you have accomplished the following:
+
+- Created a workspace to organize and manage your resources
+- Built a Lakehouse for storing and processing data
+- Uploaded a file into the Lakehouse environment
+- Explored shortcuts to efficiently manage data access
+- Loaded file data into a structured table
+- Queried tables using SQL for data exploration
+- Designed a visual query for easier insights
+- Created a report to visualize and share your findings
+
 
 ## **Congratulations! You have successfully completed this lab. Please click on next**
 
