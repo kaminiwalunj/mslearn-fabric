@@ -178,7 +178,7 @@ Most queries in a relational data warehouse involve aggregating and grouping dat
 
 1. In the hub menu bar on the left, Click on your workspace **Fabriclab\_<inject key="DeploymentID" enableCopy="false"/> (1)** and select the **myDataWarehouse** **(2)** warehouse.
 
-   ![](<./Images/task4-1.jpg>)
+   ![](<./Images/task4-1-2.jpg>)
 
 1. On the **Home** tab, click the dropdown next to **New SQL query** **(1)**, then select **New SQL query** **(2)** to open a new query editor
 
