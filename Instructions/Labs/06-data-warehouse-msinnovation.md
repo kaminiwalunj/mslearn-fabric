@@ -18,6 +18,18 @@ Here, you'll learn about data warehouses in Fabric, create a data warehouse, loa
 
 ![New lakehouse.](./Images/Analyze-data-in-data-warehouse.png)
 
+## Lab objectives
+
+In this exercise, you will complete the following tasks:
+
+- Task 1: Create a Data Warehouse
+- Task 2: Create tables and insert data
+- Task 3: Define a Data Model
+
+
+
+
+
 ## Get started with data warehouses in Microsoft Fabric
 
 In Microsoft Fabric, a data warehouse provides a relational database for large-scale analytics. Unlike the default read-only SQL endpoint for tables defined in a lakehouse, a data warehouse provides full SQL semantics, including the ability to insert, update, and delete data in the tables.
