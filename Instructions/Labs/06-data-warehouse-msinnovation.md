@@ -74,7 +74,7 @@ A warehouse is a relational database in which you can define tables and other ob
 
 1. In the **Explorer** pane, expand **myDataWarehouse** **(1)**, then expand the **Schemas** section **(2)** to view the available schema objects, including `dbo`, `INFORMATION_SCHEMA`, `queryinsights`, and `sys`.
 
-   ![](<./Images/gr_fb_e2_6.png>)
+   ![](<./Images/gr_fb_e2_6-1.png>)
 
 1. On the **Home** tab, click the dropdown next to **New SQL query** **(1)**, then select **New SQL query** **(2)** to open a new query editor
 
