@@ -61,7 +61,7 @@ Once you're ready to dive in, your virtual machine and lab guide will be right a
  
 ![](./Images/fb_g_1_1.png)
 
-### Virtual Machine & Lab Guide
+## Virtual Machine & Lab Guide
  
 Your virtual machine is your workhorse throughout the workshop. The lab guide is your roadmap to success.
  
