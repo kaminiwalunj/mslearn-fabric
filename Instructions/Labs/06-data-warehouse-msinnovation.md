@@ -25,10 +25,8 @@ In this exercise, you will complete the following tasks:
 - Task 1: Create a Data Warehouse
 - Task 2: Create tables and insert data
 - Task 3: Define a Data Model
-
-
-
-
+- Task 4: Query data Warehouse tables
+- Task 5: Create a View
 
 ## Get started with data warehouses in Microsoft Fabric
 
