@@ -9,7 +9,7 @@ This lab provides hands-on exercises in using Microsoft Fabric Lakehouse and Dat
 
 By the end of this lab, you will learn:
 
-- **Creating and Ingesting Data with a Microsoft Fabric Lakehouse**: This hands-on exercise guides through setting up a Microsoft Fabric workspace and configuring a Lakehouse for scalable storage. You will ingest data from various sources, convert files into structured tables, and apply SQL queries for data manipulation and analysis. Participants will also use Power Query for advanced data transformations and create insightful reports with Power BI to effectively visualize and share their findings.
+- **Creating and Ingesting Data with a Microsoft Fabric Lakehouse**: This hands-on exercise guides you through setting up a Microsoft Fabric workspace and configuring a Lakehouse for scalable storage. You will ingest data from various sources, convert files into structured tables, and apply SQL queries for data manipulation and analysis. Participants will also use Power Query for advanced data transformations and create insightful reports with Power BI to effectively visualize and share their findings.
 
 - **Analyze data in a Data Warehouse**: This hands-on exercise involves creating a workspace and setting up a Data Warehouse. You will create tables and insert data, then define a data model for structured analysis. You will learn to query the Data Warehouse tables and create views for efficient data retrieval and reporting. Participants will enhance their skills in managing and analyzing data within a Data Warehouse environment.
 
@@ -55,35 +55,35 @@ This lab introduces the Microsoft Fabric Lakehouse, a unified data platform that
 
 ## Getting Started with the lab
 
-## Accessing Your Lab Environment
+### Accessing Your Lab Environment
 
 Once you're ready to dive in, your virtual machine and lab guide will be right at your fingertips within your web browser.
  
 ![](./Images/fb_g_1_1.png)
 
-## Virtual Machine & Lab Guide
+### Virtual Machine & Lab Guide
  
 Your virtual machine is your workhorse throughout the workshop. The lab guide is your roadmap to success.
  
-## Exploring Your Lab Resources
+### Exploring Your Lab Resources
  
 To get a better understanding of your lab resources and credentials, navigate to the **Environment** details tab.
  
 ![Explore Lab Resources](./Images/fb_g_1_3.png)
  
-## Utilizing the Split Window Feature
+### Utilizing the Split Window Feature
  
 For convenience, you can open the lab guide in a separate window by selecting the **Split Window** button from the top right corner.
  
 ![Use the Split Window Feature](./Images/fb_g_1_4.png)
  
-## Managing Your Virtual Machine
+### Managing Your Virtual Machine
  
 Feel free to start, stop, or restart your virtual machine as needed from the **Resources** tab. Your experience is in your hands!
  
 ![Manage Your Virtual Machine](./Images/fb_g_1_5.png)
 
-## Lab Guide Zoom In/Zoom Out
+### Lab Guide Zoom In/Zoom Out
 
 To adjust the zoom level for the environment page, click the **A↕** icon located next to the timer in the lab environment.
 
@@ -91,7 +91,7 @@ To adjust the zoom level for the environment page, click the **A↕** icon locat
 
 Now you're all set to explore the powerful world of technology. Feel free to reach out if you have any questions along the way. 
 
-## Support Contact
+### Support Contact
 
 The CloudLabs support team is available 24/7, 365 days a year, via email and live chat to ensure seamless assistance at any time. We offer dedicated support channels tailored specifically for both learners and instructors, ensuring that all your needs are promptly and efficiently addressed.
 
