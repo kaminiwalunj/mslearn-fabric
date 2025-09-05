@@ -74,7 +74,7 @@ A warehouse is a relational database in which you can define tables and other ob
 
 1. In the **Explorer** pane, expand **myDataWarehouse** **(1)**, then expand the **Schemas** section **(2)** to view the available schema objects, including `dbo`, `INFORMATION_SCHEMA`, `queryinsights`, and `sys`.
 
-   ![](<./Images/gr_fb_e2_6.png>)
+   ![](<./Images/gr_fb_e2_6-1.png>)
 
 1. On the **Home** tab, click the dropdown next to **New SQL query** **(1)**, then select **New SQL query** **(2)** to open a new query editor
 
@@ -130,7 +130,7 @@ A relational data warehouse typically consists of fact and dimension tables. The
 
    ![](<./Images/task3-2.jpg>)
 
-1. In the hub menu bar on the left, Click on your workspace **Fabriclab_XXXXX**.
+1. In the hub menu bar on the left, Click on your workspace **Fabriclab\_<inject key="DeploymentID" enableCopy="false"/> (1)**
 
    ![](<./Images/task3-3.jpg>)
 
@@ -176,9 +176,9 @@ Since the data warehouse is a relational database, you can use SQL to query its 
 
 Most queries in a relational data warehouse involve aggregating and grouping data (using aggregate functions and GROUP BY clauses) across related tables (using JOIN clauses).
 
-1. In the hub menu bar on the left, Click on your workspace **Fabriclab_XXXXX** **(1)** and select the **myDataWarehouse** **(2)** warehouse.
+1. In the hub menu bar on the left, Click on your workspace **Fabriclab\_<inject key="DeploymentID" enableCopy="false"/> (1)** and select the **myDataWarehouse** **(2)** warehouse.
 
-   ![](<./Images/task4-1.jpg>)
+   ![](<./Images/task4-1-2.jpg>)
 
 1. On the **Home** tab, click the dropdown next to **New SQL query** **(1)**, then select **New SQL query** **(2)** to open a new query editor
 
@@ -284,7 +284,7 @@ Instead of writing SQL code, you can use the graphical query designer to query t
 
 You can easily visualize the data in either a single query or in your data warehouse. Before you visualize, hide columns and/or tables that aren't friendly to report designers.
 
-1. In the hub menu bar on the left, Click on your workspace **Fabriclab_XXXXX**.
+1. In the hub menu bar on the left, Click on your workspace **Fabriclab\_<inject key="DeploymentID" enableCopy="false"/>**.
 
    ![](<./Images/task3-3.jpg>)
 
@@ -354,7 +354,6 @@ If you've finished exploring your data warehouse, you can delete the workspace y
 
    ![](./Images/g_cor_g_2.png)
 
-
 ## Summary
 
 In this exercise, you have accomplished the following:
@@ -366,5 +365,3 @@ In this exercise, you have accomplished the following:
 - Created a View, performed Visual Queries, and visualized the data.
 
 ## Congratulations! You have successfully completed the Hands-on lab.
-
-You've gained practical skills in setting up and working with Microsoft Fabric Lakehouse and Data Warehouse - ingesting, transforming, querying data, and visualizing insights with Power BI.

@@ -156,7 +156,7 @@ Fabric provides multiple ways to load data into the lakehouse, including built-i
 
 1. On the **Lakehouse explorer** pane, click the ellipses **(1)** next to the **data** folder, hover over **Upload** **(2)**, then select **Upload files** **(3)**.
 
-   ![](<./Images/fb_g2_1_6.png>)
+   ![](<./Images/fb_g2_1_6-2.png>)
 
 1. On the **Upload files** dialog, click the folder icon on the right to browse and select the **sales.csv** file from your local or lab machine.
 
@@ -172,7 +172,7 @@ Fabric provides multiple ways to load data into the lakehouse, including built-i
 
 1. In the **Lakehouse explorer** pane, expand **Lakehouse** **(1)**, then expand **Files** **(2)** and select the **data** **(3)** folder. Verify that the **sales.csv** **(4)** file has been uploaded successfully.
 
-   ![Screenshot of uploaded sales.csv file in a lakehouse.](./Images/fb_g2_1_11.png)
+   ![Screenshot of uploaded sales.csv file in a lakehouse.](./Images/fb_g2_1_11-1.png)
 
 1. Select the **sales.csv** file to see a preview of its contents.
 
@@ -184,7 +184,7 @@ In many scenarios, the data you need to work with in your lakehouse may be store
 
 1. In the **ellipses (1)** menu for the **Files** folder, select **New shortcut (2)**.
 
-   ![](./Images/newshortcut.png)
+   ![](./Images/newshortcut-1.png)
 
 1. View the available data source types for shortcuts. Then close the **New shortcut** dialog box without creating a shortcut.
 
@@ -194,7 +194,7 @@ The sales data you uploaded is in a file, which data analysts and engineers can 
 
 1. In the **Lakehouse explorer** pane, expand **Lakehouse** **(1)**, then expand **Files** **(2)** and select the **data** folder **(3)**. Confirm that the **sales.csv** file appears in the folder **(4)**.
 
-   ![](<./Images/fb_g2_1_11.png>)
+   ![](<./Images/fb_g2_1_11-1.png>)
 
 1. In the **data** folder, click the ellipses next to the **sales.csv** file to open the context menu.
 
@@ -212,11 +212,11 @@ The sales data you uploaded is in a file, which data analysts and engineers can 
 
 1. In the **Lakehouse explorer** pane, expand **Lakehouse** **(1)**, then expand **Tables** and select **sales** **(2)**. Confirm that the data from the **sales.csv** file is now loaded and displayed in table format **(3)**.
 
-   ![Screenshot of a table preview.](./Images/fb_g2_1_13.png)
+   ![Screenshot of a table preview.](./Images/fb_g2_1_13-1.png)
 
 1. In the **ellipses (1)** menu for the **sales** table, select **View files (2)** to see the underlying files for this table
 
-   ![Screenshot of a table preview.](./Images/tables.png)
+   ![Screenshot of a table preview.](./Images/tables-1.png)
 
 1. In the **File view** for the **sales** table, observe that it contains Delta Lake log files and Parquet data files. These represent the physical storage format of the table.
 
@@ -302,7 +302,7 @@ In this task, we will create a new semantic model and add a table to the dataset
 
    ![](./Images/task8-2.jpg)
 
-1. In the hub menu bar on the left, click on your workspace **Fabriclab_XXXXX** **(1)**.
+1. In the hub menu bar on the left, click on your workspace **Fabriclab\_<inject key="DeploymentID" enableCopy="false"/> (1)**.
 
    ![](./Images/task8-3.jpg)
 
@@ -367,8 +367,7 @@ In this exercise, you have accomplished the following:
 - Created a report to visualize and share your findings
 
 
-## **Congratulations! You have successfully completed this lab. Please click on Next**
+## You have successfully completed the lab. Click on Next >>.
 
-![](./Images/bar_g_g_2.png)
 
 
