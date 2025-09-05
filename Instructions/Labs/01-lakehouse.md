@@ -42,7 +42,7 @@ In this task, you will create a new workspace that serves as a collaborative env
 
 Before working with data in Fabric, create a workspace with the Fabric trial enabled.
 
-1. Open the Edge browser and sign in to [Microsoft Fabric](https://app.fabric.microsoft.com) at `https://app.fabric.microsoft.com`.
+1. Open the Edge browser and sign in to [Microsoft Fabric](https://app.fabric.microsoft.com).
 
    - On the Microsoft Fabric page, enter your **email:** <inject key="AzureAdUserEmail"></inject> **(1)** and click **Submit** **(2)**.
 
