@@ -76,7 +76,7 @@ Before working with data in Fabric, create a workspace with the Fabric trial ena
 
    ![](./Images/staycurrentonstage.png)
 
-1. Click the **Account manager (1)** icon in the top-right corner. Under the **Profile** section, verify that the **Trial Status**  **(2)** shows the number of days remaining.
+1. Click the **Account manager (1)** icon in the top-right corner. Under the **Profile** section, verify that the **Trial Status **(2)** shows the number of days remaining.
 
    ![](./Images/fb_ex1_6.png)
 
@@ -144,7 +144,7 @@ Fabric provides multiple ways to load data into the lakehouse, including built-i
 
    > Right-click anywhere on the page containing the data and select **Save as** to save the page as a CSV file.
 
-   - Or If you are using the lab virtual machine (lab VM) provided to you, you can get the file from the **C:\LabFiles\dp-data-main** directory.
+   - Or if you are using the lab virtual machine (lab VM) provided to you, you can get the file from the **C:\LabFiles\dp-data-main** directory.
 
 1. On the **Lakehouse explorer** pane, click the ellipses **(1)** next to the **Files** folder, then select **New subfolder** **(2)**.
 
@@ -190,7 +190,7 @@ In many scenarios, the data you need to work with in your lakehouse may be store
 
 ## Task 5: Load file data into a table
 
-The sales data you uploaded is in a file, which data analysts and engineers can work with directly by using Apache Spark code. However, in many scenarios, you may want to load the data from the file into a table so that you can query it using SQL.
+The sales data you uploaded is in a file that data analysts and engineers can work with directly by using Apache Spark code. However, in many scenarios, you may want to load the data from the file into a table so that you can query it using SQL.
 
 1. In the **Lakehouse explorer** pane, expand **Lakehouse** **(1)**, then expand **Files** **(2)** and select the **data** folder **(3)**. Confirm that the **sales.csv** file appears in the folder **(4)**.
 
@@ -366,8 +366,4 @@ In this exercise, you have accomplished the following:
 - Designed a visual query for easier insights
 - Created a report to visualize and share your findings
 
-
 ## You have successfully completed the lab. Click on Next >>.
-
-
-
