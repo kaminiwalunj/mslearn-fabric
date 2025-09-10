@@ -8,73 +8,14 @@ Microsoft Fabric provides an end-to-end platform for data solutions, including r
 
 You will be able to complete the following tasks:
 
-- Task 1: Assign Fabric Administrator Role
-- Task 2: Create a workspace and Download file for KQL database
-- Task 3: Create a KQL database
-- Task 4: Use KQL to query the sales table
-- Task 5: Create a Power BI report from a KQL Query set
+- Task 1: Create a workspace and Download file for KQL database
+- Task 2: Create a KQL database
+- Task 3: Use KQL to query the sales table
+- Task 4: Create a Power BI report from a KQL Query set
 
-## Task 1: Assign Fabric Administrator Role
-
-In this task, you will learn how to assign the Fabric Administrator role to manage permissions and access within Microsoft Fabric.
-   
-1. In the Azure portal, type **Microsoft Entra ID (1)** in the search box and select **Microsoft Entra ID (2)** from the results.
-
-   ![Navigate-To-AAD](./Images/entra01.png)
-
-1. On the **Microsoft Entra ID** page, navigate to **Roles and administrators (1)**.
-
-   ![Roles-and-Administrator](./Images/29.png)
-
-1. In the **Roles and administrators** page, type **Fabric Administrator (1)** in the search box and select **Fabric Administrator (2)** from the results.
-
-   ![search-fabric-admin](./Images/31.png)
-
-1. This will take you to the **Fabric Administrator | Assignments** page where you will have to assign yourself the **Fabric Administrator role**. Now, click on **+ Add assignments**.
-
-   ![click-add-assignments](./Images/30.png)
-
-1. Make sure to **check the box (1)** next to  **<inject key="AzureAdUserEmail"></inject>**, confirm if it is **Selected (2)** and click on **Add (3)**.
-
-   ![check-and-add-role](./Images/32.png)
-
-1. You can confirm the **Fabric Administrator** role has been added successfully by **Refresh** Fabric Administrators | Assignments page. After **confirming** it has been added successfully, navigate back to **Home**.
-
-   ![check-and-navigate-back-to-home](./Images/33.png)
-
-## Task 2: Create a workspace
+## Task 1: Create a workspace
 
 This task will guide you through creating a workspace in Microsoft Fabric.
-
-1. In **Microsoft Edge**, open a new tab and go to the [Microsoft Power BI Portal](https://app.powerbi.com). This will take you to the login page.
-
-    > **Note:** If you're using the lab environment, it may sign you in indirectly.
-
-    > **Note:** If you are not using the lab environment and have an existing Power BI account, you may want to use the browser in private / incognito mode.
-
-1. In the Power BI tab, provide the **Email/Username: <inject key="AzureAdUserEmail"></inject> (1)** and select **Submit (2)**.
-
-   ![](./Images/lab1-7.png)
-
-1. Complete the sign-in process by clicking on **Continue**
-
-   ![](./Images/lab1-8.png)
-   
-1. Enter a 10-digit phone number and select **Get started**. Select **Get started** once more. You will be redirected to Power BI. If prompted provide the **Password:** <inject key="AzureAdUserPassword"></inject>
-   
-   ![](./Images/lab1-9.png)
-   
-1. Leave the Microsoft Edge browser window open.
-
-1. Select **Account manager (1)**, and click on **Free trial (2)**.
-
-   ![Account-manager-start](./Images/07.png)
-
-1. Upgrade to a free Microsoft Fabric trial dialog opens. Select **Activate**.
-
-   ![Start-trial](./Images/lab1-11.png)
-
-   >**Note:** The trial capacity region may differ from the one shown in the screenshot. No need to worry – simply use the default selected region, activate it, and continue to the next step.
 
 1. In the menu bar on the left, select **Workspaces (1)** (the icon looks similar to &#128455;) and click on **New workplace (2)**.
 
