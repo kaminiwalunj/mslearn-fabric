@@ -17,13 +17,15 @@ You will be able to complete the following tasks:
 
 This task will guide you through creating a workspace in Microsoft Fabric.
 
-1. In the menu bar on the left, select **Workspaces (1)** (the icon looks similar to &#128455;) and click on **New workplace (2)**.
+1. In the menu bar on the left, select **Workspaces (1)** (the icon looks similar to &#128455;) and click on **New workspace (2)**.
 
-   ![](./Images/workspace-1.png)
+   ![](./Images/E1T1S1.png)
 
-1. Create a new workspace named **dp_fabric-<inject key="Deployment ID" enableCopy="false"/> (1)**. Expand **Advanced**, then under **License mode**, select **Trial (2)** and click **Apply (3)** to create and open the workspace.
+1. Create a new workspace named **dp_fabric-<inject key="Deployment ID" enableCopy="false"/> (1)**. Expand **Advanced (2)**, then under **License mode**, select **Trial (3)** and click **Apply (4)** to create and open the workspace.
    
-   ![](./Images/workspace-3.png)
+   ![](./Images/E1T2S2-1.png)
+
+   ![](./Images/E1T2S2-2.png)
 
    >**Note:** If you see a pop-up saying **"Upgrade to a paid Power BI license"**, click on **"Try free"** to proceed with the trial.
 
@@ -31,11 +33,8 @@ This task will guide you through creating a workspace in Microsoft Fabric.
 
 1. When your new workspace opens, it should be empty, as shown here:
 
-   ![Screenshot of an empty workspace in Power BI.](./Images/34.png)
+   ![Screenshot of an empty workspace in Power BI.](./Images/E1T2S3.png)
  
-1. At the bottom left of the Power BI portal, select the **Power BI** icon and switch to the **Fabric** experience.
-
-    ![](./Images/35.png)
 
 ## Task 3: Download file for KQL database and Create a KQL database
 
@@ -49,19 +48,23 @@ Now that you have a workspace, download the data file for analysis. Using *Kusto
 
 1. Navigate to **dp_fabric-<inject key="Deployment ID" enableCopy="false"/>** workspace from the hub menu bar on the left.
 
-    ![](./Images/dp_fabric.png)
+    ![](./Images/E1T3S3.png)
 
 1. In the **dp_fabric-<inject key="Deployment ID" enableCopy="false"/>** page, click on **New item (1)** and in the search bar serch for **Eventhouse (2)** and select **Eventhouse (3)**.
    
-   ![](./Images/36.png)
+   ![](./Images/E1T3S4.png)
 
 1. Enter **Eventhouse-<inject key="Deployment ID" enableCopy="false"/> (1)** as the name and click **Create (2)**.
 
-    ![](./Images/37.png)
+    ![](./Images/E1T3S5-1.png)
 
-1. When the new eventhouse has been created, select the option to Get Data from **Local File**. 
+    - When the **Welcome to Eventhouse** pop-up appears, select **Get Started**.
 
-    ![Screenshot of selected Fabric Experience home with RTA selected](./Images/38.png)
+        ![](./Images/E1T3S5-2.png)
+
+1. When the new eventhouse has been created, right click on it **(1)**, select the option **Get Data (2)** then **Local File (3)**. 
+
+    ![Screenshot of selected Fabric Experience home with RTA selected](./Images/E1T3S6.png)
 
 1. Then use the wizard to import the data into a new table by selecting the following options: 
 
@@ -69,28 +72,28 @@ Now that you have a workspace, download the data file for analysis. Using *Kusto
         - **Database**: *The database you created is already selected*
         - **Table**: *Create a new table named* **sales** by clicking on the + sign to the left of ***New table***
 
-          ![New table wizard step one](./Images/39.png)
+          ![New table wizard step one](./Images/E1T3S7-1.png)
 
         - You will now see the **Drag files here or a Browse for files** hyperlink appear in the same window.
 
-          ![New table wizard step two](./Images/40.png)
+          ![New table wizard step two](./Images/E1T3S7-2.png)
 
         - Browse or drag your **sales.csv** onto the screen and wait for the Status box to change to a green check box and then select **Next**
 
-          ![New table wizard step three](./Images/41.png)
+          ![New table wizard step three](./Images/E1T3S7-3.png)
 
         - In the below screen, you'll notice that the column headings are in the first row. Although the system has detected them, we still need to move the **First row is column header** slider above these lines to prevent any errors. Once you adjust the slider, everything should appear correctly. Finally, click the **Finish** button in the bottom right corner of the panel to proceed.
 
-          ![New table wizard step five](./Images/42.png)
+          ![New table wizard step five](./Images/E1T3S7-4.png)
 
-        - Wait for the steps in the summary screen to complete, which include:
+        - Wait for the steps in the summary screen to complete, which include **(1)**:
             - Create table (sales)
             - Create mapping (sales_mapping)
             - Data queuing
             - Blob ingestion
-        - Select the **Close** button
+        - Select the **Close (2)** button
 
-          ![New table wizard step six](./Images/43.png)
+          ![New table wizard step six](./Images/E1T3S7-5.png)
 
 > **Note**: In this task, you imported a very small amount of static data from a file, which is fine for the purposes of this task. In reality, you can use Kusto to analyze much larger volumes of data; including real-time data from a streaming source such as Azure Event Hubs.
 
@@ -100,9 +103,9 @@ This task will walk you through using KQL (Kusto Query Language) to query the Sa
 
 Now that you have a table of data in your database, you can use KQL code to query it.
 
-1. Right-click on the **sales (1)** table, select the **Query with code (2)**, and then select **Show any 100 records**.
+1. Right-click on the **sales (1)** table, select the **Query with code (2)**, and then **Show any 100 records**.
 
-   ![](./Images/44.png)
+   ![](./Images/E1T4S1.png)
 
 1. A new pane will open with the query and its result. 
 
@@ -135,17 +138,17 @@ Now that you have a table of data in your database, you can use KQL code to quer
     ```
 1. Run the query and review the results, which should contain the total net revenue for each product between January 1st and December 31st 2020 in ascending order of product name.
 
-1. Navigate to **dp_fabric-<inject key="Deployment ID" enableCopy="false"/>** workspace from the hub menu bar on the left.
+1. Navigate to **dp_fabric-<inject key="Deployment ID" enableCopy="false"/> (1)** workspace from the hub menu bar on the left. Select **KQL Database (2)** from the list.
 
-    ![](./Images/dp_fabric.png)
+    ![](./Images/E1T4S9.png)
 
-1. Select **KQL Queryset** from the list.
+1. Select the **KQL queryset (1)**, Click on **Edit (2)**.
 
-   ![](./Images/45.png)
+   ![](./Images/E1T4S10-1.png)
 
-1. Change the name of KQL queryset to **Revenue by Product** and click on **Save**.
+11. Change the name of KQL queryset to **Revenue by Product**.
 
-   ![](./Images/46.png)
+    ![](./Images/E1T4S10-2.png)
 
 ## Task 5: Create a Power BI report from a KQL Query set
 
@@ -153,23 +156,29 @@ This task will guide you through visualizing and analyzing data effectively by c
 
 You can use your KQL Queryset as the basis for a Power BI report.
 
-1. In the query workbench editor for your query set, run the query and wait for the results.
+1. On the **Revenue by Product** KQL Queryset select **More (1)** then **Create Power BI report (2)**. Wait for the report editor to open.
 
-1. Select **Build Power BI report** and wait for the report editor to open.
+    ![](./Images/E1T5S2.png)
 
-1. In the report editor, in the **Data** pane, expand **Kusto Query Result** and select the **Item** and **TotalRevenue** fields.
+1. In the report editor, in the **Data** pane, expand **Kusto Query Result (1)** and select the **Item** and **TotalRevenue** **(2)** fields.
+
+    ![](./Images/E1T5S3.png)
 
 1. On the report design canvas, select the table visualization that has been added and then in the **Visualizations** pane, select **Clustered bar chart**.
 
-    ![Screenshot of a report from a KQL query.](./Images/powerbireport.png)
+    ![Screenshot of a report from a KQL query.](./Images/E1T5S4.png)
 
 1. In the **Power BI** window, in the **File (1)** menu, select **Save (2)**. 
 
-   ![](./Images/47.png)
+   ![](./Images/E1T5S5.png)
 
-1. Then save the report as **Revenue by Item.pbix** in the workspace where your lakehouse and select your workplace from the dropdown.
-
+1. Save the report as **Revenue by Item (1)** in the workspace **dp_fabric-<inject key="Deployment ID" enableCopy="false"/> (2)**. Then select **Continue (3)**.
+  
+    ![](./Images/E1T5S6.png)
+    
 1. Close the **Power BI** window, and in the bar on the left, select the icon for your workspace.
+
+     ![](./Images/E1T5S7.png)
 
     Refresh the Workspace page if necessary to view all of the items it contains.
 
@@ -181,7 +190,6 @@ In this lab, you have the opportunity to explore Microsoft Fabric as a platform 
 
 You have completed the following tasks:
 
-- Assigned Fabric Administrator Role
 - Created a workspace
 - Downloaded file for KQL database and Created a KQL database
 - Used KQL to query the sales table
@@ -193,4 +201,6 @@ You have completed the following tasks:
 - [Kusto Query Language (KQL) Overview](https://learn.microsoft.com/en-us/azure/data-explorer/kusto/query/)
 - [Power BI Documentation](https://learn.microsoft.com/en-us/power-bi/)
 
-## You have successfully completed the lab, please click on the next
+Now, click on **Next >>** from the lower right corner to move on to the next page.
+
+![](./Images/next.png)
