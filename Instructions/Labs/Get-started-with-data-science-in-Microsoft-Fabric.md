@@ -175,9 +175,7 @@ Now that you've loaded the data, you can use it to train a machine learning mode
     
     ![](./Images/E2T4S4.png)
 
-    The code creates an MLflow experiment named `experiment-churn`. Your models will be tracked in this experiment.
-
-    
+    The code creates an MLflow experiment named `experiment-churn`. Your models will be tracked in this experiment.   
 
 1. Add another new code cell to the notebook, enter the following code in it, and run it:
 
@@ -194,8 +192,7 @@ Now that you've loaded the data, you can use it to train a machine learning mode
     
     ![](./Images/E2T4S5.png)
 
-    The code trains a classification model using Logistic Regression. Parameters, metrics, and artifacts are automatically logged with MLflow. Additionally, you're logging a parameter called `estimator`, with the value `LogisticRegression`.
-
+     The code trains a classification model using Logistic Regression. Parameters, metrics, and artifacts are automatically logged with MLflow. Additionally, you're logging a parameter called `estimator`, with the value `LogisticRegression`.
 
 1. Add another new code cell to the notebook, enter the following code in it, and run it:
 
@@ -213,8 +210,6 @@ Now that you've loaded the data, you can use it to train a machine learning mode
     ![](./Images/E2T4S6.png)
 
     The code trains a classification model using a Decision Tree Classifier. Parameters, metrics, and artifacts are automatically logged with MLflow. Additionally, you're logging a parameter called `estimator`, with the value `DecisionTreeClassifier`.
-
-
 
 ## Task 5: Use MLflow to search and view your experiments
 
