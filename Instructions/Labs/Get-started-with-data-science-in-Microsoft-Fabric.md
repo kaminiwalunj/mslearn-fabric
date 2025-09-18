@@ -37,7 +37,7 @@ Now that you have a workspace, it's time to switch to the *Data science* experie
 
     >**Note:** After a minute or so, a new lakehouse with no **Tables** or **Files** will be created. You need to ingest some data into the data lakehouse for analysis. There are multiple ways to do this, but in this task, you'll simply download and extract a folder of text files from your local computer (or lab VM if applicable) and then upload them to your lakehouse.
 
-1. Inside the provided LabVM, download the **churn.csv** file for this exercise by navigating to **C:\LabFiles\dp-data-main**.
+1. Inside the provided LabVM, locate the **churn.csv** file for this exercise by navigating to **C:\LabFiles\dp-data-main**.
 
     >**Note:** Alternatively, if you are using your own machine, you can download and save the file from **[churn.csv](https://raw.githubusercontent.com/MicrosoftLearning/dp-data/main/churn.csv)**
 
