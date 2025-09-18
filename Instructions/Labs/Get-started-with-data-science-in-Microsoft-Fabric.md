@@ -1,6 +1,6 @@
 # Lab 2: Get started with Data Science in Microsoft Fabric
 
-### Estimated Duration: 150 minutes
+### Estimated Duration: 120 minutes
 
 Data science is a combination of mathematics, statistics, and computer engineering. When you perform data science, you can analyze your data and identify complicated patterns that can provide you with meaningful insights for your organization. You can use data science to create artificial intelligence (AI) models that encompass the complicated patterns you find in your data. A common approach is to use data science to train machine learning models using libraries like scikit-learn in Python to achieve AI.
 
@@ -27,7 +27,7 @@ Now that you have a workspace, it's time to switch to the *Data science* experie
 
     ![](./Images/E1T3S3.png)
 
-1. In the **dp_fabric-<inject key="Deployment ID" enableCopy="false"/>** page, click on **New item (1)** and in the search bar serch for **Lakehouse (2)** and select **Lakehouse (3)**.
+1. In the **dp_fabric-<inject key="Deployment ID" enableCopy="false"/>** page, click on **+ New item (1)** and in the search bar serch for **Lakehouse (2)** and select **Lakehouse (3)**.
    
    ![](./Images/E2T1S2.png)
 
@@ -49,7 +49,7 @@ Now that you have a workspace, it's time to switch to the *Data science* experie
 
    ![](./Images/E2T1S6-2.png)
 
-1. After the file has been uploaded, right-click on **Files (1)** and select **Refresh (2)** and verify that the **churn.csv (3)** CSV file has been uploaded.
+1. After the file has been uploaded, right-click on **Files (1)** and select **Refresh (2)** and verify that the **churn.csv (3)** file has been uploaded.
 
    ![](./Images/E2T1S7.png)
 
@@ -63,15 +63,13 @@ To train a model, you can create a *notebook*. Notebooks provide an interactive 
 
     ![](./Images/E1T3S3.png)
 
-1. In the **dp_fabric-<inject key="Deployment ID" enableCopy="false"/>** page, click on **New item (1)** and in the search bar serch for **Notebook (2)** and select **Notebook (3)**.
+1. In the **dp_fabric-<inject key="Deployment ID" enableCopy="false"/>** page, click on **+ New item (1)** and in the search bar serch for **Notebook (2)** and select **Notebook (3)**.
 
      ![](./Images/E2T2S2.png)
 
-    - On the pop-up **Enhance your notebook experience with AI tools** select **Skip tour**.
+1. On the pop-up **Enhance your notebook experience with AI tools** select **Skip tour**.
 
-        ![](./Images/E2T2S2-1.png)
-
-    - After a few seconds, a new notebook containing a single *cell* will open. Notebooks are made up of one or more cells that can contain *code* or *markdown* (formatted text).
+    ![](./Images/E2T2S2-1.png)
 
 1. Select the first cell (which is currently a *code* cell), and then in the dynamic toolbar at its top-right, use the **M&#8595;** button to convert the cell to a *markdown* cell.
 
@@ -103,11 +101,11 @@ Now you're ready to run code to prepare data and train a model. To work with dat
 
    ![](./Images/E2T3S1.png)
 
-1. Select the lakehouse you created in a previous section named as **Lakehouse<inject key="Deployment ID" enableCopy="false"/> (1)** and select **Connect**.
+1. Select the lakehouse you created in a previous section named as **Lakehouse<inject key="Deployment ID" enableCopy="false"/> (1)** and select **Connect (2)**.
 
    ![](./Images/E2T3S2.png)
 
-1. Click on the **Files (1)** folder to display the CSV file next to the notebook editor. Then, open the **...** menu for **churn.csv (2)** and select **Load data (3)** > **Pandas (4)**.
+1. Click on the **Files (1)** folder to display the CSV file next to the notebook editor. Then, open the **ellipsis (...)** menu for **churn.csv (2)** and select **Load data (3)** > **Pandas (4)**.
 
     ![](./Images/E2T3S3.png)
 
@@ -291,9 +289,9 @@ Microsoft Fabric will keep track of all your experiments and allow you to visual
 
     > **Tip:** If you don't see any logged experiment runs, refresh the page.
 
-    - On the pop-up, **Notebooks, Experiments, and ML models** select **Skip for now**.
+1. On the pop-up, **Notebooks, Experiments, and ML models** select **Skip for now**.
 
-        ![](./Images/E2T6S2-1.png)
+    ![](./Images/E2T6S2-1.png)
 
 1. Review the **Run metrics** to explore how accurate your regression model is.
 
@@ -323,7 +321,7 @@ In this task, you will discover how to preserve your work by saving the Notebook
 
 Now that you've finished training and evaluating the models, you can save the notebook with a meaningful name and end the Spark session.
 
-1. Navigate to **dp_fabric-<inject key="Deployment ID" enableCopy="false"/> (1)** workspace from the hub menu bar on the left and select **Notebook 1 (2)**.
+1. Navigate to **dp_fabric-<inject key="Deployment ID" enableCopy="false"/>** workspace from the hub menu bar on the left and select **Notebook 1**.
 
     ![](./Images/E2T8S1.png)
 
@@ -347,7 +345,7 @@ If you've finished exploring your model and experiments, you can delete the work
 
    ![](./Images/CUR2.png)
 
-1. In the **General (1)** section, scroll down and select **Remove this workspace (2)** .
+1. In the **General (1)** section, scroll down and select **Remove this workspace (2)**.
 
     ![](./Images/CUR3.png)
 
@@ -355,7 +353,7 @@ If you've finished exploring your model and experiments, you can delete the work
 
    ![Screenshot of the plotted evaluation metrics.](./Images/CUR4.png)
 
-## Review:
+## Summary:
 
 In this lab, you have learned how to set up a data science workflow in Microsoft Fabric. You created a Lakehouse, uploaded data, and used Notebooks to explore and preprocess the data. You trained a machine learning model, tracked experiments using MLflow, and saved both the model and the Notebook. This hands-on experience demonstrated how Microsoft Fabric streamlines data science and AI development.
 
