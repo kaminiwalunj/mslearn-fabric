@@ -49,7 +49,7 @@ Now that you have a workspace, download the data file for analysis. Using *Kusto
 
     ![](./Images/E1T3S3.png)
 
-1. In the **dp_fabric-<inject key="Deployment ID" enableCopy="false"/>** page, click on **New item (1)** and in the search bar serch for **Eventhouse (2)** and select **Eventhouse (3)**.
+1. In the **dp_fabric-<inject key="Deployment ID" enableCopy="false"/>** page, click on **+ New item (1)** and in the search bar serch for **Eventhouse (2)** and select **Eventhouse (3)**.
    
    ![](./Images/E1T3S4.png)
 
@@ -57,11 +57,11 @@ Now that you have a workspace, download the data file for analysis. Using *Kusto
 
     ![](./Images/E1T3S5-1.png)
 
-    - When the **Welcome to Eventhouse** pop-up appears, select **Get Started**.
+1. When the **Welcome to Eventhouse** pop-up appears, select **Get started**.
 
-        ![](./Images/E1T3S5-2.png)
+    ![](./Images/E1T3S5-2.png)
 
-1. When the new eventhouse has been created, right-click on it **(1)**, select the option **Get Data (2)**, then **Local File (3)**. 
+1. When the new eventhouse has been created, right-click on it **(1)**, select the option **Get data (2)**, then **Local file (3)**. 
 
     ![Screenshot of selected Fabric Experience home with RTA selected](./Images/E1T3S6.png)
 
@@ -69,7 +69,7 @@ Now that you have a workspace, download the data file for analysis. Using *Kusto
 
     - **Select or create a destination table:**
         - **Database:** *The database you created is already selected*
-        - **Table:** *Create a new table named* **sales** by clicking on the + sign to the left of ***New table***
+        - **Table:** *Create a new table named* **sales** by clicking on the **+** **sign** to the left of ***New table***
 
           ![New table wizard step one](./Images/E1T3S7-1.png)
 
@@ -81,7 +81,7 @@ Now that you have a workspace, download the data file for analysis. Using *Kusto
 
           ![New table wizard step three](./Images/E1T3S7-3.png)
 
-        - In the screen below, you'll notice that the column headings are in the first row. Although the system has detected them, we still need to move the **First row is column header** slider above these lines to prevent any errors. Once you adjust the slider, everything should appear correctly. Finally, click the **Finish** button in the bottom right corner of the panel to proceed.
+        - In the screen below, you'll notice that the column headings are in the first row. Although the system has detected them, we still need to move the **First row is column header (1)** slider above these lines to prevent any errors. Once you adjust the slider, everything should appear correctly. Finally, click the **Finish (2)** button in the bottom right corner of the panel to proceed.
 
           ![New table wizard step five](./Images/E1T3S7-4.png)
 
@@ -137,11 +137,11 @@ Now that you have a table of data in your database, you can use KQL code to quer
     ```
 1. Run the query and review the results, which should contain the total net revenue for each product between January 1st and December 31st 2020, in ascending order of product name.
 
-1. Navigate to **dp_fabric-<inject key="Deployment ID" enableCopy="false"/> (1)** workspace from the hub menu bar on the left. Select **KQL Database (2)** from the list.
+1. Navigate to **dp_fabric-<inject key="Deployment ID" enableCopy="false"/> (1)** workspace from the hub menu bar on the left. Select **Eventhouse-<inject key="Deployment ID" enableCopy="false"/> (2)** KQL Database from the list.
 
     ![](./Images/E1T4S9.png)
 
-1. Select the **KQL queryset (1)**, Click on **Edit (2)**.
+1. Select the **KQL queryset (1)**, click on **Edit (2)**.
 
    ![](./Images/E1T4S10-1.png)
 
@@ -159,7 +159,7 @@ You can use your KQL Queryset as the basis for a Power BI report.
 
     ![](./Images/E1T5S2.png)
 
-1. In the report editor, in the **Data** pane, expand **Kusto Query Result (1)** and select the **Item** and **TotalRevenue** **(2)** fields.
+1. In the report editor, in the **Data** pane, expand **Kusto Query Result (1)** and select the **Item** and **TotalNetRevenue** **(2)** fields.
 
     ![](./Images/E1T5S3.png)
 
@@ -183,7 +183,7 @@ You can use your KQL Queryset as the basis for a Power BI report.
 
 1. In the list of items in your workspace, note that the **Revenue by Item** report is listed.
    
-## Review:
+## Summary:
 
 In this lab, you have the opportunity to explore Microsoft Fabric as a platform for real-time analytics using Synapse Real-Time Analytics and Kusto Query Language (KQL). You will learn to assign the Fabric Administrator role, create a workspace, set up a KQL database, query data, and generate a Power BI report from KQL queries. This lab demonstrates how to efficiently analyze real-time data using KQL, particularly for time-series data like logs and streaming services.
 
