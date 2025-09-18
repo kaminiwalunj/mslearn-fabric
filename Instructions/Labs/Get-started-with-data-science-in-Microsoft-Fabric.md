@@ -1,6 +1,6 @@
 # Lab 2: Get started with Data Science in Microsoft Fabric
 
-#### Estimated Duration: 150 minutes
+### Estimated Duration: 150 minutes
 
 Data science is a combination of mathematics, statistics, and computer engineering. When you perform data science, you can analyze your data and identify complicated patterns that can provide you with meaningful insights for your organization. You can use data science to create artificial intelligence (AI) models that encompass the complicated patterns you find in your data. A common approach is to use data science to train machine learning models using libraries like scikit-learn in Python to achieve AI.
 
@@ -49,7 +49,7 @@ Now that you have a workspace, it's time to switch to the *Data science* experie
 
    ![](./Images/E2T1S6-2.png)
 
-1. After the file have been uploaded, right click on **Files (1)** and select **Refresh (2)** and verify that the **churn.csv (3)** CSV file has been uploaded.
+1. After the file has been uploaded, right-click on **Files (1)** and select **Refresh (2)** and verify that the **churn.csv (3)** CSV file has been uploaded.
 
    ![](./Images/E2T1S7.png)
 
