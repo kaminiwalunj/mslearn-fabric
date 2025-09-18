@@ -1,6 +1,6 @@
 # Get started with Real-Time Analytics and Data Science with Microsoft Fabric
 
-### Overall Estimated Duration: 4 hours
+### Overall Estimated Duration: 4 Hours
 
 ## Overview
 
@@ -8,8 +8,8 @@ In this lab, we will use Microsoft Fabric to perform real-time data analytics an
 
 ## Objective
 
-- **Real-Time Analytics in Microsoft Fabric**: Learn how to use Real-Time Analytics in Microsoft Fabric, focusing on Synapse Real-Time Analytics with Kusto Query Language (KQL) for data analysis. By the end of this session, you will know how to analyze real-time data using KQL and add KQL queries to Power BI reports to get useful insights easily.
-- **Data science in Microsoft Fabric**: Learn the basics of data science in Microsoft Fabric, covering important concepts and real-world uses. By the end of this session, you will be able to analyze data, create AI models, and manage machine learning workflows effectively.
+- **Real-Time Analytics in Microsoft Fabric:** Learn how to use Real-Time Analytics in Microsoft Fabric, focusing on Synapse Real-Time Analytics with Kusto Query Language (KQL) for data analysis. By the end of this session, you will know how to analyze real-time data using KQL and add KQL queries to Power BI reports to get useful insights easily.
+- **Data science in Microsoft Fabric:** Learn the basics of data science in Microsoft Fabric, covering important concepts and real-world uses. By the end of this session, you will be able to analyze data, create AI models, and manage machine learning workflows effectively.
 
 ## Prerequisites
 
@@ -17,7 +17,7 @@ In this lab, we will use Microsoft Fabric to perform real-time data analytics an
 - Familiarity with Microsoft Azure services.  
 - A Microsoft Fabric-enabled workspace with necessary permissions.  
 - Access to Microsoft Fabric services such as OneLake, Data Engineering, and Data Science experiences.  
-- Familiarity with PowerBI reports.
+- Familiarity with Power BI reports.
 
 ## Architecture
 
@@ -31,12 +31,12 @@ These labs follow a structured, step-by-step workflow to streamline data process
 
 The architecture for this lab involves several key components:
 
-- **Workspace**: A centralized environment for managing resources, projects, and collaboration.
-- **KQL Database**: A structured database supporting Kusto Query Language (KQL) for analyzing large datasets efficiently.
-- **KQL Querysets**: Predefined queries using KQL to extract, manipulate, and visualize data.
-- **PBI**: Power BI-generated reports for data visualization and insights.
-- **Lakehouse**: A unified storage solution combining data lakes and warehouses for scalable analytics.
-- **Notebook**: An interactive document for writing, executing, and visualizing code, commonly used in data science and engineering.
+- **Workspace:** A centralized environment for managing resources, projects, and collaboration.
+- **KQL Database:** A structured database supporting Kusto Query Language (KQL) for analyzing large datasets efficiently.
+- **KQL Querysets:** Predefined queries using KQL to extract, manipulate, and visualize data.
+- **PBI:** Power BI-generated reports for data visualization and insights.
+- **Lakehouse:** A unified storage solution combining data lakes and warehouses for scalable analytics.
+- **Notebook:** An interactive document for writing, executing, and visualizing code, commonly used in data science and engineering.
 
 ## Getting Started with the Lab
 
@@ -68,7 +68,7 @@ Feel free to start, stop, or restart your virtual machine as needed from the **R
  
 ## Lab Guide Zoom In/Zoom Out
  
-1. To adjust the zoom level for the environment page, click the **A↕ : 100%** icon located next to the timer in the lab environment.
+To adjust the zoom level for the environment page, click the **A↕ : 100%** icon located next to the timer in the lab environment.
 
   ![OpenAI](./Images/GS4.png)
 
@@ -84,7 +84,7 @@ Feel free to start, stop, or restart your virtual machine as needed from the **R
    https://app.fabric.microsoft.com
    ```
    
-1. On the **Enter your email, we’ll check if you need to create a new account.** tab, you will see the login screen. In that enter the following email/username **(1)** and click **Submit (2)**:
+1. On the **Enter your email, we’ll check if you need to create a new account.** tab, you will see the login screen. In that enter the following email/username **(1)** and click **Submit (2):**
 
    - **Email/Username:** <inject key="AzureAdUserEmail"></inject>
  
@@ -122,7 +122,7 @@ Feel free to start, stop, or restart your virtual machine as needed from the **R
 
    ![Enter Your Password](./Images/GS12.png)
    
-### Support Contact
+## Support Contact
 The CloudLabs support team is available 24/7, 365 days a year, via email and live chat to ensure seamless assistance at any time. We offer dedicated support channels tailored specifically for both learners and instructors, ensuring that all your needs are promptly and efficiently addressed.
  
 Learner Support Contacts:
