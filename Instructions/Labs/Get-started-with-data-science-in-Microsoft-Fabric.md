@@ -1,8 +1,8 @@
 # Lab 2: Get started with Data Science in Microsoft Fabric
 
-### Estimated Duration: 120 minutes
+### Estimated Duration: 120 Minutes
 
-Data science is a combination of mathematics, statistics, and computer engineering. When you perform data science, you can analyze your data and identify complicated patterns that can provide you with meaningful insights for your organization. You can use data science to create artificial intelligence (AI) models that encompass the complicated patterns you find in your data. A common approach is to use data science to train machine learning models using libraries like scikit-learn in Python to achieve AI.
+This exercise provides a complete, end-to-end data-science workflow in Microsoft Fabric, guiding you from raw data ingestion through model training, experiment tracking, and model preservation. Over eight sequential tasks, you build practical skills for preparing data, creating experiments, training machine-learning models, and managing outputs.
 
 ## Lab Objectives
 
@@ -37,17 +37,21 @@ Now that you have a workspace, it's time to switch to the *Data science* experie
 
     >**Note:** After a minute or so, a new lakehouse with no **Tables** or **Files** will be created. You need to ingest some data into the data lakehouse for analysis. There are multiple ways to do this, but in this task, you'll simply download and extract a folder of text files from your local computer (or lab VM if applicable) and then upload them to your lakehouse.
 
-1. Download the **churn.csv** file for this exercise from **[churn.csv](https://raw.githubusercontent.com/MicrosoftLearning/dp-data/main/churn.csv)** and save it on your local computer or lab VM. **Alternatively,** if you are using the provided lab virtual machine (lab VM), you can find the file in the **C:\LabFiles\dp-data-main** directory.
+1. Inside the provided LabVM, download the **churn.csv** file for this exercise by navigating to **C:\LabFiles\dp-data-main**.
+
+    >**Note:** Alternatively, if you are using your own machine, you can download and save the file from **[churn.csv](https://raw.githubusercontent.com/MicrosoftLearning/dp-data/main/churn.csv)**
 
 1. Return to the web browser tab containing your lakehouse, and under **Get data in your lakehouse**  select **Upload files**.
 
     ![](./Images/E2T1S5.png)
 
-1. Select the **churn.csv (1)** file from your local computer (or lab VM if applicable) to the lakehouse and **Upload (2)** it. Once the file is uploaded **(3)** close **(4)** the tab.
+1. Select the **churn.csv (1)** file from your LabVM to the lakehouse and **Upload (2)** it. Once the file is uploaded **(3)** close **(4)** the tab.
 
    ![](./Images/E2T1S6-1.png)
 
    ![](./Images/E2T1S6-2.png)
+
+   >**Note:** If you downloaded the file to your own machine, navigate to that location and upload it. 
 
 1. After the file has been uploaded, right-click on **Files (1)** and select **Refresh (2)** and verify that the **churn.csv (3)** file has been uploaded.
 
