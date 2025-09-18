@@ -41,7 +41,9 @@ In this task, you will learn how to download a file for a KQL database and creat
 
 Now that you have a workspace, download the data file for analysis. Using *Kusto Query Language (KQL)*, you can query static or streaming data in a table within a KQL database. To analyze sales data, create a table in the database and ingest the downloaded file.
 
-1. Download the **sales.csv** data file for this exercise from **[Sales.csv](https://raw.githubusercontent.com/MicrosoftLearning/dp-data/main/sales.csv)** and save it on your local computer or lab VM. **Alternatively**, if you are using the provided lab virtual machine (lab VM), you can find the file in the **C:\LabFiles\dp-data-main** directory.
+1. Inside the provided LabVM, locate the **sales.csv** file for this exercise by navigating to **C:\LabFiles\dp-data-main**.
+
+   >**Note:** Alternatively, if you are using your own machine, you can download and save the file from **[Sales.csv](https://raw.githubusercontent.com/MicrosoftLearning/dp-data/main/sales.csv)** and save it .
 
 1. Return to the browser window with the **Microsoft Fabric** experience.
 
