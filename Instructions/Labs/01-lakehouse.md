@@ -94,11 +94,11 @@ Before working with data in Fabric, create a workspace with the Fabric trial ena
 
 1. In the menu bar on the left, select **Workspaces (1)** (the icon looks similar to &#128455;). Select **+ New Workspace (2)**
 
-   ![](./Images/newworkspace.png)
+   ![](./Images/fabric-image13.png)
 
 1. Create a new workspace with a **Fabriclab\_<inject key="DeploymentID" enableCopy="false"/> (1)** , select a licensing mode that includes Fabric capacity **Trail**, and click on **Apply (2)**
 
-   ![](<./Images/fb_ex1_7.png>)
+   ![](./Images/fabric-image14.png)
 
    > **Note**: If you receive the **Introducing task flows (preview)** pop-up, click **Got it** to continue.
 
@@ -122,7 +122,7 @@ Now that you have a workspace, it's time to switch to the Data engineering exper
 
 1. Ensure the **Power BI** **(1)** icon is visible in the left pane. If available, click it, then click **New item** **(2)** at the top of the workspace.
 
-   ![](<./Images/fb_g2_1_1.png>)
+   ![](./Images/fabric-image15.png)
 
 1. Search for **Lakehouse (1)** and select the option labeled **Lakehouse (2)** from the results.
 
