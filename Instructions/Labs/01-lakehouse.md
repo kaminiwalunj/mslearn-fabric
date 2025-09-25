@@ -44,41 +44,49 @@ Before working with data in Fabric, create a workspace with the Fabric trial ena
 
 1. Open the Edge browser and sign in to [Microsoft Fabric](https://app.fabric.microsoft.com).
 
-   - On the Microsoft Fabric page, enter your **email:** <inject key="AzureAdUserEmail"></inject> **(1)** and click **Submit** **(2)**.
+   - On the **Microsoft Fabric** page, enter your **email:** <inject key="AzureAdUserEmail"></inject> **(1)** and click **Submit** **(2)**.
 
-     ![](./Images/fb_g2_1_0.png)
+     ![](./Images/fabric-image2.png)
 
    - On the **Enter password** screen, enter your **Password:** <inject key="AzureAdUserPassword"></inject> **(1)** and click **Sign in** **(2)**.
 
-     ![](./Images/fb_ex1_0_1.png)
+     ![](./Images/fabric-image3.png)
+  
+    - When **Stay signed in?** prompted click on **Yes**
+  
+      ![](./Images/fabric-image4.png)
    
       > **Note**: If you receive the **Welcome to the Fabric view** pop-up, click **Cancel** to skip the tour.
 
-      ![](./Images/fb_ex1_1.png)
+      ![](./Images/fabric-image5.png)
 
-1. On the Fabric home page, click the **Fabric** icon from the left pane to open the Fabric experience.
+1. On the **Fabric** home page, click the **Fabric** icon from the left pane to open the Fabric experience.
 
-   ![](./Images/fb_ex1_4.png)
+   ![](./Images/fabric-image6.png)
 
-1. In the Power BI view, select **Power BI** from the dropdown.
+1. In the **Power BI** view, select **Power BI** from the dropdown.
 
-   ![](./Images/powerbi-1.png)
+   ![](./Images/fabric-image7.png)
 
 1. From the PowerBI home page, select **Account Manager (1)** from the top-right corner to start the **Free trial (2)** of Microsoft Fabric.
 
-   ![Account-manager-start](./Images/freetrial.png)
+   ![](./Images/fabric-image8.png)
 
-1. On the **Activate your 60-day free Fabric trial capacity** window, click **Activate** to continue with the default region.
+1. On the **On Start 60-day free pro trial** window, click **Start trial** to continue with the default region.
 
-   ![Start-trial](<./Images/fb_ex1_5.png>)
+   ![](./Images/fabric-image9.png)
 
-1. Once your trial capacity is ready, you receive a confirmation message. Select **Stay on current page** to begin working in Fabric.
+1. On **All Paid features of Power BI are yours for 60 days** window, click on **Got it**.
 
-   ![](./Images/staycurrentonstage.png)
+   ![](./Images/fabric-image10.png)
+
+   >**Note**: When the **Microsoft Fabric (Free) license assignment** pop-up appears, click **OK**.
+
+    ![](./Images/fabric-image11.png)
 
 1. Click the **Account manager (1)** icon in the top-right corner. Under the **Profile** section, verify that the **Trial Status **(2)** shows the number of days remaining.
 
-   ![](./Images/fb_ex1_6.png)
+   ![](./Images/fabric-image12.png)
 
    > **Note:** You now have a **Fabric (Preview) trial** that includes a **Power BI trial** and a **Fabric (Preview) trial capacity**.
    
@@ -86,11 +94,11 @@ Before working with data in Fabric, create a workspace with the Fabric trial ena
 
 1. In the menu bar on the left, select **Workspaces (1)** (the icon looks similar to &#128455;). Select **+ New Workspace (2)**
 
-   ![](./Images/newworkspace.png)
+   ![](./Images/fabric-image13.png)
 
 1. Create a new workspace with a **Fabriclab\_<inject key="DeploymentID" enableCopy="false"/> (1)** , select a licensing mode that includes Fabric capacity **Trail**, and click on **Apply (2)**
 
-   ![](<./Images/fb_ex1_7.png>)
+   ![](./Images/fabric-image14.png)
 
    > **Note**: If you receive the **Introducing task flows (preview)** pop-up, click **Got it** to continue.
 
@@ -114,7 +122,7 @@ Now that you have a workspace, it's time to switch to the Data engineering exper
 
 1. Ensure the **Power BI** **(1)** icon is visible in the left pane. If available, click it, then click **New item** **(2)** at the top of the workspace.
 
-   ![](<./Images/fb_g2_1_1.png>)
+   ![](./Images/fabric-image15.png)
 
 1. Search for **Lakehouse (1)** and select the option labeled **Lakehouse (2)** from the results.
 
