@@ -32,17 +32,17 @@ In this exercise, you will complete the following tasks:
 
 In this task, you will provision a new data warehouse within Microsoft Fabric. A data warehouse in Fabric offers a fully managed relational database designed for large-scale analytics. Unlike the default read-only SQL endpoint provided for lakehouse tables, a data warehouse supports complete SQL capabilities, including inserting, updating, and deleting data. This enables you to design and manage structured schemas, load data efficiently, and prepare it for advanced querying and reporting.
 
-1. In the Power BI portal, in the workspace **fabriclab_<inject key="DeploymentID" enableCopy="false"/>**, then click **Power BI** **(1)** on the left navigation bar, and click **New item** **(2)** to create a new workspace item.
+1. In the Power BI portal, in the workspace **Workspace-<inject key="DeploymentID" enableCopy="false"/>**, then click **Power BI** **(1)** on the left navigation bar, and click **New item** **(2)** to create a new workspace item.
 
-   ![](<./Images/gr_fb_e2_1.png>)
+   ![](<./Images/L2T1S1.png>)
 
 1. On the **New item** page, search for **Warehouse** in the search bar **(1)**, then select the **Warehouse** tile **(2)** to create a new warehouse.
 
-   ![](<./Images/gr_fb_e2_2.png>)
+   ![](<./Images/L2T1S2.png>)
 
 1. On the **New warehouse** pane, enter **myDataWarehouse** **(1)** in the Name field, then click **Create** **(2)** to provision the warehouse.
 
-   ![](<./Images/gr_fb_e2_3.png>)
+   ![](<./Images/L2T1S3.png>)
 
 ## Task 2: Create tables and insert data
 
@@ -50,7 +50,7 @@ A warehouse is a relational database in which you can define tables and other ob
 
 1. In your new warehouse, select the **Create tables** with **T-SQL** tile, and replace the default SQL code with the following CREATE TABLE statement:
 
-   ![Screenshot of a new warehouse.](<./Images/t-sql(1).png>)
+   ![Screenshot of a new warehouse.](<./Images/L2T2S1.png>)
 
    ```sql
    CREATE TABLE dbo.DimProduct
@@ -66,19 +66,19 @@ A warehouse is a relational database in which you can define tables and other ob
 
 1. Use the **&#9655; Run** button to run the SQL script, which creates a new table named **DimProduct** in the **dbo** schema of the data warehouse.
 
-   ![](<./Images/gr_fb_e2_4.png>)
+   ![](<./Images/L2T2S2.png>)
 
 1. To refresh the Explorer pane and view the latest changes, click the **Refresh** icon in the top left menu bar.
 
-   ![](<./Images/gr_fb_e2_5.png>)
+   ![](<./Images/L2T2S3.png>)
 
 1. In the **Explorer** pane, expand **myDataWarehouse** **(1)**, then expand the **Schemas** section **(2)** to view the available schema objects, including `dbo`, `INFORMATION_SCHEMA`, `queryinsights`, and `sys`.
 
-   ![](<./Images/gr_fb_e2_6-1.png>)
+   ![](<./Images/L2T2S4.png>)
 
 1. On the **Home** tab, click the dropdown next to **New SQL query** **(1)**, then select **New SQL query** **(2)** to open a new query editor
 
-   ![](<./Images/gr_fb_e2_7.png>)
+   ![](<./Images/L2T2S5.png>)
 
 1. After inserting the query, click **Run** to execute it. This query will insert three rows into the **DimProduct** table.
 
@@ -91,15 +91,15 @@ A warehouse is a relational database in which you can define tables and other ob
    GO
    ```
 
-   ![](<./Images/gr_fb_e2_8.png>)
+   ![](<./Images/L2T2S6.png>)
 
 1. In the **Explorer** pane, expand **myDataWarehouse** **(1)**, then expand **Schemas** **(2)**, **dbo** **(3)**, and **Tables** **(4)**, then select the **DimProduct** table **(5)** and verify that the three inserted rows are displayed in the data preview.
 
-   ![](<./Images/gr_fb_e2_9.png>)
+   ![](<./Images/L2T2S7.png>)
 
 1. On the **Home** tab, click the dropdown next to **New SQL query** **(1)**, then select **New SQL query** **(2)** to open a new query editor
 
-   ![](<./Images/gr_fb_e2_10.png>)
+   ![](<./Images/L2T2S5.png>)
 
 1. On the **Home** menu tab, use the **New SQL Query** button to create a new query. Then copy and paste the Transact-SQL code from [https://raw.githubusercontent.com/MicrosoftLearning/dp-data/main/create-dw.txt](https://raw.githubusercontent.com/MicrosoftLearning/dp-data/main/create-dw.txt) into the new query pane.
 
@@ -124,23 +124,23 @@ A relational data warehouse typically consists of fact and dimension tables. The
 
 1. Under the **Home** tab, Click on  **New semantic model** to create the semantic model.
 
-   ![](<./Images/task3-1.jpg>)
+   ![](<./Images/L2T3S1.png>)
 
 1. Enter **dw semantic model** **(1)** in the name field and select the tables **DimCustomer**,**DimDate**,**DimProduct**,**FactSalesOrder** **(2)**, than click on **Confirm** **(3)** to proceed.
 
-   ![](<./Images/task3-2.jpg>)
+   ![](<./Images/L2T3S2.png>)
 
-1. In the hub menu bar on the left, Click on your workspace **Fabriclab\_<inject key="DeploymentID" enableCopy="false"/> (1)**
+1. In the hub menu bar on the left, Click on your workspace **Workspace-<inject key="DeploymentID" enableCopy="false"/> (1)**
 
-   ![](<./Images/task3-3.jpg>)
+   ![](<./Images/L2T3S3.png>)
 
 1. Select the **dw semantic model** **(1)** and click on **Open data model** **(2)** option to edit the semantic model.
 
-   ![](<./Images/task3-4.jpg>)
+   ![](<./Images/L2T5S10.png>)
 
-1. At the top right corner, Click on **Viewing** **1** to change it to **Editing** **2** permission settings. 
+1. At the top right corner, Click on **Viewing (1)** to change it to **Editing** **2** permission settings. 
 
-   ![](<./Images/task3-5.jpg>)
+   ![](<./Images/L2T3S5.png>)
 
 1. In the model pane, rearrange the tables in your data warehouse so that the **FactSalesOrder** table is in the middle, like this:
 
@@ -164,7 +164,7 @@ A relational data warehouse typically consists of fact and dimension tables. The
    - **FactSalesOrder.CustomerKey** &#8594; **DimCustomer.CustomerKey**
    - **FactSalesOrder.SalesOrderDateKey** &#8594; **DimDate.DateKey**
 
-      ![](./Images/dw-relationships1-1-1.png)
+      ![](./Images/L2T3S8.png)
 
       > **Note**: When all of the relationships have been defined, the model should look like this.
 
@@ -176,13 +176,13 @@ Since the data warehouse is a relational database, you can use SQL to query its 
 
 Most queries in a relational data warehouse involve aggregating and grouping data (using aggregate functions and GROUP BY clauses) across related tables (using JOIN clauses).
 
-1. In the hub menu bar on the left, Click on your workspace **Fabriclab\_<inject key="DeploymentID" enableCopy="false"/> (1)** and select the **myDataWarehouse** **(2)** warehouse.
+1. In the hub menu bar on the left, Click on your workspace **Workspace-<inject key="DeploymentID" enableCopy="false"/> (1)** and select the **myDataWarehouse** **(2)** warehouse.
 
-   ![](<./Images/task4-1-2.jpg>)
+   ![](<./Images/L2T4S1.png>)
 
 1. On the **Home** tab, click the dropdown next to **New SQL query** **(1)**, then select **New SQL query** **(2)** to open a new query editor
 
-   ![](<./Images/gr_fb_e2_10.png>)
+   ![](<./Images/L1T6S2.png>)
 
 1. Run the following code:
 
@@ -197,7 +197,7 @@ Most queries in a relational data warehouse involve aggregating and grouping dat
    ORDER BY CalendarYear, MonthOfYear;
    ```
 
-   ![](<./Images/gr_fb_e2_14.png>)
+   ![](<./Images/L2T4S3.png>)
 
    > **Note:** that the attributes in the time dimension enable you to aggregate the measures in the fact table at multiple hierarchical levels - in this case, year and month. This is a common pattern in data warehouses.
 
@@ -218,7 +218,7 @@ Most queries in a relational data warehouse involve aggregating and grouping dat
 
 1. Run the modified query and review the results, which now include sales revenue aggregated by year, month, and sales region.
 
-   ![](<./Images/gr_fb_e2_15.png>)
+   ![](<./Images/L2T4S5.png>)
 
 ## Task 5: Create a View, Visual Query and Visualizing data
 
@@ -258,7 +258,7 @@ Instead of writing SQL code, you can use the graphical query designer to query t
 
 1. On the **Home** tab, click the dropdown arrow next to **New SQL query** **(1)**, then select **New visual query** **(2)** to open the visual query editor.
 
-   ![Screenshot of a Visual query.](./Images/fb_g2_1_17.png)
+   ![Screenshot of a Visual query.](./Images/L2T5S4.png)
 
 1. Drag **FactSalesOrder** onto the **canvas**. Notice that a preview of the table is displayed in the **Preview** pane below.
 
@@ -284,17 +284,17 @@ Instead of writing SQL code, you can use the graphical query designer to query t
 
 You can easily visualize the data in either a single query or in your data warehouse. Before you visualize, hide columns and/or tables that aren't friendly to report designers.
 
-1. In the hub menu bar on the left, Click on your workspace **Fabriclab\_<inject key="DeploymentID" enableCopy="false"/>**.
+1. In the hub menu bar on the left, click on your workspace **Workspace-<inject key="DeploymentID" enableCopy="false"/>**.
 
-   ![](<./Images/task3-3.jpg>)
+   ![](<./Images/L2T3S3.png>)
 
 1. Select the **dw semantic model** **(1)** and click on **Open data model** **(2)** option to edit the semantic model.
 
-   ![](<./Images/task3-4.jpg>)
+   ![](<./Images/L2T5S10.png>)
 
 1. At the top right corner, Click on **Viewing** **1** to change it to **Editing** **2** permission settings. 
 
-   ![](<./Images/task3-5.jpg>)
+   ![](<./Images/L2T5S11.png>)
 
 1. Hide the following columns in your Fact and Dimension tables that are not necessary to create a report. Note that this does not remove the columns from the model; it simply hides them from view on the report canvas.
 
@@ -312,29 +312,29 @@ You can easily visualize the data in either a single query or in your data wareh
       - **ProductKey**
       - **ProductAltKey**
 
-      ![](./Images/visualizations-pane1at.png)
+      ![](./Images/L2T5S12.png)
 
 1. Now you're ready to build a report and make this dataset available to others.
 
 1. On the **File** tab **(1)**, click on **Create new report** **(2)** to begin creating a new Power BI report.
 
-   ![](<./Images/task5-1.jpg>)
+   ![](<./Images/L2T5S14.png>)
 
 1. In the report canvas, expand the **DimProduct (1)** and **FactSalesOrder (2)** tables from the **Data** pane, then select the **Clustered bar chart** visual **(3)**. Add **Category** to the Y-axis and **SalesTotal** to the X-axis to create a bar chart visual **(4)**.
 
-   ![](<./Images/task5-2.png>)
+   ![](<./Images/L2T5S15.png>)
 
 1. To save the report, click **File** **(1)** in the top menu, then select **Save** **(2)**.
 
-   ![](./Images/fb_g2_1_26.png)
+   ![](./Images/L1T8S7.png)
 
 1. In the **Save report** dialog box, enter the name **Sales Report (1)** in the text field (1), then click **Save** **(2)** to store the report.
 
-   ![](./Images/task5-3.png)
+   ![](./Images/L2T5S17.png)
 
 1. In the menu hub on the left, navigate back to the workspace. Notice that you now have three items saved in your workspace: your data warehouse, its default dataset, and the report you created.
 
-    ![](./Images/gr_fb_e2_22.png)
+    ![](./Images/L2T5S18.png)
 
 ## Clean up resources
 
@@ -344,15 +344,15 @@ If you've finished exploring your data warehouse, you can delete the workspace y
 
 1. In the bar on the left, select the icon for your workspace to view all of the items it contains.
 
-   ![](./Images/gr_fb_e2_22.png)
+   ![](./Images/L2T3S3.png)
 
 2. In the **ellipses** menu on the toolbar, select **Workspace settings**.
 
-   ![](./Images/g_cor_g_1.png)
+   ![](./Images/L2T5S21.png)
 
 3. In the **General (1)** Pane, Under the **Delete workspace** section, click **Remove this workspace (2)**.
 
-   ![](./Images/g_cor_g_2.png)
+   ![](./Images/L2T5S22.png)
 
 ## Summary
 
