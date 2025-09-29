@@ -72,21 +72,17 @@ Before working with data in Fabric, create a workspace with the Fabric trial ena
 
    ![](./Images/fabric-image8.png)
 
-1. On the **On Start 60-day free pro trial** window, click **Start trial** to continue with the default region.
+1. On the **Activate your 60-day free Fabric trial capacity** window, click **Activate** to continue with the default region.
 
-   ![](./Images/fabric-image9.png)
+   ![Start-trial](<./Images/fb_ex1_5.png>)
 
-1. On **All Paid features of Power BI are yours for 60 days** window, click on **Got it**.
+1. Once your trial capacity is ready, you receive a confirmation message. Select **Stay on current page** to begin working in Fabric.
 
-   ![](./Images/fabric-image10.png)
-
-   >**Note**: When the **Microsoft Fabric (Free) license assignment** pop-up appears, click **OK**.
-
-    ![](./Images/fabric-image11.png)
+   ![](./Images/staycurrentonstage.png)
 
 1. Click the **Account manager (1)** icon in the top-right corner. Under the **Profile** section, verify that the **Trial Status **(2)** shows the number of days remaining.
 
-   ![](./Images/fabric-image12.png)
+   ![](./Images/fb_ex1_6.png)
 
    > **Note:** You now have a **Fabric (Preview) trial** that includes a **Power BI trial** and a **Fabric (Preview) trial capacity**.
    
