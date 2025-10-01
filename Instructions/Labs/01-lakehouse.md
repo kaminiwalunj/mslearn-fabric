@@ -372,4 +372,6 @@ In this exercise, you have accomplished the following:
 - Designed a visual query for easier insights
 - Created a report to visualize and share your findings
 
-## You have successfully completed the lab. Click on Next >>.
+### You have successfully completed the lab. Click on Next >>.
+
+![](./Images/bar_g_g_1.png)
