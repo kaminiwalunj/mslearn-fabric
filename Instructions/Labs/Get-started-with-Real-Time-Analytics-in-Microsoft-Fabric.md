@@ -9,7 +9,7 @@ Microsoft Fabric provides an end-to-end platform for data solutions, including r
 You will be able to complete the following tasks:
 
 - Task 1: Create a workspace
-- Task 2: Download file for KQL database and create a KQL database
+- Task 2: Download the file for the KQL database and create a KQL database
 - Task 3: Use KQL to query the sales table
 - Task 4: Create a Power BI report from a KQL Query set
 
@@ -37,7 +37,7 @@ This task will guide you through creating a workspace in Microsoft Fabric.
 
    ![Screenshot of an empty workspace in Power BI.](./Images/E1T2S3.png)
  
-## Task 2: Download file for KQL database and create a KQL database
+## Task 2: Download the file for the KQL database and create a KQL database
 
 In this task, you will learn how to download a file for a KQL database and create a KQL database in Microsoft Fabric for querying and analyzing data efficiently.
 
@@ -47,7 +47,7 @@ Now that you have a workspace, download the data file for analysis. Using *Kusto
 
    ![Screenshot of an empty workspace in Power BI.](./Images/files.png)
 
-   >**Note:** Alternatively, if you are using your own machine, you can download and save the file from **[Sales.csv](https://raw.githubusercontent.com/MicrosoftLearning/dp-data/main/sales.csv)** and save it .
+   >**Note:** Alternatively, if you are using your own machine, you can download and save the file from **[Sales.csv](https://raw.githubusercontent.com/MicrosoftLearning/dp-data/main/sales.csv)** and save it.
 
 1. Return to the browser window with the **Microsoft Fabric** experience.
 
@@ -175,7 +175,7 @@ You can use your KQL Queryset as the basis for a Power BI report.
 
     ![](./Images/E1T5S3.png)
 
-1. On the report design canvas, select the table visualization that has been added and then in the **Visualizations** pane, select **Clustered bar chart**.
+1. On the report design canvas, select the table visualization that has been added, and then in the **Visualizations** pane, select **Clustered bar chart**.
 
     ![Screenshot of a report from a KQL query.](./Images/E1T5S4.png)
 
@@ -202,7 +202,7 @@ In this lab, you have the opportunity to explore Microsoft Fabric as a platform 
 You have completed the following tasks:
 
 - Created a workspace
-- Downloaded file for KQL database and created a KQL database
+- Downloaded the file for the KQL database and created a KQL database
 - Used KQL to query the sales table
 - Created a Power BI report from a KQL Query set
 
