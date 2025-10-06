@@ -55,7 +55,7 @@ Now that you have a workspace, it's time to switch to the *Data science* experie
 
    >**Note:** If you downloaded the file to your own machine, navigate to that location and upload it. 
 
-1. After the file has been uploaded, right-click on **Files (1)** and select **Refresh (2)** and verify that the **churn.csv (3)** file has been uploaded.
+1. After the file has been uploaded, right-click on **Files (1)** and select **Refresh (2)**, and verify that the **churn.csv (3)** file has been uploaded.
 
    ![](./Images/E2T1S7.png)
 
