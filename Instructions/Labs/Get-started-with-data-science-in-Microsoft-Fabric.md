@@ -23,9 +23,9 @@ This task will guide you through setting up a Lakehouse in Microsoft Fabric, whe
 
 Now that you have a workspace, it's time to switch to the *Data science* experience in the portal and create a data lakehouse for the data files you're going to analyze.
 
-1. Navigate to **dp_fabric-<inject key="Deployment ID" enableCopy="false"/>** workspace from the hub menu bar on the left.
+1. In the left panel, first click on **dp_fabric-<inject key="Deployment ID" enableCopy="false"/> (1)**, then select **dp_fabric-<inject key="Deployment ID" enableCopy="false"/> (2)** under the Filter by keyword section.
 
-    ![](./Images/E1T3S3.png)
+   ![](./Images/49.png)
 
 1. In the **dp_fabric-<inject key="Deployment ID" enableCopy="false"/>** page, click on **+ New item (1)** and in the search bar serch for **Lakehouse (2)** and select **Lakehouse (3)**.
    
@@ -45,9 +45,11 @@ Now that you have a workspace, it's time to switch to the *Data science* experie
 
     ![](./Images/E2T1S5.png)
 
-1. Select the **churn.csv (1)** file from your LabVM to the lakehouse and **Upload (2)** it. Once the file is uploaded **(3)** close **(4)** the tab.
+1. Select the **churn.csv (1)** file from your LabVM to the lakehouse and **Upload (2)** it.
 
    ![](./Images/E2T1S6-1.png)
+
+1. After the file is **uploaded (3)**, close the tab by **clicking (4)**.
 
    ![](./Images/E2T1S6-2.png)
 
@@ -63,9 +65,9 @@ In this task, you will learn how to create a Notebook in Microsoft Fabric for in
 
 To train a model, you can create a *notebook*. Notebooks provide an interactive environment in which you can write and run code (in multiple languages) as *experiments*.
 
-1. Navigate to **dp_fabric-<inject key="Deployment ID" enableCopy="false"/>** workspace from the hub menu bar on the left.
+1. In the left panel, first click on **dp_fabric-<inject key="Deployment ID" enableCopy="false"/> (1)**, then select **dp_fabric-<inject key="Deployment ID" enableCopy="false"/> (2)** under the Filter by keyword section.
 
-    ![](./Images/E1T3S3.png)
+   ![](./Images/49.png)
 
 1. In the **dp_fabric-<inject key="Deployment ID" enableCopy="false"/>** page, click on **+ New item (1)** and in the search bar serch for **Notebook (2)** and select **Notebook (3)**.
 
@@ -283,13 +285,13 @@ Learn how to analyze performance metrics and gain insights from your machine lea
 
 Microsoft Fabric will keep track of all your experiments and allow you to visually explore them.
 
-1. Navigate to **dp_fabric-<inject key="Deployment ID" enableCopy="false"/>** workspace from the hub menu bar on the left.
+1. In the left panel, first click on **dp_fabric-<inject key="Deployment ID" enableCopy="false"/> (1)**,
 
-    ![](./Images/E1T3S3.png)
+   ![](./Images/49.png)
 
 1. Select the `experiment-churn` experiment to open it.
 
-    ![](./Images/E2T6S2.png)
+    ![](./Images/50.png)
 
     > **Tip:** If you don't see any logged experiment runs, refresh the page.
 
@@ -327,7 +329,7 @@ Now that you've finished training and evaluating the models, you can save the no
 
 1. Navigate to **dp_fabric-<inject key="Deployment ID" enableCopy="false"/>** workspace from the hub menu bar on the left and select **Notebook 1**.
 
-    ![](./Images/E2T8S1.png)
+    ![](./Images/50.png)
 
 1. In the notebook menu bar, click the ⚙️ **Settings (1)** icon to open the notebook settings. Set the **Name** of the notebook to **Train and compare models (2)**, then **close (3)** the settings pane.
 
@@ -341,9 +343,9 @@ Now that you've finished training and evaluating the models, you can save the no
 
 If you've finished exploring your model and experiments, you can delete the workspace you created for this exercise.
 
-1. In the bar on the left, select the **dp_fabric-<inject key="Deployment ID" enableCopy="false"/>** to view all of the items it contains.
+1. In the left panel, first click on **dp_fabric-<inject key="Deployment ID" enableCopy="false"/> (1)**, then select **dp_fabric-<inject key="Deployment ID" enableCopy="false"/> (2)** under the Filter by keyword section.
 
-   ![](./Images/E1T3S3.png)
+   ![](./Images/49.png)
 
 1. From the top right corner, click on **Workspace settings**.
 
