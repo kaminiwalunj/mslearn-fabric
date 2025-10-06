@@ -21,9 +21,11 @@ This task will guide you through creating a workspace in Microsoft Fabric.
 
    ![](./Images/E1T1S1.png)
 
-1. Create a new workspace named **dp_fabric-<inject key="Deployment ID" enableCopy="false"/> (1)**. Expand **Advanced (2)**, then under **License mode**, select **Trial (3)** and click **Apply (4)** to create and open the workspace.
+1. Create a new workspace named **dp_fabric-<inject key="Deployment ID" enableCopy="false"/> (1)**.
    
    ![](./Images/E1T2S2-1.png)
+
+1. Expand **Advanced (2)**, then under **License mode**, select **Trial (3)** and click **Apply (4)** to create and open the workspace.
 
    ![](./Images/E1T2S2-2.png)
 
@@ -41,7 +43,9 @@ In this task, you will learn how to download a file for a KQL database and creat
 
 Now that you have a workspace, download the data file for analysis. Using *Kusto Query Language (KQL)*, you can query static or streaming data in a table within a KQL database. To analyze sales data, create a table in the database and ingest the downloaded file.
 
-1. Inside the provided LabVM, locate the **sales.csv** file for this exercise by navigating to **C:\LabFiles\dp-data-main**.
+1. Inside the provided LabVM, locate the **sales.csv (2)** file for this exercise by navigating to **C:\LabFiles\dp-data-main (1)**.
+
+   ![Screenshot of an empty workspace in Power BI.](./Images/files.png)
 
    >**Note:** Alternatively, if you are using your own machine, you can download and save the file from **[Sales.csv](https://raw.githubusercontent.com/MicrosoftLearning/dp-data/main/sales.csv)** and save it .
 
@@ -71,7 +75,7 @@ Now that you have a workspace, download the data file for analysis. Using *Kusto
 
     - **Select or create a destination table:**
         - **Database:** *The database you created is already selected*
-        - **Table:** *Create a new table named* **sales** by clicking on the **+** **sign** to the left of ***New table***
+        - **Table:** *Create a new table named* **sales (1)** by clicking on the **+** **sign** to the left of ***New table***, then click on **checkmark button (2)**.
 
           ![New table wizard step one](./Images/E1T3S7-1.png)
 
@@ -79,7 +83,7 @@ Now that you have a workspace, download the data file for analysis. Using *Kusto
 
           ![New table wizard step two](./Images/E1T3S7-2.png)
 
-        - Browse or drag your **sales.csv** onto the screen and wait for the Status box to change to a green check box, and then select **Next**
+        - Browse or drag your **sales.csv** onto the screen from **C:\LabFiles\dp-data-main** and wait for the Status box to change to a green check box, and then select **Next**.
 
           ![New table wizard step three](./Images/E1T3S7-3.png)
 
@@ -117,6 +121,8 @@ Now that you have a table of data in your database, you can use KQL code to quer
    | where Item == 'Road-250 Black, 48'
     ```
 
+   ![](./Images/q1.png)
+
 1. Run the query. Then review the results, which should contain only the rows for sales orders for the *Road-250 Black, 48* product.
 
 1. Modify the query as follows:
@@ -126,6 +132,7 @@ Now that you have a table of data in your database, you can use KQL code to quer
    | where Item == 'Road-250 Black, 48'
    | where datetime_part('year', OrderDate) > 2020
     ```
+    ![](./Images/q2.png)
 
 1. Run the query and review the results, which should contain only sales orders for *Road-250 Black, 48* made after 2020.
 
@@ -137,11 +144,14 @@ Now that you have a table of data in your database, you can use KQL code to quer
    | summarize TotalNetRevenue = sum(UnitPrice) by Item
    | sort by Item asc
     ```
+
+    ![](./Images/q3.png)
+
 1. Run the query and review the results, which should contain the total net revenue for each product between January 1st and December 31st 2020, in ascending order of product name.
 
 1. Navigate to **dp_fabric-<inject key="Deployment ID" enableCopy="false"/> (1)** workspace from the hub menu bar on the left. Select **Eventhouse-<inject key="Deployment ID" enableCopy="false"/> (2)** KQL Database from the list.
 
-    ![](./Images/E1T4S9.png)
+    ![](./Images/51.png)
 
 1. Select the **KQL queryset (1)**, click on **Edit (2)**.
 
