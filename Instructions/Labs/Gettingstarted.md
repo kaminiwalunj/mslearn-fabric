@@ -72,7 +72,7 @@ To adjust the zoom level for the environment page, click the **A↕ : 100%** ico
 
   ![OpenAI](./Images/GS4.png)
 
-## ‎Let's Get Started with Fabric Portal
+## Let's Get Started with Fabric Portal
 
 1. On your virtual machine, click on the **Microsoft Edge** icon as shown below:
  
