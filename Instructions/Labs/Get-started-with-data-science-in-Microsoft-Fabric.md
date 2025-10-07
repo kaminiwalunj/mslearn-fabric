@@ -232,6 +232,8 @@ When you've trained and tracked models with MLflow, you can use the MLflow libra
 
    ![](./Images/E2T5S1.png)
 
+   This code retrieves and prints the names of all existing `MLflow experiments`.
+
 1. To retrieve a specific experiment, you can get it by its name:
 
     ```python
@@ -242,6 +244,8 @@ When you've trained and tracked models with MLflow, you can use the MLflow libra
 
     ![](./Images/E2T5S2.png)
 
+    This code fetches the details of a `specific experiment` using its name.
+
 1. Using an experiment name, you can retrieve all jobs of that experiment:
 
     ```python
@@ -250,6 +254,8 @@ When you've trained and tracked models with MLflow, you can use the MLflow libra
 
     ![](./Images/E2T5S3.png)
 
+    This code displays all recorded runs under a given experiment.
+
 1. To more easily compare job runs and outputs, you can configure the search to order the results. For example, the following cell orders the results by `start_time`, and only shows a maximum of `2` results: 
 
     ```python
@@ -257,6 +263,8 @@ When you've trained and tracked models with MLflow, you can use the MLflow libra
     ```
 
     ![](./Images/E2T5S4.png)
+
+    This code displays retrieves the latest two runs sorted by start time in descending order.
 
 1. Finally, you can plot the evaluation metrics of multiple models next to each other to easily compare models:
 
@@ -278,6 +286,8 @@ When you've trained and tracked models with MLflow, you can use the MLflow libra
     The output should resemble the following image:
 
     ![Screenshot of the plotted evaluation metrics.](./Images/E2T5S5.png)
+
+    This code visualizes and compares model accuracy scores using a bar chart.
 
 ## Task 6: Explore your experiments
 
