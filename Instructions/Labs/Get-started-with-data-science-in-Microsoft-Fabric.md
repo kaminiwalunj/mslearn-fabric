@@ -301,7 +301,7 @@ Microsoft Fabric will keep track of all your experiments and allow you to visual
 
 1. Select the `experiment-churn` experiment to open it.
 
-    ![](./Images/50.png)
+    ![](./Images/52.png)
 
     > **Tip:** If you don't see any logged experiment runs, refresh the page.
 
