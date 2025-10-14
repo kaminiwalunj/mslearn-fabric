@@ -10,8 +10,8 @@ In this lab, you'll explore key components of Microsoft Fabric's data solution. 
 
 Explore dataflows, data warehousing, and reporting in Microsoft Fabric. By the end of this lab, You will gain insights on :
 
-- **Create and use a Dataflow (Gen2) in Microsoft Fabric** : Learn to effectively ingest and transform data using Dataflows (Gen2) in Microsoft Fabric. Connect data sources, standardize the data, and efficiently load it to Lakehouse.
-- **Analyze data in a Data Warehouse** : Learn to create and manage a relational data warehouse in Microsoft Fabric. Utilize SQL to perform queries and visualizations.
+- **Create and use a Dataflow (Gen2) in Microsoft Fabric:** Learn to effectively ingest and transform data using Dataflows (Gen2) in Microsoft Fabric. Connect data sources, standardize the data, and efficiently load it to Lakehouse.
+- **Analyze data in a Data Warehouse:** Learn to create and manage a relational data warehouse in Microsoft Fabric. Utilize SQL to perform queries and visualizations.
 
 ## Pre-requisites
 
@@ -32,21 +32,21 @@ This lab begins with setting up a workspace and a Lakehouse in the Data Engineer
 
 The architecture for this lab involves the following key components:
 
-- **Workspace** : Acts as the central hub for organizing and managing data engineering activities in this lab, facilitating the setup and coordination of various components.
-- **Lakehouse** : Provides a unified storage solution for raw and processed data, supporting data ingestion and transformation processes crucial for this lab's analytics workflow.
-- **Dataflows (Gen2)** : Used to ingest, transform, and standardize data from diverse sources, ensuring clean and consistent data is available for further analysis and reporting in this lab.
-- **Data Warehouse** : Serves as the structured storage solution for organizing and analyzing large datasets, enabling efficient querying and reporting for comprehensive data insights in this lab.
-- **Pipeline** : Orchestrates the movement and transformation of data, ensuring seamless integration and data flow between different components.
-- **Visual Query Tool** :  Enables the creation of visual queries and views, allowing participants to easily analyze and visualize data, and draw actionable insights from the lab's dataset.
+- **Workspace:** Acts as the central hub for organizing and managing data engineering activities in this lab, facilitating the setup and coordination of various components.
+- **Lakehouse:** Provides a unified storage solution for raw and processed data, supporting data ingestion and transformation processes crucial for this lab's analytics workflow.
+- **Dataflows (Gen2):** Used to ingest, transform, and standardize data from diverse sources, ensuring clean and consistent data is available for further analysis and reporting in this lab.
+- **Data Warehouse:** Serves as the structured storage solution for organizing and analyzing large datasets, enabling efficient querying and reporting for comprehensive data insights in this lab.
+- **Pipeline:** Orchestrates the movement and transformation of data, ensuring seamless integration and data flow between different components.
+- **Visual Query Tool:**  Enables the creation of visual queries and views, allowing participants to easily analyze and visualize data, and draw actionable insights from the lab's dataset.
 
 **Fabric trial provides access to most features, but excludes Copilot, private links, and trusted workspace access ([learn more](https://learn.microsoft.com/en-us/fabric/fundamentals/fabric-trial#overview-of-the-trial-capacity)).**
 
 
 ## Getting Started with Lab
 
-Once you're ready to dive in, your virtual machine and lab guide will be right at your fingertips within your web browser.
+Once you're ready to dive in, your virtual machine and **Guide** will be right at your fingertips within your web browser.
  
-![](./Images/updatedimg1upd.png)
+![](./Images/guidetab.png)
 
 ### Virtual Machine & Lab Guide
  
@@ -54,7 +54,7 @@ Your virtual machine is your workhorse throughout the workshop. The lab guide is
  
 ## Exploring Your Lab Resources
  
-To get a better understanding of your lab resources and credentials, navigate to the **Environment Details** tab.
+To get a better understanding of your lab resources and credentials, navigate to the **Environment** tab.
  
 ![Explore Lab Resources](./Images/updatedimg2upd.png)
  
@@ -62,7 +62,7 @@ To get a better understanding of your lab resources and credentials, navigate to
  
 For convenience, you can open the lab guide in a separate window by selecting the **Split Window** button from the top right corner.
  
-![Use the Split Window Feature](./Images/updatedimg3upd.png)
+![Use the Split Window Feature](./Images/splittab.png)
  
 ## Managing Your Virtual Machine
  
@@ -74,7 +74,7 @@ Feel free to start, stop, or restart your virtual machine as needed from the **R
 
 To adjust the zoom level for the environment page, click the **A↕ : 100%** icon located next to the timer in the lab environment.
 
-![](./Images/image.png)
+![](./Images/zoomintab.png)
 
 ## Lab Validation
 
@@ -95,7 +95,7 @@ Learner Support Contacts:
 
 Now, click on **Next** from the lower right corner to move on to the next page.
 
-![Start Your Azure Journey](./Images/next.png)
+![Start Your Azure Journey](./Images/nextpage1.png)
 
 ### Happy Learning!!
 

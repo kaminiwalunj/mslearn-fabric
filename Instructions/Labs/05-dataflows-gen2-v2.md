@@ -1,6 +1,6 @@
 # Exercise 1 : Create and use a Dataflow (Gen2) in Microsoft Fabric 
 
-## Estimated Duration : 120 Minutes
+### Estimated Duration: 120 Minutes
 
 In this exercise, you will use Dataflows (Gen2) to ingest, transform, and standardize data. You will set up data ingestion processes, apply necessary transformations, and create standardized datasets for analysis. This exercise will help you understand how to efficiently prepare and manage data using Dataflows (Gen2).
 
@@ -15,47 +15,77 @@ In this exercise, you will use Dataflows (Gen2) to ingest, transform, and standa
 
 Before working with data in Fabric, create a workspace with the Fabric trial enabled.
 
-1. Click on Microsoft Edge and sign into [Microsoft Fabric](https://app.fabric.microsoft.com) at `https://app.fabric.microsoft.com`
+1. On the LabVM desktop, click to open **Microsoft Edge**.
 
-   * Email/Username: <inject key="AzureAdUserEmail"></inject> and click on **Submit**.
+      ![](./Images/p2t1p1.png)
+
+1. Open **Microsoft Fabric** by entering `https://app.fabric.microsoft.com` in your browser.
+
+1. On the **"Enter your email, we'll check if you need to create a new account."** screen, enter your email **(1)** and click **Submit (2)** to proceed with signing in. 
+
+   * Email/Username: <inject key="AzureAdUserEmail"></inject> 
+
+      ![](./Images/p2t1p2.png)
 
    * Password: <inject key="AzureAdUserPassword"></inject> and click on **Yes**.
 
-     ![](./Images/odl-01.png)
-   
-2. After signing in, From the bottom left choose **Power BI** .
+     ![](./Images/p2t1p3.png)
 
-   ![](./Images/powerbiupd.png)
+1. On the **Stay signed in?** pop-up, click **No**.
 
-4. From the PowerBI home page, select **Account Manager** from the top-right corner to start the free **Microsoft Fabric trial** and click on **Free trial**.
+      ![](./Images/p2t1p4.png)
+ 
+1. On the **Welcome to the Fabric view** window, click on **Cancel**.
+
+      ![](./Images/p2t1p5.png)
+
+1. On the **Microsoft Fabric (Free) license assigned** pop-up, click **OK**.
+
+      ![](./Images/p2t1p6.png)
+
+2. Once signed in, click on **Fabric (1)** in the bottom-left corner and then select **Power BI (2)** from the menu.
+
+      ![](./Images/p2t1p7.png)
+
+      ![](./Images/p2t1p8.png)
+
+4. 1. On the **Power BI homepage**, click on the **Profile icon (1)** on the top right, and then click on **Free trial (2)**.
     
-   ![](./Images/imageupdatee2.png)
+   ![](./Images/p2t1p9.png)
      
-5. If prompted, agree to the terms and then select **Activate**. 
+5. On the **Activate your 60-day free Fabric trial capacity** pop-up window, click **Activate**. 
 
-   ![](./Images/E1T1S4upd.png)
+   ![](./Images/p2t1p10.png)
    
-6. Once your trial capacity is ready, you receive a confirmation message. Select **Stay on current page** to begin working in Fabric.
+6. On the **Successfully upgraded to Microsoft Fabric** pop-up, click **OK**.
 
-   ![](./Images/updated3upd.png)
+   ![](./Images/p2t1p11.png)
+
+1. Close the **"Invite teammates to try Fabric to extend your trial"** window when it appears.
+
+      ![](./Images/p2t1p12.png)
    
 7. On the dashboard, on the top menu you can see **Trial Status 59 days left**.
 
-   ![](./Images/updated4upd.png)
+      ![](./Images/p2t1p13.png)
 
-    >**Note**: You now have a **Fabric (Preview) trial** that includes a **Power BI trial** and a **Fabric (Preview) trial capacity**.
+      >**Note**: You now have a **Fabric (Preview) trial** that includes a **Power BI trial** and a **Fabric (Preview) trial capacity**.
 
 8. In the left menu bar, click on **Workspaces (1)**, then select **+ New Workspace (2)**.
 
-9. Create a new workspace with a name **dp_fabric-<inject key="Deployment ID" enableCopy="false"/> (1)**, Choose a licensing mode as a **trial (2)** under **Advanced**. and click on **Apply (3)**.
+      ![](./Images/p2t1p14.png)
 
-   ![New lakehouse.](./Images/fab-image3upd.png)
-    
+9. Create a new workspace named **dp_fabric-<inject key="Deployment ID" enableCopy="false"/> (1)**, select **Trial (2)** as the licensing mode under **Advanced**, and click **Apply (3)** to proceed.
+
+      ![](./Images/p2t1p15.png)
+
+1. On the **Introducing task flows (preview)** pop-up, click **Got it**.
+
+      ![](./Images/p2t1p16.png)
+
 10. When your new workspace opens, it should be empty, as shown here:
 
-    ![Screenshot of an empty workspace in Power BI.](./Images/E1T1S9upd.png)
-
-    > **Note**: If the prompt **"Introducing task flows (preview)"** appears, just click on **Got it**.   
+    ![Screenshot of an empty workspace in Power BI.](./Images/p2t1p17.png)  
  
 >**Congratulations** on completing the Task! Now, it's time to validate it. Here are the steps:
 > - Hit the Validate button for the corresponding task. If you receive a success message, you have successfully validated the lab. 
@@ -68,15 +98,13 @@ Before working with data in Fabric, create a workspace with the Fabric trial ena
 
 Now that you have a workspace, it's time to and create a data lakehouse into which you'll ingest data.
 
-1. Select **+ New Item (1)**, search for **Lakehouse(2)**, and then choose **Lakehouse(3)** from the results.
+1. Select **+ New item (1)**, search for **Lakehouse(2)**, and then choose **Lakehouse(3)** from the results.
 
-      ![New lakehouse.](./Images/lakehouse-1.png)
+      ![New lakehouse.](./Images/p2t2p1.png)
 
-3. Create a new Lakehouse
+3. In the **New lakehouse** pop-up, enter the Name as  **dp_lakehouse (1)** and click on **Create (2)**.
 
-    Name: Enter **dp_lakehouse** and click on **Create**.
-
-    ![New lakehouse.](./Images/fab-image12.png)
+    ![New lakehouse.](./Images/p2t2p2.png)
    
 >**Congratulations** on completing the Task! Now, it's time to validate it. Here are the steps:
 > - Hit the Validate button for the corresponding task. If you receive a success message, you have successfully validated the lab. 
@@ -89,50 +117,51 @@ Now that you have a workspace, it's time to and create a data lakehouse into whi
 
 Now that you have a lakehouse, you need to ingest some data into it. One way to do this is to define a dataflow that encapsulates an *extract, transform, and load* (ETL) process.
 
-1. Select your workspace, **dp_fabric-<inject key="Deployment ID" enableCopy="false"/>(1)**, then click **+ New item** 
-
-      ![New dataflow.](./Images/new_item-1upd.png)
+1. From the left menu bar, select the workspace **dp_fabric-<inject key="Deployment ID" enableCopy="false"/>(1)**, then click **+ New item (2)**. 
    
-2. Search for **Dataflow Gen2** and select it. When the pop-up appears, go ahead and accept the default name, then select **Create** to continue.  
+2. Search for **Dataflow Gen2 (3)** and select it **Dataflow Gen2 (4)** under Get data.  
 
-      ![New dataflow.](./Images/datagenflowupd.png)
+      ![New dataflow.](./Images/p2t3p1.png)
 
-      >**Note**: If the option is not visible as mentioned above, please follow the steps highlighted in the screenshot below.
+1. Enter the below-mentioned details to create the Dataflow and click on **Create (3)**.
 
-3. After a few seconds, the Power Query editor for your new dataflow opens as shown here.
+   - **Name:** Keep as default **(1)**
+   - **Enable Git integration, deployment pipelines, and Public API Scenarios:** Uncheck **(2)**
 
-      ![New dataflow.](./Images/m6-fabric-2upd.png)
+      ![](./Images/p2t3p2.png)
 
-4. Select **Import from a Text/CSV file**.
+   After a few seconds, the Power Query editor for your new dataflow will open.
+
+1. From the center **Get data** pane, select **Import from a Text/CSV file**.
 
       ![New lakehouse.](./Images/fab-image5upd.png)
 
-5. Create a new data source with the following settings and click on **Next (6)** :
+5. Create a new data source with the following settings and click on **Next (7)** :
  
-    - **Link to file**: *Selected*
-    - **File path or URL**: `https://raw.githubusercontent.com/MicrosoftLearning/dp-data/main/orders.csv` (1)
-    - **Connection**: Create new connection (2)
-    - **data gateway**: (none) (3)
-    - **Authentication kind**: Anonymous (4)
-    - **Privacy level** : none (5)
+    - **Link to file**: Selected **(1)**
+    - **File path or URL**: `https://raw.githubusercontent.com/MicrosoftLearning/dp-data/main/orders.csv` **(2)**
+    - **Connection**: Create new connection **(3)**
+    - **Data gateway**: (none) **(4)**
+    - **Authentication kind**: Anonymous **(5)**
+    - **Privacy Level** : None **(6)**
 
-      ![New lakehouse.](./Images/fab-image6upd.png)
+      ![New lakehouse.](./Images/p2t3p5.png)
 
-6. On the *Preview file data* click on **Create**
+6. On the *Preview file data*, click on **Create**.
 
       ![New lakehouse.](./Images/createdataupd.png)
 
-6. Create the data source. The Power Query editor shows the data source and an initial set of query steps to format the data, as shown here:
+6. The Power Query editor shows the data source and an initial set of query steps to format the data, as shown here:
 
-      ![Query in the Power Query editor.](./Images/m6-fabric-3.png)
+      ![Query in the Power Query editor.](./Images/p2t3p7.png)
 
 7. On the toolbar ribbon, select the **Add column (1)** tab. Then select **Custom column (2)**.
 
-      ![New lakehouse.](./Images/fab-image7.png)
+      ![New lakehouse.](./Images/p2t3p8.png)
    
-8. Create a new column named **MonthNo (1)** that contains a number based on the formula `Date.Month([OrderDate])` (2) - as shown here and click on **OK (3)**.
+8. On the Custom column pane, create a new column with Name **MonthNo (1)** and enter the formula **Date.Month([OrderDate]) (2)** in the **Custom column formula** box and then click **OK (3)**.
 
-      ![Custom column in Power Query editor.](./Images/custom-column1upd.png)
+      ![Custom column in Power Query editor.](./Images/p2t3p9.png)
 
 9. The step to add the custom column is added to the query and the resulting column is displayed in the data pane:
 
