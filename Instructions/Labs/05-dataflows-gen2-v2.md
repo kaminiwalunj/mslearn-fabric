@@ -28,7 +28,7 @@ In this task, you’ll create a dedicated workspace in Microsoft Fabric with the
 
       ![](./Images/p2t1p2.png)
 
-   * Password: <inject key="AzureAdUserPassword"></inject> and click on **Yes**.
+   * Password: <inject key="AzureAdUserPassword"></inject> and then click **Sign in**.
 
      ![](./Images/p2t1p3.png)
 
@@ -50,7 +50,7 @@ In this task, you’ll create a dedicated workspace in Microsoft Fabric with the
 
       ![](./Images/p2t1p8.png)
 
-4. 1. On the **Power BI homepage**, click on the **Profile icon (1)** on the top right, and then click on **Free trial (2)**.
+4. On the **Power BI homepage**, click on the **Profile icon (1)** on the top right, and then click on **Free trial (2)**.
     
    ![](./Images/p2t1p9.png)
      
@@ -62,11 +62,15 @@ In this task, you’ll create a dedicated workspace in Microsoft Fabric with the
 
    ![](./Images/p2t1p11.png)
 
-1. Close the **"Invite teammates to try Fabric to extend your trial"** window when it appears.
+1. Close the **Invite teammates to try Fabric to extend your trial** window when it appears.
 
       ![](./Images/p2t1p12.png)
    
+<<<<<<< HEAD
+7. On the dashboard, on the top menu you can see **Trial: 59 days left**.
+=======
 7. On the dashboard, in the top menu, you can see **Trial Status 59 days left**.
+>>>>>>> c62b48d4c78d22de43fcd8e1d5715966ace4598f
 
       ![](./Images/p2t1p13.png)
 
@@ -194,11 +198,13 @@ In this task, you’ll configure a data destination for a dataflow to enable sea
 
       ![](./Images/p2t4p4.png)
 
+<<<<<<< HEAD
+4. Go back to **MonthNo (1)** columns in Power Query online. Right-click on the column header and select **Change Type (2)** and then choose **Whole number (3)**.
+=======
 4. Go back to the **MonthNo (1)** columns in Power Query online. Right-click on the column header and **Change Type (2)**.
+>>>>>>> c62b48d4c78d22de43fcd8e1d5715966ace4598f
 
-      - MonthNo = **Whole number (3)**
-
-        ![New lakehouse.](./Images/p2t4p5.png)
+      ![New lakehouse.](./Images/p2t4p5.png)
 
 5. Click on the **Add data destination (1)** and then select **Lakehouse (2)** under New destination.
 
@@ -253,7 +259,7 @@ In this task, you’ll add a dataflow to a pipeline to streamline the data proce
 
       ![New lakehouse.](./Images/p7t3p4.png)
 
-4. With the new **Dataflow1** activity selected, go to the **Settings (1)** tab in the bottom. In the **Workspace** drop-down list, choose **dp_fabric-<inject key="DeploymentID" enableCopy="false"/> (2)** and in the **Dataflow** drop-down list, select **Dataflow 1 (3)** (the data flow you created previously).
+4. With the new **Dataflow1** activity selected, go to the **Settings (1)** tab in the bottom. In the **Workspace** drop-down list, choose **dp_fabric-<inject key="DeploymentID" enableCopy="false"/> (2)** and in **Dataflow** drop-down list, select **Dataflow 1 (3)** (the dataflow you created previously).
 
       ![Pipeline with a dataflow activity.](./Images/p2t5p4.png)
 
@@ -267,7 +273,7 @@ In this task, you’ll add a dataflow to a pipeline to streamline the data proce
 
       ![](./Images/p2t5p7.png)
 
-1. From the left navigation pane, select **dp_fabric-<inject key="DeploymentID" enableCopy="false"/>** and then select **dp_lakehouse (2)** Lakehouse .
+1. From the left navigation pane, select **dp_fabric-<inject key="DeploymentID" enableCopy="false"/> (1)** and then select **dp_lakehouse (2)** Lakehouse .
 
       ![](./Images/p2t5p8.png)
 
