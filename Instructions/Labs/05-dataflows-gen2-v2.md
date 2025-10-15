@@ -99,7 +99,7 @@ In this task, you’ll create a dedicated workspace in Microsoft Fabric with the
 
 In this task, you’ll create a Lakehouse within your Fabric workspace to serve as a centralized storage layer for structured and unstructured data, enabling scalable data ingestion and analytics.
 
-1. Select **+ New item (1)**, search for **Lakehouse(2)**, and then choose **Lakehouse(3)** from the results.
+1. Select **+ New item (1)**, search for **Lakehouse (2)**, and then choose **Lakehouse (3)** from the results.
 
       ![New lakehouse.](./Images/p2t2p1.png)
 
@@ -118,7 +118,7 @@ In this task, you’ll create a Lakehouse within your Fabric workspace to serve 
 
 In this task, you’ll create a Dataflow Gen2 to ingest data into a Lakehouse using an ETL process. This setup enables structured data transformation and prepares the dataset for efficient storage and analysis within the Fabric environment.
 
-1. From the left menu bar, select the workspace **dp_fabric-<inject key="Deployment ID" enableCopy="false"/>(1)**, then click **+ New item (2)**. 
+1. From the left menu bar, select the workspace **dp_fabric-<inject key="Deployment ID" enableCopy="false"/> (1)**, then click **+ New item (2)**. 
    
 2. Search for **Dataflow Gen2 (3)** and select it **Dataflow Gen2 (4)** under Get data.  
 
@@ -126,9 +126,8 @@ In this task, you’ll create a Dataflow Gen2 to ingest data into a Lakehouse us
 
 1. Enter the below-mentioned details to create the Dataflow and click on **Create (3)**.
 
-   - **Name:** Keep as default **(1)**
-   - **Enable Git integration, deployment pipelines, and Public API Scenarios:** Uncheck **(2)**
-
+      - **Name:** Keep as default **(1)**
+      - **Enable Git integration, deployment pipelines, and Public API Scenarios:** Uncheck **(2)**
       ![](./Images/p2t3p2.png)
 
    After a few seconds, the Power Query editor for your new dataflow will open.
