@@ -1,61 +1,92 @@
-# Exercise 1 : Create and use a Dataflow (Gen2) in Microsoft Fabric 
+# Exercise 1: Create and use a Dataflow (Gen2) in Microsoft Fabric 
 
-## Estimated Duration : 120 Minutes
+### Estimated Duration: 120 Minutes
 
 In this exercise, you will use Dataflows (Gen2) to ingest, transform, and standardize data. You will set up data ingestion processes, apply necessary transformations, and create standardized datasets for analysis. This exercise will help you understand how to efficiently prepare and manage data using Dataflows (Gen2).
 
 ## Objectives:
-- Task 1 : Create a workspace
-- Task 2 : Create a lakehouse
-- Task 3 : Create a Dataflow (Gen2) to ingest data
-- Task 4 : Add data destination for Dataflow
-- Task 5 : Add a dataflow to a pipeline
 
-## Task 1 : Create a workspace
+- Task 1: Create a workspace
+- Task 2: Create a lakehouse
+- Task 3: Create a Dataflow (Gen2) to ingest data
+- Task 4: Add data destination for Dataflow
+- Task 5: Add a dataflow to a pipeline
 
-Before working with data in Fabric, create a workspace with the Fabric trial enabled.
+## Task 1: Create a workspace
 
-1. Click on Microsoft Edge and sign into [Microsoft Fabric](https://app.fabric.microsoft.com) at `https://app.fabric.microsoft.com`
+In this task, you’ll create a dedicated workspace in Microsoft Fabric with the trial features enabled. This workspace will serve as the foundation for building and managing data solutions, including lakehouses, dataflows, and pipelines.
 
-   * Email/Username: <inject key="AzureAdUserEmail"></inject> and click on **Submit**.
+1. On the LabVM desktop, click to open **Microsoft Edge**.
 
-   * Password: <inject key="AzureAdUserPassword"></inject> and click on **Yes**.
+      ![](./Images/p2t1p1.png)
 
-     ![](./Images/odl-01.png)
-   
-2. After signing in, From the bottom left choose **Power BI** .
+1. Open **Microsoft Fabric** by entering `https://app.fabric.microsoft.com` in your browser.
 
-   ![](./Images/powerbiupd.png)
+1. On the **"Enter your email, we'll check if you need to create a new account."** screen, enter your email **(1)** and click **Submit (2)** to proceed with signing in. 
 
-4. From the PowerBI home page, select **Account Manager** from the top-right corner to start the free **Microsoft Fabric trial** and click on **Free trial**.
+   * Email/Username: <inject key="AzureAdUserEmail"></inject> 
+
+      ![](./Images/p2t1p2.png)
+
+   * Password: <inject key="AzureAdUserPassword"></inject> and then click **Sign in**.
+
+     ![](./Images/p2t1p3.png)
+
+1. On the **Stay signed in?** pop-up, click **No**.
+
+      ![](./Images/p2t1p4.png)
+ 
+1. On the **Welcome to the Fabric view** window, click on **Cancel**.
+
+      ![](./Images/p2t1p5.png)
+
+1. On the **Microsoft Fabric (Free) license assigned** pop-up, click **OK**.
+
+      ![](./Images/p2t1p6.png)
+
+2. Once signed in, click on **Fabric (1)** in the bottom-left corner and then select **Power BI (2)** from the menu.
+
+      ![](./Images/p2t1p7.png)
+
+      ![](./Images/p2t1p8.png)
+
+4. On the **Power BI homepage**, click on the **Profile icon (1)** on the top right, and then click on **Free trial (2)**.
     
-   ![](./Images/imageupdatee2.png)
+   ![](./Images/p2t1p9.png)
      
-5. If prompted, agree to the terms and then select **Activate**. 
+5. On the **Activate your 60-day free Fabric trial capacity** pop-up window, click **Activate**. 
 
-   ![](./Images/E1T1S4upd.png)
+   ![](./Images/p2t1p10.png)
    
-6. Once your trial capacity is ready, you receive a confirmation message. Select **Stay on current page** to begin working in Fabric.
+6. On the **Successfully upgraded to Microsoft Fabric** pop-up, click **OK**.
 
-   ![](./Images/updated3upd.png)
+   ![](./Images/p2t1p11.png)
+
+1. Close the **Invite teammates to try Fabric to extend your trial** window when it appears.
+
+      ![](./Images/p2t1p12.png)
    
-7. On the dashboard, on the top menu you can see **Trial Status 59 days left**.
+7. On the dashboard, on the top menu you can see **Trial: 59 days left**.
 
-   ![](./Images/updated4upd.png)
+      ![](./Images/p2t1p13.png)
 
-    >**Note**: You now have a **Fabric (Preview) trial** that includes a **Power BI trial** and a **Fabric (Preview) trial capacity**.
+      >**Note**: You now have a **Fabric (Preview) trial** that includes a **Power BI trial** and a **Fabric (Preview) trial capacity**.
 
 8. In the left menu bar, click on **Workspaces (1)**, then select **+ New Workspace (2)**.
 
-9. Create a new workspace with a name **dp_fabric-<inject key="Deployment ID" enableCopy="false"/> (1)**, Choose a licensing mode as a **trial (2)** under **Advanced**. and click on **Apply (3)**.
+      ![](./Images/p2t1p14.png)
 
-   ![New lakehouse.](./Images/fab-image3upd.png)
-    
+9. Create a new workspace named **dp_fabric-<inject key="Deployment ID" enableCopy="false"/> (1)**, select **Trial (2)** as the licensing mode under **Advanced**, and click **Apply (3)** to proceed.
+
+      ![](./Images/p2t1p15.png)
+
+1. On the **Introducing task flows (preview)** pop-up, click **Got it**.
+
+      ![](./Images/p2t1p16.png)
+
 10. When your new workspace opens, it should be empty, as shown here:
 
-    ![Screenshot of an empty workspace in Power BI.](./Images/E1T1S9upd.png)
-
-    > **Note**: If the prompt **"Introducing task flows (preview)"** appears, just click on **Got it**.   
+    ![Screenshot of an empty workspace in Power BI.](./Images/p2t1p17.png)  
  
 >**Congratulations** on completing the Task! Now, it's time to validate it. Here are the steps:
 > - Hit the Validate button for the corresponding task. If you receive a success message, you have successfully validated the lab. 
@@ -64,19 +95,17 @@ Before working with data in Fabric, create a workspace with the Fabric trial ena
   
 <validation step="61a34bd9-1fc1-47db-b51c-4720f310133d" />
 
-## Task 2 : Create a lakehouse
+## Task 2: Create a lakehouse
 
-Now that you have a workspace, it's time to and create a data lakehouse into which you'll ingest data.
+In this task, you’ll create a Lakehouse within your Fabric workspace to serve as a centralized storage layer for structured and unstructured data, enabling scalable data ingestion and analytics.
 
-1. Select **+ New Item (1)**, search for **Lakehouse(2)**, and then choose **Lakehouse(3)** from the results.
+1. Select **+ New item (1)**, search for **Lakehouse(2)**, and then choose **Lakehouse(3)** from the results.
 
-      ![New lakehouse.](./Images/lakehouse-1.png)
+      ![New lakehouse.](./Images/p2t2p1.png)
 
-3. Create a new Lakehouse
+3. In the **New lakehouse** pop-up, enter the Name as  **dp_lakehouse (1)** and click on **Create (2)**.
 
-    Name: Enter **dp_lakehouse** and click on **Create**.
-
-    ![New lakehouse.](./Images/fab-image12.png)
+    ![New lakehouse.](./Images/p2t2p2.png)
    
 >**Congratulations** on completing the Task! Now, it's time to validate it. Here are the steps:
 > - Hit the Validate button for the corresponding task. If you receive a success message, you have successfully validated the lab. 
@@ -85,113 +114,117 @@ Now that you have a workspace, it's time to and create a data lakehouse into whi
 
 <validation step="38c64afd-7502-4783-8169-0e5730914f65" />
 
-## Task 3 : Create a Dataflow (Gen2) to ingest data
+## Task 3: Create a Dataflow (Gen2) to ingest data
 
-Now that you have a lakehouse, you need to ingest some data into it. One way to do this is to define a dataflow that encapsulates an *extract, transform, and load* (ETL) process.
+In this task, you’ll create a Dataflow Gen2 to ingest data into a Lakehouse using an ETL process. This setup enables structured data transformation and prepares the dataset for efficient storage and analysis within the Fabric environment.
 
-1. Select your workspace, **dp_fabric-<inject key="Deployment ID" enableCopy="false"/>(1)**, then click **+ New item** 
-
-      ![New dataflow.](./Images/new_item-1upd.png)
+1. From the left menu bar, select the workspace **dp_fabric-<inject key="Deployment ID" enableCopy="false"/>(1)**, then click **+ New item (2)**. 
    
-2. Search for **Dataflow Gen2** and select it. When the pop-up appears, go ahead and accept the default name, then select **Create** to continue.  
+2. Search for **Dataflow Gen2 (3)** and select it **Dataflow Gen2 (4)** under Get data.  
 
-      ![New dataflow.](./Images/datagenflowupd.png)
+      ![New dataflow.](./Images/p2t3p1.png)
 
-      >**Note**: If the option is not visible as mentioned above, please follow the steps highlighted in the screenshot below.
+1. Enter the below-mentioned details to create the Dataflow and click on **Create (3)**.
 
-3. After a few seconds, the Power Query editor for your new dataflow opens as shown here.
+   - **Name:** Keep as default **(1)**
+   - **Enable Git integration, deployment pipelines, and Public API Scenarios:** Uncheck **(2)**
 
-      ![New dataflow.](./Images/m6-fabric-2upd.png)
+      ![](./Images/p2t3p2.png)
 
-4. Select **Import from a Text/CSV file**.
+   After a few seconds, the Power Query editor for your new dataflow will open.
+
+1. From the center **Get data** pane, select **Import from a Text/CSV file**.
 
       ![New lakehouse.](./Images/fab-image5upd.png)
 
-5. Create a new data source with the following settings and click on **Next (6)** :
+5. Create a new data source with the following settings and click on **Next (7)** :
  
-    - **Link to file**: *Selected*
-    - **File path or URL**: `https://raw.githubusercontent.com/MicrosoftLearning/dp-data/main/orders.csv` (1)
-    - **Connection**: Create new connection (2)
-    - **data gateway**: (none) (3)
-    - **Authentication kind**: Anonymous (4)
-    - **Privacy level** : none (5)
+    - **Link to file**: Selected **(1)**
+    - **File path or URL**: `https://raw.githubusercontent.com/MicrosoftLearning/dp-data/main/orders.csv` **(2)**
+    - **Connection**: Create new connection **(3)**
+    - **Data gateway**: (none) **(4)**
+    - **Authentication kind**: Anonymous **(5)**
+    - **Privacy Level** : None **(6)**
 
-      ![New lakehouse.](./Images/fab-image6upd.png)
+      ![New lakehouse.](./Images/p2t3p5.png)
 
-6. On the *Preview file data* click on **Create**
+6. On the *Preview file data*, click on **Create**.
 
       ![New lakehouse.](./Images/createdataupd.png)
 
-6. Create the data source. The Power Query editor shows the data source and an initial set of query steps to format the data, as shown here:
+6. The Power Query editor shows the data source and an initial set of query steps to format the data, as shown here:
 
-      ![Query in the Power Query editor.](./Images/m6-fabric-3.png)
+      ![Query in the Power Query editor.](./Images/p2t3p7.png)
 
 7. On the toolbar ribbon, select the **Add column (1)** tab. Then select **Custom column (2)**.
 
-      ![New lakehouse.](./Images/fab-image7.png)
+      ![New lakehouse.](./Images/p2t3p8.png)
    
-8. Create a new column named **MonthNo (1)** that contains a number based on the formula `Date.Month([OrderDate])` (2) - as shown here and click on **OK (3)**.
+8. On the Custom column pane, create a new column with Name **MonthNo (1)** and enter the formula **Date.Month([OrderDate]) (2)** in the **Custom column formula** box and then click **OK (3)**.
 
-      ![Custom column in Power Query editor.](./Images/custom-column1upd.png)
+      ![Custom column in Power Query editor.](./Images/p2t3p9.png)
 
-9. The step to add the custom column is added to the query and the resulting column is displayed in the data pane:
+9. The step to add the custom column is added to the query, and the resulting column is displayed in the data pane:
 
       ![Query with a custom column step.](./Images/custom-column-added1upd.png)
 
-      > **Tip:** In the Query Settings pane on the right side, notice the **Applied Steps** include each transformation step. At the bottom, you can also toggle the 
-      **Diagram flow** button to turn on the Visual Diagram of the steps.
-    
-      > Steps can be moved up or down, edited by selecting the gear icon, and you can select each step to see the transformations apply in the preview pane.
+## Task 4: Add data destination for Dataflow
 
-## Task 4 : Add data destination for Dataflow
+In this task, you’ll configure a data destination for a dataflow to enable seamless integration with a Lakehouse. This setup ensures that transformed data is efficiently stored and accessible for downstream analytics and reporting.
 
-1. On the toolbar ribbon, select the **Home** tab. In the home tab, click on the dropdown for **Query (1)**, click on **Add data destination (2)** drop-down menu and select **Lakehouse (3)**.
+1. On the toolbar ribbon, navigate to the **Home (1)** tab. Within the Home tab, open the **Query (2)** dropdown, then select the **Add data destination (3)** option, and choose **Lakehouse (4)** from the list.
 
-      ![New lakehouse.](./Images/gen2-2upd1.png)
+      ![New lakehouse.](./Images/p2t4p1.png)
+
+      >**Note:** Click the **Expand the ribbon** icon to access the full menu.
+
+      ![](./Images/p2t4p1(1).png)
 
       > **Note:** If this option is grayed out, you may already have a data destination set. Check the data destination at the bottom of the Query settings pane on the right side of the Power Query editor. If a destination is already set, you can change it using the gear.
 
-2. In the **Connect to data destination** dialog box, keep all the values as default and select **Next**.
+2. In the **Connect to data destination** dialog box, keep all the values as default and click **Next**.
 
       ![Data destination configuration page.](./Images/connect_data_destination-1upd.png)
 
-3. In the list of available workspaces, find your workspace and select lakehouse you created **(1)** in at the start of this exercise. The associated table **orders (2)** will automatically come up. Click on **Next (3)**.
+3. Select the **dp_fabric-<inject key="DeploymentID" enableCopy="false"/>** Workspace. Choose the **dp_lakehouse (1)**, then specify the new table name as **orders (2)**, and then click **Next (3)**.
 
-      ![Data destination configuration page.](./Images/ordersupd.png)
+      ![Data destination configuration page.](./Images/p2t4p3.png)
 
-      > **Note:** On the **Destination settings** page, notice how OrderDate and MonthNo are not selected in the Column mapping and there is an informational message: *Change to date/time*.
+1. On the Destination settings page, observe that **MonthNo (1)** is not selected in the Column mapping, and an informational message is displayed. Click **Cancel (2)**.
 
-4. **Cancel** this action, then go back to **OrderDate** and **MonthNo** columns in Power Query online. Right-click on the column header and **Change Type**.
+      ![](./Images/p2t4p4.png)
 
-      - OrderDate = Date/Time
-      - MonthNo = Whole number
+4. Go back to **MonthNo (1)** columns in Power Query online. Right-click on the column header and select **Change Type (2)** and then choose **Whole number (3)**.
 
-        ![New lakehouse.](./Images/gen2-3upd.png)
+      ![New lakehouse.](./Images/p2t4p5.png)
 
-5. Now repeat the process outlined earlier to add a lakehouse destination.
+5. Click on the **Add data destination (1)** and then select **Lakehouse (2)** under New destination.
 
-      - Choose the existing destination that we previously created, select **Lakehouse (none) (1)** and click on **Next (2)**.
+      ![](./Images/p2t4p6.png)
 
-         ![New lakehouse.](./Images/gen2-4upd.png)
+1. Choose the existing destination that we previously created, select **Lakehouse (none) (1)** and click on **Next (2)**.
 
-      - Select the lakehouse you created in it at the start of this exercise and the associated table **orders**.
-      - Click on **Next**.
+      ![](./Images/gen2-4upd.png)
 
-6. On the **Destination settings** page toggle off Use automatic settings (1), select **Append (2)**, and then click on **Save Settings (3)**.  
+1. Select the lakehouse created at the beginning of this exercise, **dp_lakehouse (1)**, along with the corresponding table **orders (2)**. Then, click **Next (3)** to proceed.
 
-      ![New lakehouse.](./Images/E1T4S7upd1.png)
+      ![](./Images/p2t4p3.png)
+
+6. On the **Choose destination settings** page, disable **Use automatic settings (1)**. Under the Update method section, select **Append (2)**, and then click **Save settings (3)** to apply the changes. 
+
+      ![New lakehouse.](./Images/p2t4p7.png)
 
 7. The **Lakehouse** destination is indicated as an icon in the query in the Power Query editor.
    
-      ![Query with a lakehouse destination.](./Images/lakehouse-destination1.png)
+      ![Query with a lakehouse destination.](./Images/p2t4p8.png)
 
-      >**Note** : to view the visual query, select the icon from below right corner as shown below :
+      >**Note:** To view the visual query, click on **Diagram view** icon from the bottom right corner as shown below:
 
       >![Query with a lakehouse destination.](./Images/visual_query.png)
 
-8. Select **Publish** from the bottom right to publish the dataflow. Then wait for the **Dataflow 1** dataflow to be created in your workspace.
+8. Click **Publish** at the bottom right to publish the dataflow. Then, wait for the **Dataflow 1** to be created in your workspace.
 
-      ![New lakehouse.](./Images/gen2-6.png)
+      ![New lakehouse.](./Images/p2t4p9.png)
 
 > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps
 > - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
@@ -200,39 +233,47 @@ Now that you have a lakehouse, you need to ingest some data into it. One way to 
     
 <validation step="0957818c-b310-4ba7-9c56-70042c49ede3" />
 
-## Task 5 : Add a dataflow to a pipeline
+## Task 5: Add a dataflow to a pipeline
 
-You can include a dataflow as an activity in a pipeline. Pipelines are used to orchestrate data ingestion and processing activities, enabling you to combine dataflows with other kinds of operation in a single, scheduled process. Pipelines can be created in a few different experiences, including Data Factory experience.
+In this task, you’ll add a dataflow to a pipeline to streamline the data processing workflow and enable automated data transformations.
 
-1. In the Fabric workspace **dp_fabric-<inject key="Deployment ID" enableCopy="false"/>(1)**, click on **+ New Item (2)**, search for **Data Pipeline (3)**, and select **Data Pipeline (4)**. Then, create a new pipeline and name it **Load Orders Pipeline**.
+1. From the left pane, select the Fabric workspace **dp_fabric-<inject key="Deployment ID" enableCopy="false"> (1)**, click **+ New item (2)**. In the New Item pane, search for **Pipeline (3)**, and then select **Pipeline (4)** under the Get data section.
 
-      ![New lakehouse.](./Images/datapipeline-1.png)
+      ![New lakehouse.](./Images/p2t5p1.png)
 
-      ![New lakehouse.](./Images/fab-image10upd.png)
+1. Name the new pipeline as **Load Orders Pipeline (1)** and click **Create (2)** to proceed.
 
-      > **Note**: If the Copy Data wizard opens automatically, close it!
+      ![New lakehouse.](./Images/p2t5p2.png)
 
-3. Select **Pipeline activity (1)**, and add a **Dataflow (2)** activity to the pipeline.
+      > **Note:** If the Copy Data wizard opens automatically, close it.
 
-      ![New lakehouse.](./Images/fab-image11upd.png)
+3. Click on the **Pipeline activity (1)**, and select **Dataflow (2)** activity.
 
-4. With the new **Dataflow1** activity selected, on the **Settings (1)** tab, in the **Dataflow** drop-down list, select **Dataflow 1 (2)** (the data flow you created previously)
+      ![New lakehouse.](./Images/p7t3p4.png)
 
-      ![Pipeline with a dataflow activity.](./Images/dataflow-01upd.png)
+4. With the new **Dataflow1** activity selected, go to the **Settings (1)** tab in the bottom. In the **Workspace** drop-down list, choose **dp_fabric-<inject key="DeploymentID" enableCopy="false"/> (2)** and in **Dataflow** drop-down list, select **Dataflow 1 (3)** (the dataflow you created previously).
 
-5. On the **Home** tab, save the pipeline using the **&#128427;** (*Save*) icon.
+      ![Pipeline with a dataflow activity.](./Images/p2t5p4.png)
 
-6. Use the **&#9655; Run** button to run the pipeline, and wait for it to complete. It may take a few minutes.
+5. On the **Home** tab, save the pipeline by clicking the **&#128427; Save** icon.
 
-      ![Pipeline with a dataflow that has completed successfully.](./Images/dataflow-pipeline-succeeded1.png)
+      ![](./Images/p2t5p5.png)
 
-8. Navigate back to the lakehouse . In the **ellipses** menu for **Tables**, select **refresh**. Then expand **Tables** and select the **orders** table, which has been created by your dataflow.
+1. Use the **&#9655; Run** button to run the pipeline, and wait for it to complete. It may take a few minutes.
 
-      ![New lakehouse.](./Images/gen2-7.png)
+      ![Pipeline with a dataflow that has completed successfully.](./Images/p2t5p6.png)
 
-      > **Note**: Use the Power BI Desktop *Dataflows connector* to connect directly to the data transformations done with your dataflow.
-      > You can also make additional transformations, publish as a new dataset, and distribute with intended audience for specialized datasets.
-      ![Power BI data source connectors](Images/pbid-dataflow-connectors1.png)
+      ![](./Images/p2t5p7.png)
+
+1. From the left navigation pane, select **dp_fabric-<inject key="DeploymentID" enableCopy="false"/> (1)** and then select **dp_lakehouse (2)** Lakehouse .
+
+      ![](./Images/p2t5p8.png)
+
+1. In the **Tables** section, click the **Ellipsis (...) (1)** and choose **Refresh (2)**. Then, confirm that the **orders (3)** table has been created by your dataflow.
+
+      ![](./Images/p2t5p9.png)
+
+      ![](./Images/p2t5p10.png)
 
 > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps
 > - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
@@ -241,17 +282,11 @@ You can include a dataflow as an activity in a pipeline. Pipelines are used to o
 
 <validation step="6f702ff3-1450-4b7c-b44f-052a3a77f380" />
 
-### Summary
+## Summary
 
 In this exercise, you have learned how to use Dataflows (Gen2) to ingest, transform, and standardize data within Microsoft Fabric. You successfully set up data ingestion processes, applied necessary transformations, and created standardized datasets for analysis. By completing these tasks, you gained practical experience in preparing and managing data using Dataflows (Gen2) efficiently.
 
-### Review
+### You have successfully completed the exercise. Click on Next >> to proceed with the next exercise.
 
-In this lab you have completed the following tasks:
+![](./Images/nextpage2.png)
 
- - Set up a workspace.
- - Create a lakehouse.  
- - Develop a Dataflow (Gen2) for data ingestion and specify a data destination.  
- - Integrate the Dataflow into a pipeline.
-
-### You have successfully completed the lab. To continue, please click on "Next" to proceed to the next lab.
