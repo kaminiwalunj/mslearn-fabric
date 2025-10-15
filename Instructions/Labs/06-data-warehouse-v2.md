@@ -1,28 +1,28 @@
-# Exercise 2 : Analyze data in a Data Warehouse
+# Exercise 2: Analyze data in a Data Warehouse
 
-### Estimated Duration : 120 Minutes
+### Estimated Duration: 120 Minutes
 
 In this exercise, you will analyze data within a relational data warehouse using Microsoft Fabric. Utilize SQL for querying and create detailed visualizations to derive actionable insights. 
 
 ## Objectives:
 
-- Task 1 : Create a Data Warehouse
-- Task 2 : Create tables and insert data
-- Task 3 : Define a Data Model
-- Task 4 : Query data Warehouse tables
-- Task 5 : Create a View
-- Task 6 : Create a visual query
-- Task 7 : Visualize your data
+- Task 1: Create a Data Warehouse
+- Task 2: Create tables and insert data
+- Task 3: Define a Data Model
+- Task 4: Query data Warehouse tables
+- Task 5: Create a View
+- Task 6: Create a visual query
+- Task 7: Visualize your data
 
-## Task 1 : Create a Data Warehouse
+## Task 1: Create a Data Warehouse
 
 In this task, you will design and implement a data warehouse by organizing data from multiple sources, creating ETL processes, and optimizing for performance. The goal is to enable efficient querying and reporting while ensuring security, compliance, and scalability.
 
-1. From the bottom left , make sure **Powerbi** is selected. 
+1. From the bottom left, make sure **Power BI** is selected. 
 
      ![Screenshot of a new warehouse.](./Images/p3t1p1.png)
 
-    >**Note**: If you don't see the icon in the bottom left corner, Fabric isn't enabled for your tenant. Fabric is enabled in the admin portal for tenants that have a Power BI Premium subscription.
+    >**Note:** If you don't see the icon in the bottom left corner, Fabric isn't enabled for your tenant. Fabric is enabled in the admin portal for tenants that have a Power BI Premium subscription.
 
 2. From the left pane, select the workspace **dp_fabric-<inject key="Deployment ID" enableCopy="false"> (1)**. Within the selected workspace, click **+ New item (2)**. In the New item pane on the right, use the search bar to find **Warehouse (3)**, then select **Warehouse (4)** from the Store data section.
 
@@ -32,7 +32,7 @@ In this task, you will design and implement a data warehouse by organizing data 
 
    ![Screenshot of a new warehouse.](./Images/p3t1p3.png)
 
-## Task 2 : Create tables and insert data
+## Task 2: Create tables and insert data
 
 In this task, you will create database tables by defining their structure with appropriate columns and constraints. Afterwards, you'll insert data into the tables, ensuring it is ready for querying and further operations.
 
@@ -83,7 +83,7 @@ In this task, you will create database tables by defining their structure with a
 
 7. On the **Home (1)** menu tab, use the **New SQL Query (2)** button to create a new query.
 
-1. Copy this URL `https://raw.githubusercontent.com/MicrosoftLearning/dp-data/main/create-dw.txt` and paste it in a new tab in the browser and then copy and paste **(3)** the Transact-SQL code from  into the new query pane. Then click on **Run (4)**.
+1. Copy this URL `https://raw.githubusercontent.com/MicrosoftLearning/dp-data/main/create-dw.txt` and paste it in a new tab in the browser, and then copy and paste **(3)** the Transact-SQL code into the new query pane. Then click on **Run (4)**.
 
     ![](./Images/p3t2p7.png)
    
@@ -100,7 +100,7 @@ In this task, you will create database tables by defining their structure with a
 
     > **Note:** If the schema takes a while to load, just refresh the browser page.
 
-## Task 3 : Define a Data Model
+## Task 3: Define a Data Model
 
 In this task, you will create a relational data warehouse consisting of fact and dimension tables, where fact tables hold numeric measures for analysis and dimension tables store entity attributes. You'll define relationships between tables in Microsoft Fabric to build a data model for efficient business performance analysis.
 
@@ -159,7 +159,7 @@ In this task, you will create a relational data warehouse consisting of fact and
 
 <validation step="d114c931-34ab-496c-ac20-062a1ced675f" />
 
-## Task 4 : Query data Warehouse tables
+## Task 4: Query data Warehouse tables
 
 In this task, you will query data warehouse tables using SQL to retrieve and analyze data. Most queries will involve aggregating and grouping data with functions and GROUP BY clauses, as well as joining related fact and dimension tables using JOIN clauses.
 
@@ -167,7 +167,7 @@ In this task, you will query data warehouse tables using SQL to retrieve and ana
 
 Most queries in a relational data warehouse involve aggregating and grouping data (using aggregate functions and GROUP BY clauses) across related tables (using JOIN clauses).
 
-1. Switch back to **Data Warehouse-<inject key="DeploymentID" enableCopy="false"/> (1)** from the left navigation pane, go to the top menu bar and click on **New SQL Query (2)**. Then, paste and Run the following code **(3)**:
+1. Switch back to **Data Warehouse-<inject key="DeploymentID" enableCopy="false"/> (1)** from the left navigation pane, go to the top menu bar, and click on **New SQL Query (2)**. Then, paste and run the following code **(3)**:
 
     ```sql
    SELECT  d.[Year] AS CalendarYear,
@@ -203,7 +203,7 @@ Most queries in a relational data warehouse involve aggregating and grouping dat
 
     ![](./Images/p3t4p2.png)
 
-## Task 5 : Create a View
+## Task 5: Create a View
 
 In this task, you will create a view in the data warehouse to encapsulate SQL logic for easier querying and data abstraction. A Microsoft Fabric data warehouse offers similar capabilities to relational databases, allowing you to create views and stored procedures to streamline complex queries and improve data access efficiency.
 
@@ -239,7 +239,7 @@ In this task, you will create a view in the data warehouse to encapsulate SQL lo
 
     ![](./Images/p3t5p3.png)
 
-## Task 6 : Create a visual query
+## Task 6: Create a visual query
 
 In this task, you will create a visual query using the graphical query designer to query data warehouse tables without writing SQL code. Similar to Power Query online, this no-code approach allows you to perform data transformations, and for more complex tasks, you can leverage Power Query's M language.
 
@@ -267,15 +267,15 @@ In this task, you will create a visual query using the graphical query designer 
 
     ![Screenshot of the preview pane with the DimProduct column expanded, with ProductName selected.](./Images/p3t6p3.png)
 
-7. If you're interested in looking at data for a single product, per a manager request, you can now use the **ProductName** column to filter the data in the query. Filter the **ProductName** column to look at **Cable Lock (1)** data only and click on **OK (2)**.
+7. If you're interested in looking at data for a single product, per a manager's request, you can now use the **ProductName** column to filter the data in the query. Filter the **ProductName** column to look at **Cable Lock (1)** data only and click on **OK (2)**.
 
    ![Screenshot of the preview pane with the DimProduct column expanded, with ProductName selected.](./Images/cable_lockupd.png)
 
-    >**Note**: If you can't find the cable lock, click on **Load More**. 
+    >**Note:** If you can't find the cable lock, click on **Load More**. 
 
 8. From here, you can analyze the results of this single query by selecting **Visualize results** or **Open in Excel**. You can now see exactly what the manager was asking for, so we don't need to analyze the results further.
 
-## Task 7 : Visualize your data
+## Task 7: Visualize your data
 
 In this task, you will visualize your data from a single query or your data warehouse to gain insights and present findings effectively. Before creating visualizations, it's important to hide any columns or tables that may clutter the report and are not user-friendly for report designers.
 
