@@ -288,6 +288,6 @@ In this task, you’ll add a dataflow to a pipeline to streamline the data proce
 
 In this exercise, you have learned how to use Dataflows (Gen2) to ingest, transform, and standardize data within Microsoft Fabric. You successfully set up data ingestion processes, applied necessary transformations, and created standardized datasets for analysis. By completing these tasks, you gained practical experience in preparing and managing data using Dataflows (Gen2) efficiently.
 
-### You have successfully completed the Exercise 1. To continue, please click on Next >> to proceed to the next Exercise.
+### You have successfully completed the exercise. Click on Next >> to proceed with the next exercise.
 
 ![](./Images/nextpage2.png)

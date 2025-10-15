@@ -354,4 +354,4 @@ In this exercise, you analyzed data in a Microsoft Fabric data warehouse. You cr
 
 By completing this **Get Started With Data Warehouses And Ingesting Data With Dataflows Gen2 With Microsoft Fabric** hands-on lab, you have gained practical experience with core capabilities of Microsoft Fabric for enterprise data management and analytics. In **Exercise 1**, you learned how to ingest, transform, and standardize data using Dataflows Gen2, preparing it for analysis in a Lakehouse. In **Exercise 2**, you explored data warehousing by creating tables, building relationships, executing SQL queries, and visualizing insights through Power BI. Together, these exercises provided a comprehensive understanding of how to manage, analyze, and present data effectively within the Fabric ecosystem, empowering you to support data-driven decision-making in your organization.
 
-### You have successfully completed the Hands-on Lab!
+### You have successfully completed the Hands-on lab!
