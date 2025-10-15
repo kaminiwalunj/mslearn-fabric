@@ -66,11 +66,7 @@ In this task, you’ll create a dedicated workspace in Microsoft Fabric with the
 
       ![](./Images/p2t1p12.png)
    
-<<<<<<< HEAD
 7. On the dashboard, on the top menu you can see **Trial: 59 days left**.
-=======
-7. On the dashboard, in the top menu, you can see **Trial Status 59 days left**.
->>>>>>> c62b48d4c78d22de43fcd8e1d5715966ace4598f
 
       ![](./Images/p2t1p13.png)
 
@@ -198,11 +194,7 @@ In this task, you’ll configure a data destination for a dataflow to enable sea
 
       ![](./Images/p2t4p4.png)
 
-<<<<<<< HEAD
 4. Go back to **MonthNo (1)** columns in Power Query online. Right-click on the column header and select **Change Type (2)** and then choose **Whole number (3)**.
-=======
-4. Go back to the **MonthNo (1)** columns in Power Query online. Right-click on the column header and **Change Type (2)**.
->>>>>>> c62b48d4c78d22de43fcd8e1d5715966ace4598f
 
       ![New lakehouse.](./Images/p2t4p5.png)
 
@@ -249,7 +241,7 @@ In this task, you’ll add a dataflow to a pipeline to streamline the data proce
 
       ![New lakehouse.](./Images/p2t5p1.png)
 
-1. Name the new pipeline **Load Orders Pipeline (1)** and click **Create (2)** to proceed.
+1. Name the new pipeline as **Load Orders Pipeline (1)** and click **Create (2)** to proceed.
 
       ![New lakehouse.](./Images/p2t5p2.png)
 

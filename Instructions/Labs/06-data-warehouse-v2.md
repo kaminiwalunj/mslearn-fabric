@@ -22,8 +22,6 @@ In this task, you will design and implement a data warehouse by organizing data 
 
      ![Screenshot of a new warehouse.](./Images/p3t1p1.png)
 
-    >**Note:** If you don't see the icon in the bottom left corner, Fabric isn't enabled for your tenant. Fabric is enabled in the admin portal for tenants that have a Power BI Premium subscription.
-
 2. From the left pane, select the workspace **dp_fabric-<inject key="Deployment ID" enableCopy="false"> (1)**. Within the selected workspace, click **+ New item (2)**. In the New item pane on the right, use the search bar to find **Warehouse (3)**, then select **Warehouse (4)** from the Store data section.
 
    ![Screenshot of a new warehouse.](./Images/p3t1p2.png)
@@ -83,7 +81,7 @@ In this task, you will create database tables by defining their structure with a
 
 7. On the **Home (1)** menu tab, use the **New SQL Query (2)** button to create a new query.
 
-1. Copy this URL `https://raw.githubusercontent.com/MicrosoftLearning/dp-data/main/create-dw.txt` and paste it in a new tab in the browser, and then copy and paste **(3)** the Transact-SQL code into the new query pane. Then click on **Run (4)**.
+1. Copy this URL `https://raw.githubusercontent.com/MicrosoftLearning/dp-data/main/create-dw.txt` and paste it in a new tab in the browser, and then copy and paste **(3)** the entire Transact-SQL code into the new query pane. Then click on **Run (4)**.
 
     ![](./Images/p3t2p7.png)
    
@@ -98,7 +96,7 @@ In this task, you will create database tables by defining their structure with a
 
         ![](./Images/p3t2p8.png)
 
-    > **Note:** If the schema takes a while to load, just refresh the browser page.
+        > **Note:** If the schema takes a while to load, just refresh the browser page.
 
 ## Task 3: Define a Data Model
 
@@ -225,7 +223,7 @@ In this task, you will create a view in the data warehouse to encapsulate SQL lo
 
     ![](./Images/p3t5p1.png)
 
-2. After execution, a view will be created. Click the **Ellipsis (...) (1)** next to the **View** folder and select **Refresh (2)** to update the data warehouse schema. Then, verify that the new view **vSalesByRegion (3)** appears in the **Explorer** pane.
+2. After execution, a view will be created. Click the **Ellipsis (...) (1)** next to the **Views** folder and select **Refresh (2)** to update the data warehouse schema. Then, verify that the new view **vSalesByRegion (3)** appears in the **Explorer** pane.
 
     ![](./Images/p3t5p2.png)
 
@@ -243,7 +241,7 @@ In this task, you will create a view in the data warehouse to encapsulate SQL lo
 
 In this task, you will create a visual query using the graphical query designer to query data warehouse tables without writing SQL code. Similar to Power Query online, this no-code approach allows you to perform data transformations, and for more complex tasks, you can leverage Power Query's M language.
 
-1. On the **Home** menu, from the **New SQL Query (1)** drop-down, select **New visual query (2)**.
+1. On the **Home** menu, from the **New SQL query (1)** drop-down, select **New visual query (2)**.
 
      ![](./Images/p3t6p1.png)
 
@@ -253,13 +251,13 @@ In this task, you will create a visual query using the graphical query designer 
 
     ![](./Images/p3t6p2.png)
 
-4. Use the **(+)** button on the **FactSalesOrder** table on the canvas to **Merge queries**.
+4. Use the **(+) (1)** button on the **FactSalesOrder** table on the canvas to **Merge queries (2)**.
 
-     ![Screenshot of a new warehouse.](./Images/gen2-14upd.png)
+     ![Screenshot of a new warehouse.](./Images/p3t6p4.png)
 
       > **Note:** If the + option is not visible, click on the three dots (i.e., the Actions button) to view the required options. 
 
-5. In the **Merge queries** window, select **DimProduct (1)** as the right table for merge. Select **ProductKey (2)** in both queries, leave the default **Left outer (3)** join kind, and click **OK (4)**.
+5. In the **Merge queries** window, select **DimProduct (1)** as the right table for merge. Select **ProductKey (2)** in both queries, leave the default **Left outer (3)** Join kind, and click **OK (4)**.
 
      ![Screenshot of a new warehouse.](./Images/leftjoin.png)
 
