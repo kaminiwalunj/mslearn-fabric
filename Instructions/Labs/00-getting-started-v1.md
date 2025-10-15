@@ -8,7 +8,7 @@ In this lab, you'll explore key components of Microsoft Fabric's data solution. 
 
 ## Objective
 
-Explore dataflows, data warehousing, and reporting in Microsoft Fabric. By the end of this lab, You will gain insights on :
+Explore dataflows, data warehousing, and reporting in Microsoft Fabric. By the end of this lab, you will gain insights on :
 
 - **Create and use a Dataflow (Gen2) in Microsoft Fabric:** Learn to effectively ingest and transform data using Dataflows (Gen2) in Microsoft Fabric. Connect data sources, standardize the data, and efficiently load it to Lakehouse.
 - **Analyze data in a Data Warehouse:** Learn to create and manage a relational data warehouse in Microsoft Fabric. Utilize SQL to perform queries and visualizations.
@@ -17,7 +17,7 @@ Explore dataflows, data warehousing, and reporting in Microsoft Fabric. By the e
 
 Participants should have:
 
-- Fundamental knowledge on Microsoft Fabric
+- Fundamental knowledge of Microsoft Fabric
 - Basic understanding of Data Analytics
 
 ## Architecture
@@ -40,7 +40,6 @@ The architecture for this lab involves the following key components:
 - **Visual Query Tool:**  Enables the creation of visual queries and views, allowing participants to easily analyze and visualize data, and draw actionable insights from the lab's dataset.
 
 **Fabric trial provides access to most features, but excludes Copilot, private links, and trusted workspace access ([learn more](https://learn.microsoft.com/en-us/fabric/fundamentals/fabric-trial#overview-of-the-trial-capacity)).**
-
 
 ## Getting Started with Lab
 
@@ -66,7 +65,7 @@ For convenience, you can open the lab guide in a separate window by selecting th
  
 ## Managing Your Virtual Machine
  
-Feel free to start, stop, or restart your virtual machine as needed from the **Resources** tab. Your experience is in your hands!
+Feel free to **Start**, **Stop**, or **Restart** your virtual machine as needed from the **Resources** tab. Your experience is in your hands!
  
 ![Manage Your Virtual Machine](./Images/updatedimg4upd.png)
 
@@ -78,7 +77,7 @@ To adjust the zoom level for the environment page, click the **A↕ : 100%** ico
 
 ## Lab Validation
 
-After completing the task, hit the **Validate** button under Validation tab integrated within your lab guide. If you receive a success message, you can proceed to the next task, if not, carefully read the error message and retry the step, following the instructions in the lab guide.
+After completing the task, hit the **Validate** button under the Validation tab integrated within your lab guide. If you receive a success message, you can proceed to the next task; if not, carefully read the error message and retry the step, following the instructions in the lab guide.
 
    ![Inline Validation](./Images/inline-validationupd.png)
  
@@ -98,4 +97,5 @@ Now, click on **Next** from the lower right corner to move on to the next page.
 ![Start Your Azure Journey](./Images/nextpage1.png)
 
 ### Happy Learning!!
+
 
