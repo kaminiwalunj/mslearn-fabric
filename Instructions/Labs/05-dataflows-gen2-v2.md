@@ -1,4 +1,4 @@
-# Exercise 1 : Create and use a Dataflow (Gen2) in Microsoft Fabric 
+# Exercise 1: Create and use a Dataflow (Gen2) in Microsoft Fabric 
 
 ### Estimated Duration: 120 Minutes
 
@@ -6,13 +6,13 @@ In this exercise, you will use Dataflows (Gen2) to ingest, transform, and standa
 
 ## Objectives:
 
-- Task 1 : Create a workspace
-- Task 2 : Create a lakehouse
-- Task 3 : Create a Dataflow (Gen2) to ingest data
-- Task 4 : Add data destination for Dataflow
-- Task 5 : Add a dataflow to a pipeline
+- Task 1: Create a workspace
+- Task 2: Create a lakehouse
+- Task 3: Create a Dataflow (Gen2) to ingest data
+- Task 4: Add data destination for Dataflow
+- Task 5: Add a dataflow to a pipeline
 
-## Task 1 : Create a workspace
+## Task 1: Create a workspace
 
 In this task, you’ll create a dedicated workspace in Microsoft Fabric with the trial features enabled. This workspace will serve as the foundation for building and managing data solutions, including lakehouses, dataflows, and pipelines.
 
@@ -66,7 +66,7 @@ In this task, you’ll create a dedicated workspace in Microsoft Fabric with the
 
       ![](./Images/p2t1p12.png)
    
-7. On the dashboard, on the top menu you can see **Trial Status 59 days left**.
+7. On the dashboard, in the top menu, you can see **Trial Status 59 days left**.
 
       ![](./Images/p2t1p13.png)
 
@@ -95,7 +95,7 @@ In this task, you’ll create a dedicated workspace in Microsoft Fabric with the
   
 <validation step="61a34bd9-1fc1-47db-b51c-4720f310133d" />
 
-## Task 2 : Create a lakehouse
+## Task 2: Create a lakehouse
 
 In this task, you’ll create a Lakehouse within your Fabric workspace to serve as a centralized storage layer for structured and unstructured data, enabling scalable data ingestion and analytics.
 
@@ -114,7 +114,7 @@ In this task, you’ll create a Lakehouse within your Fabric workspace to serve 
 
 <validation step="38c64afd-7502-4783-8169-0e5730914f65" />
 
-## Task 3 : Create a Dataflow (Gen2) to ingest data
+## Task 3: Create a Dataflow (Gen2) to ingest data
 
 In this task, you’ll create a Dataflow Gen2 to ingest data into a Lakehouse using an ETL process. This setup enables structured data transformation and prepares the dataset for efficient storage and analysis within the Fabric environment.
 
@@ -164,11 +164,11 @@ In this task, you’ll create a Dataflow Gen2 to ingest data into a Lakehouse us
 
       ![Custom column in Power Query editor.](./Images/p2t3p9.png)
 
-9. The step to add the custom column is added to the query and the resulting column is displayed in the data pane:
+9. The step to add the custom column is added to the query, and the resulting column is displayed in the data pane:
 
       ![Query with a custom column step.](./Images/custom-column-added1upd.png)
 
-## Task 4 : Add data destination for Dataflow
+## Task 4: Add data destination for Dataflow
 
 In this task, you’ll configure a data destination for a dataflow to enable seamless integration with a Lakehouse. This setup ensures that transformed data is efficiently stored and accessible for downstream analytics and reporting.
 
@@ -186,7 +186,7 @@ In this task, you’ll configure a data destination for a dataflow to enable sea
 
       ![Data destination configuration page.](./Images/connect_data_destination-1upd.png)
 
-3. Select the **dp_fabric-<inject key="DeploymentID" enableCopy="false"/>** Workspace. Choose the **dp_lakehouse (1)** then specify the new table name as **orders (2)**, and then click **Next (3)**.
+3. Select the **dp_fabric-<inject key="DeploymentID" enableCopy="false"/>** Workspace. Choose the **dp_lakehouse (1)**, then specify the new table name as **orders (2)**, and then click **Next (3)**.
 
       ![Data destination configuration page.](./Images/p2t4p3.png)
 
@@ -194,7 +194,7 @@ In this task, you’ll configure a data destination for a dataflow to enable sea
 
       ![](./Images/p2t4p4.png)
 
-4. Go back to **MonthNo (1)** columns in Power Query online. Right-click on the column header and **Change Type (2)**.
+4. Go back to the **MonthNo (1)** columns in Power Query online. Right-click on the column header and **Change Type (2)**.
 
       - MonthNo = **Whole number (3)**
 
@@ -220,7 +220,7 @@ In this task, you’ll configure a data destination for a dataflow to enable sea
    
       ![Query with a lakehouse destination.](./Images/p2t4p8.png)
 
-      >**Note** : To view the visual query, click on **Diagram view** icon from the bottom right corner as shown below:
+      >**Note:** To view the visual query, click on **Diagram view** icon from the bottom right corner as shown below:
 
       >![Query with a lakehouse destination.](./Images/visual_query.png)
 
@@ -235,7 +235,7 @@ In this task, you’ll configure a data destination for a dataflow to enable sea
     
 <validation step="0957818c-b310-4ba7-9c56-70042c49ede3" />
 
-## Task 5 : Add a dataflow to a pipeline
+## Task 5: Add a dataflow to a pipeline
 
 In this task, you’ll add a dataflow to a pipeline to streamline the data processing workflow and enable automated data transformations.
 
@@ -247,13 +247,13 @@ In this task, you’ll add a dataflow to a pipeline to streamline the data proce
 
       ![New lakehouse.](./Images/p2t5p2.png)
 
-      > **Note**: If the Copy Data wizard opens automatically, close it!
+      > **Note:** If the Copy Data wizard opens automatically, close it.
 
 3. Click on the **Pipeline activity (1)**, and select **Dataflow (2)** activity.
 
       ![New lakehouse.](./Images/p7t3p4.png)
 
-4. With the new **Dataflow1** activity selected, go to the **Settings (1)** tab in the bottom. In the **Workspace** drop-down list, choose **dp_fabric-<inject key="DeploymentID" enableCopy="false"/> (2)** and in **Dataflow** drop-down list, select **Dataflow 1 (3)** (the data flow you created previously).
+4. With the new **Dataflow1** activity selected, go to the **Settings (1)** tab in the bottom. In the **Workspace** drop-down list, choose **dp_fabric-<inject key="DeploymentID" enableCopy="false"/> (2)** and in the **Dataflow** drop-down list, select **Dataflow 1 (3)** (the data flow you created previously).
 
       ![Pipeline with a dataflow activity.](./Images/p2t5p4.png)
 
@@ -291,3 +291,4 @@ In this exercise, you have learned how to use Dataflows (Gen2) to ingest, transf
 ### You have successfully completed the exercise. Click on Next >> to proceed with the next exercise.
 
 ![](./Images/nextpage2.png)
+
