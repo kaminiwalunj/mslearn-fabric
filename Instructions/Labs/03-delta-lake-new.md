@@ -200,19 +200,21 @@ You can also create *external* tables for which the schema metadata is defined i
     ```python
    df.write.format("delta").saveAsTable("external_products", path="<abfs_path>/external_products")
     ```
-    **Note :** Make sure to replace the <abfs_path>.
+    **Note :** Make sure to replace the **<abfs_path>**.
 
 2. In the **Lakehouse explorer** pane, in the **...** menu for the **Files** folder, select **Copy ABFS path**.
+
+  ![](./Images/abfspath.png)
 
     The ABFS path is the fully qualified path to the **Files** folder in the OneLake storage for your lakehouse - similar to this:
 
     *abfss://workspace@tenant-onelake.dfs.fabric.microsoft.com/lakehousename.Lakehouse/Files*
 
-3. In the code you entered into the code cell, replace **<abfs_path>** with the path you copied to the clipboard so that the code saves the dataframe as an external table with data files in a folder named **external_products** in your **Files** folder location. The full path should look similar to this:
+2. In the code you entered into the code cell, replace **<abfs_path>** with the path you copied to the clipboard so that the code saves the dataframe as an external table with data files in a folder named **external_products** in your **Files** folder location. The full path should look similar to this:
 
     *abfss://workspace@tenant-onelake.dfs.fabric.microsoft.com/lakehousename.Lakehouse/Files/external_products*
 
-4. In the **Lakehouse explorer** pane, in the **...** menu for the **Tables** folder, select **Refresh**. Then expand the **Tables** node and verify that the **external_products** table has been created.
+3. In the **Lakehouse explorer** pane, in the **...** menu for the **Tables** folder, select **Refresh**. Then expand the **Tables** node and verify that the **external_products** table has been created.
 
    ![](./Images/extprodtable.png)
 
