@@ -90,7 +90,7 @@ Now that you have a workspace, it's time to switch to the *Data engineering* exp
    ![](./Images/LAKEHOUSE.png)
  
 2. create a new **Lakehouse** with a name **fabric_lakehouse (1)** and click on **Create (2)**.
-
+    *Make sure to uncheck the box of **Lakehouse Schemas***.
    ![](./Images/imag4.png)
    
     After a minute or so, a new empty lakehouse. You need to ingest some data into the data lakehouse for analysis. There are multiple ways to do this, but in this exercise you'll simply download a text file to your local computer (or lab VM if applicable) and then upload it to your lakehouse.
