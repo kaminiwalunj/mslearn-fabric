@@ -41,7 +41,7 @@ Before working with data in Fabric, create a workspace with the Fabric trial ena
 
    * **Password:** <inject key="AzureAdUserPassword"></inject>
 
-      ![](./Images/image2.png)
+      ![](./Images/temppass.png)
 
 2. From the Microsoft Fabric home page, click the Fabric icon in the bottom-left corner, then select **Power BI**.
 
@@ -136,6 +136,7 @@ Now that you have a workspace, it's time to switch to the *Data engineering* exp
     After a few seconds, a new notebook containing a single *cell* will open. Notebooks are made up of one or more cells that can contain *code* or *markdown* (formatted text).
 
 2. Select the existing cell in the notebook, which contains some simple code, and then use its **&#128465;** (*Delete*) icon at its top-right to remove it - you will not need this code.
+    ![](./Images/delcode.png)
 
 3. In the **Lakehouse explorer** pane on the left, expand **Files** and select **products** to reveal a new pane showing the **products.csv** file you uploaded previously:
 
@@ -213,7 +214,9 @@ You can also create *external* tables for which the schema metadata is defined i
 
 4. In the **Lakehouse explorer** pane, in the **...** menu for the **Tables** folder, select **Refresh**. Then expand the **Tables** node and verify that the **external_products** table has been created.
 
-5. In the **Lakehouse explorer** pane, in the **...** menu for the **Files** folder, select **Refresh**. Then expand the **Files** node and verify that the **external_products** folder has been created for the table's data files.
+   ![](./Images/extprodtable.png)
+
+6. In the **Lakehouse explorer** pane, in the **...** menu for the **Files** folder, select **Refresh**. Then expand the **Files** node and verify that the **external_products** folder has been created for the table's data files.
 
    ![](./Images/fbimg4.png)
 
