@@ -90,13 +90,15 @@ A simple way to ingest data is to use a **Copy Data** activity in a pipeline to 
 
     A new pipeline containing a **Copy Data** activity is created, as shown here:
 
-    ![](./Images/12cpdt.png)
+    ![](./Images/updt12cpdt.png)
 
 12. When the pipeline starts to run, you can monitor its status in the **Output** pane under the pipeline designer. Use the **&#8635;** (*Refresh*) icon to refresh the status, and wait until it has succeeeded.
 
 13. In the menu bar on the left, select your lakehouse.
 
-14. On the **Home** page, in the **Lakehouse explorer** pane, expand **Files** and select the **new_data** folder to verify that the **sales.csv** file has been copied.
+14. On the **Home** page, in the **Lakehouse explorer** pane, expand **Files(1)** and select the **new_data(2)** folder to verify that the **sales.csv(3)** file has been copied.
+
+    ![](./Images/new_data1.png)
 
 ## Task 2 : Create a notebook
 
