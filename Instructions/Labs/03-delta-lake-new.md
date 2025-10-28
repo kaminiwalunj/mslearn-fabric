@@ -41,45 +41,55 @@ Before working with data in Fabric, create a workspace with the Fabric trial ena
 
    * **Password:** <inject key="AzureAdUserPassword"></inject>
 
-      ![](./Images/temppass.png)
+      ![](./Images/t1temppass.png)
 
-2. From the Microsoft Fabric home page, click the Fabric icon in the bottom-left corner, then select **Power BI**.
+     **Note: Select No for the stay signed in popup.**
+
+      ![](./Images/staysignin.png)   
+
+     **Note: Select Cancel on Welcome to the Fabric view popup.**
+
+      ![](./Images/starttour.png)
+
+3. From the Microsoft Fabric home page, click the Fabric icon in the bottom-left corner, then select **Power BI**.
 
    ![](./Images/powerbi.png)
 
-3. From the PowerBI home page, select **Account Manager (1)** from the top-right corner to start the free **Microsoft Fabric trial**.
+4. From the PowerBI home page, select **Account Manager (1)** from the top-right corner to start the free **Microsoft Fabric trial**.
   
-4. In the Account Manager, select **Free trial (2)**.
+5. In the Account Manager, select **Free trial (2)**.
 
-   ![Account-manager-start](./Images/freetrial.png)  
+   ![](./Images/updtfreetrial.png)  
    
-5. A new prompt will appear asking you to **Activate your 60-day free Fabric trial capacity**, click on **Activate**.
+6. A new prompt will appear asking you to **Activate your 60-day free Fabric trial capacity**, click on **Activate**.
 
-   ![Start-trial](./Images/Activate01.png)    
+   ![](./Images/activate.png)     
    
-6. Once your trial capacity is ready, you receive a confirmation message. Select **Stay on current page** to begin working in Fabric.
+7. Once your trial capacity is ready, you receive a confirmation message. Select **Stay on current page** to begin working in Fabric.
 
     ![](./Images/staycurrentonstage.png)
    
-7. Close the popups. Open your **Account manager** again. Notice that you now have a heading for **Trial Status**. Your Account manager keeps track of the number of days remaining in your trial.
+8. Close the popups. Open your **Account manager(1)** again. Notice that you now have a heading for **Trial Status(2)**. Your Account manager keeps track of the number of days remaining in your trial.
 
-    ![](./Images/trialstatus.png)
+    ![](./Images/updttrialstatus.png)
 
       >**Note:** You now have a **Fabric (Preview) trial** that includes a **Power BI trial** and a **Fabric (Preview) trial capacity**.
 
-8. In the menu bar on the left, select **Workspaces (1)** (the icon looks similar to &#128455;). Select **+ New Workspace (2)**
+9. In the menu bar on the left, select **Workspaces (1)** (the icon looks similar to &#128455;). Select **+ New Workspace (2)**
 
-   ![](./Images/newworkspace.png)
+   ![](./Images/newwrkspc.png)
 
-9. Create a new workspace with a name **dp_fabric-<inject key="DeploymentID" enableCopy="false" /> (1)**, select a licensing mode that includes Fabric capacity (*Trial*, *Premium*, or *Fabric*) **(2)**, and click on **Apply (3)**
+10. Create a new workspace with a name **dp_fabric-<inject key="DeploymentID" enableCopy="false" /> (1)**, scroll down to advanced section and expand it , select  **license mode** as **(*Trial*) (2)**, and click on **Apply (3)**
 
-   ![](./Images/imag1.png)
+    ![](./Images/wrkspcname.png)
 
-10. Select **Got it** to begin working in Fabric.
+    ![](./Images/licensemode.png)
+
+11. Select **Got it** to begin working in Fabric.
    
-11. When your new workspace opens, it should be empty, as shown here:
+12. When your new workspace opens, it should be empty, as shown here:
 
-    ![Screenshot of an empty workspace in Power BI.](./Images/new-workspace-2.png)
+    ![](./Images/t1final.png)
 
 ## Task 2 : Create a lakehouse and upload data
 
