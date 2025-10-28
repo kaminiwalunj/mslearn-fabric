@@ -165,7 +165,7 @@ Now that you've implemented a notebook to transform data and load it into a tabl
 
     ![](./Images/imag13.png)
 
-    ![Screenshot of a pipeline with Delete data and Copy data activities.](./Images/delete-data-activity1.png)
+    ![Screenshot of a pipeline with Delete data and Copy data activities.](./Images/delete-data-activity2.png)
 
 3. Select the **Delete data** activity, and in the pane below the design canvas, set the following properties:
     - **General**:
@@ -194,29 +194,29 @@ Now that you've implemented a notebook to transform data and load it into a tabl
 
 5. Select the **Copy data** activity and then connect its **On Completion** output to the **Notebook** activity as shown here:
 
-    ![Screenshot of a pipeline with Copy Data and Notebook activities.](./Images/pipeline1.png)
+    ![](./Images/notebookpline1.png)
 
 6. Select the **Notebook** activity, and then in the pane below the design canvas, set the following properties:
     - **General**:
         - **Name**: Load Sales notebook
 
-    ![](./Images/loadsalesnotebook1.png)
+    ![](./Images/lsn.png)
     
     - **Settings**:
-        - **Notebook**: Load Sales
-        - **Base parameters**: *Add a new parameter with the following properties:*
+        - **Notebook(1)**: Load Sales
+        - **Base parameters(2)**: *Add a new parameter with the following properties:*
             
             | Name | Type | Value |
             | -- | -- | -- |
             | table_name | String | new_sales |
 
-     ![](./Images/updatedloadsales1.png)
+     ![](./Images/ls1.png)
 
     The **table_name** parameter will be passed to the notebook and override the default value assigned to the **table_name** variable in the parameters cell.
 
 7. On the **Home** tab, use the **&#128427;** (*Save*) icon to save the pipeline. Then use the **&#9655; Run** button to run the pipeline, and wait for all of the activities to complete.
 
-    ![Screenshot of a pipeline with a Dataflow activity.](./Images/updtpipeline-run1.png)
+    ![](./Images/runsuccess.png)
 
 8. In the hub menu bar on the left edge of the portal, select your lakehouse.
 
