@@ -172,7 +172,7 @@ Now that you have a workspace, it's time to switch to the *Data engineering* exp
 
 6. When the cell command has completed, review the output below the cell, which should look similar to this:
 
-     ![](./Images/run1.png)
+     ![](./Images/updtrun1.png)
 
     >**Note:** If you are getting errors here and also getting table, then please ignore the errors and move with further tasks.
 
@@ -209,21 +209,21 @@ You can also create *external* tables for which the schema metadata is defined i
 
 2. In the **Lakehouse explorer** pane, in the **...** menu for the **Files** folder, select **Copy ABFS path**.
 
-  ![](./Images/abfspath.png)
+    ![](./Images/cpabfs.png)
 
     The ABFS path is the fully qualified path to the **Files** folder in the OneLake storage for your lakehouse - similar to this:
 
     *abfss://workspace@tenant-onelake.dfs.fabric.microsoft.com/lakehousename.Lakehouse/Files*
 
-2. In the code you entered into the code cell, replace **<abfs_path>** with the path you copied to the clipboard so that the code saves the dataframe as an external table with data files in a folder named **external_products** in your **Files** folder location. The full path should look similar to this:
+3. In the code you entered into the code cell, replace **<abfs_path>** with the path you copied to the clipboard so that the code saves the dataframe as an external table with data files in a folder named **external_products** in your **Files** folder location. The full path should look similar to this:
 
     *abfss://workspace@tenant-onelake.dfs.fabric.microsoft.com/lakehousename.Lakehouse/Files/external_products*
 
-3. In the **Lakehouse explorer** pane, in the **...** menu for the **Tables** folder, select **Refresh**. Then expand the **Tables** node and verify that the **external_products** table has been created.
+4. In the **Lakehouse explorer** pane, in the **...** menu for the **Tables** folder, select **Refresh**. Then expand the **Tables** node and verify that the **external_products** table has been created.
 
-   ![](./Images/extprodtable.png)
+   ![](./Images/updtextprodtable.png)
 
-6. In the **Lakehouse explorer** pane, in the **...** menu for the **Files** folder, select **Refresh**. Then expand the **Files** node and verify that the **external_products** folder has been created for the table's data files.
+5. In the **Lakehouse explorer** pane, in the **...** menu for the **Files** folder, select **Refresh**. Then expand the **Files** node and verify that the **external_products** folder has been created for the table's data files.
 
    ![](./Images/fbimg4.png)
 
@@ -238,10 +238,14 @@ Let's explore the differences between managed and external tables.
 
    DESCRIBE FORMATTED managed_products;
     ```
+   
+   The output will look similar to this:
 
-    In the results, view the **Location** property for the table, which should be a path to the OneLake storage for the lakehouse ending with **/Tables/managed_products** (you may need to widen the **Data type** column to see the full path).
+    ![](./Images/descman.png)
+   
+   In the results, view the **Location** property for the table, which should be a path to the OneLake storage for the lakehouse ending with **/Tables/managed_products** (you may need to widen the **Data type** column to see the full path).
 
-2. Modify the `DESCRIBE` command to show the details of the **external_products** table as shown here:
+3. Modify the `DESCRIBE` command to show the details of the **external_products** table as shown here:
 
     ```sql
    %%sql
@@ -249,11 +253,15 @@ Let's explore the differences between managed and external tables.
    DESCRIBE FORMATTED external_products;
     ```
 
-    In the results, view the **Location** property for the table, which should be a path to the OneLake storage for the lakehouse ending with **/Files/external_products** (you may need to widen the **Data type** column to see the full path).
+   The output will look similar to this:
+
+    ![](./Images/descext.png)
+
+   In the results, view the **Location** property for the table, which should be a path to the OneLake storage for the lakehouse ending with **/Files/external_products** (you may need to widen the **Data type** column to see the full path).
 
     The files for managed table are stored in the **Tables** folder in the OneLake storage for the lakehouse. In this case, a folder named **managed_products** has been created to store the Parquet files and **delta_log** folder for the table you created.
 
-3. Add another code cell and run the following code:
+5. Add another code cell and run the following code:
 
     ```sql
    %%sql
@@ -262,9 +270,13 @@ Let's explore the differences between managed and external tables.
    DROP TABLE external_products;
     ```
 
-4. In the **Lakehouse explorer** pane, in the **...** menu for the **Tables** folder, select **Refresh**. Then expand the **Tables** node and verify that no tables are listed.
+6. In the **Lakehouse explorer** pane, in the **...** menu for the **Tables** folder, select **Refresh**. Then expand the **Tables** node and verify that no tables are listed.
 
-5. In the **Lakehouse explorer** pane, expand the **Files** folder and verify that the **external_products** has not been deleted. Select this folder to view the Parquet data files and **_delta_log** folder for the data that was previously in the **external_products** table. The table metadata for the external table was deleted, but the files were not affected.
+    ![](./Images/droptableverify.png)
+
+7. In the **Lakehouse explorer** pane, expand the **Files** folder and verify that the **external_products(1)** has not been deleted. Select this folder to view the **Parquet data files(2)** and **_delta_log** folder for the data that was previously in the **external_products** table. The table metadata for the external table was deleted, but the files were not affected.
+
+    ![](./Images/dropfileverify.png)
 
 ### Use SQL to create a table
 
@@ -289,6 +301,10 @@ Let's explore the differences between managed and external tables.
 
    SELECT * FROM products;
    ```
+
+   The output will look similar to this:
+   
+    ![](./Images/starselect.png)
 
 ## Task 5 : Explore table versioning
 
