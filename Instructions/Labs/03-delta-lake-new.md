@@ -93,7 +93,7 @@ Before working with data in Fabric, create a workspace with the Fabric trial ena
 
 ## Task 2 : Create a lakehouse and upload data
 
-Now that you have a workspace, it's time to switch to the *Data engineering* experience in the portal and create a data lakehouse for the data you're going to analyze.
+Now your workspace is ready, let’s create a new lakehouse to store and analyze your data.
 
 1. In the newly created workspace, click the **+ New Item button(1)** and search for **Lakehouse(2)** and select **Lakehouse(3)**.
 
