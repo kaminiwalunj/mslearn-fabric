@@ -89,7 +89,7 @@ Before working with data in Fabric, create a workspace with the Fabric trial ena
    
 12. When your new workspace opens, it should be empty, as shown here:
 
-    ![](./Images/t1final.png)
+    ![](./Images/t1final2.png)
 
 ## Task 2 : Create a lakehouse and upload data
 
