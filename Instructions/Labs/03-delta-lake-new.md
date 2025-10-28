@@ -95,13 +95,13 @@ Before working with data in Fabric, create a workspace with the Fabric trial ena
 
 Now that you have a workspace, it's time to switch to the *Data engineering* experience in the portal and create a data lakehouse for the data you're going to analyze.
 
-1. In the newly created workspace, click the **+ New Item button** and search and select **Lakehouse**.
+1. In the newly created workspace, click the **+ New Item button(1)** and search for **Lakehouse(2)** and select **Lakehouse(3)**.
 
-   ![](./Images/LAKEHOUSE.png)
+   ![](./Images/slectlakehouse.png)
  
-2. create a new **Lakehouse** with a name **fabric_lakehouse (1)** and click on **Create (2)**.
-    *Make sure to uncheck the box of **Lakehouse Schemas***.
-   ![](./Images/imag4.png)
+2. Create a new **Lakehouse** with a name **fabric_lakehouse (1)**, uncheck the box of **Lakehouse Schemas(2)** and click on **Create (3)**.
+
+   ![](./Images/lakeschema.png)
    
     After a minute or so, a new empty lakehouse. You need to ingest some data into the data lakehouse for analysis. There are multiple ways to do this, but in this exercise you'll simply download a text file to your local computer (or lab VM if applicable) and then upload it to your lakehouse.
 
@@ -111,7 +111,7 @@ Now that you have a workspace, it's time to switch to the *Data engineering* exp
      - The **Files** folder contains data files in the OneLake storage for the lakehouse that aren't associated with managed delta tables. You can also create *shortcuts* in this folder to reference data that is stored externally.
      - Currently, there are no tables or files in the lakehouse.
 
-       ![](./Images/image9.png)
+       ![](./Images/lakehousecreated.png)
 
 4. Download the data file for this exercise from [https://github.com/MicrosoftLearning/dp-data/raw/main/products.csv](https://github.com/MicrosoftLearning/dp-data/raw/main/products.csv), saving it as **products.csv** on your local computer (or lab VM if applicable).
 
@@ -123,11 +123,11 @@ Now that you have a workspace, it's time to switch to the *Data engineering* exp
 
 5. Return to the web browser tab containing your lakehouse, and in the **... (1)** menu for the **Files** folder in the **Explorer** pane, select **New subfolder (2)**.
    
-   ![](./Images/image10.png)
+   ![](./Images/filesbfldr.png)
    
 6. On **New subfolder** pop up, provide the Folder name as **products (1)** and click on **Create (2)**.
 
-   ![](./Images/imag5.png)
+   ![](./Images/prodcreate.png)
 
 7. In the **...** menu for the **products** folder, select **Upload** and **Upload files**, and then upload the **products.csv** file from your local computer (or lab VM if applicable) to the lakehouse.
 
@@ -135,7 +135,7 @@ Now that you have a workspace, it's time to switch to the *Data engineering* exp
 
 8. After the file has been uploaded, select the **products** folder; and verify that the **products.csv** file has been uploaded, as shown here:
 
-    ![Screenshot of uploaded products.csv file in a lakehouse.](./Images/products-file-1.png)
+    ![](./Images/fileuploddone.png)
 
 ## Task 3 : Explore data in a dataframe
 
