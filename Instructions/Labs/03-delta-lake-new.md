@@ -146,17 +146,17 @@ Now that you have a workspace, it's time to switch to the *Data engineering* exp
     After a few seconds, a new notebook containing a single *cell* will open. Notebooks are made up of one or more cells that can contain *code* or *markdown* (formatted text).
 
 2. Select the existing cell in the notebook, which contains some simple code, and then use its **&#128465;** (*Delete*) icon at its top-right to remove it - you will not need this code.
-    ![](./Images/delcode.png)
+    ![](./Images/updtdelcode.png)
 
 3. In the **Lakehouse explorer** pane on the left, expand **Files** and select **products** to reveal a new pane showing the **products.csv** file you uploaded previously:
 
-    ![Screenshot of a notebook with a Files pane.](./Images/notebook-products-1.png)
+    ![](./Images/prodcsvt3.png)
 
     >**Note:** If you are not able to find **Lakehouse explorer**, under **Explorer** pane, expand Items and expand the lakehouse, you now see the lakehouse explorer.
 
-4. In the **...** menu for **products.csv**, select **Load data** > **Spark**. A new code cell containing the following code should be added to the notebook:
+4. In the **...** menu for **products.csv(1)**, select **Load data(2)** > **Spark(3)**. A new code cell containing the following code should be added to the notebook:
 
-    ![](./Images/imag7.png)
+    ![](./Images/loaddata.png)
 
     ```python
    df = spark.read.format("csv").option("header","true").load("Files/products/products.csv")
@@ -172,12 +172,7 @@ Now that you have a workspace, it's time to switch to the *Data engineering* exp
 
 6. When the cell command has completed, review the output below the cell, which should look similar to this:
 
-    | Index | ProductID | ProductName | Category | ListPrice |
-    | -- | -- | -- | -- | -- |
-    | 1 | 771 | Mountain-100 Silver, 38 | Mountain Bikes | 3399.9900 |
-    | 2 | 772 | Mountain-100 Silver, 42 | Mountain Bikes | 3399.9900 |
-    | 3 | 773 | Mountain-100 Silver, 44 | Mountain Bikes | 3399.9900 |
-    | ... | ... | ... | ... | ... |
+     ![](./Images/run1.png)
 
     >**Note:** If you are getting errors here and also getting table, then please ignore the errors and move with further tasks.
 
