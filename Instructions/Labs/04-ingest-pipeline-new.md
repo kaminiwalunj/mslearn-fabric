@@ -151,7 +151,9 @@ A simple way to ingest data is to use a **Copy Data** activity in a pipeline to 
 
 8. In the hub menu bar on the left, select your lakehouse.
 
-9. In the **Explorer** pane, refresh the view. Then expand **Tables**, and select the **sales** table to see a preview of the data it contains.
+9. In the **Explorer** pane, refresh the view. Then expand **Tables(1)**, and select the **sales(2)** table to see a preview of the data it contains.
+
+   ![](./Images/saletable.png)
 
 ## Task 3 : Modify the pipeline
 
