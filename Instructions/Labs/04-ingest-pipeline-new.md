@@ -30,17 +30,17 @@ Fabric also supports Apache Spark, enabling you to write and run code to process
 
 A simple way to ingest data is to use a **Copy Data** activity in a pipeline to extract the data from a source and copy it to a file in the lakehouse.
 
-1. On the **Home** page for your lakehouse, Under **Get data** select **New data pipeline**, and create a new data pipeline named **Ingest Sales Data**.
+1. On the **Home** page for your lakehouse, Under **Get data(1)** select **New data pipeline(2)**, create a new data pipeline named **Ingest Sales Data(3)** and click **Create(4)**.
 
-    ![](./Images/newppline.png)
+    ![](./Images/npline.png)
 
-    ![](./Images/newPipeline.png)
+    ![](./Images/createnp.png)
 
 2. If the **Copy Data** wizard doesn't open automatically, select **Copy Data** in the pipeline editor page.
 
-3. In the **Copy Data** wizard, on the **Choose a data source** page, in the **New sources** section, search and select **Http**.
+3. In the **Copy Data** wizard, on the **Choose a data source(1)** page, in the **New sources(2)** section, search **Http(3)** and select **Http(4)**.
 
-    ![](./Images/http.png)
+    ![](./Images/htpsrch.png)
 
 4. You will be navigated to Connect to data source.
 
@@ -90,7 +90,7 @@ A simple way to ingest data is to use a **Copy Data** activity in a pipeline to 
 
     A new pipeline containing a **Copy Data** activity is created, as shown here:
 
-    ![Screenshot of a pipeline with a Copy Data activity.](./Images/copy-data-pipeline2.png)
+    ![](./Images/12cpdt.png)
 
 12. When the pipeline starts to run, you can monitor its status in the **Output** pane under the pipeline designer. Use the **&#8635;** (*Refresh*) icon to refresh the status, and wait until it has succeeeded.
 
