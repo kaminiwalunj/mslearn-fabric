@@ -30,17 +30,17 @@ Fabric also supports Apache Spark, enabling you to write and run code to process
 
 A simple way to ingest data is to use a **Copy Data** activity in a pipeline to extract the data from a source and copy it to a file in the lakehouse.
 
-1. On the **Home** page for your lakehouse, Under **Get data** select **New data pipeline**, and create a new data pipeline named **Ingest Sales Data**.
+1. On the **Home** page for your lakehouse, Under **Get data(1)** select **New data pipeline(2)**, create a new data pipeline named **Ingest Sales Data(3)** and click **Create(4)**.
 
-    ![](./Images/fbimg6.png)
+    ![](./Images/npline.png)
 
-    ![](./Images/newPipeline.png)
+    ![](./Images/createnp.png)
 
 2. If the **Copy Data** wizard doesn't open automatically, select **Copy Data** in the pipeline editor page.
 
-3. In the **Copy Data** wizard, on the **Choose a data source** page, in the **New sources** section, search and select **Http**.
+3. In the **Copy Data** wizard, on the **Choose a data source(1)** page, in the **New sources(2)** section, search **Http(3)** and select **Http(4)**.
 
-    ![Screenshot of the Choose data source page.](./Images/imag9.png)
+    ![](./Images/htpsrch.png)
 
 4. You will be navigated to Connect to data source.
 
@@ -90,13 +90,15 @@ A simple way to ingest data is to use a **Copy Data** activity in a pipeline to 
 
     A new pipeline containing a **Copy Data** activity is created, as shown here:
 
-    ![Screenshot of a pipeline with a Copy Data activity.](./Images/copy-data-pipeline2.png)
+    ![](./Images/updt12cpdt.png)
 
 12. When the pipeline starts to run, you can monitor its status in the **Output** pane under the pipeline designer. Use the **&#8635;** (*Refresh*) icon to refresh the status, and wait until it has succeeeded.
 
 13. In the menu bar on the left, select your lakehouse.
 
-14. On the **Home** page, in the **Lakehouse explorer** pane, expand **Files** and select the **new_data** folder to verify that the **sales.csv** file has been copied.
+14. On the **Home** page, in the **Lakehouse explorer** pane, expand **Files(1)** and select the **new_data(2)** folder to verify that the **sales.csv(3)** file has been copied.
+
+    ![](./Images/new_data1.png)
 
 ## Task 2 : Create a notebook
 
@@ -141,7 +143,7 @@ A simple way to ingest data is to use a **Copy Data** activity in a pipeline to 
 
 5. Verify that your notebooks looks similar to this, and then use the **&#9655; Run all** button on the toolbar to run all of the cells it contains.
 
-    ![Screenshot of a notebook with a parameters cell and code to transform data.](./Images/notebook1.png)
+    ![](./Images/runall.png)
 
 6. When the notebook run has completed, in the **Lakehouse explorer** pane on the left, in the **...** menu for **Tables** select **Refresh** and verify that a **sales** table has been created.
 
@@ -149,7 +151,9 @@ A simple way to ingest data is to use a **Copy Data** activity in a pipeline to 
 
 8. In the hub menu bar on the left, select your lakehouse.
 
-9. In the **Explorer** pane, refresh the view. Then expand **Tables**, and select the **sales** table to see a preview of the data it contains.
+9. In the **Explorer** pane, refresh the view. Then expand **Tables(1)**, and select the **sales(2)** table to see a preview of the data it contains.
+
+   ![](./Images/saletable.png)
 
 ## Task 3 : Modify the pipeline
 
@@ -161,7 +165,7 @@ Now that you've implemented a notebook to transform data and load it into a tabl
 
     ![](./Images/imag13.png)
 
-    ![Screenshot of a pipeline with Delete data and Copy data activities.](./Images/delete-data-activity1.png)
+    ![Screenshot of a pipeline with Delete data and Copy data activities.](./Images/delete-data-activity2.png)
 
 3. Select the **Delete data** activity, and in the pane below the design canvas, set the following properties:
     - **General**:
@@ -190,30 +194,35 @@ Now that you've implemented a notebook to transform data and load it into a tabl
 
 5. Select the **Copy data** activity and then connect its **On Completion** output to the **Notebook** activity as shown here:
 
-    ![Screenshot of a pipeline with Copy Data and Notebook activities.](./Images/pipeline1.png)
+    ![](./Images/notebookpline1.png)
 
 6. Select the **Notebook** activity, and then in the pane below the design canvas, set the following properties:
     - **General**:
         - **Name**: Load Sales notebook
+
+    ![](./Images/lsn.png)
+    
     - **Settings**:
-        - **Notebook**: Load Sales
-        - **Base parameters**: *Add a new parameter with the following properties:*
+        - **Notebook(1)**: Load Sales
+        - **Base parameters(2)**: *Add a new parameter with the following properties:*
             
             | Name | Type | Value |
             | -- | -- | -- |
             | table_name | String | new_sales |
 
+     ![](./Images/ls1.png)
+
     The **table_name** parameter will be passed to the notebook and override the default value assigned to the **table_name** variable in the parameters cell.
 
 7. On the **Home** tab, use the **&#128427;** (*Save*) icon to save the pipeline. Then use the **&#9655; Run** button to run the pipeline, and wait for all of the activities to complete.
 
-    ![Screenshot of a pipeline with a Dataflow activity.](./Images/pipeline-run1.png)
+    ![](./Images/runsuccess.png)
 
 8. In the hub menu bar on the left edge of the portal, select your lakehouse.
 
 9. In the **Explorer** pane, expand **Tables** and select the **new_sales** table to see a preview of the data it contains. This table was created by the notebook when it was run by the pipeline.
 
-   ![Screenshot of a dataoutput.](./Images/new-sales-endoutput.png)
+   ![](./Images/newsalesdata1.png)
 
 In this exercise, you implemented a data ingestion solution that uses a pipeline to copy data to your lakehouse from an external source, and then uses a Spark notebook to transform the data and load it into a table.
 

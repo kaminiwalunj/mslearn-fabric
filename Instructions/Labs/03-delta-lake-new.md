@@ -41,57 +41,67 @@ Before working with data in Fabric, create a workspace with the Fabric trial ena
 
    * **Password:** <inject key="AzureAdUserPassword"></inject>
 
-      ![](./Images/image2.png)
+      ![](./Images/t1temppass.png)
 
-2. From the Microsoft Fabric home page, click the Fabric icon in the bottom-left corner, then select **Power BI**.
+     **Note: Select No for the stay signed in popup.**
+
+      ![](./Images/staysignin.png)   
+
+     **Note: Select Cancel on Welcome to the Fabric view popup.**
+
+      ![](./Images/starttour.png)
+
+3. From the Microsoft Fabric home page, click the Fabric icon in the bottom-left corner, then select **Power BI**.
 
    ![](./Images/powerbi.png)
 
-3. From the PowerBI home page, select **Account Manager (1)** from the top-right corner to start the free **Microsoft Fabric trial**.
+4. From the PowerBI home page, select **Account Manager (1)** from the top-right corner to start the free **Microsoft Fabric trial**.
   
-4. In the Account Manager, select **Free trial (2)**.
+5. In the Account Manager, select **Free trial (2)**.
 
-   ![Account-manager-start](./Images/freetrial.png)  
+   ![](./Images/updtfreetrial.png)  
    
-5. A new prompt will appear asking you to **Activate your 60-day free Fabric trial capacity**, click on **Activate**.
+6. A new prompt will appear asking you to **Activate your 60-day free Fabric trial capacity**, click on **Activate**.
 
-   ![Start-trial](./Images/Activate01.png)    
+   ![](./Images/activate.png)     
    
-6. Once your trial capacity is ready, you receive a confirmation message. Select **Stay on current page** to begin working in Fabric.
+7. Once your trial capacity is ready, you receive a confirmation message. Select **Stay on current page** to begin working in Fabric.
 
     ![](./Images/staycurrentonstage.png)
    
-7. Close the popups. Open your **Account manager** again. Notice that you now have a heading for **Trial Status**. Your Account manager keeps track of the number of days remaining in your trial.
+8. Close the popups. Open your **Account manager(1)** again. Notice that you now have a heading for **Trial Status(2)**. Your Account manager keeps track of the number of days remaining in your trial.
 
-    ![](./Images/trialstatus.png)
+    ![](./Images/updttrialstatus.png)
 
       >**Note:** You now have a **Fabric (Preview) trial** that includes a **Power BI trial** and a **Fabric (Preview) trial capacity**.
 
-8. In the menu bar on the left, select **Workspaces (1)** (the icon looks similar to &#128455;). Select **+ New Workspace (2)**
+9. In the menu bar on the left, select **Workspaces (1)** (the icon looks similar to &#128455;). Select **+ New Workspace (2)**
 
-   ![](./Images/newworkspace.png)
+   ![](./Images/newwrkspc.png)
 
-9. Create a new workspace with a name **dp_fabric-<inject key="DeploymentID" enableCopy="false" /> (1)**, select a licensing mode that includes Fabric capacity (*Trial*, *Premium*, or *Fabric*) **(2)**, and click on **Apply (3)**
+10. Create a new workspace with a name **dp_fabric-<inject key="DeploymentID" enableCopy="false" /> (1)**, scroll down to advanced section and expand it , select  **license mode** as **(*Trial*) (2)**, and click on **Apply (3)**
 
-   ![](./Images/imag1.png)
+    ![](./Images/wrkspcname.png)
 
-10. Select **Got it** to begin working in Fabric.
+    ![](./Images/licensemode.png)
+
+11. Select **Got it** to begin working in Fabric.
    
-11. When your new workspace opens, it should be empty, as shown here:
+12. When your new workspace opens, it should be empty, as shown here:
 
-    ![Screenshot of an empty workspace in Power BI.](./Images/new-workspace-2.png)
+    ![](./Images/t1final2.png)
 
 ## Task 2 : Create a lakehouse and upload data
 
-Now that you have a workspace, it's time to switch to the *Data engineering* experience in the portal and create a data lakehouse for the data you're going to analyze.
+Now your workspace is ready, let’s create a new lakehouse to store and analyze your data.
 
-1. In the newly created workspace, click the **+ New Item button** and search and select **Lakehouse**.
+1. In the newly created workspace, click the **+ New Item button(1)** and search for **Lakehouse(2)** and select **Lakehouse(3)**.
 
-   ![](./Images/LAKEHOUSE.png)
+   ![](./Images/slectlakehouse.png)
  
-2. create a new **Lakehouse** with a name **fabric_lakehouse (1)** and click on **Create (2)**.
+2. Create a new **Lakehouse** with a name **fabric_lakehouse (1)**, uncheck the box of **Lakehouse Schemas(2)** and click on **Create (3)**.
 
-   ![](./Images/imag4.png)
+   ![](./Images/lakeschema.png)
    
     After a minute or so, a new empty lakehouse. You need to ingest some data into the data lakehouse for analysis. There are multiple ways to do this, but in this exercise you'll simply download a text file to your local computer (or lab VM if applicable) and then upload it to your lakehouse.
 
@@ -101,7 +111,7 @@ Now that you have a workspace, it's time to switch to the *Data engineering* exp
      - The **Files** folder contains data files in the OneLake storage for the lakehouse that aren't associated with managed delta tables. You can also create *shortcuts* in this folder to reference data that is stored externally.
      - Currently, there are no tables or files in the lakehouse.
 
-       ![](./Images/image9.png)
+       ![](./Images/lakehousecreated.png)
 
 4. Download the data file for this exercise from [https://github.com/MicrosoftLearning/dp-data/raw/main/products.csv](https://github.com/MicrosoftLearning/dp-data/raw/main/products.csv), saving it as **products.csv** on your local computer (or lab VM if applicable).
 
@@ -113,11 +123,11 @@ Now that you have a workspace, it's time to switch to the *Data engineering* exp
 
 5. Return to the web browser tab containing your lakehouse, and in the **... (1)** menu for the **Files** folder in the **Explorer** pane, select **New subfolder (2)**.
    
-   ![](./Images/image10.png)
+   ![](./Images/filesbfldr.png)
    
 6. On **New subfolder** pop up, provide the Folder name as **products (1)** and click on **Create (2)**.
 
-   ![](./Images/imag5.png)
+   ![](./Images/prodcreate.png)
 
 7. In the **...** menu for the **products** folder, select **Upload** and **Upload files**, and then upload the **products.csv** file from your local computer (or lab VM if applicable) to the lakehouse.
 
@@ -125,7 +135,7 @@ Now that you have a workspace, it's time to switch to the *Data engineering* exp
 
 8. After the file has been uploaded, select the **products** folder; and verify that the **products.csv** file has been uploaded, as shown here:
 
-    ![Screenshot of uploaded products.csv file in a lakehouse.](./Images/products-file-1.png)
+    ![](./Images/fileuploddone.png)
 
 ## Task 3 : Explore data in a dataframe
 
@@ -136,16 +146,17 @@ Now that you have a workspace, it's time to switch to the *Data engineering* exp
     After a few seconds, a new notebook containing a single *cell* will open. Notebooks are made up of one or more cells that can contain *code* or *markdown* (formatted text).
 
 2. Select the existing cell in the notebook, which contains some simple code, and then use its **&#128465;** (*Delete*) icon at its top-right to remove it - you will not need this code.
+    ![](./Images/updtdelcode.png)
 
 3. In the **Lakehouse explorer** pane on the left, expand **Files** and select **products** to reveal a new pane showing the **products.csv** file you uploaded previously:
 
-    ![Screenshot of a notebook with a Files pane.](./Images/notebook-products-1.png)
+    ![](./Images/prodcsvt3.png)
 
     >**Note:** If you are not able to find **Lakehouse explorer**, under **Explorer** pane, expand Items and expand the lakehouse, you now see the lakehouse explorer.
 
-4. In the **...** menu for **products.csv**, select **Load data** > **Spark**. A new code cell containing the following code should be added to the notebook:
+4. In the **...** menu for **products.csv(1)**, select **Load data(2)** > **Spark(3)**. A new code cell containing the following code should be added to the notebook:
 
-    ![](./Images/imag7.png)
+    ![](./Images/loaddata.png)
 
     ```python
    df = spark.read.format("csv").option("header","true").load("Files/products/products.csv")
@@ -161,12 +172,7 @@ Now that you have a workspace, it's time to switch to the *Data engineering* exp
 
 6. When the cell command has completed, review the output below the cell, which should look similar to this:
 
-    | Index | ProductID | ProductName | Category | ListPrice |
-    | -- | -- | -- | -- | -- |
-    | 1 | 771 | Mountain-100 Silver, 38 | Mountain Bikes | 3399.9900 |
-    | 2 | 772 | Mountain-100 Silver, 42 | Mountain Bikes | 3399.9900 |
-    | 3 | 773 | Mountain-100 Silver, 44 | Mountain Bikes | 3399.9900 |
-    | ... | ... | ... | ... | ... |
+     ![](./Images/updtrun1.png)
 
     >**Note:** If you are getting errors here and also getting table, then please ignore the errors and move with further tasks.
 
@@ -199,9 +205,11 @@ You can also create *external* tables for which the schema metadata is defined i
     ```python
    df.write.format("delta").saveAsTable("external_products", path="<abfs_path>/external_products")
     ```
-    **Note :** Make sure to replace the <abfs_path>.
+    **Note :** Make sure to replace the **<abfs_path>**.
 
 2. In the **Lakehouse explorer** pane, in the **...** menu for the **Files** folder, select **Copy ABFS path**.
+
+    ![](./Images/cpabfs.png)
 
     The ABFS path is the fully qualified path to the **Files** folder in the OneLake storage for your lakehouse - similar to this:
 
@@ -212,6 +220,8 @@ You can also create *external* tables for which the schema metadata is defined i
     *abfss://workspace@tenant-onelake.dfs.fabric.microsoft.com/lakehousename.Lakehouse/Files/external_products*
 
 4. In the **Lakehouse explorer** pane, in the **...** menu for the **Tables** folder, select **Refresh**. Then expand the **Tables** node and verify that the **external_products** table has been created.
+
+   ![](./Images/updtextprodtable.png)
 
 5. In the **Lakehouse explorer** pane, in the **...** menu for the **Files** folder, select **Refresh**. Then expand the **Files** node and verify that the **external_products** folder has been created for the table's data files.
 
@@ -228,10 +238,14 @@ Let's explore the differences between managed and external tables.
 
    DESCRIBE FORMATTED managed_products;
     ```
+   
+   The output will look similar to this:
 
-    In the results, view the **Location** property for the table, which should be a path to the OneLake storage for the lakehouse ending with **/Tables/managed_products** (you may need to widen the **Data type** column to see the full path).
+    ![](./Images/descman.png)
+   
+   In the results, view the **Location** property for the table, which should be a path to the OneLake storage for the lakehouse ending with **/Tables/managed_products** (you may need to widen the **Data type** column to see the full path).
 
-2. Modify the `DESCRIBE` command to show the details of the **external_products** table as shown here:
+3. Modify the `DESCRIBE` command to show the details of the **external_products** table as shown here:
 
     ```sql
    %%sql
@@ -239,11 +253,15 @@ Let's explore the differences between managed and external tables.
    DESCRIBE FORMATTED external_products;
     ```
 
-    In the results, view the **Location** property for the table, which should be a path to the OneLake storage for the lakehouse ending with **/Files/external_products** (you may need to widen the **Data type** column to see the full path).
+   The output will look similar to this:
+
+    ![](./Images/descext.png)
+
+   In the results, view the **Location** property for the table, which should be a path to the OneLake storage for the lakehouse ending with **/Files/external_products** (you may need to widen the **Data type** column to see the full path).
 
     The files for managed table are stored in the **Tables** folder in the OneLake storage for the lakehouse. In this case, a folder named **managed_products** has been created to store the Parquet files and **delta_log** folder for the table you created.
 
-3. Add another code cell and run the following code:
+5. Add another code cell and run the following code:
 
     ```sql
    %%sql
@@ -252,9 +270,13 @@ Let's explore the differences between managed and external tables.
    DROP TABLE external_products;
     ```
 
-4. In the **Lakehouse explorer** pane, in the **...** menu for the **Tables** folder, select **Refresh**. Then expand the **Tables** node and verify that no tables are listed.
+6. In the **Lakehouse explorer** pane, in the **...** menu for the **Tables** folder, select **Refresh**. Then expand the **Tables** node and verify that no tables are listed.
 
-5. In the **Lakehouse explorer** pane, expand the **Files** folder and verify that the **external_products** has not been deleted. Select this folder to view the Parquet data files and **_delta_log** folder for the data that was previously in the **external_products** table. The table metadata for the external table was deleted, but the files were not affected.
+    ![](./Images/droptableverify.png)
+
+7. In the **Lakehouse explorer** pane, expand the **Files** folder and verify that the **external_products(1)** has not been deleted. Select this folder to view the **Parquet data files(2)** and **_delta_log** folder for the data that was previously in the **external_products** table. The table metadata for the external table was deleted, but the files were not affected.
+
+    ![](./Images/dropfileverify.png)
 
 ### Use SQL to create a table
 
@@ -280,6 +302,10 @@ Let's explore the differences between managed and external tables.
    SELECT * FROM products;
    ```
 
+   The output will look similar to this:
+   
+    ![](./Images/starselect.png)
+
 ## Task 5 : Explore table versioning
 
 Transaction history for delta tables is stored in JSON files in the **delta_log** folder. You can use this transaction log to manage data versioning.
@@ -296,6 +322,10 @@ Transaction history for delta tables is stored in JSON files in the **delta_log*
 
     This code implements a 10% reduction in the price for mountain bikes.
 
+    The output will look similar to this:
+
+     ![](./Images/reduction.png)
+
 2. Add another code cell and run the following code:
 
     ```sql
@@ -305,6 +335,10 @@ Transaction history for delta tables is stored in JSON files in the **delta_log*
     ```
 
     The results show the history of transactions recorded for the table.
+
+    The output will look similar to this:
+
+     ![](./Images/history.png)
 
 3. Add another code cell and run the following code:
 
@@ -321,6 +355,12 @@ Transaction history for delta tables is stored in JSON files in the **delta_log*
     ```
 
     The results show two dataframes - one containing the data after the price reduction, and the other showing the original version of the data.
+
+    The output will look similar to this:
+
+    ![](./Images/df.png)
+    ![](./Images/df1.png)
+    ![](./Images/df2.png)
 
 ## Task 6 : Use delta tables for streaming data
 
@@ -360,6 +400,10 @@ Delta lake supports streaming data. Delta tables can be a *sink* or a *source* f
 
     Ensure the message *Source stream created...* is printed. The code you just ran has created a streaming data source based on a folder to which some data has been saved, representing readings from hypothetical IoT devices.
 
+    The output will look similar to this:
+
+     ![](./Images/sourcestream.png)
+
 2. In a new code cell, add and run the following code:
 
     ```python
@@ -372,6 +416,10 @@ Delta lake supports streaming data. Delta tables can be a *sink* or a *source* f
 
     This code writes the streaming device data in delta format to a folder named **iotdevicedata**. Because the path for the folder location in the **Tables** folder, a table will automatically be created for it.
 
+    The output will look similar to this:
+
+     ![](./Images/deltasink.png)
+
 3. In a new code cell, add and run the following code:
 
     ```sql
@@ -381,6 +429,10 @@ Delta lake supports streaming data. Delta tables can be a *sink* or a *source* f
     ```
 
     This code queries the **IotDeviceData** table, which contains the device data from the streaming source.
+
+    The output will look similar to this:
+
+     ![](./Images/iotstar.png)
 
 4. In a new code cell, add and run the following code:
 
@@ -398,6 +450,10 @@ Delta lake supports streaming data. Delta tables can be a *sink* or a *source* f
     ```
 
     This code writes more hypothetical device data to the streaming source.
+
+    The output will look similar to this:
+
+     ![](./Images/moredata.png)
 
 5. Re-run the cell containing the following code:
 
