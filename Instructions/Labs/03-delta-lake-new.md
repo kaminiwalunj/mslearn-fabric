@@ -322,6 +322,10 @@ Transaction history for delta tables is stored in JSON files in the **delta_log*
 
     This code implements a 10% reduction in the price for mountain bikes.
 
+    The output will look similar to this:
+
+     ![](./Images/reduction.png)
+
 2. Add another code cell and run the following code:
 
     ```sql
@@ -331,6 +335,10 @@ Transaction history for delta tables is stored in JSON files in the **delta_log*
     ```
 
     The results show the history of transactions recorded for the table.
+
+    The output will look similar to this:
+
+     ![](./Images/history.png)
 
 3. Add another code cell and run the following code:
 
@@ -347,6 +355,12 @@ Transaction history for delta tables is stored in JSON files in the **delta_log*
     ```
 
     The results show two dataframes - one containing the data after the price reduction, and the other showing the original version of the data.
+
+    The output will look similar to this:
+
+    ![](./Images/df.png)
+    ![](./Images/df1.png)
+    ![](./Images/df2.png)
 
 ## Task 6 : Use delta tables for streaming data
 
@@ -386,6 +400,10 @@ Delta lake supports streaming data. Delta tables can be a *sink* or a *source* f
 
     Ensure the message *Source stream created...* is printed. The code you just ran has created a streaming data source based on a folder to which some data has been saved, representing readings from hypothetical IoT devices.
 
+    The output will look similar to this:
+
+     ![](./Images/sourcestream.png)
+
 2. In a new code cell, add and run the following code:
 
     ```python
@@ -398,6 +416,10 @@ Delta lake supports streaming data. Delta tables can be a *sink* or a *source* f
 
     This code writes the streaming device data in delta format to a folder named **iotdevicedata**. Because the path for the folder location in the **Tables** folder, a table will automatically be created for it.
 
+    The output will look similar to this:
+
+     ![](./Images/deltasink.png)
+
 3. In a new code cell, add and run the following code:
 
     ```sql
@@ -407,6 +429,10 @@ Delta lake supports streaming data. Delta tables can be a *sink* or a *source* f
     ```
 
     This code queries the **IotDeviceData** table, which contains the device data from the streaming source.
+
+    The output will look similar to this:
+
+     ![](./Images/iotstar.png)
 
 4. In a new code cell, add and run the following code:
 
@@ -424,6 +450,10 @@ Delta lake supports streaming data. Delta tables can be a *sink* or a *source* f
     ```
 
     This code writes more hypothetical device data to the streaming source.
+
+    The output will look similar to this:
+
+     ![](./Images/moredata.png)
 
 5. Re-run the cell containing the following code:
 
