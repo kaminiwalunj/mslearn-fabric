@@ -141,7 +141,7 @@ A simple way to ingest data is to use a **Copy Data** activity in a pipeline to 
 
 5. Verify that your notebooks looks similar to this, and then use the **&#9655; Run all** button on the toolbar to run all of the cells it contains.
 
-    ![Screenshot of a notebook with a parameters cell and code to transform data.](./Images/notebook1.png)
+    ![](./Images/runall.png)
 
 6. When the notebook run has completed, in the **Lakehouse explorer** pane on the left, in the **...** menu for **Tables** select **Refresh** and verify that a **sales** table has been created.
 
@@ -196,7 +196,7 @@ Now that you've implemented a notebook to transform data and load it into a tabl
     - **General**:
         - **Name**: Load Sales notebook
 
-    ![](./Images/loadsalesnotebook.png)
+    ![](./Images/loadsalesnotebook1.png)
     
     - **Settings**:
         - **Notebook**: Load Sales
@@ -206,19 +206,19 @@ Now that you've implemented a notebook to transform data and load it into a tabl
             | -- | -- | -- |
             | table_name | String | new_sales |
 
-     ![](./Images/updatedloadsales.png)
+     ![](./Images/updatedloadsales1.png)
 
     The **table_name** parameter will be passed to the notebook and override the default value assigned to the **table_name** variable in the parameters cell.
 
 7. On the **Home** tab, use the **&#128427;** (*Save*) icon to save the pipeline. Then use the **&#9655; Run** button to run the pipeline, and wait for all of the activities to complete.
 
-    ![Screenshot of a pipeline with a Dataflow activity.](./Images/pipeline-run1.png)
+    ![Screenshot of a pipeline with a Dataflow activity.](./Images/updtpipeline-run1.png)
 
 8. In the hub menu bar on the left edge of the portal, select your lakehouse.
 
 9. In the **Explorer** pane, expand **Tables** and select the **new_sales** table to see a preview of the data it contains. This table was created by the notebook when it was run by the pipeline.
 
-   ![](./Images/newsalesdata.png)
+   ![](./Images/newsalesdata1.png)
 
 In this exercise, you implemented a data ingestion solution that uses a pipeline to copy data to your lakehouse from an external source, and then uses a Spark notebook to transform the data and load it into a table.
 
