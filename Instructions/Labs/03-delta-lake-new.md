@@ -33,7 +33,7 @@ Tables in a Microsoft Fabric lakehouse are based on the open source *Delta Lake*
 
 Before working with data in Fabric, create a workspace with the Fabric trial enabled.
 
-1. Open the Edge Browser and Sign in to [Microsoft Fabric](https://app.fabric.microsoft.com) at `https://app.fabric.microsoft.com`, enter the following email/username, and then click on **Submit (2)**.  
+1. Open the Edge Browser and Sign in to [Microsoft Fabric](https://app.fabric.microsoft.com), enter the following email/username, and then click on **Submit (2)**.  
 
    * **Username/Email (1)**:  <inject key="AzureAdUserEmail"></inject>
 
@@ -43,13 +43,13 @@ Before working with data in Fabric, create a workspace with the Fabric trial ena
 
       ![](./Images/t1temppass.png)
 
-     **Note: Select No for the stay signed-in pop-up**.
+1. Select **No** for the stay signed-in pop-up.
 
-      ![](./Images/staysignin.png)   
+    ![](./Images/staysignin.png)   
 
-     **Note: Select Cancel on the Welcome to the Fabric view popup**.
+1. Select **Cancel** on the Welcome to the Fabric view popup.
 
-      ![](./Images/starttour.png)
+    ![](./Images/starttour.png)
 
 3. From the Microsoft Fabric home page, click the Fabric icon in the bottom-left corner, then select **Power BI**.
 
@@ -69,17 +69,17 @@ Before working with data in Fabric, create a workspace with the Fabric trial ena
 
     ![](./Images/staycurrentonstage.png)
    
-8. Close the popups. Open your **Account manager(1)** again. Notice that you now have a heading for **Trial Status(2)**. Your Account manager keeps track of the number of days remaining in your trial.
+8. Close the popups. Open your **Account manager (1)** again. Notice that you now have a heading for **Trial Status (2)**. Your Account manager keeps track of the number of days remaining in your trial.
 
     ![](./Images/updttrialstatus.png)
 
       >**Note:** You now have a **Fabric (Preview) trial** that includes a **Power BI trial** and a **Fabric (Preview) trial capacity**.
 
-9. In the menu bar on the left, select **Workspaces (1)** (the icon looks similar to &#128455;). Select **+ New Workspace (2)**
+9. In the menu bar on the left, select **Workspaces (1)** (the icon looks similar to &#128455;). Select **+ New Workspace (2)**.
 
    ![](./Images/newwrkspc.png)
 
-10. Create a new workspace with a name **dp_fabric-<inject key="DeploymentID" enableCopy="false" /> (1)**, scroll down to advanced section and expand it , select  **license mode** as **(Trial) (2)**, and click on **Apply (3)**
+10. Create a new workspace with a name **dp_fabric-<inject key="DeploymentID" enableCopy="false" /> (1)**, scroll down to **advanced** section and expand it , select **license mode** as **Trial (2)**, and click on **Apply (3)**
 
     ![](./Images/wrkspcname.png)
 
@@ -95,11 +95,11 @@ Before working with data in Fabric, create a workspace with the Fabric trial ena
 
 Now your workspace is ready, let’s create a new lakehouse to store and analyze your data.
 
-1. In the newly created workspace, click the **+ New Item button (1)** and search for **Lakehouse (2)** and select **Lakehouse (3)**.
+1. In the newly created workspace, click the **+ New Item (1)** button and search for **Lakehouse (2)** and select **Lakehouse (3)**.
 
    ![](./Images/slectlakehouse.png)
  
-2. Create a new **Lakehouse** with a name **fabric_lakehouse (1)**, uncheck the box of **Lakehouse Schemas (2)** and click on **Create (3)**.
+2. Create a new **Lakehouse** with a name **fabric_lakehouse (1)**, uncheck the box of **Lakehouse schemas (2)** and click on **Create (3)**.
 
    ![](./Images/lakeschema.png)
    
@@ -121,7 +121,7 @@ Now your workspace is ready, let’s create a new lakehouse to store and analyze
 
       - OR If you are using the lab virtual machine (lab VM) provided to you, you can get the file from the **C:\LabFiles\dp-data-main** directory.
 
-5. Return to the web browser tab containing your lakehouse, and in the **... (1)** menu for the **Files** folder in the **Explorer** pane, select **New subfolder (2)**.
+5. Return to the web browser tab containing your lakehouse, and in the **ellipsis (...) (1)** menu for the **Files** folder in the **Explorer** pane, select **New subfolder (2)**.
    
    ![](./Images/filesbfldr.png)
    
@@ -129,7 +129,7 @@ Now your workspace is ready, let’s create a new lakehouse to store and analyze
 
    ![](./Images/prodcreate.png)
 
-7. In the **...** menu for the **products** folder, select **Upload** and **Upload files**, and then upload the **products.csv** file from your local computer (or lab VM if applicable) to the lakehouse.
+7. In the **ellipsis (...)** menu for the **products** folder, select **Upload** and **Upload files**, and then upload the **products.csv** file from your local computer (or lab VM if applicable) to the lakehouse.
 
    ![](./Images/fbimg1.png)
 
@@ -139,7 +139,7 @@ Now your workspace is ready, let’s create a new lakehouse to store and analyze
 
 ## Task 3: Explore data in a dataframe
 
-1. On the **Home** page while viewing the contents of the **products** folder in your datalake, in the **Open notebook** menu, select **New notebook**.
+1. On the **Home** page while viewing the contents of the **products** folder in your datalake, in the **Open notebook (1)** menu, select **New notebook (2)**.
 
     ![](./Images/imag6.png)
 
@@ -155,7 +155,7 @@ Now your workspace is ready, let’s create a new lakehouse to store and analyze
 
     >**Note:** If you are not able to find **Lakehouse explorer**, under **Explorer** pane, expand Items and expand the lakehouse, you now see the lakehouse explorer.
 
-4. In the **...** menu for **products.csv(1)**, select **Load data(2)** > **Spark(3)**. A new code cell containing the following code should be added to the notebook:
+4. In the **ellipsis (...)** menu for **products.csv (1)**, select **Load data (2)** > **Spark (3)**. A new code cell containing the following code should be added to the notebook:
 
     ![](./Images/loaddata.png)
 
@@ -209,23 +209,21 @@ You can also create *external* tables for which the schema metadata is defined i
     
     **Note :** Make sure to replace the **abfs_path**.
 
-2. In the **Lakehouse explorer** pane, in the **...** menu for the **Files** folder, select **Copy ABFS path**.
+2. In the **Lakehouse explorer** pane, in the **ellipsis (...) (1)** menu for the **Files** folder, select **Copy ABFS path (2)**.
 
     ![](./Images/cpabfs.png)
 
-    The ABFS path is the fully qualified path to the **Files** folder in the OneLake storage for your lakehouse - similar to this:
-
-    *abfss://workspace@tenant-onelake.dfs.fabric.microsoft.com/lakehousename.Lakehouse/Files*
+    The ABFS path is the fully qualified path to the **Files** folder in the OneLake storage for your lakehouse - similar to this: *abfss://workspace@tenant-onelake.dfs.fabric.microsoft.com/lakehousename.Lakehouse/Files*
 
 3. In the code you entered into the code cell, replace **<abfs_path>** with the path you copied to the clipboard so that the code saves the dataframe as an external table with data files in a folder named **external_products** in your **Files** folder location. The full path should look similar to this:
 
     *abfss://workspace@tenant-onelake.dfs.fabric.microsoft.com/lakehousename.Lakehouse/Files/external_products*
 
-4. In the **Lakehouse explorer** pane, in the **...** menu for the **Tables** folder, select **Refresh**. Then expand the **Tables** node and verify that the **external_products** table has been created.
+4. In the **Lakehouse explorer** pane, in the **ellipsis (...)** menu for the **Tables** folder, select **Refresh**. Then expand the **Tables** node and verify that the **external_products** table has been created.
 
    ![](./Images/updtextprodtable.png)
 
-5. In the **Lakehouse explorer** pane, in the **...** menu for the **Files** folder, select **Refresh**. Then expand the **Files** node and verify that the **external_products** folder has been created for the table's data files.
+5. In the **Lakehouse explorer** pane, in the **ellipsis (...)** menu for the **Files** folder, select **Refresh**. Then expand the **Files** node and verify that the **external_products** folder has been created for the table's data files.
 
    ![](./Images/fbimg4.png)
 
@@ -276,7 +274,7 @@ Let's explore the differences between managed and external tables.
 
     ![](./Images/droptableverify.png)
 
-7. In the **Lakehouse explorer** pane, expand the **Files** folder and verify that the **external_products(1)** has not been deleted. Select this folder to view the **Parquet data files(2)** and **_delta_log** folder for the data that was previously in the **external_products** table. The table metadata for the external table was deleted, but the files were not affected.
+7. In the **Lakehouse explorer** pane, expand the **Files** folder and verify that the **external_products (1)** has not been deleted. Select this folder to view the **Parquet data files (2)** and **_delta_log** folder for the data that was previously in the **external_products** table. The table metadata for the external table was deleted, but the files were not affected.
 
     ![](./Images/dropfileverify.png)
 
@@ -481,4 +479,4 @@ Delta Lake supports streaming data. Delta tables can be a *sink* or a *source* f
 
 In this lab, you created a workspace, set up a lakehouse, and uploaded data for processing. You explored data in a DataFrame, converted it into Delta tables, and utilized Delta’s versioning and time-travel features for efficient data management. Finally, you implemented streaming data pipelines using Delta tables, gaining practical experience in ingesting, transforming, and managing data within a scalable and robust data architecture.
 
-### Click on Next >> to proceed with the next lab.
+### You have successfully completed Lab 1. Click **Next >>** to proceed to the next lab.
