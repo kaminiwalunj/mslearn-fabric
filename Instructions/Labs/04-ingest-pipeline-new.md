@@ -29,9 +29,11 @@ Fabric also supports Apache Spark, enabling you to write and run code to process
 
 A simple way to ingest data is to use a **Copy Data** activity in a pipeline to extract the data from a source and copy it to a file in the lakehouse.
 
-1. On the **Home** page for your lakehouse, Under **Get data (1)** select **New data pipeline (2)**, create a new data pipeline named **Ingest Sales Data (3)** and click **Create (4)**.
+1. On the **Home** page for your lakehouse, Under **Get data (1)** select **New pipeline (2)**.
 
     ![](./Images/npline.png)
+
+1. Create a new data pipeline named **Ingest Sales Data (3)** and click **Create (4)**.
 
     ![](./Images/createnp.png)
 
@@ -95,13 +97,13 @@ A simple way to ingest data is to use a **Copy Data** activity in a pipeline to 
 
 13. In the menu bar on the left, select your lakehouse.
 
-14. On the **Home** page, in the **Lakehouse explorer** pane, expand **Files(1)** and select the **new_data(2)** folder to verify that the **sales.csv(3)** file has been copied.
+14. On the **Home** page, in the **Lakehouse explorer** pane, expand **Files (1)** and select the **new_data (2)** folder to verify that the **sales.csv (3)** file has been copied.
 
     ![](./Images/new_data1.png)
 
 ## Task 2: Create a notebook
 
-1. On the **Home** page for your lakehouse, in the **Open notebook** menu, select **New notebook**.
+1. On the **Home** page for your lakehouse, in the **Open notebook (1)** menu, select **New notebook (2)**.
 
    ![](./Images/imag6.png)
 
@@ -113,7 +115,7 @@ A simple way to ingest data is to use a **Copy Data** activity in a pipeline to 
    table_name = "sales"
     ```
 
-3. In the **...** menu for the cell (at its top-right) select **Toggle parameter cell**. This configures the cell so that the variables declared in it are treated as parameters when running the notebook from a pipeline.
+3. In the **ellipsis (...)** menu for the cell (at its top-right) select **Toggle parameter cell**. This configures the cell so that the variables declared in it are treated as parameters when running the notebook from a pipeline.
 
     ![](./Images/imag11.png)
 
@@ -144,13 +146,13 @@ A simple way to ingest data is to use a **Copy Data** activity in a pipeline to 
 
     ![](./Images/runall.png)
 
-6. When the notebook run has completed, in the **Lakehouse explorer** pane on the left, in the **...** menu for **Tables** select **Refresh** and verify that a **sales** table has been created.
+6. When the notebook run has completed, in the **Lakehouse explorer** pane on the left, in the **ellipsis (...)** menu for **Tables** select **Refresh** and verify that a **sales** table has been created.
 
 7. In the notebook menu bar, use the ⚙️ **Settings** icon to view the notebook settings. Then set the **Name** of the notebook to **Load Sales** and close the settings pane.
 
 8. In the hub menu bar on the left, select your lakehouse.
 
-9. In the **Explorer** pane, refresh the view. Then expand **Tables(1)**, and select the **sales(2)** table to see a preview of the data it contains.
+9. In the **Explorer** pane, refresh the view. Then expand **Tables (1)**, and select the **sales (2)** table to see a preview of the data it contains.
 
    ![](./Images/saletable.png)
 
@@ -199,17 +201,17 @@ Now that you've implemented a notebook to transform data and load it into a tabl
     - **General**:
         - **Name**: Load Sales notebook
 
-    ![](./Images/lsn.png)
+            ![](./Images/lsn.png)
     
     - **Settings**:
-        - **Notebook(1)**: Load Sales
-        - **Base parameters(2)**: *Add a new parameter with the following properties:*
+        - **Notebook (1)**: Load Sales
+        - **Base parameters (2)**: *Add a new parameter with the following properties:*
             
             | Name | Type | Value |
             | -- | -- | -- |
             | table_name | String | new_sales |
 
-     ![](./Images/ls1.png)
+            ![](./Images/ls1.png)
 
     The **table_name** parameter will be passed to the notebook and override the default value assigned to the **table_name** variable in the parameters cell.
 
