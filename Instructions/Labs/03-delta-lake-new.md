@@ -4,11 +4,9 @@
 
 ## Overview
 
-Tables in a Microsoft Fabric lakehouse are based on the Delta Lake storage format commonly used in Apache Spark. By using the enhanced capabilities of delta tables, you can create 
-advanced analytics solutions.
+Tables in a Microsoft Fabric lakehouse are based on the Delta Lake storage format commonly used in Apache Spark. By using the enhanced capabilities of delta tables, you can create  advanced analytics solutions.
 
-Delta Lake is an open-source storage layer that adds relational database semantics to Spark-based data lake processing. Tables in Microsoft Fabric lakehouses are Delta tables, which is 
-signified by the triangular Delta (▴) icon on tables in the lakehouse user interface.
+Delta Lake is an open-source storage layer that adds relational database semantics to Spark-based data lake processing. Tables in Microsoft Fabric lakehouses are Delta tables, which is signified by the triangular Delta (▴) icon on tables in the lakehouse user interface.
 
 ## Lab Objectives
 
@@ -160,9 +158,9 @@ Now your workspace is ready, let’s create a new lakehouse to store and analyze
     ![](./Images/loaddata.png)
 
     ```python
-   df = spark.read.format("csv").option("header","true").load("Files/products/products.csv")
-   # df now is a Spark DataFrame containing CSV data from "Files/products/products.csv".
-   display(df)
+    df = spark.read.format("csv").option("header","true").load("Files/products/products.csv")
+    # df now is a Spark DataFrame containing CSV data from "Files/products/products.csv".
+    display(df)
     ```
 
     > **Tip**: You can hide the pane containing the files on the left by using its **<<** icon. Doing so will help you focus on the notebook.
@@ -175,7 +173,7 @@ Now your workspace is ready, let’s create a new lakehouse to store and analyze
 
      ![](./Images/updtrun1.png)
 
-    >**Note:** If you are getting errors here and also getting a table, then please ignore the errors and move with further tasks.
+    >**Note:** If you are getting errors here and also getting a table, then please ignore the errors and move on to further tasks.
 
 ## Task 4: Create delta tables
 
@@ -207,7 +205,7 @@ You can also create *external* tables for which the schema metadata is defined i
    df.write.format("delta").saveAsTable("external_products", path="<abfs_path>/external_products")
     ```
     
-    **Note :** Make sure to replace the **abfs_path**.
+    **Note:** Make sure to replace the **abfs_path**.
 
 2. In the **Lakehouse explorer** pane, in the **ellipsis (...) (1)** menu for the **Files** folder, select **Copy ABFS path (2)**.
 
@@ -270,7 +268,7 @@ Let's explore the differences between managed and external tables.
    DROP TABLE external_products;
     ```
 
-6. In the **Lakehouse explorer** pane, in the **...** menu for the **Tables** folder, select **Refresh**. Then expand the **Tables** node and verify that no tables are listed.
+6. In the **Lakehouse explorer** pane, in the **ellipsis (...)** menu for the **Tables** folder, select **Refresh**. Then expand the **Tables** node and verify that no tables are listed.
 
     ![](./Images/droptableverify.png)
 
@@ -290,7 +288,7 @@ Let's explore the differences between managed and external tables.
    LOCATION 'Files/external_products';
     ```
 
-2. In the **Lakehouse explorer** pane, in the **...** menu for the **Tables** folder, select **Refresh**. Then expand the **Tables** node and verify that a new table named **products** is listed. Then expand the table to verify that its schema matches the original dataframe that was saved in the **external_products** folder.
+2. In the **Lakehouse explorer** pane, in the **ellipsis (...)** menu for the **Tables** folder, select **Refresh**. Then expand the **Tables** node and verify that a new table named **products** is listed. Then expand the table to verify that its schema matches the original dataframe that was saved in the **external_products** folder.
 
    ![](./Images/fbimg5.png)
 
