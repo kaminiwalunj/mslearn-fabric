@@ -1,6 +1,6 @@
 # Work with Data Lake and Data Factory Pipelines in Microsoft Fabric​
 
-### Overall Estimated Duration: 4 hours
+### Overall Estimated Duration: 4 Hours
 
 ## Overview
 
@@ -15,7 +15,6 @@ The objective is to efficiently manage and analyze data by leveraging Data Lake 
 
 **Fabric trial provides access to most features, but excludes Copilot, private links, and trusted workspace access ([learn more](https://learn.microsoft.com/en-us/fabric/fundamentals/fabric-trial#overview-of-the-trial-capacity)).**
 
-
 ## Prerequisites
 
 Participants should have:
@@ -23,14 +22,14 @@ Participants should have:
 - **Basic Data Engineering Knowledge:** Understanding of data storage, processing, and ETL concepts, including data lakes and warehouses.
 - **Experience with Microsoft Fabric:** Familiarity with the Microsoft Fabric platform, including lakehouses, tables, and pipelines.
 - **SQL Proficiency:** Strong skills in SQL for querying and managing Delta tables.
-- **Understanding of Apache Spark:** Basic knowledge of Spark architecture, DataFrames, and SparkSQL for distributed data processing.
+- **Understanding of Apache Spark:** Basic knowledge of Spark architecture, DataFrames, and Spark SQL for distributed data processing.
 - **Familiarity with Data Pipelines:** Understanding of ETL processes and experience in building and managing data pipelines.
 
 ## Architechture
 
 The architecture of a Microsoft Fabric lab integrates Data Lake storage with Delta tables for reliable data storage, while Data Factory Pipelines automate ETL processes. Apache Spark powers distributed data processing on Delta tables, and notebooks enable interactive analytics. The environment supports data consistency, scalability, and integration with cloud services, ensuring secure and efficient data management and processing.
 
-## Architechture Diagram
+## Architecture Diagram
 
 ![](./Images/arch-diag.png)
 
