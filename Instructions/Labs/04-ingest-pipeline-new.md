@@ -1,6 +1,6 @@
 # Lab 02: Ingest data with a pipeline
 
-### Estimated Duration: 100 minutes
+### Estimated Duration: 100 Minutes
 
 ## Overview
 Data pipelines define a sequence of activities that orchestrate an overall process, usually by extracting data from one or more sources and loading it into a destination; often transforming it along the way. Pipelines are commonly used to automate extract, transform, and load (ETL) processes that ingest transactional data from operational data stores into an analytical data store, such as a lakehouse or data warehouse. The graphical pipeline canvas in the Fabric user interface enables you to build complex pipelines with minimal or no coding required.
@@ -9,10 +9,9 @@ Data pipelines define a sequence of activities that orchestrate an overall proce
 
 In this lab, you will complete the following tasks:
 
- - Task 1 : Create a pipeline
- - Task 2 : Create a notebook
- - Task 3 : Modify the pipeline
-
+ - Task 1: Create a pipeline
+ - Task 2: Create a notebook
+ - Task 3: Modify the pipeline
 
 ## _Architecture Diagram_
 
@@ -26,11 +25,11 @@ Fabric also supports Apache Spark, enabling you to write and run code to process
 
 > **Note**: You'll need a Microsoft Fabric license to complete this exercise. Complete the previous task to proceed further.
 
-## Task 1 : Create a pipeline
+## Task 1: Create a pipeline
 
 A simple way to ingest data is to use a **Copy Data** activity in a pipeline to extract the data from a source and copy it to a file in the lakehouse.
 
-1. On the **Home** page for your lakehouse, Under **Get data(1)** select **New data pipeline(2)**, create a new data pipeline named **Ingest Sales Data(3)** and click **Create(4)**.
+1. On the **Home** page for your lakehouse, Under **Get data (1)** select **New data pipeline (2)**, create a new data pipeline named **Ingest Sales Data (3)** and click **Create (4)**.
 
     ![](./Images/npline.png)
 
@@ -38,13 +37,13 @@ A simple way to ingest data is to use a **Copy Data** activity in a pipeline to 
 
 2. If the **Copy Data** wizard doesn't open automatically, select **Copy Data** in the pipeline editor page.
 
-3. In the **Copy Data** wizard, on the **Choose a data source(1)** page, in the **New sources(2)** section, search **Http(3)** and select **Http(4)**.
+3. In the **Copy Data** wizard, on the **Choose a data source (1)** page, in the **New sources (2)** section, search **Http (3)** and select **Http (4)**.
 
     ![](./Images/htpsrch.png)
 
 4. You will be navigated to Connect to data source.
 
-5. On **Connect to data source** section, enter the following settings for the connection to your data source:
+5. In the **Connect to data source** section, enter the following settings for the connection to your data source:
     - **URL**: `https://raw.githubusercontent.com/MicrosoftLearning/dp-data/main/sales.csv`
     - **Connection**: Create new connection
     - **Connection name**: *Specify a unique name*
@@ -92,7 +91,7 @@ A simple way to ingest data is to use a **Copy Data** activity in a pipeline to 
 
     ![](./Images/updt12cpdt.png)
 
-12. When the pipeline starts to run, you can monitor its status in the **Output** pane under the pipeline designer. Use the **&#8635;** (*Refresh*) icon to refresh the status, and wait until it has succeeeded.
+12. When the pipeline starts to run, you can monitor its status in the **Output** pane under the pipeline designer. Use the **&#8635;** (*Refresh*) icon to refresh the status, and wait until it has succeeded.
 
 13. In the menu bar on the left, select your lakehouse.
 
@@ -100,7 +99,7 @@ A simple way to ingest data is to use a **Copy Data** activity in a pipeline to 
 
     ![](./Images/new_data1.png)
 
-## Task 2 : Create a notebook
+## Task 2: Create a notebook
 
 1. On the **Home** page for your lakehouse, in the **Open notebook** menu, select **New notebook**.
 
@@ -141,7 +140,7 @@ A simple way to ingest data is to use a **Copy Data** activity in a pipeline to 
 
     This code loads the data from the sales.csv file that was ingested by the **Copy Data** activity, applies some transformation logic, and saves the transformed data as a table - appending the data if the table already exists.
 
-5. Verify that your notebooks looks similar to this, and then use the **&#9655; Run all** button on the toolbar to run all of the cells it contains.
+5. Verify that your notebooks look similar to this, and then use the **&#9655; Run all** button on the toolbar to run all of the cells it contains.
 
     ![](./Images/runall.png)
 
@@ -155,11 +154,11 @@ A simple way to ingest data is to use a **Copy Data** activity in a pipeline to 
 
    ![](./Images/saletable.png)
 
-## Task 3 : Modify the pipeline
+## Task 3: Modify the pipeline
 
 Now that you've implemented a notebook to transform data and load it into a table, you can incorporate the notebook into a pipeline to create a reusable ETL process.
 
-1. In the hub menu bar on the left select the **Ingest Sales Data** pipeline you created previously.
+1. In the hub menu bar on the left, select the **Ingest Sales Data** pipeline you created previously.
 
 2. On the **Activities** tab, in the **More activities** list, select **Delete data**. Then position the new **Delete data**  activity to the left of the **Copy data** activity and connect its **On completion** output to the **Copy data** activity, as shown below:
 
