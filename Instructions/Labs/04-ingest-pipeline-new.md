@@ -16,7 +16,7 @@ In this lab, you will complete the following tasks:
 
 ## _Architecture Diagram_
 
-![Architecture Diagram](./Images/Ingest-Data-with-a-pipeline.png)
+![](./Images/lab2img.png)
 
 ## Use Data Factory pipelines in Microsoft Fabric
 

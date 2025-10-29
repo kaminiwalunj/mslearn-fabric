@@ -23,7 +23,7 @@ In this lab, you will complete the following tasks:
 
 ## _Architecture Diagram_
 
-   ![](./Images/Use-delta-tables-in-Apache-Spark.png)
+   ![](./Images/lab1img.png)
 
 # Use delta tables in Apache Spark
 
