@@ -50,7 +50,7 @@ A warehouse is a relational database in which you can define tables and other ob
 
 1. In your new warehouse, select the **Create tables** with **T-SQL** tile, and replace the default SQL code with the following CREATE TABLE statement:
 
-   ![Screenshot of a new warehouse.](<./Images/L2T2S1.png>)
+   ![Screenshot of a new warehouse.](<./Images/L2T2S2.png>)
 
    ```sql
    CREATE TABLE dbo.DimProduct
@@ -78,7 +78,7 @@ A warehouse is a relational database in which you can define tables and other ob
 
 1. On the **Home** tab, click the dropdown next to **New SQL query** **(1)**, then select **New SQL query** **(2)** to open a new query editor
 
-   ![](<./Images/L2T2S5.png>)
+   ![](<./Images/L1T62.png>)
 
 1. After inserting the query, click **Run** to execute it. This query will insert three rows into the **DimProduct** table.
 
@@ -99,7 +99,7 @@ A warehouse is a relational database in which you can define tables and other ob
 
 1. On the **Home** tab, click the dropdown next to **New SQL query** **(1)**, then select **New SQL query** **(2)** to open a new query editor
 
-   ![](<./Images/L2T2S5.png>)
+   ![](<./Images/L1T62.png>)
 
 1. On the **Home** menu tab, use the **New SQL Query** button to create a new query. Then copy and paste the Transact-SQL code from [https://raw.githubusercontent.com/MicrosoftLearning/dp-data/main/create-dw.txt](https://raw.githubusercontent.com/MicrosoftLearning/dp-data/main/create-dw.txt) into the new query pane.
 
@@ -114,7 +114,7 @@ A warehouse is a relational database in which you can define tables and other ob
    - **DimProduct**
    - **FactSalesOrder**
 
-      ![](<./Images/gr_fb_e2_12.png>)
+      ![](<./Images/L2T2S11.png>)
 
       > **Tip**: If the schema takes a while to load, just refresh the browser page.
 
@@ -134,9 +134,9 @@ A relational data warehouse typically consists of fact and dimension tables. The
 
    ![](<./Images/L2T3S3.png>)
 
-1. Select the **dw semantic model** **(1)** and click on **Open data model** **(2)** option to edit the semantic model.
+1. Select the **dw semantic model** **(1)** and click on **Open semantic model** **(2)** option to edit the semantic model.
 
-   ![](<./Images/L2T5S10.png>)
+   ![](<./Images/L2T3S4.png>)
 
 1. At the top right corner, Click on **Viewing (1)** to change it to **Editing** **2** permission settings. 
 
@@ -144,7 +144,7 @@ A relational data warehouse typically consists of fact and dimension tables. The
 
 1. In the model pane, rearrange the tables in your data warehouse so that the **FactSalesOrder** table is in the middle, like this:
 
-   ![Screenshot of the data warehouse model page.](./Images/model-dw1-1.png)
+   ![Screenshot of the data warehouse model page.](./Images/L2T3S6.png)
 
 1. Drag the **ProductKey** field from the **FactSalesOrder** table and drop it on the **ProductKey** field in the **DimProduct** table. In the **New relationship** dialog, confirm the following:
 
@@ -182,7 +182,7 @@ Most queries in a relational data warehouse involve aggregating and grouping dat
 
 1. On the **Home** tab, click the dropdown next to **New SQL query** **(1)**, then select **New SQL query** **(2)** to open a new query editor
 
-   ![](<./Images/L1T6S2.png>)
+   ![](<./Images/L1T62.png>)
 
 1. Run the following code:
 
@@ -258,7 +258,7 @@ Instead of writing SQL code, you can use the graphical query designer to query t
 
 1. On the **Home** tab, click the dropdown arrow next to **New SQL query** **(1)**, then select **New visual query** **(2)** to open the visual query editor.
 
-   ![Screenshot of a Visual query.](./Images/L2T5S4.png)
+   ![Screenshot of a Visual query.](./Images/L1T7S1.png)
 
 1. Drag **FactSalesOrder** onto the **canvas**. Notice that a preview of the table is displayed in the **Preview** pane below.
 
@@ -288,9 +288,9 @@ You can easily visualize the data in either a single query or in your data wareh
 
    ![](<./Images/L2T3S3.png>)
 
-1. Select the **dw semantic model** **(1)** and click on **Open data model** **(2)** option to edit the semantic model.
+1. Select the **dw semantic model** **(1)** and click on **Open semantic model** **(2)** option to edit the semantic model.
 
-   ![](<./Images/L2T5S10.png>)
+   ![](<./Images/L2T3S4.png>)
 
 1. At the top right corner, Click on **Viewing** **1** to change it to **Editing** **2** permission settings. 
 
