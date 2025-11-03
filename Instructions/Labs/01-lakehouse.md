@@ -48,9 +48,9 @@ Before working with data in Fabric, create a workspace with the Fabric trial ena
 
      ![](./Images/fabric-image2.png)
 
-   - On the **Enter password** screen, enter your **Password:** <inject key="AzureAdUserPassword"></inject> **(1)** and click **Sign in** **(2)**.
+   - On the **Enter Temporary Access Pass** screen, enter your **Password:** <inject key="AzureAdUserPassword"></inject> **(1)** and click **Sign in** **(2)**.
 
-     ![](./Images/fabric-image3.png)
+     ![](./Images/L1T1S2.png)
   
     - When **Stay signed in?** prompted click on **Yes**
   
@@ -80,7 +80,7 @@ Before working with data in Fabric, create a workspace with the Fabric trial ena
 
    ![](./Images/staycurrentonstage.png)
 
-1. Click the **Account manager (1)** icon in the top-right corner. Under the **Profile** section, verify that the **Trial Status **(2)** shows the number of days remaining.
+1. Click the **Account manager (1)** icon in the top-right corner. Under the **Profile** section, verify that the **Trial Status (2)** shows the number of days remaining.
 
    ![](./Images/fb_ex1_6.png)
 
@@ -128,7 +128,7 @@ Now that you have a workspace, it's time to switch to the Data engineering exper
 
 1. On the **New lakehouse** pane, enter **Lakehouse_<inject key="DeploymentID" enableCopy="false"/> (1)** in the **Name** field, then click **Create** **(2)** to proceed.
 
-   ![](<./Images/L1T2S3.png>)
+   ![](<./Images/L1T3S3.png>)
 
 1. View the new lakehouse, and note that the **Lakehouse explorer** pane on the left enables you to browse tables and files in the lakehouse:
 
@@ -241,7 +241,7 @@ When you create a lakehouse and define tables in it, a SQL endpoint is automatic
 
 1. On the **Home** tab, click the dropdown arrow next to **New SQL query** **(1)**, then select **New SQL query** **(2)** to open a new query editor.
 
-   ![Screenshot of the SQL endpoint page.](./Images/L1T6S2.png)
+   ![Screenshot of the SQL endpoint page.](./Images/L1T62.png)
 
 1. In the new query editor, enter the following SQL query to calculate the total revenue by item:
 
