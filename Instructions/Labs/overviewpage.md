@@ -21,7 +21,6 @@ Participants should have:
 - **SQL Knowledge:** Ability to write and understand basic SQL queries.
 - **Data Analysis:** Basic experience with data analysis and reporting.
 
-
 ## Architecture
 
 This lab introduces the Microsoft Fabric Lakehouse, a unified data platform that combines the flexibility and scalability of a data lake with the structured querying capabilities of a data warehouse. Key components include OneLake, a scalable storage layer built on Azure Data Lake Store Gen2, and Apache Spark, which provides high-performance in-memory computation for big data processing. SQL compute engines enable complex queries on large datasets, while Delta Lake ensures ACID transactions and efficient metadata handling. Additionally, Power BI and Power Query are integrated for advanced data visualization, reporting, and manipulation.
@@ -50,40 +49,37 @@ This lab introduces the Microsoft Fabric Lakehouse, a unified data platform that
 
 - **Report Building:** The creation of interactive reports using Power BI, based on the data stored in the Lakehouse. This involves designing report layouts, selecting visualizations, and configuring report elements to effectively display data insights.
 
-**Fabric trial provides access to most features, but excludes Copilot, private links, and trusted workspace access ([learn more](https://learn.microsoft.com/en-us/fabric/fundamentals/fabric-trial#overview-of-the-trial-capacity)).**
+# Getting Started with the lab
 
-
-## Getting Started with the lab
-
-### Accessing Your Lab Environment
+## Accessing Your Lab Environment
 
 Once you're ready to dive in, your virtual machine and lab guide will be right at your fingertips within your web browser.
  
 ![](./Images/fb_g_1_1.png)
 
-### Virtual Machine & Lab Guide
+## Virtual Machine & Lab Guide
  
 Your virtual machine is your workhorse throughout the workshop. The lab guide is your roadmap to success.
  
-### Exploring Your Lab Resources
+## Exploring Your Lab Resources
  
 To get a better understanding of your lab resources and credentials, navigate to the **Environment** details tab.
  
 ![Explore Lab Resources](./Images/fb_g_1_3.png)
  
-### Utilizing the Split Window Feature
+## Utilizing the Split Window Feature
  
 For convenience, you can open the lab guide in a separate window by selecting the **Split Window** button from the top right corner.
  
 ![Use the Split Window Feature](./Images/fb_g_1_4.png)
  
-### Managing Your Virtual Machine
+## Managing Your Virtual Machine
  
 Feel free to start, stop, or restart your virtual machine as needed from the **Resources** tab. Your experience is in your hands!
  
 ![Manage Your Virtual Machine](./Images/fb_g_1_5.png)
 
-### Lab Guide Zoom In/Zoom Out
+## Lab Guide Zoom In/Zoom Out
 
 To adjust the zoom level for the environment page, click the **A↕** icon located next to the timer in the lab environment.
 
