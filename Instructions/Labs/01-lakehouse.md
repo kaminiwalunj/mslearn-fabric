@@ -4,27 +4,23 @@
 
 ## Overview
 
-The foundation of Microsoft Fabric is a Lakehouse, which is built on top of the OneLake scalable storage layer and uses Apache Spark and SQL compute engines for big data processing. A
-Lakehouse is a unified platform that combines:
+The foundation of Microsoft Fabric is a Lakehouse, which is built on top of the OneLake scalable storage layer and uses Apache Spark and SQL compute engines for big data processing. A Lakehouse is a unified platform that combines:
 
 - The flexible and scalable storage of a data lake
 - The ability to query and analyze data in a data warehouse
 
-Imagine your company has been using a data warehouse to store structured data from its transactional systems, such as order history, inventory levels, and customer information. You have
-also collected unstructured data from social media, website logs, and third-party sources that are difficult to manage and analyze using the existing data warehouse infrastructure. Your
-company's new directive is to improve its decision-making capabilities by analyzing data in various formats across multiple sources, so the company chooses Microsoft Fabric.
+Imagine your company has been using a data warehouse to store structured data from its transactional systems, such as order history, inventory levels, and customer information. You have also collected unstructured data from social media, website logs, and third-party sources that are difficult to manage and analyze using the existing data warehouse infrastructure. Your company's new directive is to improve its decision-making capabilities by analyzing data in various formats across multiple sources, so the company chooses Microsoft Fabric.
 
 Here, we explore how a lakehouse in Microsoft Fabric can help address scenarios like this by providing a scalable and flexible data store for files and tables that you can query using
 SQL.
 
-### Architecture Diagram
+## Architecture Diagram
 
 ![](./Images/archlab1.jpg)
 
-
 ## Lab objectives
 
-In this exercise, you will complete the following tasks:
+In this lab, you will complete the following tasks:
 
 - Task 1: Create a workspace
 - Task 2: Create a Lakehouse
@@ -34,7 +30,6 @@ In this exercise, you will complete the following tasks:
 - Task 6: Use SQL to query tables
 - Task 7: Create a visual query
 - Task 8: Create a Report
-
 
 ## Task 1: Create a workspace
 
@@ -85,8 +80,6 @@ Before working with data in Fabric, create a workspace with the Fabric trial ena
    ![](./Images/fb_ex1_6.png)
 
    > **Note:** You now have a **Fabric (Preview) trial** that includes a **Power BI trial** and a **Fabric (Preview) trial capacity**.
-   
-   > **Note:** Fabric trial gives full access to most features, but excludes **Copilot**, **trusted workspace access**, and **private link**.
 
 1. In the menu bar on the left, select **Workspaces (1)** (the icon looks similar to &#128455;). Select **+ New Workspace (2)**
 
@@ -118,7 +111,7 @@ Before working with data in Fabric, create a workspace with the Fabric trial ena
 
 Now that you have a workspace, it's time to switch to the Data engineering experience in the portal and create a data lakehouse for your data files.
 
-1. Ensure the **Power BI** **(1)** icon is visible in the left pane. If available, click it, then click **New item** **(2)** at the top of the workspace.
+1. Ensure the **Power BI** **(1)** icon is visible in the left pane. If available, click it, then click **+ New item** **(2)** at the top of the workspace.
 
    ![](./Images/fabric-image15.png)
 
@@ -294,9 +287,7 @@ While many data professionals are familiar with SQL, data analysts with Power BI
 
 ## Task 8: Create a Report
 
-
 In this task, we will create a new semantic model and add a table to the dataset, which will define the data model to be used for reporting in Power BI.
-
 
 1. Under the **Home** tab, click on **New semantic model** **(1)** to create the semantic model.
 
