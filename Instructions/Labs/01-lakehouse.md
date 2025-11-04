@@ -39,7 +39,7 @@ Before working with data in Fabric, create a workspace with the Fabric trial ena
 
 1. Open the Edge browser and sign in to [Microsoft Fabric](https://app.fabric.microsoft.com).
 
-   - On the **Microsoft Fabric** page, enter your **email:** <inject key="AzureAdUserEmail"></inject> **(1)** and click **Submit** **(2)**.
+   - On the **Microsoft Fabric** page, enter your **Email:** <inject key="AzureAdUserEmail"></inject> **(1)** and click **Submit** **(2)**.
 
      ![](./Images/fabric-image2.png)
 
@@ -47,7 +47,7 @@ Before working with data in Fabric, create a workspace with the Fabric trial ena
 
      ![](./Images/L1T1S2.png)
   
-    - When **Stay signed in?** prompted click on **Yes**
+    - When **Stay signed in?** prompted, click on **Yes**.
   
       ![](./Images/fabric-image4.png)
    
@@ -81,11 +81,11 @@ Before working with data in Fabric, create a workspace with the Fabric trial ena
 
    > **Note:** You now have a **Fabric (Preview) trial** that includes a **Power BI trial** and a **Fabric (Preview) trial capacity**.
 
-1. In the menu bar on the left, select **Workspaces (1)** (the icon looks similar to &#128455;). Select **+ New Workspace (2)**
+1. In the menu bar on the left, select **Workspaces (1)** (the icon looks similar to &#128455;). Select **+ New workspace (2)**
 
    ![](./Images/fabric-image13.png)
 
-1. Create a new workspace with a name **Workspace-<inject key="DeploymentID" enableCopy="false"/> (1)**, and then click **Advanced**. Select a licensing mode that includes **Fabric capacity (2)**, then select **Capacity (3)** and click on **Apply (4)**.
+1. Create a new workspace with a name **Workspace-<inject key="DeploymentID" enableCopy="false"/> (1)**, and then click **Advanced**. Select a licensing mode that includes **Fabric capacity (2)**, then select **Capacity<inject key="DeploymentID" enableCopy="false"/> (3)** and click on **Apply (4)**.
 
    ![](./Images/L1T1S9-1.png)
 
@@ -136,7 +136,7 @@ Now that you have a workspace, it's time to switch to the Data engineering exper
 
 Fabric provides multiple ways to load data into the lakehouse, including built-in support for pipelines that copy data from external sources and data flows (Gen 2) that you can define using visual tools based on Power Query. However, one of the simplest ways to ingest small amounts of data is to upload files or folders from your local computer (or lab VM if applicable).
 
-1. Download the **sales.csv** file from [https://raw.githubusercontent.com/MicrosoftLearning/dp-data/main/sales.csv](https://raw.githubusercontent.com/MicrosoftLearning/dp-data/main/sales.csv), saving it as
+1. Download the **sales.csv** file from [here](https://raw.githubusercontent.com/MicrosoftLearning/dp-data/main/sales.csv), saving it as
    **sales.csv** on your local computer (or lab VM if applicable).
 
    > **Note**: To download the file, open a new tab in the browser and paste it into the URL.
