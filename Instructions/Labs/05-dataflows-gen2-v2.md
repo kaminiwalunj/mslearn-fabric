@@ -221,9 +221,9 @@ In this task, you’ll configure a data destination for a dataflow to enable sea
 
       >![Query with a lakehouse destination.](./Images/visual_query.png)
 
-8. Click **Publish** at the bottom right to publish the dataflow. Then, wait for the **Dataflow 1** to be created in your workspace.
+8. From the **Home** tab, select **Save & run (1)** dropdown and click **Save (2)** to save the dataflow.
 
-      ![New lakehouse.](./Images/p2t4p9.png)
+    ![New lakehouse.](./Images/save1.png)
 
 > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps
 > - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
